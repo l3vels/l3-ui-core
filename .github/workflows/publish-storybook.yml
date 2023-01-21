@@ -1,0 +1,35 @@
+
+name: Publish Storybook
+
+on:
+  release:
+    types: [created]
+  push:
+    branches:
+      - main
+
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - name: Build & deploy Storybook to GitHub Pages
+        run: |
+          npm install
+          npm run build-storybook -- -o static_storybook
+          cd static_storybook
+          # echo "style.l3vels.xyz" > ./CNAME
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - name: Push to Storybook's branch
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: "gh-pages"
+          build_dir: static_storybook
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

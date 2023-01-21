@@ -1,0 +1,182 @@
+@import "../../styles/themes";
+@import "../../styles/typography";
+@import "../../styles/global-css-settings";
+
+.l3-style-split-button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: $border-radius-small;
+  transition: var(--motion-productive-short) transform, var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+
+  .l3-style-split-button__main-button {
+    margin-right: 0;
+  }
+
+  .l3-style-split-button__secondary-button {
+    margin-left: 0;
+  }
+
+  &__secondary-button-wrapper {
+    .l3-style-split-button__secondary-button-icon-wrapper {
+      display: inline-flex;
+      padding: 0 4px;
+    }
+  }
+
+  &--active {
+    transform: scale(0.95);
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &--kind {
+    &-tertiary {
+      &.l3-style-split-button {
+        &--color {
+          &-primary {
+            &.l3-style-split-button--main-active {
+              .l3-style-split-button__main-button {
+                background-color: var(--primary-selected-color);
+              }
+
+              .l3-style-split-button__secondary-button {
+                background-color: var(--primary-selected-color);
+              }
+
+              &.l3-style-split-button--split-content-open,
+              &.l3-style-split-button--hovered {
+                &.l3-style-split-button--split-content-open {
+                  .l3-style-split-button__secondary-button,
+                  .l3-style-split-button__secondary-button:hover {
+                    color: var(--primary-color);
+                  }
+                }
+              }
+            }
+          }
+          &-positive {
+            &.l3-style-split-button--split-content-open,
+            &:hover,
+            &:focus {
+              .l3-style-split-button__secondary-button {
+                border-color: transparent;
+
+                @include theme-prop(background-color, positive-color-selected);
+              }
+
+              .l3-style-split-button__main-button {
+                @include theme-prop(background-color, positive-color-selected);
+              }
+            }
+          }
+
+          &-negative {
+            &.l3-style-split-button--split-content-open,
+            &:hover,
+            &:focus {
+              .l3-style-split-button__secondary-button {
+                border-color: transparent;
+
+                @include theme-prop(background-color, negative-color-selected);
+              }
+
+              .l3-style-split-button__main-button {
+                @include theme-prop(background-color, negative-color-selected);
+              }
+            }
+          }
+        }
+      }
+
+      .l3-style-split-button__secondary-button {
+        border-left: 1px solid transparent;
+        margin-left: 1px;
+      }
+    }
+
+    &-primary {
+      &.l3-style-split-button--disabled {
+        .l3-style-split-button__secondary-button {
+          border-left: 1px solid;
+
+          @include theme-prop(border-color, ui-border-color);
+        }
+      }
+
+      &:not(.l3-style-split-button--disabled).l3-style-split-button {
+        &--color {
+          &-primary {
+            &.l3-style-split-button--main-active {
+              .l3-style-split-button__secondary-button {
+                background-color: var(--primary-hover-color);
+                border-color: var(--text-color-on-primary)
+              }
+            }
+            .l3-style-split-button__secondary-button {
+              border-left: 1px solid;
+
+              @include theme-prop(border-color, primary-hover-color);
+            }
+          }
+
+          &-positive {
+            .l3-style-split-button__secondary-button {
+              border-left: 1px solid;
+
+              @include theme-prop(border-color, positive-color-hover);
+            }
+          }
+
+          &-negative {
+            .l3-style-split-button__secondary-button {
+              border-left: 1px solid;
+
+              @include theme-prop(border-color, negative-color-hover);
+            }
+          }
+
+          &-on-primary-color {
+            .l3-style-split-button__secondary-button {
+              border-left: 1px solid;
+              border-color: var(--color-ui_grey);
+            }
+          }
+        }
+      }
+    }
+
+    &-secondary {
+      .l3-style-split-button__main-button {
+        border-right: none;
+      }
+
+      &.l3-style-split-button {
+        &--color {
+          &-primary {
+            &.l3-style-split-button--main-active {
+              .l3-style-split-button__main-button {
+                background-color: var(--primary-selected-color);
+              }
+              .l3-style-split-button__secondary-button {
+                background-color: var(--primary-selected-color);
+                border-color: var(--primary-color);
+              }
+            }
+
+            &.l3-style-split-button--split-content-open {
+              .l3-style-split-button__secondary-button,
+              .l3-style-split-button__secondary-button:hover {
+                @include theme-prop(color, primary-color);
+                @include theme-prop(border-color, primary-color);
+                @include theme-prop(background-color, primary-selected-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

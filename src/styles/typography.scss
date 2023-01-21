@@ -1,0 +1,97 @@
+@import "./theme-mixin";
+$h1-legacy-font-size: 32px;
+$h1-legacy-line-height: 52px;
+$h1-medium-font-size: 22px;
+$h1-empty-state-height: 32px;
+$h2-empty-state-height: 24px;
+$h3-empty-state-height: 24px;
+$h4-empty-state-height: 21px;
+$h5-empty-state-height: 16px;
+$p-empty-state-height: 16px;
+$h6-empty-state-height: 12px;
+$small-empty-state-height: 12px;
+
+@mixin base-font($font-variable) {
+  @include theme-prop(color, primary-text-color);
+  -webkit-font-smoothing: var(--font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--font-smoothing-moz);
+  font: $font-variable;
+}
+
+// Main Heading (h1)
+@mixin font-main {
+  @include base-font(var(--font-h1));
+  letter-spacing: -1px;
+}
+
+// Secondary Heading (h2)
+@mixin font-title {
+  @include base-font(var(--font-h2));
+  letter-spacing: -0.2px;
+}
+
+// Tertiary Heading (h3)
+@mixin font-title-secondary {
+  @include base-font(var(--font-h3));
+  letter-spacing: -0.2px;
+  @include theme-prop(color, primary-text-color);
+}
+
+// Fourth Heading (h4)
+@mixin font-subtitle {
+  @include base-font(var(--font-h4));
+}
+
+// Paragraph Bold (h5)
+@mixin font-paragraph-bold {
+  @include base-font(var(--font-h5));
+}
+
+// UI lables / General text (h6)
+@mixin font-general-text {
+  @include base-font(var(--font-general-label));
+}
+
+// Paragraph text (p)
+@mixin font-paragraph {
+  @include base-font(var(--font-paragraph));
+}
+
+// Please use general text instead of this
+@mixin font-default {
+  @include font-general-text;
+  line-height: 22px;
+}
+
+// Caption / Subtext (small)
+@mixin font-caption {
+  @include base-font(var(--font-subtext));
+}
+
+@mixin font-input {
+  @include font-default;
+}
+
+@mixin font-link {
+  @include font-default;
+  text-decoration: none;
+  @include theme-prop(color, link-color);
+}
+
+@mixin line-clamp($lines: 1le) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  white-space: initial; // doesn't work with white-space: no-wrap
+}
+
+@mixin heading-padding {
+  padding: 0 4px;
+}
+
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with disabled 1`] = `
+<div
+  aria-disabled={true}
+  className="list-item list-item--small list-item--disabled"
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  role="listitem"
+  tabIndex={0}
+/>
+`;
+
+exports[`renders correctly with empty props 1`] = `
+<div
+  aria-disabled={false}
+  className="list-item list-item--small"
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  role="listitem"
+  tabIndex={0}
+/>
+`;
+
+exports[`renders correctly with selected 1`] = `
+<div
+  aria-disabled={false}
+  className="list-item list-item--small list-item--selected"
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  role="listitem"
+  tabIndex={0}
+/>
+`;
+
+exports[`renders correctly with selected and disabled 1`] = `
+<div
+  aria-disabled={true}
+  className="list-item list-item--small list-item--disabled"
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  role="listitem"
+  tabIndex={0}
+/>
+`;
+
+exports[`renders correctly with size 1`] = `
+<div
+  aria-disabled={false}
+  className="list-item list-item--large"
+  onClick={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onMouseEnter={[Function]}
+  role="listitem"
+  tabIndex={0}
+/>
+`;

@@ -1,0 +1,11 @@
+@import "../../../styles/global-css-settings";
+@import "../../../styles/themes";
+
+.l3-style-alert-banner-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.l3-style-alert-banner-text-margin-left {
+  margin-left: $spacing-small;
+}

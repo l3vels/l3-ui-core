@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots renders correctly with children 1`] = `
+<ul
+  aria-activedescendant="undefined--1"
+  aria-label="Menu"
+  className="l3-style-menu dummy-class-name l3-style-menu--medium"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseOver={[Function]}
+  role="menu"
+  tabIndex={0}
+>
+  <div
+    className="l3-style-menu-title"
+  >
+    <label
+      className="l3-style-menu-title__caption l3-style-menu-title__caption--bottom"
+    >
+      my title
+    </label>
+  </div>
+  <li
+    aria-current={false}
+    className="l3-style-menu-item"
+    id="undefined-1"
+    onClick={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <div
+      className="l3-style-menu-item__title"
+    >
+      item 1
+    </div>
+    
+    <div
+      className="l3-style-menu-item__popover"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+          "visibility": "hidden",
+        }
+      }
+    />
+  </li>
+  <li
+    aria-current={false}
+    className="l3-style-menu-item"
+    id="undefined-2"
+    onClick={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <div
+      className="l3-style-menu-item__title"
+    >
+      item 2
+    </div>
+    
+    <div
+      className="l3-style-menu-item__popover"
+      style={
+        Object {
+          "left": "0",
+          "position": "absolute",
+          "top": "0",
+          "visibility": "hidden",
+        }
+      }
+    />
+  </li>
+</ul>
+`;
+
+exports[`Snapshots renders correctly with custom class name 1`] = `
+<ul
+  aria-activedescendant="undefined--1"
+  aria-label="Menu"
+  className="l3-style-menu dummy-class-name l3-style-menu--medium"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseOver={[Function]}
+  role="menu"
+  tabIndex={0}
+/>
+`;
+
+exports[`Snapshots renders correctly with empty props 1`] = `
+<ul
+  aria-activedescendant="undefined--1"
+  aria-label="Menu"
+  className="l3-style-menu l3-style-menu--medium"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onMouseOver={[Function]}
+  role="menu"
+  tabIndex={0}
+/>
+`;

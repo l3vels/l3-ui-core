@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401 401">
+    <defs>
+        <style>
+            .circle-container {
+                isolation: isolate;
+                overflow: visible
+            }
+
+            .outer-circle-border {
+                fill: none;
+                /* stroke: #00283C; */
+                stroke-miterlimit: 10;
+                stroke-width: 1px;
+            }
+
+            .inner-circle-container {
+                mix-blend-mode: multiply;
+            }
+
+            .inner-circle {
+                fill: none;
+                stroke: #00283C;
+                stroke-width: 8px;
+            }
+
+            .part-1 {
+                stroke: #00283C;
+                fill: none;
+                stroke-width: 8px;
+                transform-origin: 50% 50%;
+                animation: rotation 5s infinite linear;
+            }
+
+            .part-2 {
+                stroke: #00283C;
+                fill: none;
+                stroke-width: 8px;
+                transform-origin: 50% 50%;
+                animation: rotation 2s infinite linear;
+            }
+
+            .part-3 {
+                stroke: #00283C;
+                fill: none;
+                stroke-width: 8px;
+                transform-origin: 50% 50%;
+                animation: rotation 2s infinite linear reverse;
+            }
+
+            @keyframes rotation {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </defs>
+    <title>L3vels Loader - Outlined</title>
+    <g class="circle-container">
+        <g>
+            <circle class="outer-circle-border" cx="200.5" cy="200.5" r="200" />
+            <g class="inner-circle-container">
+                <circle class="inner-circle" cx="200.5" cy="200.5" r="52.28" />
+            </g>
+        </g>
+    </g>
+    <path class="part-1"
+        d="M78.46,200A121.48,121.48,0,0,1,282.26,110.6q2.8,2.57,5.43,5.32l49.05-47.05A189.42,189.42,0,0,0,11.6,179.58a192.27,192.27,0,0,0,1.66,52.74q1.19,7,2.93,13.88l65.92-16.55A121.76,121.76,0,0,1,78.46,200Z" />
+    <path class="part-2"
+        d="M341.53,330.18a192.76,192.76,0,0,0,17.35-21.83l-64.76-44.14a113.79,113.79,0,0,1-171.26,19.63L69.77,341.48a195.84,195.84,0,0,0,46.7,31.79,187.19,187.19,0,0,0,56,17.08,195.9,195.9,0,0,0,60.12-.8,190.32,190.32,0,0,0,55.93-18.8,193.07,193.07,0,0,0,48-35.38Q339.1,332.82,341.53,330.18Z" />
+    <path class="part-3"
+        d="M200,285.24A85.16,85.16,0,0,1,141.85,137.8l-50.42-54a159.1,159.1,0,0,0,44.17,261.7,161,161,0,0,0,75.61,13.18q4.86-.33,9.69-1l-9.72-73.24A85.85,85.85,0,0,1,200,285.24Z" />
+</svg>

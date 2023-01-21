@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with custom class name 1`] = `
+<div
+  className="l3-style-divider dummy-class-name l3-style-divider--horizontal"
+/>
+`;
+
+exports[`renders correctly with empty props 1`] = `
+<div
+  className="l3-style-divider l3-style-divider--horizontal"
+/>
+`;

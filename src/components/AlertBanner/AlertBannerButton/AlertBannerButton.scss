@@ -1,0 +1,20 @@
+@import "../../../styles/global-css-settings";
+@import "../../../styles/typography";
+@import "../../../styles/themes";
+
+.l3-style-button.l3-style-alert-banner-button {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.dark-app-theme {
+  .l3-style-alert-banner-button-dark-background {
+    .l3-style-alert-banner-button {
+      background-color: var(--dark-background-color);
+    }
+  }
+}
+
+.l3-style-alert-banner-button-margin-left {
+  margin-left: $spacing-small;
+}

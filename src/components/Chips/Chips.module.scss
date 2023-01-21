@@ -1,0 +1,73 @@
+@import "../../styles/themes";
+@import "../../styles/typography";
+@import "../../styles/states";
+@import "../../styles/keyframes";
+
+.chipsWrapper {
+  margin: 0 var(--spacing-xs);
+  align-items: center;
+  height: 24px;
+  display: inline-flex;
+}
+
+.clickableWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.chips {
+  display: inline-flex;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  padding: 1px 8px;
+  align-items: center;
+  user-select: none;
+  animation: chips-pop-in-emphasized var(--motion-productive-medium) var(--motion-timing-emphasize);
+
+  &.withUserSelect {
+    user-select: text;
+  }
+
+  .label {
+    @include font-general-text();
+    @include ellipsis();
+  }
+
+  &.noAnimation {
+    animation: none;
+  }
+
+  &.withClose {
+    padding-right: var(--spacing-xs);
+  }
+
+  .icon,
+  .avatar {
+    min-width: 18px;
+    &.left {
+      margin-right: var(--spacing-xs);
+    }
+    &.right {
+      margin-left: var(--spacing-xs);
+    }
+    &.close {
+      margin-left: var(--spacing-xs);
+      color: var(--primary-text-color);
+    }
+  }
+
+  &.disabled {
+    .icon {
+      @include theme-prop(color, disabled-text-color);
+    }
+    .label {
+      @include theme-prop(color, disabled-text-color);
+    }
+  }
+}
+
+@include keyframe(chips-pop-in-emphasized) {
+  @include pop-in-emphasized();
+}

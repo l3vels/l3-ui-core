@@ -1,0 +1,36 @@
+@import "../../../styles/themes";
+@import "../../../styles/global-css-settings";
+@import "../../../styles/typography";
+@import "../../../styles/states";
+
+.l3-storybook-split-button {
+  &_dialog {
+    min-width: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    &_option {
+      padding-bottom: 8px;
+      padding-top: 8px;
+      display: flex;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    &_icon-spacing {
+      margin-right: $spacing-small;
+    }
+  }
+
+  &_spacing {
+    padding-bottom: 120px;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../styles/states";
+
+.combobox-stories-styles {
+  &_category-wrapper {
+    width: 300px;
+  }
+
+  &_row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  &_btn-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_wrapper {
+    width: 300px;
+    padding: 16px;
+  }
+
+  &_btn {
+    width: 100%;
+  }
+
+  &_big-figure {
+    figure {
+      height: 270px;
+    }
+  }
+}
+
+.person-picker-mock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: var(--border-radius-small);
+  padding: var(--spacing-xs);
+  background-color: var(--primary-selected-color);
+  border-color: var(--primary-color);
+  width: 97px;
+  height: 34px;
+
+  &-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-name {
+    padding: 0 8px;
+    font-size: 13px;
+
+    span {
+      @include theme-prop(color, secondary-text-color);
+      margin-left: 4px;
+    }
+  }
+}

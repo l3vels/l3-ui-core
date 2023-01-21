@@ -1,0 +1,10 @@
+@import "../../../styles/typography";
+@import "../../../styles/content-spacing";
+
+.l3-other-contributors-list {
+  margin-top: $spacing-between-section-items;
+  &_developer:not(:last-child):after {
+    @include small-text;
+    content: ","
+  }
+}

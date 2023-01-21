@@ -1,0 +1,43 @@
+@import "../../../../../styles/global-css-settings";
+@import "../../../../styles/typography";
+
+@mixin shadow-example-text {
+  font-size: $small-text-font-size;
+  line-height: 22px;
+}
+.l3-storybook-shadow-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &_example {
+    width: 81px;
+    height: 81px;
+
+    &--xs {
+      @include box-shadow-xs;
+    }
+
+    &--small {
+      @include box-shadow-small;
+    }
+
+    &--medium {
+      @include box-shadow-medium;
+    }
+
+    &--large {
+      @include box-shadow-large;
+    }
+  }
+
+  &_title {
+    @include shadow-example-text;
+    font-weight: 500;
+    margin: $spacing-small 0;
+  }
+
+  &_code {
+    @include shadow-example-text;
+  }
+}

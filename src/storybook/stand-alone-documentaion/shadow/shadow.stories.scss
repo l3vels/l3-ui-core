@@ -1,0 +1,7 @@
+@import "../../styles/content-spacing";
+
+.l3-storybook-shadow {
+  &_overview-image {
+    margin-top: $spacing-between-section-items;
+  }
+}
