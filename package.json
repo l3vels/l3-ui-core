@@ -42,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/l3vels/@l3vels/l3-ui-core.git"
+    "url": "git+https://github.com/l3vels/l3-ui-core.git"
   },
   "author": "",
   "license": "MIT",

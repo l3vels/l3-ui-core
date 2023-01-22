@@ -32,15 +32,13 @@ import "@l3vels/ui/dist/main.css"
 We are relaient on React and React DOM, we are using them as externals and we don't package them to the package so you must have them in your project
 
 
-
 ## Storybook
 We are using storybook in order to develop the components independently from any consumer.
 run this to build & run the storybook locally:
 ```bash
 npm run storybook
 ```
-the storybook will be served on `http://localhost:6006`
-
+the storybook will be served on `http://localhost:7007`
 
 
 ## Developing locally with your consumer application
@@ -73,4 +71,4 @@ Perform the following steps to **release** a **new version**:
 * Bump the version in `package.json`
 * Merge into `origin/master`
 * [Release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) the new version in the [@l3vels/ui
-](https://github.com/l3vels/@l3vels/ui)
+](https://github.com/l3vels/l3-ui-core)

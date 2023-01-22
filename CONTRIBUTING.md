@@ -47,7 +47,7 @@ We are using [Semantic commits](https://gist.github.com/joshbuchea/6f47e86d2510b
 
 ### Releasing
 
-To release a new version, you can run the ["Release new version" workflow](https://github.com/l3vels/@l3vels/l3-ui-core/actions/workflows/release.yml).
+To release a new version, you can run the ["Release new version" workflow](https://github.com/l3vels/l3-ui-core/actions/workflows/release.yml).
 
 If you want to run it locally, you can do so with [Github's CLI](https://cli.github.com/):
 
