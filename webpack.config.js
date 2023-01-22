@@ -88,7 +88,7 @@ module.exports = options => {
         },
         {
           test: /\.(js|jsx)$/,
-          exclude: /node_modules\/(?!monday-ui-style)(.*)/,
+          exclude: /node_modules\/(?!\@l3vels\/l3-ui-style)(.*)/,
           use: ["babel-loader"]
         },
         {
