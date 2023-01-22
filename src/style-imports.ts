@@ -1,1 +1,1 @@
-import "monday-ui-style/dist/index.min.css";
+import "@l3vels/l3-ui-style/dist/index.min.css";

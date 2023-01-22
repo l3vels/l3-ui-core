@@ -1,4 +1,4 @@
-import { iconsMetaData } from "monday-ui-style/src/Icons/iconsMetaData";
+import { iconsMetaData } from "@l3vels/l3-ui-style/src/Icons/iconsMetaData";
 import * as AllIcons from "../../components/Icon/Icons";
 import { useCallback, useMemo, useState } from "react";
 import { action } from "@storybook/addon-actions";

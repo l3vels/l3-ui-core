@@ -11,11 +11,11 @@ Our theme mechanism is based on [CSS variables](https://developer.mozilla.org/en
 We define our initial styling at the body/root element level - doing so we are exposing our css variables (colors) to all child elements. When we want to apply a specific theme we simply add the theme class to a common ancestor (body for example) and all the components should change their appearance.
 
 #### Creating a theme.
-We extracted our css variables to a different repo (@l3vels/monday-ui-style)
-In order to create a new theme you need to override all of the keys (the list of keys can be found in the monday-ui-style repo)
+We extracted our css variables to a different repo (@l3vels/@l3vels/l3-ui-style)
+In order to create a new theme you need to override all of the keys (the list of keys can be found in the @l3vels/l3-ui-style repo)
 
 #### Adding a new variable to a theme
-Adding a key should be done in the @l3vels/monday-ui-style repo
+Adding a key should be done in the @l3vels/@l3vels/l3-ui-style repo
 
 ### IE11 support
 As IE 11 is at it's final breath we don't want to invest too much time to support it but we do have around 3% usage in ie so in order to do so we will show the default theme when using ie 11. In order to achive that please use the `theme-prop`

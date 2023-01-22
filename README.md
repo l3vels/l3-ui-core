@@ -38,7 +38,7 @@ run this to build & run the storybook locally:
 ```bash
 npm run storybook
 ```
-the storybook will be served on `http://localhost:7007`
+the storybook will be served on `http://localhost:6006`
 
 
 ## Developing locally with your consumer application

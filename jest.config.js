@@ -182,7 +182,7 @@ module.exports = {
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   transformIgnorePatterns: [
-    "node_modules/(?!monday-ui-style)/"
+    "node_modules/(?!@l3vels/l3-ui-style)/"
     // "\\.pnp\\.[^\\/]+$"
   ]
 

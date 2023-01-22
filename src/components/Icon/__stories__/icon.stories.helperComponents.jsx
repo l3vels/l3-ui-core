@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { iconsMetaData } from "monday-ui-style/src/Icons/iconsMetaData";
+import { iconsMetaData } from "@l3vels/l3-ui-style/src/Icons/iconsMetaData";
 import SearchComponent from "../../Search/Search";
 import * as AllIcons from "../Icons";
 import FlexLayout from "../../storybook-helpers/flex-layout/flex-layout";
