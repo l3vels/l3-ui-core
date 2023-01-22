@@ -1,6 +1,6 @@
 {
   "name": "@l3vels/l3-ui-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Official l3vels.xyz UI resources for application development in React.js",
   "main": "./dist/main.js",
   "exports": {
