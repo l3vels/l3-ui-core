@@ -28,8 +28,8 @@ export default {
     interactionsTests: path.join(SRC_PATH, "tests/interactions-utils.ts"),
     testIds: path.join(SRC_PATH, "tests/test-ids-utils.ts")
   },
-  // external: [/node_modules/],
-  external: [/node_modules\/(?!/@l3vels/l3-ui-style)(.*)/],
+  external: [/node_modules/],
+  //external: [/node_modules\/(?!/@l3vels/l3-ui-style)(.*)/],
   plugins: [
     commonjs(),
     nodeResolve({
