@@ -31,7 +31,9 @@ export const Checkbox = forwardRef(
       defaultChecked,
       value,
       name,
-      id
+      id,
+      size = "large",
+      kind = "primary"
     },
     ref
   ) => {
@@ -74,7 +76,13 @@ export const Checkbox = forwardRef(
     return (
       // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
       <label
-        className={cx(BASE_CLASS_NAME, overrideClassName, { [`${BASE_CLASS_NAME}__disabled`]: disabled })}
+        className={cx(
+          BASE_CLASS_NAME,
+          overrideClassName,
+          { [`${BASE_CLASS_NAME}__disabled`]: disabled },
+          [`${BASE_CLASS_NAME}--size-${size}`],
+          [`${BASE_CLASS_NAME}--kind-${kind}`]
+        )}
         onMouseUp={onMouseUpCallback}
         htmlFor={id}
         onClickCapture={onClickCaptureLabel}
