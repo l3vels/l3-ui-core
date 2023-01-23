@@ -4,7 +4,7 @@ import { noop as NOOP } from "lodash-es";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Tooltip, { TooltipProps } from "../Tooltip/Tooltip";
 import Icon from "../Icon/Icon";
-import AddSmall from "../Icon/Icons/components/AddSmall";
+import Close from "../Icon/Icons/components/Close";
 import { getWidthHeight, Size } from "./services/IconButton-helpers";
 import { SubIcon, VibeComponent, VibeComponentProps } from "../../types";
 import { getTestId } from "../../tests/test-ids-utils";
@@ -12,6 +12,7 @@ import { ComponentDefaultTestId } from "../../tests/constants";
 import Button from "../Button/Button";
 import { BUTTON_ICON_SIZE, ButtonColor, ButtonType } from "../Button/ButtonConstants";
 import styles from "./IconButton.module.scss";
+import "./IconButton.scss";
 
 export interface IconButtonProps extends VibeComponentProps {
   /**
@@ -72,6 +73,7 @@ export interface IconButtonProps extends VibeComponentProps {
   dataTestId?: string;
   /** Change the focus indicator from around the button to within it */
   insetFocus?: boolean;
+  label: string;
 }
 
 const IconButton: VibeComponent<IconButtonProps> & {
@@ -97,7 +99,8 @@ const IconButton: VibeComponent<IconButtonProps> & {
       onClick,
       color,
       dataTestId,
-      insetFocus
+      insetFocus,
+      label
     },
     ref
   ) => {
@@ -154,38 +157,80 @@ const IconButton: VibeComponent<IconButtonProps> & {
     }, [wrapperClassName]);
 
     return (
-      <IconButtonWrapper {...iconButtonWrapperProps}>
-        <Tooltip
-          {...tooltipProps}
-          content={calculatedTooltipContent}
-          referenceWrapperClassName={styles.referenceWrapper}
-        >
-          <Button
-            onClick={onClick}
-            disabled={disabled}
-            color={color}
-            kind={kind}
-            ariaLabel={buttonAriaLabel}
-            ref={mergedRef}
-            id={id}
-            dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-            noSidePadding
-            active={active}
-            className={className}
-            style={overrideStyle}
-            insetFocus={insetFocus}
-          >
-            <Icon
-              icon={icon}
-              iconType={Icon.type.SVG}
-              iconSize={iconSize}
-              ignoreFocusStyle
-              className="icon-button-padding"
-              clickable={false}
-            />
-          </Button>
-        </Tooltip>
-      </IconButtonWrapper>
+      <>
+        {label ? (
+          <div className="container">
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={className}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  <Icon
+                    icon={icon}
+                    iconType={Icon.type.SVG}
+                    iconSize={iconSize}
+                    ignoreFocusStyle
+                    className="icon-button-padding"
+                    clickable={false}
+                  />
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+            <span className="span">{label}</span>
+          </div>
+        ) : (
+          <div className="container">
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={className}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  <Icon
+                    icon={icon}
+                    iconType={Icon.type.SVG}
+                    iconSize={iconSize}
+                    ignoreFocusStyle
+                    className="icon-button-padding"
+                    clickable={false}
+                  />
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+          </div>
+        )}
+      </>
     );
   }
 );
@@ -202,13 +247,13 @@ IconButton.defaultProps = {
   wrapperClassName: undefined,
   onClick: NOOP,
   id: undefined,
-  icon: AddSmall,
+  icon: Close,
   ariaLabel: undefined,
-  size: IconButton?.sizes.MEDIUM,
+  size: IconButton?.sizes.LARGE,
   hideTooltip: false,
   tooltipContent: undefined,
   tooltipProps: {} as TooltipProps,
-  kind: IconButton.kinds.TERTIARY,
+  kind: IconButton.kinds.PRIMARY,
   disabled: false,
   disabledReason: undefined,
   color: undefined,

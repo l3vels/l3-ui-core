@@ -3,9 +3,9 @@ import { SIZES } from "./../../../constants/sizes";
 const sizesMap = {
   [SIZES.XXS]: 16,
   [SIZES.XS]: 24,
-  [SIZES.SMALL]: 32,
+  [SIZES.SMALL]: 36,
   [SIZES.MEDIUM]: 40,
-  [SIZES.LARGE]: 48
+  [SIZES.LARGE]: 56
 } as const;
 
 export type Size = typeof SIZES[keyof typeof SIZES];
