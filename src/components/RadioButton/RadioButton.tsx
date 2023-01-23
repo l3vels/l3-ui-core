@@ -3,7 +3,7 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Clickable from "../Clickable/Clickable";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
-import { baseClassName } from "./RadioButtonConstants";
+import { baseClassName, RadioButtonSize, RadioButtonType } from "./RadioButtonConstants";
 import VibeComponentProps from "../../types/VibeComponentProps";
 import VibeComponent from "../../types/VibeComponent";
 import Tooltip from "../Tooltip/Tooltip";
@@ -24,6 +24,8 @@ interface RadioButtonProps extends VibeComponentProps {
   retainChildClick?: boolean;
   childrenTabIndex?: string;
   noLabelAnimation?: boolean;
+  kind?: RadioButtonType;
+  size?: RadioButtonSize;
 }
 
 const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
@@ -43,7 +45,9 @@ const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
       checked,
       retainChildClick = true,
       childrenTabIndex = "0",
-      noLabelAnimation = false
+      noLabelAnimation = false,
+      kind = "primary",
+      size = "small"
     },
     ref: React.ForwardedRef<HTMLInputElement>
   ) => {
@@ -72,7 +76,13 @@ const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
     return (
       <Tooltip content={tooltipContent}>
         <label className={cx(baseClassName, overrideClassName, { disabled })}>
-          <span className={`${baseClassName}__radio-input-container`}>
+          <span
+            className={cx(
+              `${baseClassName}__radio-input-container`,
+              `${baseClassName}__radio-input-container--kind-${kind}`,
+              `${baseClassName}__radio-input-container--size-${size}`
+            )}
+          >
             <input
               className={`${baseClassName}__radio-input-container__radio-input`}
               type="radio"
