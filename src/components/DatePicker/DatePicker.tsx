@@ -9,14 +9,14 @@ import DateNavigationItem from "./DateNavigationItem/DateNavigationItem";
 import YearPicker from "./YearPicker/YearPicker";
 import { DAY_SIZE, WEEK_FIRST_DAY } from "./constants";
 import { Direction, FocusInput, Moment, RangeDate } from "./types";
-import l3ComponentProps from "../../types/l3ComponentProps";
-import l3Component from "../../types/l3Component";
+import L3ComponentProps from "../../types/L3ComponentProps";
+import L3Component from "../../types/L3Component";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import { NOOP } from "../../utils/function-utils";
 import styles from "./DatePicker.module.scss";
 
-interface DatePickerProps extends l3ComponentProps {
+interface DatePickerProps extends L3ComponentProps {
   /** set the first day of the week to display */
   firstDayOfWeek?: DayOfWeekShape;
   /** current start date */
@@ -45,7 +45,7 @@ interface DatePickerProps extends l3ComponentProps {
   shouldBlockRange?: (date: Moment) => boolean;
 }
 
-const DatePicker: l3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDivElement, DatePickerProps>(
+const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDivElement, DatePickerProps>(
   (
     {
       id,

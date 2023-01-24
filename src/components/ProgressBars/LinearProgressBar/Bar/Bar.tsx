@@ -1,10 +1,10 @@
 import React, { FC, useMemo } from "react";
 import cx from "classnames";
 import { calculatePercentage } from "../LinearProgressBarHelpers";
-import l3ComponentProps from "src/types/l3ComponentProps";
+import L3ComponentProps from "src/types/L3ComponentProps";
 import { ProgressBarStyle } from "../LinearProgressBarConstants";
 
-interface BarProps extends l3ComponentProps {
+interface BarProps extends L3ComponentProps {
   /**
    * Determine the progress bar style (Supported options exposed through `LinearProgressBar.styles`).
    */

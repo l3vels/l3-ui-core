@@ -4,10 +4,10 @@ import { backwardCompatibilityForProperties } from "../../helpers/backwardCompat
 import { NOOP } from "../../utils/function-utils";
 import Icon from "../Icon/Icon";
 import { IconPosition, LinkTarget } from "./LinkConsts";
-import { SubIcon, l3Component, l3ComponentProps } from "../../types";
+import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import "./Link.scss";
 
-export interface LinkProps extends l3ComponentProps {
+export interface LinkProps extends L3ComponentProps {
   /** Backward compatibility for props naming */
   componentClassName?: string;
   /** Specifies the location (URL) of the external resource */
@@ -36,7 +36,7 @@ export interface LinkProps extends l3ComponentProps {
   inlineText?: boolean;
 }
 
-const Link: l3Component<LinkProps, HTMLAnchorElement> & {
+const Link: L3Component<LinkProps, HTMLAnchorElement> & {
   targets?: typeof LinkTarget;
   target?: typeof LinkTarget;
   iconPositions?: typeof IconPosition;

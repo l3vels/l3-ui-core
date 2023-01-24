@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import React, { ForwardedRef, forwardRef, useCallback, useMemo } from "react";
 import { keyCodes } from "../../../../constants";
-import { SubIcon, l3ComponentProps } from "../../../../types";
+import { SubIcon, L3ComponentProps } from "../../../../types";
 import "./BreadcrumbContent.scss";
 
-interface BreadcrumbContentProps extends l3ComponentProps {
+interface BreadcrumbContentProps extends L3ComponentProps {
   isClickable?: boolean;
   link?: string;
   onClick?: () => void;

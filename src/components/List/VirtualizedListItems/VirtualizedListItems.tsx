@@ -3,7 +3,7 @@ import cx from "classnames";
 import ListItem, { ListItemProps } from "../../../components/ListItem/ListItem";
 import ListTitle, { ListTitleProps } from "../../ListTitle/ListTitle";
 import VirtualizedList from "../../../components/VirtualizedList/VirtualizedList";
-import l3ComponentProps from "../../../types/l3ComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 import { ListItemIconProps } from "../../ListItemIcon/ListItemIcon";
 import styles from "./VirtualizedListItems.module.scss";
 
@@ -15,7 +15,7 @@ const ITEM_CHILDREN_TYPES = {
 const LIST_TITLE_HEIGHT = 48;
 const LIST_ITEM_HEIGHT = 32;
 
-export interface VirtualizedListItemsProps extends l3ComponentProps {
+export interface VirtualizedListItemsProps extends L3ComponentProps {
   children?: React.ReactElement<ListItemProps | ListTitleProps> | React.ReactElement<ListItemProps | ListTitleProps>[];
 }
 

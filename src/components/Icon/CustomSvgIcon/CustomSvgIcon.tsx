@@ -2,13 +2,13 @@ import React, { FunctionComponent, useCallback, AriaRole, Ref } from "react";
 import cx from "classnames";
 import SVG from "react-inlinesvg";
 import useIconScreenReaderAccessProps from "../../../hooks/useIconScreenReaderAccessProps";
-import l3ComponentProps from "../../../types/l3ComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 
 function modifySvgCode(svg: string, color = "currentColor") {
   return svg.replace(/fill=".*?"/g, `fill="${color}"`);
 }
 
-interface CustomSvgIconProps extends l3ComponentProps {
+interface CustomSvgIconProps extends L3ComponentProps {
   onClick?: (event: React.MouseEvent) => void;
   src: string | object;
   ariaLabel?: string;

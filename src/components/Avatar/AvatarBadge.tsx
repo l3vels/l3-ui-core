@@ -3,13 +3,13 @@ import cx from "classnames";
 import { BEMClass } from "../../helpers/bem-helper";
 import CustomSvgIcon from "../Icon/CustomSvgIcon/CustomSvgIcon";
 import { AvatarSize } from "./AvatarConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./AvatarBadge.scss";
 
 const AVATAR_CSS_BASE_CLASS = "l3-style-avatar-badge";
 const bemHelper = BEMClass(AVATAR_CSS_BASE_CLASS);
 
-export interface AvatarBadgeProps extends l3ComponentProps {
+export interface AvatarBadgeProps extends L3ComponentProps {
   src?: string;
   ariaLabel?: string;
   tabIndex?: string | number;

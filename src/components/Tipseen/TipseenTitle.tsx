@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import cx from "classnames";
-import { l3ComponentProps } from "../../types";
+import { L3ComponentProps } from "../../types";
 import styles from "./TipseenTitle.module.scss";
 
 const BASE_CSS_CLASS = "l3-style-tipseen-title";
 
-interface TipseenTitleProps extends l3ComponentProps {
+interface TipseenTitleProps extends L3ComponentProps {
   text?: string;
 }
 

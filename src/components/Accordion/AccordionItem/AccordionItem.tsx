@@ -1,12 +1,12 @@
 import cx from "classnames";
 import React, { forwardRef, useCallback, useRef } from "react";
-import l3ComponentProps from "src/types/l3ComponentProps";
+import L3ComponentProps from "src/types/L3ComponentProps";
 import useMergeRefs from "../../../hooks/useMergeRefs";
 import ExpandCollapse from "../../ExpandCollapse/ExpandCollapse";
-import l3Component from "../../../types/l3Component";
+import L3Component from "../../../types/L3Component";
 import { ElementContent } from "../../../types/ElementContent";
 
-interface AccordionItemProps extends l3ComponentProps {
+interface AccordionItemProps extends L3ComponentProps {
   /**
    * Header title
    */
@@ -27,7 +27,7 @@ interface AccordionItemProps extends l3ComponentProps {
   onClickAccordionCallback?: () => void;
 }
 
-const AccordionItem: l3Component<AccordionItemProps> = forwardRef(
+const AccordionItem: L3Component<AccordionItemProps> = forwardRef(
   (
     { children = null, title = "", className = "", iconSize = 24, id, open, onClick, onClickAccordionCallback },
     ref
