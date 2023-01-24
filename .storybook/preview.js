@@ -1,7 +1,7 @@
 import { addParameters } from "@storybook/react";
 import { DocsContainer, DocsPage } from "@storybook/addon-docs";
 import { withPerformance } from "storybook-addon-performance";
-import "@l3vels/l3-ui-style/dist/index.min.css";
+import "@l3-lib/ui-style/dist/index.min.css";
 import {
   AnchorListItem,
   ComponentName,

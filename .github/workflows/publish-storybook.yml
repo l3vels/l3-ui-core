@@ -23,7 +23,7 @@ jobs:
           cd static_storybook
           # echo "style.l3vels.xyz" > ./CNAME
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: Push to Storybook's branch
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
