@@ -160,6 +160,7 @@
       }
       .input-component__input {
         @include theme-prop(border-color, border-negative);
+        @include theme-prop(color, negative-text-color, true);
         &:focus,
         &:active {
           @include theme-prop(border-color, border-negative);
@@ -186,6 +187,8 @@
       }
       .input-component__input {
         @include theme-prop(border-color, border-positive);
+        @include theme-prop(color, positive-text-color, true);
+
         &:focus,
         &:active {
           @include theme-prop(border-color, border-positive);

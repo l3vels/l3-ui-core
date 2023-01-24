@@ -96,9 +96,13 @@ $theme: (
   "text-field-value-color": $white,
   "text-field-placeholder-color": $white-2,
 
-  // border colors
+  // negative colors
   "border-negative": $red-300,
+  "negative-text-color": $red-400,
+
+  // positive colors
   "border-positive": $green-200,
+  "positive-text-color": $green-500,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,
