@@ -2,9 +2,9 @@ import React, { FC } from "react";
 import { InfixKind } from "./SliderConstants";
 import { bem } from "./SliderHelpers";
 import { useSliderInfixComponent } from "./SliderInfixHooks";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 
-interface SliderInfixProps extends VibeComponentProps {
+interface SliderInfixProps extends l3ComponentProps {
   /**
    * kind (type/mode) of Infix prefix/postfix
    * Infix - additional inserted by Consumer - component/string/number etc.

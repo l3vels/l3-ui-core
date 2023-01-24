@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
 import { MenuTitleCaptionPosition } from "./MenuTitleConstants";
-import { VibeComponentProps } from "../../../types";
+import { l3ComponentProps } from "../../../types";
 import "./MenuTitle.scss";
 
-interface MenuTitleProps extends VibeComponentProps {
+interface MenuTitleProps extends l3ComponentProps {
   /** Backward compatibility for props naming **/
   classname?: string;
   caption?: string;

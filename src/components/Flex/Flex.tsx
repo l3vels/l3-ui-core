@@ -3,13 +3,13 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Clickable from "../../components/Clickable/Clickable";
 import { FlexAlign, FlexDirection, FlexGap, FlexJustify } from "./FlexConstants";
-import { VibeComponentProps } from "../../types";
-import VibeComponent from "../../types/VibeComponent";
+import { l3ComponentProps } from "../../types";
+import l3Component from "../../types/l3Component";
 import { getStyle } from "../../helpers/typesciptCssModulesHelper";
 import { ElementContent } from "../../types/ElementContent";
 import styles from "./Flex.module.scss";
 
-interface FlexProps extends VibeComponentProps {
+interface FlexProps extends l3ComponentProps {
   style?: object;
   direction?: FlexDirection;
   elementType?: React.ElementType;
@@ -26,7 +26,7 @@ interface FlexProps extends VibeComponentProps {
   ariaLabelledby?: string;
 }
 
-const Flex: VibeComponent<FlexProps> & {
+const Flex: l3Component<FlexProps> & {
   justify?: typeof FlexJustify;
   align?: typeof FlexAlign;
   gaps?: typeof FlexGap;

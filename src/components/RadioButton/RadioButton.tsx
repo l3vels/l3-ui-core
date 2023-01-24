@@ -4,12 +4,12 @@ import useMergeRefs from "../../hooks/useMergeRefs";
 import Clickable from "../Clickable/Clickable";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { baseClassName } from "./RadioButtonConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
-import VibeComponent from "../../types/VibeComponent";
+import l3ComponentProps from "../../types/l3ComponentProps";
+import l3Component from "../../types/l3Component";
 import Tooltip from "../Tooltip/Tooltip";
 import "./RadioButton.scss";
 
-interface RadioButtonProps extends VibeComponentProps {
+interface RadioButtonProps extends l3ComponentProps {
   className?: string;
   componentClassName?: string;
   text?: string;
@@ -26,7 +26,7 @@ interface RadioButtonProps extends VibeComponentProps {
   noLabelAnimation?: boolean;
 }
 
-const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
+const RadioButton: l3Component<RadioButtonProps, HTMLElement> = forwardRef(
   (
     {
       className,

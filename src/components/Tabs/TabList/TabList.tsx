@@ -3,12 +3,12 @@ import cx from "classnames";
 import useGridKeyboardNavigation from "../../../hooks/useGridKeyboardNavigation/useGridKeyboardNavigation";
 import useMergeRefs from "../../../hooks/useMergeRefs";
 import usePrevious from "../../../hooks/usePrevious";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import l3ComponentProps from "../../../types/l3ComponentProps";
 import { NOOP } from "../../../utils/function-utils";
 import { TabProps } from "../Tab/Tab";
 import "./TabList.scss";
 
-export interface TabListProps extends VibeComponentProps {
+export interface TabListProps extends l3ComponentProps {
   onTabChange?: (tabId: number) => void;
   activeTabId?: number;
   tabType?: string;

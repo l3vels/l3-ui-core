@@ -22,13 +22,13 @@ import usePopover from "../../../hooks/usePopover";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
 import useMenuItemMouseEvents from "./hooks/useMenuItemMouseEvents";
 import useMenuItemKeyboardEvents from "./hooks/useMenuItemKeyboardEvents";
-import { SubIcon, VibeComponent, VibeComponentProps } from "../../../types";
+import { SubIcon, l3Component, l3ComponentProps } from "../../../types";
 import { IconType } from "../../Icon/IconConstants";
 import { TAB_INDEX_FOCUS_WITH_JS_ONLY, TooltipPosition } from "./MenuItemConstants";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuItem.scss";
 
-export interface MenuItemProps extends VibeComponentProps {
+export interface MenuItemProps extends l3ComponentProps {
   title?: string;
   label?: string;
   icon?: SubIcon;
@@ -62,7 +62,7 @@ export interface MenuItemProps extends VibeComponentProps {
   children?: ReactElement | ReactElement[];
 }
 
-const MenuItem: VibeComponent<MenuItemProps> & {
+const MenuItem: l3Component<MenuItemProps> & {
   iconType?: typeof Icon.type;
   tooltipPositions?: typeof DialogPosition;
   isSelectable?: boolean;

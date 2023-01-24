@@ -1,8 +1,8 @@
 import React, { AriaRole, forwardRef } from "react";
 import classNames from "classnames";
-import { SubIcon, VibeComponent, VibeComponentProps } from "../../../types";
+import { SubIcon, l3Component, l3ComponentProps } from "../../../types";
 
-interface FontIconProps extends VibeComponentProps {
+interface FontIconProps extends l3ComponentProps {
   onClick?: (event: React.MouseEvent<HTMLSpanElement>) => void;
   "aria-label"?: string;
   tabIndex?: number;
@@ -11,7 +11,7 @@ interface FontIconProps extends VibeComponentProps {
   "aria-hidden"?: boolean;
 }
 
-const FontIcon: VibeComponent<FontIconProps, HTMLElement> = forwardRef(
+const FontIcon: l3Component<FontIconProps, HTMLElement> = forwardRef(
   (
     {
       id,

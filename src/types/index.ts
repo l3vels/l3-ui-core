@@ -1,6 +1,6 @@
 export * from "./events";
 export * from "./SubIcon";
-export { default as VibeComponent } from "./VibeComponent";
-export { default as VibeComponentProps } from "./VibeComponentProps";
+export { default as l3Component } from "./l3Component";
+export { default as l3ComponentProps } from "./l3ComponentProps";
 export * from "./ArrayLastElement";
 export * from "./SplitString";

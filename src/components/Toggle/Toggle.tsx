@@ -6,12 +6,12 @@ import { MockToggle } from "./MockToggle";
 import { BEMClass } from "../../helpers/bem-helper";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { BASE_TOGGLE_CLASS_NAME, ToggleSize, ToggleType } from "./ToggleConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import "./Toggle.scss";
 
 const bemHelper = BEMClass(BASE_TOGGLE_CLASS_NAME);
 
-interface ToggleProps extends VibeComponentProps {
+interface ToggleProps extends l3ComponentProps {
   // Backward compatibility for props naming
   componentClassName?: string;
   isDefaultSelected?: boolean;

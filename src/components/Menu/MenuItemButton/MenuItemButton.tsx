@@ -8,11 +8,11 @@ import useMenuItemMouseEvents from "../MenuItem/hooks/useMenuItemMouseEvents";
 import useMenuItemKeyboardEvents from "../MenuItem/hooks/useMenuItemKeyboardEvents";
 import { DialogPosition } from "../../../constants/positions";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
-import { SubIcon, VibeComponentProps } from "../../../types";
+import { SubIcon, l3ComponentProps } from "../../../types";
 import { ElementContent } from "../../../types/ElementContent";
 import "./MenuItemButton.scss";
 
-interface MenuItemButtonProps extends VibeComponentProps {
+interface MenuItemButtonProps extends l3ComponentProps {
   /** Backward compatibility for props naming **/
   classname?: string;
   menuId?: string;
