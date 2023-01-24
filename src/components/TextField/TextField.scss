@@ -60,27 +60,29 @@
       height: 100%;
       outline: 0;
       background-color: transparent;
-      border: 1px solid;
-      @include theme-prop(border-color, ui-border-color);
+      border: 2px solid transparent;
+      font-weight: 500;
+      // @include theme-prop(border-color, ui-border-color);
       border-radius: $border-radius-small;
       transition: border-color var(--motion-productive-medium) ease-in;
       padding: $spacing-small $spacing-medium;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      @include theme-prop(color, primary-text-color);
+      @include theme-prop(color, text-field-value-color, true);
+      @include theme-prop(background-color, text-field-bg-color);
       &.input-component__input--hover {
         @include theme-prop(border-color, primary-text-color);
       }
       &:focus,
       &:active,
       &.input-component__input--active {
-        @include theme-prop(border-color, primary-color);
+        @include theme-prop(color, text-field-placeholder-color);
+        @include theme-prop(border-color, text-field-active-border-color);
       }
 
       &::placeholder {
-        @include theme-prop(color, secondary-text-color);
-        font-weight: 400;
+        @include theme-prop(color, text-field-placeholder-color);
       }
 
       &.input-component__input--has-icon {
@@ -144,7 +146,8 @@
         @include theme-prop(color, icon-color);
         will-change: transform;
         pointer-events: none;
-        transition: color var(--motion-productive-short) var(--motion-timing-enter), transform var(--motion-productive-short) var(--motion-timing-enter);
+        transition: color var(--motion-productive-short) var(--motion-timing-enter),
+          transform var(--motion-productive-short) var(--motion-timing-enter);
         font-size: 14px;
       }
     }
@@ -152,14 +155,14 @@
     &.input-component__input--error-validation {
       &:hover {
         .input-component__input {
-          @include theme-prop(border-color, negative-color);
+          @include theme-prop(border-color, border-negative);
         }
       }
       .input-component__input {
-        @include theme-prop(border-color, negative-color);
+        @include theme-prop(border-color, border-negative);
         &:focus,
         &:active {
-          @include theme-prop(border-color, negative-color);
+          @include theme-prop(border-color, border-negative);
         }
       }
       .input-component__icon--container .input-component__icon {
@@ -178,14 +181,14 @@
     &.input-component__input--success-validation {
       &:hover {
         .input-component__input {
-          @include theme-prop(border-color, positive-color);
+          @include theme-prop(border-color, border-positive);
         }
       }
       .input-component__input {
-        @include theme-prop(border-color, positive-color);
+        @include theme-prop(border-color, border-positive);
         &:focus,
         &:active {
-          @include theme-prop(border-color, positive-color);
+          @include theme-prop(border-color, border-positive);
         }
       }
       .input-component__icon--container .input-component__icon {
@@ -202,7 +205,7 @@
     }
 
     &.input-component__input-wrapper--size-small {
-      height: 32px;
+      height: $text-field-size-small;
       .input-component__input {
         @include font-input();
         &.input-component__input--has-icon {
@@ -214,7 +217,7 @@
     }
 
     &.input-component__input-wrapper--size-medium {
-      height: 40px;
+      height: $text-field-size-medium;
       .input-component__input {
         @include font-paragraph();
         &.input-component__input--has-icon {
@@ -241,7 +244,7 @@
     }
 
     &.input-component__input-wrapper--size-large {
-      height: 48px;
+      height: $text-field-size-large;
       .input-component__input {
         @include font-paragraph();
         &.input-component__input--has-icon {
@@ -260,13 +263,13 @@
       }
     }
 
-    &:hover {
-      .input-component__input {
-        @include theme-prop(border-color, primary-text-color);
-      }
-    }
+    // &:hover {
+    //   .input-component__input {
+    //     @include theme-prop(border-color, primary-text-color);
+    //   }
+    // }
 
-    .input-component__loader--container{
+    .input-component__loader--container {
       position: absolute;
       top: 50%;
       right: 4px;
@@ -277,15 +280,15 @@
       justify-content: center;
       align-items: center;
 
-      &.input-component__loader--container-has-icon{
+      &.input-component__loader--container-has-icon {
         right: 32px;
       }
 
-      .input-component__loader{
+      .input-component__loader {
         width: 16px;
         height: 16px;
 
-        .input-component__loader-svg{
+        .input-component__loader-svg {
           @include theme-prop(color, secondary-text-color);
         }
       }
@@ -293,14 +296,20 @@
   }
 }
 
-.input-component .input-component__input-wrapper .input-component__icon--container .input-component__icon{
+.input-component .input-component__input-wrapper .input-component__icon--container .input-component__icon {
   font-family: var(--font-family);
 }
 
-.input-component .input-component__input-wrapper.input-component__input-wrapper--size-medium .input-component__icon--container .input-component__icon{
+.input-component
+  .input-component__input-wrapper.input-component__input-wrapper--size-medium
+  .input-component__icon--container
+  .input-component__icon {
   font-family: var(--font-family);
 }
 
-.input-component .input-component__input-wrapper.input-component__input-wrapper--size-large .input-component__icon--container .input-component__icon{
+.input-component
+  .input-component__input-wrapper.input-component__input-wrapper--size-large
+  .input-component__icon--container
+  .input-component__icon {
   font-family: var(--font-family);
 }

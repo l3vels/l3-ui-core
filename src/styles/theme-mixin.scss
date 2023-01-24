@@ -88,13 +88,17 @@ $theme: (
 
   // textfields
   // Textfield bg color
-  text-field-bg-color: $white-2,
-  text-field-pressed-bg-color: $white-3,
-  text-field-active-border-color: $black-2,
+  "text-field-bg-color": $white-2,
+  "text-field-pressed-bg-color": $white-3,
+  "text-field-active-border-color": $black-2,
 
   // Textfield text colors
-  text-field-value-color: $white,
-  text-field-placeholder-color: $white-2,
+  "text-field-value-color": $white,
+  "text-field-placeholder-color": $white-2,
+
+  // border colors
+  "border-negative": $red-300,
+  "border-positive": $green-200,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,

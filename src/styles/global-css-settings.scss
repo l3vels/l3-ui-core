@@ -37,6 +37,10 @@ $btn-size-small: 36px;
 $primary-btn-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
 $secondary-btn-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.2);
 
+$text-field-size-large: 56px;
+$text-field-size-medium: 50px;
+$text-field-size-small: 44px;
+
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
 }
