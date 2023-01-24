@@ -1,5 +1,6 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/themes";
+@import "../../styles/theme-mixin.scss";
 @import "../../styles/typography";
 @import "../../styles/states";
 
@@ -32,7 +33,7 @@ $checkbox-size: 16px;
     // border: 1px solid;
     // @include theme-prop(border-color, ui-border-color);
     // border-radius: $border-radius-extra-small;
-    border: 3.5px solid #000000;
+    border: 3.5px solid $black;
     border-radius: 3.5px;
     // transition: transform var(--motion-productive-short) var(--motion-timing-enter);
     position: relative;
@@ -58,18 +59,18 @@ $checkbox-size: 16px;
     &-small {
       .l3-style-checkbox {
         &__checkbox {
-          width: 12px;
-          height: 12px;
-          border-width: 2px;
-          border-radius: 2px;
+          width: $spacing-small-medium;
+          height: $spacing-small-medium;
+          border-width: $spacing-xxs;
+          border-radius: $spacing-xxs;
         }
         &__label {
           margin-inline-start: 10px;
-          font-size: 12px;
-          line-height: 16px;
+          font-size: $spacing-small-medium;
+          line-height: $spacing-medium;
         }
         &__description {
-          margin-top: 8px;
+          margin-top: $spacing-small;
         }
       }
     }
@@ -79,10 +80,10 @@ $checkbox-size: 16px;
     &-secondary {
       .l3-style-checkbox {
         &__checkbox {
-          border-color: #ffffff;
+          border-color: $white;
         }
         &__label {
-          color: #ffffff;
+          color: $white;
         }
         // &__description {
         //   color: rgba(255, 255, 255, 0.6);
@@ -91,7 +92,7 @@ $checkbox-size: 16px;
           &:checked {
             & + .l3-style-checkbox__checkbox {
               &__checkbox {
-                outline: 2px solid rgba(0, 0, 0, 0.2);
+                outline: $spacing-xxs solid $black-2;
               }
             }
           }
@@ -115,9 +116,9 @@ $checkbox-size: 16px;
     user-select: none;
     margin-inline-start: 17.5px;
     // @include theme-prop(color, primary-text-color);
-    color: #000000;
+    color: $black;
     font-weight: 500;
-    font-size: 16px;
+    font-size: $spacing-medium;
     line-height: 20px;
   }
 
@@ -147,10 +148,10 @@ $checkbox-size: 16px;
     &:checked {
       &:active {
         & + .l3-style-checkbox__checkbox {
-          border-color: #ffffff;
+          border-color: $white;
           outline: 1.75px solid #4ca6f8;
-          outline-width: 2px;
-          border-width: 2px;
+          outline-width: $spacing-xxs;
+          border-width: $spacing-xxs;
         }
       }
     }
@@ -161,7 +162,7 @@ $checkbox-size: 16px;
         border: 1px solid;
         @include theme-prop(border-color, primary-color);
         box-shadow: 0 0 0 3px hsla(209, 100%, 50%, 0.5);
-        border-radius: 2px;
+        border-radius: $spacing-xxs;
       }
     }
 
@@ -187,7 +188,7 @@ $checkbox-size: 16px;
 
           border-color: #4ca6f8;
           background-color: #4ca6f8;
-          outline: 2px solid rgba(0, 0, 0, 0.2);
+          outline: 2px solid $black-2;
 
           & > .l3-style-checkbox__icon {
             visibility: visible;
@@ -198,7 +199,7 @@ $checkbox-size: 16px;
       &:disabled + .l3-style-checkbox {
         &__checkbox:after {
           // @include theme-prop(background-color, disabled-background-color);
-          background-color: rgba(255, 255, 255, 0.2);
+          background-color: $white-2;
         }
       }
     }
@@ -214,7 +215,7 @@ $checkbox-size: 16px;
 
           border-color: #000000;
           background: transparent;
-          outline: 2px solid rgba(0, 0, 0, 0.2);
+          outline: $spacing-xxs solid $black-2;
           & > .l3-style-checkbox__icon {
             visibility: visible;
           }
@@ -229,7 +230,7 @@ $checkbox-size: 16px;
           // @include theme-prop(background-color, disabled-background-color);
           background-color: transparent;
           // @include theme-prop(border-color, ui-border-color);
-          border-color: rgba(255, 255, 255, 0.2);
+          border-color: $white-2;
           outline: none;
 
           .l3-style-checkbox__icon {
@@ -243,7 +244,7 @@ $checkbox-size: 16px;
         & + .l3-style-checkbox {
           &__checkbox,
           &__checkbox:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: $white-2;
             border: none;
           }
         }

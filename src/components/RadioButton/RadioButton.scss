@@ -1,6 +1,7 @@
 @import "../../styles/themes";
 @import "../../styles/typography";
 @import "../../styles/global-css-settings";
+@import "../../styles/theme-mixin.scss";
 
 .l3-style-radio-button-component {
   display: grid;
@@ -30,29 +31,29 @@
       height: 20px;
       // border: 0.1em solid;
       // @include theme-prop(border-color, ui-border-color);
-      border: 3.5px solid #000000;
+      border: 3.5px solid $black;
       box-sizing: border-box;
       border-radius: 50%;
       // outline: 3.5px solid rgba(0, 0, 0, 0.2);
       &--size {
         &-small {
-          width: 12px;
-          height: 12px;
-          border-width: 2px;
+          width: $spacing-small-medium;
+          height: $spacing-small-medium;
+          border-width: $spacing-xxs;
         }
       }
       transition: border-width var(--motion-productive-medium) var(--motion-timing-enter);
       &:active {
-        outline: 2.5px solid rgba(0, 0, 0, 0.2);
+        outline: 2.5px solid $black-2;
       }
     }
 
     &--kind {
       &-secondary {
         .l3-style-radio-button-component__radio-input-container__radio-control {
-          border-color: rgba(255, 255, 255, 0.8);
+          border-color: $white-8;
           &:active {
-            outline: 2.5px solid rgba(255, 255, 255, 0.2);
+            outline: 2.5px solid $white-2;
           }
         }
       }
@@ -75,7 +76,7 @@
     input:checked + &__radio-control {
       // @include theme-prop(border-color, primary-color);
       border-color: #4ca6f8;
-      border-width: 6px;
+      border-width: $spacing-xs-small;
       &--label-animation {
         animation-name: radio-checked-animation;
         animation-duration: var(--motion-productive-medium);
@@ -89,17 +90,17 @@
       }
       &--size {
         &-small {
-          border-width: 4px;
+          border-width: $spacing-xs;
         }
       }
     }
 
     input:disabled + &__radio-control {
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: $white-2;
     }
 
     input:checked:disabled + &__radio-control {
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: $white-2;
     }
   }
 
