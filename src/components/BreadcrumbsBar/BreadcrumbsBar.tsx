@@ -1,12 +1,12 @@
 import React, { FC, ReactElement } from "react";
 import cx from "classnames";
 import NavigationChevronRight from "../Icon/Icons/components/NavigationChevronRight";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { BreadcrumbsBarType } from "./BreadcrumbsConstants";
 import { BreadcrumbItemProps } from "./BreadcrumbItem/BreadcrumbItem";
 import "./BreadcrumbsBar.scss";
 
-export interface BreadcrumbBarProps extends VibeComponentProps {
+export interface BreadcrumbBarProps extends L3ComponentProps {
   /** The type of the bar is responsible for whether it will be navigational or for indication only  */
   type: typeof BreadcrumbsBarType;
   children: ReactElement<BreadcrumbItemProps> | ReactElement<BreadcrumbItemProps>[];

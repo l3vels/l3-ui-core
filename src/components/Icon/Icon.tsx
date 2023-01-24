@@ -5,7 +5,7 @@ import { IconType } from "./IconConstants";
 import CustomSvgIcon from "./CustomSvgIcon/CustomSvgIcon";
 import FontIcon from "./FontIcon/FontIcon";
 import useIconProps from "./hooks/useIconProps";
-import { VibeComponentProps, VibeComponent, MouseEventCallBack, SubIcon } from "../../types";
+import { L3ComponentProps, L3Component, MouseEventCallBack, SubIcon } from "../../types";
 import "./Icon.scss";
 
 // eslint-disable-next-line no-unused-vars,@typescript-eslint/no-unused-vars,@typescript-eslint/no-empty-function
@@ -25,7 +25,7 @@ function renderIcon(Icon: SubIcon, props: IconSubComponentProps) {
   return <Icon {...props} />;
 }
 
-interface IconProps extends VibeComponentProps {
+interface IconProps extends L3ComponentProps {
   // eslint-disable-next-line no-unused-vars
   onClick?: (event: React.MouseEvent) => void;
   /**
@@ -68,7 +68,7 @@ mo   * Icon aria label [aria label](https://developer.mozilla.org/en-US/docs/Web
   customColor?: string;
 }
 
-const Icon: VibeComponent<IconProps, HTMLElement> & { type?: typeof IconType } = forwardRef(
+const Icon: L3Component<IconProps, HTMLElement> & { type?: typeof IconType } = forwardRef(
   (
     {
       /**

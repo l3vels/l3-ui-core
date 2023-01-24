@@ -16,10 +16,10 @@ import SliderRail from "./SliderRail";
 import SliderTrack from "./SliderTrack";
 import SliderFilledTrack from "./SliderFilledTrack";
 import SliderThumb from "./SliderThumb";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./SliderBase.scss";
 
-export type SliderBaseProps = VibeComponentProps;
+export type SliderBaseProps = L3ComponentProps;
 
 const SliderBase: FC<SliderBaseProps> = forwardRef(({ className }, _ref) => {
   const { color, disabled, size, shapeTestId } = useSliderUi();

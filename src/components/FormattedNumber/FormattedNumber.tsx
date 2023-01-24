@@ -4,10 +4,10 @@ import { formatNumber, formatNumberConsts } from "../../helpers/textManipulation
 import { baseClassName } from "./FormattedNumberConsts";
 import { validateValue } from "./FormattedNumberHelpers";
 import "./FormattedNumber.scss";
-import VibeComponentProps from "../../types/VibeComponentProps";
-import VibeComponent from "../../types/VibeComponent";
+import L3ComponentProps from "../../types/L3ComponentProps";
+import L3Component from "../../types/L3Component";
 
-interface FormattedNumberProps extends VibeComponentProps {
+interface FormattedNumberProps extends L3ComponentProps {
   /**
    * A numeric value to format.
    */
@@ -42,7 +42,7 @@ interface FormattedNumberProps extends VibeComponentProps {
   rtl?: boolean;
 }
 
-type FormattedNumberType = VibeComponent<FormattedNumberProps, HTMLDivElement> & {
+type FormattedNumberType = L3Component<FormattedNumberProps, HTMLDivElement> & {
   formatNumber?: typeof formatNumber;
   localFallBack?: string;
 };

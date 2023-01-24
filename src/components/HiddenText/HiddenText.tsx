@@ -1,10 +1,10 @@
 import React, { useRef, forwardRef } from "react";
 import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./HiddenText.scss";
 
-interface HiddenTextProps extends VibeComponentProps {
+interface HiddenTextProps extends L3ComponentProps {
   text: string;
 }
 

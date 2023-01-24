@@ -3,10 +3,10 @@ import cx from "classnames";
 import PropTypes from "prop-types";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { DirectionType } from "./DividerConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./Divider.scss";
 
-interface DividerProps extends VibeComponentProps {
+interface DividerProps extends L3ComponentProps {
   direction?: DirectionType;
   classname?: string;
 }

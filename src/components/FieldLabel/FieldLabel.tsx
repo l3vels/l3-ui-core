@@ -1,10 +1,10 @@
 import React, { FC, ForwardedRef, forwardRef } from "react";
 import cx from "classnames";
 import Icon from "../Icon/Icon";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./FieldLabel.scss";
 
-interface FieldLabelProps extends VibeComponentProps {
+interface FieldLabelProps extends L3ComponentProps {
   icon?: string | React.FunctionComponent | null;
   iconLabel?: string;
   labelText?: string;

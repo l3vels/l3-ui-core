@@ -6,7 +6,7 @@ import Button from "../../components/Button/Button";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { ButtonPropsBackwardCompatible, DISMISS_BUTTON_TEXT, SUBMIT_BUTTON_TEXT } from "./TipseenConstants";
 import TipseenBasicContent from "./TipseenBasicContent";
-import { VibeComponentProps } from "../../types";
+import { L3ComponentProps } from "../../types";
 import { ElementContent } from "../../types/ElementContent";
 import styles from "./TipseenContent.module.scss";
 
@@ -14,7 +14,7 @@ const BASE_CSS_CLASS = "l3-style-tipseen-content";
 const bemHelper = BEMClass(BASE_CSS_CLASS);
 const EMPTY_OBJECT: ButtonPropsBackwardCompatible = {};
 
-interface TipseenContentProps extends VibeComponentProps {
+interface TipseenContentProps extends L3ComponentProps {
   title?: string;
   /**
    * Backward compatability for hideDismiss prop

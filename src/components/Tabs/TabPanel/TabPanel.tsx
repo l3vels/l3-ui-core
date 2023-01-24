@@ -1,10 +1,10 @@
 import React, { FC, forwardRef, useRef } from "react";
 import cx from "classnames";
 import useMergeRefs from "../../../hooks/useMergeRefs";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./TabPanel.scss";
 
-export interface TabPanelProps extends VibeComponentProps {
+export interface TabPanelProps extends L3ComponentProps {
   children?: string;
   index?: number;
 }

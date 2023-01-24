@@ -7,10 +7,10 @@ import useStyle from "../../hooks/useStyle";
 import useRefWithCallback from "../../hooks/useRefWithCallback";
 import TextWithHighlight from "../TextWithHighlight/TextWithHighlight";
 import { HeadingSizes, HeadingTypes } from "./HeadingConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./Heading.scss";
 
-export interface HeadingProps extends VibeComponentProps {
+export interface HeadingProps extends L3ComponentProps {
   type?: HeadingTypes;
   ariaLabel?: string;
   value?: string;

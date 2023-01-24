@@ -10,11 +10,11 @@ import { DialogContent } from "./DialogContent/DialogContent";
 import { isInsideClass } from "../../utils/dom-utils";
 import { Refable } from "../Refable/Refable";
 import { AnimationType, HideShowEvent } from "../../constants/dialog";
-import { VibeComponentProps } from "../../types";
+import { L3ComponentProps } from "../../types";
 import * as PopperJS from "@popperjs/core";
 import "./Dialog.scss";
 
-export interface DialogProps extends VibeComponentProps {
+export interface DialogProps extends L3ComponentProps {
   /**
    * A Classname to be added to <spam> element which wraps the children
    */

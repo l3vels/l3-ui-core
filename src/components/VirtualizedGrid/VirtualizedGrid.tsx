@@ -19,8 +19,8 @@ import {
 import usePrevious from "../../hooks/usePrevious";
 import useThrottledCallback from "../../hooks/useThrottledCallback";
 import useMergeRefs from "../../hooks/useMergeRefs";
-import VibeComponentProps from "src/types/VibeComponentProps";
-import { VibeComponent } from "../../types";
+import L3ComponentProps from "src/types/L3ComponentProps";
+import { L3Component } from "../../types";
 import { NOOP } from "../../utils/function-utils";
 import "./VirtualizedGrid.scss";
 
@@ -31,7 +31,7 @@ type ItemType = {
   id: string;
 };
 
-interface VirtualizedGridProps extends VibeComponentProps {
+interface VirtualizedGridProps extends L3ComponentProps {
   /**
    * A list of items to be rendered
    * {
@@ -100,7 +100,7 @@ interface VirtualizedGridProps extends VibeComponentProps {
   onVerticalScrollbarVisiblityChange?: (value: boolean) => void;
 }
 
-const VirtualizedGrid: VibeComponent<VirtualizedGridProps> = forwardRef(
+const VirtualizedGrid: L3Component<VirtualizedGridProps> = forwardRef(
   (
     {
       className,

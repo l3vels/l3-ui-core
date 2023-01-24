@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { bem } from "../SliderHelpers";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 
 function defineFilledTrackProps(dimension: number, offset: number, reverse: boolean) {
   if (reverse) {
@@ -15,7 +15,7 @@ function defineFilledTrackProps(dimension: number, offset: number, reverse: bool
   };
 }
 
-interface SliderFilledTrackProps extends VibeComponentProps {
+interface SliderFilledTrackProps extends L3ComponentProps {
   /**
    * Consumer/Custom/Extra `class names` to be added to the Component's-Root-Node
    */

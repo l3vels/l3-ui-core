@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactElement, Ref, useMemo } from "react";
 import VirtualizedList, { VirtualizedListItem } from "../VirtualizedList/VirtualizedList";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { AvatarType } from "../Avatar/AvatarConstants";
 import { AvatarProps } from "../Avatar/Avatar";
 import styles from "./AvatarGroupCounterTooltipContentVirtualizedList.module.scss";
@@ -15,7 +15,7 @@ export type AvatarItem = {
   value: AvatarProps & { tooltipContent: string | ReactElement };
 };
 
-interface AvatarGroupCounterTooltipContentVirtualizedListProps extends VibeComponentProps {
+interface AvatarGroupCounterTooltipContentVirtualizedListProps extends L3ComponentProps {
   /**
    * Array of Avatar components
    */

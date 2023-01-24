@@ -2,14 +2,14 @@ import React, { FC, useRef } from "react";
 import cx from "classnames";
 import Tooltip from "../../Tooltip/Tooltip";
 import useIsOverflowing from "../../../hooks/useIsOverflowing";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 import { HideShowEvent } from "../../../constants";
 import "./AlertBannerText.scss";
 
 const TOOLTIP_SHOW_TRIGGERS: Array<HideShowEvent> = [HideShowEvent.MOUSE_ENTER];
 const TOOLTIP_HIDE_TRIGGERS: Array<HideShowEvent> = [HideShowEvent.MOUSE_LEAVE];
 
-export interface AlertBannerTextProps extends VibeComponentProps {
+export interface AlertBannerTextProps extends L3ComponentProps {
   text: string;
   marginLeft?: boolean;
 }

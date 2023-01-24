@@ -3,11 +3,11 @@ import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { LoaderColors, LoaderSize, LoaderSizes } from "./LoaderConstants";
 import { getTestId } from "../../tests/test-ids-utils";
-import { VibeComponent, VibeComponentProps } from "../../types";
+import { L3Component, L3ComponentProps } from "../../types";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import styles from "./Loader.module.scss";
 
-export interface LoaderProps extends VibeComponentProps {
+export interface LoaderProps extends L3ComponentProps {
   // Backward compatibility for props naming
   svgClassName?: string;
   className?: string;
@@ -17,7 +17,7 @@ export interface LoaderProps extends VibeComponentProps {
   hasBackground?: boolean;
 }
 
-const Loader: VibeComponent<LoaderProps, HTMLElement> & {
+const Loader: L3Component<LoaderProps, HTMLElement> & {
   sizes?: typeof LoaderSizes;
   colors?: typeof LoaderColors;
 } = forwardRef(

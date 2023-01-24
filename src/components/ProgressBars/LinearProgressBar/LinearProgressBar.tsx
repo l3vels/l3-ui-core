@@ -5,10 +5,10 @@ import PercentageLabel from "../PercentageLabel/PercentageLabel";
 import { baseClassName, ProgressBarStyle } from "./LinearProgressBarConstants";
 import { calculatePercentage } from "./LinearProgressBarHelpers";
 import Bar from "./Bar/Bar";
-import { VibeComponent, VibeComponentProps } from "../../../types";
+import { L3Component, L3ComponentProps } from "../../../types";
 import "./LinearProgressBar.scss";
 
-interface LinearProgressBarProps extends VibeComponentProps {
+interface LinearProgressBarProps extends L3ComponentProps {
   /**
    * Determine the progress bar style (Supported options exposed through `LinearProgressBar.styles`).
    */
@@ -70,7 +70,7 @@ interface LinearProgressBarProps extends VibeComponentProps {
   ariaLabel?: string;
 }
 
-const LinearProgressBar: VibeComponent<LinearProgressBarProps, HTMLDivElement> & {
+const LinearProgressBar: L3Component<LinearProgressBarProps, HTMLDivElement> & {
   styles?: ProgressBarStyle;
   barStyles?: ProgressBarStyle;
   sizes?: typeof SIZES;

@@ -6,9 +6,9 @@ import Icon from "../Icon/Icon";
 import CloseSmall from "../Icon/Icons/components/CloseSmall";
 import { IMAGE_POSITIONS } from "./BannerConstants";
 import "./Banner.scss";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
-export interface BannerProps extends VibeComponentProps {
+export interface BannerProps extends L3ComponentProps {
   /**
    * custom style
    */

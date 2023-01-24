@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import cx from "classnames";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import useEventListener from "../../hooks/useEventListener";
 import useAfterFirstRender from "../../hooks/useAfterFirstRender";
 import { NOOP } from "../../utils/function-utils";
@@ -9,7 +9,7 @@ import { backwardCompatibilityForProperties } from "../../helpers/backwardCompat
 import { CounterColor, CounterSize, CounterType, getActualSize } from "./CounterConstants";
 import "./Counter.scss";
 
-export interface CounterProps extends VibeComponentProps {
+export interface CounterProps extends L3ComponentProps {
   /** id to pass to the element */
   id?: string;
   /** element id to describe the counter accordingly */

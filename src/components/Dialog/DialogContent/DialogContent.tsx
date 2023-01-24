@@ -6,7 +6,7 @@ import useOnClickOutside from "../../../hooks/useClickOutside";
 import { chainFunctions, NOOP } from "../../../utils/function-utils";
 import useKeyEvent from "../../../hooks/useKeyEvent";
 import { HideShowEvent } from "../consts/dialog-show-hide-event";
-import { VibeComponent, VibeComponentProps } from "../../../types";
+import { L3Component, L3ComponentProps } from "../../../types";
 import { ESCAPE_KEYS } from "../../../constants";
 import * as PopperJS from "@popperjs/core";
 import "./DialogContent.scss";
@@ -14,7 +14,7 @@ import "./DialogContent.scss";
 const transitionOptions: { classNames?: string } = {};
 const EMPTY_OBJECT = {};
 
-export interface DialogContentProps extends VibeComponentProps {
+export interface DialogContentProps extends L3ComponentProps {
   children?: ReactElement | ReactElement[];
   position?: PopperJS.Placement;
   wrapperClassName?: string;
@@ -33,7 +33,7 @@ export interface DialogContentProps extends VibeComponentProps {
   disableOnClickOutside?: boolean; // TODO prop is passsed, but not used. How it should behave?
 }
 
-export const DialogContent: VibeComponent<DialogContentProps> = React.forwardRef(
+export const DialogContent: L3Component<DialogContentProps> = React.forwardRef(
   (
     {
       onEsc = NOOP,

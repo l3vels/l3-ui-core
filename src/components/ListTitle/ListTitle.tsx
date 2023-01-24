@@ -1,10 +1,10 @@
 import React, { forwardRef, useRef } from "react";
 import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./ListTitle.scss";
 
-export interface ListTitleProps extends VibeComponentProps {
+export interface ListTitleProps extends L3ComponentProps {
   tabIndex?: number;
   children?: string;
 }

@@ -4,10 +4,10 @@ import Dialog from "../Dialog/Dialog";
 import { AvatarProps } from "../Avatar/Avatar";
 import AvatarGroupCounterTooltipContent from "./AvatarGroupCounterTooltipContent";
 import { TOOLTIP_SHOW_DELAY, useTooltipContentTabNavigation } from "./AvatarGroupCounterTooltipHelper";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { AvatarType } from "../Avatar/AvatarConstants";
 
-interface AvatarGroupCounterTooltipContainerProps extends VibeComponentProps {
+interface AvatarGroupCounterTooltipContainerProps extends L3ComponentProps {
   className?: string;
   type?: AvatarType;
   /**

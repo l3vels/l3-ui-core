@@ -7,14 +7,14 @@ import { BEMClass } from "../../helpers/bem-helper";
 import { useKeyboardButtonPressedFunc } from "../../hooks/useKeyboardButtonPressedFunc";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
-import VibeComponentProps from "../../types/VibeComponentProps";
-import VibeComponent from "../../types/VibeComponent";
+import L3ComponentProps from "../../types/L3ComponentProps";
+import L3Component from "../../types/L3Component";
 import "./Clickable.scss";
 
 const CSS_BASE_CLASS = "l3-style-clickable";
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
-export interface ClickableProps extends VibeComponentProps {
+export interface ClickableProps extends L3ComponentProps {
   elementType?: keyof JSX.IntrinsicElements | string;
   className?: string;
   id?: string;
@@ -33,7 +33,7 @@ export interface ClickableProps extends VibeComponentProps {
   dataTestId?: string;
 }
 
-const Clickable: VibeComponent<ClickableProps, HTMLElement> = forwardRef(
+const Clickable: L3Component<ClickableProps, HTMLElement> = forwardRef(
   (
     {
       elementType = "div",

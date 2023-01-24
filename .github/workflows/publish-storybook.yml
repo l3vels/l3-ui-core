@@ -21,7 +21,7 @@ jobs:
           npm install
           npm run build-storybook -- -o static_storybook
           cd static_storybook
-          # echo "style.l3vels.xyz" > ./CNAME
+          echo "style.l3vels.xyz" > ./CNAME
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: Push to Storybook's branch

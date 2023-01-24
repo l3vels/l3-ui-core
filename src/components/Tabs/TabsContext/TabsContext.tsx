@@ -2,10 +2,10 @@ import React, { FC, forwardRef, ReactElement, useCallback, useEffect, useRef, us
 import cx from "classnames";
 import useMergeRefs from "../../../hooks/useMergeRefs";
 import usePrevious from "../../../hooks/usePrevious";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./TabsContext.scss";
 
-export interface TabsContextProps extends VibeComponentProps {
+export interface TabsContextProps extends L3ComponentProps {
   activeTabId?: number;
   children?: ReactElement | ReactElement[];
 }

@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { bem } from "../SliderHelpers";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 
-export interface SliderTrackProps extends VibeComponentProps {
+export interface SliderTrackProps extends L3ComponentProps {
   /**
    * Consumer/Custom/Extra `class names` to be added to the Component's-Root-Node
    */

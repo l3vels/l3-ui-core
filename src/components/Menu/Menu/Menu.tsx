@@ -21,11 +21,11 @@ import useMouseLeave from "./hooks/useMouseLeave";
 import { useAdjacentSelectableMenuIndex } from "./hooks/useAdjacentSelectableMenuIndex";
 import { useFocusWithin } from "../../../hooks/useFocusWithin";
 import usePrevious from "../../../hooks/usePrevious";
-import { VibeComponent, VibeComponentProps } from "../../../types";
+import { L3Component, L3ComponentProps } from "../../../types";
 import "./Menu.scss";
 import { CloseMenuOption } from "./MenuConstants";
 
-interface MenuProps extends VibeComponentProps {
+interface MenuProps extends L3ComponentProps {
   /** Backward compatibility for props naming **/
   classname?: string;
   size?: typeof SIZES[keyof typeof SIZES];
@@ -43,7 +43,7 @@ interface MenuProps extends VibeComponentProps {
   children?: ReactElement | ReactElement[];
 }
 
-const Menu: VibeComponent<MenuProps> & {
+const Menu: L3Component<MenuProps> & {
   isMenu?: boolean;
   supportFocusOnMount?: boolean;
   sizes?: typeof SIZES;

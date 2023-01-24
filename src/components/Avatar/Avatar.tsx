@@ -10,7 +10,7 @@ import { AvatarContent } from "./AvatarContent";
 import Tooltip, { TooltipProps } from "../Tooltip/Tooltip";
 import ClickableWrapper from "../Clickable/ClickableWrapper";
 import Dialog from "../Dialog/Dialog";
-import { SubIcon, VibeComponentProps } from "../../types";
+import { SubIcon, L3ComponentProps } from "../../types";
 import "./Avatar.scss";
 
 const AVATAR_CSS_BASE_CLASS = "l3-style-avatar";
@@ -18,7 +18,7 @@ const bemHelper = BEMClass(AVATAR_CSS_BASE_CLASS);
 
 type BackgroundColors = typeof elementColorsNames[keyof typeof elementColorsNames];
 
-export interface AvatarProps extends VibeComponentProps {
+export interface AvatarProps extends L3ComponentProps {
   src?: string;
   text?: string;
   tooltipProps?: TooltipProps;
