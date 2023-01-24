@@ -34,6 +34,7 @@ export const Checkbox = forwardRef(
       id,
       size = "large",
       kind = "primary"
+      // desciption
     },
     ref
   ) => {
@@ -112,7 +113,13 @@ export const Checkbox = forwardRef(
             iconSize="16"
           />
         </div>
-        {label === false ? null : <span className={cx(`${BASE_CLASS_NAME}__label`, labelClassName)}>{label}</span>}
+
+        {label === false ? null : (
+          <span className={cx(`${BASE_CLASS_NAME}__label`, labelClassName)}>
+            {label}
+            {/* {desciption === false ? null : <span className={cx(`${BASE_CLASS_NAME}__description`)}>{desciption}</span>} */}
+          </span>
+        )}
       </label>
     );
   }

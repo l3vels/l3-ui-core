@@ -47,7 +47,7 @@ const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
       childrenTabIndex = "0",
       noLabelAnimation = false,
       kind = "primary",
-      size = "small"
+      size = "large"
     },
     ref: React.ForwardedRef<HTMLInputElement>
   ) => {

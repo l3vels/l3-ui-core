@@ -63,6 +63,14 @@ $checkbox-size: 16px;
           border-width: 2px;
           border-radius: 2px;
         }
+        &__label {
+          margin-inline-start: 10px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+        &__description {
+          margin-top: 8px;
+        }
       }
     }
   }
@@ -76,6 +84,9 @@ $checkbox-size: 16px;
         &__label {
           color: #ffffff;
         }
+        // &__description {
+        //   color: rgba(255, 255, 255, 0.6);
+        // }
         &_input {
           &:checked {
             & + .l3-style-checkbox__checkbox {
@@ -96,13 +107,25 @@ $checkbox-size: 16px;
   }
 
   &__label {
+    // display: flex;
+    // flex-direction: column;
+
     @include font-input();
     cursor: pointer;
     user-select: none;
-    margin-inline-start: $spacing-small;
+    margin-inline-start: 17.5px;
     // @include theme-prop(color, primary-text-color);
     color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
   }
+
+  // &__description {
+  //   font-weight: 450;
+  //   font-size: 12px;
+  //   color: rgba(0, 0, 0, 0.3);
+  // }
 
   // Since it is not possible to change the design of the checkbox according to the requirements using css,
   // we hide the checkbox and draw a new one instead.
