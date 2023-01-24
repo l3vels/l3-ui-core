@@ -3,7 +3,7 @@ import cx from "classnames";
 import Tooltip from "../../components/Tooltip/Tooltip";
 import useIsOverflowing from "../../hooks/useIsOverflowing";
 import useMergeRefs from "../../hooks/useMergeRefs";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { DialogPosition } from "../../constants";
 import "./TextWithHighlight.scss";
 
@@ -25,7 +25,7 @@ const getTextPart = (
   return <span key={key}>{text}</span>;
 };
 
-export interface TextWithHighlightProps extends VibeComponentProps {
+export interface TextWithHighlightProps extends l3ComponentProps {
   /** Text to wrap */
   text?: string;
   highlightTerm?: string;

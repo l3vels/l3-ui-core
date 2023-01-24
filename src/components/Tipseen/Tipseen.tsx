@@ -10,7 +10,7 @@ import CloseSmall from "../../components/Icon/Icons/components/CloseSmall";
 import { AnimationType, EMPTY_ARR, HideShowEvent, JustifyType } from "../../constants";
 import TipseenTitle from "./TipseenTitle";
 import { TIPSEEN_CLOSE_BUTTON_ARIA_LABEL } from "./TipseenConstants";
-import { VibeComponent, VibeComponentProps } from "../../types";
+import { l3Component, l3ComponentProps } from "../../types";
 import { MoveBy } from "../../types/MoveBy";
 import { ElementContent } from "../../types/ElementContent";
 import { Modifier } from "react-popper";
@@ -20,7 +20,7 @@ import styles from "./Tipseen.module.scss";
 const TIPSEEN_BASE_CSS_CLASS = "l3-style-tipseen";
 const bemHelper = BEMClass(TIPSEEN_BASE_CSS_CLASS);
 
-interface TipseenProps extends VibeComponentProps {
+interface TipseenProps extends l3ComponentProps {
   position?: DialogPosition;
   animationType?: AnimationType;
   hideDelay?: number;
@@ -60,7 +60,7 @@ interface TipseenProps extends VibeComponentProps {
   content?: ElementContent;
 }
 
-const Tipseen: VibeComponent<TipseenProps> & {
+const Tipseen: l3Component<TipseenProps> & {
   positions?: typeof DialogPosition;
   animationTypes?: AnimationType;
   justifyTypes?: JustifyType;

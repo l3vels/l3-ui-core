@@ -8,7 +8,7 @@ import { baseClassName, ButtonValue } from "./ButtonGroupConstants";
 import { ButtonWrapper } from "./ButtonWrapper";
 import { BASE_SIZES, DialogPosition, SIZES } from "../../constants";
 import { ButtonType, Size } from "../Button/ButtonConstants";
-import { SubIcon, VibeComponentProps } from "../../types";
+import { SubIcon, l3ComponentProps } from "../../types";
 import { MoveBy } from "../../types/MoveBy";
 import "./ButtonGroup.scss";
 
@@ -23,7 +23,7 @@ type ButtonGroupOption = {
   tooltipContent?: string;
 };
 
-interface ButtonGroupProps extends VibeComponentProps {
+interface ButtonGroupProps extends l3ComponentProps {
   className?: string;
   /**
    * Backward compatibility for props naming - please use className instead

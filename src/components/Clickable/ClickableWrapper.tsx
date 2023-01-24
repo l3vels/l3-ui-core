@@ -1,15 +1,15 @@
 import React, { forwardRef } from "react";
 import Clickable from "./Clickable";
-import VibeComponentProps from "../../types/VibeComponentProps";
-import VibeComponent from "../../types/VibeComponent";
+import l3ComponentProps from "../../types/l3ComponentProps";
+import l3Component from "../../types/l3Component";
 import { ClickableProps } from "../Clickable/Clickable";
-interface ClickableWrapperProps extends VibeComponentProps {
+interface ClickableWrapperProps extends l3ComponentProps {
   children: React.ReactNode;
   isClickable: boolean;
   clickableProps: ClickableProps;
 }
 
-const ClickableWrapper: VibeComponent<ClickableWrapperProps, HTMLElement> = forwardRef(
+const ClickableWrapper: l3Component<ClickableWrapperProps, HTMLElement> = forwardRef(
   ({ children, isClickable = true, clickableProps = {} }, ref) => {
     if (!isClickable) {
       return <>{children}</>;

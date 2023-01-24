@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { BASE_TOGGLE_CLASS_NAME } from "./ToggleConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 
-interface ToggleTextProps extends VibeComponentProps {
+interface ToggleTextProps extends l3ComponentProps {
   children: string;
 }
 

@@ -6,12 +6,12 @@ import ModalContent from "../ModalContent/ModalContent";
 import ModalHeader from "../ModalHeader/ModalHeader";
 import useBodyScrollLock from "./useBodyScrollLock";
 import useShowHideModal from "./useShowHideModal";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { isModalContent, isModalFooter, isModalHeader, ModalWidth, validateTitleProp } from "./ModalHelper";
 import { NOOP } from "../../utils/function-utils";
 import styles from "./Modal.module.scss";
 
-interface ModalProps extends VibeComponentProps {
+interface ModalProps extends l3ComponentProps {
   /**
    * Id of the modal, used internally and for accessibility
    */

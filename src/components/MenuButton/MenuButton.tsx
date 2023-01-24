@@ -7,7 +7,7 @@ import Tooltip from "../Tooltip/Tooltip";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import { BUTTON_ICON_SIZE } from "../Button/ButtonConstants";
-import { VibeComponent, VibeComponentProps } from "../../types";
+import { l3Component, l3ComponentProps } from "../../types";
 import { MenuButtonComponentPosition, MenuButtonSize } from "./MenuButtonConstants";
 import { AnimationType, DialogOffset, DialogPosition } from "../../constants";
 import { HideShowEvent } from "../Dialog/consts/dialog-show-hide-event";
@@ -26,7 +26,7 @@ const showTrigger = [HideShowEvent.CLICK, HideShowEvent.ENTER];
 const EMPTY_ARRAY: HideShowEvent[] = [];
 const MOVE_BY = { main: 0, secondary: -6 };
 
-interface MenuButtonProps extends VibeComponentProps {
+interface MenuButtonProps extends l3ComponentProps {
   /**
    * Backward compatibility for props naming
    */
@@ -113,7 +113,7 @@ interface MenuButtonProps extends VibeComponentProps {
   componentPosition?: typeof MenuButtonComponentPosition[keyof typeof MenuButtonComponentPosition];
 }
 
-const MenuButton: VibeComponent<MenuButtonProps> & {
+const MenuButton: l3Component<MenuButtonProps> & {
   sizes?: MenuButtonSize;
   paddingSizes?: typeof DialogContentContainer.sizes;
   dialogPositions?: typeof DialogPosition;

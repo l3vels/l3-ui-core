@@ -4,7 +4,7 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import { SIZES } from "../../constants/sizes";
 import { keyCodes } from "../../constants/keyCodes";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import "./ListItem.scss";
 
@@ -14,7 +14,7 @@ function BEMHelper(state: string) {
   return `${BEM_BASE_CLASS}--${state}`;
 }
 
-export interface ListItemProps extends VibeComponentProps {
+export interface ListItemProps extends l3ComponentProps {
   /**
    * The textual content of the list item
    */

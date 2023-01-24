@@ -24,11 +24,11 @@ import {
   ROUNDED,
   SHADOW
 } from "./BoxConstants";
-import { VibeComponentProps } from "../../types";
-import VibeComponent from "../../types/VibeComponent";
+import { l3ComponentProps } from "../../types";
+import l3Component from "../../types/l3Component";
 import styles from "./Box.module.scss";
 
-interface BoxProps extends VibeComponentProps {
+interface BoxProps extends l3ComponentProps {
   elementType?: keyof JSX.IntrinsicElements | string;
   children?: ReactElement | ReactElement[];
   disabled?: boolean;
@@ -54,7 +54,7 @@ interface BoxProps extends VibeComponentProps {
   textColor?: typeof COLORS;
 }
 
-const Box: VibeComponent<BoxProps> & {
+const Box: l3Component<BoxProps> & {
   borders?: typeof BORDER;
   borderColors?: typeof BORDER_COLOR;
   roundeds?: typeof ROUNDED;

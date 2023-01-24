@@ -3,13 +3,13 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import { VirtualizedListItems } from "./VirtualizedListItems/VirtualizedListItems";
 import { keyCodes } from "../../constants/keyCodes";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { ListItemProps } from "../ListItem/ListItem";
 import { ListTitleProps } from "../ListTitle/ListTitle";
 import { ListWrapperComponentType } from "./ListConstants";
 import "./List.scss";
 
-export interface ListProps extends VibeComponentProps {
+export interface ListProps extends l3ComponentProps {
   /**
    * the wrapping component to wrap the List Items [div, nav, ul, ol]
    */

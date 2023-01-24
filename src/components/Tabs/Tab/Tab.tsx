@@ -4,11 +4,11 @@ import { noop as NOOP } from "lodash-es";
 import cx from "classnames";
 import useMergeRefs from "../../../hooks/useMergeRefs";
 import Icon, { IconSubComponentProps } from "../../Icon/Icon";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import l3ComponentProps from "../../../types/l3ComponentProps";
 import { IconType } from "../../Icon/IconConstants";
 import "./Tab.scss";
 
-export interface TabProps extends VibeComponentProps {
+export interface TabProps extends l3ComponentProps {
   value?: number;
   disabled?: boolean;
   active?: boolean;

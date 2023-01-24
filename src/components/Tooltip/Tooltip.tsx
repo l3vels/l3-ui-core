@@ -6,14 +6,14 @@ import { isFunction } from "lodash-es";
 import Dialog from "../Dialog/Dialog";
 import { AnimationType, BASE_SIZES_WITH_NONE, HideShowEvent, JustifyType } from "../../constants";
 import { DialogPosition } from "../../constants/positions";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { TooltipArrowPosition, TooltipTheme } from "./TooltipConstants";
 import { ElementContent } from "../../types/ElementContent";
 import { MoveBy } from "../../types/MoveBy";
 import "./Tooltip.scss";
 
 // TODO TS-migration extend DialogProps, once Dialog is migrated to TS
-export interface TooltipProps extends VibeComponentProps {
+export interface TooltipProps extends l3ComponentProps {
   children: ReactElement | Array<ReactElement>;
   content: ElementContent;
   style?: CSSProperties;

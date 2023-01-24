@@ -5,13 +5,13 @@ import Tooltip from "../../../components/Tooltip/Tooltip";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
 import { BreadcrumbContent } from "./BreadcrumbContent/BreadcrumbContent";
 import { HideShowEvent } from "../../../constants";
-import { SubIcon, VibeComponentProps } from "../../../types";
+import { SubIcon, l3ComponentProps } from "../../../types";
 import "./BreadcrumbItem.scss";
 
 const MOUSEENTER = [HideShowEvent.MOUSE_ENTER];
 const MOUSELEAVE = [HideShowEvent.MOUSE_LEAVE];
 
-export interface BreadcrumbItemProps extends VibeComponentProps {
+export interface BreadcrumbItemProps extends l3ComponentProps {
   /** The display text. */
   text?: string;
   /** Should item be disabled. */

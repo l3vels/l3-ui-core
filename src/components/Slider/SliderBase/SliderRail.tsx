@@ -2,9 +2,9 @@ import React, { ForwardedRef, forwardRef, ReactElement } from "react";
 import { NOOP } from "../../../utils/function-utils";
 import { useSliderUi } from "../SliderContext";
 import { bem } from "../SliderHelpers";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import l3ComponentProps from "../../../types/l3ComponentProps";
 
-interface SliderRailProps extends VibeComponentProps {
+interface SliderRailProps extends l3ComponentProps {
   /**
    * Consumer/Custom/Extra `class names` to be added to the Component's-Root-Node
    */

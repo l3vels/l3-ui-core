@@ -12,12 +12,12 @@ import {
   isEscapeEvent,
   isTabEvent
 } from "../../utils/dom-event-utils";
-import VibeComponent from "../../types/VibeComponent";
-import { VibeComponentProps } from "../../types";
+import l3Component from "../../types/l3Component";
+import { l3ComponentProps } from "../../types";
 import { InputType } from "./EditableInputConstants";
 import "./EditableInput.scss";
 
-export interface EditableInputProps extends VibeComponentProps {
+export interface EditableInputProps extends l3ComponentProps {
   value?: string;
   placeholder?: string;
   inputType?: InputType;
@@ -47,7 +47,7 @@ export interface EditableInputProps extends VibeComponentProps {
   onTabHandler?: (value: string, event: React.KeyboardEvent) => void;
 }
 
-const EditableInput: VibeComponent<EditableInputProps> = forwardRef(
+const EditableInput: l3Component<EditableInputProps> = forwardRef(
   (
     {
       className,

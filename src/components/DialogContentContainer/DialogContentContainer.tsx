@@ -2,12 +2,12 @@ import React, { useRef, forwardRef } from "react";
 import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import { BEMClass } from "../../helpers/bem-helper";
-import VibeComponentProps from "src/types/VibeComponentProps";
-import VibeComponent from "src/types/VibeComponent";
+import l3ComponentProps from "src/types/l3ComponentProps";
+import l3Component from "src/types/l3Component";
 import { DialogSize, DialogType } from "./DialogContentContainerConstants";
 import "./DialogContentContainer.scss";
 
-interface DialogContentContainerProps extends VibeComponentProps {
+interface DialogContentContainerProps extends l3ComponentProps {
   children?: React.ReactNode;
   className?: string;
   ariaLabelledby?: string;
@@ -19,7 +19,7 @@ interface DialogContentContainerProps extends VibeComponentProps {
 
 const bemHelper = BEMClass("dialog-content-container");
 
-const DialogContentContainer: VibeComponent<DialogContentContainerProps> & {
+const DialogContentContainer: l3Component<DialogContentContainerProps> & {
   types?: typeof DialogType;
   sizes?: typeof DialogSize;
 } = forwardRef(

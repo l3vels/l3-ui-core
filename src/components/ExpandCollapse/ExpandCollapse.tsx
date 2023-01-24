@@ -3,12 +3,12 @@ import useMergeRefs from "../../hooks/useMergeRefs";
 import Icon from "../Icon/Icon";
 import Heading from "../Heading/Heading";
 import DropdownChevronDown from "../Icon/Icons/components/DropdownChevronDown";
-import { VibeComponentProps } from "../../types";
+import { l3ComponentProps } from "../../types";
 import cx from "classnames";
 import { ElementContent } from "../../types/ElementContent";
 import "./ExpandCollapse.scss";
 
-interface ExpandCollapseProps extends VibeComponentProps {
+interface ExpandCollapseProps extends l3ComponentProps {
   /**
    * Component as parameter to be rendered as header
    */

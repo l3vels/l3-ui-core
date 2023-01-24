@@ -3,11 +3,11 @@ import cx from "classnames";
 import IconButton from "../../components/IconButton/IconButton";
 import CloseSmall from "../../components/Icon/Icons/components/CloseSmall";
 import Icon, { IconSubComponentProps } from "../../components/Icon/Icon";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import styles from "./ModalHeader.module.scss";
 
-export interface ModalHeaderProps extends VibeComponentProps {
+export interface ModalHeaderProps extends l3ComponentProps {
   /**
    * Title of the modal
    */

@@ -1,12 +1,12 @@
 import React, { FC, forwardRef, ReactElement, useMemo, useRef } from "react";
 import cx from "classnames";
 import useMergeRefs from "../../../hooks/useMergeRefs";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import l3ComponentProps from "../../../types/l3ComponentProps";
 import { TabPanelsAnimationDirection } from "./TabPanelsConstants";
 import { TabPanelProps } from "../TabPanel/TabPanel";
 import "./TabPanels.scss";
 
-export interface TabPanelsProps extends VibeComponentProps {
+export interface TabPanelsProps extends l3ComponentProps {
   renderOnlyActiveTab?: boolean;
   activeTabId?: number;
   animationDirection?: TabPanelsAnimationDirection;

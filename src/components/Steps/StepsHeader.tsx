@@ -5,13 +5,13 @@ import { StepsCommand } from "./StepsCommand";
 import { StepsGalleryHeader, StepsGalleryHeaderProps } from "./StepsGalleryHeader";
 import { StepsNumbersHeader, StepsNumbersHeaderProps } from "./StepsNumbersHeader";
 import { STEPS_CSS_BASE_CLASS, StepsType } from "./StepsConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { ButtonProps } from "../Button/Button";
 
 const CSS_BASE_CLASS = `${STEPS_CSS_BASE_CLASS}-header`;
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
-export interface StepsHeaderProps extends VibeComponentProps {
+export interface StepsHeaderProps extends l3ComponentProps {
   type: StepsType;
   activeStepIndex: number;
   onChangeActiveStep: (e: React.MouseEvent, stepIndex: number) => void;
