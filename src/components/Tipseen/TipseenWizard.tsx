@@ -5,12 +5,12 @@ import Button from "../../components/Button/Button";
 import { BEMClass } from "../../helpers/bem-helper";
 import TipseenBasicContent from "./TipseenBasicContent";
 import styles from "./TipseenWizard.module.scss";
-import { l3ComponentProps } from "../../types";
+import { L3ComponentProps } from "../../types";
 
 const BASE_CSS_CLASS = "l3-style-tipseen-wizard";
 const bemHelper = BEMClass(BASE_CSS_CLASS);
 
-interface TipseenWizardProps extends l3ComponentProps {
+interface TipseenWizardProps extends L3ComponentProps {
   title?: string;
 }
 

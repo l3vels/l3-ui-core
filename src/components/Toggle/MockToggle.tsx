@@ -3,11 +3,11 @@ import cx from "classnames";
 import React, { FC } from "react";
 import { BEMClass } from "../../helpers/bem-helper";
 import { BASE_TOGGLE_CLASS_NAME } from "./ToggleConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
 const bemHelper = BEMClass(BASE_TOGGLE_CLASS_NAME);
 
-export interface MockToggleProps extends l3ComponentProps {
+export interface MockToggleProps extends L3ComponentProps {
   areLabelsHidden?: boolean;
   checked?: boolean;
   offOverrideText?: string;

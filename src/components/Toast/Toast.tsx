@@ -8,11 +8,11 @@ import ToastLink from "./ToastLink/ToastLink";
 import ToastButton from "./ToastButton/ToastButton";
 import { ToastAction, ToastActionType, ToastType } from "./ToastConstants";
 import { getIcon } from "./ToastHelpers";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import "./Toast.scss";
 
-interface ToastProps extends l3ComponentProps {
+interface ToastProps extends L3ComponentProps {
   actions?: ToastAction[];
   /** If true, Toast is open (visible) */
   open?: boolean;

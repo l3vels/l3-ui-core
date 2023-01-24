@@ -22,13 +22,13 @@ import usePopover from "../../../hooks/usePopover";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
 import useMenuItemMouseEvents from "./hooks/useMenuItemMouseEvents";
 import useMenuItemKeyboardEvents from "./hooks/useMenuItemKeyboardEvents";
-import { SubIcon, l3Component, l3ComponentProps } from "../../../types";
+import { SubIcon, L3Component, L3ComponentProps } from "../../../types";
 import { IconType } from "../../Icon/IconConstants";
 import { TAB_INDEX_FOCUS_WITH_JS_ONLY, TooltipPosition } from "./MenuItemConstants";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuItem.scss";
 
-export interface MenuItemProps extends l3ComponentProps {
+export interface MenuItemProps extends L3ComponentProps {
   title?: string;
   label?: string;
   icon?: SubIcon;
@@ -62,7 +62,7 @@ export interface MenuItemProps extends l3ComponentProps {
   children?: ReactElement | ReactElement[];
 }
 
-const MenuItem: l3Component<MenuItemProps> & {
+const MenuItem: L3Component<MenuItemProps> & {
   iconType?: typeof Icon.type;
   tooltipPositions?: typeof DialogPosition;
   isSelectable?: boolean;

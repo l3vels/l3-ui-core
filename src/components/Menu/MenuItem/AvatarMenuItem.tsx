@@ -1,9 +1,9 @@
 import React, { ForwardedRef, forwardRef, useCallback } from "react";
 import MenuItem, { MenuItemProps } from "./MenuItem";
 import Avatar, { AvatarProps } from "../../Avatar/Avatar";
-import l3ComponentProps from "../../../types/l3ComponentProps";
+import L3ComponentProps from "../../../types/L3ComponentProps";
 
-interface AvatarMenuItemProps extends l3ComponentProps {
+interface AvatarMenuItemProps extends L3ComponentProps {
   avatarProps?: AvatarProps;
   menuItemProps?: MenuItemProps;
 }

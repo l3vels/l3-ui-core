@@ -24,11 +24,11 @@ import {
   ROUNDED,
   SHADOW
 } from "./BoxConstants";
-import { l3ComponentProps } from "../../types";
-import l3Component from "../../types/l3Component";
+import { L3ComponentProps } from "../../types";
+import L3Component from "../../types/L3Component";
 import styles from "./Box.module.scss";
 
-interface BoxProps extends l3ComponentProps {
+interface BoxProps extends L3ComponentProps {
   elementType?: keyof JSX.IntrinsicElements | string;
   children?: ReactElement | ReactElement[];
   disabled?: boolean;
@@ -54,7 +54,7 @@ interface BoxProps extends l3ComponentProps {
   textColor?: typeof COLORS;
 }
 
-const Box: l3Component<BoxProps> & {
+const Box: L3Component<BoxProps> & {
   borders?: typeof BORDER;
   borderColors?: typeof BORDER_COLOR;
   roundeds?: typeof ROUNDED;

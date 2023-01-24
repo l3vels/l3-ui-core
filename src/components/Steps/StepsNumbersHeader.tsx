@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { STEPS_CSS_BASE_CLASS } from "./StepsConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
 const CSS_BASE_CLASS = `${STEPS_CSS_BASE_CLASS}-header_numbers`;
 
-export interface StepsNumbersHeaderProps extends l3ComponentProps {
+export interface StepsNumbersHeaderProps extends L3ComponentProps {
   activeStepIndex: number;
   stepsCount: number;
 }

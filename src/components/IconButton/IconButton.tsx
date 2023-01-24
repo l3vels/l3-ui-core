@@ -6,14 +6,14 @@ import Tooltip, { TooltipProps } from "../Tooltip/Tooltip";
 import Icon from "../Icon/Icon";
 import AddSmall from "../Icon/Icons/components/AddSmall";
 import { getWidthHeight, Size } from "./services/IconButton-helpers";
-import { SubIcon, l3Component, l3ComponentProps } from "../../types";
+import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import Button from "../Button/Button";
 import { BUTTON_ICON_SIZE, ButtonColor, ButtonType } from "../Button/ButtonConstants";
 import styles from "./IconButton.module.scss";
 
-export interface IconButtonProps extends l3ComponentProps {
+export interface IconButtonProps extends L3ComponentProps {
   /**
    * id to be added to the element
    */
@@ -74,7 +74,7 @@ export interface IconButtonProps extends l3ComponentProps {
   insetFocus?: boolean;
 }
 
-const IconButton: l3Component<IconButtonProps> & {
+const IconButton: L3Component<IconButtonProps> & {
   sizes?: typeof Button.sizes;
   kinds?: typeof Button.kinds;
   colors?: typeof Button.colors;

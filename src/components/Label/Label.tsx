@@ -3,7 +3,7 @@ import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import Leg from "./Leg";
 import "./Label.scss";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
 const LABEL_TYPES = {
   FILL: "fill",
@@ -20,7 +20,7 @@ const LABEL_COLORS = {
 type LabelTypes = typeof LABEL_TYPES;
 type LabelColors = typeof LABEL_COLORS;
 
-interface LabelProps extends l3ComponentProps {
+interface LabelProps extends L3ComponentProps {
   wrapperClassName?: string;
   kind?: LabelTypes[keyof LabelTypes];
   color?: LabelColors[keyof LabelColors];

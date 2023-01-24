@@ -1,8 +1,8 @@
 import cx from "classnames";
 import React, { forwardRef, ReactElement, useCallback, useMemo, useRef, useState } from "react";
-import l3ComponentProps from "src/types/l3ComponentProps";
+import L3ComponentProps from "src/types/L3ComponentProps";
 import useMergeRefs from "../../../hooks/useMergeRefs";
-import l3Component from "../../../types/l3Component";
+import L3Component from "../../../types/L3Component";
 import "./Accordion.scss";
 
 const COMPONENT_ID = "l3-accordion";
@@ -17,7 +17,7 @@ function defineChildId(index: number, props: { id: string }, accordionId: string
   return `${COMPONENT_ID}--item-${index}`;
 }
 
-interface AccordionProps extends l3ComponentProps {
+interface AccordionProps extends L3ComponentProps {
   /**
    * List of AccordionItems
    */
@@ -36,7 +36,7 @@ interface AccordionProps extends l3ComponentProps {
   defaultIndex?: Array<number>;
 }
 
-const Accordion: l3Component<AccordionProps> = forwardRef(
+const Accordion: L3Component<AccordionProps> = forwardRef(
   (
     {
       children: originalChildren = null,

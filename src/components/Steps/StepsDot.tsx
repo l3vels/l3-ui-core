@@ -2,13 +2,13 @@ import cx from "classnames";
 import { noop as NOOP } from "lodash-es";
 import { BEMClass } from "../../helpers/bem-helper";
 import { STEPS_CSS_BASE_CLASS, StepsDotAriaCurrent } from "./StepsConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import React, { FC } from "react";
 
 const CSS_BASE_CLASS = `${STEPS_CSS_BASE_CLASS}-header`;
 const bemHelper = BEMClass(CSS_BASE_CLASS);
 
-export interface StepsDotProps extends l3ComponentProps {
+export interface StepsDotProps extends L3ComponentProps {
   onClick?: (e: React.MouseEvent) => void;
   ariaCurrent?: StepsDotAriaCurrent | boolean;
   isActive?: boolean;

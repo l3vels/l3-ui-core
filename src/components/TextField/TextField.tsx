@@ -19,12 +19,12 @@ import Clickable from "../../components/Clickable/Clickable";
 import { getTestId } from "../../tests/test-ids-utils";
 import { NOOP } from "../../utils/function-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
-import { l3ComponentProps, l3Component } from "../../types";
+import { L3ComponentProps, L3Component } from "../../types";
 import "./TextField.scss";
 
 const EMPTY_OBJECT = { primary: "", secondary: "", layout: "" };
 
-interface TextFieldProps extends l3ComponentProps {
+interface TextFieldProps extends L3ComponentProps {
   placeholder?: string;
   /** See https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete for all of the available options */
   autoComplete?: string;
@@ -75,7 +75,7 @@ interface TextFieldProps extends l3ComponentProps {
   name?: string;
 }
 
-const TextField: l3Component<TextFieldProps, unknown> & {
+const TextField: L3Component<TextFieldProps, unknown> & {
   sizes?: typeof BASE_SIZES;
   types?: TextFieldTextType;
   feedbacks?: TextFieldFeedbackState;

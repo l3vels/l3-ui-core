@@ -10,13 +10,13 @@ import IconButton from "../IconButton/IconButton";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ChipsSize } from "./ChipsConstants";
 import { AvatarType } from "../Avatar/AvatarConstants";
-import { SubIcon, l3Component, l3ComponentProps } from "../../types";
+import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import useHover from "../../hooks/useHover";
 import ClickableWrapper from "../Clickable/ClickableWrapper";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import styles from "./Chips.module.scss";
 
-interface ChipsProps extends l3ComponentProps {
+interface ChipsProps extends L3ComponentProps {
   label?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -60,7 +60,7 @@ interface ChipsProps extends l3ComponentProps {
   isClickable?: boolean;
 }
 
-const Chips: l3Component<ChipsProps, HTMLElement> & {
+const Chips: L3Component<ChipsProps, HTMLElement> & {
   sizes?: typeof ChipsSize;
   colors?: typeof elementColorsNames;
 } = forwardRef<HTMLElement, ChipsProps>(
