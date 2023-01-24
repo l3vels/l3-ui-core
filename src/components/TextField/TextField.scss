@@ -144,7 +144,8 @@
         @include theme-prop(color, icon-color);
         will-change: transform;
         pointer-events: none;
-        transition: color var(--motion-productive-short) var(--motion-timing-enter), transform var(--motion-productive-short) var(--motion-timing-enter);
+        transition: color var(--motion-productive-short) var(--motion-timing-enter),
+          transform var(--motion-productive-short) var(--motion-timing-enter);
         font-size: 14px;
       }
     }
@@ -202,7 +203,7 @@
     }
 
     &.input-component__input-wrapper--size-small {
-      height: 32px;
+      height: $txt-field-sm;
       .input-component__input {
         @include font-input();
         &.input-component__input--has-icon {
@@ -214,7 +215,7 @@
     }
 
     &.input-component__input-wrapper--size-medium {
-      height: 40px;
+      height: $txt-field-md;
       .input-component__input {
         @include font-paragraph();
         &.input-component__input--has-icon {
@@ -241,7 +242,7 @@
     }
 
     &.input-component__input-wrapper--size-large {
-      height: 48px;
+      height: $txt-field-lg;
       .input-component__input {
         @include font-paragraph();
         &.input-component__input--has-icon {
@@ -266,7 +267,7 @@
       }
     }
 
-    .input-component__loader--container{
+    .input-component__loader--container {
       position: absolute;
       top: 50%;
       right: 4px;
@@ -277,15 +278,15 @@
       justify-content: center;
       align-items: center;
 
-      &.input-component__loader--container-has-icon{
+      &.input-component__loader--container-has-icon {
         right: 32px;
       }
 
-      .input-component__loader{
+      .input-component__loader {
         width: 16px;
         height: 16px;
 
-        .input-component__loader-svg{
+        .input-component__loader-svg {
           @include theme-prop(color, secondary-text-color);
         }
       }
@@ -293,14 +294,20 @@
   }
 }
 
-.input-component .input-component__input-wrapper .input-component__icon--container .input-component__icon{
+.input-component .input-component__input-wrapper .input-component__icon--container .input-component__icon {
   font-family: var(--font-family);
 }
 
-.input-component .input-component__input-wrapper.input-component__input-wrapper--size-medium .input-component__icon--container .input-component__icon{
+.input-component
+  .input-component__input-wrapper.input-component__input-wrapper--size-medium
+  .input-component__icon--container
+  .input-component__icon {
   font-family: var(--font-family);
 }
 
-.input-component .input-component__input-wrapper.input-component__input-wrapper--size-large .input-component__icon--container .input-component__icon{
+.input-component
+  .input-component__input-wrapper.input-component__input-wrapper--size-large
+  .input-component__icon--container
+  .input-component__icon {
   font-family: var(--font-family);
 }
