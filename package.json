@@ -1,5 +1,5 @@
 {
-  "name": "@l3vels/l3-ui-core",
+  "name": "@l3-lib/ui-core",
   "version": "0.0.2",
   "description": "Official l3vels.xyz UI resources for application development in React.js",
   "main": "./dist/main.js",

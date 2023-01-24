@@ -56,7 +56,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-impot { interactionSuite } from "@l3vels/l3-ui-core/interaction-tests"
+impot { interactionSuite } from "@l3-lib/ui-core/interaction-tests"
 import { LoginForm } from './LoginForm';
 
 export default {
