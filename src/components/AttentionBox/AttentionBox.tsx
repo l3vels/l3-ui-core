@@ -30,6 +30,7 @@ interface AttentionBoxProps extends l3ComponentProps {
   withoutIcon?: boolean;
   onClose?: (event: React.MouseEvent) => void;
   compact?: boolean;
+  label?: string;
 }
 
 const AttentionBox: React.FC<AttentionBoxProps> & {
@@ -132,6 +133,7 @@ const AttentionBox: React.FC<AttentionBoxProps> & {
           ariaLabel="Close"
           icon={CloseSmall}
           onClick={onClose}
+          label="label"
         />
       )}
     </aside>

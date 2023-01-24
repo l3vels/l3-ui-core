@@ -205,6 +205,7 @@ const Chips: l3Component<ChipsProps, HTMLElement> & {
                 onClick={onDeleteCallback}
                 dataTestId={`${overrideDataTestId}-close`}
                 ref={iconButtonRef}
+                label="label"
               />
             )}
           </div>
