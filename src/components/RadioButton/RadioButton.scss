@@ -28,15 +28,19 @@
       // height: 1em;
       width: 20px;
       height: 20px;
-
       // border: 0.1em solid;
       // @include theme-prop(border-color, ui-border-color);
       border: 3.5px solid #000000;
       box-sizing: border-box;
       border-radius: 50%;
-
       // outline: 3.5px solid rgba(0, 0, 0, 0.2);
-
+      &--size {
+        &-small {
+          width: 12px;
+          height: 12px;
+          border-width: 2px;
+        }
+      }
       transition: border-width var(--motion-productive-medium) var(--motion-timing-enter);
       &:active {
         outline: 2.5px solid rgba(0, 0, 0, 0.2);
@@ -54,6 +58,20 @@
       }
     }
 
+    // &--size {
+    //   &-small {
+    //     .l3-style-radio-button-component {
+    //       &__radio-input-container {
+    //         &__radio-control {
+    //           width: 12px;
+    //           height: 12px;
+    //           border-width: 2px;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
     input:checked + &__radio-control {
       // @include theme-prop(border-color, primary-color);
       border-color: #4ca6f8;
@@ -63,42 +81,25 @@
         animation-duration: var(--motion-productive-medium);
         animation-timing-function: var(--motion-timing-enter);
         animation-fill-mode: forwards;
+        &--size {
+          &-small {
+            animation-name: radio-checked-animation-small;
+          }
+        }
+      }
+      &--size {
+        &-small {
+          border-width: 4px;
+        }
       }
     }
 
     input:disabled + &__radio-control {
-      // border: 0.5em solid;
-      // @include theme-prop(border-color, disabled-background-color);
-      border-radius: 50%;
-      border: 3.5px solid rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     input:checked:disabled + &__radio-control {
-      border: 6px solid;
-      // @include theme-prop(border-color, disabled-background-color);
-      // @include theme-prop(background-color, secondary-text-color);
       border-color: rgba(255, 255, 255, 0.2);
-      height: 1.1em;
-      width: 1.1em;
-    }
-
-    &--size {
-      &-small {
-        .l3-style-radio-button-component {
-          &__radio-input-container {
-            &__radio-control {
-              width: 12px;
-              height: 12px;
-              border-width: 2px;
-            }
-            // input:checked + &__radio-control {
-            //   // @include theme-prop(border-color, primary-color);
-            //   border-color: red;
-            //   // border-width: 1px;
-            // }
-          }
-        }
-      }
     }
   }
 
@@ -153,7 +154,7 @@
 
 @keyframes radio-checked-animation-small {
   100% {
-    height: 0.6em;
-    width: 0.6em;
+    height: 0.7em;
+    width: 0.7em;
   }
 }

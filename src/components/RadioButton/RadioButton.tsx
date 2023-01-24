@@ -79,8 +79,7 @@ const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
           <span
             className={cx(
               `${baseClassName}__radio-input-container`,
-              `${baseClassName}__radio-input-container--kind-${kind}`,
-              `${baseClassName}__radio-input-container--size-${size}`
+              `${baseClassName}__radio-input-container--kind-${kind}`
             )}
           >
             <input
@@ -94,9 +93,17 @@ const RadioButton: VibeComponent<RadioButtonProps, HTMLElement> = forwardRef(
               ref={mergedRef}
             />
             <span
-              className={cx(`${baseClassName}__radio-input-container__radio-control`, {
-                [`${baseClassName}__radio-input-container__radio-control--label-animation`]: !noLabelAnimation
-              })}
+              className={cx(
+                `${baseClassName}__radio-input-container__radio-control`,
+                `${baseClassName}__radio-input-container__radio-control--size-${size}`,
+                {
+                  [`${baseClassName}__radio-input-container__radio-control--label-animation`]: !noLabelAnimation
+                },
+                {
+                  [`${baseClassName}__radio-input-container__radio-control--label-animation--size-${size}`]:
+                    !noLabelAnimation
+                }
+              )}
             />
           </span>
           {text && <span className={`${baseClassName}__radio-label`}>{text}</span>}
