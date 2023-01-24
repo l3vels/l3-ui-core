@@ -11,7 +11,7 @@ import { BUTTON_ICON_SIZE, ButtonColor, ButtonInputType, ButtonType, getActualSi
 import { getParentBackgroundColorNotTransparent, TRANSPARENT_COLOR } from "./helper/dom-helpers";
 import { getTestId } from "../../tests/test-ids-utils";
 import { isIE11 } from "../../utils/user-agent-utils";
-import { SubIcon, VibeComponent } from "../../types";
+import { SubIcon, l3Component } from "../../types";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import "./Button.scss";
 
@@ -86,7 +86,7 @@ export interface ButtonProps {
   insetFocus?: boolean;
 }
 
-const Button: VibeComponent<ButtonProps, unknown> & {
+const Button: l3Component<ButtonProps, unknown> & {
   sizes?: typeof SIZES;
   colors?: typeof ButtonColor;
   kinds?: typeof ButtonType;

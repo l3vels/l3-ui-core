@@ -7,14 +7,14 @@ import AlertIcon from "../Icon/Icons/components/Alert";
 import { IconType } from "../Icon/IconConstants";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { AttentionBoxType } from "./AttentionBoxConstants";
-import { SubIcon, VibeComponentProps } from "../../types";
+import { SubIcon, l3ComponentProps } from "../../types";
 import "./AttentionBox.scss";
 import Heading from "../Heading/Heading";
 import Flex from "../Flex/Flex";
 
 const ATTENTION_BOX_CSS_BASE_CLASS = "l3-style-attention-box-component";
 
-interface AttentionBoxProps extends VibeComponentProps {
+interface AttentionBoxProps extends l3ComponentProps {
   className?: string;
   // Backward compatibility for props naming
   componentClassName?: string;

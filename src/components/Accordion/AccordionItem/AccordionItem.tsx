@@ -1,12 +1,12 @@
 import cx from "classnames";
 import React, { forwardRef, useCallback, useRef } from "react";
-import VibeComponentProps from "src/types/VibeComponentProps";
+import l3ComponentProps from "src/types/l3ComponentProps";
 import useMergeRefs from "../../../hooks/useMergeRefs";
 import ExpandCollapse from "../../ExpandCollapse/ExpandCollapse";
-import VibeComponent from "../../../types/VibeComponent";
+import l3Component from "../../../types/l3Component";
 import { ElementContent } from "../../../types/ElementContent";
 
-interface AccordionItemProps extends VibeComponentProps {
+interface AccordionItemProps extends l3ComponentProps {
   /**
    * Header title
    */
@@ -27,7 +27,7 @@ interface AccordionItemProps extends VibeComponentProps {
   onClickAccordionCallback?: () => void;
 }
 
-const AccordionItem: VibeComponent<AccordionItemProps> = forwardRef(
+const AccordionItem: l3Component<AccordionItemProps> = forwardRef(
   (
     { children = null, title = "", className = "", iconSize = 24, id, open, onClick, onClickAccordionCallback },
     ref

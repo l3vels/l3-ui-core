@@ -1,9 +1,9 @@
 import React, { FC, ReactElement } from "react";
 import cx from "classnames";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import classes from "./ModalContent.module.scss";
 
-interface ModalContentProps extends VibeComponentProps {
+interface ModalContentProps extends l3ComponentProps {
   children: ReactElement | ReactElement[] | string;
 }
 

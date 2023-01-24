@@ -1,11 +1,11 @@
 import cx from "classnames";
-import { VibeComponentProps } from "../../types";
+import { l3ComponentProps } from "../../types";
 import { FC } from "react";
 import styles from "./TipseenImage.module.scss";
 
 const BASE_CSS_CLASS = "l3-style-tipseen-image";
 
-interface TipseenImageProps extends VibeComponentProps {
+interface TipseenImageProps extends l3ComponentProps {
   // Better be required, but it might be a breaking change
   src?: string | undefined;
   // Better be required, but it might be a breaking change

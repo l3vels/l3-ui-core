@@ -7,7 +7,7 @@ import { getTestId } from "../../tests/test-ids-utils";
 import CloseIcon from "../Icon/Icons/components/CloseSmall";
 import SearchIcon from "../Icon/Icons/components/Search";
 import { NOOP } from "../../utils/function-utils";
-import { SubIcon, VibeComponentProps, VibeComponent } from "../../types";
+import { SubIcon, l3ComponentProps, l3Component } from "../../types";
 import { TextFieldTextType } from "../TextField/TextFieldConstants";
 import { BASE_SIZES } from "../../constants";
 import { ComponentDefaultTestId } from "../../tests/constants";
@@ -18,7 +18,7 @@ function getType(type: SearchType) {
   return SearchTypeClass[type] || "";
 }
 
-export interface SearchProps extends VibeComponentProps {
+export interface SearchProps extends l3ComponentProps {
   secondaryIconName?: SubIcon;
   iconName?: SubIcon;
   onChange?: () => void;
@@ -55,7 +55,7 @@ export interface SearchProps extends VibeComponentProps {
   loading?: boolean;
 }
 
-const Search: VibeComponent<SearchProps, unknown> & {
+const Search: l3Component<SearchProps, unknown> & {
   sizes?: typeof BASE_SIZES;
   types?: typeof SearchType;
 } = forwardRef<unknown, SearchProps>(

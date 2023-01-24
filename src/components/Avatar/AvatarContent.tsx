@@ -3,13 +3,13 @@ import cx from "classnames";
 import { BEMClass } from "../../helpers/bem-helper";
 import { AvatarSize, AvatarType } from "./AvatarConstants";
 import Icon from "../Icon/Icon";
-import { SubIcon, VibeComponentProps } from "../../types";
+import { SubIcon, l3ComponentProps } from "../../types";
 import "./AvatarContent.scss";
 
 const AVATAR_CONTENT_CSS_BASE_CLASS = "l3-style-avatar-content";
 const bemHelper = BEMClass(AVATAR_CONTENT_CSS_BASE_CLASS);
 
-interface AvatarContentProps extends VibeComponentProps {
+interface AvatarContentProps extends l3ComponentProps {
   src?: string;
   type?: AvatarType;
   size?: AvatarSize;

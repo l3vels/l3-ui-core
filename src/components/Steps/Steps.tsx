@@ -5,14 +5,14 @@ import { NOOP } from "../../utils/function-utils";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import { StepsHeader } from "./StepsHeader";
 import { STEPS_CSS_BASE_CLASS, StepsType } from "./StepsConstants";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { ButtonProps } from "../Button/Button";
-import VibeComponent from "../../types/VibeComponent";
+import l3Component from "../../types/l3Component";
 import "./Steps.scss";
 
 const bemHelper = BEMClass(STEPS_CSS_BASE_CLASS);
 
-export interface StepsProps extends VibeComponentProps {
+export interface StepsProps extends l3ComponentProps {
   /**
    * The index of the current displayed step
    */
@@ -31,7 +31,7 @@ export interface StepsProps extends VibeComponentProps {
   nextButtonProps?: ButtonProps;
 }
 
-const Steps: VibeComponent<StepsProps> & { types?: typeof StepsType } = forwardRef(
+const Steps: l3Component<StepsProps> & { types?: typeof StepsType } = forwardRef(
   (
     {
       className,

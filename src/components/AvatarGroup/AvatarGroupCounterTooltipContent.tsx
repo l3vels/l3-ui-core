@@ -4,12 +4,12 @@ import Flex from "../Flex/Flex";
 import { AvatarProps } from "../Avatar/Avatar";
 import AvatarGroupCounterTooltipContentVirtualizedList from "./AvatarGroupCounterTooltipContentVirtualizedList";
 import { avatarRenderer } from "./AvatarGroupCounterTooltipHelper";
-import VibeComponentProps from "../../types/VibeComponentProps";
+import l3ComponentProps from "../../types/l3ComponentProps";
 import { AvatarType } from "../Avatar/AvatarConstants";
 import { FlexDirection, FlexGap } from "../Flex/FlexConstants";
 import styles from "./AvatarGroupCounterTooltipContent.module.scss";
 
-interface AvatarGroupCounterTooltipContentProps extends VibeComponentProps {
+interface AvatarGroupCounterTooltipContentProps extends l3ComponentProps {
   className?: string;
   type?: AvatarType;
   /**

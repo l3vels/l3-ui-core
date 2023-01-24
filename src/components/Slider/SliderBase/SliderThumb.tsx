@@ -5,11 +5,11 @@ import Tooltip from "../../Tooltip/Tooltip";
 import { TOOLTIP_SHOW_DELAY } from "../SliderConstants";
 import { bem } from "../SliderHelpers";
 import { useSliderActions, useSliderSelection, useSliderUi } from "../SliderContext";
-import VibeComponentProps from "../../../types/VibeComponentProps";
+import l3ComponentProps from "../../../types/l3ComponentProps";
 
 const tooltipPosition = DialogPosition.TOP;
 
-export interface SliderThumbProps extends VibeComponentProps {
+export interface SliderThumbProps extends l3ComponentProps {
   /**
    * Consumer/Custom/Extra `class names` to be added to the Component's-Root-Node
    */

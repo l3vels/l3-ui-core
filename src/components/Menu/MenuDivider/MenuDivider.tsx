@@ -1,10 +1,10 @@
 import Divider from "../../Divider/Divider";
 import { backwardCompatibilityForProperties } from "../../../helpers/backwardCompatibilityForProperties";
-import { VibeComponentProps } from "../../../types";
+import { l3ComponentProps } from "../../../types";
 import { FC } from "react";
 import "./MenuDivider.scss";
 
-interface MenuDividerProps extends VibeComponentProps {
+interface MenuDividerProps extends l3ComponentProps {
   /** Backward compatibility for props naming **/
   classname?: string;
 }

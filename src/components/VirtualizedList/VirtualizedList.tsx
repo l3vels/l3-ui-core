@@ -25,8 +25,8 @@ import {
 } from "../../services/virtualized-service";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
-import VibeComponentProps from "src/types/VibeComponentProps";
-import VibeComponent from "../../types/VibeComponent";
+import l3ComponentProps from "src/types/l3ComponentProps";
+import l3Component from "../../types/l3Component";
 import "./VirtualizedList.scss";
 
 export type VirtualizedListItem = {
@@ -37,7 +37,7 @@ export type VirtualizedListItem = {
   offsetTop?: number;
 };
 
-interface VirtualizedListProps extends VibeComponentProps {
+interface VirtualizedListProps extends l3ComponentProps {
   /**
    * class name to add to the component scrollable container
    */
@@ -131,7 +131,7 @@ interface VirtualizedListProps extends VibeComponentProps {
   onScroll?: (horizontalScrollDirection: ScrollDirection, scrollTop: number, scrollUpdateWasRequested: boolean) => void;
 }
 
-const VirtualizedList: VibeComponent<VirtualizedListProps> = forwardRef(
+const VirtualizedList: l3Component<VirtualizedListProps> = forwardRef(
   (
     {
       className,

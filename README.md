@@ -10,22 +10,22 @@
 ## Installation
 Install the component library
 ```
-$ npm install @l3vels/ui
+$ npm install @l3-lib/ui-core
 ```
 
 ## Usage
 You can import from the main bundle:
 ```javascript
-import { Button } from "@l3vels/ui";
+import { Button } from "@l3-lib/ui-core";
 ```
 or you might want to import directly the component from the dist folder
 ```javascript
-import Button from "@l3vels/ui/dist/Button";
+import Button from "@l3-lib/ui-core/dist/Button";
 ```
 
 You also need to import Main CSS file to your project
 ```javascript 
-import "@l3vels/ui/dist/main.css"
+import "@l3-lib/ui-core/dist/main.css"
 ```
 
 ### Peer dependecies
@@ -38,7 +38,7 @@ run this to build & run the storybook locally:
 ```bash
 npm run storybook
 ```
-the storybook will be served on `http://localhost:7007`
+the storybook will be served on `http://localhost:6006`
 
 
 ## Developing locally with your consumer application
@@ -70,5 +70,5 @@ We support theming from the library to the component level using css variables -
 Perform the following steps to **release** a **new version**:
 * Bump the version in `package.json`
 * Merge into `origin/master`
-* [Release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) the new version in the [@l3vels/ui
+* [Release](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/managing-releases-in-a-repository) the new version in the [@l3-lib/ui-core
 ](https://github.com/l3vels/l3-ui-core)
