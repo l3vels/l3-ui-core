@@ -5,7 +5,7 @@ $box-shadow-medium: 0px 6px 20px -2px rgba(0, 0, 0, 0.2);
 $box-shadow-large: 0px 15px 50px -10px rgba(0, 0, 0, 0.3);
 
 $border-radius-extra-small: 2px;
-$border-radius-small: 4px;
+$border-radius-small: 6px;
 $border-radius-medium: 8px;
 $border-radius-big: 60px;
 $border-radius-extra-big: 50%;
@@ -41,6 +41,9 @@ $secondary-btn-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.2);
 $txt-field-sm: 44px;
 $txt-field-md: 48px;
 $txt-field-lg: 56px;
+
+// text field shadows
+$active-text-field-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);

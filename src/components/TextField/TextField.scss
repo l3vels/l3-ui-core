@@ -60,27 +60,30 @@
       height: 100%;
       outline: 0;
       background-color: transparent;
-      border: 1px solid;
-      @include theme-prop(border-color, ui-border-color);
+      border: 2px solid transparent;
       border-radius: $border-radius-small;
       transition: border-color var(--motion-productive-medium) ease-in;
       padding: $spacing-small $spacing-medium;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      @include theme-prop(color, primary-text-color);
+      font-weight: 500 !important; // todo remove after update typograph
+      @include theme-prop(background-color, text-field-bg-color);
+      @include theme-prop(color, text-field-label-color, true);
       &.input-component__input--hover {
         @include theme-prop(border-color, primary-text-color);
       }
       &:focus,
       &:active,
       &.input-component__input--active {
-        @include theme-prop(border-color, primary-color);
+        @include theme-prop(border-color, text-field-border-color-active);
+        @include theme-prop(background-color, text-field-bg-color-active);
+        box-shadow: $active-text-field-shadow;
       }
 
       &::placeholder {
-        @include theme-prop(color, secondary-text-color);
-        font-weight: 400;
+        @include theme-prop(color, text-field-placeholder-color);
+        font-weight: 500;
       }
 
       &.input-component__input--has-icon {
@@ -153,14 +156,14 @@
     &.input-component__input--error-validation {
       &:hover {
         .input-component__input {
-          @include theme-prop(border-color, negative-color);
+          @include theme-prop(border-color, negative-border-color);
         }
       }
       .input-component__input {
-        @include theme-prop(border-color, negative-color);
+        @include theme-prop(border-color, negative-border-color);
         &:focus,
         &:active {
-          @include theme-prop(border-color, negative-color);
+          @include theme-prop(border-color, negative-border-color);
         }
       }
       .input-component__icon--container .input-component__icon {
@@ -179,14 +182,14 @@
     &.input-component__input--success-validation {
       &:hover {
         .input-component__input {
-          @include theme-prop(border-color, positive-color);
+          @include theme-prop(border-color, positive-border-color);
         }
       }
       .input-component__input {
-        @include theme-prop(border-color, positive-color);
+        @include theme-prop(border-color, positive-border-color);
         &:focus,
         &:active {
-          @include theme-prop(border-color, positive-color);
+          @include theme-prop(border-color, positive-border-color);
         }
       }
       .input-component__icon--container .input-component__icon {
@@ -261,11 +264,11 @@
       }
     }
 
-    &:hover {
-      .input-component__input {
-        @include theme-prop(border-color, primary-text-color);
-      }
-    }
+    // &:hover {
+    //   .input-component__input {
+    //     @include theme-prop(border-color, primary-text-color);
+    //   }
+    // }
 
     .input-component__loader--container {
       position: absolute;

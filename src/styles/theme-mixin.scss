@@ -19,8 +19,6 @@ $ui-grey: #e6e9ef;
 $asphalt: #676879;
 $higlight: #dff0ff;
 
-
-
 // l3 colors  palette
 $black: #000000;
 $black-1: rgba(0, 0, 0, 0.1);
@@ -33,52 +31,54 @@ $black-7: rgba(0, 0, 0, 0.7);
 $black-8: rgba(0, 0, 0, 0.8);
 $black-9: rgba(0, 0, 0, 0.9);
 
-$white: #FFFFFF;
-$white-1:  rgba(255, 255, 255, 0.1);
-$white-2:  rgba(255, 255, 255, 0.2);
-$white-3:  rgba(255, 255, 255, 0.3);
-$white-4:  rgba(255, 255, 255, 0.4);
-$white-5:  rgba(255, 255, 255, 0.5);
-$white-6:  rgba(255, 255, 255, 0.6);
-$white-7:  rgba(255, 255, 255, 0.7);
-$white-8:  rgba(255, 255, 255, 0.8);
-$white-9:  rgba(255, 255, 255, 0.9);
+$white: #ffffff;
+$white-1: rgba(255, 255, 255, 0.1);
+$white-2: rgba(255, 255, 255, 0.2);
+$white-3: rgba(255, 255, 255, 0.3);
+$white-4: rgba(255, 255, 255, 0.4);
+$white-5: rgba(255, 255, 255, 0.5);
+$white-6: rgba(255, 255, 255, 0.6);
+$white-7: rgba(255, 255, 255, 0.7);
+$white-8: rgba(255, 255, 255, 0.8);
+$white-9: rgba(255, 255, 255, 0.9);
 
+$green-200: #bff4b7;
+
+$red-300: #f0a19f;
 
 $theme: (
-  // primary colors 
-
+  // primary colors
   "primary-background-color": $black,
   "primary-text-on-primary": $white,
   "primary-hover-color": $black-5,
   "primary-text-color-btn": $white,
   "primary-background-color-disabled": $white-2,
   "primary-text-color-disabled": $white-3,
-  
 
-  // disabled colors 
+  // disabled colors
   "disabled-background-color": $white-2,
   "disabled-text-color": $white-4,
 
-
-  // secondary colors 
+  // secondary colors
   "secondary-background-color": $white-6,
   "secondary-text-color": $black-7,
   "secondary-hover-color": $white-3,
   "secondary-background-color-disabled": $white-2,
   "secondary-text-color-disabled": $black-3,
-  
 
-
-  // tertiary colors 
+  // tertiary colors
   "tertiary-text-color": $white,
   "tertiary-hover-color": $white-1,
   "tertiary-text-color-disabled": $white-3,
   "tertiary-active-color": $white-2,
 
-
-
-
+  // text-field-colors
+  "text-field-bg-color": $white-2,
+  "text-field-label-color": $white,
+  "text-field-disable-label-color": $white-4,
+  "text-field-placeholder-color": $white-2,
+  "text-field-border-color-active": $black-2,
+  "text-field-bg-color-active": $white-3,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,
@@ -87,6 +87,8 @@ $theme: (
   "primary-background-hover-color": $wolf-gray,
   "text-color-on-primary": $snow-white,
 
+  "positive-border-color": $green-200,
+  "negative-border-color": $red-300,
 
   "positive-color": $success,
   "negative-color": $error,
