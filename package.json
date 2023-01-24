@@ -26,7 +26,7 @@
     "build:storybook-exports": "./scripts/build-storybook-exports.js",
     "build:commonjs": "webpack --mode production --config webpack/default.config.js",
     "build:esm": "rollup -c",
-    "build:react-icons": "svg2react-icon --typescript --keep-colors node_modules/@l3vels/l3-ui-style/src/Icons src/components/Icon/Icons",
+    "build:react-icons": "svg2react-icon --typescript --keep-colors node_modules/@l3-lib/ui-style/src/Icons src/components/Icon/Icons",
     "storybook": "storybook=true start-storybook -p 6006",
     "build-storybook": "storybook=true build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
@@ -57,7 +57,7 @@
   },
   "homepage": "https://github.com/l3vels/l3-ui-core#readme",
   "dependencies": {
-    "@l3vels/l3-ui-style": "^0.0.3",
+    "@l3-lib/ui-style": "^0.0.4",
     "@popperjs/core": "2.11.6",
     "a11y-dialog": "^7.5.2",
     "autosize": "^5.0.1",
