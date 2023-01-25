@@ -1,13 +1,13 @@
 import { FC } from "react";
 import cx from "classnames";
 import TipseenTitle from "./TipseenTitle";
-import { l3ComponentProps } from "../../types";
+import { L3ComponentProps } from "../../types";
 import { ElementContent } from "../../types/ElementContent";
 import styles from "./TipseenBasicContent.module.scss";
 
 const BASE_CSS_CLASS = "l3-style-tipseen-basic-content";
 
-interface TipseenBasicContentProps extends l3ComponentProps {
+interface TipseenBasicContentProps extends L3ComponentProps {
   title?: string;
   children?: ElementContent | ElementContent[];
 }

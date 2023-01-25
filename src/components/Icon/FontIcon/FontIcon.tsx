@@ -1,8 +1,8 @@
 import React, { AriaRole, forwardRef } from "react";
 import classNames from "classnames";
-import { SubIcon, l3Component, l3ComponentProps } from "../../../types";
+import { SubIcon, L3Component, L3ComponentProps } from "../../../types";
 
-interface FontIconProps extends l3ComponentProps {
+interface FontIconProps extends L3ComponentProps {
   onClick?: (event: React.MouseEvent<HTMLSpanElement>) => void;
   "aria-label"?: string;
   tabIndex?: number;
@@ -11,7 +11,7 @@ interface FontIconProps extends l3ComponentProps {
   "aria-hidden"?: boolean;
 }
 
-const FontIcon: l3Component<FontIconProps, HTMLElement> = forwardRef(
+const FontIcon: L3Component<FontIconProps, HTMLElement> = forwardRef(
   (
     {
       id,

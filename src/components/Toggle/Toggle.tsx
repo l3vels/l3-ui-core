@@ -6,12 +6,12 @@ import { MockToggle } from "./MockToggle";
 import { BEMClass } from "../../helpers/bem-helper";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { BASE_TOGGLE_CLASS_NAME, ToggleSize, ToggleType } from "./ToggleConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./Toggle.scss";
 
 const bemHelper = BEMClass(BASE_TOGGLE_CLASS_NAME);
 
-interface ToggleProps extends l3ComponentProps {
+interface ToggleProps extends L3ComponentProps {
   // Backward compatibility for props naming
   componentClassName?: string;
   isDefaultSelected?: boolean;

@@ -6,7 +6,7 @@ import MenuButton from "../MenuButton/MenuButton";
 import Menu from "../Menu/Menu/Menu";
 import AvatarMenuItem from "../Menu/MenuItem/AvatarMenuItem";
 import AvatarGroupCounterTooltipContainer from "./AvatarGroupCounterTooltipContainer";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { AvatarSize, AvatarType } from "../Avatar/AvatarConstants";
 import { getStyle } from "../../helpers/typesciptCssModulesHelper";
 import { AvatarGroupCounterVisualProps } from "./AvatarGroup";
@@ -14,7 +14,7 @@ import { TooltipProps } from "../Tooltip/Tooltip";
 import { avatarOnClick } from "./AvatarGroupHelper";
 import styles from "./AvatarGroupCounter.module.scss";
 
-interface AvatarGroupCounterProps extends l3ComponentProps {
+interface AvatarGroupCounterProps extends L3ComponentProps {
   /**
    * Array of Avatar elements
    */

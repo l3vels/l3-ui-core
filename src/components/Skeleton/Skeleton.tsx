@@ -8,13 +8,13 @@ import {
   SKELETON_SIZES,
   SKELETON_TYPES
 } from "./SkeletonConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import "./Skeleton.scss";
 
 const SKELETON_CSS_BASE_CLASS = "l3-style-skeleton";
 const bemHelper = BEMClass(SKELETON_CSS_BASE_CLASS);
 
-interface SkeletonProps extends l3ComponentProps {
+interface SkeletonProps extends L3ComponentProps {
   type?: keyof typeof SKELETON_TYPES;
   size?: keyof typeof SKELETON_ALLOWED_SIZES;
   width?: number;

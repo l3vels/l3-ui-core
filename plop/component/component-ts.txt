@@ -1,20 +1,20 @@
 import React, { forwardRef, useRef } from "react";
 import cx from "classnames";
 import { useMergeRefs } from "../../hooks";
-import l3ComponentProps from "../../types/l3ComponentProps";
-import l3Component from "../../types/l3Component";
+import L3ComponentProps from "../../types/L3ComponentProps";
+import L3Component from "../../types/L3Component";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import styles from "./{{properCase componentName}}.module.scss";
 
-export interface {{properCase componentName}}Props extends l3ComponentProps {
+export interface {{properCase componentName}}Props extends L3ComponentProps {
   /**
    * some custom prop
    */
   customProp?: string;
 }
 
-const {{properCase componentName}}: l3Component<{{properCase componentName}}Props, HTMLElement> = forwardRef(
+const {{properCase componentName}}: L3Component<{{properCase componentName}}Props, HTMLElement> = forwardRef(
   ({ className, id, "data-testid": dataTestId, customProp = "defaultValue" }, ref) => {
     const componentRef = useRef(null);
     const mergedRef = useMergeRefs({ refs: [ref, componentRef] });

@@ -1,11 +1,11 @@
 import React, { FC, ReactElement, useMemo, useRef } from "react";
 import cx from "classnames";
 import { useSwitchChecked } from "./hooks/useSwitchChecked";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { MockToggleProps } from "../Toggle/MockToggle";
 import classes from "./Switch.module.scss";
 
-interface SwitchProps extends l3ComponentProps {
+interface SwitchProps extends L3ComponentProps {
   name?: string;
   value?: string;
   role?: string;

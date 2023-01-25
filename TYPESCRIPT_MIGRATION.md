@@ -8,12 +8,12 @@ While starting migrating components on your own, please pay attention to the fol
 
 ### Types and interfaces
 1. If you want to add any general types or interfaces relevant to more than one component during the conversion, please add them to src/types.
-2. Please ensure your component props interface extends l3ComponentProps or another type that extends `l3ComponentProps`. If your component does not support one of the props written in the l3ComponentProps interface, please add it (`id`, `className`, `data-testid`…)
+2. Please ensure your component props interface extends L3ComponentProps or another type that extends `L3ComponentProps`. If your component does not support one of the props written in the L3ComponentProps interface, please add it (`id`, `className`, `data-testid`…)
 3. If your component is clickable, please also consider using `VibeBaseButtonComponentProps`. If some of the aria props are not relevant to the element that you are migrating, it's also OK not to use them (for example, in the menu button, some of the props are not relevant because the menu will always open a pop-up).
 4If your component is an extension of another component (like IconButton is an extension of the button), you can extend its props interface directly.
 
 ### Props
-1. If your component's props contain a prop with the same meaning as in l3ComponentProps  but with different naming, please do the following:
+1. If your component's props contain a prop with the same meaning as in L3ComponentProps  but with different naming, please do the following:
    1. Keep the old naming but mark the prop as deprecated.
    2. Add support for the prop with the new naming. You can see an example in the icon component.
 2. Please set the default props of the component to be part of the component signature and delete the component propsTypes and defaultProps. 

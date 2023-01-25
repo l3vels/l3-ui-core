@@ -25,8 +25,8 @@ import {
 } from "../../services/virtualized-service";
 import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
-import l3ComponentProps from "src/types/l3ComponentProps";
-import l3Component from "../../types/l3Component";
+import L3ComponentProps from "src/types/L3ComponentProps";
+import L3Component from "../../types/L3Component";
 import "./VirtualizedList.scss";
 
 export type VirtualizedListItem = {
@@ -37,7 +37,7 @@ export type VirtualizedListItem = {
   offsetTop?: number;
 };
 
-interface VirtualizedListProps extends l3ComponentProps {
+interface VirtualizedListProps extends L3ComponentProps {
   /**
    * class name to add to the component scrollable container
    */
@@ -131,7 +131,7 @@ interface VirtualizedListProps extends l3ComponentProps {
   onScroll?: (horizontalScrollDirection: ScrollDirection, scrollTop: number, scrollUpdateWasRequested: boolean) => void;
 }
 
-const VirtualizedList: l3Component<VirtualizedListProps> = forwardRef(
+const VirtualizedList: L3Component<VirtualizedListProps> = forwardRef(
   (
     {
       className,

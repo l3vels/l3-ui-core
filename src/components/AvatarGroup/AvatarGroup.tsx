@@ -2,7 +2,7 @@ import React, { ReactElement, useMemo } from "react";
 import cx from "classnames";
 import { AvatarProps } from "../Avatar/Avatar";
 import AvatarGroupCounter from "./AvatarGroupCounter";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { AvatarSize, AvatarType } from "../Avatar/AvatarConstants";
 import { CounterColor } from "../Counter/CounterConstants";
 import { avatarOnClick } from "./AvatarGroupHelper";
@@ -17,7 +17,7 @@ export type AvatarGroupCounterVisualProps = {
   ariaLabelItemsName?: string;
 };
 
-interface AvatarGroupProps extends l3ComponentProps {
+interface AvatarGroupProps extends L3ComponentProps {
   avatarClassName?: string;
   /**
    * Array of `Avatar` components

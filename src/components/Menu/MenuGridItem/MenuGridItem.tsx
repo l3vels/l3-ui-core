@@ -5,11 +5,11 @@ import { GridKeyboardNavigationContext } from "../../GridKeyboardNavigationConte
 import { useMenuGridItemNavContext } from "./useMenuGridItemNavContext";
 import { useFocusGridItemByActiveStatus } from "./useFocusGridItemByActiveStatus";
 import { useFocusWithin } from "../../../hooks/useFocusWithin";
-import { l3Component, l3ComponentProps } from "../../../types";
+import { L3Component, L3ComponentProps } from "../../../types";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuGridItem.scss";
 
-interface MenuGridItemProps extends l3ComponentProps {
+interface MenuGridItemProps extends L3ComponentProps {
   children?: ReactElement | ReactElement[];
   /** if true, keyboard navigation will skip on this item. Also, this prop will be passed on to the child **/
   disabled?: boolean;
@@ -28,7 +28,7 @@ interface MenuGridItemProps extends l3ComponentProps {
   useDocumentEventListeners?: boolean;
 }
 
-const MenuGridItem: l3Component<MenuGridItemProps> & {
+const MenuGridItem: L3Component<MenuGridItemProps> & {
   isMenuChild?: boolean;
   isSelectable?: boolean;
 } = forwardRef(

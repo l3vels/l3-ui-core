@@ -3,7 +3,7 @@ import { debounce } from "lodash-es";
 import TextField from "../TextField/TextField";
 import { useSliderActions, useSliderSelection } from "./SliderContext";
 import { InfixKind } from "./SliderConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
 const VALUE_UPDATE_DELAY = 300;
 
@@ -21,7 +21,7 @@ function parseValue(valueText: string) {
   return valueText.replace(/\D/g, "");
 }
 
-export interface SelectionIndicatorProps extends l3ComponentProps {
+export interface SelectionIndicatorProps extends L3ComponentProps {
   kind?: InfixKind;
   key?: InfixKind;
 }

@@ -2,11 +2,11 @@ import React, { FC, useCallback, useMemo } from "react";
 import { range } from "lodash-es";
 import { StepsDot } from "./StepsDot";
 import { STEPS_CSS_BASE_CLASS } from "./StepsConstants";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 
 const CSS_BASE_CLASS = `${STEPS_CSS_BASE_CLASS}-header_gallery`;
 
-export interface StepsGalleryHeaderProps extends l3ComponentProps {
+export interface StepsGalleryHeaderProps extends L3ComponentProps {
   activeStepIndex: number;
   stepsCount: number;
   onChangeActiveStep: (e: React.MouseEvent, stepIndex: number) => void;

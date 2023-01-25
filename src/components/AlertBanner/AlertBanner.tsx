@@ -5,13 +5,13 @@ import Icon from "../../components/Icon/Icon";
 import CloseSmall from "../../components/Icon/Icons/components/CloseSmall";
 import { AlertBannerBackgroundColor } from "./AlertBannerConstants";
 import { NOOP } from "../../utils/function-utils";
-import l3ComponentProps from "../../types/l3ComponentProps";
+import L3ComponentProps from "../../types/L3ComponentProps";
 import { AlertBannerLinkProps } from "./AlertBannerLink/AlertBannerLink";
 import { AlertBannerButtonProps } from "./AlertBannerButton/AlertBannerButton";
 import { AlertBannerTextProps } from "./AlertBannerText/AlertBannerText";
 import "./AlertBanner.scss";
 
-interface AlertBannerProps extends l3ComponentProps {
+interface AlertBannerProps extends L3ComponentProps {
   /**
    * Set external styling to the progress bar.
    */

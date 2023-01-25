@@ -3,10 +3,10 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Icon from "../Icon/Icon";
 import { ListItemIconMargin } from "./ListItemIconConstants";
-import { SubIcon, l3ComponentProps } from "../../types";
+import { SubIcon, L3ComponentProps } from "../../types";
 import "./ListItemIcon.scss";
 
-export interface ListItemIconProps extends l3ComponentProps {
+export interface ListItemIconProps extends L3ComponentProps {
   icon?: SubIcon;
   /**
    * the position of the icon inside the list item (this sets the margins of the icon)
