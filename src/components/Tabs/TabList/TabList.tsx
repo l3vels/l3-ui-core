@@ -7,12 +7,13 @@ import L3ComponentProps from "../../../types/L3ComponentProps";
 import { NOOP } from "../../../utils/function-utils";
 import { TabProps } from "../Tab/Tab";
 import "./TabList.scss";
+import { TabSize } from "../Tab/TabConstants";
 
 export interface TabListProps extends L3ComponentProps {
   onTabChange?: (tabId: number) => void;
   activeTabId?: number;
   tabType?: string;
-  size?: string;
+  size?: TabSize;
   children?: ReactElement<TabProps>[];
 }
 
@@ -79,11 +80,12 @@ const TabList: FC<TabListProps> = forwardRef(
           value: index,
           active: activeTabState === index,
           focus: focusIndex === index,
-          onClick: onSelectionAction
+          onClick: onSelectionAction,
+          size: size
         });
       });
       return childrenToRender;
-    }, [children, activeTabState, focusIndex, onSelectionAction]);
+    }, [children, activeTabState, focusIndex, onSelectionAction, size]);
 
     return (
       <div ref={mergedRef} className={cx("tabs--wrapper", className, tabType)} id={id}>
