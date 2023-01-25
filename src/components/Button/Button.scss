@@ -11,7 +11,8 @@
   border-radius: $border-radius-big;
   cursor: pointer;
   white-space: nowrap;
-  transition: var(--motion-productive-short) transform, var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+  transition: var(--motion-productive-short) transform,
+    var(--motion-productive-medium) var(--motion-timing-transition) min-width;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -123,8 +124,8 @@
   &--kind {
     &-primary {
       @include theme-prop(color, text-color-on-primary);
-      &:active{
-        box-shadow: $primary-btn-shadow
+      &:active {
+        box-shadow: $primary-btn-shadow;
       }
       &.l3-style-button {
         &--color {
@@ -175,9 +176,9 @@
       }
     }
     &-secondary {
-      @include theme-prop(background-color, secondary-background-color);
-      &:active{
-        box-shadow: $secondary-btn-shadow
+      @include theme-prop(color, secondary-text-color);
+      &:active {
+        box-shadow: $secondary-btn-shadow;
       }
       &.l3-style-button {
         &--size {
@@ -196,7 +197,8 @@
         &--color {
           &-primary {
             @include theme-prop(background-color, secondary-color);
-            &-active, &-active:hover {
+            &-active,
+            &-active:hover {
               @include theme-prop(background-color, secondary-hover-color);
             }
             &:hover:not(.l3-style-button--color-primary-active),
@@ -238,7 +240,7 @@
         }
       }
       &.l3-style-button--disabled {
-        @include theme-prop(background-color, secondary-background-color-disabled );
+        @include theme-prop(background-color, secondary-background-color-disabled);
         @include theme-prop(color, secondary-text-color-disabled);
         cursor: not-allowed;
         pointer-events: none;
@@ -251,18 +253,19 @@
       @include theme-prop(color, tertiary-text-color);
       background-color: transparent;
 
-      &:active{
+      &:active {
         @include theme-prop(background-color, tertiary-active-color);
       }
 
       &.l3-style-button {
         &--color {
           &-primary {
-            &-active, &-active:hover {
+            &-active,
+            &-active:hover {
               @include theme-prop(background-color, tertiary-hover-color);
             }
             &:hover:not(.l3-style-button--color-primary-active),
-            &:focus:not(.l3-style-button--color-primary-active){
+            &:focus:not(.l3-style-button--color-primary-active) {
               @include theme-prop(background-color, tertiary-hover-color);
             }
           }
