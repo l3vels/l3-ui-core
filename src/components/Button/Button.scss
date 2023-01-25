@@ -257,7 +257,7 @@
       background-color: transparent;
 
       &:active {
-        @include theme-prop(background-color, tertiary-active-color);
+        @include theme-prop(background-color, tertiary-active-color, true);
       }
 
       &.l3-style-button {
