@@ -74,6 +74,7 @@ export interface IconButtonProps extends l3ComponentProps {
   /** Change the focus indicator from around the button to within it */
   insetFocus?: boolean;
   label: string;
+  labelInButton?: string;
 }
 
 const IconButton: l3Component<IconButtonProps> & {
@@ -100,7 +101,8 @@ const IconButton: l3Component<IconButtonProps> & {
       color,
       dataTestId,
       insetFocus,
-      label
+      label,
+      labelInButton
     },
     ref
   ) => {
@@ -181,14 +183,18 @@ const IconButton: l3Component<IconButtonProps> & {
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
-                  <Icon
-                    icon={icon}
-                    iconType={Icon.type.SVG}
-                    iconSize={iconSize}
-                    ignoreFocusStyle
-                    className="icon-button-padding"
-                    clickable={false}
-                  />
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                    />
+                  )}
                 </Button>
               </Tooltip>
             </IconButtonWrapper>
@@ -217,14 +223,18 @@ const IconButton: l3Component<IconButtonProps> & {
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
-                  <Icon
-                    icon={icon}
-                    iconType={Icon.type.SVG}
-                    iconSize={iconSize}
-                    ignoreFocusStyle
-                    className="icon-button-padding"
-                    clickable={false}
-                  />
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                    />
+                  )}
                 </Button>
               </Tooltip>
             </IconButtonWrapper>
