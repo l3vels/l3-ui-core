@@ -102,7 +102,7 @@ $checkbox-size: 16px;
 
   &__description {
     font-weight: 450;
-    font-size: 12px;
+    font-size: $spacing-small-medium;
     color: rgba(0, 0, 0, 0.3);
     max-width: 200px;
     margin-left: 39px;
@@ -274,7 +274,7 @@ $checkbox-size: 16px;
       gap: 18px;
     }
     &-small {
-      gap: 8px;
+      gap: $spacing-small;
     }
   }
 }
