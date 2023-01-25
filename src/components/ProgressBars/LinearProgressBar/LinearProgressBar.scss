@@ -2,53 +2,69 @@
 @import "../../../styles/themes";
 @import "../../../styles/typography";
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: $black;
+}
+
 .linear-progress-bar--wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  font-family: var(--font-family);
-  font-size: var(--font-size-general-label);
-  @include theme-prop(color, secondary-text-color);
+  // font-family: var(--font-family);
+  // font-size: var(--font-size-general-label);
+  // @include theme-prop(color, secondary-text-color);
 
   .linear-progress-bar__label {
-    padding-left: var(--spacing-xs)
+    padding-left: var(--spacing-xs);
   }
 
   &__large {
-    height: 8px;
-    line-height: 8px;
-  }
-
-  &__medium {
     height: 6px;
     line-height: 6px;
   }
 
-  &__small {
+  &__medium {
     height: 4px;
     line-height: 4px;
+  }
+
+  &__small {
+    height: 2px;
+    line-height: 2px;
   }
 
   .linear-progress-bar__container {
     position: relative;
     width: 100%;
-    @include theme-prop(background-color, primary-background-hover-color);
-    border-radius: $border-radius-small;
+    // @include theme-prop(background-color, primary-background-hover-color);
+    background-color: transparent;
+    // border-radius: $border-radius-small;
 
     .linear-progress-bar__secondary,
     .linear-progress-bar {
       left: 0;
       height: 100%;
       position: absolute;
-      border-radius: $border-radius-small;
+      // border-radius: $border-radius-small;
 
       &--animate {
         transition: width var(--motion-productive-medium) var(--motion-timing-transition);
       }
 
       &--primary {
-        @include theme-prop(background-color, primary-color);
+        // @include theme-prop(background-color, primary-color);
+        background-color: #4da1ff;
       }
 
       &--secondary {
@@ -84,6 +100,6 @@
   }
 }
 
-.linear-progress-bar--wrapper{
-  font-family: var(--font-family)
+.linear-progress-bar--wrapper {
+  font-family: var(--font-family);
 }

@@ -5,7 +5,7 @@ const PercentageLabel = ({ forElement, value, className }) => {
   if (value === null || value === undefined) return null;
   return (
     <label htmlFor={forElement} className={className}>
-      {`${value.toFixed()}%`}
+      {`${value.toFixed()}% complete`}
     </label>
   );
 };
