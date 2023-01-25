@@ -21,6 +21,7 @@ $checkbox-size: 16px;
   align-items: center;
   width: fit-content;
   height: min-content;
+  // flex-wrap: wrap;
 
   &__checkbox {
     cursor: pointer;
@@ -55,27 +56,6 @@ $checkbox-size: 16px;
     // }
   }
 
-  &--size {
-    &-small {
-      .l3-style-checkbox {
-        &__checkbox {
-          width: $spacing-small-medium;
-          height: $spacing-small-medium;
-          border-width: $spacing-xxs;
-          border-radius: $spacing-xxs;
-        }
-        &__label {
-          margin-inline-start: 10px;
-          font-size: $spacing-small-medium;
-          line-height: $spacing-medium;
-        }
-        &__description {
-          margin-top: $spacing-small;
-        }
-      }
-    }
-  }
-
   &--kind {
     &-secondary {
       .l3-style-checkbox {
@@ -85,9 +65,6 @@ $checkbox-size: 16px;
         &__label {
           color: $white;
         }
-        // &__description {
-        //   color: rgba(255, 255, 255, 0.6);
-        // }
         &_input {
           &:checked {
             & + .l3-style-checkbox__checkbox {
@@ -111,6 +88,7 @@ $checkbox-size: 16px;
     // display: flex;
     // flex-direction: column;
 
+    // width: 50%;
     @include font-input();
     cursor: pointer;
     user-select: none;
@@ -122,12 +100,43 @@ $checkbox-size: 16px;
     line-height: 20px;
   }
 
-  // &__description {
-  //   font-weight: 450;
-  //   font-size: 12px;
-  //   color: rgba(0, 0, 0, 0.3);
-  // }
+  &__description {
+    font-weight: 450;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    margin-left: 39px;
+    // margin-top: 18px;
+    &--size {
+      &-small {
+        margin-left: 22px;
+        // margin-top: 8px;
+      }
+    }
+    &--kind {
+      &-secondary {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
 
+  &--size {
+    &-small {
+      .l3-style-checkbox {
+        &__checkbox {
+          width: $spacing-small-medium;
+          height: $spacing-small-medium;
+          border-width: $spacing-xxs;
+          border-radius: $spacing-xxs;
+        }
+        &__label {
+          margin-inline-start: 10px;
+          font-size: $spacing-small-medium;
+          line-height: $spacing-medium;
+        }
+      }
+    }
+  }
   // Since it is not possible to change the design of the checkbox according to the requirements using css,
   // we hide the checkbox and draw a new one instead.
   // In order to allow accessibility, all operations will be performed on the hidden checkbox and be reflected
@@ -253,6 +262,19 @@ $checkbox-size: 16px;
         cursor: not-allowed;
         color: var(--disabled-text-color);
       }
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  &--size {
+    &-large {
+      gap: 18px;
+    }
+    &-small {
+      gap: 8px;
     }
   }
 }
