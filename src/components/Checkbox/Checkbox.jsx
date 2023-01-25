@@ -75,7 +75,6 @@ export const Checkbox = forwardRef(
 
     const { onClickCapture: onClickCaptureLabel } = useSupportFirefoxLabelClick({ inputRef });
 
-    console.log("description", description);
     return (
       // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
       <div className={cx(`wrapper`, description && `wrapper--size-${size}`)}>
