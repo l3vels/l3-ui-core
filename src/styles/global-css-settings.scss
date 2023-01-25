@@ -10,7 +10,6 @@ $border-radius-medium: 8px;
 $border-radius-big: 60px;
 $border-radius-extra-big: 50%;
 
-
 $spacing-xxs: 2px;
 $spacing-xs: 4px;
 $spacing-xs-small: 6px;
@@ -30,18 +29,17 @@ $grid-auto-fit-cell-width-medium: 180px;
 $grid-auto-fit-cell-width-large: 240px;
 $grid-auto-fit-cell-width-xl: 300px;
 
-
-
 // button sizes
 $btn-size-big: 56px;
 $btn-size-medium: 44px;
 $btn-size-small: 36px;
 
-
-
 $primary-btn-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
 $secondary-btn-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.2);
 
+$text-field-size-large: 56px;
+$text-field-size-medium: 50px;
+$text-field-size-small: 44px;
 
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
@@ -79,10 +77,15 @@ $secondary-btn-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.2);
 // - $grid-cell-min-width: {mandatory}, defined min value in for grid-template-columns
 // - $grid-cell-array-calc: {mandatory}, defined max num of items using calc
 
-
-@mixin grid-auto-fit($grid-gap: null, $grid-column-gap: null, $grid-row-gap: null, $grid-cell-min-width, $grid-cell-array-calc:null) {
+@mixin grid-auto-fit(
+  $grid-gap: null,
+  $grid-column-gap: null,
+  $grid-row-gap: null,
+  $grid-cell-min-width,
+  $grid-cell-array-calc: null
+) {
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(clamp(#{$grid-cell-array-calc}, #{$grid-cell-min-width}, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(clamp(#{$grid-cell-array-calc}, #{$grid-cell-min-width}, 100%), 1fr));
   gap: $grid-gap;
   column-gap: $grid-column-gap;
   row-gap: $grid-row-gap;

@@ -19,8 +19,6 @@ $ui-grey: #e6e9ef;
 $asphalt: #676879;
 $higlight: #dff0ff;
 
-
-
 // l3 colors  palette
 $black: #000000;
 $black-1: rgba(0, 0, 0, 0.1);
@@ -33,52 +31,78 @@ $black-7: rgba(0, 0, 0, 0.7);
 $black-8: rgba(0, 0, 0, 0.8);
 $black-9: rgba(0, 0, 0, 0.9);
 
-$white: #FFFFFF;
-$white-1:  rgba(255, 255, 255, 0.1);
-$white-2:  rgba(255, 255, 255, 0.2);
-$white-3:  rgba(255, 255, 255, 0.3);
-$white-4:  rgba(255, 255, 255, 0.4);
-$white-5:  rgba(255, 255, 255, 0.5);
-$white-6:  rgba(255, 255, 255, 0.6);
-$white-7:  rgba(255, 255, 255, 0.7);
-$white-8:  rgba(255, 255, 255, 0.8);
-$white-9:  rgba(255, 255, 255, 0.9);
+$white: #ffffff;
+$white-1: rgba(255, 255, 255, 0.1);
+$white-2: rgba(255, 255, 255, 0.2);
+$white-3: rgba(255, 255, 255, 0.3);
+$white-4: rgba(255, 255, 255, 0.4);
+$white-5: rgba(255, 255, 255, 0.5);
+$white-6: rgba(255, 255, 255, 0.6);
+$white-7: rgba(255, 255, 255, 0.7);
+$white-8: rgba(255, 255, 255, 0.8);
+$white-9: rgba(255, 255, 255, 0.9);
 
+$green-50: #f2fdf0;
+$green-100: #d7f8d3;
+$green-200: #bff4b7;
+$green-300: #9cee8f;
+$green-400: #89eb76;
+$green-500: #6dbc5e;
+$green-600: #44753a;
+$green-700: #365e2f;
+
+$red-50: #fbeceb;
+$red-100: #f8d8d8;
+$red-200: #f5c6c5;
+$red-300: #f0a19f;
+$red-400: #eb6c67;
+$red-500: #e94d45;
+$red-600: #ba3d37;
+$red-700: #8b2d29;
 
 $theme: (
-  // primary colors 
-
+  // primary colors
   "primary-background-color": $black,
   "primary-text-on-primary": $white,
   "primary-hover-color": $black-5,
   "primary-text-color-btn": $white,
   "primary-background-color-disabled": $white-2,
   "primary-text-color-disabled": $white-3,
-  
 
-  // disabled colors 
+  // disabled colors
   "disabled-background-color": $white-2,
   "disabled-text-color": $white-4,
 
-
-  // secondary colors 
+  // secondary colors
   "secondary-background-color": $white-6,
   "secondary-text-color": $black-7,
   "secondary-hover-color": $white-3,
   "secondary-background-color-disabled": $white-2,
   "secondary-text-color-disabled": $black-3,
-  
 
-
-  // tertiary colors 
+  // tertiary colors
   "tertiary-text-color": $white,
   "tertiary-hover-color": $white-1,
   "tertiary-text-color-disabled": $white-3,
   "tertiary-active-color": $white-2,
 
+  // textfields
+  // Textfield bg color
+  "text-field-bg-color": $white-2,
+  "text-field-pressed-bg-color": $white-3,
+  "text-field-active-border-color": $black-2,
 
+  // Textfield text colors
+  "text-field-value-color": $white,
+  "text-field-placeholder-color": $white-2,
 
+  // negative colors
+  "border-negative": $red-300,
+  "negative-text-color": $red-400,
 
+  // positive colors
+  "border-positive": $green-200,
+  "positive-text-color": $green-500,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,
@@ -86,7 +110,6 @@ $theme: (
   "primary-text-color": $mud-black,
   "primary-background-hover-color": $wolf-gray,
   "text-color-on-primary": $snow-white,
-
 
   "positive-color": $success,
   "negative-color": $error,
