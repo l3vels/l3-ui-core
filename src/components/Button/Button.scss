@@ -126,6 +126,7 @@
       @include theme-prop(color, text-color-on-primary);
       &:active {
         box-shadow: $primary-btn-shadow;
+        @include theme-prop(background-color, primary-background-color, true);
       }
       &.l3-style-button {
         &--color {
@@ -177,8 +178,10 @@
     }
     &-secondary {
       @include theme-prop(color, secondary-text-color);
-      &:active {
+      &-active,
+      &:focus {
         box-shadow: $secondary-btn-shadow;
+        @include theme-prop(background-color, secondary-background-color, true);
       }
       &.l3-style-button {
         &--size {
@@ -196,7 +199,7 @@
         }
         &--color {
           &-primary {
-            @include theme-prop(background-color, secondary-color);
+            @include theme-prop(background-color, secondary-background-color);
             &-active,
             &-active:hover {
               @include theme-prop(background-color, secondary-hover-color);
