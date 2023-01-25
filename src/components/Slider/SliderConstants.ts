@@ -2,7 +2,7 @@ import { Slider } from "../index";
 import { IconType } from "../Icon/IconConstants";
 import { ReactElement } from "react";
 
-export const BEM_PREFIX = "monday";
+export const BEM_PREFIX = "l3";
 
 export const COMPONENT_ID = "slider";
 
