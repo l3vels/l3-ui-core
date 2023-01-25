@@ -1,7 +1,11 @@
 import React, { ForwardedRef, forwardRef, useMemo } from "react";
 import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
-import { LoaderColors, LoaderSize, LoaderSizes } from "./LoaderConstants";
+import {
+  LoaderColors,
+  // LoaderSize,
+  LoaderSizes
+} from "./LoaderConstants";
 import { getTestId } from "../../tests/test-ids-utils";
 import { L3Component, L3ComponentProps } from "../../types";
 import { ComponentDefaultTestId } from "../../tests/constants";
@@ -12,9 +16,10 @@ export interface LoaderProps extends L3ComponentProps {
   svgClassName?: string;
   className?: string;
   /** The loader's size: `number` or `LoaderSizes` */
-  size?: LoaderSize;
-  color?: LoaderColors;
-  hasBackground?: boolean;
+  size?: LoaderSizes;
+  // color?: LoaderColors;
+  // hasBackground?: boolean;
+  label?: boolean;
 }
 
 const Loader: L3Component<LoaderProps, HTMLElement> & {
@@ -22,14 +27,35 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
   colors?: typeof LoaderColors;
 } = forwardRef(
   (
-    { svgClassName, className, size, color, hasBackground = false, id, "data-testid": dataTestId },
+    {
+      svgClassName,
+      className,
+      size,
+      // color,
+      //  hasBackground = false,
+      id,
+      "data-testid": dataTestId,
+      label = false
+    },
     ref: ForwardedRef<HTMLDivElement>
   ) => {
     const overrideClassName = backwardCompatibilityForProperties([className, svgClassName], "");
 
+    // const sizeStyle = useMemo(() => {
+    //   if (typeof size === "number") {
+    //     return { width: size, height: size };
+    //   }
+    //   return undefined;
+    // }, [size]);
     const sizeStyle = useMemo(() => {
-      if (typeof size === "number") {
-        return { width: size, height: size };
+      if (size === "large") {
+        return { width: 64, height: 64 };
+      } else if (size === "medium") {
+        return { width: 48, height: 48 };
+      } else if (size === "small") {
+        return { width: 36, height: 36 };
+      } else if (size === "xs") {
+        return { width: 24, height: 24 };
       }
       return undefined;
     }, [size]);
@@ -47,19 +73,12 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
         <svg
           className={cx("circle-loader-spinner", styles.circleLoaderSpinner, overrideClassName)}
           viewBox="0 0 50 50"
-          color={color}
+          // color={color}
           aria-hidden
         >
-          {hasBackground && (
-            <circle
-              className={styles.circleLoaderSpinnerBackground}
-              cx="25"
-              cy="25"
-              r="20"
-              fill="none"
-              strokeWidth="5"
-            />
-          )}
+          {/* {hasBackground && ( */}
+          <circle className={styles.circleLoaderSpinnerBackground} cx="25" cy="25" r="20" fill="none" strokeWidth="5" />
+          {/* )} */}
           <circle
             className={cx("circle-loader-spinner-path", styles.circleLoaderSpinnerPath)}
             cx="25"
@@ -69,6 +88,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
             strokeWidth="5"
           />
         </svg>
+        {label && <p className={cx(styles.loaderLabel)}>Uploading...</p>}
       </div>
     );
   }

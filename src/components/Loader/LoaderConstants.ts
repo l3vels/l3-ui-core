@@ -6,10 +6,14 @@ export enum LoaderColors {
 }
 
 export enum LoaderSizes {
-  XS = 16,
-  SMALL = 24,
-  MEDIUM = 40,
-  LARGE = 64
+  XS = "xs",
+  SMALL = "small",
+  MEDIUM = "medium",
+  LARGE = "large"
+  // XS = 24,
+  // SMALL = 36,
+  // MEDIUM = 48,
+  // LARGE = 64
 }
 
-export type LoaderSize = typeof LoaderSizes | number;
+// export type LoaderSize = typeof LoaderSizes | number;
