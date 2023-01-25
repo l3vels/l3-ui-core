@@ -59,20 +59,6 @@
       }
     }
 
-    // &--size {
-    //   &-small {
-    //     .l3-style-radio-button-component {
-    //       &__radio-input-container {
-    //         &__radio-control {
-    //           width: 12px;
-    //           height: 12px;
-    //           border-width: 2px;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
     input:checked + &__radio-control {
       // @include theme-prop(border-color, primary-color);
       border-color: #4ca6f8;
@@ -105,10 +91,45 @@
   }
 
   &__radio-label {
-    line-height: 21px;
-    font-weight: 400;
-    font-size: var(--font-size-general-label);
-    @include theme-prop(color, primary-text-color);
+    // font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 500;
+    font-size: $spacing-medium;
+    line-height: 20px;
+
+    color: $black;
+
+    &--size {
+      &-small {
+        font-size: $spacing-small-medium;
+        line-height: $spacing-medium;
+      }
+    }
+
+    &--kind {
+      &-secondary {
+        color: $white;
+      }
+    }
+  }
+
+  &__description {
+    font-weight: 450;
+    font-size: $spacing-small-medium;
+    color: rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    margin-left: $spacing-xl;
+
+    &--size {
+      &-small {
+        margin-left: $spacing-xl;
+      }
+    }
+    &--kind {
+      &-secondary {
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
   }
 
   &.disabled {
@@ -135,6 +156,19 @@
   &:focus-within &__radio-input-container input:enabled:not(:checked) + &__radio-input-container__radio-control {
     // @include theme-prop(border-color, primary-text-color);
     border-color: #4ca6f8;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  &--size {
+    &-large {
+      gap: 18px;
+    }
+    &-small {
+      gap: $spacing-small;
+    }
   }
 }
 
