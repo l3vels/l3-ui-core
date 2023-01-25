@@ -12,7 +12,6 @@ import { ComponentDefaultTestId } from "../../tests/constants";
 import Button from "../Button/Button";
 import { BUTTON_ICON_SIZE, ButtonColor, ButtonType } from "../Button/ButtonConstants";
 import styles from "./IconButton.module.scss";
-import "./IconButton.scss";
 
 export interface IconButtonProps extends L3ComponentProps {
   /**
@@ -161,7 +160,7 @@ const IconButton: L3Component<IconButtonProps> & {
     return (
       <>
         {label ? (
-          <div className="container">
+          <div className={styles.container}>
             <IconButtonWrapper {...iconButtonWrapperProps}>
               <Tooltip
                 {...tooltipProps}
