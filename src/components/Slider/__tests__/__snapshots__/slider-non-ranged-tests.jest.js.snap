@@ -2,22 +2,22 @@
 
 exports[`a. Non-ranged Slider: basic renderer 1`] = `
 <div
-  class="l3-slider"
+  class="monday-slider"
   data-testid="l3-slider"
 >
   <div
-    class="l3-slider__base l3-slider__base--small"
+    class="monday-slider__base monday-slider__base--small"
     data-testid="l3-slider__base"
   >
     <div
-      class="l3-slider__rail"
+      class="monday-slider__rail"
       data-testid="l3-slider__rail"
     >
       <div
-        class="l3-slider__track"
+        class="monday-slider__track"
       />
       <div
-        class="l3-slider__filled-track"
+        class="monday-slider__filled-track"
         style="left: 0%; width: 20%;"
       />
       <div
@@ -27,7 +27,7 @@ exports[`a. Non-ranged Slider: basic renderer 1`] = `
         aria-valuemin="0"
         aria-valuenow="20"
         aria-valuetext="20%"
-        class="l3-slider__thumb l3-slider__thumb--index-0"
+        class="monday-slider__thumb monday-slider__thumb--index-0"
         data-testid="l3-slider__thumb-0"
         role="slider"
         style="left: 20%;"
@@ -115,8 +115,8 @@ Snapshot Diff:
           aria-valuemin="0"
           aria-valuenow="20"
           aria-valuetext="20%"
--         class="l3-slider__thumb l3-slider__thumb--index-0"
-+         class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+-         class="monday-slider__thumb monday-slider__thumb--index-0"
++         class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
           style="left: 20%;"
@@ -156,8 +156,8 @@ Snapshot Diff:
           aria-valuemin="0"
           aria-valuenow="20"
           aria-valuetext="20%"
--         class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-+         class="l3-slider__thumb l3-slider__thumb--index-0"
+-         class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
++         class="monday-slider__thumb monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
           style="left: 20%;"
@@ -196,7 +196,7 @@ Snapshot Diff:
 @@ --- --- @@
         />
         <div
-          class="l3-slider__filled-track"
+          class="monday-slider__filled-track"
 -         style="left: 0%; width: 20%;"
 +         style="left: 0%; width: 18%;"
         />
@@ -209,7 +209,7 @@ Snapshot Diff:
 -         aria-valuetext="20%"
 +         aria-valuenow="18"
 +         aria-valuetext="18%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+          class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
 -         style="left: 20%;"
@@ -217,7 +217,7 @@ Snapshot Diff:
           tabindex="0"
         >
           <label
-            class="l3-slider__thumb-label"
+            class="monday-slider__thumb-label"
           >
 -           20%
 +           18%
@@ -234,7 +234,7 @@ Snapshot Diff:
 @@ --- --- @@
         />
         <div
-          class="l3-slider__filled-track"
+          class="monday-slider__filled-track"
 -         style="left: 0%; width: 20%;"
 +         style="left: 0%; width: 22%;"
         />
@@ -247,7 +247,7 @@ Snapshot Diff:
 -         aria-valuetext="20%"
 +         aria-valuenow="22"
 +         aria-valuetext="22%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+          class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
 -         style="left: 20%;"
@@ -255,7 +255,7 @@ Snapshot Diff:
           tabindex="0"
         >
           <label
-            class="l3-slider__thumb-label"
+            class="monday-slider__thumb-label"
           >
 -           20%
 +           22%
@@ -272,7 +272,7 @@ Snapshot Diff:
 @@ --- --- @@
         />
         <div
-          class="l3-slider__filled-track"
+          class="monday-slider__filled-track"
 -         style="left: 0%; width: 20%;"
 +         style="left: 0%; width: 10%;"
         />
@@ -285,7 +285,7 @@ Snapshot Diff:
 -         aria-valuetext="20%"
 +         aria-valuenow="10"
 +         aria-valuetext="10%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+          class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
 -         style="left: 20%;"
@@ -293,7 +293,7 @@ Snapshot Diff:
           tabindex="0"
         >
           <label
-            class="l3-slider__thumb-label"
+            class="monday-slider__thumb-label"
           >
 -           20%
 +           10%
@@ -310,7 +310,7 @@ Snapshot Diff:
 @@ --- --- @@
         />
         <div
-          class="l3-slider__filled-track"
+          class="monday-slider__filled-track"
 -         style="left: 0%; width: 20%;"
 +         style="left: 0%; width: 40%;"
         />
@@ -323,7 +323,7 @@ Snapshot Diff:
 -         aria-valuetext="20%"
 +         aria-valuenow="40"
 +         aria-valuetext="40%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+          class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
 -         style="left: 20%;"
@@ -331,7 +331,7 @@ Snapshot Diff:
           tabindex="0"
         >
           <label
-            class="l3-slider__thumb-label"
+            class="monday-slider__thumb-label"
           >
 -           20%
 +           40%
@@ -348,7 +348,7 @@ Snapshot Diff:
 @@ --- --- @@
         />
         <div
-          class="l3-slider__filled-track"
+          class="monday-slider__filled-track"
 -         style="left: 0%; width: 20%;"
 +         style="left: 0%; width: 40%;"
         />
@@ -361,7 +361,7 @@ Snapshot Diff:
 -         aria-valuetext="20%"
 +         aria-valuenow="40"
 +         aria-valuetext="40%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+          class="monday-slider__thumb monday-slider__thumb--focused monday-slider__thumb--index-0"
           data-testid="l3-slider__thumb-0"
           role="slider"
 -         style="left: 20%;"
@@ -369,7 +369,7 @@ Snapshot Diff:
           tabindex="0"
         >
           <label
-            class="l3-slider__thumb-label"
+            class="monday-slider__thumb-label"
           >
 -           20%
 +           40%

@@ -2,7 +2,7 @@
 
 exports[`Toggle renders correctly renders correctly when disabled 1`] = `
 <label
-  className="l3-style-toggle_wrapper l3-style-toggle_wrapper--disabled"
+  className="l3-style-toggle_wrapper l3-style-toggle_wrapper--disabled l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -13,26 +13,16 @@ exports[`Toggle renders correctly renders correctly when disabled 1`] = `
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly when labels are hidden 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -52,7 +42,7 @@ exports[`Toggle renders correctly renders correctly when labels are hidden 1`] =
 
 exports[`Toggle renders correctly renders correctly when selection defined by default selected (off)  1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={false}
@@ -63,26 +53,16 @@ exports[`Toggle renders correctly renders correctly when selection defined by de
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle dummy-class-name l3-style-toggle_toggle--not-selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly when selection defined by default selected (on)  1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -93,26 +73,16 @@ exports[`Toggle renders correctly renders correctly when selection defined by de
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle dummy-class-name l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly when selection defined by isSelected (off) 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={false}
@@ -123,26 +93,16 @@ exports[`Toggle renders correctly renders correctly when selection defined by is
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle dummy-class-name l3-style-toggle_toggle--not-selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly when selection defined by isSelected (on) 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -153,26 +113,16 @@ exports[`Toggle renders correctly renders correctly when selection defined by is
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle dummy-class-name l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly with aria controls 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -184,26 +134,16 @@ exports[`Toggle renders correctly renders correctly with aria controls 1`] = `
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly with empty props 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -214,26 +154,16 @@ exports[`Toggle renders correctly renders correctly with empty props 1`] = `
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly with not default offOverrideText 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -244,26 +174,16 @@ exports[`Toggle renders correctly renders correctly with not default offOverride
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    TestOff
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    On
-  </span>
 </label>
 `;
 
 exports[`Toggle renders correctly renders correctly with not default onOverrideText 1`] = `
 <label
-  className="l3-style-toggle_wrapper"
+  className="l3-style-toggle_wrapper l3-style-toggle_size_large l3-style-toggle_kind_primary"
 >
   <input
     aria-checked={true}
@@ -274,19 +194,9 @@ exports[`Toggle renders correctly renders correctly with not default onOverrideT
     role="switch"
     type="checkbox"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    Off
-  </span>
   <div
     aria-hidden="true"
     className="l3-style-toggle_toggle l3-style-toggle_toggle--selected"
   />
-  <span
-    className="l3-style-toggle_text"
-  >
-    TestOn
-  </span>
 </label>
 `;
