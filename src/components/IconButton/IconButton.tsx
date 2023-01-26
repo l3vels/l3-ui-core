@@ -72,7 +72,7 @@ export interface IconButtonProps extends L3ComponentProps {
   dataTestId?: string;
   /** Change the focus indicator from around the button to within it */
   insetFocus?: boolean;
-  label: string;
+  label?: string;
   labelInButton?: string;
 }
 
