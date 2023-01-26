@@ -20,7 +20,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Pickers/ColorPicker"
+  title="Pickers/ColorPicker - (Coming Soon)"
   component={ColorPicker}
   argTypes={metaSettings.argTypes}
   decorators={metaSettings.decorators}
@@ -72,7 +72,9 @@ ColorPicker is our component for selecting our content colors
 Ability to revert to initial color
 
 <Canvas>
-  <Story name="No color" play={noColorInteractionSuite}>{colorPickerNoColorTemplate.bind({})}</Story>
+  <Story name="No color" play={noColorInteractionSuite}>
+    {colorPickerNoColorTemplate.bind({})}
+  </Story>
 </Canvas>
 
 ### Selected icon
@@ -80,7 +82,9 @@ Ability to revert to initial color
 Selected colors indication, when using multi-selection
 
 <Canvas>
-  <Story name="Selected icon" play={multiSelectionInteractionSuite}>{colorPickerSelectedIconTemplate.bind({})}</Story>
+  <Story name="Selected icon" play={multiSelectionInteractionSuite}>
+    {colorPickerSelectedIconTemplate.bind({})}
+  </Story>
 </Canvas>
 
 ### Shapes

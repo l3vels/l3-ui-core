@@ -194,7 +194,7 @@ const IconButton: L3Component<IconButtonProps> & {
                 </Button>
               </Tooltip>
             </IconButtonWrapper>
-            <span className={styles.span}>{label}</span>
+            <span className={styles.l3_IconButton_label_styles}>{label}</span>
           </div>
         ) : (
           <div className={styles.iconButtonContainer}>
@@ -229,6 +229,7 @@ const IconButton: L3Component<IconButtonProps> & {
                       ignoreFocusStyle
                       className="icon-button-padding"
                       clickable={false}
+                      iconLabel="test"
                     />
                   )}
                 </Button>

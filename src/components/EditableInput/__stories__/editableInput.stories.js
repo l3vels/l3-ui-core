@@ -20,7 +20,7 @@ export const Sandbox = () => (
 );
 
 export default {
-  title: "Components|EditableInput",
+  title: "Components|EditableInput - (Coming Soon)",
   component: EditableInput,
   decorators: [withPerformance]
 };

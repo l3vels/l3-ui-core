@@ -94,7 +94,6 @@ const ModalHeader: FC<ModalHeaderProps> = ({
             icon={CloseSmall}
             kind={IconButton.kinds.TERTIARY}
             size={IconButton.sizes.SMALL}
-            label="label"
           />
         </div>
       )}
