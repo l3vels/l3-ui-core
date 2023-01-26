@@ -1,5 +1,6 @@
 @import "../../styles/states";
 @import "../../styles/global-css-settings";
+@import "../../styles/theme-mixin";
 
 .l3-style-toggle {
   // Since it is not possible to change the design of the checkbox according to the storybook toggle requirements using css,
@@ -21,7 +22,7 @@
     transition: background-color var(--motion-productive-medium) var(--motion-timing-transition);
     margin: 0 $spacing-small;
     position: relative;
-    width: 60px;
+    width: $border-radius-big;
     height: 30px;
     cursor: pointer;
     border-radius: 100px !important;
@@ -30,7 +31,8 @@
     // border-radius: 100px;
 
     &::after {
-      @include theme-prop(background-color, primary-background-color);
+      @include theme-prop(background-color, toggle-color);
+      // background-color: red;
       content: " ";
       position: absolute;
       width: 26px;
@@ -43,18 +45,18 @@
     }
 
     &--selected {
-      // @include theme-prop(background-color, primary-color);
-      background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3), 0px 3px 1px rgba(0, 0, 0, 0.05);
+      // @include theme-prop(background-color, toggle-selected-primary-bg-color);
+      background: $linear-gradient-green;
+      box-shadow: $toggle-selected-box-shadow;
       &::after {
-        left: 32px;
+        left: $spacing-xl;
       }
     }
 
     &--not-selected {
-      // @include theme-prop(background-color, ui-border-color);
-      background: rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+      @include theme-prop(background-color, toggle-primary-bg-color);
+      // background: $black-2;
+      box-shadow: $toggle-not-selected-box-shadow;
       &::after {
         left: 3px;
       }
@@ -71,8 +73,8 @@
 
   &_size_small {
     & .l3-style-toggle_toggle {
-      width: 32px;
-      height: 16px;
+      width: $spacing-xl;
+      height: $spacing-medium;
       &::after {
         width: 13.87px;
         height: 13.87px;
@@ -80,28 +82,29 @@
         top: calc(50% - 13.87px / 2 - 0px);
       }
       &--selected {
-        box-shadow: 0px 1.6px 4.26667px rgba(0, 0, 0, 0.3), 0px 1.6px 0.533333px rgba(0, 0, 0, 0.05);
+        box-shadow: $toggle-small-selected-box-shadow;
         &::after {
           left: 17px;
         }
       }
       &--not-selected {
-        box-shadow: 0px 1.6px 4.26667px rgba(0, 0, 0, 0.15), 0px 1.6px 0.533333px rgba(0, 0, 0, 0.06);
+        box-shadow: $toggle-small-not-selected-box-shadow;
         &::after {
           left: 2px;
         }
       }
     }
     & .l3-style-toggle_text {
-      font-size: 12px;
-      line-height: 16px;
+      font-size: $spacing-small-medium;
+      line-height: $spacing-medium;
     }
   }
 
   &_kind_secondary {
     & .l3-style-toggle_toggle {
       &--not-selected {
-        background: rgba(255, 255, 255, 0.2);
+        @include theme-prop(background-color, toggle-not-selected-secondary-bg-color);
+        // background: $white-2;
       }
     }
   }
@@ -109,7 +112,7 @@
   &_kind_tertiary {
     & .l3-style-toggle_toggle {
       &--selected {
-        background: linear-gradient(180deg, #4ca6f8 0%, #2152f3 100%);
+        background: $linear-gradient-blue;
         // background-image: url("/src/components/Avatar/__stories__/assets/femaleIcon.png");
       }
     }
@@ -121,7 +124,7 @@
     &--disabled {
       & .l3-style-toggle_toggle {
         opacity: var(--disabled-component-opacity);
-        background: rgba(0, 0, 0, 0.2);
+        @include theme-prop(background-color, toggle-disabled-bg-color);
         cursor: not-allowed;
       }
       & .l3-style-toggle_text {

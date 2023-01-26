@@ -3,7 +3,7 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Clickable from "../Clickable/Clickable";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
-import { baseClassName } from "./RadioButtonConstants";
+import { baseClassName, RadioButtonSize, RadioButtonType } from "./RadioButtonConstants";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import L3Component from "../../types/L3Component";
 import Tooltip from "../Tooltip/Tooltip";
@@ -24,6 +24,9 @@ interface RadioButtonProps extends L3ComponentProps {
   retainChildClick?: boolean;
   childrenTabIndex?: string;
   noLabelAnimation?: boolean;
+  kind?: RadioButtonType;
+  size?: RadioButtonSize;
+  description?: string;
 }
 
 const RadioButton: L3Component<RadioButtonProps, HTMLElement> = forwardRef(
@@ -43,7 +46,10 @@ const RadioButton: L3Component<RadioButtonProps, HTMLElement> = forwardRef(
       checked,
       retainChildClick = true,
       childrenTabIndex = "0",
-      noLabelAnimation = false
+      noLabelAnimation = false,
+      kind = "primary",
+      size = "large",
+      description
     },
     ref: React.ForwardedRef<HTMLInputElement>
   ) => {
@@ -71,31 +77,67 @@ const RadioButton: L3Component<RadioButtonProps, HTMLElement> = forwardRef(
 
     return (
       <Tooltip content={tooltipContent}>
-        <label className={cx(baseClassName, overrideClassName, { disabled })}>
-          <span className={`${baseClassName}__radio-input-container`}>
-            <input
-              className={`${baseClassName}__radio-input-container__radio-input`}
-              type="radio"
-              value={value}
-              name={name}
-              disabled={disabled}
-              {...checkedProps}
-              onChange={onSelect}
-              ref={mergedRef}
-            />
+        <div className={cx(`wrapper`, description && `wrapper--size-${size}`)}>
+          <label className={cx(baseClassName, overrideClassName, { disabled })}>
             <span
-              className={cx(`${baseClassName}__radio-input-container__radio-control`, {
-                [`${baseClassName}__radio-input-container__radio-control--label-animation`]: !noLabelAnimation
-              })}
-            />
-          </span>
-          {text && <span className={`${baseClassName}__radio-label`}>{text}</span>}
-          {children && (
-            <Clickable className="radio-children-wrapper" onClick={onChildClick} tabIndex={childrenTabIndex}>
-              {children}
-            </Clickable>
+              className={cx(
+                `${baseClassName}__radio-input-container`,
+                `${baseClassName}__radio-input-container--kind-${kind}`
+              )}
+            >
+              <input
+                className={`${baseClassName}__radio-input-container__radio-input`}
+                type="radio"
+                value={value}
+                name={name}
+                disabled={disabled}
+                {...checkedProps}
+                onChange={onSelect}
+                ref={mergedRef}
+              />
+              <span
+                className={cx(
+                  `${baseClassName}__radio-input-container__radio-control`,
+                  `${baseClassName}__radio-input-container__radio-control--size-${size}`,
+                  {
+                    [`${baseClassName}__radio-input-container__radio-control--label-animation`]: !noLabelAnimation
+                  },
+                  {
+                    [`${baseClassName}__radio-input-container__radio-control--label-animation--size-${size}`]:
+                      !noLabelAnimation
+                  }
+                )}
+              />
+            </span>
+            {text && (
+              <span
+                className={cx(
+                  `${baseClassName}__radio-label`,
+                  `${baseClassName}__radio-label--kind-${kind}`,
+                  `${baseClassName}__radio-label--size-${size}`
+                )}
+              >
+                {text}
+              </span>
+            )}
+            {children && (
+              <Clickable className="radio-children-wrapper" onClick={onChildClick} tabIndex={childrenTabIndex}>
+                {children}
+              </Clickable>
+            )}
+          </label>
+          {description && (
+            <span
+              className={cx(
+                `${baseClassName}__description`,
+                `${baseClassName}__description--size-${size}`,
+                `${baseClassName}__description--kind-${kind}`
+              )}
+            >
+              {description}
+            </span>
           )}
-        </label>
+        </div>
       </Tooltip>
     );
   }
