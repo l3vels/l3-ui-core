@@ -31,8 +31,8 @@
     // border-radius: 100px;
 
     &::after {
-      // @include theme-prop(background-color, $snow-white);
-      background-color: $snow-white;
+      @include theme-prop(background-color, toggle-color);
+      // background-color: red;
       content: " ";
       position: absolute;
       width: 26px;
@@ -45,8 +45,8 @@
     }
 
     &--selected {
-      // @include theme-prop(background-color, primary-color);
-      background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
+      // @include theme-prop(background-color, toggle-selected-primary-bg-color);
+      background: $linear-gradient-green;
       box-shadow: $toggle-selected-box-shadow;
       &::after {
         left: $spacing-xl;
@@ -112,7 +112,7 @@
   &_kind_tertiary {
     & .l3-style-toggle_toggle {
       &--selected {
-        background: linear-gradient(180deg, #4ca6f8 0%, #2152f3 100%);
+        background: $linear-gradient-blue;
         // background-image: url("/src/components/Avatar/__stories__/assets/femaleIcon.png");
       }
     }

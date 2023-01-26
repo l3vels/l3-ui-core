@@ -51,7 +51,8 @@
     &--kind {
       &-secondary {
         .l3-style-radio-button-component__radio-input-container__radio-control {
-          border-color: $white-8;
+          @include theme-prop(border-color, radio-border-color-secondary);
+          // border-color: $white-8;
           &:active {
             outline: $radio-button-outline-secondary;
           }
@@ -60,8 +61,7 @@
     }
 
     input:checked + &__radio-control {
-      // @include theme-prop(border-color, primary-color);
-      border-color: #4ca6f8;
+      @include theme-prop(border-color, radio-checked-border-color);
       border-width: $spacing-xs-small;
       &--label-animation {
         animation-name: radio-checked-animation;
@@ -82,22 +82,23 @@
     }
 
     input:disabled + &__radio-control {
-      border-color: $white-2;
+      @include theme-prop(border-color, radio-border-color-disabled);
+      // border-color: $white-2;
     }
 
     input:checked:disabled + &__radio-control {
-      border-color: $white-2;
+      @include theme-prop(border-color, radio-border-color-disabled);
+      // border-color: $white-2;
     }
   }
 
   &__radio-label {
+    @include theme-prop(color, radio-label-color-primary);
     // font-family: "Circular Std";
     font-style: normal;
     font-weight: 500;
     font-size: $spacing-medium;
     line-height: 20px;
-
-    color: $black;
 
     &--size {
       &-small {
@@ -108,7 +109,7 @@
 
     &--kind {
       &-secondary {
-        color: $white;
+        @include theme-prop(color, radio-label-color-secondary);
       }
     }
   }
@@ -116,7 +117,8 @@
   &__description {
     font-weight: 450;
     font-size: $spacing-small-medium;
-    color: $black-3;
+    @include theme-prop(color, radio-description-color-primary);
+    // color: $black-3;
     max-width: 200px;
     margin-left: $spacing-xl;
 
@@ -127,7 +129,7 @@
     }
     &--kind {
       &-secondary {
-        color: $white-6;
+        @include theme-prop(color, radio-description-color-secondary);
       }
     }
   }
@@ -149,13 +151,12 @@
 
   // &:hover &__radio-input-container input:enabled:checked + &__radio-input-container__radio-control {
   //   // @include theme-prop(border-color, primary-hover-color);
-  //   border-color: #4ca6f8;
+  //   border-color: $light-blue;
   // }
 
   &:hover &__radio-input-container input:enabled:not(:checked) + &__radio-input-container__radio-control,
   &:focus-within &__radio-input-container input:enabled:not(:checked) + &__radio-input-container__radio-control {
-    // @include theme-prop(border-color, primary-text-color);
-    border-color: #4ca6f8;
+    @include theme-prop(border-color, radio-checked-border-color);
   }
 }
 

@@ -60,16 +60,18 @@
     &-secondary {
       .l3-style-checkbox {
         &__checkbox {
-          border-color: $white;
+          @include theme-prop(border-color, checkbox-border-color-secondary);
+          // border-color: $white;
         }
         &__label {
-          color: $white;
+          @include theme-prop(color, checkbox-label-color-secondary);
+          // color: $white;
         }
         &_input {
           &:checked {
             & + .l3-style-checkbox__checkbox {
               &__checkbox {
-                outline: $spacing-xxs solid $black-2;
+                outline: $checkbox-outline-checked;
               }
             }
           }
@@ -93,8 +95,8 @@
     cursor: pointer;
     user-select: none;
     margin-inline-start: 17.5px;
-    // @include theme-prop(color, primary-text-color);
-    color: $black;
+    @include theme-prop(color, checkbox-label-color-primary);
+    // color: $black;
     font-weight: 500;
     font-size: $spacing-medium;
     line-height: 20px;
@@ -103,7 +105,8 @@
   &__description {
     font-weight: 450;
     font-size: $spacing-small-medium;
-    color: $black-3;
+    @include theme-prop(color, checkbox-description-color-primary);
+    // color: $black-3;
     max-width: 200px;
     margin-left: 39px;
     // margin-top: 18px;
@@ -115,7 +118,8 @@
     }
     &--kind {
       &-secondary {
-        color: $white-6;
+        @include theme-prop(color, checkbox-description-color-secondary);
+        // color: $white-6;
       }
     }
   }
@@ -157,9 +161,10 @@
     &:checked {
       &:active {
         & + .l3-style-checkbox__checkbox {
-          border-color: $white;
-          outline: 1.75px solid #4ca6f8;
-          outline-width: $spacing-xxs;
+          @include theme-prop(border-color, checkbox-checked-active-border-color);
+          // border-color: $white;
+          outline: $checkbox-outline-active;
+          // outline-width: $spacing-xxs;
           border-width: $spacing-xxs;
         }
       }
@@ -177,8 +182,7 @@
 
     &:active {
       & + .l3-style-checkbox__checkbox {
-        border-color: #4ca6f8;
-        // background-color: red;
+        @include theme-prop(border-color, checkbox-active-border-color);
       }
     }
 
@@ -195,9 +199,10 @@
             animation-duration: 0ms;
           }
 
-          border-color: #4ca6f8;
-          background-color: #4ca6f8;
-          outline: $border-radius-extra-small solid $black-2;
+          @include theme-prop(border-color, checkbox-active-border-color);
+          @include theme-prop(background-color, checkbox-active-border-color);
+
+          outline: $checkbox-outline-checked;
 
           & > .l3-style-checkbox__icon {
             visibility: visible;
@@ -207,8 +212,8 @@
 
       &:disabled + .l3-style-checkbox {
         &__checkbox:after {
-          // @include theme-prop(background-color, disabled-background-color);
-          background-color: $white-2;
+          @include theme-prop(background-color, checkbox-bg-disabled);
+          // background-color: $white-2;
         }
       }
     }
@@ -221,10 +226,10 @@
           &__prevent-animation {
             animation-duration: 0ms;
           }
-
-          border-color: #000000;
+          @include theme-prop(border-color, checkbox-indeterminate-border-color);
+          // border-color: #000000;
           background: transparent;
-          outline: $spacing-xxs solid $black-2;
+          outline: $checkbox-outline-checked;
           & > .l3-style-checkbox__icon {
             visibility: visible;
           }
@@ -238,8 +243,8 @@
         &__checkbox:hover {
           // @include theme-prop(background-color, disabled-background-color);
           background-color: transparent;
-          // @include theme-prop(border-color, ui-border-color);
-          border-color: $white-2;
+          @include theme-prop(border-color, checkbox-bg-disabled);
+          // border-color: $white-2;
           outline: none;
 
           .l3-style-checkbox__icon {
@@ -253,7 +258,8 @@
         & + .l3-style-checkbox {
           &__checkbox,
           &__checkbox:hover {
-            background-color: $white-2;
+            @include theme-prop(background-color, checkbox-bg-disabled);
+            // background-color: $white-2;
             border: none;
           }
         }
