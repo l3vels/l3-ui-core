@@ -120,11 +120,8 @@ const IconButton: L3Component<IconButtonProps> & {
 
     const iconSize = useMemo(() => {
       switch (size) {
-        case Button.sizes.XXS:
-        case Button.sizes.XS:
-          return 16;
         case Button.sizes.SMALL:
-        case Button.sizes.MEDIUM:
+          return 16;
         case Button.sizes.LARGE:
           return BUTTON_ICON_SIZE;
         default:
@@ -160,7 +157,7 @@ const IconButton: L3Component<IconButtonProps> & {
     return (
       <>
         {label ? (
-          <div className={styles.container}>
+          <div className={styles.iconButtonContainer}>
             <IconButtonWrapper {...iconButtonWrapperProps}>
               <Tooltip
                 {...tooltipProps}
@@ -197,10 +194,10 @@ const IconButton: L3Component<IconButtonProps> & {
                 </Button>
               </Tooltip>
             </IconButtonWrapper>
-            <span className="span">{label}</span>
+            <span className={styles.span}>{label}</span>
           </div>
         ) : (
-          <div className="container">
+          <div className={styles.iconButtonContainer}>
             <IconButtonWrapper {...iconButtonWrapperProps}>
               <Tooltip
                 {...tooltipProps}
