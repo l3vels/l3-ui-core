@@ -9,15 +9,16 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Navigation/Menu/MenuTitle"
-  component={ MenuTitle }
-  argTypes={ metaSettings.argTypes }
-  decorators={ metaSettings.decorators }
+  title="Navigation/Menu - (Coming Soon)/MenuTitle - (Coming Soon)"
+  component={MenuTitle}
+  argTypes={metaSettings.argTypes}
+  decorators={metaSettings.decorators}
 />
 
 <!--- Component documentation -->
 
 # Menu Title
+
 - [Overview](#overview)
 - [Props](#props)
 - [Variants](#variants)
@@ -26,18 +27,19 @@ export const metaSettings = createStoryMetaSettings({
 ## Overview
 
 <Canvas>
-  <Story name="Overview" args={{caption: "Menu title"}}>
-      { menuTitleTemplate.bind({}) }
+  <Story name="Overview" args={{ caption: "Menu title" }}>
+    {menuTitleTemplate.bind({})}
   </Story>
 </Canvas>
 
 ## Props
-<ArgsTable of={ MenuTitle } />
+
+<ArgsTable of={MenuTitle} />
 
 ## Variants
+
 ### Caption positions
+
 <Canvas>
-  <Story name="Caption placements">
-    { menuTitleCaptionPositionsTemplate.bind({}) }
-  </Story>
+  <Story name="Caption placements">{menuTitleCaptionPositionsTemplate.bind({})}</Story>
 </Canvas>

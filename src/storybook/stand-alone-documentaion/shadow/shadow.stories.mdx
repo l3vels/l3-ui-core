@@ -7,15 +7,11 @@ import { DragShadowExample } from "./drag-shadow-example/drag-shadow-example";
 import { COLORS, SPACING, TYPOGRAPHY } from "../../components/related-components/component-description-map";
 import "./shadow.stories.scss";
 
-<Meta
-  title="Foundations/Shadow"
-/>
+<Meta title="Foundations/Shadow - (Coming Soon)" />
 
 <!--- Component documentation -->
 
-<ComponentName withFoundationBackground>
-  Shadow
-</ComponentName>
+<ComponentName withFoundationBackground>Shadow</ComponentName>
 
 - [Overview](#overview)
 - [Shadow levels](#shadow-levels)
@@ -24,28 +20,37 @@ import "./shadow.stories.scss";
 - [Feedback](#feedback)
 
 ## Overview
+
 Virtual light in l3vels platform always comes from the top and creates a shadows from layout and UI elements like in real world.
 Shadows used to create the scenes of hierarchy and elevation withing the UI and layout.
 
-  <img src={shadowsSketch} className="l3-storybook-shadow_overview-image" alt=""/>
-
+{" "}
+<img src={shadowsSketch} className="l3-storybook-shadow_overview-image" alt="" />
 
 ## Shadow levels
-<ShadowLevels/>
+
+<ShadowLevels />
 
 ## Usage and examples
-<UsageGuidelines guidelines={[
-  "You can double the sizes to create bigger spacings",
-  "Stay consistent with paddings and sizes across different UI components",
-  "Align all the elements to the same spacing within the components or a page"
-]}/>
+
+<UsageGuidelines
+  guidelines={[
+    "You can double the sizes to create bigger spacings",
+    "Stay consistent with paddings and sizes across different UI components",
+    "Align all the elements to the same spacing within the components or a page"
+  ]}
+/>
 
 ### Interactions
+
 Use shadow to indicate the dragged elements are in the “air”
-<DragShadowExample/>
+
+<DragShadowExample />
 
 Use shadow to indicate the card hover is gets closer to the user
-<CardShadowExample/>
+
+<CardShadowExample />
 
 ## Up next
-<RelatedComponents componentsNames={[TYPOGRAPHY, SPACING, COLORS]}/>
+
+<RelatedComponents componentsNames={[TYPOGRAPHY, SPACING, COLORS]} />

@@ -9,12 +9,12 @@ export const metaSettings = createStoryMetaSettings({
   enumPropNamesArray: ["direction"]
 });
 
-<Meta 
-  title="Data display/Divider" 
-  component={ Divider } 
-  argTypes={ metaSettings.argTypes }
-  decorators={ metaSettings.decorators } 
-  />
+<Meta
+  title="Data display/Divider - (Coming Soon)"
+  component={Divider}
+  argTypes={metaSettings.argTypes}
+  decorators={metaSettings.decorators}
+/>
 
 <!--- Component template -->
 
@@ -58,7 +58,7 @@ Divider create separation between two UI elements
       </div>
       <div className={classes["divider-description-container"]}>
         <span className={classes["divider-description-text"]}>Vertical</span>
-        <Divider direction={Divider.directions.VERTICAL} className={classes["divider-description-horizontal"]}/>
+        <Divider direction={Divider.directions.VERTICAL} className={classes["divider-description-horizontal"]} />
       </div>
     </div>
   </Story>

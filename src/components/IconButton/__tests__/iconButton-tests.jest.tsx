@@ -18,7 +18,11 @@ describe("IconButton tests", () => {
     it("should call the callback function when clicked ", () => {
       const onClick = jest.fn();
       const ariaLabel = "Button Icon";
-      renderComponent({ onClick, ariaLabel });
+      renderComponent({
+        onClick,
+        ariaLabel,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       fireEvent.click(component);
       expect(onClick.mock.calls.length).toBe(1);
@@ -27,7 +31,12 @@ describe("IconButton tests", () => {
     it("should not call the callback if disabled when clicked ", () => {
       const onClick = jest.fn();
       const ariaLabel = "Button Icon";
-      renderComponent({ onClick, ariaLabel, disabled: true });
+      renderComponent({
+        onClick,
+        ariaLabel,
+        disabled: true,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       fireEvent.click(component);
       expect(onClick.mock.calls.length).toBe(0);
@@ -39,7 +48,11 @@ describe("IconButton tests", () => {
       const tooltipContent = "My Text";
       const ariaLabel = "Button Icon";
 
-      renderComponent({ tooltipContent, ariaLabel });
+      renderComponent({
+        tooltipContent,
+        ariaLabel,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       act(() => {
         fireEvent.mouseEnter(component);
@@ -56,7 +69,10 @@ describe("IconButton tests", () => {
     it("should display the tooltip with aria label", () => {
       const ariaLabel = "Button Icon";
 
-      renderComponent({ ariaLabel });
+      renderComponent({
+        ariaLabel,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       act(() => {
         fireEvent.mouseEnter(component);
@@ -74,7 +90,11 @@ describe("IconButton tests", () => {
       const ariaLabel = "Button Icon";
       const disabledReason = "I'm a disabled button";
 
-      renderComponent({ ariaLabel, disabledReason });
+      renderComponent({
+        ariaLabel,
+        disabledReason,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       act(() => {
         fireEvent.mouseEnter(component);
@@ -92,7 +112,12 @@ describe("IconButton tests", () => {
       const ariaLabel = "Button Icon";
       const disabledReason = "I'm a disabled button";
 
-      renderComponent({ ariaLabel, disabledReason, disabled: true });
+      renderComponent({
+        ariaLabel,
+        disabledReason,
+        disabled: true,
+        label: ""
+      });
       const component = screen.getByLabelText(ariaLabel);
       act(() => {
         fireEvent.mouseEnter(component);

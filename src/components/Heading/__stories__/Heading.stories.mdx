@@ -20,7 +20,12 @@ export const metaSettings = createStoryMetaSettings({
   enumPropNamesArray: ["type", "size"]
 });
 
-<Meta title="Text/Heading" component={Heading} argTypes={metaSettings.argTypes} decorators={metaSettings.decorators} />
+<Meta
+  title="Text/Heading - (Coming Soon)"
+  component={Heading}
+  argTypes={metaSettings.argTypes}
+  decorators={metaSettings.decorators}
+/>
 
 <!--- Component template -->
 
@@ -77,7 +82,7 @@ Heading components are used to title any page sections or sub-sections in top-le
 <Canvas>
   <Story name="Sizes">
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <Heading type={Heading.types.h1} value="Hello H1" brandFont/>
+      <Heading type={Heading.types.h1} value="Hello H1" brandFont />
       <Heading type={Heading.types.h1} value="Hello H1 medium" size="medium" brandFont />
       <Heading type={Heading.types.h2} value="Hello H2" />
       <Heading type={Heading.types.h2} value="Hello H2 small" size="small" />

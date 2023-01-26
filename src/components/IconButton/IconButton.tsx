@@ -4,7 +4,7 @@ import { noop as NOOP } from "lodash-es";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Tooltip, { TooltipProps } from "../Tooltip/Tooltip";
 import Icon from "../Icon/Icon";
-import AddSmall from "../Icon/Icons/components/AddSmall";
+import Close from "../Icon/Icons/components/Close";
 import { getWidthHeight, Size } from "./services/IconButton-helpers";
 import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import { getTestId } from "../../tests/test-ids-utils";
@@ -72,6 +72,8 @@ export interface IconButtonProps extends L3ComponentProps {
   dataTestId?: string;
   /** Change the focus indicator from around the button to within it */
   insetFocus?: boolean;
+  label?: string;
+  labelInButton?: string;
 }
 
 const IconButton: L3Component<IconButtonProps> & {
@@ -97,7 +99,9 @@ const IconButton: L3Component<IconButtonProps> & {
       onClick,
       color,
       dataTestId,
-      insetFocus
+      insetFocus,
+      label,
+      labelInButton
     },
     ref
   ) => {
@@ -116,11 +120,8 @@ const IconButton: L3Component<IconButtonProps> & {
 
     const iconSize = useMemo(() => {
       switch (size) {
-        case Button.sizes.XXS:
-        case Button.sizes.XS:
-          return 16;
         case Button.sizes.SMALL:
-        case Button.sizes.MEDIUM:
+          return 16;
         case Button.sizes.LARGE:
           return BUTTON_ICON_SIZE;
         default:
@@ -154,38 +155,89 @@ const IconButton: L3Component<IconButtonProps> & {
     }, [wrapperClassName]);
 
     return (
-      <IconButtonWrapper {...iconButtonWrapperProps}>
-        <Tooltip
-          {...tooltipProps}
-          content={calculatedTooltipContent}
-          referenceWrapperClassName={styles.referenceWrapper}
-        >
-          <Button
-            onClick={onClick}
-            disabled={disabled}
-            color={color}
-            kind={kind}
-            ariaLabel={buttonAriaLabel}
-            ref={mergedRef}
-            id={id}
-            dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-            noSidePadding
-            active={active}
-            className={className}
-            style={overrideStyle}
-            insetFocus={insetFocus}
-          >
-            <Icon
-              icon={icon}
-              iconType={Icon.type.SVG}
-              iconSize={iconSize}
-              ignoreFocusStyle
-              className="icon-button-padding"
-              clickable={false}
-            />
-          </Button>
-        </Tooltip>
-      </IconButtonWrapper>
+      <>
+        {label ? (
+          <div className={styles.iconButtonContainer}>
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={className}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                    />
+                  )}
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+            <span className={styles.l3_IconButton_label_styles}>{label}</span>
+          </div>
+        ) : (
+          <div className={styles.iconButtonContainer}>
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={className}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                      iconLabel="test"
+                    />
+                  )}
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+          </div>
+        )}
+      </>
     );
   }
 );
@@ -202,13 +254,13 @@ IconButton.defaultProps = {
   wrapperClassName: undefined,
   onClick: NOOP,
   id: undefined,
-  icon: AddSmall,
+  icon: Close,
   ariaLabel: undefined,
-  size: IconButton?.sizes.MEDIUM,
+  size: IconButton?.sizes.LARGE,
   hideTooltip: false,
   tooltipContent: undefined,
   tooltipProps: {} as TooltipProps,
-  kind: IconButton.kinds.TERTIARY,
+  kind: IconButton.kinds.PRIMARY,
   disabled: false,
   disabledReason: undefined,
   color: undefined,
