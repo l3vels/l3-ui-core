@@ -58,6 +58,9 @@ $radio-button-large: 20px;
 $radio-button-small: 12px;
 $radio-button-outline-primary: 2.5px solid rgba(0, 0, 0, 0.2);
 $radio-button-outline-secondary: 2.5px solid rgba(255, 255, 255, 0.2);
+$text-field-icon-container-size-sm: 14px;
+$text-field-icon-container-size-md: 14px;
+$text-field-icon-container-size-lg: 14px;
 
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
