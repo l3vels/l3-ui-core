@@ -62,6 +62,45 @@ A radio represents an item in a single selection list.
 
 ## Variants
 
+### kinds
+
+<Canvas>
+  <Story name="Kinds">
+    <RadioButton kind="primary" text="primary" />
+    <RadioButton kind="secondary" text="secondary" />
+  </Story>
+</Canvas>
+
+### Size
+
+<Canvas>
+  <Story name="Size">
+    <RadioButton kind="primary" text="large" size="large" />
+    <RadioButton kind="secondary" text="large" size="large" />
+    <RadioButton kind="primary" text="small" size="small" />
+    <RadioButton kind="secondary" text="small" size="small" />
+  </Story>
+</Canvas>
+
+### Description
+
+<Canvas>
+  <Story name="Description">
+    <RadioButton
+      kind="primary"
+      text="Radio Button with description"
+      size="large"
+      description="Helpful description of the option which may briefly highlight side effects or conditions of the option."
+    />
+    <RadioButton
+      kind="secondary"
+      text="Radio Button with description"
+      size="small"
+      description="Helpful description of the option which may briefly highlight side effects or conditions of the option."
+    />
+  </Story>
+</Canvas>
+
 ### States
 
 Radio buttons have 3 states: regular, selected, and disabled.

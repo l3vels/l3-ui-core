@@ -107,14 +107,14 @@
     .input-component__icon--container {
       position: absolute;
       top: 50%;
-      right: 4px;
-      width: 24px;
-      height: 24px;
+      right: 18px;
+      width: $text-field-icon-container-size-lg;
+      height: $text-field-icon-container-size-lg;
       transform: translateY(-50%);
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: $border-radius-small;
+      border-radius: $border-radius-big;
       opacity: 0;
       pointer-events: none;
       &:active,
@@ -232,8 +232,8 @@
       }
       .input-component__icon--container {
         pointer-events: none;
-        height: 32px;
-        width: 32px;
+        height: 14px;
+        width: 14px;
         outline: none;
 
         .input-component__icon {
@@ -292,6 +292,8 @@
         height: 16px;
 
         .input-component__loader-svg {
+          width: 50%;
+          height: 50%;
           @include theme-prop(color, secondary-text-color);
         }
       }

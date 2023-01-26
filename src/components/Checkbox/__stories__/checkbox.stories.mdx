@@ -10,7 +10,11 @@ import {
 import DialogContentContainer from "../../DialogContentContainer/DialogContentContainer";
 import "./checkbox.stories.scss";
 
+<<<<<<< HEAD
 <Meta title="Inputs/Checkbox - (In Progress)" component={Checkbox} />
+=======
+<Meta title="Inputs/Checkbox" component={Checkbox} />
+>>>>>>> eab140bbf924e1941af2f9825b64f1435ba9d2ae
 
 <!--- Component template -->
 
@@ -71,9 +75,55 @@ Checkboxes allow users to select one or more items from a set of options.
 
 ## Variants
 
+<<<<<<< HEAD
 ### States
 
 Has 4 states: regular, hover, selected, and disabled.
+=======
+### Kinds
+
+<Canvas>
+  <Story name="Kinds">
+    <Checkbox label="primary" kind="primary" />
+    <Checkbox label="secondary" kind="secondary" />
+  </Story>
+</Canvas>
+
+### Size
+
+Has Large and Small sizes
+
+<Canvas>
+  <Story name="Size">
+    <Checkbox label="large" size="large" />
+    <Checkbox label="large" size="large" disabled />
+    <Checkbox label="small" size="small" />
+    <Checkbox label="small" size="small" disabled />
+  </Story>
+</Canvas>
+
+### Description
+
+<Canvas>
+  <Story name="Description">
+    <Checkbox
+      label="Checkbox with description"
+      size="large"
+      description="Helpful description of the option which may briefly highlight side effects or conditions of the option."
+    />
+    <Checkbox
+      label="Checkbox with description"
+      size="small"
+      description="Helpful description of the option which may briefly highlight side effects or conditions of the option."
+      kind="secondary"
+    />
+  </Story>
+</Canvas>
+
+### States
+
+Has 4 states: regular, selected, and disabled.
+>>>>>>> eab140bbf924e1941af2f9825b64f1435ba9d2ae
 
 <Canvas>
   <Story name="States">

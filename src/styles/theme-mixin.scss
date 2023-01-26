@@ -60,6 +60,10 @@ $red-500: #e94d45;
 $red-600: #ba3d37;
 $red-700: #8b2d29;
 
+$linear-gradient-green: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
+$linear-gradient-blue: linear-gradient(180deg, #4ca6f8 0%, #2152f3 100%);
+$light-blue: #4ca6f8;
+
 $theme: (
   // primary colors
   "primary-background-color": $black,
@@ -103,6 +107,35 @@ $theme: (
   // positive colors
   "border-positive": $green-200,
   "positive-text-color": $green-500,
+
+  // toggle
+  // Toggle colors
+  "toggle-color": $white,
+  "toggle-primary-bg-color": $black-2,
+  "toggle-not-selected-secondary-bg-color": $white-2,
+  "toggle-disabled-bg-color": $black-2,
+
+  // checkbox
+  // Checkbox colors
+  "checkbox-border-color-secondary": $white,
+  "checkbox-label-color-primary": $black,
+  "checkbox-label-color-secondary": $white,
+  "checkbox-description-color-primary": $black-3,
+  "checkbox-description-color-secondary": $white-6,
+  "checkbox-checked-active-border-color": $white,
+  "checkbox-bg-disabled": $white-2,
+  "checkbox-indeterminate-border-color": $black,
+  "checkbox-active-border-color": $light-blue,
+
+  // radio buuton
+  // Radio button colors
+  "radio-border-color-secondary": $white-8,
+  "radio-border-color-disabled": $white-2,
+  "radio-label-color-primary": $black,
+  "radio-label-color-secondary": $white,
+  "radio-description-color-primary": $black-3,
+  "radio-description-color-secondary": $white-6,
+  "radio-checked-border-color": $light-blue,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,

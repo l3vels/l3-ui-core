@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { forwardRef, useCallback, useEffect, useRef } from "react";
 import { isNil, noop as NOOP } from "lodash-es";
 import PropTypes from "prop-types";
@@ -31,7 +32,10 @@ export const Checkbox = forwardRef(
       defaultChecked,
       value,
       name,
-      id
+      id,
+      size = "large",
+      kind = "primary",
+      description
     },
     ref
   ) => {
@@ -73,39 +77,59 @@ export const Checkbox = forwardRef(
 
     return (
       // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
-      <label
-        className={cx(BASE_CLASS_NAME, overrideClassName, { [`${BASE_CLASS_NAME}__disabled`]: disabled })}
-        onMouseUp={onMouseUpCallback}
-        htmlFor={id}
-        onClickCapture={onClickCaptureLabel}
-      >
-        <input
-          ref={mergedInputRef}
-          id={id}
-          className={`${BASE_CLASS_NAME}__input`}
-          value={value}
-          name={name}
-          type="checkbox"
-          onChange={onChange}
-          defaultChecked={overrideDefaultChecked}
-          disabled={disabled}
-          aria-label={ariaLabel || label}
-          aria-labelledby={ariaLabelledBy}
-          checked={checked}
-        />
-        <div className={cx(...checkboxClassNames)} ref={iconContainerRef}>
-          <Icon
-            className={`${BASE_CLASS_NAME}__icon`}
-            iconType={Icon.type.SVG}
-            icon={indeterminate ? Remove : Check}
-            ignoreFocusStyle
-            clickable={false}
-            ariaHidden={true}
-            iconSize="16"
+      <div className={cx(`wrapper`, description && `wrapper--size-${size}`)}>
+        <label
+          className={cx(
+            BASE_CLASS_NAME,
+            overrideClassName,
+            { [`${BASE_CLASS_NAME}__disabled`]: disabled },
+            [`${BASE_CLASS_NAME}--size-${size}`],
+            [`${BASE_CLASS_NAME}--kind-${kind}`]
+          )}
+          onMouseUp={onMouseUpCallback}
+          htmlFor={id}
+          onClickCapture={onClickCaptureLabel}
+        >
+          <input
+            ref={mergedInputRef}
+            id={id}
+            className={`${BASE_CLASS_NAME}__input`}
+            value={value}
+            name={name}
+            type="checkbox"
+            onChange={onChange}
+            defaultChecked={overrideDefaultChecked}
+            disabled={disabled}
+            aria-label={ariaLabel || label}
+            aria-labelledby={ariaLabelledBy}
+            checked={checked}
           />
-        </div>
-        {label === false ? null : <span className={cx(`${BASE_CLASS_NAME}__label`, labelClassName)}>{label}</span>}
-      </label>
+          <div className={cx(...checkboxClassNames)} ref={iconContainerRef}>
+            <Icon
+              className={`${BASE_CLASS_NAME}__icon`}
+              iconType={Icon.type.SVG}
+              icon={indeterminate ? Remove : Check}
+              ignoreFocusStyle
+              clickable={false}
+              ariaHidden={true}
+              iconSize="16"
+            />
+          </div>
+
+          {label === false ? null : <span className={cx(`${BASE_CLASS_NAME}__label`, labelClassName)}>{label}</span>}
+        </label>
+        {description === false ? null : (
+          <span
+            className={cx(
+              `${BASE_CLASS_NAME}__description`,
+              `${BASE_CLASS_NAME}__description--size-${size}`,
+              `${BASE_CLASS_NAME}__description--kind-${kind}`
+            )}
+          >
+            {description}
+          </span>
+        )}
+      </div>
     );
   }
 );
