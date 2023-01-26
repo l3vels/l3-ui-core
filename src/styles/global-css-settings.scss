@@ -54,6 +54,23 @@ $text-field-size-large: 56px;
 $text-field-size-medium: 50px;
 $text-field-size-small: 44px;
 
+//checkbox
+$checkbox-size-large: 21px;
+$checkbox-size-small: 12px;
+$checkbox-outline-checked: 2px solid rgba(0, 0, 0, 0.2);
+$checkbox-outline-active: 2px solid #4ca6f8;
+
+//toggle
+$toggle-selected-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3), 0px 3px 1px rgba(0, 0, 0, 0.05);
+$toggle-not-selected-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+$toggle-small-selected-box-shadow: 0px 1.6px 4.26667px rgba(0, 0, 0, 0.3), 0px 1.6px 0.533333px rgba(0, 0, 0, 0.05);
+$toggle-small-not-selected-box-shadow: 0px 1.6px 4.26667px rgba(0, 0, 0, 0.15), 0px 1.6px 0.533333px rgba(0, 0, 0, 0.06);
+
+//radioButton
+$radio-button-large: 20px;
+$radio-button-small: 12px;
+$radio-button-outline-primary: 2.5px solid rgba(0, 0, 0, 0.2);
+$radio-button-outline-secondary: 2.5px solid rgba(255, 255, 255, 0.2);
 $text-field-icon-container-size-sm: 14px;
 $text-field-icon-container-size-md: 14px;
 $text-field-icon-container-size-lg: 14px;
