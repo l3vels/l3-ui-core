@@ -47,16 +47,16 @@
     &--selected {
       // @include theme-prop(background-color, primary-color);
       background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
-      box-shadow: 0px 3px 8px $black-3, 0px 3px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: $toggle-selected-box-shadow;
       &::after {
         left: $spacing-xl;
       }
     }
 
     &--not-selected {
-      // @include theme-prop(background-color, ui-border-color);
-      background: $black-2;
-      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+      @include theme-prop(background-color, toggle-primary-bg-color);
+      // background: $black-2;
+      box-shadow: $toggle-not-selected-box-shadow;
       &::after {
         left: 3px;
       }
@@ -82,13 +82,13 @@
         top: calc(50% - 13.87px / 2 - 0px);
       }
       &--selected {
-        box-shadow: 0px 1.6px 4.26667px $black-3, 0px 1.6px 0.533333px rgba(0, 0, 0, 0.05);
+        box-shadow: $toggle-small-selected-box-shadow;
         &::after {
           left: 17px;
         }
       }
       &--not-selected {
-        box-shadow: 0px 1.6px 4.26667px rgba(0, 0, 0, 0.15), 0px 1.6px 0.533333px rgba(0, 0, 0, 0.06);
+        box-shadow: $toggle-small-not-selected-box-shadow;
         &::after {
           left: 2px;
         }
@@ -103,7 +103,8 @@
   &_kind_secondary {
     & .l3-style-toggle_toggle {
       &--not-selected {
-        background: $white-2;
+        @include theme-prop(background-color, toggle-not-selected-secondary-bg-color);
+        // background: $white-2;
       }
     }
   }
@@ -123,7 +124,7 @@
     &--disabled {
       & .l3-style-toggle_toggle {
         opacity: var(--disabled-component-opacity);
-        background: $black-2;
+        @include theme-prop(background-color, toggle-disabled-bg-color);
         cursor: not-allowed;
       }
       & .l3-style-toggle_text {

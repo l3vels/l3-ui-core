@@ -4,7 +4,7 @@
 @import "../../styles/typography";
 @import "../../styles/states";
 
-$checkbox-size: 16px;
+// $checkbox-size: 16px;
 
 @mixin hover-selected {
   @include theme-prop(background-color, primary-hover-color);
@@ -29,8 +29,8 @@ $checkbox-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 21px;
-    height: 21px;
+    width: $checkbox-size-large;
+    height: $checkbox-size-large;
     // border: 1px solid;
     // @include theme-prop(border-color, ui-border-color);
     // border-radius: $border-radius-extra-small;
@@ -79,7 +79,7 @@ $checkbox-size: 16px;
   }
 
   &__icon {
-    width: 110%;
+    width: 100%;
     @include theme-prop(color, text-color-on-primary);
     visibility: hidden;
   }
@@ -103,7 +103,7 @@ $checkbox-size: 16px;
   &__description {
     font-weight: 450;
     font-size: $spacing-small-medium;
-    color: rgba(0, 0, 0, 0.3);
+    color: $black-3;
     max-width: 200px;
     margin-left: 39px;
     // margin-top: 18px;
@@ -115,7 +115,7 @@ $checkbox-size: 16px;
     }
     &--kind {
       &-secondary {
-        color: rgba(255, 255, 255, 0.6);
+        color: $white-6;
       }
     }
   }
@@ -124,8 +124,8 @@ $checkbox-size: 16px;
     &-small {
       .l3-style-checkbox {
         &__checkbox {
-          width: $spacing-small-medium;
-          height: $spacing-small-medium;
+          width: $checkbox-size-small;
+          height: $checkbox-size-small;
           border-width: $spacing-xxs;
           border-radius: $spacing-xxs;
         }
@@ -197,7 +197,7 @@ $checkbox-size: 16px;
 
           border-color: #4ca6f8;
           background-color: #4ca6f8;
-          outline: 2px solid $black-2;
+          outline: $border-radius-extra-small solid $black-2;
 
           & > .l3-style-checkbox__icon {
             visibility: visible;

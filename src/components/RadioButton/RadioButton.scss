@@ -27,8 +27,8 @@
       justify-content: center;
       // width: 1em;
       // height: 1em;
-      width: 20px;
-      height: 20px;
+      width: $radio-button-large;
+      height: $radio-button-large;
       // border: 0.1em solid;
       // @include theme-prop(border-color, ui-border-color);
       border: 3.5px solid $black;
@@ -37,14 +37,14 @@
       // outline: 3.5px solid rgba(0, 0, 0, 0.2);
       &--size {
         &-small {
-          width: $spacing-small-medium;
-          height: $spacing-small-medium;
+          width: $radio-button-small;
+          height: $radio-button-small;
           border-width: $spacing-xxs;
         }
       }
       transition: border-width var(--motion-productive-medium) var(--motion-timing-enter);
       &:active {
-        outline: 2.5px solid $black-2;
+        outline: $radio-button-outline-primary;
       }
     }
 
@@ -53,7 +53,7 @@
         .l3-style-radio-button-component__radio-input-container__radio-control {
           border-color: $white-8;
           &:active {
-            outline: 2.5px solid $white-2;
+            outline: $radio-button-outline-secondary;
           }
         }
       }
@@ -116,7 +116,7 @@
   &__description {
     font-weight: 450;
     font-size: $spacing-small-medium;
-    color: rgba(0, 0, 0, 0.3);
+    color: $black-3;
     max-width: 200px;
     margin-left: $spacing-xl;
 
@@ -127,7 +127,7 @@
     }
     &--kind {
       &-secondary {
-        color: rgba(255, 255, 255, 0.6);
+        color: $white-6;
       }
     }
   }

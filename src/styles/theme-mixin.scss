@@ -135,7 +135,12 @@ $theme: (
   "box-shadow-xs": 0 4px 6px -4px rgb(0 0 0 / 10%),
   "box-shadow-small": 0 4px 8px rgb(0 0 0 / 20%),
   "box-shadow-medium": 0 6px 20px rgb(0 0 0 / 20%),
-  "box-shadow-large": 0 15px 50px rgb(0 0 0 / 30%)
+  "box-shadow-large": 0 15px 50px rgb(0 0 0 / 30%),
+  // toggle
+  // Toggle colors
+  "toggle-primary-bg-color": $black-2,
+  "toggle-not-selected-secondary-bg-color": $white-2,
+  "toggle-disabled-bg-color": $black-2
 );
 $theme-var: (
   "primary-color": var(--primary-color),
