@@ -44,7 +44,6 @@
     cursor: pointer;
     @include theme-prop(color, tab-color-primary);
 
-    font-family: "Circular Std";
     font-style: normal;
     font-weight: 500;
     font-size: $tab-font-size-large;
