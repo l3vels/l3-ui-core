@@ -1,5 +1,7 @@
 @import "../../../styles/themes";
 @import "../../../styles/typography";
+@import "../../../styles/global-css-settings";
+@import "../../../styles/theme-mixin.scss";
 
 .tabs--wrapper {
   // padding-bottom: 20px;
@@ -15,9 +17,10 @@
     align-items: center;
 
     border-radius: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 4px;
-    gap: 8px;
+    @include theme-prop(background-color, tab-list-bg-color);
+
+    padding: $spacing-xs;
+    gap: $spacing-small;
 
     // &.sm {
     //   height: 32px;

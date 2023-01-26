@@ -1,6 +1,8 @@
 @import "../../../styles/states";
 @import "../../../styles/themes";
 @import "../../../styles/typography";
+@import "../../../styles/global-css-settings";
+@import "../../../styles/theme-mixin";
 
 .tab--wrapper {
   position: relative;
@@ -40,20 +42,19 @@
     user-select: none;
     // margin-bottom: $margin-bottom;
     cursor: pointer;
-    // @include theme-prop(color, primary-text-color);
-    color: rgba(255, 255, 255, 0.6);
+    @include theme-prop(color, tab-color-primary);
 
     font-family: "Circular Std";
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    height: 46px;
+    font-size: $tab-font-size-large;
+    line-height: $tab-line-height-large;
+    height: $tab-height-large;
     &--size {
       &-small {
-        font-size: 16px;
-        line-height: 20px;
-        height: 32px;
+        font-size: $tab-font-size-small;
+        line-height: $tab-line-height-small;
+        height: $tab-height-small;
       }
     }
 
@@ -90,21 +91,19 @@
   &:not(.disabled) {
     .tab-inner {
       &:hover {
-        // border-radius: 4px;
-        // @include theme-prop(background-color, primary-background-hover-color);
-        background: rgba(0, 0, 0, 0.2);
+        @include theme-prop(background-color, tab-hover-color);
         border-radius: 60px;
       }
     }
   }
   &.active {
     .tab-inner {
-      color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.5);
+      @include theme-prop(color, tab-color-active);
+      @include theme-prop(background-color, tab-bg-active);
       border-radius: 60px;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        @include theme-prop(background-color, tab-bg-active);
         cursor: auto;
       }
     }

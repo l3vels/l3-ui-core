@@ -100,6 +100,24 @@ $theme: (
   "border-negative": $red-300,
   "negative-text-color": $red-400,
 
+  // loader
+  // Loader colors
+  "loader-label-color": #252c32,
+  "loader-stroke-color": #276ef1,
+
+  // progress bar
+  // Progress bar colors
+  "progress-label-color": $black,
+  "progress-bg-color-primary": #4da1ff,
+
+  // tab
+  // tab colors
+  "tab-color-primary": $white-6,
+  "tab-color-active": $white,
+  "tab-hover-color": $black-2,
+  "tab-bg-active": $black-5,
+  "tab-list-bg-color": $white-2,
+
   // positive colors
   "border-positive": $green-200,
   "positive-text-color": $green-500,

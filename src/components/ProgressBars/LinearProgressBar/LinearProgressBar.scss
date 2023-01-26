@@ -1,19 +1,21 @@
 @import "../../../styles/global-css-settings";
 @import "../../../styles/themes";
 @import "../../../styles/typography";
+@import "../../../styles/theme-mixin";
 
 .main-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: $spacing-small;
 
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 
-  color: $black;
+  @include theme-prop(color, progress-label-color);
+  // color: $black;
 }
 
 .linear-progress-bar--wrapper {
@@ -30,18 +32,18 @@
   }
 
   &__large {
-    height: 6px;
-    line-height: 6px;
+    height: $progress-large;
+    line-height: $progress-large;
   }
 
   &__medium {
-    height: 4px;
-    line-height: 4px;
+    height: $progress-medium;
+    line-height: $progress-medium;
   }
 
   &__small {
-    height: 2px;
-    line-height: 2px;
+    height: $progress-small;
+    line-height: $progress-small;
   }
 
   .linear-progress-bar__container {
@@ -63,8 +65,7 @@
       }
 
       &--primary {
-        // @include theme-prop(background-color, primary-color);
-        background-color: #4da1ff;
+        @include theme-prop(background-color, progress-bg-color-primary);
       }
 
       &--secondary {
