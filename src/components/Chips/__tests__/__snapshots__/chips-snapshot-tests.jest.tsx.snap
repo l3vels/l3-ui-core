@@ -67,6 +67,7 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"
@@ -82,11 +83,6 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
           />
         </svg>
       </button>
-      <span
-        className="span"
-      >
-        label
-      </span>
     </div>
   </div>
 </div>
@@ -137,6 +133,7 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"
@@ -152,11 +149,6 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
           />
         </svg>
       </button>
-      <span
-        className="span"
-      >
-        label
-      </span>
     </div>
   </div>
 </div>
@@ -369,6 +361,7 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
       >
         <svg
           aria-hidden={true}
+          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"
@@ -384,11 +377,6 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
           />
         </svg>
       </button>
-      <span
-        className="span"
-      >
-        label
-      </span>
     </div>
   </div>
 </div>

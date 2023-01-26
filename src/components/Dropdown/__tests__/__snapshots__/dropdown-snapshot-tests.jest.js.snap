@@ -1560,6 +1560,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   >
                     <svg
                       aria-hidden={true}
+                      aria-label="test"
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
                       height="24"
@@ -1575,11 +1576,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       />
                     </svg>
                   </button>
-                  <span
-                    className="span"
-                  >
-                    label
-                  </span>
                 </div>
               </div>
             </div>
@@ -1628,6 +1624,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   >
                     <svg
                       aria-hidden={true}
+                      aria-label="test"
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
                       height="24"
@@ -1643,11 +1640,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       />
                     </svg>
                   </button>
-                  <span
-                    className="span"
-                  >
-                    label
-                  </span>
                 </div>
               </div>
             </div>
@@ -1699,6 +1691,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     >
                       <svg
                         aria-hidden={true}
+                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
@@ -1714,11 +1707,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                         />
                       </svg>
                     </button>
-                    <span
-                      className="span"
-                    >
-                      label
-                    </span>
                   </div>
                 </div>
               </div>
@@ -2441,6 +2429,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                     >
                       <svg
                         aria-hidden={true}
+                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
@@ -2456,11 +2445,6 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                         />
                       </svg>
                     </button>
-                    <span
-                      className="span"
-                    >
-                      label
-                    </span>
                   </div>
                 </div>
               </div>
@@ -2677,6 +2661,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                     >
                       <svg
                         aria-hidden={true}
+                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
@@ -2692,11 +2677,6 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                         />
                       </svg>
                     </button>
-                    <span
-                      className="span"
-                    >
-                      label
-                    </span>
                   </div>
                 </div>
               </div>

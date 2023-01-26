@@ -328,6 +328,7 @@ exports[`AttentionBox renders correctly renders correctly with onClose 1`] = `
         >
           <svg
             aria-hidden={true}
+            aria-label="test"
             className="icon_component icon-button-padding icon_component--no-focus-style"
             fill="currentColor"
             height="16"
@@ -345,11 +346,6 @@ exports[`AttentionBox renders correctly renders correctly with onClose 1`] = `
         </button>
       </span>
     </div>
-    <span
-      className="span"
-    >
-      label
-    </span>
   </div>
 </aside>
 `;

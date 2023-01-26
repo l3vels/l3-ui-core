@@ -60,6 +60,7 @@ Snapshot Diff:
 +               >
 +                 <svg
 +                   aria-hidden="true"
++                   aria-label="test"
 +                   class="icon_component icon-button-padding icon_component--no-focus-style"
 +                   fill="currentColor"
 +                   height="16"
@@ -74,11 +75,6 @@ Snapshot Diff:
 +                   />
 +                 </svg>
 +               </button>
-+             </span>
-+             <span
-+               class="span"
-+             >
-+               label
 +             </span>
 +           </div>
 +         </div>
@@ -132,6 +128,7 @@ Snapshot Diff:
 +               >
 +                 <svg
 +                   aria-hidden="true"
++                   aria-label="test"
 +                   class="icon_component icon-button-padding icon_component--no-focus-style"
 +                   fill="currentColor"
 +                   height="16"
@@ -147,11 +144,6 @@ Snapshot Diff:
 +                 </svg>
 +               </button>
 +             </span>
-+             <span
-+               class="span"
-+             >
-+               label
-+             </span>
 +           </div>
 +         </div>
 +       </div>
@@ -160,14 +152,14 @@ Snapshot Diff:
 +       >
           <p>
             content
-          </p>
++         </p>
 +       </div>
 +       <div
 +         class="container"
 +       >
 +         <p>
 +           footer
-+         </p>
+          </p>
 +       </div>
       </div>
     </div>
@@ -223,6 +215,7 @@ exports[`Modal with base props 1`] = `
             >
               <svg
                 aria-hidden="true"
+                aria-label="test"
                 class="icon_component icon-button-padding icon_component--no-focus-style"
                 fill="currentColor"
                 height="16"
@@ -237,11 +230,6 @@ exports[`Modal with base props 1`] = `
                 />
               </svg>
             </button>
-          </span>
-          <span
-            class="span"
-          >
-            label
           </span>
         </div>
       </div>
@@ -366,6 +354,7 @@ Snapshot Diff:
 -             >
 -               <svg
 -                 aria-hidden="true"
+-                 aria-label="test"
 -                 class="icon_component icon-button-padding icon_component--no-focus-style"
 -                 fill="currentColor"
 -                 height="16"
@@ -380,11 +369,6 @@ Snapshot Diff:
 -                 />
 -               </svg>
 -             </button>
--           </span>
--           <span
--             class="span"
--           >
--             label
 -           </span>
 -         </div>
 -       </div>
