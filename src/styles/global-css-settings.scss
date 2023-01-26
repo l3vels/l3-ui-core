@@ -41,6 +41,10 @@ $text-field-size-large: 56px;
 $text-field-size-medium: 50px;
 $text-field-size-small: 44px;
 
+$text-field-icon-container-size-sm: 14px;
+$text-field-icon-container-size-md: 14px;
+$text-field-icon-container-size-lg: 14px;
+
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
 }
