@@ -36,7 +36,7 @@ export const OpenByDefault = () => (
 );
 
 export default {
-  title: "Components|ExpandCollapse",
+  title: "Components|ExpandCollapse - (Coming Soon)",
   component: ExpandCollapse,
   decorators: [withPerformance]
 };

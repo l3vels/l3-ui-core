@@ -12,7 +12,7 @@ export const Sandbox = () => {
 };
 
 export default {
-  title: "Components|List/ListTitle",
+  title: "Components|List - (Coming Soon)/ListTitle - (Coming Soon)",
   component: ListTitle,
   decorators: [withPerformance]
 };

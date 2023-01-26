@@ -3,18 +3,14 @@ import { ComponentName, Frame, Link, RelatedComponents } from "../../components"
 import { TextStyles } from "./text-styles/text-styles";
 import { TextColors } from "../../components/text-colors/text-colors";
 import { COLORS, SHADOW, SPACING } from "../../components/related-components/component-description-map";
-import {typographyExample1, typographyExample2} from "./assets";
+import { typographyExample1, typographyExample2 } from "./assets";
 import "./typography.scss";
 
-<Meta
-  title="Foundations/Typography"
-/>
+<Meta title="Foundations/Typography - (Coming Soon)" />
 
 <!--- Component documentation -->
 
-<ComponentName withFoundationBackground>
-  Typography
-</ComponentName>
+<ComponentName withFoundationBackground>Typography</ComponentName>
 
 - [Overview](#overview)
 - [Text styles](#text-styles)
@@ -23,25 +19,34 @@ import "./typography.scss";
 - [Feedback](#feedback)
 
 ## Overview
+
 Like in other ui in l3vels's interface, typography works by principle of accessibility before aesthetics.
 Therefore the text should be readable and help the user understand what’s important by well contrasted size and colors hierarchy.
 
 ## Text styles
+
 <TextStyles />
 
 ## Text colors
+
 <TextColors />
 
 ## Usage and examples
-<UsageGuidelines guidelines={[
-  "Use fonts bigger than 14 pixel only.",
-  <>Don’t underline words, use bold text.</>,
-  "Don't use two different sizes of text in the same line."
-]}/>
+
+<UsageGuidelines
+  guidelines={[
+    "Use fonts bigger than 14 pixel only.",
+    <>Don’t underline words, use bold text.</>,
+    "Don't use two different sizes of text in the same line."
+  ]}
+/>
 
 <Tip title="What font to use?">
-  We are using Roboto from Google Fonts as default for our design system.
-  Click <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Roboto" withoutSpacing>here</Link> to download.
+  We are using Roboto from Google Fonts as default for our design system. Click{" "}
+  <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Roboto" withoutSpacing>
+    here
+  </Link>{" "}
+  to download.
 </Tip>
 
 <Frame className="l3-storybook-typography_image-container l3-storybook-typography_image-container--first">
@@ -52,4 +57,5 @@ Therefore the text should be readable and help the user understand what’s impo
 </Frame>
 
 ## Up next
-<RelatedComponents componentsNames={[COLORS, SPACING, SHADOW]}/>
+
+<RelatedComponents componentsNames={[COLORS, SPACING, SHADOW]} />

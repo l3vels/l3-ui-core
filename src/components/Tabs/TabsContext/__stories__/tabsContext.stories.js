@@ -42,7 +42,7 @@ export const Sandbox = () => {
 };
 
 export default {
-  title: "Components|Tabs/TabsContext",
+  title: "Components|Tabs - (Coming Soon)/TabsContext - (Coming Soon)",
   component: TabsContext,
   decorators: [withPerformance]
 };

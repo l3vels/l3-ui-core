@@ -22,7 +22,7 @@ export const Sandbox = () => (
 );
 
 export default {
-  title: "Textual Helpers|FormattedNumber",
+  title: "Textual Helpers|FormattedNumber - (Coming Soon)",
   component: FormattedNumber,
   decorators: [withPerformance]
 };
