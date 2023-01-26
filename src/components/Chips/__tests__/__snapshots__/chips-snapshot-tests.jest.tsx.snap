@@ -41,7 +41,7 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
       
     </div>
     <div
-      className="container"
+      className="iconButtonContainer"
     >
       <button
         aria-busy={false}
@@ -69,10 +69,10 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
           aria-hidden={true}
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
-          height="16"
+          height="24"
           onClick={[Function]}
           viewBox="0 0 20 20"
-          width="16"
+          width="24"
         >
           <path
             clipRule="evenodd"
@@ -111,7 +111,7 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
       
     </div>
     <div
-      className="container"
+      className="iconButtonContainer"
     >
       <button
         aria-busy={false}
@@ -139,10 +139,10 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
           aria-hidden={true}
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
-          height="16"
+          height="24"
           onClick={[Function]}
           viewBox="0 0 20 20"
-          width="16"
+          width="24"
         >
           <path
             clipRule="evenodd"
@@ -343,7 +343,7 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
       text
     </div>
     <div
-      className="container"
+      className="iconButtonContainer"
     >
       <button
         aria-busy={false}
@@ -371,10 +371,10 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
           aria-hidden={true}
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
-          height="16"
+          height="24"
           onClick={[Function]}
           viewBox="0 0 20 20"
-          width="16"
+          width="24"
         >
           <path
             clipRule="evenodd"

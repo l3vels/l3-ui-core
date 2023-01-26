@@ -1534,7 +1534,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   Primary
                 </div>
                 <div
-                  className="container"
+                  className="iconButtonContainer"
                 >
                   <button
                     aria-busy={false}
@@ -1562,10 +1562,10 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       aria-hidden={true}
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
-                      height="16"
+                      height="24"
                       onClick={[Function]}
                       viewBox="0 0 20 20"
-                      width="16"
+                      width="24"
                     >
                       <path
                         clipRule="evenodd"
@@ -1602,7 +1602,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   Positive
                 </div>
                 <div
-                  className="container"
+                  className="iconButtonContainer"
                 >
                   <button
                     aria-busy={false}
@@ -1630,10 +1630,10 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       aria-hidden={true}
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
-                      height="16"
+                      height="24"
                       onClick={[Function]}
                       viewBox="0 0 20 20"
-                      width="16"
+                      width="24"
                     >
                       <path
                         clipRule="evenodd"
@@ -1673,7 +1673,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     Negative
                   </div>
                   <div
-                    className="container"
+                    className="iconButtonContainer"
                   >
                     <button
                       aria-busy={false}
@@ -1701,10 +1701,10 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="16"
+                        height="24"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="16"
+                        width="24"
                       >
                         <path
                           clipRule="evenodd"
@@ -2415,7 +2415,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                     Ocean
                   </div>
                   <div
-                    className="container"
+                    className="iconButtonContainer"
                   >
                     <button
                       aria-busy={false}
@@ -2443,10 +2443,10 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="16"
+                        height="24"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="16"
+                        width="24"
                       >
                         <path
                           clipRule="evenodd"
@@ -2651,7 +2651,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                     Ocean
                   </div>
                   <div
-                    className="container"
+                    className="iconButtonContainer"
                   >
                     <button
                       aria-busy={false}
@@ -2679,10 +2679,10 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="16"
+                        height="24"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="16"
+                        width="24"
                       >
                         <path
                           clipRule="evenodd"
