@@ -19,7 +19,7 @@
     .l3-style-button {
       @include theme-prop(background-color, secondary-background-color);
       border-radius: 60px;
-      padding: 18px 32px;
+      padding: 10px 32px;
       &.l3-style-button--color {
         &-primary {
           &:hover {
@@ -30,7 +30,6 @@
             &:hover {
               @include theme-prop(background-color, primary-hover-color);
             }
-
             @include theme-prop(background-color, primary-selected-color);
           }
         }
@@ -42,7 +41,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-
     &:not(.disabled) {
       @include theme-prop(color, secondary-text-color);
       &.selected {
@@ -51,14 +49,18 @@
         @include theme-prop(background-color, primary-background-color);
       }
     }
+
+    &:active {
+      @include theme-prop(color, primary-text-on-primary);
+    }
   }
 
   &.disabled {
-    cursor: not-allowed;
+    pointer-events: none;
   }
 
   .disabled {
-    cursor: not-allowed;
+    pointer-events: none;
     background-color: var(--disabled-background-color);
     opacity: 0.5;
 
@@ -74,7 +76,8 @@
   .button-disabled {
     background-color: var(--disabled-background-color);
     opacity: 0.5;
-    cursor: not-allowed;
+
+    pointer-events: none;
 
     &.l3-style-button--color {
       &-primary {

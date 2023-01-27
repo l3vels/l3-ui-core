@@ -7,7 +7,10 @@ import { backwardCompatibilityForProperties } from "../../helpers/backwardCompat
 import { baseClassName, ButtonValue } from "./ButtonGroupConstants";
 import { ButtonWrapper } from "./ButtonWrapper";
 import { BASE_SIZES, DialogPosition, SIZES } from "../../constants";
-import { ButtonType, Size } from "../Button/ButtonConstants";
+import {
+  //  ButtonType,
+  Size
+} from "../Button/ButtonConstants";
 import { SubIcon, L3ComponentProps } from "../../types";
 import { MoveBy } from "../../types/MoveBy";
 import "./ButtonGroup.scss";
@@ -33,7 +36,7 @@ interface ButtonGroupProps extends L3ComponentProps {
   value?: ButtonValue;
   onSelect?: (value: ButtonValue, name: string) => void;
   size?: Size;
-  kind?: ButtonType.SECONDARY | ButtonType.TERTIARY;
+  // kind?: ButtonType.SECONDARY | ButtonType.TERTIARY;
   name?: string;
   disabled?: boolean;
   groupAriaLabel?: string;
