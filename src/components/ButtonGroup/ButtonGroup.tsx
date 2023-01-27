@@ -49,7 +49,7 @@ interface ButtonGroupProps extends L3ComponentProps {
 
 const ButtonGroup: React.ForwardRefExoticComponent<ButtonGroupProps & React.PropsWithChildren<unknown>> & {
   sizes?: typeof SIZES;
-  kinds?: typeof ButtonType;
+  // kinds?: typeof ButtonType;
 } = forwardRef(
   (
     {
@@ -61,8 +61,8 @@ const ButtonGroup: React.ForwardRefExoticComponent<ButtonGroupProps & React.Prop
       disabled = false,
       value = "",
       onSelect,
-      size = BASE_SIZES.SMALL,
-      kind = ButtonType.SECONDARY,
+      size = BASE_SIZES.MEDIUM,
+      // kind = ButtonType.SECONDARY,
       groupAriaLabel = "",
       tooltipPosition,
       tooltipHideDelay,
@@ -108,7 +108,7 @@ const ButtonGroup: React.ForwardRefExoticComponent<ButtonGroupProps & React.Prop
             active={isSelected}
             rightFlat={index !== options.length - 1}
             leftFlat={index !== 0}
-            kind={Button.kinds.TERTIARY}
+            // kind={Button.kinds.TERTIARY}
             preventClickAnimation
             ariaLabel={option.ariaLabel}
             tooltipContent={option.tooltipContent}
@@ -149,10 +149,7 @@ const ButtonGroup: React.ForwardRefExoticComponent<ButtonGroupProps & React.Prop
     }, [value, prevValue, valueState, setValueState]);
 
     return (
-      <div
-        className={cx(baseClassName, overrideClassName, `${baseClassName}--kind-${kind}`, { disabled })}
-        ref={mergedRef}
-      >
+      <div className={cx(baseClassName, overrideClassName, { disabled })} ref={mergedRef}>
         <div
           role="group"
           aria-label={groupAriaLabel}
@@ -170,6 +167,6 @@ const ButtonGroup: React.ForwardRefExoticComponent<ButtonGroupProps & React.Prop
 );
 
 ButtonGroup.sizes = Button.sizes;
-ButtonGroup.kinds = Button.kinds;
+// ButtonGroup.kinds = Button.kinds;
 
 export default ButtonGroup;
