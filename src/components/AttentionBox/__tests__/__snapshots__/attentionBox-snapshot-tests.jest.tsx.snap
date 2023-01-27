@@ -308,7 +308,7 @@ exports[`AttentionBox renders correctly renders correctly with onClose 1`] = `
           aria-busy={false}
           aria-disabled={false}
           aria-label="Close"
-          className="l3-style-attention-box-component__close-icon l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+          className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
           data-testid="icon-button"
           onBlur={[Function]}
           onClick={[Function]}
@@ -328,7 +328,6 @@ exports[`AttentionBox renders correctly renders correctly with onClose 1`] = `
         >
           <svg
             aria-hidden={true}
-            aria-label="test"
             className="icon_component icon-button-padding icon_component--no-focus-style"
             fill="currentColor"
             height="16"

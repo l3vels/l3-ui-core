@@ -1,3 +1,8 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/typography";
+@import "../../styles/themes";
+@import "../../styles/states";
+
 .wrapper {
   width: fit-content;
   height: fit-content;
@@ -18,4 +23,32 @@
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
+}
+.l3_style_square_button {
+  --loader-padding: 8px;
+  outline: none;
+  border: none;
+  height: auto;
+  border-radius: $border-radius-extra-small;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--motion-productive-short) transform,
+    var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.l3_style_circle_button {
+  --loader-padding: 8px;
+  outline: none;
+  border: none;
+  height: auto;
+  border-radius: $border-radius-big;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--motion-productive-short) transform,
+    var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
