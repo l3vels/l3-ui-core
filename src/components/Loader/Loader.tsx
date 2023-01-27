@@ -2,7 +2,7 @@ import React, { ForwardedRef, forwardRef, useMemo } from "react";
 import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import {
-  LoaderColors,
+  // LoaderColors,
   // LoaderSize,
   LoaderSizes
 } from "./LoaderConstants";
@@ -24,7 +24,7 @@ export interface LoaderProps extends L3ComponentProps {
 
 const Loader: L3Component<LoaderProps, HTMLElement> & {
   sizes?: typeof LoaderSizes;
-  colors?: typeof LoaderColors;
+  // colors?: typeof LoaderColors;
 } = forwardRef(
   (
     {
@@ -41,21 +41,9 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
   ) => {
     const overrideClassName = backwardCompatibilityForProperties([className, svgClassName], "");
 
-    // const sizeStyle = useMemo(() => {
-    //   if (typeof size === "number") {
-    //     return { width: size, height: size };
-    //   }
-    //   return undefined;
-    // }, [size]);
     const sizeStyle = useMemo(() => {
-      if (size === "large") {
-        return { width: 64, height: 64 };
-      } else if (size === "medium") {
-        return { width: 48, height: 48 };
-      } else if (size === "small") {
-        return { width: 36, height: 36 };
-      } else if (size === "xs") {
-        return { width: 24, height: 24 };
+      if (typeof size === "number") {
+        return { width: size, height: size };
       }
       return undefined;
     }, [size]);
@@ -73,7 +61,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
         <svg
           className={cx("circle-loader-spinner", styles.circleLoaderSpinner, overrideClassName)}
           viewBox="0 0 50 50"
-          // color={color}
+          color={"white"}
           aria-hidden
         >
           {/* {hasBackground && ( */}
@@ -96,7 +84,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
 
 Object.assign(Loader, {
   sizes: LoaderSizes,
-  colors: LoaderColors,
+  // colors: LoaderColors,
   defaultTestId: ComponentDefaultTestId.LOADER
 });
 
