@@ -2,7 +2,7 @@ import React, { ForwardedRef, forwardRef, useMemo } from "react";
 import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import {
-  // LoaderColors,
+  LoaderColors,
   // LoaderSize,
   LoaderSizes
 } from "./LoaderConstants";
@@ -17,21 +17,21 @@ export interface LoaderProps extends L3ComponentProps {
   className?: string;
   /** The loader's size: `number` or `LoaderSizes` */
   size?: LoaderSizes;
-  // color?: LoaderColors;
+  color?: LoaderColors;
   // hasBackground?: boolean;
   label?: boolean;
 }
 
 const Loader: L3Component<LoaderProps, HTMLElement> & {
   sizes?: typeof LoaderSizes;
-  // colors?: typeof LoaderColors;
+  colors?: typeof LoaderColors;
 } = forwardRef(
   (
     {
       svgClassName,
       className,
       size,
-      // color,
+      color,
       //  hasBackground = false,
       id,
       "data-testid": dataTestId,
@@ -61,7 +61,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
         <svg
           className={cx("circle-loader-spinner", styles.circleLoaderSpinner, overrideClassName)}
           viewBox="0 0 50 50"
-          color={"white"}
+          color={color}
           aria-hidden
         >
           {/* {hasBackground && ( */}
@@ -84,7 +84,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
 
 Object.assign(Loader, {
   sizes: LoaderSizes,
-  // colors: LoaderColors,
+  colors: LoaderColors,
   defaultTestId: ComponentDefaultTestId.LOADER
 });
 
