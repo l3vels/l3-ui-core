@@ -2,7 +2,7 @@
 
 exports[`ButtonGroup renders correctly when disabled 1`] = `
 <div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-secondary disabled"
+  className="l3-style-button-group-component disabled"
 >
   <div
     aria-disabled={true}
@@ -13,7 +13,7 @@ exports[`ButtonGroup renders correctly when disabled 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -27,7 +27,7 @@ exports[`ButtonGroup renders correctly when disabled 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -41,7 +41,7 @@ exports[`ButtonGroup renders correctly when disabled 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -55,7 +55,7 @@ exports[`ButtonGroup renders correctly when disabled 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text disabled l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -72,7 +72,7 @@ exports[`ButtonGroup renders correctly when disabled 1`] = `
 
 exports[`ButtonGroup renders correctly when disabled 2`] = `
 <div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-secondary"
+  className="l3-style-button-group-component"
 >
   <div
     aria-disabled={false}
@@ -83,7 +83,7 @@ exports[`ButtonGroup renders correctly when disabled 2`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -97,7 +97,7 @@ exports[`ButtonGroup renders correctly when disabled 2`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -111,7 +111,7 @@ exports[`ButtonGroup renders correctly when disabled 2`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -125,77 +125,7 @@ exports[`ButtonGroup renders correctly when disabled 2`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
-      data-testid="button"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      type="button"
-    >
-      Delta
-    </button>
-  </div>
-</div>
-`;
-
-exports[`ButtonGroup renders correctly with TERTIARY kind  1`] = `
-<div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-tertiary"
->
-  <div
-    aria-disabled={false}
-    aria-label=""
-    className="l3-style-button-group-component__buttons-container"
-    role="group"
-  >
-    <button
-      aria-busy={false}
-      aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
-      data-testid="button"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      type="button"
-    >
-      Alpha
-    </button>
-    <button
-      aria-busy={false}
-      aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
-      data-testid="button"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      type="button"
-    >
-      Beta
-    </button>
-    <button
-      aria-busy={false}
-      aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
-      data-testid="button"
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      type="button"
-    >
-      Gamma
-    </button>
-    <button
-      aria-busy={false}
-      aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -212,7 +142,7 @@ exports[`ButtonGroup renders correctly with TERTIARY kind  1`] = `
 
 exports[`ButtonGroup renders correctly with componentClassName 1`] = `
 <div
-  className="l3-style-button-group-component testClassName l3-style-button-group-component--kind-secondary"
+  className="l3-style-button-group-component testClassName"
 >
   <div
     aria-disabled={false}
@@ -223,7 +153,7 @@ exports[`ButtonGroup renders correctly with componentClassName 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -237,7 +167,7 @@ exports[`ButtonGroup renders correctly with componentClassName 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -251,7 +181,7 @@ exports[`ButtonGroup renders correctly with componentClassName 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -265,7 +195,7 @@ exports[`ButtonGroup renders correctly with componentClassName 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -282,7 +212,7 @@ exports[`ButtonGroup renders correctly with componentClassName 1`] = `
 
 exports[`ButtonGroup renders correctly with large size 1`] = `
 <div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-secondary"
+  className="l3-style-button-group-component"
 >
   <div
     aria-disabled={false}
@@ -293,7 +223,7 @@ exports[`ButtonGroup renders correctly with large size 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -307,7 +237,7 @@ exports[`ButtonGroup renders correctly with large size 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -321,7 +251,7 @@ exports[`ButtonGroup renders correctly with large size 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -335,7 +265,7 @@ exports[`ButtonGroup renders correctly with large size 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-large l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -352,7 +282,7 @@ exports[`ButtonGroup renders correctly with large size 1`] = `
 
 exports[`ButtonGroup renders correctly with name 1`] = `
 <div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-secondary"
+  className="l3-style-button-group-component"
 >
   <div
     aria-disabled={false}
@@ -363,7 +293,7 @@ exports[`ButtonGroup renders correctly with name 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -377,7 +307,7 @@ exports[`ButtonGroup renders correctly with name 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -391,7 +321,7 @@ exports[`ButtonGroup renders correctly with name 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -405,7 +335,7 @@ exports[`ButtonGroup renders correctly with name 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -422,7 +352,7 @@ exports[`ButtonGroup renders correctly with name 1`] = `
 
 exports[`ButtonGroup renders correctly with value 1`] = `
 <div
-  className="l3-style-button-group-component l3-style-button-group-component--kind-secondary"
+  className="l3-style-button-group-component"
 >
   <div
     aria-disabled={false}
@@ -433,7 +363,7 @@ exports[`ButtonGroup renders correctly with value 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text selected l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--color-primary-active l3-style-button--right-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text selected l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--color-primary-active l3-style-button--right-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -447,7 +377,7 @@ exports[`ButtonGroup renders correctly with value 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -461,7 +391,7 @@ exports[`ButtonGroup renders correctly with value 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--right-flat l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -475,7 +405,7 @@ exports[`ButtonGroup renders correctly with value 1`] = `
     <button
       aria-busy={false}
       aria-disabled={false}
-      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
+      className="l3-style-button-group-component__option-text l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--left-flat l3-style-button--prevent-click-animation"
       data-testid="button"
       onBlur={[Function]}
       onClick={[Function]}
