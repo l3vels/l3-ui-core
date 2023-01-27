@@ -16,7 +16,6 @@ exports[`Loader renders correctly with custom class name 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner dummy-class-name"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -55,7 +54,6 @@ exports[`Loader renders correctly with size variants with LARGE size 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -94,7 +92,6 @@ exports[`Loader renders correctly with size variants with MEDIUM size 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -133,7 +130,6 @@ exports[`Loader renders correctly with size variants with SMALL size 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -172,7 +168,6 @@ exports[`Loader renders correctly with size variants with XS size 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -211,7 +206,6 @@ exports[`Loader renders correctly with size variants with custom size as number 
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
@@ -250,7 +244,6 @@ exports[`Loader renders correctly with visual variants with background 1`] = `
   <svg
     aria-hidden={true}
     className="circle-loader-spinner circleLoaderSpinner"
-    color="white"
     viewBox="0 0 50 50"
   >
     <circle
