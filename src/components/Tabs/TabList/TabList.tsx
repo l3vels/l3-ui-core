@@ -18,7 +18,10 @@ export interface TabListProps extends L3ComponentProps {
 }
 
 const TabList: FC<TabListProps> = forwardRef(
-  ({ className, id, onTabChange = NOOP, activeTabId = 0, tabType = "Compact", size, children }, ref) => {
+  (
+    { className, id, onTabChange = NOOP, activeTabId = 0, tabType = "Compact", size = TabSize.LARGE, children },
+    ref
+  ) => {
     const componentRef = useRef(null);
     const mergedRef = useMergeRefs({ refs: [ref, componentRef] });
 
