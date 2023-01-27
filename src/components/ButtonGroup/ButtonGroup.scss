@@ -18,8 +18,8 @@
     gap: $spacing-small;
     .l3-style-button {
       @include theme-prop(background-color, secondary-background-color);
-      border-radius: 60px;
-      padding: 10px 32px;
+      border-radius: $border-radius-big;
+      padding: 10px $spacing-xl;
       &.l3-style-button--color {
         &-primary {
           &:hover {
@@ -39,7 +39,7 @@
   &__option-text {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: $spacing-medium;
     line-height: 20px;
     &:not(.disabled) {
       @include theme-prop(color, secondary-text-color);
