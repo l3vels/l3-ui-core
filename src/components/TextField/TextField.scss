@@ -45,7 +45,7 @@
       }
       .input-component__icon--container.input-component__icon--container-has-icon {
         &:hover {
-          background-color: transparent;
+          background-color: red;
         }
       }
     }
@@ -318,3 +318,100 @@
   .input-component__icon {
   font-family: var(--font-family);
 }
+
+// .search_component--show-input {
+//   visibility: visible;
+// }
+// .search_component--hide-input {
+//   visibility: hidden;
+// }
+
+// .search_component_wrapper {
+//   .input-component__input {
+//     border-radius: 50px !important;
+//     background: rgba(255, 255, 255, 0.2);
+//   }
+
+//   .search-icon {
+//     right: 0 !important;
+
+//     &:focus,
+//     &:active,
+//     &.input-component__input--active {
+//       background: transparent !important;
+//     }
+//     &:hover {
+//       background: transparent !important;
+//     }
+//     .icon_component {
+//       color: #fff !important;
+//       // &:hover {
+//       //   /* Basic foreground/white.2 */
+//       // }
+//     }
+
+//     // .icon_component {
+//     //   color: green;
+//     // }
+//   }
+
+//   .search_component--hide-input {
+//     .search-icon {
+//       &:hover {
+//         background: red !important;
+//       }
+//     }
+//   }
+// }
+//
+
+.search_component_wrapper {
+  .search-wrapper {
+    .search_icon {
+      right: 0;
+      &:focus,
+      &:active,
+      &.input-component__input--active {
+        background: transparent !important;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+      }
+      .icon_component {
+        color: #fff;
+      }
+    }
+    .search_component {
+      border-radius: 60px;
+    }
+  }
+
+  .search-wrapper-visible {
+    .search_component {
+      visibility: visible;
+    }
+    .search_icon {
+      &:hover {
+        background: unset !important;
+      }
+    }
+
+    // .search_component {
+    //   border-radius: 60px !important;
+    // }
+  }
+  .search-wrapper-hidden {
+    .search_component {
+      visibility: hidden;
+    }
+  }
+}
+
+// .show-text-field-component {
+//   visibility: visible;
+// }
+
+// .hide-text-field-component {
+//   visibility: hidden;
+// }
+// }
