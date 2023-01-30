@@ -47,7 +47,7 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
         aria-busy={false}
         aria-disabled={false}
         aria-label="Remove"
-        className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
         data-testid="chip-close"
         onBlur={[Function]}
         onClick={[Function]}
@@ -67,7 +67,6 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
       >
         <svg
           aria-hidden={true}
-          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"
@@ -113,7 +112,7 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
         aria-busy={false}
         aria-disabled={false}
         aria-label="Remove"
-        className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
         data-testid="chip-close"
         onBlur={[Function]}
         onClick={[Function]}
@@ -133,7 +132,6 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
       >
         <svg
           aria-hidden={true}
-          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"
@@ -341,7 +339,7 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
         aria-busy={false}
         aria-disabled={false}
         aria-label="Remove"
-        className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
         data-testid="chip-close"
         onBlur={[Function]}
         onClick={[Function]}
@@ -361,7 +359,6 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
       >
         <svg
           aria-hidden={true}
-          aria-label="test"
           className="icon_component icon-button-padding icon_component--no-focus-style"
           fill="currentColor"
           height="24"

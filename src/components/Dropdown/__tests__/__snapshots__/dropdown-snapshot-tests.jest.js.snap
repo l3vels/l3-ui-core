@@ -1540,7 +1540,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     aria-busy={false}
                     aria-disabled={false}
                     aria-label="Remove"
-                    className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
                     data-testid="value-container-chip-close"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -1560,7 +1560,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   >
                     <svg
                       aria-hidden={true}
-                      aria-label="test"
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
                       height="24"
@@ -1604,7 +1603,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     aria-busy={false}
                     aria-disabled={false}
                     aria-label="Remove"
-                    className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
                     data-testid="value-container-chip-close"
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -1624,7 +1623,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                   >
                     <svg
                       aria-hidden={true}
-                      aria-label="test"
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
                       height="24"
@@ -1671,7 +1669,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       aria-busy={false}
                       aria-disabled={false}
                       aria-label="Remove"
-                      className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
                       data-testid="value-container-chip-close"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -1691,7 +1689,6 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     >
                       <svg
                         aria-hidden={true}
-                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
@@ -2409,7 +2406,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                       aria-busy={false}
                       aria-disabled={false}
                       aria-label="Remove"
-                      className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
                       data-testid="value-container-chip-close"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -2429,7 +2426,6 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                     >
                       <svg
                         aria-hidden={true}
-                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
@@ -2641,7 +2637,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                       aria-busy={false}
                       aria-disabled={false}
                       aria-label="Remove"
-                      className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
                       data-testid="value-container-chip-close"
                       onBlur={[Function]}
                       onClick={[Function]}
@@ -2661,7 +2657,6 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                     >
                       <svg
                         aria-hidden={true}
-                        aria-label="test"
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
                         height="24"
