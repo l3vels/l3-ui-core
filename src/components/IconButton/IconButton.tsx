@@ -157,172 +157,85 @@ const IconButton: L3Component<IconButtonProps> & {
 
     return (
       <>
-        {shape === "Circle" ? (
-          <>
-            {label ? (
-              <div className={styles.iconButtonContainer}>
-                <IconButtonWrapper {...iconButtonWrapperProps}>
-                  <Tooltip
-                    {...tooltipProps}
-                    content={calculatedTooltipContent}
-                    referenceWrapperClassName={styles.referenceWrapper}
-                  >
-                    <Button
-                      onClick={onClick}
-                      disabled={disabled}
-                      color={color}
-                      kind={kind}
-                      ariaLabel={buttonAriaLabel}
-                      ref={mergedRef}
-                      id={id}
-                      dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-                      noSidePadding
-                      active={active}
-                      className={styles.l3_style_circle_button}
-                      style={overrideStyle}
-                      insetFocus={insetFocus}
-                    >
-                      {labelInButton ? (
-                        <>{labelInButton}</>
-                      ) : (
-                        <Icon
-                          icon={icon}
-                          iconType={Icon.type.SVG}
-                          iconSize={iconSize}
-                          ignoreFocusStyle
-                          className="icon-button-padding"
-                          clickable={false}
-                        />
-                      )}
-                    </Button>
-                  </Tooltip>
-                </IconButtonWrapper>
-                <span className={styles.l3_IconButton_label_styles}>{label}</span>
-              </div>
-            ) : (
-              <div className={styles.iconButtonContainer}>
-                <IconButtonWrapper {...iconButtonWrapperProps}>
-                  <Tooltip
-                    {...tooltipProps}
-                    content={calculatedTooltipContent}
-                    referenceWrapperClassName={styles.referenceWrapper}
-                  >
-                    <Button
-                      onClick={onClick}
-                      disabled={disabled}
-                      color={color}
-                      kind={kind}
-                      ariaLabel={buttonAriaLabel}
-                      ref={mergedRef}
-                      id={id}
-                      dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-                      noSidePadding
-                      active={active}
-                      className={styles.l3_style_circle_button}
-                      style={overrideStyle}
-                      insetFocus={insetFocus}
-                    >
-                      {labelInButton ? (
-                        <>{labelInButton}</>
-                      ) : (
-                        <Icon
-                          icon={icon}
-                          iconType={Icon.type.SVG}
-                          iconSize={iconSize}
-                          ignoreFocusStyle
-                          className="icon-button-padding"
-                          clickable={false}
-                        />
-                      )}
-                    </Button>
-                  </Tooltip>
-                </IconButtonWrapper>
-              </div>
-            )}
-          </>
+        {label ? (
+          <div className={styles.iconButtonContainer}>
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                    />
+                  )}
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+            <span className={styles.l3_IconButton_label_styles}>{label}</span>
+          </div>
         ) : (
-          <>
-            {label ? (
-              <div className={styles.iconButtonContainer}>
-                <IconButtonWrapper {...iconButtonWrapperProps}>
-                  <Tooltip
-                    {...tooltipProps}
-                    content={calculatedTooltipContent}
-                    referenceWrapperClassName={styles.referenceWrapper}
-                  >
-                    <Button
-                      onClick={onClick}
-                      disabled={disabled}
-                      color={color}
-                      kind={kind}
-                      ariaLabel={buttonAriaLabel}
-                      ref={mergedRef}
-                      id={id}
-                      dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-                      noSidePadding
-                      active={active}
-                      className={styles.l3_style_square_button}
-                      style={overrideStyle}
-                      insetFocus={insetFocus}
-                    >
-                      {labelInButton ? (
-                        <>{labelInButton}</>
-                      ) : (
-                        <Icon
-                          icon={icon}
-                          iconType={Icon.type.SVG}
-                          iconSize={iconSize}
-                          ignoreFocusStyle
-                          className="icon-button-padding"
-                          clickable={false}
-                        />
-                      )}
-                    </Button>
-                  </Tooltip>
-                </IconButtonWrapper>
-                <span className={styles.l3_IconButton_label_styles}>{label}</span>
-              </div>
-            ) : (
-              <div className={styles.iconButtonContainer}>
-                <IconButtonWrapper {...iconButtonWrapperProps}>
-                  <Tooltip
-                    {...tooltipProps}
-                    content={calculatedTooltipContent}
-                    referenceWrapperClassName={styles.referenceWrapper}
-                  >
-                    <Button
-                      onClick={onClick}
-                      disabled={disabled}
-                      color={color}
-                      kind={kind}
-                      ariaLabel={buttonAriaLabel}
-                      ref={mergedRef}
-                      id={id}
-                      dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
-                      noSidePadding
-                      active={active}
-                      className={styles.l3_style_square_button}
-                      style={overrideStyle}
-                      insetFocus={insetFocus}
-                    >
-                      {labelInButton ? (
-                        <>{labelInButton}</>
-                      ) : (
-                        <Icon
-                          icon={icon}
-                          iconType={Icon.type.SVG}
-                          iconSize={iconSize}
-                          ignoreFocusStyle
-                          className="icon-button-padding"
-                          clickable={false}
-                        />
-                      )}
-                    </Button>
-                  </Tooltip>
-                </IconButtonWrapper>
-              </div>
-            )}
-          </>
+          <div className={styles.iconButtonContainer}>
+            <IconButtonWrapper {...iconButtonWrapperProps}>
+              <Tooltip
+                {...tooltipProps}
+                content={calculatedTooltipContent}
+                referenceWrapperClassName={styles.referenceWrapper}
+              >
+                <Button
+                  onClick={onClick}
+                  disabled={disabled}
+                  color={color}
+                  kind={kind}
+                  ariaLabel={buttonAriaLabel}
+                  ref={mergedRef}
+                  id={id}
+                  dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
+                  noSidePadding
+                  active={active}
+                  className={shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button}
+                  style={overrideStyle}
+                  insetFocus={insetFocus}
+                >
+                  {labelInButton ? (
+                    <>{labelInButton}</>
+                  ) : (
+                    <Icon
+                      icon={icon}
+                      iconType={Icon.type.SVG}
+                      iconSize={iconSize}
+                      ignoreFocusStyle
+                      className="icon-button-padding"
+                      clickable={false}
+                    />
+                  )}
+                </Button>
+              </Tooltip>
+            </IconButtonWrapper>
+          </div>
         )}
       </>
     );
