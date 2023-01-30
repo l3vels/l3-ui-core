@@ -1,7 +1,11 @@
 import React, { ForwardedRef, forwardRef, useMemo } from "react";
 import cx from "classnames";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
-import { LoaderColors, LoaderSize, LoaderSizes } from "./LoaderConstants";
+import {
+  LoaderColors,
+  // LoaderSize,
+  LoaderSizes
+} from "./LoaderConstants";
 import { getTestId } from "../../tests/test-ids-utils";
 import { L3Component, L3ComponentProps } from "../../types";
 import { ComponentDefaultTestId } from "../../tests/constants";
@@ -12,9 +16,10 @@ export interface LoaderProps extends L3ComponentProps {
   svgClassName?: string;
   className?: string;
   /** The loader's size: `number` or `LoaderSizes` */
-  size?: LoaderSize;
+  size?: LoaderSizes;
   color?: LoaderColors;
-  hasBackground?: boolean;
+  // hasBackground?: boolean;
+  label?: boolean;
 }
 
 const Loader: L3Component<LoaderProps, HTMLElement> & {
@@ -22,7 +27,16 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
   colors?: typeof LoaderColors;
 } = forwardRef(
   (
-    { svgClassName, className, size, color, hasBackground = false, id, "data-testid": dataTestId },
+    {
+      svgClassName,
+      className,
+      size,
+      color,
+      //  hasBackground = false,
+      id,
+      "data-testid": dataTestId,
+      label = false
+    },
     ref: ForwardedRef<HTMLDivElement>
   ) => {
     const overrideClassName = backwardCompatibilityForProperties([className, svgClassName], "");
@@ -50,16 +64,9 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
           color={color}
           aria-hidden
         >
-          {hasBackground && (
-            <circle
-              className={styles.circleLoaderSpinnerBackground}
-              cx="25"
-              cy="25"
-              r="20"
-              fill="none"
-              strokeWidth="5"
-            />
-          )}
+          {/* {hasBackground && ( */}
+          <circle className={styles.circleLoaderSpinnerBackground} cx="25" cy="25" r="20" fill="none" strokeWidth="5" />
+          {/* )} */}
           <circle
             className={cx("circle-loader-spinner-path", styles.circleLoaderSpinnerPath)}
             cx="25"
@@ -69,6 +76,7 @@ const Loader: L3Component<LoaderProps, HTMLElement> & {
             strokeWidth="5"
           />
         </svg>
+        {label && <p className={cx(styles.loaderLabel)}>Uploading...</p>}
       </div>
     );
   }

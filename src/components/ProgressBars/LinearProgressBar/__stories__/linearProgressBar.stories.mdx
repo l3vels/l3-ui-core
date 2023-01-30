@@ -22,7 +22,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Feedback/LinearProgressBar - (Coming Soon)"
+  title="Feedback/LinearProgressBar - (In Progress)"
   component={LinearProgressBar}
   argTypes={metaSettings.argTypes}
   decorators={metaSettings.decorators}
@@ -99,6 +99,33 @@ Progress bars show continuous progress through a process, such as a percentage v
         />
         Without label
       </div>
+    </div>
+  </Story>
+</Canvas>
+
+### Size (thickness)
+
+<Canvas>
+  <Story name="Size (thickness)">
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px", marginTop: "15px" }}>
+      <LinearProgressBar
+        className="linear-progress-bar_small-wrapper"
+        value={25}
+        indicateProgress
+        size={LinearProgressBar.sizes.SMALL}
+      />
+      <LinearProgressBar
+        className="linear-progress-bar_small-wrapper"
+        value={50}
+        indicateProgress
+        size={LinearProgressBar.sizes.MEDIUM}
+      />
+      <LinearProgressBar
+        className="linear-progress-bar_small-wrapper"
+        value={100}
+        indicateProgress
+        size={LinearProgressBar.sizes.LARGE}
+      />
     </div>
   </Story>
 </Canvas>

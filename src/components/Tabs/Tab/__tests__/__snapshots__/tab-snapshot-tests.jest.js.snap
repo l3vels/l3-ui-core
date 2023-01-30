@@ -8,7 +8,7 @@ exports[`Tab renders correctly when active 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   />
 </li>
@@ -22,7 +22,7 @@ exports[`Tab renders correctly when disabled 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   />
 </li>
@@ -36,7 +36,7 @@ exports[`Tab renders correctly when focus 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   />
 </li>
@@ -50,7 +50,7 @@ exports[`Tab renders correctly when focus and active 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   />
 </li>
@@ -64,7 +64,7 @@ exports[`Tab renders correctly with className 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   >
     Tab
@@ -80,7 +80,7 @@ exports[`Tab renders correctly with empty props 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   />
 </li>
@@ -94,7 +94,7 @@ exports[`Tab renders correctly with icon on left 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   >
     <svg
@@ -128,7 +128,7 @@ exports[`Tab renders correctly with icon on right 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   >
     T
@@ -163,7 +163,7 @@ exports[`Tab renders correctly with id 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   >
     Tab
@@ -179,7 +179,7 @@ exports[`Tab renders correctly with value 1`] = `
   role="tab"
 >
   <a
-    className="tab-inner"
+    className="tab-inner tab-inner--size-undefined"
     onClick={[Function]}
   >
     Tab

@@ -966,6 +966,14 @@ exports[`Combobox renders correctly with loading 1`] = `
                   viewBox="0 0 50 50"
                 >
                   <circle
+                    className="circleLoaderSpinnerBackground"
+                    cx="25"
+                    cy="25"
+                    fill="none"
+                    r="20"
+                    strokeWidth="5"
+                  />
+                  <circle
                     className="circle-loader-spinner-path circleLoaderSpinnerPath"
                     cx="25"
                     cy="25"

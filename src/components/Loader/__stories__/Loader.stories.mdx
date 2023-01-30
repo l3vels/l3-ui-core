@@ -22,7 +22,7 @@ import "./Loader.stories.scss";
 
 export const metaSettings = createStoryMetaSettings({
   component: Loader,
-  enumPropNamesArray: ["size", "color"]
+  enumPropNamesArray: ["size"]
 });
 
 <Meta
@@ -111,37 +111,13 @@ Circular loader indicates to user waiting state.
   </Story>
 </Canvas>
 
-### Color variants
+### Label
 
 <Canvas>
-  <Story name="Color variants">
-    <Flex direction={Flex.directions.ROW} gap={Flex.gaps.SMALL}>
-      <StoryDescription description="Primary" vertical align={Flex.align.START}>
-        <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.PRIMARY} />
-      </StoryDescription>
-      <StoryDescription description="Secondary" vertical align={Flex.align.START}>
-        <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.SECONDARY} />
-      </StoryDescription>
-      <StoryDescription description="Dark" vertical align={Flex.align.START}>
-        <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.DARK} />
-      </StoryDescription>
-      <StoryDescription description="OnPrimary" vertical align={Flex.align.START}>
-        <Flex direction={Flex.directions.ROW}>
-          <div className="l3-storybook-loader_color-variants_on-primary--color-black">
-            <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.ON_PRIMARY} />
-          </div>
-          <div className="l3-storybook-loader_color-variants_on-primary--color-negative">
-            <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.ON_PRIMARY} />
-          </div>
-          <div className="l3-storybook-loader_color-variants_on-primary--color-positive">
-            <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.ON_PRIMARY} />
-          </div>
-          <div className="l3-storybook-loader_color-variants_on-primary--color-primary">
-            <Loader size={Loader.sizes.MEDIUM} color={Loader.colors.ON_PRIMARY} />
-          </div>
-        </Flex>
-      </StoryDescription>
-    </Flex>
+  <Story name="Label">
+    <div style={{ margin: "20px", marginTop: "0" }}>
+      <Loader size={Loader.sizes.MEDIUM} label={true} />
+    </div>
   </Story>
 </Canvas>
 
@@ -154,30 +130,6 @@ If there is a need for color customization, css `color` attribute of a parent co
     <div style={{ color: "var(--color-dark-red)" }}>
       <Loader size={Loader.sizes.MEDIUM} />
     </div>
-  </Story>
-</Canvas>
-
-### Visual variants
-
-<Canvas>
-  <Story name="Visual variants">
-    <Flex direction={Flex.directions.ROW} gap={Flex.gaps.SMALL}>
-      <StoryDescription description="Casual" vertical align={Flex.align.START}>
-        <div align="left">
-          <Loader size={Loader.sizes.MEDIUM} />
-        </div>
-      </StoryDescription>
-      <StoryDescription
-        description="With background"
-        vertical
-        align={Flex.align.START}
-        headerStyle={{ width: "fitContent" }}
-      >
-        <div align="left">
-          <Loader size={Loader.sizes.MEDIUM} hasBackground />
-        </div>
-      </StoryDescription>
-    </Flex>
   </Story>
 </Canvas>
 
