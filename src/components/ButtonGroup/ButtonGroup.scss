@@ -1,6 +1,7 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/themes";
 @import "../../styles/typography";
+@import "../../styles/theme-mixin";
 
 .l3-style-button-group-component {
   display: flex;
@@ -14,60 +15,76 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    gap: $spacing-small;
     .l3-style-button {
-      border: 1px solid;
-      @include theme-prop(background-color, primary-background-color);
-      @include theme-prop(border-color, ui-border-color);
+      @include theme-prop(background-color, secondary-background-color);
+      border-radius: $border-radius-big;
+      padding: 10px $spacing-xl;
       &.l3-style-button--color {
         &-primary {
+          &:hover {
+            @include theme-prop(background-color, secondary-hover-color);
+          }
           &-active {
             z-index: 20;
             &:hover {
-              @include theme-prop(background-color, primary-selected-color);
+              @include theme-prop(background-color, primary-hover-color);
             }
             @include theme-prop(background-color, primary-selected-color);
-            @include theme-prop(border-color, primary-color);
           }
         }
       }
     }
   }
   &__option-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $spacing-medium;
+    line-height: 20px;
     &:not(.disabled) {
-      @include theme-prop(color, primary-text-color);
+      @include theme-prop(color, secondary-text-color);
       &.selected {
         z-index: 10;
-        @include theme-prop(color, primary-text-color);
+        @include theme-prop(color, primary-text-on-primary);
+        @include theme-prop(background-color, primary-background-color);
       }
+    }
+
+    &:active {
+      @include theme-prop(color, primary-text-on-primary);
     }
   }
 
-  &--kind {
-    &-tertiary {
-      .l3-style-button {
-        border-color: transparent;
+  &.disabled {
+    pointer-events: none;
+  }
 
-        &:first-child {
-          border-color: transparent;
+  .disabled {
+    pointer-events: none;
+    background-color: var(--disabled-background-color);
+    opacity: 0.5;
+
+    &.l3-style-button--color {
+      &-primary {
+        &:hover {
+          background-color: var(--disabled-background-color);
         }
       }
     }
   }
 
-  &.disabled {
-    cursor: not-allowed;
-  }
-
-  .disabled {
-    cursor: not-allowed;
-    background-color: var(--disabled-background-color);
-    opacity: 0.5;
-  }
-
   .button-disabled {
     background-color: var(--disabled-background-color);
     opacity: 0.5;
-    cursor: not-allowed;
+
+    pointer-events: none;
+
+    &.l3-style-button--color {
+      &-primary {
+        &:hover {
+          background-color: var(--disabled-background-color);
+        }
+      }
+    }
   }
 }
