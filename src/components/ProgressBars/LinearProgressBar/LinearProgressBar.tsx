@@ -149,10 +149,12 @@ const LinearProgressBar: L3Component<LinearProgressBarProps, HTMLDivElement> & {
     ) : null;
 
     return (
-      <div className={wrapperClassName} ref={ref}>
-        <div className={`${baseClassName}__container`}>
-          {renderBaseBars}
-          {renderMultiBars}
+      <div className="main-wrapper">
+        <div className={wrapperClassName} ref={ref}>
+          <div className={`${baseClassName}__container`}>
+            {renderBaseBars}
+            {renderMultiBars}
+          </div>
         </div>
         {renderPercentage}
       </div>

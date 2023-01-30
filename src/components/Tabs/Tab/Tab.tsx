@@ -7,6 +7,7 @@ import Icon, { IconSubComponentProps } from "../../Icon/Icon";
 import L3ComponentProps from "../../../types/L3ComponentProps";
 import { IconType } from "../../Icon/IconConstants";
 import "./Tab.scss";
+import { TabSize } from "./TabConstants";
 
 export interface TabProps extends L3ComponentProps {
   value?: number;
@@ -18,6 +19,7 @@ export interface TabProps extends L3ComponentProps {
   iconSide?: string;
   onClick?: (value: number) => void;
   children?: string | ReactElement[];
+  size?: TabSize;
 }
 
 const Tab: FC<TabProps> = forwardRef(
@@ -33,7 +35,8 @@ const Tab: FC<TabProps> = forwardRef(
       icon,
       iconType,
       iconSide = "left",
-      children
+      children,
+      size
     },
     ref
   ) => {
@@ -75,7 +78,7 @@ const Tab: FC<TabProps> = forwardRef(
         aria-selected={active}
         aria-disabled={disabled}
       >
-        <a className="tab-inner" onClick={() => !disabled && onClick(value)}>
+        <a className={cx("tab-inner", `tab-inner--size-${size}`)} onClick={() => !disabled && onClick(value)}>
           {renderIconAndChildren()}
         </a>
       </li>

@@ -9,10 +9,10 @@ import classes from "./tab-list.stories.module.scss";
 
 export const tabListTemplate = args => (
   <TabList {...args}>
-    <Tab>First</Tab>
-    <Tab>Second</Tab>
-    <Tab>Third</Tab>
-    <Tab disabled>Disabled</Tab>
+    <Tab>Label Tab 01</Tab>
+    <Tab>Label Tab 02</Tab>
+    <Tab>Label Tab 03</Tab>
+    <Tab disabled>Disabled Tab</Tab>
   </TabList>
 );
 
@@ -44,10 +44,10 @@ TabList is a container of all the tabs headers inside the tabs component
 <Canvas>
   <Story name="Default">
     <TabList>
-      <Tab>First</Tab>
-      <Tab>Second</Tab>
-      <Tab>Third</Tab>
-      <Tab disabled>Disabled</Tab>
+      <Tab>Label Tab 01</Tab>
+      <Tab>Label Tab 02</Tab>
+      <Tab>Label Tab 03</Tab>
+      <Tab disabled>Disabled Tab</Tab>
     </TabList>
   </Story>
 </Canvas>
@@ -60,10 +60,10 @@ The width of the list is responsive to the screen's width.
   <Story name="Stretched">
     <div style={{ width: "100%" }}>
       <TabList tabType="stretched">
-        <Tab>First</Tab>
-        <Tab>Second</Tab>
-        <Tab>Third</Tab>
-        <Tab disabled>Disabled</Tab>
+        <Tab>Label Tab 01</Tab>
+        <Tab>Label Tab 02</Tab>
+        <Tab>Label Tab 03</Tab>
+        <Tab disabled>Disabled Tab</Tab>
       </TabList>
     </div>
   </Story>
@@ -76,29 +76,18 @@ The width of the list is responsive to the screen's width.
     <div className={classes.tabsSizesContainer}>
       <>
         Small
-        <TabList size="sm">
-          <Tab>First</Tab>
-          <Tab>Second</Tab>
-          <Tab>Third</Tab>
-          <Tab disabled>Disabled</Tab>
-        </TabList>
-      </>
-      <>
-        Medium
-        <TabList size="md">
-          <Tab>First</Tab>
-          <Tab>Second</Tab>
-          <Tab>Third</Tab>
-          <Tab disabled>Disabled</Tab>
+        <TabList size="small">
+          <Tab>Label Tab 01</Tab>
+          <Tab>Label Tab 02</Tab>
+          <Tab disabled>Disabled Tab</Tab>
         </TabList>
       </>
       <>
         Large
-        <TabList size="lg">
-          <Tab>First</Tab>
-          <Tab>Second</Tab>
-          <Tab>Third</Tab>
-          <Tab disabled>Disabled</Tab>
+        <TabList size="large">
+          <Tab>Label Tab 01</Tab>
+          <Tab>Label Tab 02</Tab>
+          <Tab disabled>Disabled Tab</Tab>
         </TabList>
       </>
     </div>
