@@ -155,6 +155,8 @@ const IconButton: L3Component<IconButtonProps> & {
       return wrapperClassName ? { className: cx(wrapperClassName, styles.wrapper) } : {};
     }, [wrapperClassName]);
 
+    const changeButtonShape = shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button;
+
     return (
       <>
         {label ? (
@@ -176,7 +178,7 @@ const IconButton: L3Component<IconButtonProps> & {
                   dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
                   noSidePadding
                   active={active}
-                  className={shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button}
+                  className={changeButtonShape}
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
@@ -216,7 +218,7 @@ const IconButton: L3Component<IconButtonProps> & {
                   dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
                   noSidePadding
                   active={active}
-                  className={shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button}
+                  className={changeButtonShape}
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
