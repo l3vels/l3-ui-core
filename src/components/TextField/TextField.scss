@@ -387,22 +387,28 @@
   }
 
   .search-wrapper-visible {
-    .search_component {
-      visibility: visible;
-    }
     .search_icon {
       &:hover {
         background: unset !important;
       }
     }
-
-    // .search_component {
-    //   border-radius: 60px !important;
-    // }
+    .search_component {
+      visibility: visible;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: all ease 1s;
+    }
   }
   .search-wrapper-hidden {
     .search_component {
       visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      width: 0;
+      right: 0;
+      transition: all ease 1s;
     }
   }
 }
