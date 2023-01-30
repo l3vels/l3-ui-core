@@ -1,25 +1,34 @@
 @import "../../../styles/themes";
 @import "../../../styles/typography";
+@import "../../../styles/global-css-settings";
+@import "../../../styles/theme-mixin";
 
 .tabs--wrapper {
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 
   .tabs-list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    font-size: 0;
-    position: relative;
-    height: 40px;
+    // font-size: 0;
+    // position: relative;
+    // height: 40px;
     outline: none;
+    align-items: center;
 
-    &.sm {
-      height: 32px;
-    }
+    border-radius: 60px;
+    @include theme-prop(background-color, tab-list-bg-color);
 
-    &.lg {
-      height: 48px;
-    }
+    padding: $spacing-xs;
+    gap: $spacing-small;
+
+    // &.sm {
+    //   height: 32px;
+    // }
+
+    // &.lg {
+    //   height: 48px;
+    // }
   }
 
   &.stretched {
@@ -39,7 +48,7 @@
   &.disabled {
     opacity: 0;
     height: 0;
-    padding-bottom: 5px;
+    // padding-bottom: 5px;
     pointer-events: none;
     .tabs-list {
       .tab--wrapper {
@@ -51,6 +60,6 @@
   }
 }
 
-.tabs--wrapper .tabs-list{
+.tabs--wrapper .tabs-list {
   font-family: var(--font-family);
 }
