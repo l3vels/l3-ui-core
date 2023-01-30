@@ -137,6 +137,17 @@ $theme: (
   "radio-description-color-secondary": $white-6,
   "radio-checked-border-color": $light-blue,
 
+  // datePicker
+  // DatePicker colors
+  "date-picker-default-color": $black-5,
+  "date-picker-secondary-color": rgba(0, 14, 80, 0.6),
+  "date-picker-bg-color-primary": $black,
+  "date-picker-bg-color-secondary": linear-gradient(50.1deg, #6ff9d8 10%, #c3b7ff 98.2%),
+  "date-picker-disabled-color": $white-4,
+  "date-picker-selected-color": $white,
+  "date-navigation-icon-color": $white,
+  "date-navigation-icon-bg": $black,
+  //
   "primary-color": $black,
   "primary-selected-color": $black-7,
   "primary-color-selected": #00a25b,

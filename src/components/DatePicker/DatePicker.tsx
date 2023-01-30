@@ -7,7 +7,7 @@ import { DayOfWeekShape, DayPickerRangeController, DayPickerSingleDateController
 import DatePickerHeaderComponent from "./DatePickerHeader/DatePickerHeader";
 import DateNavigationItem from "./DateNavigationItem/DateNavigationItem";
 import YearPicker from "./YearPicker/YearPicker";
-import { DAY_SIZE, WEEK_FIRST_DAY } from "./constants";
+import { DatePickerType, DAY_SIZE, WEEK_FIRST_DAY } from "./constants";
 import { Direction, FocusInput, Moment, RangeDate } from "./types";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import L3Component from "../../types/L3Component";
@@ -43,6 +43,8 @@ interface DatePickerProps extends L3ComponentProps {
   shouldBlockYear?: (year: number) => boolean;
   /** determine if date range should be disabled */
   shouldBlockRange?: (date: Moment) => boolean;
+
+  kind?: DatePickerType;
 }
 
 const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDivElement, DatePickerProps>(
@@ -63,7 +65,8 @@ const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDiv
       enableOutsideDays = false,
       showWeekNumber = false,
       shouldBlockRange,
-      "data-testid": dataTestId
+      "data-testid": dataTestId,
+      kind = "primary"
     },
     ref
   ) => {
@@ -138,7 +141,9 @@ const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDiv
         className={cx(styles.datepickerContainer, className, {
           [styles.withWeekNumber]: showWeekNumber,
           [styles.rangePickerMode]: range,
-          [styles.monthYearSelection]: isMonthYearSelection
+          [styles.noRange]: date === endDate,
+          [styles.monthYearSelection]: isMonthYearSelection,
+          [styles.kindSecondary]: kind === "secondary"
         })}
       >
         {range ? (

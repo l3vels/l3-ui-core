@@ -62,6 +62,10 @@ $text-field-icon-container-size-sm: 14px;
 $text-field-icon-container-size-md: 14px;
 $text-field-icon-container-size-lg: 14px;
 
+//DatePicker
+$date-picker-border-radius-start: 50px 0px 0px 50px;
+$date-picker-border-radius-end: 0px 50px 50px 0px;
+
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
 }
