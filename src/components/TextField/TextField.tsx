@@ -1,4 +1,4 @@
-import React, { forwardRef, useCallback, useEffect, useMemo, useRef } from "react";
+import React, { forwardRef, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import classNames from "classnames";
 import useDebounceEvent from "../../hooks/useDebounceEvent";
 import Icon from "../Icon/Icon";
@@ -173,6 +173,13 @@ const TextField: L3Component<TextFieldProps, unknown> & {
       }
     }, [inputRef, autoFocus]);
 
+    const [show, setShow] = useState(false);
+
+    const showTextfieldClass = show ? "show-text-field-component" : "hide-text-field-component";
+    const isSearchType = type === "search" && showTextfieldClass;
+
+    const isWrapperVisible = show ? "search-wrapper search-wrapper-visible" : "search-wrapper search-wrapper-hidden";
+
     return (
       <div
         className={classNames("input-component", wrapperClassName, {
@@ -184,12 +191,17 @@ const TextField: L3Component<TextFieldProps, unknown> & {
         <div className="input-component__label--wrapper">
           <FieldLabel labelText={title} icon={labelIconName} iconLabel={iconsNames.layout} labelFor={id} />
           <div
-            className={classNames("input-component__input-wrapper", SIZE_MAPPER[getActualSize(size)], validationClass)}
+            className={classNames(
+              "input-component__input-wrapper",
+              SIZE_MAPPER[getActualSize(size)],
+              validationClass,
+              isWrapperVisible
+            )}
           >
             {/*Programatical input (tabIndex={-1}) is working fine with aria-activedescendant attribute despite the rule*/}
             {/*eslint-disable-next-line jsx-a11y/aria-activedescendant-has-tabindex*/}
             <input
-              className={classNames(className, "input-component__input", {
+              className={classNames(className, "input-component__input", isSearchType, {
                 "input-component__input--has-icon": !!hasIcon
               })}
               placeholder={placeholder}
@@ -218,7 +230,8 @@ const TextField: L3Component<TextFieldProps, unknown> & {
             {loading && (
               <div
                 className={classNames("input-component__loader--container", {
-                  "input-component__loader--container-has-icon": hasIcon
+                  "input-component__loader--container-has-icon": hasIcon,
+                  isSearchType
                 })}
               >
                 <div className={"input-component__loader"}>
@@ -227,11 +240,15 @@ const TextField: L3Component<TextFieldProps, unknown> & {
               </div>
             )}
             <Clickable
-              className={classNames("input-component__icon--container", {
-                "input-component__icon--container-has-icon": hasIcon,
-                "input-component__icon--container-active": isPrimary
-              })}
-              onClick={onIconClickCallback}
+              className={classNames(
+                "input-component__icon--container",
+                {
+                  "input-component__icon--container-has-icon": hasIcon,
+                  "input-component__icon--container-active": isPrimary
+                },
+                type === "search" && "search_icon"
+              )}
+              onClick={type === "search" ? () => setShow(!show) : onIconClickCallback}
               tabIndex={onIconClick !== NOOP && inputValue && iconName.length && isPrimary ? "0" : "-1"}
             >
               <Icon
@@ -246,10 +263,14 @@ const TextField: L3Component<TextFieldProps, unknown> & {
               />
             </Clickable>
             <Clickable
-              className={classNames("input-component__icon--container", {
-                "input-component__icon--container-has-icon": hasIcon,
-                "input-component__icon--container-active": isSecondary
-              })}
+              className={classNames(
+                "input-component__icon--container",
+                {
+                  "input-component__icon--container-has-icon": hasIcon,
+                  "input-component__icon--container-active": isSecondary
+                },
+                type === "search" && "search-icon"
+              )}
               onClick={onIconClickCallback}
               tabIndex={!shouldFocusOnSecondaryIcon ? "-1" : "0"}
               dataTestId={secondaryDataTestId || getTestId(ComponentDefaultTestId.TEXT_FIELD_SECONDARY_BUTTON, id)}

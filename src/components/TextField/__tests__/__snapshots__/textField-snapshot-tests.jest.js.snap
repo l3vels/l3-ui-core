@@ -10,7 +10,7 @@ exports[`TextField renders correctly when disabled 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -67,7 +67,7 @@ exports[`TextField renders correctly when loading 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -161,7 +161,7 @@ exports[`TextField renders correctly when readonly 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -218,7 +218,7 @@ exports[`TextField renders correctly when required 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -275,7 +275,7 @@ exports[`TextField renders correctly with another type 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -332,7 +332,7 @@ exports[`TextField renders correctly with className 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -389,7 +389,7 @@ exports[`TextField renders correctly with className 2`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -446,7 +446,7 @@ exports[`TextField renders correctly with date type 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -503,7 +503,7 @@ exports[`TextField renders correctly with date-time type 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -560,7 +560,7 @@ exports[`TextField renders correctly with icon 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -626,7 +626,7 @@ exports[`TextField renders correctly with iconsNames 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -683,7 +683,7 @@ exports[`TextField renders correctly with id 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -740,7 +740,7 @@ exports[`TextField renders correctly with labelIconName 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -797,7 +797,7 @@ exports[`TextField renders correctly with large size 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-large"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -854,7 +854,7 @@ exports[`TextField renders correctly with placeholder 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -911,7 +911,7 @@ exports[`TextField renders correctly with role 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -968,7 +968,7 @@ exports[`TextField renders correctly with secondaryIconName 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1034,7 +1034,7 @@ exports[`TextField renders correctly with showCharCount 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1101,7 +1101,7 @@ exports[`TextField renders correctly with validation 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small input-component__input--error-validation"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small input-component__input--error-validation search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1168,7 +1168,7 @@ exports[`TextField renders correctly with value 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1225,7 +1225,7 @@ exports[`TextField renders correctly with wrapperClassName 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-small"
+      className="input-component__input-wrapper input-component__input-wrapper--size-small search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""

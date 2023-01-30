@@ -17,12 +17,7 @@ export const metaSettings = createStoryMetaSettings({
   iconPropNamesArray: ["secondaryIconName", "iconName"]
 });
 
-<Meta
-  title="Inputs/Search"
-  component={Search}
-  argTypes={metaSettings.argTypes}
-  decorators={metaSettings.decorators}
-/>
+<Meta title="Inputs/Search" component={Search} argTypes={metaSettings.argTypes} decorators={metaSettings.decorators} />
 
 <!--- Component template -->
 
@@ -84,7 +79,7 @@ There are three sizes available: Small (32px), Medium (40px), and Large (48px).
 <Canvas>
   <Story name="Sizes">
     <div className="l3-storybook-search_box">
-      <Search placeholder="Small" size={Search.sizes.SMALL} />
+      {/* <Search placeholder="Small" size={Search.sizes.SMALL} /> */}
       <Search placeholder="Medium" />
       <Search placeholder="Large" size={Search.sizes.LARGE} />
     </div>
