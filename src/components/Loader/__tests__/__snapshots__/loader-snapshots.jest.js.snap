@@ -1,129 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Loader renders correctly with color variants with DARK color 1`] = `
-<div
-  className="l3-loader-component loaderContainer"
-  data-testid="loader"
-  role="alert"
-  style={
-    Object {
-      "height": 40,
-      "width": 40,
-    }
-  }
-  title="loading"
->
-  <svg
-    aria-hidden={true}
-    className="circle-loader-spinner circleLoaderSpinner"
-    color="var(--primary-text-color)"
-    viewBox="0 0 50 50"
-  >
-    <circle
-      className="circle-loader-spinner-path circleLoaderSpinnerPath"
-      cx="25"
-      cy="25"
-      fill="none"
-      r="20"
-      strokeWidth="5"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Loader renders correctly with color variants with ON_PRIMARY color 1`] = `
-<div
-  className="l3-loader-component loaderContainer"
-  data-testid="loader"
-  role="alert"
-  style={
-    Object {
-      "height": 40,
-      "width": 40,
-    }
-  }
-  title="loading"
->
-  <svg
-    aria-hidden={true}
-    className="circle-loader-spinner circleLoaderSpinner"
-    color="var(--text-color-on-inverted)"
-    viewBox="0 0 50 50"
-  >
-    <circle
-      className="circle-loader-spinner-path circleLoaderSpinnerPath"
-      cx="25"
-      cy="25"
-      fill="none"
-      r="20"
-      strokeWidth="5"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Loader renders correctly with color variants with PRIMARY color 1`] = `
-<div
-  className="l3-loader-component loaderContainer"
-  data-testid="loader"
-  role="alert"
-  style={
-    Object {
-      "height": 40,
-      "width": 40,
-    }
-  }
-  title="loading"
->
-  <svg
-    aria-hidden={true}
-    className="circle-loader-spinner circleLoaderSpinner"
-    color="var(--primary-color)"
-    viewBox="0 0 50 50"
-  >
-    <circle
-      className="circle-loader-spinner-path circleLoaderSpinnerPath"
-      cx="25"
-      cy="25"
-      fill="none"
-      r="20"
-      strokeWidth="5"
-    />
-  </svg>
-</div>
-`;
-
-exports[`Loader renders correctly with color variants with SECONDARY color 1`] = `
-<div
-  className="l3-loader-component loaderContainer"
-  data-testid="loader"
-  role="alert"
-  style={
-    Object {
-      "height": 40,
-      "width": 40,
-    }
-  }
-  title="loading"
->
-  <svg
-    aria-hidden={true}
-    className="circle-loader-spinner circleLoaderSpinner"
-    color="var(--secondary-text-color)"
-    viewBox="0 0 50 50"
-  >
-    <circle
-      className="circle-loader-spinner-path circleLoaderSpinnerPath"
-      cx="25"
-      cy="25"
-      fill="none"
-      r="20"
-      strokeWidth="5"
-    />
-  </svg>
-</div>
-`;
-
 exports[`Loader renders correctly with custom class name 1`] = `
 <div
   className="l3-loader-component loaderContainer"
@@ -131,8 +7,8 @@ exports[`Loader renders correctly with custom class name 1`] = `
   role="alert"
   style={
     Object {
-      "height": 40,
-      "width": 40,
+      "height": 48,
+      "width": 48,
     }
   }
   title="loading"
@@ -142,6 +18,14 @@ exports[`Loader renders correctly with custom class name 1`] = `
     className="circle-loader-spinner circleLoaderSpinner dummy-class-name"
     viewBox="0 0 50 50"
   >
+    <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
     <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
@@ -173,6 +57,14 @@ exports[`Loader renders correctly with size variants with LARGE size 1`] = `
     viewBox="0 0 50 50"
   >
     <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
+    <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
       cy="25"
@@ -191,8 +83,8 @@ exports[`Loader renders correctly with size variants with MEDIUM size 1`] = `
   role="alert"
   style={
     Object {
-      "height": 40,
-      "width": 40,
+      "height": 48,
+      "width": 48,
     }
   }
   title="loading"
@@ -202,6 +94,14 @@ exports[`Loader renders correctly with size variants with MEDIUM size 1`] = `
     className="circle-loader-spinner circleLoaderSpinner"
     viewBox="0 0 50 50"
   >
+    <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
     <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
@@ -221,8 +121,8 @@ exports[`Loader renders correctly with size variants with SMALL size 1`] = `
   role="alert"
   style={
     Object {
-      "height": 24,
-      "width": 24,
+      "height": 36,
+      "width": 36,
     }
   }
   title="loading"
@@ -232,6 +132,14 @@ exports[`Loader renders correctly with size variants with SMALL size 1`] = `
     className="circle-loader-spinner circleLoaderSpinner"
     viewBox="0 0 50 50"
   >
+    <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
     <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
@@ -251,8 +159,8 @@ exports[`Loader renders correctly with size variants with XS size 1`] = `
   role="alert"
   style={
     Object {
-      "height": 16,
-      "width": 16,
+      "height": 24,
+      "width": 24,
     }
   }
   title="loading"
@@ -262,6 +170,14 @@ exports[`Loader renders correctly with size variants with XS size 1`] = `
     className="circle-loader-spinner circleLoaderSpinner"
     viewBox="0 0 50 50"
   >
+    <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
     <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
@@ -293,6 +209,14 @@ exports[`Loader renders correctly with size variants with custom size as number 
     viewBox="0 0 50 50"
   >
     <circle
+      className="circleLoaderSpinnerBackground"
+      cx="25"
+      cy="25"
+      fill="none"
+      r="20"
+      strokeWidth="5"
+    />
+    <circle
       className="circle-loader-spinner-path circleLoaderSpinnerPath"
       cx="25"
       cy="25"
@@ -311,8 +235,8 @@ exports[`Loader renders correctly with visual variants with background 1`] = `
   role="alert"
   style={
     Object {
-      "height": 40,
-      "width": 40,
+      "height": 48,
+      "width": 48,
     }
   }
   title="loading"

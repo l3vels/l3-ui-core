@@ -53,14 +53,13 @@ Snapshot Diff:
 +                 aria-busy="false"
 +                 aria-disabled="false"
 +                 aria-label="close"
-+                 class="l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
++                 class="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
 +                 data-testid="icon-button"
 +                 style="justify-content: center; align-items: center; padding: 0px; width: 36px; height: 36px;"
 +                 type="button"
 +               >
 +                 <svg
 +                   aria-hidden="true"
-+                   aria-label="test"
 +                   class="icon_component icon-button-padding icon_component--no-focus-style"
 +                   fill="currentColor"
 +                   height="16"
@@ -121,14 +120,13 @@ Snapshot Diff:
 +                 aria-busy="false"
 +                 aria-disabled="false"
 +                 aria-label="close"
-+                 class="l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
++                 class="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
 +                 data-testid="icon-button"
 +                 style="justify-content: center; align-items: center; padding: 0px; width: 36px; height: 36px;"
 +                 type="button"
 +               >
 +                 <svg
 +                   aria-hidden="true"
-+                   aria-label="test"
 +                   class="icon_component icon-button-padding icon_component--no-focus-style"
 +                   fill="currentColor"
 +                   height="16"
@@ -208,14 +206,13 @@ exports[`Modal with base props 1`] = `
               aria-busy="false"
               aria-disabled="false"
               aria-label="close"
-              class="l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
+              class="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
               data-testid="icon-button"
               style="justify-content: center; align-items: center; padding: 0px; width: 36px; height: 36px;"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                aria-label="test"
                 class="icon_component icon-button-padding icon_component--no-focus-style"
                 fill="currentColor"
                 height="16"
@@ -285,7 +282,7 @@ Snapshot Diff:
                 aria-disabled="false"
 -               aria-label="close"
 +               aria-label="closeButtonAriaLabel"
-                class="l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
+                class="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
                 data-testid="icon-button"
                 style="justify-content: center; align-items: center; padding: 0px; width: 36px; height: 36px;"
 `;
@@ -347,14 +344,13 @@ Snapshot Diff:
 -               aria-busy="false"
 -               aria-disabled="false"
 -               aria-label="close"
--               class="l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
+-               class="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-primary l3-style-button--no-side-padding"
 -               data-testid="icon-button"
 -               style="justify-content: center; align-items: center; padding: 0px; width: 36px; height: 36px;"
 -               type="button"
 -             >
 -               <svg
 -                 aria-hidden="true"
--                 aria-label="test"
 -                 class="icon_component icon-button-padding icon_component--no-focus-style"
 -                 fill="currentColor"
 -                 height="16"

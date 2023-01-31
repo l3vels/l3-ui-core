@@ -1,7 +1,7 @@
 @import "../../../styles/themes";
 @import "../../../styles/typography";
 
-.l3-style-story-chips {
+.l3-style-story-tags {
   &_search-bar {
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
     justify-content: center;
   }
 
-  &_chip-padding {
+  &_tag-padding {
     padding: 0 24px;
   }
 

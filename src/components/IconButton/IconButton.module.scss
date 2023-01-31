@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 @import "../../styles/typography/label-typography.scss";
+=======
+@import "../../styles/global-css-settings";
+@import "../../styles/typography";
+@import "../../styles/themes";
+@import "../../styles/states";
+
+>>>>>>> origin
 .wrapper {
   width: fit-content;
   height: fit-content;
@@ -17,4 +25,32 @@
 .l3_IconButton_label_styles {
   // @include typography-label-xs-small;
   @include typography-label-large;
+}
+.l3_style_square_button {
+  --loader-padding: 8px;
+  outline: none;
+  border: none;
+  height: auto;
+  border-radius: $border-radius-extra-small;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--motion-productive-short) transform,
+    var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.l3_style_circle_button {
+  --loader-padding: 8px;
+  outline: none;
+  border: none;
+  height: auto;
+  border-radius: $border-radius-big;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--motion-productive-short) transform,
+    var(--motion-productive-medium) var(--motion-timing-transition) min-width;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

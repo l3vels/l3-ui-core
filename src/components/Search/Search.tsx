@@ -13,7 +13,6 @@ import { BASE_SIZES } from "../../constants";
 import { ComponentDefaultTestId } from "../../tests/constants";
 
 import "./Search.scss";
-
 function getType(type: SearchType) {
   return SearchTypeClass[type] || "";
 }
@@ -74,7 +73,7 @@ const Search: L3Component<SearchProps, unknown> & {
       wrapperClassName = "",
       setRef = NOOP,
       autoComplete = "off",
-      size = BASE_SIZES.MEDIUM,
+      size = "large",
       type = SearchType.SQUARE,
       className,
       id = "search",

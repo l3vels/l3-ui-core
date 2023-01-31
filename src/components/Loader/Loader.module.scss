@@ -1,7 +1,13 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/theme-mixin";
+
 .loaderContainer {
   position: relative;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .circleLoaderSpinnerBackground {
     position: absolute;
@@ -9,7 +15,7 @@
     left: 50%;
     margin-top: -50%;
     margin-left: -50%;
-    stroke: var(--primary-background-hover-color);
+    @include theme-prop(color, loader-stroke-color);
   }
 
   .circleLoaderSpinner {
@@ -47,4 +53,13 @@
       stroke-dashoffset: -124;
     }
   }
+}
+
+.loaderLabel {
+  @include theme-prop(color, loader-label-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  margin-top: calc(100% + 10px);
 }

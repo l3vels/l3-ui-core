@@ -17,7 +17,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Pickers/DatePicker - (Coming Soon)"
+  title="Pickers/DatePicker"
   component={DatePicker}
   argTypes={metaSettings.argTypes}
   decorators={metaSettings.decorators}
@@ -44,11 +44,7 @@ A simple and reusable Datepicker component
   <Story name="Overview">
     {() => {
       const [date, setDate] = useState(null);
-      return (
-        <DialogContentContainer className={styles.datepickerDialogContentContainer}>
-          <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />
-        </DialogContentContainer>
-      );
+      return <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />;
     }}
   </Story>
 </Canvas>
@@ -67,11 +63,7 @@ Allows users to select a single date
   <Story name="Single Day">
     {() => {
       const [date, setDate] = useState(null);
-      return (
-        <DialogContentContainer className={styles.datepickerDialogContentContainer}>
-          <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />
-        </DialogContentContainer>
-      );
+      return <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />;
     }}
   </Story>
 </Canvas>
@@ -85,15 +77,35 @@ Allows users to select a date range
     {() => {
       const [date, setDate] = useState({});
       return (
-        <DialogContentContainer className={styles.datepickerDialogContentContainer}>
-          <DatePicker
-            date={date.startDate}
-            endDate={date.endDate}
-            range
-            data-testid="date-picker"
-            onPickDate={d => setDate(d)}
-          />
-        </DialogContentContainer>
+        <DatePicker
+          date={date.startDate}
+          endDate={date.endDate}
+          range
+          data-testid="date-picker"
+          onPickDate={d => setDate(d)}
+        />
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Kinds
+
+Secondary
+
+<Canvas>
+  <Story name="Kinds">
+    {() => {
+      const [date, setDate] = useState({});
+      return (
+        <DatePicker
+          kind="secondary"
+          date={date.startDate}
+          endDate={date.endDate}
+          range
+          data-testid="date-picker"
+          onPickDate={d => setDate(d)}
+        />
       );
     }}
   </Story>
@@ -105,11 +117,7 @@ Allows users to select a date range
   <Story name="Number Of Months">
     {() => {
       const [date, setDate] = useState(null);
-      return (
-        <DialogContentContainer className={styles.datepickerDialogContentContainer}>
-          <DatePicker numberOfMonths={2} data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />
-        </DialogContentContainer>
-      );
+      return <DatePicker numberOfMonths={2} data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />;
     }}
   </Story>
 </Canvas>

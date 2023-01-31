@@ -104,6 +104,24 @@ $theme: (
   "border-negative": $red-300,
   "negative-text-color": $red-400,
 
+  // loader
+  // Loader colors
+  "loader-label-color": #252c32,
+  "loader-stroke-color": #276ef1,
+
+  // progress bar
+  // Progress bar colors
+  "progress-label-color": $black,
+  "progress-bg-color-primary": #4da1ff,
+
+  // tab
+  // tab colors
+  "tab-color-primary": $white-6,
+  "tab-color-active": $white,
+  "tab-hover-color": $black-2,
+  "tab-bg-active": $black-5,
+  "tab-list-bg-color": $white-2,
+
   // positive colors
   "border-positive": $green-200,
   "positive-text-color": $green-500,
@@ -136,6 +154,22 @@ $theme: (
   "radio-description-color-primary": $black-3,
   "radio-description-color-secondary": $white-6,
   "radio-checked-border-color": $light-blue,
+
+  // datePicker
+  // DatePicker colors
+  "date-picker-default-color": $black-5,
+  "date-picker-secondary-color": rgba(0, 14, 80, 0.6),
+  "date-picker-bg-color-primary": $black,
+  "date-picker-bg-color-secondary": linear-gradient(50.1deg, #6ff9d8 10%, #c3b7ff 98.2%),
+  "date-picker-disabled-color": $white-4,
+  "date-picker-selected-color": $white,
+  "date-navigation-icon-color": $white,
+  "date-navigation-icon-bg": $black,
+  // tags
+  // Tags color
+  "tags-label-color": $black-4,
+  "tags-label-color-outlined": $white,
+  "tags-bg-color-outlined": $black-2,
 
   "primary-color": $black,
   "primary-selected-color": $black-7,

@@ -6,8 +6,8 @@ import { useHiddenOptionsData } from "../../hooks/useHiddenOptionsData";
 import Counter from "../../../Counter/Counter";
 import Dialog from "../../../Dialog/Dialog";
 import DialogContentContainer from "../../../DialogContentContainer/DialogContentContainer";
-import Chips from "../../../Chips/Chips";
-import { DROPDOWN_CHIP_COLORS } from "../../dropdown-constants";
+import Tags from "../../../Tags/Tags";
+import { DROPDOWN_TAG_COLORS } from "../../dropdown-constants";
 import classes from "./MultiValueContainer.module.scss";
 
 export default function Container({ children, selectProps, ...otherProps }) {
@@ -22,31 +22,31 @@ export default function Container({ children, selectProps, ...otherProps }) {
   const clickHandler = children[1];
   const [ref, setRef] = useState();
   const showPlaceholder = selectedOptions.length === 0 && !inputValue;
-  const chipWrapperClassName = classes["chip-with-input-wrapper"];
-  const chipClassName = cx(
-    isMultiline ? classes["multiselect-chip-multi-line"] : classes["multiselect-chip-single-line"],
-    { [classes["multiselect-chip-disabled"]]: isDisabled }
+  const tagWrapperClassName = classes["tag-with-input-wrapper"];
+  const tagClassName = cx(
+    isMultiline ? classes["multiselect-tag-multi-line"] : classes["multiselect-tag-single-line"],
+    { [classes["multiselect-tag-disabled"]]: isDisabled }
   );
 
   const { overflowIndex, hiddenOptionsCount } = useHiddenOptionsData({
     isMultiline,
     ref,
-    chipClassName,
-    chipWrapperClassName,
+    tagClassName,
+    tagWrapperClassName,
     selectedOptionsCount: selectedOptions.length
   });
   const isCounterShown = hiddenOptionsCount > 0;
   const renderOptions = useCallback(
     (from = 0, to = selectedOptions.length) =>
       selectedOptions.map((option, index) => {
-        const overrideChipColor = Object.keys(DROPDOWN_CHIP_COLORS).includes(option.chipColor)
-          ? option.chipColor
-          : DROPDOWN_CHIP_COLORS.PRIMARY;
+        const overrideTagColor = Object.keys(DROPDOWN_TAG_COLORS).includes(option.tagColor)
+          ? option.tagColor
+          : DROPDOWN_TAG_COLORS.PRIMARY;
         return index >= from && index < to ? (
-          <Chips
-            dataTestId="value-container-chip"
+          <Tags
+            dataTestId="value-container-tag"
             key={option.value}
-            className={chipClassName}
+            className={tagClassName}
             noAnimation
             disabled={isDisabled}
             id={option.value}
@@ -58,11 +58,11 @@ export default function Container({ children, selectProps, ...otherProps }) {
             readOnly={withMandatoryDefaultOptions && option.isMandatory}
             leftAvatar={option.leftAvatar}
             leftIcon={option.leftIcon}
-            color={overrideChipColor}
+            color={overrideTagColor}
           />
         ) : null;
       }),
-    [selectedOptions, chipClassName, isDisabled, onSelectedDelete, withMandatoryDefaultOptions]
+    [selectedOptions, tagClassName, isDisabled, onSelectedDelete, withMandatoryDefaultOptions]
   );
 
   return (
@@ -74,14 +74,14 @@ export default function Container({ children, selectProps, ...otherProps }) {
           </div>
         )}
         <div
-          className={cx(classes["value-container-chips"], { [classes["without-placeholder"]]: !showPlaceholder })}
+          className={cx(classes["value-container-tags"], { [classes["without-placeholder"]]: !showPlaceholder })}
           ref={newRef => setRef(newRef)}
-          data-testid="value-container-chips"
+          data-testid="value-container-tags"
         >
           {isCounterShown ? (
             <>
               {renderOptions(0, overflowIndex - 1)}
-              <div className={chipWrapperClassName}>
+              <div className={tagWrapperClassName}>
                 {renderOptions(overflowIndex - 1, overflowIndex)}
                 {clickHandler}
               </div>
@@ -90,7 +90,7 @@ export default function Container({ children, selectProps, ...otherProps }) {
           ) : (
             <>
               {renderOptions(0, selectedOptions.length - 1)}
-              <div className={chipWrapperClassName}>
+              <div className={tagWrapperClassName}>
                 {renderOptions(selectedOptions.length - 1)}
                 {clickHandler}
               </div>

@@ -74,6 +74,7 @@ export interface IconButtonProps extends L3ComponentProps {
   insetFocus?: boolean;
   label?: string;
   labelInButton?: string;
+  shape?: "Square" | "Circle";
 }
 
 const IconButton: L3Component<IconButtonProps> & {
@@ -83,7 +84,6 @@ const IconButton: L3Component<IconButtonProps> & {
 } = forwardRef(
   (
     {
-      className,
       wrapperClassName,
       id,
       icon,
@@ -101,7 +101,8 @@ const IconButton: L3Component<IconButtonProps> & {
       dataTestId,
       insetFocus,
       label,
-      labelInButton
+      labelInButton,
+      shape
     },
     ref
   ) => {
@@ -154,6 +155,8 @@ const IconButton: L3Component<IconButtonProps> & {
       return wrapperClassName ? { className: cx(wrapperClassName, styles.wrapper) } : {};
     }, [wrapperClassName]);
 
+    const shapeTypeClassName = shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button;
+
     return (
       <>
         {label ? (
@@ -175,7 +178,7 @@ const IconButton: L3Component<IconButtonProps> & {
                   dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
                   noSidePadding
                   active={active}
-                  className={className}
+                  className={shapeTypeClassName}
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
@@ -215,7 +218,7 @@ const IconButton: L3Component<IconButtonProps> & {
                   dataTestId={dataTestId || getTestId(ComponentDefaultTestId.ICON_BUTTON, id)}
                   noSidePadding
                   active={active}
-                  className={className}
+                  className={shapeTypeClassName}
                   style={overrideStyle}
                   insetFocus={insetFocus}
                 >
@@ -229,7 +232,6 @@ const IconButton: L3Component<IconButtonProps> & {
                       ignoreFocusStyle
                       className="icon-button-padding"
                       clickable={false}
-                      iconLabel="test"
                     />
                   )}
                 </Button>
@@ -265,7 +267,8 @@ IconButton.defaultProps = {
   disabledReason: undefined,
   color: undefined,
   dataTestId: undefined,
-  insetFocus: false
+  insetFocus: false,
+  shape: "Circle"
 };
 
 export default IconButton;

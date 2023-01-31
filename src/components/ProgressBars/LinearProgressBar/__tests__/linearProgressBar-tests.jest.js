@@ -37,7 +37,7 @@ describe("ProgressBars Tests", () => {
       act(() => {
         component = rerender(<LinearProgressBar value={13} max={100} id="test" />);
       });
-      expect(screen.queryAllByText("13%").length).toBe(0);
+      expect(screen.queryAllByText("13% complete").length).toBe(0);
     });
 
     it("should render progress indication if set", () => {
@@ -46,7 +46,7 @@ describe("ProgressBars Tests", () => {
         component = rerender(<LinearProgressBar value={13} max={100} id="test" indicateProgress={true} />);
       });
 
-      expect(screen.getByText("13%")).toBeTruthy();
+      expect(screen.getByText("13% complete")).toBeTruthy();
     });
 
     it("should change progress indication for value changes", () => {
@@ -57,7 +57,7 @@ describe("ProgressBars Tests", () => {
           rerender(<LinearProgressBar value={value + i} max={100} id="test" indicateProgress={true} />);
         });
 
-        expect(screen.getByText(`${value + i}%`)).toBeTruthy();
+        expect(screen.getByText(`${value + i}% complete`)).toBeTruthy();
       }
     });
   });

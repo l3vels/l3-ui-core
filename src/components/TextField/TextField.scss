@@ -45,7 +45,7 @@
       }
       .input-component__icon--container.input-component__icon--container-has-icon {
         &:hover {
-          background-color: transparent;
+          background-color: red;
         }
       }
     }
@@ -317,4 +317,52 @@
   .input-component__icon--container
   .input-component__icon {
   font-family: var(--font-family);
+}
+
+.search_component_wrapper {
+  .search-wrapper {
+    .search_icon {
+      right: 0;
+      &:focus,
+      &:active,
+      &.input-component__input--active {
+        background: transparent !important;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.2) !important;
+      }
+      .icon_component {
+        color: #fff;
+      }
+    }
+    .search_component {
+      border-radius: 60px;
+    }
+  }
+
+  .search-wrapper-visible {
+    .search_icon {
+      &:hover {
+        background: unset !important;
+      }
+    }
+    .search_component {
+      visibility: visible;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      transition: all ease 1s;
+    }
+  }
+  .search-wrapper-hidden {
+    .search_component {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      width: 0;
+      right: 0;
+      transition: all ease 1s;
+    }
+  }
 }

@@ -90,7 +90,7 @@ describe("Dropdown", () => {
       component.selectOption(2);
       component.selectOption(3);
 
-      expect(component.chips.values).toEqual(["ocean", "purple", "red"]);
+      expect(component.tags.values).toEqual(["ocean", "purple", "red"]);
     });
 
     it("Should support removing selected options", () => {
@@ -100,7 +100,7 @@ describe("Dropdown", () => {
 
       component.removeOption(0);
 
-      expect(component.chips.values).toEqual(["purple", "red"]);
+      expect(component.tags.values).toEqual(["purple", "red"]);
     });
 
     it("Should support clearing options", () => {
@@ -109,10 +109,10 @@ describe("Dropdown", () => {
       component.clearOptions();
       component.render();
 
-      expect(component.chips.values).toEqual([]);
+      expect(component.tags.values).toEqual([]);
     });
 
-    it("should not show the X in default value chips in default options  are mandatory state", () => {
+    it("should not show the X in default value tags in default options  are mandatory state", () => {
       component = new DropdownDriver()
         .withMandatoryDefaultOptions()
         .withMulti()
@@ -139,7 +139,7 @@ describe("Dropdown", () => {
         component.selectOption(3);
         component.render();
 
-        expect(component.chips.values).toEqual(["ocean", "purple", "red"]);
+        expect(component.tags.values).toEqual(["ocean", "purple", "red"]);
       });
 
       it("Should support removing options", () => {
@@ -148,7 +148,7 @@ describe("Dropdown", () => {
         component.removeOption(2);
         component.render();
 
-        expect(component.chips.values).toEqual(["ocean"]);
+        expect(component.tags.values).toEqual(["ocean"]);
       });
 
       it("Should support clearing options", () => {
@@ -159,7 +159,7 @@ describe("Dropdown", () => {
         component.clearOptions();
         component.render();
 
-        expect(component.chips.values).toEqual([]);
+        expect(component.tags.values).toEqual([]);
       });
     });
   });

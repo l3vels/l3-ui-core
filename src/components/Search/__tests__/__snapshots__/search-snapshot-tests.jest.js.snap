@@ -10,7 +10,7 @@ exports[`Search renders correctly when disabled 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -18,7 +18,7 @@ exports[`Search renders correctly when disabled 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={true}
         id="search"
@@ -35,7 +35,7 @@ exports[`Search renders correctly when disabled 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -63,7 +63,7 @@ exports[`Search renders correctly when disabled 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -105,7 +105,7 @@ exports[`Search renders correctly when underline 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -113,7 +113,7 @@ exports[`Search renders correctly when underline 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -130,7 +130,7 @@ exports[`Search renders correctly when underline 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -158,7 +158,7 @@ exports[`Search renders correctly when underline 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -200,7 +200,7 @@ exports[`Search renders correctly with className 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -208,7 +208,7 @@ exports[`Search renders correctly with className 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="testClassName search_component input-component__input input-component__input--has-icon"
+        className="testClassName search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -225,7 +225,7 @@ exports[`Search renders correctly with className 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -253,7 +253,7 @@ exports[`Search renders correctly with className 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -295,7 +295,7 @@ exports[`Search renders correctly with icon 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -303,7 +303,7 @@ exports[`Search renders correctly with icon 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -320,7 +320,7 @@ exports[`Search renders correctly with icon 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -338,7 +338,7 @@ exports[`Search renders correctly with icon 1`] = `
         />
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -380,7 +380,7 @@ exports[`Search renders correctly with id 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -388,7 +388,7 @@ exports[`Search renders correctly with id 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_testId"
         disabled={false}
         id="testId"
@@ -405,7 +405,7 @@ exports[`Search renders correctly with id 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -433,7 +433,7 @@ exports[`Search renders correctly with id 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_testId"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -475,7 +475,7 @@ exports[`Search renders correctly with loading 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -483,7 +483,7 @@ exports[`Search renders correctly with loading 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -500,7 +500,7 @@ exports[`Search renders correctly with loading 1`] = `
         value=""
       />
       <div
-        className="input-component__loader--container input-component__loader--container-has-icon"
+        className="input-component__loader--container input-component__loader--container-has-icon isSearchType"
       >
         <div
           className="input-component__loader"
@@ -517,6 +517,14 @@ exports[`Search renders correctly with loading 1`] = `
               viewBox="0 0 50 50"
             >
               <circle
+                className="circleLoaderSpinnerBackground"
+                cx="25"
+                cy="25"
+                fill="none"
+                r="20"
+                strokeWidth="5"
+              />
+              <circle
                 className="circle-loader-spinner-path circleLoaderSpinnerPath"
                 cx="25"
                 cy="25"
@@ -529,7 +537,7 @@ exports[`Search renders correctly with loading 1`] = `
         </div>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -557,7 +565,7 @@ exports[`Search renders correctly with loading 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -599,7 +607,7 @@ exports[`Search renders correctly with placeholder 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -607,7 +615,7 @@ exports[`Search renders correctly with placeholder 1`] = `
         aria-label="placeholder"
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -624,7 +632,7 @@ exports[`Search renders correctly with placeholder 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -652,7 +660,7 @@ exports[`Search renders correctly with placeholder 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -694,7 +702,7 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -702,7 +710,7 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -719,7 +727,7 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -747,7 +755,7 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -779,7 +787,7 @@ exports[`Search renders correctly with underline type 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -787,7 +795,7 @@ exports[`Search renders correctly with underline type 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input--only-underline input-component__input input-component__input--has-icon"
+        className="search_component input-component__input--only-underline input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -804,7 +812,7 @@ exports[`Search renders correctly with underline type 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -832,7 +840,7 @@ exports[`Search renders correctly with underline type 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -874,7 +882,7 @@ exports[`Search renders correctly with validation 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium input-component__input--error-validation"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large input-component__input--error-validation search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -882,7 +890,7 @@ exports[`Search renders correctly with validation 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -899,7 +907,7 @@ exports[`Search renders correctly with validation 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -927,7 +935,7 @@ exports[`Search renders correctly with validation 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -969,7 +977,7 @@ exports[`Search renders correctly with value 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -977,7 +985,7 @@ exports[`Search renders correctly with value 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -994,7 +1002,7 @@ exports[`Search renders correctly with value 1`] = `
         value="value"
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1022,7 +1030,7 @@ exports[`Search renders correctly with value 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1064,7 +1072,7 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1072,7 +1080,7 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -1089,7 +1097,7 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1117,7 +1125,7 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1159,7 +1167,7 @@ exports[`Search renders correctly without props 1`] = `
     className="input-component__label--wrapper"
   >
     <div
-      className="input-component__input-wrapper input-component__input-wrapper--size-medium"
+      className="input-component__input-wrapper input-component__input-wrapper--size-large search-wrapper search-wrapper-hidden"
     >
       <input
         aria-activedescendant=""
@@ -1167,7 +1175,7 @@ exports[`Search renders correctly without props 1`] = `
         aria-label=""
         aria-owns=""
         autoComplete="off"
-        className="search_component input-component__input input-component__input--has-icon"
+        className="search_component input-component__input hide-text-field-component input-component__input--has-icon"
         data-testid="search_search"
         disabled={false}
         id="search"
@@ -1184,7 +1192,7 @@ exports[`Search renders correctly without props 1`] = `
         value=""
       />
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon input-component__icon--container-active search_icon l3-style-clickable--disable-text-selection"
         data-testid="clickable"
         onClick={[Function]}
         onKeyDown={[Function]}
@@ -1212,7 +1220,7 @@ exports[`Search renders correctly without props 1`] = `
         </svg>
       </div>
       <div
-        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon l3-style-clickable--disable-text-selection"
+        className="l3-style-clickable input-component__icon--container input-component__icon--container-has-icon search-icon l3-style-clickable--disable-text-selection"
         data-testid="clean-search-button_search"
         onClick={[Function]}
         onKeyDown={[Function]}
