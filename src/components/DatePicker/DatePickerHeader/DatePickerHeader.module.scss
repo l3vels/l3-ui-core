@@ -1,5 +1,5 @@
-@import "/src/styles/global-css-settings";
-@import "/src/styles/theme-mixin";
+@import "../../../styles//global-css-settings.scss";
+@import "../../../styles/theme-mixin.scss";
 
 .datePickerHeader {
   display: flex;
