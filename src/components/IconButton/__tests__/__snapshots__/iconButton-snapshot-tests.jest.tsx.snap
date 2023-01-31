@@ -7,7 +7,7 @@ exports[`IconButton renders correctly with 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="class-name l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -27,7 +27,6 @@ exports[`IconButton renders correctly with 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -53,7 +52,7 @@ exports[`IconButton renders correctly with active 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--color-primary-active l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--color-primary-active l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -73,7 +72,6 @@ exports[`IconButton renders correctly with active 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -110,7 +108,7 @@ exports[`IconButton renders correctly with aria label 1`] = `
       aria-busy={false}
       aria-disabled={false}
       aria-label="My aria label"
-      className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
       data-testid="icon-button"
       onBlur={[Function]}
       onClick={[Function]}
@@ -130,7 +128,6 @@ exports[`IconButton renders correctly with aria label 1`] = `
     >
       <svg
         aria-hidden={true}
-        aria-label="test"
         className="icon_component icon-button-padding icon_component--no-focus-style"
         fill="currentColor"
         height="20"
@@ -157,7 +154,7 @@ exports[`IconButton renders correctly with disabled 1`] = `
   <button
     aria-busy={false}
     aria-disabled={true}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding l3-style-button--disabled"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding l3-style-button--disabled"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -177,7 +174,6 @@ exports[`IconButton renders correctly with disabled 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -203,7 +199,7 @@ exports[`IconButton renders correctly with empty props 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -223,7 +219,6 @@ exports[`IconButton renders correctly with empty props 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -249,7 +244,7 @@ exports[`IconButton renders correctly with id 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button_icon-button"
     id="icon-button"
     onBlur={[Function]}
@@ -270,7 +265,6 @@ exports[`IconButton renders correctly with id 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -296,7 +290,7 @@ exports[`IconButton renders correctly with size - large 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -316,7 +310,6 @@ exports[`IconButton renders correctly with size - large 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="20"
@@ -342,7 +335,7 @@ exports[`IconButton renders correctly with size - medium 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -362,7 +355,6 @@ exports[`IconButton renders correctly with size - medium 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="24"
@@ -388,7 +380,7 @@ exports[`IconButton renders correctly with size - small 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -408,7 +400,6 @@ exports[`IconButton renders correctly with size - small 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="16"
@@ -434,7 +425,7 @@ exports[`IconButton renders correctly with size - xs 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -454,7 +445,6 @@ exports[`IconButton renders correctly with size - xs 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="24"
@@ -480,7 +470,7 @@ exports[`IconButton renders correctly with size - xxs 1`] = `
   <button
     aria-busy={false}
     aria-disabled={false}
-    className="l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
+    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-primary l3-style-button--no-side-padding"
     data-testid="icon-button"
     onBlur={[Function]}
     onClick={[Function]}
@@ -500,7 +490,6 @@ exports[`IconButton renders correctly with size - xxs 1`] = `
   >
     <svg
       aria-hidden={true}
-      aria-label="test"
       className="icon_component icon-button-padding icon_component--no-focus-style"
       fill="currentColor"
       height="24"
