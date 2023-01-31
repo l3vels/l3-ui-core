@@ -1,6 +1,19 @@
-@import "../display-typography.scss";
+@import "./display-typography.scss";
 @import "../../styles/typography.scss";
 @import "../theme-mixin.scss";
+
+@import "./main-typography.scss";
+
+$label-font-family: "Circular Std";
+
+$label-font-style: normal;
+
+$label-font-weight-bold: 500;
+$label-font-weight-normal: 400;
+
+$label-line-height-large: 24px;
+$label-line-height-medium: 20px;
+$label-line-height-small: 16px;
 
 @mixin main-font($font-variable) {
   @include theme-prop(color, primary-text-on-primary);
@@ -10,21 +23,13 @@
 }
 
 @mixin typography-label-large {
-  font-size: $label-font-size-large;
-  font-weight: $label-font-weight-bold;
-  font-family: $label-font-family;
-  font-style: $label-font-style;
-  line-height: $label-line-height-large;
-  color: $white;
+  @include main-font($label-font-large);
 }
+
 @mixin typography-label-medium {
-  font-size: $label-font-size-medium;
-  font-weight: $label-font-weight-bold;
-  font-family: $label-font-family;
-  font-style: $label-font-style;
-  line-height: $label-line-height-medium;
-  color: $white;
+  @include main-font($label-font-medium);
 }
+
 @mixin typography-label-small {
   font-size: $label-font-size-small;
   font-weight: $label-font-weight-bold;
@@ -33,6 +38,7 @@
   line-height: $label-line-height-small;
   color: $white;
 }
+
 @mixin typography-label-xs-small {
   font-size: $label-font-size-xs-small;
   font-weight: $label-font-weight-bold;

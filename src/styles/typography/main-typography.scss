@@ -2,13 +2,17 @@
 
 $font-family: "Circular Std";
 
-$font-style: normal;
+$font-style-normal: normal;
 
 $font-weight-bold: 500;
-$font-weight-weight-normal: 400;
+$font-weight-normal: 400;
 
 $font-line-height-large: 24px;
 $font-line-height-medium: 20px;
 $font-line-height-small: 16px;
 
-// $label-font-large: var(--label-font-size-large) var(--font-weight-normal) var;
+// font-family font-size font-stretch font-style font-variant font-weight  line-height
+$label-font-large: $font-style-normal $font-weight-bold $label-font-size-large #{"/"} $font-line-height-large $font-family;
+$label-font--medium: $font-style-normal $font-weight-bold $label-font-size-medium #{"/"} $font-line-height-medium $font-family;
+$label-font--small: $font-style-normal $font-weight-normal $label-font-size-small #{"/"} $font-line-height-large $font-family;
+$label-font-xs-small: $font-style-normal $font-weight-normal $label-font-size-xs-small #{"/"} $font-line-height-large $font-family;

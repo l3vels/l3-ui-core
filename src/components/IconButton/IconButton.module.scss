@@ -15,5 +15,6 @@
   text-align: center;
 }
 .l3_IconButton_label_styles {
-  @include typography-label-xs-small;
+  // @include typography-label-xs-small;
+  @include typography-label-large;
 }
