@@ -8,7 +8,7 @@ import { elementColorsNames, getElementColor } from "../../utils/colors-vars-map
 import Avatar from "../Avatar/Avatar";
 import IconButton from "../IconButton/IconButton";
 import { getTestId } from "../../tests/test-ids-utils";
-import { ChipsSize } from "./ChipsConstants";
+import { ChipsSize, TagSizes } from "./ChipsConstants";
 import { AvatarType } from "../Avatar/AvatarConstants";
 import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import useHover from "../../hooks/useHover";
@@ -58,6 +58,10 @@ interface ChipsProps extends L3ComponentProps {
    * Should element be focusable & clickable - for backward compatability
    */
   isClickable?: boolean;
+
+  size?: TagSizes;
+
+  outlined?: boolean;
 }
 
 const Chips: L3Component<ChipsProps, HTMLElement> & {
@@ -84,7 +88,9 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
       noAnimation = false,
       ariaLabel,
       isClickable = false,
-      dataTestId
+      dataTestId,
+      size = "large",
+      outlined = false
     },
     ref
   ) => {
@@ -103,11 +109,13 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
         cssVar = getCSSVar("disabled-background-color");
       } else if (isHovered && hasClickableWrapper) {
         cssVar = getElementColor(color, true, true);
+      } else if (outlined) {
+        cssVar = getElementColor(color, true);
       } else {
         cssVar = getElementColor(color, true);
       }
-      return { backgroundColor: cssVar };
-    }, [disabled, isHovered, hasClickableWrapper, color]);
+      return outlined ? { borderColor: cssVar } : { backgroundColor: cssVar };
+    }, [disabled, isHovered, hasClickableWrapper, color, outlined]);
 
     const onDeleteCallback = useCallback(
       (e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
@@ -130,7 +138,12 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
     );
 
     return (
-      <div className={cx(styles.chipsWrapper, className)}>
+      <div
+        className={cx(styles.chipsWrapper, className, {
+          [styles.sizeSmall]: size === "small",
+          [styles.outlined]: outlined
+        })}
+      >
         <ClickableWrapper
           isClickable={hasClickableWrapper}
           clickableProps={{
@@ -173,7 +186,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
                 ignoreFocusStyle
               />
             ) : null}
-            <div className={styles.label}>{label}</div>
+            <div className={cx(styles.label)}>{label}</div>
             {rightIcon ? (
               <Icon
                 className={cx(styles.icon, styles.right)}
@@ -205,6 +218,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
                 onClick={onDeleteCallback}
                 dataTestId={`${overrideDataTestId}-close`}
                 ref={iconButtonRef}
+                kind={IconButton.kinds.TERTIARY}
               />
             )}
           </div>

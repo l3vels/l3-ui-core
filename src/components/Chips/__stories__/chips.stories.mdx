@@ -48,7 +48,7 @@ export const chipsTemplate = createComponentTemplate(Chips);
 Chips are compact elements that represent an input, attribute, or action. They may display text, icons, or both.
 
 <Canvas>
-  <Story name="Overview" args={{ label: "This is a chip", onMouseDown: undefined, onClick: undefined }}>
+  <Story name="Overview" args={{ label: "Tag", onMouseDown: undefined, onClick: undefined }}>
     {chipsTemplate.bind({})}
   </Story>
 </Canvas>
@@ -75,6 +75,24 @@ Chips are compact elements that represent an input, attribute, or action. They m
 </Tip>
 
 ## Variants
+
+### Sizes
+
+<Canvas>
+  <Story name="Sizes">
+    <Chips label="Tag" size="large" />
+    <Chips label="Tag" size="small" />
+  </Story>
+</Canvas>
+
+### Outlined
+
+<Canvas>
+  <Story name="Outlined">
+    <Chips label="Tag" size="large" outlined={true} />
+    <Chips label="Tag" size="small" outlined={true} />
+  </Story>
+</Canvas>
 
 ### With read only state
 
