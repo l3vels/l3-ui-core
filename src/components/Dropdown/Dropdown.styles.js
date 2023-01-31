@@ -159,14 +159,14 @@ const getOptionStyle = (provided, { isDisabled, isSelected, isFocused }) => {
     ...(isFocused && {
       ":hover": {
         color: getCSSVar("primary-text-color"),
-        backgroundColor: getCSSVar("primary-background-hover-color")
+        backgroundColor: 'getCSSVar("primary-background-hover-color")'
       }
     })
   };
 };
 
 const container =
-  ({ size }) =>
+  ({ size, kind }) =>
   (provided, { isDisabled }) => {
     delete provided.pointerEvents;
     return {
@@ -178,12 +178,13 @@ const container =
       borderRadius: `${borderRadius}px`,
       boxSizing: "border-box",
       transition: `border 0.1s ${getCSSVar("expand-animation-timing")}`,
+      ":active, :focus-within": {
+        borderColor: "none",
+        backgroundColor: getKindColors(kind).bgActiveColor
+      },
       ":hover": {
         borderColor: "none",
         borderRadius: "none"
-      },
-      ":active, :focus-within": {
-        borderColor: "none"
       },
       ...disabledContainerStyle(isDisabled)
     };
@@ -200,7 +201,11 @@ const control =
     ...(!isDisabled && {
       ":hover": {
         borderColor: "transparent",
-        borderRadius: getCSSVar("border-radius-small")
+        borderRadius: getCSSVar("border-radius-small"),
+        backgroundColor: getKindColors(kind).bgHoverColor
+      },
+      ":active, :focus": {
+        backgroundColor: getKindColors(kind).bgActiveColor
       }
     }),
     cursor: "pointer",
@@ -254,24 +259,24 @@ const dropdownIndicator =
   };
 
 const clearIndicator =
-  ({ size }) =>
+  ({ size, kind }) =>
   () => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    color: getCSSVar("icon-color"),
+    color: getKindColors(kind).mainWhite,
     backgroundColor: "transparent",
     borderRadius: getCSSVar("border-radius-small"),
     ...getIndicatorBoxSize(size),
     ":hover": {
-      backgroundColor: getCSSVar("primary-background-hover-color")
+      color: getKindColors(kind).mainWhite
     }
   });
 
 const menuOpenOpacity = ({ menuIsOpen }) => {
   if (menuIsOpen) {
     return {
-      opacity: 0.6
+      // opacity: 0.6
     };
   }
 };
@@ -332,13 +337,13 @@ const valueContainer =
   });
 
 const menu =
-  ({ controlRef, insideOverflowContainer, insideOverflowWithTransformContainer }) =>
+  ({ controlRef, insideOverflowContainer, insideOverflowWithTransformContainer, kind }) =>
   provided => {
     const baseStyle = {
       ...provided,
       ...getFont(),
-      color: getCSSVar("primary-text-color"),
-      backgroundColor: getCSSVar("dialog-background-color"),
+      color: getKindColors(kind).mainWhite,
+      backgroundColor: getKindColors(kind).bgActiveColor,
       boxShadow: getCSSVar("box-shadow-small")
     };
 
