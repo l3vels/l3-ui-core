@@ -2,16 +2,12 @@
 @import "../../styles/typography.scss";
 @import "../theme-mixin.scss";
 
-$label-font-family: "Circular Std";
-
-$label-font-style: normal;
-
-$label-font-weight-bold: 500;
-$label-font-weight-normal: 400;
-
-$label-line-height-large: 24px;
-$label-line-height-medium: 20px;
-$label-line-height-small: 16px;
+@mixin main-font($font-variable) {
+  @include theme-prop(color, primary-text-on-primary);
+  -webkit-font-smoothing: var(--font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--font-smoothing-moz);
+  font: $font-variable;
+}
 
 @mixin typography-label-large {
   font-size: $label-font-size-large;
