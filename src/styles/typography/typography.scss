@@ -1,0 +1,88 @@
+@import "./display-typography.scss";
+@import "../typography.scss";
+@import "../theme-mixin.scss";
+
+@import "./main-typography.scss";
+
+@mixin main-font($font-variable) {
+  @include theme-prop(color, primary-text-on-primary);
+  -webkit-font-smoothing: var(--font-smoothing-webkit);
+  -moz-osx-font-smoothing: var(--font-smoothing-moz);
+  font: $font-variable;
+}
+
+// label
+@mixin typography-label-large {
+  @include main-font($label-font-large);
+}
+
+@mixin typography-label-medium {
+  @include main-font($label-font-medium);
+}
+
+@mixin typography-label-small {
+  @include main-font($label-font-small);
+}
+
+@mixin typography-label-xs-small {
+  @include main-font($label-font-xs-small);
+}
+
+// paragraph
+@mixin typography-paragraph-large {
+  @include main-font($paragraph-font-large);
+}
+
+@mixin typography-paragraph-medium {
+  @include main-font($paragraph-font-medium);
+}
+
+@mixin typography-paragraph-small {
+  @include main-font($paragraph-font-small);
+}
+
+@mixin typography-paragraph-xs-small {
+  @include main-font($paragraph-font-xs-small);
+}
+
+// heading
+@mixin typography-heading-big {
+  @include main-font($heading-font-big);
+}
+
+@mixin typography-heading-xs-large {
+  @include main-font($heading-font-xs-large);
+}
+
+@mixin typography-heading-large {
+  @include main-font($heading-font-large);
+}
+
+@mixin typography-heading-medium {
+  @include main-font($heading-font-medium);
+}
+
+@mixin typography-heading-small {
+  @include main-font($heading-font-small);
+}
+
+@mixin typography-heading-xs-small {
+  @include main-font($heading-font-xs-small);
+}
+
+// display
+@mixin typography-display-large {
+  @include main-font($display-font-large);
+}
+
+@mixin typography-display-medium {
+  @include main-font($display-font-medium);
+}
+
+@mixin typography-display-small {
+  @include main-font($display-font-small);
+}
+
+@mixin typography-display-xs-small {
+  @include main-font($display-font-xs-small);
+}

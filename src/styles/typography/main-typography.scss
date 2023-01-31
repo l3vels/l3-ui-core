@@ -5,14 +5,49 @@ $font-family: "Circular Std";
 $font-style-normal: normal;
 
 $font-weight-bold: 500;
+$font-weight-medium: 450;
 $font-weight-normal: 400;
 
-$font-line-height-large: 24px;
-$font-line-height-medium: 20px;
-$font-line-height-small: 16px;
+$font-line-height-highest: 114px;
+$font-line-height-xs-highest: 64px;
+$font-line-height-extra-big: 52px;
+$font-line-height-big: 44px;
+$font-line-height-xs-big: 40px;
+$font-line-height-large: 36px;
+$font-line-height-xs-large: 32px;
+$font-line-height-medium: 28px;
+$font-line-height-xs-medium: 24px;
+$font-line-height-small: 20px;
+$font-line-height-xs-small: 16px;
 
 // font-family font-size font-stretch font-style font-variant font-weight  line-height
-$label-font-large: $font-style-normal $font-weight-bold $label-font-size-large #{"/"} $font-line-height-large $font-family;
-$label-font--medium: $font-style-normal $font-weight-bold $label-font-size-medium #{"/"} $font-line-height-medium $font-family;
-$label-font--small: $font-style-normal $font-weight-normal $label-font-size-small #{"/"} $font-line-height-large $font-family;
-$label-font-xs-small: $font-style-normal $font-weight-normal $label-font-size-xs-small #{"/"} $font-line-height-large $font-family;
+$label-font-large: $font-style-normal $font-weight-bold $label-font-size-large #{"/"} $font-line-height-xs-medium $font-family;
+$label-font-medium: $font-style-normal $font-weight-bold $label-font-size-medium #{"/"} $font-line-height-small $font-family;
+$label-font-small: $font-style-normal $font-weight-bold $label-font-size-small #{"/"} $font-line-height-xs-small $font-family;
+$label-font-xs-small: $font-style-normal $font-weight-bold $label-font-size-xs-small #{"/"} $font-line-height-xs-small $font-family;
+
+// paragraph
+$paragraph-font-large: $font-style-normal $font-weight-medium $paragraph-font-size-large #{"/"} $font-line-height-medium
+  $font-family;
+$paragraph-font-medium: $font-style-normal $font-weight-medium $paragraph-font-size-medium #{"/"} $font-line-height-xs-medium
+  $font-family;
+$paragraph-font-small: $font-style-normal $font-weight-medium $paragraph-font-size-medium #{"/"} $font-line-height-small
+  $font-family;
+$paragraph-font-xs-small: $font-style-normal $font-weight-medium $paragraph-font-size-small #{"/"} $font-line-height-small
+  $font-family;
+
+// heading
+$heading-font-big: $font-style-normal $font-weight-bold $heading-font-size-big #{"/"} $font-line-height-extra-big $font-family;
+$heading-font-xs-large: $font-style-normal $font-weight-bold $heading-font-size-xs-large #{"/"} $font-line-height-big $font-family;
+$heading-font-large: $font-style-normal $font-weight-bold $heading-font-size-large #{"/"} $font-line-height-xs-big $font-family;
+$heading-font-medium: $font-style-normal $font-weight-bold $heading-font-size-medium #{"/"} $font-line-height-large $font-family;
+$heading-font-small: $font-style-normal $font-weight-bold $heading-font-size-small #{"/"} $font-line-height-xs-large $font-family;
+$heading-font-xs-small: $font-style-normal $font-weight-bold $heading-font-size-xs-small #{"/"} $font-line-height-medium
+  $font-family;
+
+// display
+$display-font-large: $font-style-normal $font-weight-bold $display-font-size-large #{"/"} $font-line-height-highest $font-family;
+$display-font-medium: $font-style-normal $font-weight-bold $display-font-size-medium #{"/"} $font-line-height-xs-highest
+  $font-family;
+$display-font-small: $font-style-normal $font-weight-bold $display-font-size-small #{"/"} $font-line-height-extra-big $font-family;
+$display-font-xs-small: $font-style-normal $font-weight-bold $display-font-size-xs-small #{"/"} $font-line-height-big $font-family;

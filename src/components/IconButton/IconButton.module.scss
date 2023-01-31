@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-@import "../../styles/typography/label-typography.scss";
-=======
 @import "../../styles/global-css-settings";
 @import "../../styles/typography";
 @import "../../styles/themes";
 @import "../../styles/states";
+@import "../../styles/typography/typography.scss";
 
->>>>>>> origin
 .wrapper {
   width: fit-content;
   height: fit-content;
@@ -23,8 +20,11 @@
   text-align: center;
 }
 .l3_IconButton_label_styles {
-  // @include typography-label-xs-small;
-  @include typography-label-large;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 .l3_style_square_button {
   --loader-padding: 8px;
