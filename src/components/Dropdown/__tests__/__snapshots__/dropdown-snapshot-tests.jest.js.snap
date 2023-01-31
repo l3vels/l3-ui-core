@@ -1491,7 +1491,7 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
 </div>
 `;
 
-exports[`Dropdown renders correctly with chip colors 1`] = `
+exports[`Dropdown renders correctly with tag colors 1`] = `
 <div
   className="dropdown-wrapper css-3iiiai-container"
   id="dropdown-menu-id"
@@ -1512,15 +1512,15 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
           className="value-container"
         >
           <div
-            className="value-container-chips without-placeholder"
-            data-testid="value-container-chips"
+            className="value-container-tags without-placeholder"
+            data-testid="value-container-tags"
           >
             <div
-              className="chipsWrapper multiselect-chip-multi-line"
+              className="tagsWrapper multiselect-tag-multi-line"
             >
               <div
-                className="chips chips--wrapper multiselect-chip-multi-line withClose noAnimation"
-                data-testid="value-container-chip"
+                className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                data-testid="value-container-tag"
                 id="primary"
                 style={
                   Object {
@@ -1541,7 +1541,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     aria-disabled={false}
                     aria-label="Remove"
                     className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                    data-testid="value-container-chip-close"
+                    data-testid="value-container-tag-close"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1580,11 +1580,11 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
               </div>
             </div>
             <div
-              className="chipsWrapper multiselect-chip-multi-line"
+              className="tagsWrapper multiselect-tag-multi-line"
             >
               <div
-                className="chips chips--wrapper multiselect-chip-multi-line withClose noAnimation"
-                data-testid="value-container-chip"
+                className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                data-testid="value-container-tag"
                 id="positive"
                 style={
                   Object {
@@ -1605,7 +1605,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                     aria-disabled={false}
                     aria-label="Remove"
                     className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                    data-testid="value-container-chip-close"
+                    data-testid="value-container-tag-close"
                     onBlur={[Function]}
                     onClick={[Function]}
                     onFocus={[Function]}
@@ -1644,14 +1644,14 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
               </div>
             </div>
             <div
-              className="chip-with-input-wrapper"
+              className="tag-with-input-wrapper"
             >
               <div
-                className="chipsWrapper multiselect-chip-multi-line"
+                className="tagsWrapper multiselect-tag-multi-line"
               >
                 <div
-                  className="chips chips--wrapper multiselect-chip-multi-line withClose noAnimation"
-                  data-testid="value-container-chip"
+                  className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                  data-testid="value-container-tag"
                   id="negative"
                   style={
                     Object {
@@ -1672,7 +1672,7 @@ exports[`Dropdown renders correctly with chip colors 1`] = `
                       aria-disabled={false}
                       aria-label="Remove"
                       className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                      data-testid="value-container-chip-close"
+                      data-testid="value-container-tag-close"
                       onBlur={[Function]}
                       onClick={[Function]}
                       onFocus={[Function]}
@@ -2357,18 +2357,18 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
           className="value-container"
         >
           <div
-            className="value-container-chips without-placeholder"
-            data-testid="value-container-chips"
+            className="value-container-tags without-placeholder"
+            data-testid="value-container-tags"
           >
             <div
-              className="chip-with-input-wrapper"
+              className="tag-with-input-wrapper"
             >
               <div
-                className="chipsWrapper multiselect-chip-multi-line"
+                className="tagsWrapper multiselect-tag-multi-line"
               >
                 <div
-                  className="chips chips--wrapper multiselect-chip-multi-line withClose noAnimation"
-                  data-testid="value-container-chip"
+                  className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                  data-testid="value-container-tag"
                   id="ocean"
                   style={
                     Object {
@@ -2410,7 +2410,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                       aria-disabled={false}
                       aria-label="Remove"
                       className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                      data-testid="value-container-chip-close"
+                      data-testid="value-container-tag-close"
                       onBlur={[Function]}
                       onClick={[Function]}
                       onFocus={[Function]}
@@ -2594,18 +2594,18 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
           className="value-container"
         >
           <div
-            className="value-container-chips without-placeholder"
-            data-testid="value-container-chips"
+            className="value-container-tags without-placeholder"
+            data-testid="value-container-tags"
           >
             <div
-              className="chip-with-input-wrapper"
+              className="tag-with-input-wrapper"
             >
               <div
-                className="chipsWrapper multiselect-chip-multi-line"
+                className="tagsWrapper multiselect-tag-multi-line"
               >
                 <div
-                  className="chips chips--wrapper multiselect-chip-multi-line withClose noAnimation"
-                  data-testid="value-container-chip"
+                  className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                  data-testid="value-container-tag"
                   id="ocean"
                   style={
                     Object {
@@ -2642,7 +2642,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                       aria-disabled={false}
                       aria-label="Remove"
                       className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                      data-testid="value-container-chip-close"
+                      data-testid="value-container-tag-close"
                       onBlur={[Function]}
                       onClick={[Function]}
                       onFocus={[Function]}
@@ -2835,11 +2835,11 @@ exports[`Dropdown renders correctly with multi 1`] = `
             </div>
           </div>
           <div
-            className="value-container-chips"
-            data-testid="value-container-chips"
+            className="value-container-tags"
+            data-testid="value-container-tags"
           >
             <div
-              className="chip-with-input-wrapper"
+              className="tag-with-input-wrapper"
             >
               <div
                 className="css-lkl2xd-Component"

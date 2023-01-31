@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function useHiddenOptionsData({ isMultiline, ref, selectedOptionsCount, chipClassName, chipWrapperClassName }) {
+export function useHiddenOptionsData({ isMultiline, ref, selectedOptionsCount, tagClassName, tagWrapperClassName }) {
   const [overflowIndex, setOverflowIndex] = useState(-1);
   useEffect(() => {
     let finalOverflowingIndex = -1;
@@ -12,7 +12,7 @@ export function useHiddenOptionsData({ isMultiline, ref, selectedOptionsCount, c
 
       while (childIndex < ref.children.length && optionIndex < selectedOptionsCount) {
         const child = ref.children[childIndex];
-        const isOption = child.classList.contains(chipClassName) || child.classList.contains(chipWrapperClassName);
+        const isOption = child.classList.contains(tagClassName) || child.classList.contains(tagWrapperClassName);
 
         if (isOption) {
           const { bottom: childBottom } = child.getBoundingClientRect();
@@ -27,7 +27,7 @@ export function useHiddenOptionsData({ isMultiline, ref, selectedOptionsCount, c
     }
 
     setOverflowIndex(finalOverflowingIndex);
-  }, [ref, isMultiline, selectedOptionsCount, chipClassName, setOverflowIndex, chipWrapperClassName]);
+  }, [ref, isMultiline, selectedOptionsCount, tagClassName, setOverflowIndex, tagWrapperClassName]);
 
   const hiddenOptionsCount = overflowIndex > -1 ? selectedOptionsCount - overflowIndex : 0;
   return { overflowIndex, hiddenOptionsCount };

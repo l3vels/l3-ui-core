@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Chips renders correctly renders correctly disabled chip 1`] = `
+exports[`Tags renders correctly renders correctly disabled tag 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper disabled"
-    data-testid="chip"
+    className="tags tags--wrapper disabled"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": undefined,
@@ -22,13 +22,13 @@ exports[`Chips renders correctly renders correctly disabled chip 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with color 1`] = `
+exports[`Tags renders correctly renders correctly with color 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper withClose"
-    data-testid="chip"
+    className="tags tags--wrapper withClose"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--negative-color-selected)",
@@ -48,7 +48,7 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
         aria-disabled={false}
         aria-label="Remove"
         className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-        data-testid="chip-close"
+        data-testid="tag-close"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -88,13 +88,13 @@ exports[`Chips renders correctly renders correctly with color 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with empty props 1`] = `
+exports[`Tags renders correctly renders correctly with empty props 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper withClose"
-    data-testid="chip"
+    className="tags tags--wrapper withClose"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -114,7 +114,7 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
         aria-disabled={false}
         aria-label="Remove"
         className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-        data-testid="chip-close"
+        data-testid="tag-close"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -154,13 +154,13 @@ exports[`Chips renders correctly renders correctly with empty props 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with left avatar 1`] = `
+exports[`Tags renders correctly renders correctly with left avatar 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper"
-    data-testid="chip"
+    className="tags tags--wrapper"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -197,13 +197,13 @@ exports[`Chips renders correctly renders correctly with left avatar 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with left icon 1`] = `
+exports[`Tags renders correctly renders correctly with left icon 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper"
-    data-testid="chip"
+    className="tags tags--wrapper"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -235,13 +235,13 @@ exports[`Chips renders correctly renders correctly with left icon 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with right avatar 1`] = `
+exports[`Tags renders correctly renders correctly with right avatar 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper"
-    data-testid="chip"
+    className="tags tags--wrapper"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -278,13 +278,13 @@ exports[`Chips renders correctly renders correctly with right avatar 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with right icon 1`] = `
+exports[`Tags renders correctly renders correctly with right icon 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper"
-    data-testid="chip"
+    className="tags tags--wrapper"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -316,13 +316,13 @@ exports[`Chips renders correctly renders correctly with right icon 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly with text 1`] = `
+exports[`Tags renders correctly renders correctly with text 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper withClose"
-    data-testid="chip"
+    className="tags tags--wrapper withClose"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",
@@ -342,7 +342,7 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
         aria-disabled={false}
         aria-label="Remove"
         className="icon close l3-style-button l3-style-button--size-medium l3-style-button--kind-primary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-        data-testid="chip-close"
+        data-testid="tag-close"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -382,13 +382,13 @@ exports[`Chips renders correctly renders correctly with text 1`] = `
 </div>
 `;
 
-exports[`Chips renders correctly renders correctly without close button 1`] = `
+exports[`Tags renders correctly renders correctly without close button 1`] = `
 <div
-  className="chipsWrapper"
+  className="tagsWrapper"
 >
   <div
-    className="chips chips--wrapper"
-    data-testid="chip"
+    className="tags tags--wrapper"
+    data-testid="tag"
     style={
       Object {
         "backgroundColor": "var(--primary-selected-color)",

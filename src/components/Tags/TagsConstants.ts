@@ -1,4 +1,4 @@
-export enum ChipsSize {
+export enum TagsSize {
   XXS = "xxs"
 }
 

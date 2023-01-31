@@ -2,7 +2,7 @@ import Flex from "../Flex";
 import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
 import { Add, Filter, Person, Search, Sort } from "../../Icon/Icons";
 import Button from "../../Button/Button";
-import Chips from "../../Chips/Chips";
+import Tags from "../../Tags/Tags";
 import { StoryDescription } from "../../../storybook/components/story-description/story-description";
 import { LIST, MENU, TABS } from "../../../storybook/components/related-components/component-description-map";
 import { createStoryMetaSettings } from "../../../storybook";
@@ -293,13 +293,13 @@ This mode allows the layout to break into multiple lines if all the component ch
 <Canvas>
   <Story name="Support multi lines layout">
     <Flex wrap style={{ width: "300px" }} gap={Flex.gaps.SMALL}>
-      <Chips className={styles["flex-chip"]} label="Chip 1" />
-      <Chips className={styles["flex-chip"]} label="Chip 2" />
-      <Chips className={styles["flex-chip"]} label="Chip 3" />
-      <Chips className={styles["flex-chip"]} label="Chip 4" />
-      <Chips className={styles["flex-chip"]} label="Chip 5" />
-      <Chips className={styles["flex-chip"]} label="Chip 6" />
-      <Chips className={styles["flex-chip"]} label="Chip 7" />
+      <Tags className={styles["flex-tag"]} label="Tag 1" />
+      <Tags className={styles["flex-tag"]} label="Tag 2" />
+      <Tags className={styles["flex-tag"]} label="Tag 3" />
+      <Tags className={styles["flex-tag"]} label="Tag 4" />
+      <Tags className={styles["flex-tag"]} label="Tag 5" />
+      <Tags className={styles["flex-tag"]} label="Tag 6" />
+      <Tags className={styles["flex-tag"]} label="Tag 7" />
     </Flex>
   </Story>
 </Canvas>

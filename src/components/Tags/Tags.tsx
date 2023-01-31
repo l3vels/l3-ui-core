@@ -8,15 +8,15 @@ import { elementColorsNames, getElementColor } from "../../utils/colors-vars-map
 import Avatar from "../Avatar/Avatar";
 import IconButton from "../IconButton/IconButton";
 import { getTestId } from "../../tests/test-ids-utils";
-import { ChipsSize, TagSizes } from "./ChipsConstants";
+import { TagsSize, TagSizes } from "./TagsConstants";
 import { AvatarType } from "../Avatar/AvatarConstants";
 import { SubIcon, L3Component, L3ComponentProps } from "../../types";
 import useHover from "../../hooks/useHover";
 import ClickableWrapper from "../Clickable/ClickableWrapper";
 import { ComponentDefaultTestId } from "../../tests/constants";
-import styles from "./Chips.module.scss";
+import styles from "./Tags.module.scss";
 
-interface ChipsProps extends L3ComponentProps {
+interface TagsProps extends L3ComponentProps {
   label?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -29,13 +29,13 @@ interface ChipsProps extends L3ComponentProps {
   rightAvatar?: string;
   /** Img to place as avatar on the left */
   leftAvatar?: string;
-  // color?: Object.keys(Chips.colors),
+  // color?: Object.keys(Tags.colors),
   color?: keyof Record<string, string>;
   /** size for font icon */
   iconSize?: number | string;
   onDelete?: (id: string, event: React.MouseEvent<HTMLSpanElement>) => void;
   /**
-   * Disables the Chips's entry animation
+   * Disables the Tags's entry animation
    */
   noAnimation?: boolean;
   /**
@@ -64,10 +64,10 @@ interface ChipsProps extends L3ComponentProps {
   outlined?: boolean;
 }
 
-const Chips: L3Component<ChipsProps, HTMLElement> & {
-  sizes?: typeof ChipsSize;
+const Tags: L3Component<TagsProps, HTMLElement> & {
+  sizes?: typeof TagsSize;
   colors?: typeof elementColorsNames;
-} = forwardRef<HTMLElement, ChipsProps>(
+} = forwardRef<HTMLElement, TagsProps>(
   (
     {
       className,
@@ -94,7 +94,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
     },
     ref
   ) => {
-    const overrideDataTestId = dataTestId || getTestId(ComponentDefaultTestId.CHIP, id);
+    const overrideDataTestId = dataTestId || getTestId(ComponentDefaultTestId.TAG, id);
     const hasClickableWrapper = isClickable && (!!onClick || !!onMouseDown);
     const hasCloseButton = !readOnly && !disabled;
 
@@ -139,7 +139,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
 
     return (
       <div
-        className={cx(styles.chipsWrapper, className, {
+        className={cx(styles.tagsWrapper, className, {
           [styles.sizeSmall]: size === "small",
           [styles.outlined]: outlined
         })}
@@ -156,7 +156,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
         >
           <div
             ref={mergedRef}
-            className={cx(styles.chips, "chips--wrapper", className, {
+            className={cx(styles.tags, "tags--wrapper", className, {
               [styles.disabled]: disabled,
               [styles.withClose]: hasCloseButton,
               [styles.noAnimation]: noAnimation,
@@ -209,7 +209,7 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
             ) : null}
             {hasCloseButton && (
               <IconButton
-                size={ChipsSize.XXS}
+                size={TagsSize.XXS}
                 color={IconButton.colors.ON_PRIMARY_COLOR}
                 className={cx(styles.icon, styles.close)}
                 ariaLabel="Remove"
@@ -228,10 +228,10 @@ const Chips: L3Component<ChipsProps, HTMLElement> & {
   }
 );
 
-Object.assign(Chips, {
-  sizes: ChipsSize,
-  defaultTestId: ComponentDefaultTestId.CHIP,
+Object.assign(Tags, {
+  sizes: TagsSize,
+  defaultTestId: ComponentDefaultTestId.TAG,
   colors: elementColorsNames
 });
 
-export default Chips;
+export default Tags;
