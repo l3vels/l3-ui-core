@@ -1,3 +1,4 @@
+@import "../../styles/typography/label-typography.scss";
 .wrapper {
   width: fit-content;
   height: fit-content;
@@ -14,8 +15,5 @@
   text-align: center;
 }
 .l3_IconButton_label_styles {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: #ffffff;
+  @include typography-label-xs-small;
 }
