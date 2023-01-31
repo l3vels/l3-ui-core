@@ -2,7 +2,7 @@
 @import "../../styles/typography";
 @import "../../styles/themes";
 @import "../../styles/states";
-@import "../../styles/typography/typography.scss";
+@import "../../styles/typography/typography";
 
 .wrapper {
   width: fit-content;
@@ -20,7 +20,6 @@
   text-align: center;
 }
 .l3_IconButton_label_styles {
-  font-family: "Circular Std";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

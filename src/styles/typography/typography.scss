@@ -1,8 +1,8 @@
-@import "./display-typography.scss";
-@import "../typography.scss";
-@import "../theme-mixin.scss";
+@import "./display-typography";
+@import "../typography";
+@import "../theme-mixin";
 
-@import "./main-typography.scss";
+@import "./main-typography";
 
 @mixin main-font($font-variable) {
   @include theme-prop(color, primary-text-on-primary);
