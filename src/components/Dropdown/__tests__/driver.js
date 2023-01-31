@@ -11,7 +11,7 @@ const MOCK_OPTIONS = [
   { value: "yellow", label: "Yellow" }
 ];
 
-const CHIP_TESTID = "value-container-chip";
+const TAG_TESTID = "value-container-tag";
 
 export default class DropdownDriver {
   constructor() {
@@ -46,10 +46,10 @@ export default class DropdownDriver {
     return this.renderResult.queryByText("No options");
   }
 
-  get chips() {
+  get tags() {
     this.ensureRendered();
 
-    return this.renderResult.queryAllByTestId(CHIP_TESTID).reduce(
+    return this.renderResult.queryAllByTestId(TAG_TESTID).reduce(
       (acc, element) => ({
         values: [...acc.values, element.id],
         labels: [...acc.labels, element.textContent],
@@ -94,13 +94,13 @@ export default class DropdownDriver {
     this.ensureRendered();
 
     const id = this.options[index].value;
-    const chip = this.renderResult.container.querySelector(`[data-testid="${CHIP_TESTID}"]#${id}`);
+    const tag = this.renderResult.container.querySelector(`[data-testid="${TAG_TESTID}"]#${id}`);
 
-    if (!chip) {
+    if (!tag) {
       throw new Error(`Option #${index} was not selected`);
     }
 
-    return chip.querySelector(`[data-testid="${CHIP_TESTID}-close"]`);
+    return tag.querySelector(`[data-testid="${TAG_TESTID}-close"]`);
   }
 
   removeOption(index) {

@@ -201,7 +201,7 @@ The Dropdown component supports multiple options selection in two different stat
                 defaultValue={[options[0]]}
                 options={options}
                 multi
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -213,7 +213,7 @@ The Dropdown component supports multiple options selection in two different stat
                 options={options}
                 multi
                 multiline
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -224,7 +224,7 @@ The Dropdown component supports multiple options selection in two different stat
                 options={options}
                 multi
                 multiline
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
                 withMandatoryDefaultOptions
               />
             </div>
@@ -267,7 +267,7 @@ The Dropdown component supports multiple options selection in two different stat
               <Dropdown
                 defaultValue={[optionsAvatar[0]]}
                 options={optionsAvatar}
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -278,7 +278,7 @@ The Dropdown component supports multiple options selection in two different stat
                 options={optionsAvatar}
                 multi
                 multiline
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -315,7 +315,7 @@ The Dropdown component supports multiple options selection in two different stat
               <Dropdown
                 defaultValue={[optionsIcons[0]]}
                 options={optionsIcons}
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -326,7 +326,7 @@ The Dropdown component supports multiple options selection in two different stat
                 options={optionsIcons}
                 multi
                 multiline
-                className="dropdown-stories-styles_with-chips"
+                className="dropdown-stories-styles_with-tags"
               />
             </div>
           </StoryDescription>
@@ -336,27 +336,27 @@ The Dropdown component supports multiple options selection in two different stat
   </Story>
 </Canvas>
 
-### Dropdown with chip colors
+### Dropdown with tag colors
 
 <Canvas>
-  <Story name="Dropdown with chip colors">
+  <Story name="Dropdown with tag colors">
     {() => {
-      const optionsWithChipColors = useMemo(
+      const optionsWithTagColors = useMemo(
         () => [
           {
             value: "Rotem",
             label: "Rotem Dekel",
-            chipColor: Dropdown.chipColors.NEGATIVE
+            tagColor: Dropdown.tagColors.NEGATIVE
           },
           {
             value: "Hadas",
             label: "Hadas Farhi",
-            chipColor: Dropdown.chipColors.POSITIVE
+            tagColor: Dropdown.tagColors.POSITIVE
           },
           {
             value: "Netta",
             label: "Netta Muller",
-            chipColor: Dropdown.chipColors.PRIMARY
+            tagColor: Dropdown.tagColors.PRIMARY
           }
         ],
         []
@@ -365,11 +365,11 @@ The Dropdown component supports multiple options selection in two different stat
         <StoryDescription vertical>
           <div>
             <Dropdown
-              defaultValue={[optionsWithChipColors[0]]}
-              options={optionsWithChipColors}
+              defaultValue={[optionsWithTagColors[0]]}
+              options={optionsWithTagColors}
               multi
               multiline
-              className="dropdown-stories-styles_with-chips"
+              className="dropdown-stories-styles_with-tags"
             />
           </div>
         </StoryDescription>
@@ -404,7 +404,7 @@ The Dropdown component supports multiple options selection in two different stat
             <Dropdown
               placeholder={"Placeholder text here"}
               options={optionsWithTooltips}
-              className="dropdown-stories-styles_with-chips"
+              className="dropdown-stories-styles_with-tags"
             />
           </div>
         </StoryDescription>
@@ -465,10 +465,10 @@ The Dropdown component supports multiple options selection in two different stat
 
 ### multiple drop down with renderers as options
 
-Inside the advanced filters, a user can select multiple people from the dropdown menu, and they will be shown as Chips.
+Inside the advanced filters, a user can select multiple people from the dropdown menu, and they will be shown as Tags.
 
 <Canvas>
-  <Story name="Dropdown with chips">
+  <Story name="Dropdown with tags">
     {() => {
       const options = useMemo(
         () => [
@@ -507,9 +507,9 @@ Inside the advanced filters, a user can select multiple people from the dropdown
           defaultValue={[options[0]]}
           options={options}
           multi
-          placeholder="Dropdown with chips"
+          placeholder="Dropdown with tags"
           optionRenderer={OptionRenderer}
-          className="dropdown-stories-styles_with-chips"
+          className="dropdown-stories-styles_with-tags"
         />
       );
     }}
@@ -546,7 +546,7 @@ In case of multiple options, you can use the `onInputChange` prop to allow filte
           options={options}
           multi
           placeholder="Select colors"
-          className="dropdown-stories-styles_with-chips"
+          className="dropdown-stories-styles_with-tags"
           onInputChange={onInputChange}
         />
       );

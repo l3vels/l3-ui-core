@@ -13,7 +13,7 @@ export enum ComponentDefaultTestId {
   CLEAN_SEARCH_BUTTON = "clean-search-button",
   COLOR_PICKER_ITEM = "color-picker-item",
   ICON_BUTTON = "icon-button",
-  CHIP = "chip",
+  TAG = "tag",
   TAB = "tab",
   TAB_PANEL = "tab-panel",
   ALERT_BANNER_BUTTON = "alert-banner-button",

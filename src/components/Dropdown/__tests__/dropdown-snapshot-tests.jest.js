@@ -82,22 +82,22 @@ describe("Dropdown renders correctly", () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it("with chip colors", () => {
+  it("with tag colors", () => {
     const options = [
       {
         value: "primary",
         label: "Primary",
-        chipColor: Dropdown.chipColors.PRIMARY
+        tagColor: Dropdown.tagColors.PRIMARY
       },
       {
         value: "positive",
         label: "Positive",
-        chipColor: Dropdown.chipColors.POSITIVE
+        tagColor: Dropdown.tagColors.POSITIVE
       },
       {
         value: "negative",
         label: "Negative",
-        chipColor: Dropdown.chipColors.NEGATIVE
+        tagColor: Dropdown.tagColors.NEGATIVE
       }
     ];
     const tree = renderer.create(<Dropdown options={options} defaultValue={options} multi multiline />).toJSON();

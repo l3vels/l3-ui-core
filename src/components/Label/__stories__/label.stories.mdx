@@ -1,7 +1,7 @@
 import Label from "../Label";
 import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
 import { createComponentTemplate, createStoryMetaSettings } from "../../../storybook";
-import { CHIP, COUNTER, TOOLTIP } from "../../../storybook/components/related-components/component-description-map";
+import { TAG, COUNTER, TOOLTIP } from "../../../storybook/components/related-components/component-description-map";
 import { Link, MultipleStoryElementsWrapper } from "../../../storybook/components";
 import "./label.stories.scss";
 
@@ -151,8 +151,8 @@ A label indicates the status of an item. It is not clickable.
         description: (
           <>
             Don’t use multiple lables for one item. Instead, use{" "}
-            <Link href="/?path=/docs/data-display-chips--overview" withoutSpacing>
-              Chips.
+            <Link href="/?path=/docs/data-display-tags--overview" withoutSpacing>
+              Tags.
             </Link>
           </>
         )
@@ -203,4 +203,4 @@ In case of visual overload, use the secondary label in order to create hirarchy.
 
 ## Related components
 
-<RelatedComponents componentsNames={[TOOLTIP, COUNTER, CHIP]} />
+<RelatedComponents componentsNames={[TOOLTIP, COUNTER, TAG]} />

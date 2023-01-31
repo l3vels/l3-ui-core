@@ -17,7 +17,7 @@ import "./Slider.stories.scss";
 import Slider from "../Slider";
 import Sound from "../../Icon/Icons/components/Sound";
 import Video from "../../Icon/Icons/components/Video";
-import Chips from "../../Chips/Chips";
+import Tags from "../../Tags/Tags";
 import {
   nonRangedSliderMouseEventsPlaySuite,
   rangedSliderMouseEventsPlaySuite
@@ -229,7 +229,7 @@ Custom ID, custom `data-testid` and Custom Class. Add Custom Items as Prefix and
       id="custom-prefix"
       className="my-slider-wide"
       defaultValue={50}
-      prefix={<Chips label="Custom component" readOnly />}
+      prefix={<Tags label="Custom component" readOnly />}
       postfix={(value, valueText) => {
         // set css: .my-slider-wide { max-width: none }
         return <span style={{ "white-space": "nowrap" }}>{`RenderProps: ${valueText} (${value}) `}</span>;

@@ -79,6 +79,9 @@ $text-field-icon-container-size-lg: 14px;
 $date-picker-border-radius-start: 50px 0px 0px 50px;
 $date-picker-border-radius-end: 0px 50px 50px 0px;
 
+//tags
+$tags-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+
 @mixin box-shadow-xs() {
   @include theme-prop(box-shadow, box-shadow-xs);
 }

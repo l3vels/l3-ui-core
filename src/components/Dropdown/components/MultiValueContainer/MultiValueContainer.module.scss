@@ -1,7 +1,7 @@
 @import "../../../../styles/themes";
 @import "../../../../styles/typography";
 
-.chip-with-input-wrapper {
+.tag-with-input-wrapper {
   display: flex;
   min-height: 30px;
 }
@@ -9,15 +9,15 @@
   margin-left: 6px;
 }
 
-.multiselect-chip-multi-line {
+.multiselect-tag-multi-line {
   margin: 2px;
 }
 
-.multiselect-chip-single-line {
+.multiselect-tag-single-line {
   margin: 5px 2px;
 }
 
-.multiselect-chip-disabled {
+.multiselect-tag-disabled {
   background-color: var(--primary-background-hover-color) !important;
 }
 
@@ -28,7 +28,7 @@
   height: 100%;
 }
 
-.value-container-chips {
+.value-container-tags {
   display: flex;
   flex-wrap: wrap;
   align-items: center;

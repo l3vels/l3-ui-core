@@ -16,7 +16,7 @@ import MultiValueContainer from "./components/MultiValueContainer/MultiValueCont
 import { ADD_AUTO_HEIGHT_COMPONENTS, defaultCustomStyles, DROPDOWN_ID } from "./DropdownConstants";
 import generateBaseStyles, { customTheme } from "./Dropdown.styles";
 import Control from "./components/Control/Control";
-import { DROPDOWN_CHIP_COLORS, MENU_WRAPPER_CLASS_NAME } from "./dropdown-constants";
+import { DROPDOWN_TAG_COLORS, MENU_WRAPPER_CLASS_NAME } from "./dropdown-constants";
 import "./Dropdown.scss";
 
 const Dropdown = ({
@@ -309,7 +309,7 @@ const Dropdown = ({
 };
 
 Dropdown.size = SIZES;
-Dropdown.chipColors = DROPDOWN_CHIP_COLORS;
+Dropdown.tagColors = DROPDOWN_TAG_COLORS;
 
 Dropdown.defaultProps = {
   className: "",
@@ -509,7 +509,7 @@ Dropdown.propTypes = {
   /**
    * If set to true, the dropdown will be in multi-select mode.
    * When in multi-select mode, the selected value will be an array,
-   * and it will be displayed as our [`<Chips>`](/?path=/docs/components-chips--sandbox) component.
+   * and it will be displayed as our [`<Tags>`](/?path=/docs/components-tags--sandbox) component.
    */
   multi: PropTypes.bool,
   /**

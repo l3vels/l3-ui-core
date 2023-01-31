@@ -1,0 +1,107 @@
+@import "../../styles/themes";
+@import "../../styles/typography";
+@import "../../styles/states";
+@import "../../styles/keyframes";
+@import "../../styles/global-css-settings";
+@import "../../styles/theme-mixin";
+
+.tagsWrapper {
+  // margin: 0 var(--spacing-xs);
+  align-items: center;
+  display: inline-flex;
+  height: $spacing-xl;
+}
+
+.clickableWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.tags {
+  display: inline-flex;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: $spacing-xs;
+  padding: $spacing-small $spacing-xs-small;
+  align-items: center;
+  user-select: none;
+  animation: tags-pop-in-emphasized var(--motion-productive-medium) var(--motion-timing-emphasize);
+
+  box-shadow: $tags-box-shadow;
+
+  &.withUserSelect {
+    user-select: text;
+  }
+
+  .label {
+    // @include font-general-text();
+    // @include ellipsis();
+    @include theme-prop(color, tags-label-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: $spacing-medium;
+    line-height: 20px;
+  }
+
+  &.noAnimation {
+    animation: none;
+  }
+
+  &.withClose {
+    padding-right: var(--spacing-xs);
+    // background-color: red;
+  }
+
+  .icon,
+  .avatar {
+    background-color: transparent;
+    width: 15px;
+    &.left {
+      margin-right: var(--spacing-xs);
+    }
+    &.right {
+      margin-left: var(--spacing-xs);
+    }
+    &.close {
+      margin-left: var(--spacing-xs);
+      color: var(--primary-text-color);
+    }
+  }
+
+  &.disabled {
+    .icon {
+      @include theme-prop(color, disabled-text-color);
+    }
+    .label {
+      @include theme-prop(color, disabled-text-color);
+    }
+  }
+}
+
+.sizeSmall {
+  height: $spacing-large;
+  .tags {
+    padding: $spacing-small, $spacing-xs;
+  }
+
+  .label {
+    font-size: $spacing-small-medium;
+    line-height: $spacing-medium;
+  }
+}
+
+.outlined {
+  .label {
+    @include theme-prop(color, tags-label-color-outlined);
+  }
+
+  .tags {
+    border: 1px solid;
+    @include theme-prop(background, tags-bg-color-outlined);
+  }
+}
+
+@include keyframe(tags-pop-in-emphasized) {
+  @include pop-in-emphasized();
+}
