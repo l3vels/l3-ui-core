@@ -103,7 +103,8 @@ const Dropdown = ({
       rtl,
       insideOverflowContainer,
       controlRef,
-      insideOverflowWithTransformContainer
+      insideOverflowWithTransformContainer,
+      kind
     });
 
     // Then we want to run the consumer's root-level custom styles with our "base" override groups.
@@ -140,7 +141,7 @@ const Dropdown = ({
     }
 
     return mergedStyles;
-  }, [size, rtl, insideOverflowContainer, insideOverflowWithTransformContainer, extraStyles, multi, multiline]);
+  }, [size, rtl, insideOverflowContainer, insideOverflowWithTransformContainer, extraStyles, multi, multiline, kind]);
 
   const Menu = useCallback(props => <MenuComponent {...props} Renderer={menuRenderer} />, [menuRenderer]);
 
@@ -260,8 +261,6 @@ const Dropdown = ({
       : kind === DROPDOWN_KINDS.TERTIARY
       ? "tertiary__wrapper"
       : "";
-
-  console.log("🚀 ~ file: Dropdown.jsx:256 ~ kind_wrapper_className", kind_wrapper_className);
 
   return (
     <DropDownComponent

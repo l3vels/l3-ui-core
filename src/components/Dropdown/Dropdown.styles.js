@@ -1,16 +1,79 @@
 /* eslint-disable no-param-reassign */
 import { SIZES } from "../../constants/sizes";
+import { DROPDOWN_KINDS } from "./dropdown-constants";
 import { getCSSVar } from "../../services/themes";
+
+const borderRadius = "6";
+
+const getKind = kind => {
+  switch (kind) {
+    case DROPDOWN_KINDS.PRIMARY:
+      return "primary";
+    case DROPDOWN_KINDS.SECONDARY:
+      return "secondary";
+    case DROPDOWN_KINDS.TERTIARY:
+      return "tertiary";
+    default:
+      break;
+  }
+};
+
+const getKindColors = kind => {
+  const whiteColor = "#FFFFFF";
+  const primaryBgColor = "rgba(255, 255, 255, 0.2)";
+  const primaryBgColorHover = "rgba(255, 255, 255, 0.1)";
+  const primaryBgColorActive = "rgba(255, 255, 255, 0.3)";
+
+  const primaryBgColorDisabled = "rgba(255, 255, 255, 0.2)";
+
+  const secondaryBgColor = "rgba(0, 0, 0, 0.2)";
+  const secondaryBgColorHover = "rgba(0, 0, 0, 0.1)";
+  const secondaryBgColorActive = "rgba(0, 0, 0, 0.3)";
+
+  const tertiaryBgColor = "transparent";
+  const tertiaryBgColorHover = primaryBgColorHover;
+  const tertiaryBgColorActive = primaryBgColorDisabled;
+
+  const kindType = getKind(kind);
+  switch (kindType) {
+    case "primary":
+      return {
+        backgroundColor: primaryBgColor,
+        bgHoverColor: primaryBgColorHover,
+        bgActiveColor: primaryBgColorActive,
+        bgDisabledColor: primaryBgColorDisabled,
+        mainWhite: whiteColor
+      };
+    case "secondary":
+      return {
+        backgroundColor: secondaryBgColor,
+        bgHoverColor: secondaryBgColorHover,
+        bgActiveColor: secondaryBgColorActive,
+        bgDisabledColor: primaryBgColorDisabled,
+        mainWhite: whiteColor
+      };
+    case "tertiary":
+      return {
+        backgroundColor: tertiaryBgColor,
+        bgHoverColor: tertiaryBgColorHover,
+        bgActiveColor: tertiaryBgColorActive,
+        bgDisabledColor: primaryBgColorDisabled,
+        mainWhite: whiteColor
+      };
+    default:
+      return {};
+  }
+};
 
 const getSizeInPx = size => {
   switch (size) {
     case SIZES.LARGE:
-      return 48;
+      return 56;
     case SIZES.MEDIUM:
-      return 40;
+      return 50;
     case SIZES.SMALL:
     default:
-      return 32;
+      return 44;
   }
 };
 
@@ -32,11 +95,11 @@ const getIndicatorBoxSize = size => {
   };
 };
 
-const getColor = () => {
-  const color = getCSSVar("primary-text-color");
-  const backgroundColor = getCSSVar("primary-background-color");
-  return { color, backgroundColor };
-};
+// const getColor = () => {
+//   const color = getCSSVar("primary-text-color");
+//   const backgroundColor = getCSSVar("primary-background-color");
+//   return { color, backgroundColor };
+// };
 
 const getFont = size => ({ fontSize: getSingleValueTextSize(size), lineHeight: getSingleValueTextSize(size) });
 
@@ -110,28 +173,27 @@ const container =
       ...provided,
       ...getSize(size),
       minHeight: "30px",
-      border: `1px solid ${getCSSVar("ui-border-color")}`,
+      border: "none",
       boxShadow: "none",
-      borderRadius: getCSSVar("border-radius-small"),
+      borderRadius: `${borderRadius}px`,
       boxSizing: "border-box",
       transition: `border 0.1s ${getCSSVar("expand-animation-timing")}`,
       ":hover": {
-        borderColor: getCSSVar("primary-text-color"),
-        borderRadius: getCSSVar("border-radius-small")
+        borderColor: "none",
+        borderRadius: "none"
       },
       ":active, :focus-within": {
-        borderColor: getCSSVar("color-basic_blue")
+        borderColor: "none"
       },
       ...disabledContainerStyle(isDisabled)
     };
   };
 
 const control =
-  ({ size }) =>
+  ({ size, kind }) =>
   (provided, { isDisabled }) => ({
     ...provided,
     ...getInnerSize(size),
-    ...getColor(),
     minHeight: "30px",
     border: "0 solid transparent",
     borderRadius: getCSSVar("border-radius-small"),
@@ -142,15 +204,16 @@ const control =
       }
     }),
     cursor: "pointer",
+    backgroundColor: getKindColors(kind).backgroundColor,
     ...disabledContainerStyle(isDisabled)
   });
 
 const placeholder =
-  () =>
+  ({ kind }) =>
   (provided, { isDisabled }) => ({
     ...provided,
     ...getFont(),
-    color: isDisabled ? getCSSVar("disabled-text-color") : getCSSVar("secondary-text-color"),
+    color: isDisabled ? getCSSVar("disabled-text-color") : getKindColors(kind).mainWhite,
     fontWeight: getCSSVar("font-weight-normal")
   });
 
@@ -159,14 +222,14 @@ const indicatorsContainer =
   (provided, { isDisabled }) => ({
     ...provided,
     ...getFont(),
-    ...getColor(),
+    // ...getColor(),
     borderRadius: getCSSVar("border-radius-small"),
     ...disabledContainerStyle(isDisabled),
     ...getInnerSize(size)
   });
 
 const dropdownIndicator =
-  ({ size }) =>
+  ({ size, kind }) =>
   (provided, { selectProps, isDisabled }) => {
     return {
       ...provided,
@@ -176,16 +239,16 @@ const dropdownIndicator =
       padding: "0px",
       ...getIndicatorBoxSize(size),
       margin: "4px 3px 4px 0px",
-      backgroundColor: "transparent",
+      // backgroundColor: "transparent",
       borderRadius: getCSSVar("border-radius-small"),
       svg: {
         transition: `transform 0.1s ${getCSSVar("expand-animation-timing")}`,
         transform: selectProps.menuIsOpen ? "rotate(180deg)" : "rotate(0deg)"
       },
-      color: isDisabled ? getCSSVar("disabled-text-color") : getCSSVar("icon-color"),
+      color: isDisabled ? getCSSVar("disabled-text-color") : getKindColors(kind).mainWhite,
       ":hover, :active": {
-        backgroundColor: isDisabled ? undefined : getCSSVar("primary-background-hover-color"),
-        color: isDisabled ? undefined : getCSSVar("icon-color")
+        // backgroundColor: isDisabled ? undefined : getCSSVar("primary-background-hover-color"),
+        color: isDisabled ? getCSSVar("icon-color") : getKindColors(kind).mainWhite
       }
     };
   };
@@ -218,7 +281,7 @@ const singleValue =
   (provided, { isDisabled, selectProps }) => ({
     ...provided,
     ...getFont(),
-    ...getColor(),
+    // ...getColor(),
     ...disabledContainerStyle(isDisabled),
     ...menuOpenOpacity(selectProps),
     display: "flex",
@@ -241,7 +304,7 @@ function getSingleValueTextSize(size) {
 const input = () => provided => ({
   ...provided,
   ...getFont(),
-  ...getColor(),
+  // ...getColor(),
   display: "flex",
   alignItems: "center",
   textIndent: "-2px"
@@ -262,7 +325,7 @@ const valueContainer =
     ...provided,
     ...getCenterContentStyle(rtl),
     ...getFont(),
-    ...getColor(),
+    // ...getColor(),
     ...getInnerSize(size),
     ...disabledContainerStyle(isDisabled),
     borderRadius: getCSSVar("border-radius-small")
