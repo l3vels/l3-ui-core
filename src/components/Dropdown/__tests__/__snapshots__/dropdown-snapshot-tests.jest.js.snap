@@ -3,7 +3,7 @@
 exports[`Dropdown renders correctly snapshot driver should open menu on click if set 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <span
@@ -25,16 +25,16 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-quv8ei-control"
+        class=" css-19fzqar-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -60,14 +60,14 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-1pxbrck-indicatorContainer"
+            class="dropdown-indicator css-2jt8c3-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -91,13 +91,13 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
       </div>
     </div>
     <div
-      class="menu dropdown-menu-wrapper css-1ysewv0-menu"
+      class="menu dropdown-menu-wrapper css-d4dzd-menu"
     >
       <div
         class=" css-bknh9q-Component"
       >
         <div
-          class="dropdown-wrapper__option--reset css-14cnnyc-option"
+          class="dropdown-wrapper__option--reset css-1lnwf4r-option"
           id="react-select-29-option-0"
           tabindex="-1"
         >
@@ -171,7 +171,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
 exports[`Dropdown renders correctly snapshot driver should open menu on focus if set 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <span
@@ -193,16 +193,16 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-quv8ei-control"
+        class=" css-19fzqar-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -228,14 +228,14 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-slqvkp-indicatorContainer"
+            class="dropdown-indicator css-q7kh29-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -265,23 +265,23 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
 exports[`Dropdown renders correctly snapshot driver should render correctly for the different sizes 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-1pu8kyc-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-152f84c-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-veeint-control"
+        class=" css-1pzic7p-control"
       >
         <div
-          class=" css-18qqyiw-Component"
+          class=" css-bgtxxn-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -307,14 +307,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
           </div>
         </div>
         <div
-          class=" css-col3eb-Component"
+          class=" css-1c85ekr-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-prutdb-indicatorContainer"
+            class="dropdown-indicator css-1h5e8ss-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -344,23 +344,23 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
 exports[`Dropdown renders correctly snapshot driver should render correctly for the different sizes 2`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-1pu8kyc-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-152f84c-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-veeint-control"
+        class=" css-1pzic7p-control"
       >
         <div
-          class=" css-18qqyiw-Component"
+          class=" css-bgtxxn-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -386,14 +386,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
           </div>
         </div>
         <div
-          class=" css-col3eb-Component"
+          class=" css-1c85ekr-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-prutdb-indicatorContainer"
+            class="dropdown-indicator css-1h5e8ss-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -423,23 +423,23 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
 exports[`Dropdown renders correctly snapshot driver should render correctly for the different sizes 3`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-1pu8kyc-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-152f84c-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-veeint-control"
+        class=" css-1pzic7p-control"
       >
         <div
-          class=" css-18qqyiw-Component"
+          class=" css-bgtxxn-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -465,14 +465,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
           </div>
         </div>
         <div
-          class=" css-col3eb-Component"
+          class=" css-1c85ekr-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-prutdb-indicatorContainer"
+            class="dropdown-indicator css-1h5e8ss-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -502,23 +502,23 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
 exports[`Dropdown renders correctly snapshot driver should render correctly for the different sizes 4`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-132xx32-control"
+        class=" css-mr5e9l-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -544,14 +544,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-1ycu3uq-indicatorContainer"
+            class="dropdown-indicator css-7jjgrq-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -581,23 +581,23 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
 exports[`Dropdown renders correctly snapshot driver should render correctly for the different sizes 5`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-cmnsoe-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-183up3-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-ng27sg-control"
+        class=" css-zcacc8-control"
       >
         <div
-          class=" css-rxqqti-Component"
+          class=" css-qx26wr-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -623,14 +623,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
           </div>
         </div>
         <div
-          class=" css-hsetqv-Component"
+          class=" css-ehcg01-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-1uglcx3-indicatorContainer"
+            class="dropdown-indicator css-u57w6a-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -660,23 +660,23 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
 exports[`Dropdown renders correctly snapshot driver should render correctly with empty props 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <div
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-132xx32-control"
+        class=" css-mr5e9l-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -702,14 +702,14 @@ exports[`Dropdown renders correctly snapshot driver should render correctly with
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-1ycu3uq-indicatorContainer"
+            class="dropdown-indicator css-7jjgrq-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -739,7 +739,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly with
 exports[`Dropdown renders correctly snapshot driver should use async if set 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <span
@@ -761,16 +761,16 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-quv8ei-control"
+        class=" css-19fzqar-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -796,7 +796,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <div
             aria-hidden="true"
@@ -817,7 +817,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-slqvkp-indicatorContainer"
+            class="dropdown-indicator css-q7kh29-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -847,7 +847,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
 exports[`Dropdown renders correctly snapshot driver should use virtualization if set 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-wrapper dropdown-story css-bbwnb8-container"
+    class="dropdown-wrapper dropdown-story primary__wrapper css-dtyutg-container"
     id="dropdown-menu-id"
   >
     <span
@@ -869,16 +869,16 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-quv8ei-control"
+        class=" css-19fzqar-control"
       >
         <div
-          class=" css-1ht1nal-Component"
+          class=" css-k99slj-Component"
         >
           <div
-            class=" css-1usuuna-placeholder"
+            class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-lkl2xd-Component"
+            class="css-whi39w-Component"
           >
             <div
               class=""
@@ -904,14 +904,14 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           </div>
         </div>
         <div
-          class=" css-1aqjfd-Component"
+          class=" css-vo2sz4-Component"
         >
           <span
             class=" css-ds71as-Component"
           />
           <div
             aria-hidden="true"
-            class="dropdown-indicator css-1pxbrck-indicatorContainer"
+            class="dropdown-indicator css-2jt8c3-indicatorContainer"
           >
             <svg
               aria-hidden="false"
@@ -935,7 +935,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
       </div>
     </div>
     <div
-      class="menu dropdown-menu-wrapper css-1ysewv0-menu"
+      class="menu dropdown-menu-wrapper css-d4dzd-menu"
     >
       <div
         class=""
@@ -949,7 +949,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
           >
             <div>
               <div
-                class="dropdown-wrapper__option--reset css-14cnnyc-option"
+                class="dropdown-wrapper__option--reset css-1lnwf4r-option"
                 id="react-select-26-option-0"
                 tabindex="-1"
               >
@@ -1140,7 +1140,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
 
 exports[`Dropdown renders correctly when disabled 1`] = `
 <div
-  className="dropdown-wrapper css-1gsgnpy-container"
+  className="dropdown-wrapper primary__wrapper css-1rm8f79-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1148,12 +1148,12 @@ exports[`Dropdown renders correctly when disabled 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-ai89z2-control"
+      className=" css-1dqle6h-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-fkye4g-Component"
+        className=" css-1a94pev-Component"
       >
         <div
           className=" css-1usuuna-placeholder"
@@ -1161,7 +1161,7 @@ exports[`Dropdown renders correctly when disabled 1`] = `
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1220,14 +1220,14 @@ exports[`Dropdown renders correctly when disabled 1`] = `
         </div>
       </div>
       <div
-        className=" css-slt7ro-Component"
+        className=" css-z682dr-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-4kyz1s-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1257,7 +1257,7 @@ exports[`Dropdown renders correctly when disabled 1`] = `
 
 exports[`Dropdown renders correctly when rtl 1`] = `
 <div
-  className="dropdown-wrapper css-b0xr5u-container"
+  className="dropdown-wrapper primary__wrapper css-1mlsvqh-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1265,20 +1265,20 @@ exports[`Dropdown renders correctly when rtl 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-xu0d8l-Component"
+        className=" css-1li3k1f-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1337,14 +1337,14 @@ exports[`Dropdown renders correctly when rtl 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1375,7 +1375,7 @@ exports[`Dropdown renders correctly when rtl 1`] = `
 
 exports[`Dropdown renders correctly with autoFocus 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1383,20 +1383,20 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1455,14 +1455,14 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1493,7 +1493,7 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
 
 exports[`Dropdown renders correctly with className 1`] = `
 <div
-  className="dropdown-wrapper test css-bbwnb8-container"
+  className="dropdown-wrapper test primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1501,20 +1501,20 @@ exports[`Dropdown renders correctly with className 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1573,14 +1573,14 @@ exports[`Dropdown renders correctly with className 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1611,7 +1611,7 @@ exports[`Dropdown renders correctly with className 1`] = `
 
 exports[`Dropdown renders correctly with defaultValue 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1619,15 +1619,15 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className="singleValue dropdown-wrapper__single-value--reset css-1f92y5n-singleValue"
+          className="singleValue dropdown-wrapper__single-value--reset css-qj6r2l-singleValue"
         >
           <div
             className="valueContainer"
@@ -1636,7 +1636,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
           </div>
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1695,11 +1695,11 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <div
           aria-hidden="true"
-          className="clear-indicator css-11of1qg-Component"
+          className="clear-indicator css-15uqzso-Component"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1727,7 +1727,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1758,7 +1758,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
 
 exports[`Dropdown renders correctly with empty props 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1766,20 +1766,20 @@ exports[`Dropdown renders correctly with empty props 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1838,14 +1838,14 @@ exports[`Dropdown renders correctly with empty props 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1876,7 +1876,7 @@ exports[`Dropdown renders correctly with empty props 1`] = `
 
 exports[`Dropdown renders correctly with id 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -1884,20 +1884,20 @@ exports[`Dropdown renders correctly with id 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -1956,14 +1956,14 @@ exports[`Dropdown renders correctly with id 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -1994,7 +1994,7 @@ exports[`Dropdown renders correctly with id 1`] = `
 
 exports[`Dropdown renders correctly with leftAvatar 1`] = `
 <div
-  className="dropdown-wrapper css-3iiiai-container"
+  className="dropdown-wrapper primary__wrapper css-yc3hos-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2002,7 +2002,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-uqdx2p-control"
+      className=" css-o60szs-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2104,7 +2104,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                 </div>
               </div>
               <div
-                className="css-lkl2xd-Component"
+                className="css-whi39w-Component"
               >
                 <div
                   className=""
@@ -2167,11 +2167,11 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <div
           aria-hidden="true"
-          className="clear-indicator css-11of1qg-Component"
+          className="clear-indicator css-15uqzso-Component"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2199,7 +2199,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2230,7 +2230,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
 
 exports[`Dropdown renders correctly with leftIcon 1`] = `
 <div
-  className="dropdown-wrapper css-3iiiai-container"
+  className="dropdown-wrapper primary__wrapper css-yc3hos-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2238,7 +2238,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-uqdx2p-control"
+      className=" css-o60szs-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2335,7 +2335,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                 </div>
               </div>
               <div
-                className="css-lkl2xd-Component"
+                className="css-whi39w-Component"
               >
                 <div
                   className=""
@@ -2398,11 +2398,11 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <div
           aria-hidden="true"
-          className="clear-indicator css-11of1qg-Component"
+          className="clear-indicator css-15uqzso-Component"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2430,7 +2430,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2461,7 +2461,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
 
 exports[`Dropdown renders correctly with multi 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2469,12 +2469,12 @@ exports[`Dropdown renders correctly with multi 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-yilbcx-Component"
+        className=" css-1o8c39o-Component"
       >
         <div
           className="value-container"
@@ -2483,7 +2483,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
             className="placeholder-container"
           >
             <div
-              className=" css-1usuuna-placeholder"
+              className=" css-kqyzc8-placeholder"
             >
               
             </div>
@@ -2496,7 +2496,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
               className="tag-with-input-wrapper"
             >
               <div
-                className="css-lkl2xd-Component"
+                className="css-whi39w-Component"
               >
                 <div
                   className=""
@@ -2559,14 +2559,14 @@ exports[`Dropdown renders correctly with multi 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2597,7 +2597,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
 
 exports[`Dropdown renders correctly with multiline 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2605,20 +2605,20 @@ exports[`Dropdown renders correctly with multiline 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -2677,14 +2677,14 @@ exports[`Dropdown renders correctly with multiline 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2715,7 +2715,7 @@ exports[`Dropdown renders correctly with multiline 1`] = `
 
 exports[`Dropdown renders correctly with options 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2723,20 +2723,20 @@ exports[`Dropdown renders correctly with options 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -2795,14 +2795,14 @@ exports[`Dropdown renders correctly with options 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2833,7 +2833,7 @@ exports[`Dropdown renders correctly with options 1`] = `
 
 exports[`Dropdown renders correctly with placeholder 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2841,20 +2841,20 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           text
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -2913,14 +2913,14 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -2951,7 +2951,7 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
 
 exports[`Dropdown renders correctly with tabIndex 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -2959,20 +2959,20 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -3031,14 +3031,14 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3069,7 +3069,7 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
 
 exports[`Dropdown renders correctly with tag colors 1`] = `
 <div
-  className="dropdown-wrapper css-3iiiai-container"
+  className="dropdown-wrapper primary__wrapper css-yc3hos-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -3077,7 +3077,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-uqdx2p-control"
+      className=" css-o60szs-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3284,7 +3284,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                 </div>
               </div>
               <div
-                className="css-lkl2xd-Component"
+                className="css-whi39w-Component"
               >
                 <div
                   className=""
@@ -3347,11 +3347,11 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <div
           aria-hidden="true"
-          className="clear-indicator css-11of1qg-Component"
+          className="clear-indicator css-15uqzso-Component"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3379,7 +3379,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3410,7 +3410,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
 
 exports[`Dropdown renders correctly with tooltipContent 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -3425,20 +3425,20 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
     onMouseLeave={[Function]}
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -3497,14 +3497,14 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3535,7 +3535,7 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
 
 exports[`Dropdown renders correctly with value 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -3543,15 +3543,15 @@ exports[`Dropdown renders correctly with value 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className="singleValue dropdown-wrapper__single-value--reset css-1f92y5n-singleValue"
+          className="singleValue dropdown-wrapper__single-value--reset css-qj6r2l-singleValue"
         >
           <div
             className="valueContainer"
@@ -3560,7 +3560,7 @@ exports[`Dropdown renders correctly with value 1`] = `
           </div>
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -3619,11 +3619,11 @@ exports[`Dropdown renders correctly with value 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <div
           aria-hidden="true"
-          className="clear-indicator css-11of1qg-Component"
+          className="clear-indicator css-15uqzso-Component"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3651,7 +3651,7 @@ exports[`Dropdown renders correctly with value 1`] = `
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -3682,7 +3682,7 @@ exports[`Dropdown renders correctly with value 1`] = `
 
 exports[`Dropdown renders correctly without clear button 1`] = `
 <div
-  className="dropdown-wrapper css-bbwnb8-container"
+  className="dropdown-wrapper primary__wrapper css-dtyutg-container"
   id="dropdown-menu-id"
   onKeyDown={[Function]}
 >
@@ -3690,20 +3690,20 @@ exports[`Dropdown renders correctly without clear button 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-132xx32-control"
+      className=" css-mr5e9l-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1ht1nal-Component"
+        className=" css-k99slj-Component"
       >
         <div
-          className=" css-1usuuna-placeholder"
+          className=" css-kqyzc8-placeholder"
         >
           
         </div>
         <div
-          className="css-lkl2xd-Component"
+          className="css-whi39w-Component"
         >
           <div
             className=""
@@ -3762,14 +3762,14 @@ exports[`Dropdown renders correctly without clear button 1`] = `
         </div>
       </div>
       <div
-        className=" css-1aqjfd-Component"
+        className=" css-vo2sz4-Component"
       >
         <span
           className=" css-ds71as-Component"
         />
         <div
           aria-hidden="true"
-          className="dropdown-indicator css-1ycu3uq-indicatorContainer"
+          className="dropdown-indicator css-7jjgrq-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
