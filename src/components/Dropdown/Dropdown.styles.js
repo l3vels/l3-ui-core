@@ -343,7 +343,7 @@ const menu =
       ...provided,
       ...getFont(),
       color: getKindColors(kind).mainWhite,
-      backgroundColor: getKindColors(kind).bgActiveColor,
+      backgroundColor: getKindColors(kind).backgroundColor,
       boxShadow: getCSSVar("box-shadow-small")
     };
 
