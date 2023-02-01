@@ -19,11 +19,11 @@
   gap: 10px;
   text-align: center;
 }
-.l3_IconButton_label_styles {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+.label_styles_large {
+  @include typography-label-large;
+}
+.label_styles_small {
+  @include typography-label-small;
 }
 .l3_style_square_button {
   --loader-padding: 8px;
