@@ -6,3 +6,9 @@ export const DROPDOWN_TAG_COLORS = {
   NEGATIVE: Tags.colors.NEGATIVE,
   POSITIVE: Tags.colors.POSITIVE
 };
+
+export const DROPDOWN_KINDS = {
+  PRIMARY: "primary",
+  SECONDARY: "secondary",
+  TERTIARY: "tertiary"
+};

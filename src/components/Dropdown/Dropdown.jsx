@@ -16,7 +16,7 @@ import MultiValueContainer from "./components/MultiValueContainer/MultiValueCont
 import { ADD_AUTO_HEIGHT_COMPONENTS, defaultCustomStyles, DROPDOWN_ID } from "./DropdownConstants";
 import generateBaseStyles, { customTheme } from "./Dropdown.styles";
 import Control from "./components/Control/Control";
-import { DROPDOWN_TAG_COLORS, MENU_WRAPPER_CLASS_NAME } from "./dropdown-constants";
+import { DROPDOWN_TAG_COLORS, MENU_WRAPPER_CLASS_NAME, DROPDOWN_KINDS } from "./dropdown-constants";
 import "./Dropdown.scss";
 
 const Dropdown = ({
@@ -67,7 +67,8 @@ const Dropdown = ({
   insideOverflowContainer,
   insideOverflowWithTransformContainer,
   ref,
-  tooltipContent
+  tooltipContent,
+  kind
 }) => {
   const controlRef = useRef();
   const overrideDefaultValue = useMemo(() => {
@@ -102,7 +103,8 @@ const Dropdown = ({
       rtl,
       insideOverflowContainer,
       controlRef,
-      insideOverflowWithTransformContainer
+      insideOverflowWithTransformContainer,
+      kind
     });
 
     // Then we want to run the consumer's root-level custom styles with our "base" override groups.
@@ -139,7 +141,7 @@ const Dropdown = ({
     }
 
     return mergedStyles;
-  }, [size, rtl, insideOverflowContainer, insideOverflowWithTransformContainer, extraStyles, multi, multiline]);
+  }, [size, rtl, insideOverflowContainer, insideOverflowWithTransformContainer, extraStyles, multi, multiline, kind]);
 
   const Menu = useCallback(props => <MenuComponent {...props} Renderer={menuRenderer} />, [menuRenderer]);
 
@@ -251,9 +253,18 @@ const Dropdown = ({
     [insideOverflowContainer, id, insideOverflowWithTransformContainer]
   );
 
+  const kind_wrapper_className =
+    kind === DROPDOWN_KINDS.PRIMARY
+      ? "primary__wrapper"
+      : kind === DROPDOWN_KINDS.SECONDARY
+      ? "secondary__wrapper"
+      : kind === DROPDOWN_KINDS.TERTIARY
+      ? "tertiary__wrapper"
+      : "";
+
   return (
     <DropDownComponent
-      className={cx("dropdown-wrapper", className)}
+      className={cx("dropdown-wrapper", className, kind_wrapper_className)}
       selectProps={customProps}
       components={{
         DropdownIndicator,
@@ -310,6 +321,7 @@ const Dropdown = ({
 
 Dropdown.size = SIZES;
 Dropdown.tagColors = DROPDOWN_TAG_COLORS;
+Dropdown.kind = DROPDOWN_KINDS;
 
 Dropdown.defaultProps = {
   className: "",
@@ -337,7 +349,8 @@ Dropdown.defaultProps = {
   withMandatoryDefaultOptions: false,
   insideOverflowContainer: false,
   insideOverflowWithTransformContainer: false,
-  tooltipContent: ""
+  tooltipContent: "",
+  kind: DROPDOWN_KINDS.PRIMARY
 };
 
 Dropdown.propTypes = {
@@ -547,7 +560,9 @@ Dropdown.propTypes = {
   /**
    * When content is passed, the dropdown will include a tooltip on the dropdown's value.
    */
-  tooltipContent: PropTypes.string
+  tooltipContent: PropTypes.string,
+
+  kind: PropTypes.DROPDOWN_KINDS
 };
 
 export default Dropdown;
