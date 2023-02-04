@@ -121,6 +121,8 @@ const IconButton: L3Component<IconButtonProps> & {
 
     const iconSize = useMemo(() => {
       switch (size) {
+        case Button.sizes.XXS:
+        case Button.sizes.XS:
         case Button.sizes.SMALL:
           return 16;
         case Button.sizes.LARGE:
@@ -156,6 +158,7 @@ const IconButton: L3Component<IconButtonProps> & {
     }, [wrapperClassName]);
 
     const shapeTypeClassName = shape === "Circle" ? styles.l3_style_circle_button : styles.l3_style_square_button;
+    const labelSizeClassName = iconSize === 16 ? styles.label_styles_small : styles.label_styles_large;
 
     return (
       <>
@@ -183,7 +186,9 @@ const IconButton: L3Component<IconButtonProps> & {
                   insetFocus={insetFocus}
                 >
                   {labelInButton ? (
-                    <>{labelInButton}</>
+                    <>
+                      <span className={labelSizeClassName}>{labelInButton}</span>
+                    </>
                   ) : (
                     <Icon
                       icon={icon}
@@ -197,7 +202,7 @@ const IconButton: L3Component<IconButtonProps> & {
                 </Button>
               </Tooltip>
             </IconButtonWrapper>
-            <span className={styles.l3_IconButton_label_styles}>{label}</span>
+            <span className={labelSizeClassName}>{label}</span>
           </div>
         ) : (
           <div className={styles.iconButtonContainer}>
@@ -223,7 +228,9 @@ const IconButton: L3Component<IconButtonProps> & {
                   insetFocus={insetFocus}
                 >
                   {labelInButton ? (
-                    <>{labelInButton}</>
+                    <>
+                      <span className={labelSizeClassName}>{labelInButton}</span>
+                    </>
                   ) : (
                     <Icon
                       icon={icon}

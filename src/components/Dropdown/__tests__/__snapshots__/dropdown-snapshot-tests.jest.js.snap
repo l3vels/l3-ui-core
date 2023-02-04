@@ -2087,10 +2087,10 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="24"
+                        height="16"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="24"
+                        width="16"
                       >
                         <path
                           clipRule="evenodd"
@@ -2318,10 +2318,10 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="24"
+                        height="16"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="24"
+                        width="16"
                       >
                         <path
                           clipRule="evenodd"
@@ -3138,10 +3138,10 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                       aria-hidden={true}
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
-                      height="24"
+                      height="16"
                       onClick={[Function]}
                       viewBox="0 0 20 20"
-                      width="24"
+                      width="16"
                     >
                       <path
                         clipRule="evenodd"
@@ -3201,10 +3201,10 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                       aria-hidden={true}
                       className="icon_component icon-button-padding icon_component--no-focus-style"
                       fill="currentColor"
-                      height="24"
+                      height="16"
                       onClick={[Function]}
                       viewBox="0 0 20 20"
-                      width="24"
+                      width="16"
                     >
                       <path
                         clipRule="evenodd"
@@ -3267,10 +3267,10 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                         aria-hidden={true}
                         className="icon_component icon-button-padding icon_component--no-focus-style"
                         fill="currentColor"
-                        height="24"
+                        height="16"
                         onClick={[Function]}
                         viewBox="0 0 20 20"
-                        width="24"
+                        width="16"
                       >
                         <path
                           clipRule="evenodd"
