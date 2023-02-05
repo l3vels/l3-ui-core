@@ -23,7 +23,7 @@ export const ColorsDescription = ({ colorNames }) => {
       )),
     [colorNames]
   );
-  return <Frame>{descriptions}</Frame>;
+  return <Frame className={"story-frame-bg-color"}>{descriptions}</Frame>;
 };
 
 export default ColorsDescription;
