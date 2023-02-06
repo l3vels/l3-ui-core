@@ -91,7 +91,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
       </div>
     </div>
     <div
-      class="menu dropdown-menu-wrapper css-d4dzd-menu"
+      class="menu dropdown-menu-wrapper css-ds5oy3-menu"
     >
       <div
         class=" css-bknh9q-Component"
@@ -935,7 +935,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
       </div>
     </div>
     <div
-      class="menu dropdown-menu-wrapper css-d4dzd-menu"
+      class="menu dropdown-menu-wrapper css-ds5oy3-menu"
     >
       <div
         class=""
