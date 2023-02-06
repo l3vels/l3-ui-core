@@ -8,7 +8,7 @@ export const ColorDescription = ({ colorName, description, withBorder }) => {
       className={cx("l3-storybook-color-description", {
         "l3-storybook-color-description--with-border": withBorder
       })}
-      style={{ backgroundColor: `var(--${colorName})` }}
+      style={{ background: `var(--${colorName})` }}
     />
   );
   return (
