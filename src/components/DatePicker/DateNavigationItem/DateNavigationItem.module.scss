@@ -4,8 +4,8 @@
 .navigationItemContainer {
   width: $spacing-xl;
   height: $spacing-xl;
-  @include theme-prop(color, date-navigation-icon-color);
-  @include theme-prop(background-color, date-navigation-icon-bg);
+  color: var(--color-primitive-white);
+  background-color: var(--color-primitive-black);
   border: none;
   margin: 0 10px;
   cursor: pointer;

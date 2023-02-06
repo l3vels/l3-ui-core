@@ -14,7 +14,7 @@ const transitionOptions = {
   timeout: { enter: 400, exit: 400 }
 };
 
-const PAGE_SIZE = 18;
+const PAGE_SIZE = 12;
 const BUFFER_FROM_CURRENT_YEAR = 4;
 interface YearPickerProps {
   selectedDate?: Moment;

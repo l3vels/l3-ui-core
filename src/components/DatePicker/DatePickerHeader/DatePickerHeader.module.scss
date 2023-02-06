@@ -24,8 +24,10 @@
       align-items: center;
       font-size: 14px;
       transition: all 0.1s ease;
+
+      color: var(--color-primitive-white);
       &:hover {
-        background-color: var(--primary-background-hover-on-secondary-color);
+        background-color: var(--color-primitive-black);
         text-decoration: none;
       }
     }

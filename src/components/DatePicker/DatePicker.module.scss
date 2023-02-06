@@ -40,7 +40,15 @@
       }
     }
     .CalendarMonthGrid {
-      background-color: transparent;
+      border-radius: 6px;
+      background: var(--color-transparent-white-03);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    &:local(.kindSecondary) {
+      .CalendarMonthGrid {
+        //todo move "date-picker-secondary-color" in style
+        @include theme-prop(background, date-picker-secondary-color);
+      }
     }
     .CalendarMonth {
       background-color: transparent;
@@ -51,7 +59,7 @@
     .DayPicker {
       box-shadow: none;
       border: none;
-      border-radius: 0;
+      // border-radius: 0;
     }
 
     .CalendarDay__default {
@@ -60,8 +68,7 @@
       font-weight: 500;
       font-size: $spacing-medium;
       line-height: 20px;
-      @include theme-prop(color, date-picker-default-color);
-      background-color: var(--secondary-background-color);
+      color: var(--color-transparent-white-08);
       background-color: transparent;
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
@@ -71,25 +78,22 @@
       &:hover {
         background: none;
         border: none;
-        border-top: 1px solid var(--secondary-background-color);
-        border-bottom: 1px solid var(--secondary-background-color);
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        color: var(--color-transparent-black-05);
         &::before {
           @include pseudo-circle;
           border: none;
-          background-color: var(--primary-background-hover-color);
+          background-color: var(--color-transparent-white-01);
         }
       }
       &.CalendarDay__selected {
-        color: var(--text-color-on-primary);
+        color: var(--color-primitive-white);
+
         &::before {
           @include pseudo-circle;
           border: none;
-
-          @include theme-prop(background-color, date-picker-bg-color-primary);
-          &:hover {
-            color: var(--text-color-on-primary);
-            background: var(--primary-color);
-          }
+          background-color: var(--color-primitive-black);
         }
       }
     }
@@ -99,14 +103,14 @@
         &.CalendarDay__selected {
           @include theme-prop(color, date-picker-secondary-color);
           &::before {
-            @include theme-prop(background, date-picker-bg-color-secondary);
+            background: var(--color-gradient-light-blue);
           }
         }
       }
     }
 
     .CalendarMonth_caption {
-      @include theme-prop(color, date-picker-bg-color-primary);
+      color: var(--color-primitive-white);
     }
 
     .CalendarDay__today {
@@ -123,15 +127,15 @@
     .CalendarDay__blocked_calendar,
     .CalendarDay__blocked_calendar:active,
     .CalendarDay__blocked_calendar:hover {
-      @include theme-prop(color, date-picker-disabled-color);
+      color: var(--color-transparent-white-04);
       pointer-events: none;
     }
     .DayPicker_weekHeader_li {
       small {
         font-size: $spacing-small-medium;
-        @include theme-prop(color, date-picker-bg-color-primary);
         font-weight: 300;
         cursor: default;
+        color: var(--color-transparent-white-06);
       }
     }
     .DayPickerNavigation_rightButton__horizontal {
@@ -150,9 +154,10 @@
     .DayPickerNavigation_button__horizontal {
       position: absolute;
       top: 15px;
-      line-height: 0.78;
-      border-radius: 3px;
-      padding: 6px 9px;
+      // line-height: 0.78;
+      // border-radius: 3px;
+      // padding: 6px 9px;
+      // padding: 10px 16px;
     }
 
     // range picker
@@ -164,7 +169,7 @@
           position: relative;
           &::before {
             @include pseudo-circle;
-            @include theme-prop(background-color, date-picker-bg-color-primary);
+            background-color: var(--color-primitive-black);
             border-radius: $date-picker-border-radius-start;
           }
         }
@@ -176,7 +181,7 @@
           position: relative;
           &::before {
             @include pseudo-circle;
-            @include theme-prop(background-color, date-picker-bg-color-primary);
+            background-color: var(--color-primitive-black);
             border-radius: $date-picker-border-radius-end;
           }
         }
@@ -194,8 +199,9 @@
       .CalendarDay__hovered_span,
       .CalendarDay__hovered_span:hover {
         border-radius: 0;
-        color: var(--primary-text-color);
-        @include theme-prop(background-color, date-picker-bg-color-primary);
+        color: var(--color-primitive-white);
+        background-color: var(--color-primitive-black);
+
         &:hover {
           &::before {
             border-radius: 0;
@@ -203,12 +209,9 @@
         }
       }
       .CalendarDay__selected_span {
-        @include theme-prop(background-color, date-picker-bg-color-primary);
-        @include theme-prop(color, date-picker-selected-color);
+        background-color: var(--color-primitive-black);
+        color: var(--color-primitive-white);
 
-        &:hover {
-          color: var(--primary-text-color);
-        }
         &.CalendarDay__today {
           &::before {
             border-radius: 0;
@@ -242,26 +245,27 @@
           &.CalendarDay__selected_start {
             @include theme-prop(color, date-picker-secondary-color);
             &::before {
-              @include theme-prop(background, date-picker-bg-color-secondary);
+              background: var(--color-gradient-light-blue);
             }
           }
         }
         .CalendarDay__selected {
           &.CalendarDay__selected_end {
             @include theme-prop(color, date-picker-secondary-color);
+
             &::before {
-              @include theme-prop(background, date-picker-bg-color-secondary);
+              background: var(--color-gradient-light-blue);
             }
           }
         }
         .CalendarDay__hovered_span,
         .CalendarDay__hovered_span:hover {
           @include theme-prop(color, date-picker-secondary-color);
-          @include theme-prop(background, date-picker-bg-color-secondary);
+          background: var(--color-gradient-light-blue);
         }
         .CalendarDay__selected_span {
           @include theme-prop(color, date-picker-secondary-color);
-          @include theme-prop(background, date-picker-bg-color-secondary);
+          background: var(--color-gradient-light-blue);
         }
       }
     }
