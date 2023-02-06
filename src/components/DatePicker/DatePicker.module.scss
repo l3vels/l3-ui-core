@@ -46,7 +46,8 @@
     }
     &:local(.kindSecondary) {
       .CalendarMonthGrid {
-        background: rgba(0, 14, 80, 0.6);
+        //todo move "date-picker-secondary-color" in style
+        @include theme-prop(background, date-picker-secondary-color);
       }
     }
     .CalendarMonth {
