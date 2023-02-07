@@ -174,7 +174,7 @@ $theme: (
   "primary-color": $black,
   "primary-selected-color": $black-7,
   "primary-color-selected": #00a25b,
-  "primary-text-color": $mud-black,
+  // "primary-text-color": $mud-black,
   "primary-background-hover-color": $wolf-gray,
   "text-color-on-primary": $snow-white,
 
@@ -224,7 +224,7 @@ $theme-var: (
   "disabled-background-color": var(--disabled-background-color),
   "disabled-text-color": var(--disabled-text-color),
   "link-color": var(--link-color),
-  "primary-text-color": var(--primary-text-color),
+  // "primary-text-color": var(--primary-text-color),
   "icon-color-hover": var(--color-wolf_gray),
   "primary-background-color": var(--primary-background-color),
   "secondary-background-color": var(--secondary-background-color),
@@ -241,16 +241,30 @@ $theme-var: (
   "box-shadow-xs": var(--box-shadow-xs),
   "box-shadow-small": var(--box-shadow-small),
   "box-shadow-medium": var(--box-shadow-medium),
-  "box-shadow-large": var(--box-shadow-large)
+  "box-shadow-large": var(--box-shadow-large),
+
+
+  // background  variables 
+  "primary-background-hover": var(--color-transparent-white-01),
+  "primary-background-pressed": var(--color-transparent-white-02),
+  "primary-background-active": var(--color-transparent-white-03),
+  "primary-background-disabled": var(--color-transparent-white-02),
+
+
+  "primary-text-color": var(--color-content-primary),
+  "primary-text-color-disabled": var(--color-transparent-white-04),
+
+
+
 );
 
 @mixin theme-prop($property: color, $color-variable: primary-text-color, $important: false) {
   @if $important {
     #{$property}: theme-value-default($color-variable) !important;
-    // #{$property}: theme-value-var($color-variable) !important;
+    #{$property}: theme-value-var($color-variable) !important;
   } @else {
     #{$property}: theme-value-default($color-variable);
-    // #{$property}: theme-value-var($color-variable);
+    #{$property}: theme-value-var($color-variable);
   }
 }
 
