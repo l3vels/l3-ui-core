@@ -1,12 +1,15 @@
-import { Meta } from "@storybook/addon-docs";
+import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
 import { ComponentName, Frame, Link, RelatedComponents } from "../../components";
 import { TextStyles } from "./text-styles/text-styles";
 import { TextColors } from "../../components/text-colors/text-colors";
 import { COLORS, SHADOW, SPACING } from "../../components/related-components/component-description-map";
 import { typographyExample1, typographyExample2 } from "./assets";
+
+import Typography from "./Typography";
+
 import "./typography.scss";
 
-<Meta title="Foundations/Typography - (Coming Soon)" />
+<Meta title="Foundations/Typography" />
 
 <!--- Component documentation -->
 
@@ -26,6 +29,32 @@ Therefore the text should be readable and help the user understand what’s impo
 ## Text styles
 
 <TextStyles />
+
+## Label
+
+<Canvas>
+  <Story name="Label">
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+      <Typography value="label large" type="label" size="large" />
+      <Typography value="label medium" type="label" size="medium" />
+      <Typography value="label small" type="label" size="small" />
+      <Typography value="label xs-small" type="label" size="xs-small" />
+    </div>
+  </Story>
+</Canvas>
+
+## Paragraph
+
+<Canvas>
+  <Story name="Paragraph">
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+      <Typography value="paragraph large" type="paragraph" size="large" />
+      <Typography value="paragraph medium" type="paragraph" size="medium" />
+      <Typography value="paragraph small" type="paragraph" size="small" />
+      <Typography value="paragraph xs-small" type="paragraph" size="xs-small" />
+    </div>
+  </Story>
+</Canvas>
 
 ## Text colors
 
