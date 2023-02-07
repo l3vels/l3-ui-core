@@ -1,4 +1,5 @@
 @import "../../styles/global-css-settings";
+@import "../../styles/typography/typography";
 
 .mainWrapper {
   position: relative;
@@ -8,10 +9,8 @@
   flex-direction: column;
   gap: $spacing-small;
 
-  font-style: normal;
+  @include typography-label-small;
   font-weight: 450;
-  font-size: 14px;
-  line-height: 20px;
 
   color: var(--color-content-tertiary);
 }

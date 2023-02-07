@@ -99,7 +99,7 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
           [styles.disabled]: disabled === true
         })}
       >
-        {disabled && <div style={{ position: "absolute" }}>disabled</div>}
+        {disabled && <div style={{ position: "absolute" }}>Disabled</div>}
         <label htmlFor={`${id}`} className={styles.labelTop}>
           {inputValue ? inputValue.length : 0}/{maxLenght}
         </label>
