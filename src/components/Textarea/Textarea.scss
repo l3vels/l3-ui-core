@@ -1,0 +1,28 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelTop {
+  align-self: flex-end;
+
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: right;
+
+  color: #6b6b6b;
+}
+
+.textarea_input {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  background: #eeeeee;
+  border: 2px solid #000000;
+}

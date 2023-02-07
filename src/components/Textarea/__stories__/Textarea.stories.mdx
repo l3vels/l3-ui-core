@@ -1,0 +1,52 @@
+import {
+  ComponentRules,
+  createComponentTemplate,
+  createStoryMetaSettings,
+  RelatedComponents,
+  UsageGuidelines
+} from "../../../storybook";
+import Textarea from "../Textarea";
+
+export const metaSettings = createStoryMetaSettings({
+  component: Textarea
+});
+
+<Meta
+  title="Inputs/Textarea"
+  component={Textarea}
+  argTypes={metaSettings.argTypes}
+  decorators={metaSettings.decorators}
+/>
+
+<!--- Component template -->
+
+export const textareaTemplate = createComponentTemplate(Textarea);
+
+# Textarea
+
+<!--- Component documentation -->
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+- [Do’s and don’ts](#dos-and-donts)
+- [Use cases and examples](#use-cases-and-examples)
+- [Related components](#related-components)
+- [Feedback](#feedback)
+
+## Overview
+
+<Canvas>
+  <Story name="Overview">{textareaTemplate.bind({})}</Story>
+</Canvas>
+
+## Variants
+
+### normal
+
+<Canvas>
+  <Story name="normal">
+    <Textarea />
+  </Story>
+</Canvas>
