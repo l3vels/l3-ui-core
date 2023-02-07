@@ -215,11 +215,26 @@ export const stateSelectedHoverColors: Record<string, string> = {
   NEGATIVE: "--negative-color-selected-hover",
   PRIMARY: "--primary-selected-hover-color"
 };
+
+export const l3GradientColors: Record<string, string> = {
+  gradient_blue: "--color-gradient-blue",
+  gradient_red: "--color-gradient-red",
+  gradient_dark_blue: "--color-gradient-dark-blue",
+  gradient_light_green: "--color-gradient-light-green",
+  gradient_light_blue: "--color-gradient-light-blue",
+  gradient_yellow: "--color-gradient-yellow",
+  gradient_green: "--color-gradient-green",
+  gradient_orange: "--color-gradient-orange",
+  gradient_pink: "--color-gradient-pink"
+};
+
 export const elementAllowedColors = [
   ...Object.keys(contentColorsByName),
   ...Object.keys(stateSelectedColors),
-  ...Object.keys(stateSelectedHoverColors)
+  ...Object.keys(stateSelectedHoverColors),
+  ...Object.keys(l3GradientColors)
 ];
+
 export const elementColorsNames = elementAllowedColors.reduce((acc: Record<string, string>, key) => {
   acc[key] = key;
   return acc;
@@ -234,6 +249,36 @@ export function getElementColor(colorName: string, isSelectedPalette = false, is
   }
   if (stateSelectedColors[colorName] && isSelectedPalette) {
     return `var(${stateSelectedColors[colorName]})`;
+  }
+  if (l3GradientColors[colorName] && isSelectedPalette) {
+    return `var(${l3GradientColors[colorName]})`;
+  }
+  return colorName;
+}
+
+export const tagHoverColors: Record<string, string> = {
+  POSITIVE: "--positive-color-selected-hover",
+  NEGATIVE: "--negative-color-selected-hover",
+  PRIMARY: "--primary-selected-hover-color"
+};
+
+export const tagElementAllowedColors = [...Object.keys(l3GradientColors)];
+
+export const tagElementColorsNames = tagElementAllowedColors.reduce((acc: Record<string, string>, key) => {
+  acc[key] = key;
+  return acc;
+}, {});
+
+export function getTagElementColor(
+  colorName: string,
+  isSelectedPalette = false,
+  isSelectedHoverPalette = false
+): string {
+  if (stateSelectedHoverColors[colorName] && isSelectedHoverPalette) {
+    return `var(${stateSelectedHoverColors[colorName]})`;
+  }
+  if (l3GradientColors[colorName] && isSelectedPalette) {
+    return `var(${l3GradientColors[colorName]})`;
   }
   return colorName;
 }
