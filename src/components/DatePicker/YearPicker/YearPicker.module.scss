@@ -18,25 +18,23 @@
 
   .navigationWrapper {
     position: absolute;
-    top: 21px;
+    top: 15px;
     pointer-events: all;
     cursor: pointer;
 
     &.navigationLeft {
-      left: 21px;
+      left: 12px;
     }
 
     &.navigationRight {
-      right: 21px;
+      right: 12px;
     }
   }
 
   .pickerOptions {
     text-align: center;
-    background-color: #fff;
-    background-color: var(--secondary-background-color);
     position: absolute;
-    top: 55px;
+    top: 85px;
     pointer-events: all;
   }
 
