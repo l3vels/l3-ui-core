@@ -111,7 +111,7 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
               hideTooltip
               icon={CloseSmall}
               onClick={clearValue}
-              kind={IconButton.kinds.PRIMARY}
+              kind={IconButton.kinds.SECONDARY}
             />
           </div>
         )}
