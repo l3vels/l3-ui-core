@@ -4,7 +4,7 @@ import Icon from "../Icon/Icon";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import CloseSmall from "../Icon/Icons/components/CloseSmall";
 import { getCSSVar } from "../../services/themes";
-import { elementColorsNames, getElementColor } from "../../utils/colors-vars-map";
+import { tagElementColorsNames, getTagElementColor } from "../../utils/colors-vars-map";
 import Avatar from "../Avatar/Avatar";
 import IconButton from "../IconButton/IconButton";
 import { getTestId } from "../../tests/test-ids-utils";
@@ -66,7 +66,7 @@ interface TagsProps extends L3ComponentProps {
 
 const Tags: L3Component<TagsProps, HTMLElement> & {
   sizes?: typeof TagsSize;
-  colors?: typeof elementColorsNames;
+  colors?: typeof tagElementColorsNames;
 } = forwardRef<HTMLElement, TagsProps>(
   (
     {
@@ -80,7 +80,7 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
       disabled = false,
       readOnly = false,
       allowTextSelection = false,
-      color = elementColorsNames.PRIMARY,
+      color = tagElementColorsNames.gradient_blue,
       iconSize = 16,
       onDelete = (_id: string, _e: React.MouseEvent<HTMLSpanElement>) => {},
       onMouseDown,
@@ -108,13 +108,13 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
       if (disabled) {
         cssVar = getCSSVar("disabled-background-color");
       } else if (isHovered && hasClickableWrapper) {
-        cssVar = getElementColor(color, true, true);
+        cssVar = getTagElementColor(color, true, true);
       } else if (outlined) {
-        cssVar = getElementColor(color, true);
+        cssVar = getTagElementColor(color, true);
       } else {
-        cssVar = getElementColor(color, true);
+        cssVar = getTagElementColor(color, true);
       }
-      return outlined ? { borderColor: cssVar } : { backgroundColor: cssVar };
+      return outlined ? { borderColor: cssVar } : { background: cssVar };
     }, [disabled, isHovered, hasClickableWrapper, color, outlined]);
 
     const onDeleteCallback = useCallback(
@@ -231,7 +231,7 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
 Object.assign(Tags, {
   sizes: TagsSize,
   defaultTestId: ComponentDefaultTestId.TAG,
-  colors: elementColorsNames
+  colors: tagElementColorsNames
 });
 
 export default Tags;
