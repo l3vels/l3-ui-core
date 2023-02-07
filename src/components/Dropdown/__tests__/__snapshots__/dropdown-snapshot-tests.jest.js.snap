@@ -2028,7 +2028,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                   id="ocean"
                   style={
                     Object {
-                      "backgroundColor": "var(--primary-selected-color)",
+                      "background": "var(--color-gradient-blue)",
                     }
                   }
                 >
@@ -2264,7 +2264,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                   id="ocean"
                   style={
                     Object {
-                      "backgroundColor": "var(--primary-selected-color)",
+                      "background": "var(--color-gradient-blue)",
                     }
                   }
                 >
@@ -3100,7 +3100,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                 id="primary"
                 style={
                   Object {
-                    "backgroundColor": "var(--primary-selected-color)",
+                    "background": "var(--color-gradient-blue)",
                   }
                 }
               >
@@ -3163,7 +3163,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                 id="positive"
                 style={
                   Object {
-                    "backgroundColor": "var(--positive-color-selected)",
+                    "background": "var(--color-gradient-blue)",
                   }
                 }
               >
@@ -3229,7 +3229,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                   id="negative"
                   style={
                     Object {
-                      "backgroundColor": "var(--negative-color-selected)",
+                      "background": "var(--color-gradient-blue)",
                     }
                   }
                 >
