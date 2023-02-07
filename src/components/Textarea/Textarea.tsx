@@ -1,12 +1,16 @@
-import { forwardRef } from "react";
+import { forwardRef, useEffect, useRef } from "react";
 // import useDebounceEvent from "src/hooks/useDebounceEvent";
-import "./Textarea.scss";
+import styles from "./Textarea.module.scss";
+import cx from "classnames";
 
 import { L3ComponentProps, L3Component } from "../../types";
 import useDebounceEvent from "../../hooks/useDebounceEvent";
+import IconButton from "../IconButton/IconButton";
+import CloseSmall from "../Icon/Icons/components/CloseSmall";
+import { NOOP } from "../../utils/function-utils";
+import useMergeRefs from "../../hooks/useMergeRefs";
 interface TextareaProps extends L3ComponentProps {
   placeholder?: string;
-
   autoComplete?: string;
   initialValue?: string;
   value?: string;
@@ -20,40 +24,11 @@ interface TextareaProps extends L3ComponentProps {
   disabled?: boolean;
   readonly?: boolean;
   setRef?: (node: HTMLElement) => void;
-  iconName?: string | React.FunctionComponent | null;
-  secondaryIconName?: string | React.FunctionComponent | null;
-  title?: string;
-  /** SIZES is exposed on the component itself */
-  //   size?: TextFieldSize;
   /** Don't provide status for plain assistant text */
-  validation?: { status?: "error" | "success"; text?: string }; // TODO make common validation class?
-  wrapperClassName?: string;
-  onIconClick?: (icon: string | React.FunctionComponent | null) => void;
-  clearOnIconClick?: boolean;
-  labelIconName?: string | React.FunctionComponent | null;
-  showCharCount?: boolean;
-  inputAriaLabel?: string;
-  searchResultsContainerId?: string;
-  activeDescendant?: string;
-  /**  Icon names labels for a11y */
-  iconsNames?: {
-    layout: string;
-    primary: string;
-    secondary: string;
-  };
-  /** TEXT_TYPES is exposed on the component itself */
-  //   type?: TextFieldTextType;
+  validation?: { status?: "error" | "success" };
   maxLength?: number;
   trim?: boolean;
-  /** ARIA role for container landmark */
-  role?: string;
-  /** adds required to the input element */
   required?: boolean;
-  /** shows loading animation */
-  loading?: boolean;
-  dataTestId?: string;
-  secondaryDataTestId?: string;
-  tabIndex?: number;
   name?: string;
   cols?: number;
   rows?: number;
@@ -63,74 +38,87 @@ interface TextareaProps extends L3ComponentProps {
   onInvalidCapture: (event: unknown) => void;
   onSelect: (event: unknown) => void;
   onSelectCapture: (event: unknown) => void;
+  hint?: string;
 }
 
 const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
-  ({
-    // className = "",
-    placeholder = "your story",
-    autoComplete = "off",
-    initialValue,
-    value,
-    onChange,
-    onChangeCapture,
-    // onBlur = NOOP,
-    // onFocus = NOOP,
-    // onKeyDown = NOOP,
-    debounceRate = 0,
-    autoFocus = false,
-    disabled = false,
-    readonly = false,
-    // setRef = NOOP,
-    // iconName,
-    // secondaryIconName,
-    // id = "input",
-    // title = "",
-    // size = TextField.sizes.SMALL,
-    // validation = null,
-    // wrapperClassName = "",
-    // onIconClick = NOOP,
-    // clearOnIconClick = false,
-    // labelIconName,
-    // showCharCount = false,
-    // inputAriaLabel,
-    // searchResultsContainerId = "",
-    // activeDescendant = "",
-    // iconsNames = EMPTY_OBJECT,
-    // type = TextFieldTextType.TEXT,
-    // maxLength = null,
-    // trim = false
-    // role = "",
-    required = false,
-    // loading = false,
-    // dataTestId,
-    // secondaryDataTestId,
-    // tabIndex,
-    name,
-    cols = 50,
-    rows = 10,
-    maxLenght = 1200,
-    minLenght,
-    onInvalid,
-    onInvalidCapture,
-    onSelect,
-    onSelectCapture
-  }) => {
-    // const inputRef = useRef(null);
-
-    const { inputValue, onEventChanged } = useDebounceEvent({
+  (
+    {
+      placeholder = "",
+      autoComplete = "off",
+      initialValue,
+      value,
+      onChange,
+      onBlur = NOOP,
+      onFocus = NOOP,
+      onKeyDown = NOOP,
+      onChangeCapture,
+      debounceRate = 0,
+      autoFocus = false,
+      disabled = false,
+      readonly = false,
+      setRef = NOOP,
+      trim = false,
+      id = "textarea",
+      required = false,
+      name,
+      cols = 40,
+      rows = 7,
+      maxLenght = 1200,
+      minLenght,
+      onInvalid,
+      onInvalidCapture,
+      onSelect,
+      onSelectCapture,
+      hint,
+      validation = null
+    },
+    ref
+  ) => {
+    const inputRef = useRef(null);
+    const { inputValue, onEventChanged, clearValue } = useDebounceEvent({
       delay: debounceRate,
       onChange,
-      initialStateValue: value
+      initialStateValue: value,
+      trim
     });
 
+    const mergedRef = useMergeRefs({ refs: [ref, inputRef, setRef] });
+    useEffect(() => {
+      if (inputRef.current && autoFocus) {
+        const animationFrame = requestAnimationFrame(() => inputRef.current.focus());
+        return () => cancelAnimationFrame(animationFrame);
+      }
+    }, [inputRef, autoFocus]);
+
     return (
-      <div className="mainWrapper">
-        <div className="labelTop">
+      <div
+        className={cx(styles.mainWrapper, {
+          [styles.status_error]: validation && validation.status === "error",
+          [styles.status_success]: validation && validation.status === "success",
+          [styles.disabled]: disabled === true
+        })}
+      >
+        {disabled && <div style={{ position: "absolute" }}>disabled</div>}
+        <label htmlFor={`${id}`} className={styles.labelTop}>
           {inputValue ? inputValue.length : 0}/{maxLenght}
-        </div>
+        </label>
+        {inputValue && (
+          <div className={styles.clearIcon}>
+            <IconButton
+              size={"xxs"}
+              ariaLabel="Remove"
+              hideTooltip
+              icon={CloseSmall}
+              onClick={clearValue}
+              kind={IconButton.kinds.PRIMARY}
+            />
+          </div>
+        )}
         <textarea
-          className="textarea_input"
+          ref={mergedRef}
+          id={`${id}`}
+          className={styles.textarea_input}
           value={inputValue}
           placeholder={placeholder}
           autoComplete={autoComplete}
@@ -142,6 +130,9 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
           maxLength={maxLenght}
           minLength={minLenght}
           name={name}
+          onBlur={onBlur}
+          onFocus={onFocus}
+          onKeyDown={onKeyDown}
           onChange={onEventChanged}
           onChangeCapture={onChangeCapture}
           onInvalid={onInvalid}
@@ -151,6 +142,7 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
           readOnly={readonly}
           required={required}
         />
+        {hint && <div className={styles.hint}>{hint}</div>}
       </div>
     );
   }
