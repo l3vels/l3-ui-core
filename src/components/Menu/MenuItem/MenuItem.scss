@@ -1,4 +1,5 @@
 @import "../../../styles/themes";
+@import "../../../styles/typography/typography";
 @import "../../../styles/typography";
 @import "../../../styles/states";
 @import "../../../styles/global-css-settings";
@@ -8,7 +9,7 @@
   @include font-default;
   display: flex;
   flex-direction: row;
-  padding: $spacing-xs $spacing-small;
+  padding: $spacing-medium $spacing-xs-medium;
   @include theme-prop(color, primary-text-color);
   cursor: pointer;
   user-select: none;
@@ -39,6 +40,7 @@
   &.l3-style-menu-item--disabled {
     cursor: not-allowed;
     @include theme-prop(color, primary-text-color-disabled);
+    @include theme-prop(background, primary-background-disabled);
 
     .l3-style-menu-item__sub_menu_icon,
     .l3-style-menu-item__icon {
@@ -74,6 +76,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    @include typography-label-medium();
+    .l3-style-menu-item__description {
+      @include typography-paragraph-small();
+      @include theme-prop(color, on-color-secondary);
+    }
   }
 
   .l3-style-menu-item__label {

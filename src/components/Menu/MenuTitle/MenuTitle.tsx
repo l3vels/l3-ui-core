@@ -4,7 +4,7 @@ import { backwardCompatibilityForProperties } from "../../../helpers/backwardCom
 import { MenuTitleCaptionPosition, MenuTitleSize } from "./MenuTitleConstants";
 import { L3ComponentProps } from "../../../types";
 import "./MenuTitle.scss";
-import Icon from "../../../components/Icon/Icon";
+// import EditableHeading from "../../EditableHeading/EditableHeading";
 
 interface MenuTitleProps extends L3ComponentProps {
   /** Backward compatibility for props naming **/
@@ -13,6 +13,7 @@ interface MenuTitleProps extends L3ComponentProps {
   captionPosition?: MenuTitleCaptionPosition;
   size?: MenuTitleSize;
   iconName?: string;
+  titleEditable?: boolean;
 }
 
 const MenuTitle: FC<MenuTitleProps> & {
@@ -21,6 +22,7 @@ const MenuTitle: FC<MenuTitleProps> & {
   isMenuChild?: boolean;
   size?: typeof MenuTitleSize;
   iconName?: string;
+  titleEditable?: boolean;
 } = ({
   className,
   // Backward compatibility for props naming
@@ -28,7 +30,8 @@ const MenuTitle: FC<MenuTitleProps> & {
   caption = "",
   captionPosition = MenuTitle.positions.BOTTOM,
   id,
-  size = MenuTitleSize.LARGE
+  size = MenuTitleSize.LARGE,
+  titleEditable = false
 }) => {
   const overrideClassName = backwardCompatibilityForProperties([className, classname]);
   const menutitleSizeClassName =
@@ -60,16 +63,22 @@ const MenuTitle: FC<MenuTitleProps> & {
 
   const renderCaptionIfNeeded = () => {
     if (caption) {
-      return (
-        <>
-          <label
-            className={`l3-style-menu-title__caption l3-style-menu-title__caption--${captionPosition} ${menutitleSizeClassName}`}
-            id={id}
-          >
-            {caption}
-          </label>
-        </>
-      );
+      // if (titleEditable) {
+      //   return <EditableHeading type={EditableHeading.types.h2} value="H2 Header" highlightTerm="head" />;
+      // }
+      if (!titleEditable) {
+        return (
+          <>
+            <label
+              className={`l3-style-menu-title__caption l3-style-menu-title__caption--${captionPosition} ${menutitleSizeClassName}`}
+              id={id}
+              contentEditable={true}
+            >
+              {caption}
+            </label>
+          </>
+        );
+      }
     }
   };
   return (
