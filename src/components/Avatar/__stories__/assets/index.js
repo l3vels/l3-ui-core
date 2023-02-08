@@ -7,5 +7,23 @@ import person3 from "./person3.png";
 import maleIcon from "./maleIcon.png";
 import femaleIcon from "./femaleIcon.png";
 import owner from "./owner.svg";
+import avatar1 from "./avatar1.png";
+import avatar2 from "./avatar2.png";
+import avatar3 from "./avatar3.png";
+import avatar4 from "./avatar4.png";
 
-export { home, guest, minus, person1, person2, person3, maleIcon, femaleIcon, owner };
+export {
+  home,
+  guest,
+  minus,
+  person1,
+  person2,
+  person3,
+  maleIcon,
+  femaleIcon,
+  owner,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4
+};

@@ -121,3 +121,17 @@ $avatar-size-small: 28px;
     }
   }
 }
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.clipped {
+  width: 46px;
+  height: 46px;
+  background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
+  background-size: cover;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+}

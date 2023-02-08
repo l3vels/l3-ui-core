@@ -65,4 +65,7 @@
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
