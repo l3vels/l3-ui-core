@@ -1,11 +1,12 @@
 import { CSSProperties } from "react";
-import L3ComponentProps from "../../../types/L3ComponentProps";
+// import L3ComponentProps from "../../../types/L3ComponentProps";
 import { TypographySizes, TypographyTypes } from "./TypographyConstants";
 import useStyle from "../../../hooks/useStyle";
 import "./typography.scss";
 import cx from "classnames";
 
-export interface TypographyProps extends L3ComponentProps {
+interface TypographyProps<T extends React.ElementType> {
+  as?: T;
   value?: string;
   size?: TypographySizes;
   //   highlightTerm?: string;
@@ -14,16 +15,32 @@ export interface TypographyProps extends L3ComponentProps {
   style?: CSSProperties;
 }
 
-const Typography: React.FC<TypographyProps> = ({ value, type = "paragraph", size = "large", customColor, style }) => {
+function Typography<T extends React.ElementType = "span">({
+  as,
+  value,
+  type = TypographyTypes.P,
+  size = TypographySizes.lg,
+  customColor,
+  style
+}: TypographyProps<T> &
+  Omit<React.ComponentPropsWithoutRef<T>, keyof TypographyProps<T>> & {
+    sizes?: typeof TypographySizes;
+    types?: typeof TypographyTypes;
+  }) {
   const finalStyle = useStyle(style, { color: customColor });
-
   const typograpghClassName = `${type}_${size}`;
-  console.log(typograpghClassName);
+
+  const Component = as || "span";
   return (
-    <div style={finalStyle} className={cx(typograpghClassName)}>
+    <Component style={finalStyle} className={cx(typograpghClassName)}>
       {value}
-    </div>
+    </Component>
   );
-};
+}
+
+Object.assign(Typography, {
+  types: TypographyTypes,
+  sizes: TypographySizes
+});
 
 export default Typography;
