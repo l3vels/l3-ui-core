@@ -1,6 +1,6 @@
 @import "./display-typography";
 
-$font-family: "Circular Std", 'Roboto';
+$font-family: "Circular Std", "Roboto";
 
 $font-style-normal: normal;
 
@@ -31,9 +31,8 @@ $paragraph-font-large: $font-style-normal $font-weight-medium $paragraph-font-si
   $font-family;
 $paragraph-font-medium: $font-style-normal $font-weight-medium $paragraph-font-size-medium #{"/"} $font-line-height-xs-medium
   $font-family;
-$paragraph-font-small: $font-style-normal $font-weight-medium $paragraph-font-size-medium #{"/"} $font-line-height-small
-  $font-family;
-$paragraph-font-xs-small: $font-style-normal $font-weight-medium $paragraph-font-size-small #{"/"} $font-line-height-small
+$paragraph-font-small: $font-style-normal $font-weight-medium $paragraph-font-size-small #{"/"} $font-line-height-small $font-family;
+$paragraph-font-xs-small: $font-style-normal $font-weight-medium $paragraph-font-size-xs-small #{"/"} $font-line-height-small
   $font-family;
 
 // heading
