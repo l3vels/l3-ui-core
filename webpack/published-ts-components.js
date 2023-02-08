@@ -33,6 +33,7 @@ const publishedTSComponents = {
   BreadcrumbsBar: "components/BreadcrumbsBar/BreadcrumbsBar",
   BreadcrumbItem: "components/BreadcrumbsBar/BreadcrumbItem/BreadcrumbItem",
   Heading: "components/Heading/Heading",
+  Typography: "storybook/stand-alone-documentaion/typography/Typography",
   TextWithHighlight: "components/TextWithHighlight/TextWithHighlight",
   List: "components/List/List",
   ListItem: "components/ListItem/ListItem",
