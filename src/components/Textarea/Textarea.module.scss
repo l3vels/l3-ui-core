@@ -1,0 +1,77 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/typography/typography";
+
+.mainWrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-small;
+
+  @include typography-label-small;
+  font-weight: 450;
+
+  color: var(--color-content-tertiary);
+}
+
+.labelTop {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.textarea {
+  padding: $spacing-medium;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  background: var(--color-core-background-tertiary);
+  &::placeholder {
+    color: var(--color-content-tertiary);
+  }
+  &:focus {
+    outline: 2px solid var(--border-selected-a);
+    border-color: transparent;
+  }
+  // ::-webkit-resizer {
+  //   // background-color: red;
+  //   // padding-bottom: 100px;
+  // }
+}
+
+.status_error {
+  color: var(--color-content-negative);
+  .textarea {
+    background-color: var(--color-background-light-negative);
+    outline: $spacing-xxs solid var(--color-border-negative);
+    border: none !important;
+  }
+}
+
+.status_success {
+  .textarea {
+    background-color: var(--color-background-light-positive);
+    outline: $spacing-xxs solid var(--color-border-positive);
+    border: none !important;
+  }
+}
+
+.disabled {
+  color: var(--color-content-state-disabled);
+  .textarea {
+    background-color: var(--color-background-state-disabled);
+    outline: none !important;
+    &:hover {
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.clearIcon {
+  position: absolute;
+  align-self: flex-end;
+  top: 35px;
+  right: 15px;
+}

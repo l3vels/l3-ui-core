@@ -53,6 +53,7 @@ const publishedTSComponents = {
   TabPanel: "components/Tabs/TabPanel/TabPanel",
   TabList: "components/Tabs/TabList/TabList",
   TextField: "components/TextField/TextField",
+  Textarea: "components/Textarea/Textarea",
   Toggle: "components/Toggle/Toggle",
   ExpandCollapse: "components/ExpandCollapse/ExpandCollapse",
   Modal: "components/Modal/Modal",

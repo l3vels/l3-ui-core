@@ -9,6 +9,15 @@
   border: 1px solid transparent;
   border-radius: $border-radius-small;
   @include focus-style();
+
+  // border: 2px solid red;
+  :hover {
+    @include theme-prop(background-color, text-field-bg-color);
+    border: none;
+    border-radius: $border-radius-small;
+    outline: none;
+  }
+
   &:focus,
   &:active {
     outline: none;
