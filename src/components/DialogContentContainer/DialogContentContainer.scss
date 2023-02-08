@@ -22,12 +22,12 @@
   &--popover {
     @include theme-prop(box-shadow, box-shadow-medium);
     border-radius: var(--border-radius-medium);
-    @include theme-prop(background-color, secondary-background-color);
+    // @include theme-prop(background-color, secondary-background-color);
   }
 
   &--modal {
     @include theme-prop(box-shadow, box-shadow-large);
     border-radius: var(--border-radius-big);
-    @include theme-prop(background-color, primary-background-color);
+    // @include theme-prop(background-color, primary-background-color);
   }
 }

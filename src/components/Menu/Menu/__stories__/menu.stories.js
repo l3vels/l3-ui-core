@@ -30,7 +30,7 @@ export const menuTemplate = args => (
 export const menuSizesTemplate = args => [
   <DialogContentContainer key="small">
     <Menu {...args} size={Menu.sizes.SMALL}>
-      <MenuTitle caption="Small menu" />
+      <MenuTitle caption="Small menu" size="sm" />
       <MenuDivider />
       <MenuItem title="Menu item 1" />
       <MenuItem title="Menu item 2" disabled />
@@ -39,16 +39,25 @@ export const menuSizesTemplate = args => [
   </DialogContentContainer>,
   <DialogContentContainer key="md">
     <Menu {...args} size={Menu.sizes.MEDIUM}>
-      <MenuTitle caption="Medium menu" />
+      <MenuTitle caption="Medium menu" size="md" />
       <MenuDivider />
       <MenuItem title="Menu item 1" />
       <MenuItem title="Menu item 2" disabled />
       <MenuItem title="More item 3" />
     </Menu>
   </DialogContentContainer>,
-  <DialogContentContainer key="lg">
+  // <DialogContentContainer key="lg">
+  //   <Menu {...args} size={Menu.sizes.LARGE}>
+  //     <MenuTitle caption="Large menu" size="lg" />
+  //     <MenuDivider />
+  //     <MenuItem title="Menu item 1" />
+  //     <MenuItem title="Menu item 2" disabled />
+  //     <MenuItem title="More item 3" />
+  //   </Menu>
+  // </DialogContentContainer>,
+  <DialogContentContainer key="big">
     <Menu {...args} size={Menu.sizes.LARGE}>
-      <MenuTitle caption="Large menu" />
+      <MenuTitle caption="Big menu" size="bg" />
       <MenuDivider />
       <MenuItem title="Menu item 1" />
       <MenuItem title="Menu item 2" disabled />
