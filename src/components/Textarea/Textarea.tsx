@@ -1,14 +1,16 @@
 import { forwardRef, useEffect, useRef } from "react";
-// import useDebounceEvent from "src/hooks/useDebounceEvent";
-import styles from "./Textarea.module.scss";
-import cx from "classnames";
+
+import useMergeRefs from "../../hooks/useMergeRefs";
+import useDebounceEvent from "../../hooks/useDebounceEvent";
 
 import { L3ComponentProps, L3Component } from "../../types";
-import useDebounceEvent from "../../hooks/useDebounceEvent";
+import { NOOP } from "../../utils/function-utils";
+
 import IconButton from "../IconButton/IconButton";
 import CloseSmall from "../Icon/Icons/components/CloseSmall";
-import { NOOP } from "../../utils/function-utils";
-import useMergeRefs from "../../hooks/useMergeRefs";
+import cx from "classnames";
+import styles from "./Textarea.module.scss";
+
 interface TextareaProps extends L3ComponentProps {
   placeholder?: string;
   autoComplete?: string;
@@ -76,7 +78,11 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
     ref
   ) => {
     const inputRef = useRef(null);
-    const { inputValue, onEventChanged, clearValue } = useDebounceEvent({
+    const {
+      inputValue: textareaValue,
+      onEventChanged,
+      clearValue
+    } = useDebounceEvent({
       delay: debounceRate,
       onChange,
       initialStateValue: value,
@@ -101,9 +107,9 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
       >
         {disabled && <div style={{ position: "absolute" }}>Disabled</div>}
         <label htmlFor={`${id}`} className={styles.labelTop}>
-          {inputValue ? inputValue.length : 0}/{maxLenght}
+          {textareaValue ? textareaValue.length : 0}/{maxLenght}
         </label>
-        {inputValue && (
+        {textareaValue && (
           <div className={styles.clearIcon}>
             <IconButton
               size={"xxs"}
@@ -118,8 +124,8 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
         <textarea
           ref={mergedRef}
           id={`${id}`}
-          className={styles.textarea_input}
-          value={inputValue}
+          className={styles.textarea}
+          value={textareaValue}
           placeholder={placeholder}
           autoComplete={autoComplete}
           autoFocus={autoFocus}

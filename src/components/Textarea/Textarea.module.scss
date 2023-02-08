@@ -20,7 +20,7 @@
   text-align: right;
 }
 
-.textarea_input {
+.textarea {
   padding: $spacing-medium;
   padding-right: 40px;
   display: flex;
@@ -34,9 +34,6 @@
   &:focus {
     outline: 2px solid var(--border-selected-a);
     border-color: transparent;
-    // &::placeholder {
-    //   color: #000000;
-    // }
   }
   // ::-webkit-resizer {
   //   // background-color: red;
@@ -45,9 +42,8 @@
 }
 
 .status_error {
-  // color: #e11900;
   color: var(--color-content-negative);
-  .textarea_input {
+  .textarea {
     background-color: var(--color-background-light-negative);
     outline: $spacing-xxs solid var(--color-border-negative);
     border: none !important;
@@ -55,7 +51,7 @@
 }
 
 .status_success {
-  .textarea_input {
+  .textarea {
     background-color: var(--color-background-light-positive);
     outline: $spacing-xxs solid var(--color-border-positive);
     border: none !important;
@@ -64,7 +60,7 @@
 
 .disabled {
   color: var(--color-content-state-disabled);
-  .textarea_input {
+  .textarea {
     background-color: var(--color-background-state-disabled);
     outline: none !important;
     &:hover {
@@ -76,6 +72,6 @@
 .clearIcon {
   position: absolute;
   align-self: flex-end;
-  top: 45px;
+  top: 35px;
   right: 15px;
 }
