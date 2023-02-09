@@ -13,6 +13,7 @@ exports[`Snapshots renders correctly when disabled 1`] = `
     className="l3-style-menu-item__title"
   >
     my item
+    
   </div>
   
   <div
@@ -42,6 +43,7 @@ exports[`Snapshots renders correctly when selected 1`] = `
     className="l3-style-menu-item__title"
   >
     my item
+    
   </div>
   
   <div
@@ -71,6 +73,7 @@ exports[`Snapshots renders correctly with custom class name 1`] = `
     className="l3-style-menu-item__title"
   >
     
+    
   </div>
   
   <div
@@ -99,6 +102,7 @@ exports[`Snapshots renders correctly with empty props 1`] = `
   <div
     className="l3-style-menu-item__title"
   >
+    
     
   </div>
   
@@ -133,10 +137,10 @@ exports[`Snapshots renders correctly with title and SVG icon 1`] = `
       aria-label="my item"
       className="icon_component l3-style-menu-item__icon icon_component--no-focus-style"
       fill="currentColor"
-      height="20"
+      height="25"
       onClick={[Function]}
       viewBox="0 0 20 20"
-      width="20"
+      width="25"
     >
       <path
         clipRule="evenodd"
@@ -150,6 +154,7 @@ exports[`Snapshots renders correctly with title and SVG icon 1`] = `
     className="l3-style-menu-item__title"
   >
     my item
+    
   </div>
   
   <div
@@ -190,6 +195,7 @@ exports[`Snapshots renders correctly with title and font icon 1`] = `
     className="l3-style-menu-item__title"
   >
     my item
+    
   </div>
   
   <div
