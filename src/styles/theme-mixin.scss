@@ -242,20 +242,14 @@ $theme-var: (
   "box-shadow-small": var(--box-shadow-small),
   "box-shadow-medium": var(--box-shadow-medium),
   "box-shadow-large": var(--box-shadow-large),
-
-
-  // background  variables 
+  // background  variables
   "primary-background-hover": var(--color-transparent-white-01),
   "primary-background-pressed": var(--color-transparent-white-02),
   "primary-background-active": var(--color-transparent-white-03),
   "primary-background-disabled": var(--color-transparent-white-02),
-
-
   "primary-text-color": var(--color-content-primary),
   "primary-text-color-disabled": var(--color-transparent-white-04),
-
-
-
+  "on-color-secondary": var(--color-transparent-white-08)
 );
 
 @mixin theme-prop($property: color, $color-variable: primary-text-color, $important: false) {

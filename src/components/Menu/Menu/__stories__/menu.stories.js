@@ -13,7 +13,8 @@ import {
   Feedback,
   Calendar,
   Filter,
-  Wand
+  Wand,
+  Launch
 } from "../../../Icon/Icons";
 import { DialogContentContainer, Menu, MenuItem, Search, MenuTitle, MenuDivider, MenuGridItem } from "../../..";
 import classes from "./Menu.stories.module.scss";
@@ -27,32 +28,56 @@ export const menuTemplate = args => (
   </Menu>
 );
 
+const size_big = "bg";
+
 export const menuSizesTemplate = args => [
-  <DialogContentContainer key="small">
-    <Menu {...args} size={Menu.sizes.SMALL}>
-      <MenuTitle caption="Small menu" />
-      <MenuDivider />
-      <MenuItem title="Menu item 1" />
-      <MenuItem title="Menu item 2" disabled />
-      <MenuItem title="More item 3" />
-    </Menu>
-  </DialogContentContainer>,
-  <DialogContentContainer key="md">
-    <Menu {...args} size={Menu.sizes.MEDIUM}>
-      <MenuTitle caption="Medium menu" />
-      <MenuDivider />
-      <MenuItem title="Menu item 1" />
-      <MenuItem title="Menu item 2" disabled />
-      <MenuItem title="More item 3" />
-    </Menu>
-  </DialogContentContainer>,
-  <DialogContentContainer key="lg">
+  // <DialogContentContainer key="small">
+  //   <Menu {...args} size={Menu.sizes.SMALL}>
+  //     <MenuTitle caption="Small menu" size="sm" />
+  //     <MenuDivider />
+  //     <MenuItem title="Menu item 1" />
+  //     <MenuItem title="Menu item 2" disabled />
+  //     <MenuItem title="More item 3" />
+  //     <MenuItem title="With Sub menu" icon={Activity}>
+  //       <Menu>
+  //         <MenuItem icon={Email} title="Send" />
+  //         <MenuItem icon={Delete} title="Delete" disabled />
+  //         <MenuItem icon={Info} title="More info" />
+  //       </Menu>
+  //     </MenuItem>
+  //   </Menu>
+  // </DialogContentContainer>,
+  // <DialogContentContainer key="md">
+  //   <Menu {...args} size={Menu.sizes.MEDIUM}>
+  //     <MenuTitle caption="Medium menu" size="md" />
+  //     <MenuDivider />
+  //     <MenuItem title="Menu item 1" />
+  //     <MenuItem title="Menu item 2" disabled />
+  //     <MenuItem title="More item 3" />
+  //   </Menu>
+  // </DialogContentContainer>,
+  // <DialogContentContainer key="lg">
+  //   <Menu {...args} size={Menu.sizes.LARGE}>
+  //     <MenuTitle caption="Large menu" size="lg" />
+  //     <MenuDivider />
+  //     <MenuItem title="Menu item 1" />
+  //     <MenuItem title="Menu item 2" disabled />
+  //     <MenuItem title="More item 3" />
+  //   </Menu>
+  // </DialogContentContainer>,
+
+  <DialogContentContainer key={size_big}>
     <Menu {...args} size={Menu.sizes.LARGE}>
-      <MenuTitle caption="Large menu" />
-      <MenuDivider />
-      <MenuItem title="Menu item 1" />
-      <MenuItem title="Menu item 2" disabled />
-      <MenuItem title="More item 3" />
+      <MenuTitle caption="Big menu" size={size_big} />
+      <MenuItem icon={Launch} title="Send" description={"description test "} />
+      <MenuItem icon={Settings} title="Delete" />
+      <MenuItem icon={Info} title="More info">
+        <Menu isSubMenu>
+          <MenuItem icon={Email} title="Send" />
+          <MenuItem icon={Delete} title="Delete" disabled />
+          <MenuItem icon={Info} title="More info" />
+        </Menu>
+      </MenuItem>
     </Menu>
   </DialogContentContainer>
 ];

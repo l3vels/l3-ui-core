@@ -31,6 +31,7 @@ import "./MenuItem.scss";
 export interface MenuItemProps extends L3ComponentProps {
   title?: string;
   label?: string;
+  description?: string;
   icon?: SubIcon;
   iconType?: IconType;
   iconBackgroundColor?: string;
@@ -101,7 +102,8 @@ const MenuItem: L3Component<MenuItemProps> & {
       isInitialSelectedState,
       onMouseEnter,
       onMouseLeave,
-      shouldScrollMenu
+      shouldScrollMenu,
+      description = ""
     },
     ref: ForwardedRef<HTMLElement>
   ) => {
@@ -211,7 +213,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             iconLabel={title}
             className="l3-style-menu-item__sub_menu_icon"
             ignoreFocusStyle
-            iconSize={20}
+            iconSize={25}
           />
         </div>
       );
@@ -250,7 +252,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             className="l3-style-menu-item__icon"
             ignoreFocusStyle
             style={iconStyle}
-            iconSize={20}
+            iconSize={25}
           />
         </div>
       );
@@ -301,6 +303,7 @@ const MenuItem: L3Component<MenuItemProps> & {
         >
           <div ref={titleRef} className="l3-style-menu-item__title">
             {title}
+            {description && <span className="l3-style-menu-item__description">{description}</span>}
           </div>
         </Tooltip>
         {label && (
