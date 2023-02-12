@@ -9,17 +9,14 @@
   @include font-default;
   display: flex;
   flex-direction: row;
-  padding: $spacing-medium $spacing-xs-medium;
+  padding: 23px;
   @include theme-prop(color, primary-text-color);
   cursor: pointer;
   user-select: none;
   align-items: center;
   border: 1px solid transparent;
   outline: none;
-
-  .l3-style-menu-item__icon-wrapper {
-    margin-right: $spacing-small;
-  }
+  gap: 16px;
 
   .l3-style-menu-item__sub_menu_icon-wrapper {
     margin-left: $spacing-xs;

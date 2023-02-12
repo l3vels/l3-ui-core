@@ -61,6 +61,7 @@ export interface MenuItemProps extends L3ComponentProps {
   closeMenu?: (option: CloseMenuOption) => void;
   menuRef?: React.RefObject<HTMLElement>;
   children?: ReactElement | ReactElement[];
+  collapsed?: boolean;
 }
 
 const MenuItem: L3Component<MenuItemProps> & {
@@ -103,7 +104,8 @@ const MenuItem: L3Component<MenuItemProps> & {
       onMouseEnter,
       onMouseLeave,
       shouldScrollMenu,
-      description = ""
+      description = "",
+      collapsed = false
     },
     ref: ForwardedRef<HTMLElement>
   ) => {
@@ -295,43 +297,46 @@ const MenuItem: L3Component<MenuItemProps> & {
         tabIndex={TAB_INDEX_FOCUS_WITH_JS_ONLY}
       >
         {renderMenuItemIconIfNeeded()}
-
-        <Tooltip
-          content={shouldShowTooltip ? finalTooltipContent : null}
-          position={tooltipPosition}
-          showDelay={tooltipShowDelay}
-        >
-          <div ref={titleRef} className="l3-style-menu-item__title">
-            {title}
-            {description && <span className="l3-style-menu-item__description">{description}</span>}
-          </div>
-        </Tooltip>
-        {label && (
-          <div ref={titleRef} className="l3-style-menu-item__label">
-            {label}
-          </div>
+        {!collapsed && (
+          <>
+            <Tooltip
+              content={shouldShowTooltip ? finalTooltipContent : null}
+              position={tooltipPosition}
+              showDelay={tooltipShowDelay}
+            >
+              <div ref={titleRef} className="l3-style-menu-item__title">
+                {title}
+                {description && <span className="l3-style-menu-item__description">{description}</span>}
+              </div>
+            </Tooltip>
+            {label && (
+              <div ref={titleRef} className="l3-style-menu-item__label">
+                {label}
+              </div>
+            )}
+            {renderSubMenuIconIfNeeded()}
+            <div
+              style={{ ...styles.popper, visibility: shouldShowSubMenu ? "visible" : "hidden" }}
+              // eslint-disable-next-line react/jsx-props-no-spreading
+              {...attributes.popper}
+              className="l3-style-menu-item__popover"
+              ref={popperElementRef}
+            >
+              {menuChild && shouldShowSubMenu && (
+                <DialogContentContainer>
+                  {React.cloneElement(menuChild, {
+                    ...menuChild?.props,
+                    isVisible: shouldShowSubMenu,
+                    isSubMenu: true,
+                    onClose: closeSubMenu,
+                    ref: childRef,
+                    useDocumentEventListeners
+                  })}
+                </DialogContentContainer>
+              )}
+            </div>
+          </>
         )}
-        {renderSubMenuIconIfNeeded()}
-        <div
-          style={{ ...styles.popper, visibility: shouldShowSubMenu ? "visible" : "hidden" }}
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          {...attributes.popper}
-          className="l3-style-menu-item__popover"
-          ref={popperElementRef}
-        >
-          {menuChild && shouldShowSubMenu && (
-            <DialogContentContainer>
-              {React.cloneElement(menuChild, {
-                ...menuChild?.props,
-                isVisible: shouldShowSubMenu,
-                isSubMenu: true,
-                onClose: closeSubMenu,
-                ref: childRef,
-                useDocumentEventListeners
-              })}
-            </DialogContentContainer>
-          )}
-        </div>
       </li>
     );
   }

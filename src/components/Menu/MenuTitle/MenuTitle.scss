@@ -4,14 +4,14 @@
 
 .l3-style-menu-title {
   @include typography-label-medium();
-  padding: 0;
   display: flex;
   align-items: center;
   gap: 18px;
+  padding: 0 10px;
+  margin-bottom: 42px;
 
   .l3-style-menu-title__caption {
     @include theme-prop(color, icon-color);
-    margin: $spacing-small 0;
   }
 
   .l3-style-menu-title__caption--center {
@@ -59,8 +59,8 @@
   height: 0;
 }
 .clipped {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);

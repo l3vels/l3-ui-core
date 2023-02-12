@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import {
   Activity,
   Settings,
@@ -19,6 +19,7 @@ import {
 import { DialogContentContainer, Menu, MenuItem, Search, MenuTitle, MenuDivider, MenuGridItem } from "../../..";
 import classes from "./Menu.stories.module.scss";
 import { DummyNavigableGrid } from "../../../GridKeyboardNavigationContext/__stories__/useGridKeyboardNavigationContext.stories";
+import Button from "../../../Button/Button";
 
 export const menuTemplate = args => (
   <Menu {...args}>
@@ -30,57 +31,68 @@ export const menuTemplate = args => (
 
 const size_big = "bg";
 
-export const menuSizesTemplate = args => [
-  // <DialogContentContainer key="small">
-  //   <Menu {...args} size={Menu.sizes.SMALL}>
-  //     <MenuTitle caption="Small menu" size="sm" />
-  //     <MenuDivider />
-  //     <MenuItem title="Menu item 1" />
-  //     <MenuItem title="Menu item 2" disabled />
-  //     <MenuItem title="More item 3" />
-  //     <MenuItem title="With Sub menu" icon={Activity}>
-  //       <Menu>
-  //         <MenuItem icon={Email} title="Send" />
-  //         <MenuItem icon={Delete} title="Delete" disabled />
-  //         <MenuItem icon={Info} title="More info" />
-  //       </Menu>
-  //     </MenuItem>
-  //   </Menu>
-  // </DialogContentContainer>,
-  // <DialogContentContainer key="md">
-  //   <Menu {...args} size={Menu.sizes.MEDIUM}>
-  //     <MenuTitle caption="Medium menu" size="md" />
-  //     <MenuDivider />
-  //     <MenuItem title="Menu item 1" />
-  //     <MenuItem title="Menu item 2" disabled />
-  //     <MenuItem title="More item 3" />
-  //   </Menu>
-  // </DialogContentContainer>,
-  // <DialogContentContainer key="lg">
-  //   <Menu {...args} size={Menu.sizes.LARGE}>
-  //     <MenuTitle caption="Large menu" size="lg" />
-  //     <MenuDivider />
-  //     <MenuItem title="Menu item 1" />
-  //     <MenuItem title="Menu item 2" disabled />
-  //     <MenuItem title="More item 3" />
-  //   </Menu>
-  // </DialogContentContainer>,
-
-  <DialogContentContainer key={size_big}>
-    <Menu {...args} size={Menu.sizes.LARGE}>
-      <MenuTitle caption="Big menu" size={size_big} />
-      <MenuItem icon={Launch} title="Send" description={"description test "} />
-      <MenuItem icon={Settings} title="Delete" />
-      <MenuItem icon={Info} title="More info">
-        <Menu isSubMenu>
+export const MenuSizesTemplate = args => {
+  const [collapsed, setCollapsed] = useState(false);
+  return [
+    // <DialogContentContainer key="small">
+    //   <Menu {...args} size={Menu.sizes.SMALL}>
+    //     <MenuTitle caption="Small menu" size="sm" />
+    //     <MenuDivider />
+    //     <MenuItem title="Menu item 1" />
+    //     <MenuItem title="Menu item 2" disabled />
+    //     <MenuItem title="More item 3" />
+    //     <MenuItem title="With Sub menu" icon={Activity}>
+    //       <Menu>
+    //         <MenuItem icon={Email} title="Send" />
+    //         <MenuItem icon={Delete} title="Delete" disabled />
+    //         <MenuItem icon={Info} title="More info" />
+    //       </Menu>
+    //     </MenuItem>
+    //   </Menu>
+    // </DialogContentContainer>,
+    // <DialogContentContainer key="md">
+    //   <Menu {...args} size={Menu.sizes.MEDIUM}>
+    //     <MenuTitle caption="Medium menu" size="md" />
+    //     <MenuDivider />
+    //     <MenuItem title="Menu item 1" />
+    //     <MenuItem title="Menu item 2" disabled />
+    //     <MenuItem title="More item 3" />
+    //   </Menu>
+    // </DialogContentContainer>,
+    // <DialogContentContainer key="lg">
+    //   <Menu {...args} size={Menu.sizes.LARGE}>
+    //     <MenuTitle caption="Large menu" size="lg" />
+    //     <MenuDivider />
+    //     <MenuItem title="Menu item 1" />
+    //     <MenuItem title="Menu item 2" disabled />
+    //     <MenuItem title="More item 3" />
+    //   </Menu>
+    // </DialogContentContainer>,
+    <div style={{ display: "grid", gridauflow: "row" }} key={size_big}>
+      <Button
+        type="submit"
+        onClick={() => setCollapsed(!collapsed)}
+        style={{ width: 50, marginLeft: 13, marginBottom: 30 }}
+      >
+        {collapsed ? ">" : "<"}
+      </Button>
+      <DialogContentContainer key={size_big}>
+        <Menu {...args} size={Menu.sizes.LARGE} collapsed={collapsed}>
+          <MenuTitle caption="Big menu" size={size_big} collapsed={collapsed} />
+          <MenuItem icon={Launch} title="Send" description="menu item description" collapsed={collapsed} />
+          <MenuItem icon={Settings} title="Delete" collapsed={collapsed} />
+          <MenuItem icon={Info} title="More info" collapsed={collapsed}>
+            {/* <Menu isSubMenu>
           <MenuItem icon={Email} title="Send" />
           <MenuItem icon={Delete} title="Delete" disabled />
           <MenuItem icon={Info} title="More info" />
+        </Menu> */}
+          </MenuItem>
         </Menu>
-      </MenuItem>
-    </Menu>
-  </DialogContentContainer>
-];
+      </DialogContentContainer>
+    </div>
+  ];
+};
 
 export const menuWithIconsTemplate = args => (
   <DialogContentContainer>

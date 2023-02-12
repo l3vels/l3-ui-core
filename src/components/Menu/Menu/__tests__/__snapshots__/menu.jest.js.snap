@@ -4,7 +4,7 @@ exports[`Snapshots renders correctly with children 1`] = `
 <ul
   aria-activedescendant="undefined--1"
   aria-label="Menu"
-  className="l3-style-menu dummy-class-name l3-style-menu--medium"
+  className="l3-style-menu dummy-class-name l3-style-menu--medium false"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseOver={[Function]}
@@ -106,7 +106,7 @@ exports[`Snapshots renders correctly with custom class name 1`] = `
 <ul
   aria-activedescendant="undefined--1"
   aria-label="Menu"
-  className="l3-style-menu dummy-class-name l3-style-menu--medium"
+  className="l3-style-menu dummy-class-name l3-style-menu--medium false"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseOver={[Function]}
@@ -119,7 +119,7 @@ exports[`Snapshots renders correctly with empty props 1`] = `
 <ul
   aria-activedescendant="undefined--1"
   aria-label="Menu"
-  className="l3-style-menu l3-style-menu--medium"
+  className="l3-style-menu l3-style-menu--medium false"
   onBlur={[Function]}
   onFocus={[Function]}
   onMouseOver={[Function]}
