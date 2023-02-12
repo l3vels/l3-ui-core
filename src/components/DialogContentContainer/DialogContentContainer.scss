@@ -20,12 +20,12 @@
   }
 
   &--popover {
-    @include theme-prop(box-shadow, box-shadow-medium);
-    border-radius: var(--border-radius-medium);
+    // @include theme-prop(box-shadow, box-shadow-medium);
+    // border-radius: var(--border-radius-medium);
   }
 
   &--modal {
-    @include theme-prop(box-shadow, box-shadow-large);
-    border-radius: var(--border-radius-big);
+    // @include theme-prop(box-shadow, box-shadow-large);
+    // border-radius: var(--border-radius-big);
   }
 }

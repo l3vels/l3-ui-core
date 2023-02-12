@@ -17,6 +17,16 @@
   }
 
   &--large {
-    width: 240px;
+    width: fit-content;
+  }
+
+  &--collapsed {
+    width: fit-content;
+  }
+}
+
+.l3-menu {
+  &--collapsed {
+    width: fit-content;
   }
 }

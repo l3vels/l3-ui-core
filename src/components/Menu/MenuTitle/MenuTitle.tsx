@@ -14,6 +14,7 @@ interface MenuTitleProps extends L3ComponentProps {
   size?: MenuTitleSize;
   iconName?: string;
   titleEditable?: boolean;
+  collapsed?: boolean;
 }
 
 const MenuTitle: FC<MenuTitleProps> & {
@@ -31,7 +32,8 @@ const MenuTitle: FC<MenuTitleProps> & {
   captionPosition = MenuTitle.positions.BOTTOM,
   id,
   size = MenuTitleSize.LARGE,
-  titleEditable = false
+  titleEditable = false,
+  collapsed = false
 }) => {
   const overrideClassName = backwardCompatibilityForProperties([className, classname]);
   const menutitleSizeClassName =
@@ -69,13 +71,29 @@ const MenuTitle: FC<MenuTitleProps> & {
       if (!titleEditable) {
         return (
           <>
-            <label
-              className={`l3-style-menu-title__caption l3-style-menu-title__caption--${captionPosition} ${menutitleSizeClassName}`}
-              id={id}
-              contentEditable={true}
-            >
-              {caption}
-            </label>
+            {!collapsed && (
+              <label
+                className={`l3-style-menu-title__caption l3-style-menu-title__caption--${captionPosition} ${menutitleSizeClassName}`}
+                id={id}
+                contentEditable={true}
+              >
+                {caption}
+              </label>
+            )}
+          </>
+        );
+      }
+      if (titleEditable) {
+        return (
+          <>
+            {!collapsed && (
+              <label
+                className={`l3-style-menu-title__caption l3-style-menu-title__caption--${captionPosition} ${menutitleSizeClassName}`}
+                id={id}
+              >
+                {caption}
+              </label>
+            )}
           </>
         );
       }
