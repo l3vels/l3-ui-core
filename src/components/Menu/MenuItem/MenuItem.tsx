@@ -31,6 +31,7 @@ import "./MenuItem.scss";
 export interface MenuItemProps extends L3ComponentProps {
   title?: string;
   label?: string;
+  description?: string;
   icon?: SubIcon;
   iconType?: IconType;
   iconBackgroundColor?: string;
@@ -60,6 +61,7 @@ export interface MenuItemProps extends L3ComponentProps {
   closeMenu?: (option: CloseMenuOption) => void;
   menuRef?: React.RefObject<HTMLElement>;
   children?: ReactElement | ReactElement[];
+  collapsed?: boolean;
 }
 
 const MenuItem: L3Component<MenuItemProps> & {
@@ -101,7 +103,9 @@ const MenuItem: L3Component<MenuItemProps> & {
       isInitialSelectedState,
       onMouseEnter,
       onMouseLeave,
-      shouldScrollMenu
+      shouldScrollMenu,
+      description = "",
+      collapsed = false
     },
     ref: ForwardedRef<HTMLElement>
   ) => {
@@ -211,7 +215,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             iconLabel={title}
             className="l3-style-menu-item__sub_menu_icon"
             ignoreFocusStyle
-            iconSize={20}
+            iconSize={25}
           />
         </div>
       );
@@ -250,7 +254,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             className="l3-style-menu-item__icon"
             ignoreFocusStyle
             style={iconStyle}
-            iconSize={20}
+            iconSize={25}
           />
         </div>
       );
@@ -293,42 +297,46 @@ const MenuItem: L3Component<MenuItemProps> & {
         tabIndex={TAB_INDEX_FOCUS_WITH_JS_ONLY}
       >
         {renderMenuItemIconIfNeeded()}
-
-        <Tooltip
-          content={shouldShowTooltip ? finalTooltipContent : null}
-          position={tooltipPosition}
-          showDelay={tooltipShowDelay}
-        >
-          <div ref={titleRef} className="l3-style-menu-item__title">
-            {title}
-          </div>
-        </Tooltip>
-        {label && (
-          <div ref={titleRef} className="l3-style-menu-item__label">
-            {label}
-          </div>
+        {!collapsed && (
+          <>
+            <Tooltip
+              content={shouldShowTooltip ? finalTooltipContent : null}
+              position={tooltipPosition}
+              showDelay={tooltipShowDelay}
+            >
+              <div ref={titleRef} className="l3-style-menu-item__title">
+                {title}
+                {description && <span className="l3-style-menu-item__description">{description}</span>}
+              </div>
+            </Tooltip>
+            {label && (
+              <div ref={titleRef} className="l3-style-menu-item__label">
+                {label}
+              </div>
+            )}
+            {renderSubMenuIconIfNeeded()}
+            <div
+              style={{ ...styles.popper, visibility: shouldShowSubMenu ? "visible" : "hidden" }}
+              // eslint-disable-next-line react/jsx-props-no-spreading
+              {...attributes.popper}
+              className="l3-style-menu-item__popover"
+              ref={popperElementRef}
+            >
+              {menuChild && shouldShowSubMenu && (
+                <DialogContentContainer>
+                  {React.cloneElement(menuChild, {
+                    ...menuChild?.props,
+                    isVisible: shouldShowSubMenu,
+                    isSubMenu: true,
+                    onClose: closeSubMenu,
+                    ref: childRef,
+                    useDocumentEventListeners
+                  })}
+                </DialogContentContainer>
+              )}
+            </div>
+          </>
         )}
-        {renderSubMenuIconIfNeeded()}
-        <div
-          style={{ ...styles.popper, visibility: shouldShowSubMenu ? "visible" : "hidden" }}
-          // eslint-disable-next-line react/jsx-props-no-spreading
-          {...attributes.popper}
-          className="l3-style-menu-item__popover"
-          ref={popperElementRef}
-        >
-          {menuChild && shouldShowSubMenu && (
-            <DialogContentContainer>
-              {React.cloneElement(menuChild, {
-                ...menuChild?.props,
-                isVisible: shouldShowSubMenu,
-                isSubMenu: true,
-                onClose: closeSubMenu,
-                ref: childRef,
-                useDocumentEventListeners
-              })}
-            </DialogContentContainer>
-          )}
-        </div>
       </li>
     );
   }

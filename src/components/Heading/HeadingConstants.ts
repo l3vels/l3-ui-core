@@ -1,5 +1,3 @@
-import { SIZES } from "../../constants";
-
 export enum HeadingTypes {
   h1 = "h1",
   h2 = "h2",
@@ -9,4 +7,10 @@ export enum HeadingTypes {
   h6 = "h6"
 }
 
-export const HeadingSizes = SIZES;
+export enum HeadingSizes {
+  SMALL = "small",
+  MEDIUM = "medium",
+  LARGE = "large",
+  XXS = "xxs",
+  XS = "xs"
+}

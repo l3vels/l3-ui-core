@@ -1,0 +1,58 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/themes";
+@import "../../styles/typography";
+@import "../../styles/theme-mixin";
+
+.main_wrapper {
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  background: var(--color-transparent-black-03);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $spacing-medium $spacing-large $spacing-large;
+  border-radius: 0px 0px 10px 10px;
+
+  &_no_description {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.paragraph_wrapper {
+  display: flex;
+  gap: $spacing-small;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

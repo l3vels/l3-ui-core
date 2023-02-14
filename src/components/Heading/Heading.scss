@@ -20,8 +20,6 @@
   &.suggest-edit-on-hover {
     &:hover {
       cursor: text;
-      border: 1px solid;
-      @include theme-prop(border-color, ui-border-color);
     }
   }
 }

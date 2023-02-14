@@ -1,0 +1,14 @@
+.badge {
+  width: 8px;
+  height: 8px;
+  background: #276ef1;
+  border: 2px solid #ffffff;
+  border-radius: 100px;
+
+  &_positive {
+    background: linear-gradient(180deg, #74faa1 0%, #73f96d 100%);
+  }
+  &_warning {
+    background: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
+  }
+}

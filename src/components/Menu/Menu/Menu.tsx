@@ -41,6 +41,7 @@ interface MenuProps extends L3ComponentProps {
   focusItemIndexOnMount?: number;
   shouldScrollMenu?: boolean;
   children?: ReactElement | ReactElement[];
+  collapsed?: false;
 }
 
 const Menu: L3Component<MenuProps> & {
@@ -66,7 +67,8 @@ const Menu: L3Component<MenuProps> & {
       focusItemIndexOnMount = -1,
       isSubMenu = false,
       useDocumentEventListeners = false,
-      shouldScrollMenu = false
+      shouldScrollMenu = false,
+      collapsed = false
     },
     forwardedRef
   ) => {
@@ -165,7 +167,12 @@ const Menu: L3Component<MenuProps> & {
         onFocus={focusWithinProps?.onFocus}
         onBlur={focusWithinProps?.onBlur}
         id={id}
-        className={cx("l3-style-menu", overrideClassName, `l3-style-menu--${size}`)}
+        className={cx(
+          "l3-style-menu",
+          overrideClassName,
+          `l3-style-menu--${size}`,
+          `${collapsed && "l3-menu--collapsed"}`
+        )}
         ref={mergedRef}
         tabIndex={tabIndex}
         aria-label={ariaLabel}

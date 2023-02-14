@@ -2,6 +2,7 @@ const publishedTSComponents = {
   // Don't remove next line
   // plop_marker:published-components
   Button: "components/Button/Button",
+  Badge: "components/Badge/Badge",
   ToastButton: "components/Toast/ToastButton/ToastButton",
   Icon: "components/Icon/Icon",
   IconButton: "components/IconButton/IconButton",
@@ -19,6 +20,7 @@ const publishedTSComponents = {
   Accordion: "components/Accordion/Accordion/Accordion",
   ButtonGroup: "components/ButtonGroup/ButtonGroup",
   Clickable: "components/Clickable/Clickable",
+  Card: "components/Card/Card",
   AlertBanner: "components/AlertBanner/AlertBanner",
   AlertBannerButton: "components/AlertBanner/AlertBannerButton/AlertBannerButton",
   AlertBannerText: "components/AlertBanner/AlertBannerText/AlertBannerText",
@@ -53,6 +55,7 @@ const publishedTSComponents = {
   TabPanel: "components/Tabs/TabPanel/TabPanel",
   TabList: "components/Tabs/TabList/TabList",
   TextField: "components/TextField/TextField",
+  Textarea: "components/Textarea/Textarea",
   Toggle: "components/Toggle/Toggle",
   ExpandCollapse: "components/ExpandCollapse/ExpandCollapse",
   Modal: "components/Modal/Modal",
