@@ -2,6 +2,7 @@ const publishedTSComponents = {
   // Don't remove next line
   // plop_marker:published-components
   Button: "components/Button/Button",
+  Badge: "components/Badge/Badge",
   ToastButton: "components/Toast/ToastButton/ToastButton",
   Icon: "components/Icon/Icon",
   IconButton: "components/IconButton/IconButton",
