@@ -19,6 +19,7 @@ const publishedTSComponents = {
   Accordion: "components/Accordion/Accordion/Accordion",
   ButtonGroup: "components/ButtonGroup/ButtonGroup",
   Clickable: "components/Clickable/Clickable",
+  Card: "components/Card/Card",
   AlertBanner: "components/AlertBanner/AlertBanner",
   AlertBannerButton: "components/AlertBanner/AlertBannerButton/AlertBannerButton",
   AlertBannerText: "components/AlertBanner/AlertBannerText/AlertBannerText",
