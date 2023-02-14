@@ -19,7 +19,7 @@ export interface HeadingProps extends L3ComponentProps {
   suggestEditOnHover?: boolean;
   /** Tooltip to show when no overflow */
   nonEllipsisTooltip?: string;
-  size?: typeof HeadingSizes;
+  size?: HeadingSizes;
   highlightTerm?: string;
   customColor?: string;
   style?: CSSProperties;
