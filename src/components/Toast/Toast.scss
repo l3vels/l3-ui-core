@@ -1,45 +1,60 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/typography";
+@import "../../styles/typography/typography.scss";
 @import "../../styles/themes";
 @import "../../styles/keyframes";
 
+$warning-background-color: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
+$negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
+$toast-border-radius: 12px;
+$toast-width: 343px;
+$toast-height: 72px;
+
 .l3-style-toast {
-  @include font-paragraph();
+  @include typography-label-medium();
   @include box-shadow-medium();
-  @include theme-prop(color, text-color-on-primary);
-  margin: $spacing-medium;
+  @include theme-prop(color, var(--text-color-on-primary));
+  // padding: $spacing-xs $spacing-xs;
   position: fixed;
   right: 0;
   left: 0;
   top: 0;
   margin-right: auto;
   margin-left: auto;
-  padding: $spacing-small;
+  width: $toast-width;
+  height: $toast-height;
   align-items: center;
   display: flex;
   min-width: 200px;
-  border-radius: $border-radius-small;
+  border-radius: $toast-border-radius;
 
   &-icon {
     display: flex;
-    padding-left: $spacing-small;
-    padding-right: $spacing-small;
+    padding-left: $spacing-xs-small;
+    padding-right: $spacing-xs-small;
   }
 
   &-content {
     display: inline-flex;
-    line-height: 22px;
-    font-size: 14px;
     flex-grow: 1;
+    width: 191px;
     &-no-icon {
-      padding-left: $spacing-small;
+      padding-left: $spacing-xs-small;
+      width: 191px;
     }
   }
 
   &-action {
     margin-left: $spacing-medium;
     display: flex;
-    &_button,
+    &_button {
+      background: var(--color-black);
+      width: 88px;
+      height: 36px;
+      border-radius: $border-radius-big;
+      padding: $spacing-small-medium $spacing-large;
+      margin-left: -100px;
+    }
     &_link {
       margin-left: $spacing-small;
     }
@@ -47,13 +62,16 @@
 
   &--type {
     &-normal {
-      @include theme-prop(background-color, primary-color);
+      background: $warning-background-color;
     }
     &-positive {
-      @include theme-prop(background-color, positive-color);
+      background: var(--color-background-positive);
     }
     &-negative {
-      @include theme-prop(background-color, negative-color);
+      background: var(--color-background-negative);
+    }
+    &-warning {
+      background: $warning-background-color;
     }
   }
 
@@ -87,6 +105,31 @@
   @include slide-out();
 }
 
-.l3-style-toast-content{
-  font-family: var(--font-family);
+.l3-style-toast-content {
+  display: grid;
+  @include typography-label-medium();
+}
+
+.l3-style-toast-label {
+  @include typography-label-medium();
+  color: var(--color-black);
+  line-height: $font-line-height-small;
+  width: 191px;
+  height: 20px;
+}
+.l3-style-toast-paragraph {
+  @include typography-paragraph-small();
+  color: var(--color-transparent-black-05);
+  line-height: $font-line-height-small;
+  width: 191px;
+  height: 20px;
+}
+
+.l3-style-toast-artwork {
+  // padding: $spacing-small $spacing-small;
+  // background: var (--color-transparent-white-02);
+  background: gray;
+  border-radius: 2px;
+  width: 48px;
+  height: 48px;
 }
