@@ -55,7 +55,7 @@ exports[`Snapshots renders correctly with children 1`] = `
   </div>
   <li
     aria-current={false}
-    className="l3-style-menu-item l3-style-menu-item--active"
+    className="l3-style-menu-item"
     id="undefined-1"
     onClick={[Function]}
     role="menuitem"
@@ -153,7 +153,7 @@ exports[`Snapshots renders correctly with children 1`] = `
   </li>
   <li
     aria-current={false}
-    className="l3-style-menu-item l3-style-menu-item--active"
+    className="l3-style-menu-item"
     id="undefined-2"
     onClick={[Function]}
     role="menuitem"

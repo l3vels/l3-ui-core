@@ -3,7 +3,7 @@
 exports[`Snapshots renders correctly when disabled 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--disabled l3-style-menu-item--active"
+  className="l3-style-menu-item l3-style-menu-item--disabled"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -104,7 +104,7 @@ exports[`Snapshots renders correctly when disabled 1`] = `
 exports[`Snapshots renders correctly when selected 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--selected l3-style-menu-item--active"
+  className="l3-style-menu-item l3-style-menu-item--selected"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -205,7 +205,7 @@ exports[`Snapshots renders correctly when selected 1`] = `
 exports[`Snapshots renders correctly with custom class name 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item dummy-class-name l3-style-menu-item--active"
+  className="l3-style-menu-item dummy-class-name"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -306,7 +306,7 @@ exports[`Snapshots renders correctly with custom class name 1`] = `
 exports[`Snapshots renders correctly with empty props 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--active"
+  className="l3-style-menu-item"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -407,7 +407,7 @@ exports[`Snapshots renders correctly with empty props 1`] = `
 exports[`Snapshots renders correctly with title and SVG icon 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--active"
+  className="l3-style-menu-item"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -529,7 +529,7 @@ exports[`Snapshots renders correctly with title and SVG icon 1`] = `
 exports[`Snapshots renders correctly with title and font icon 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--active"
+  className="l3-style-menu-item"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
