@@ -27,6 +27,7 @@ import { IconType } from "../../Icon/IconConstants";
 import { TAB_INDEX_FOCUS_WITH_JS_ONLY, TooltipPosition } from "./MenuItemConstants";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuItem.scss";
+import { ArrowRightOutline } from "../../Icon/Icons/";
 
 export interface MenuItemProps extends L3ComponentProps {
   title?: string;
@@ -62,6 +63,7 @@ export interface MenuItemProps extends L3ComponentProps {
   menuRef?: React.RefObject<HTMLElement>;
   children?: ReactElement | ReactElement[];
   collapsed?: boolean;
+  active: boolean;
 }
 
 const MenuItem: L3Component<MenuItemProps> & {
@@ -105,7 +107,8 @@ const MenuItem: L3Component<MenuItemProps> & {
       onMouseLeave,
       shouldScrollMenu,
       description = "",
-      collapsed = false
+      collapsed = false,
+      active = true
     },
     ref: ForwardedRef<HTMLElement>
   ) => {
@@ -286,6 +289,7 @@ const MenuItem: L3Component<MenuItemProps> & {
           "l3-style-menu-item--disabled": disabled,
           "l3-style-menu-item--focused": isActive,
           "l3-style-menu-item--selected": selected,
+          "l3-style-menu-item--active": active,
           "l3-style-menu-item-initial-selected": isInitialSelectedState
         })}
         ref={mergedRef}
@@ -337,6 +341,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             </div>
           </>
         )}
+        <Icon iconType={Icon.type.SVG} icon={ArrowRightOutline} iconLabel="my bolt svg icon" iconSize={40} />
       </li>
     );
   }

@@ -1,16 +1,29 @@
 /* eslint-disable */
 /* tslint:disable */
-import * as React from 'react';
+import * as React from "react";
 export interface ArrowUpOutlineProps extends React.SVGAttributes<SVGElement> {
-size?: string | number;
+  size?: string | number;
 }
-const ArrowUpOutline: React.FC<ArrowUpOutlineProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
+const ArrowUpOutline: React.FC<ArrowUpOutlineProps> = ({ size, ...props }) => (
+  <svg viewBox="0 0 40 12" fill="none" width={size || "40"} height={size || "40"} {...props}>
     <g filter="url(#filter0_bd_718_13662)">
-      <path d="M14 22.5858L19.2929 17.2929C19.6834 16.9024 20.3166 16.9024 20.7071 17.2929L26 22.5858" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+      <path
+        d="M14 22.5858L19.2929 17.2929C19.6834 16.9024 20.3166 16.9024 20.7071 17.2929L26 22.5858"
+        stroke="#fff"
+        strokeWidth="2"
+        strokeLinecap="round"
+      />
     </g>
     <defs>
-      <filter id="filter0_bd_718_13662" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter
+        id="filter0_bd_718_13662"
+        x="-10"
+        y="-10"
+        width="60"
+        height="60"
+        filterUnits="userSpaceOnUse"
+        colorInterpolationFilters="sRGB"
+      >
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
         <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13662" />
@@ -24,7 +37,7 @@ const ArrowUpOutline: React.FC<ArrowUpOutlineProps> = ({size, ...props}) => (
     </defs>
   </svg>
 );
-ArrowUpOutline.displayName = 'ArrowUpOutline';
+ArrowUpOutline.displayName = "ArrowUpOutline";
 export default ArrowUpOutline;
 /* tslint:enable */
 /* eslint-enable */
