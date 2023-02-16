@@ -63,7 +63,7 @@ export interface MenuItemProps extends L3ComponentProps {
   menuRef?: React.RefObject<HTMLElement>;
   children?: ReactElement | ReactElement[];
   collapsed?: boolean;
-  active: boolean;
+  active?: boolean;
 }
 
 const MenuItem: L3Component<MenuItemProps> & {
@@ -108,7 +108,7 @@ const MenuItem: L3Component<MenuItemProps> & {
       shouldScrollMenu,
       description = "",
       collapsed = false,
-      active = true
+      active = false
     },
     ref: ForwardedRef<HTMLElement>
   ) => {
