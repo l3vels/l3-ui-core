@@ -215,7 +215,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             iconLabel={title}
             className="l3-style-menu-item__sub_menu_icon"
             ignoreFocusStyle
-            iconSize={25}
+            iconSize={40}
           />
         </div>
       );
