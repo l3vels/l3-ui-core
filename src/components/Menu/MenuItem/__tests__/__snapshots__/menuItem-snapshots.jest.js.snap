@@ -3,7 +3,7 @@
 exports[`Snapshots renders correctly when disabled 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--disabled"
+  className="l3-style-menu-item l3-style-menu-item--disabled l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -27,13 +27,84 @@ exports[`Snapshots renders correctly when disabled 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
 
 exports[`Snapshots renders correctly when selected 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item l3-style-menu-item--selected"
+  className="l3-style-menu-item l3-style-menu-item--selected l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -57,13 +128,84 @@ exports[`Snapshots renders correctly when selected 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
 
 exports[`Snapshots renders correctly with custom class name 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item dummy-class-name"
+  className="l3-style-menu-item dummy-class-name l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -87,13 +229,84 @@ exports[`Snapshots renders correctly with custom class name 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
 
 exports[`Snapshots renders correctly with empty props 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item"
+  className="l3-style-menu-item l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -117,13 +330,84 @@ exports[`Snapshots renders correctly with empty props 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
 
 exports[`Snapshots renders correctly with title and SVG icon 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item"
+  className="l3-style-menu-item l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -168,13 +452,84 @@ exports[`Snapshots renders correctly with title and SVG icon 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
 
 exports[`Snapshots renders correctly with title and font icon 1`] = `
 <li
   aria-current={false}
-  className="l3-style-menu-item"
+  className="l3-style-menu-item l3-style-menu-item--active"
   id="undefined-undefined"
   onClick={[Function]}
   role="menuitem"
@@ -209,5 +564,76 @@ exports[`Snapshots renders correctly with title and font icon 1`] = `
       }
     }
   />
+  <svg
+    aria-hidden={false}
+    aria-label="my bolt svg icon"
+    className="icon_component icon_component--clickable"
+    fill="none"
+    height="40"
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+    viewBox="0 0 12 40"
+    width="40"
+  >
+    <g
+      filter="url(#filter0_bd_718_13661)"
+    >
+      <path
+        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeWidth="2"
+      />
+    </g>
+    <defs>
+      <filter
+        colorInterpolationFilters="sRGB"
+        filterUnits="userSpaceOnUse"
+        height="60"
+        id="filter0_bd_718_13661"
+        width="60"
+        x="-10"
+        y="-10"
+      >
+        <feFlood
+          floodOpacity="0"
+          result="BackgroundImageFix"
+        />
+        <feGaussianBlur
+          in="BackgroundImageFix"
+          stdDeviation="5"
+        />
+        <feComposite
+          in2="SourceAlpha"
+          operator="in"
+          result="effect1_backgroundBlur_718_13661"
+        />
+        <feColorMatrix
+          in="SourceAlpha"
+          result="hardAlpha"
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        />
+        <feOffset
+          dy="1"
+        />
+        <feGaussianBlur
+          stdDeviation="1.5"
+        />
+        <feColorMatrix
+          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+        />
+        <feBlend
+          in2="effect1_backgroundBlur_718_13661"
+          result="effect2_dropShadow_718_13661"
+        />
+        <feBlend
+          in="SourceGraphic"
+          in2="effect2_dropShadow_718_13661"
+          result="shape"
+        />
+      </filter>
+    </defs>
+  </svg>
 </li>
 `;
