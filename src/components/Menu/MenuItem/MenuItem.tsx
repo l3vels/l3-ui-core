@@ -27,7 +27,6 @@ import { IconType } from "../../Icon/IconConstants";
 import { TAB_INDEX_FOCUS_WITH_JS_ONLY, TooltipPosition } from "./MenuItemConstants";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuItem.scss";
-import { ArrowRightOutline, Activity } from "../../Icon/Icons/";
 
 export interface MenuItemProps extends L3ComponentProps {
   title?: string;
