@@ -339,9 +339,9 @@ const MenuItem: L3Component<MenuItemProps> & {
                 </DialogContentContainer>
               )}
             </div>
+            <Icon iconType={Icon.type.SVG} icon={DropdownChevronRight} iconLabel="my bolt svg icon" iconSize={27} />
           </>
         )}
-        <Icon iconType={Icon.type.SVG} icon={DropdownChevronRight} iconLabel="my bolt svg icon" iconSize={27} />
       </li>
     );
   }
