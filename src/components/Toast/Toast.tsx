@@ -12,7 +12,6 @@ import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import "./Toast";
 import { ArtWork } from "./ToastArtWork/ToastArtWork";
-import { AvatarType } from "../Avatar/AvatarConstants";
 
 interface ToastProps extends L3ComponentProps {
   actions?: ToastAction[];
@@ -39,8 +38,6 @@ interface ToastProps extends L3ComponentProps {
   artWork?: string;
   artWorkType?: "img" | "icon";
   avatar?: boolean;
-  avatarSrc?: string;
-  avatarType?: AvatarType.IMG;
 }
 
 const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof ToastActionType } = ({
@@ -56,8 +53,6 @@ const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof T
   closeable = "off",
   artWork,
   avatar,
-  // avatarSrc,
-  // avatarType,
   onClose = NOOP,
   className,
   label = "Label",

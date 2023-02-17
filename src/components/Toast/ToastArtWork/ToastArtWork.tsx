@@ -27,16 +27,7 @@ export const ArtWork: React.FC<ArtWorkProps> & {
     case ToastArtWorkType.IMG:
       return <img role={role} alt={ariaLabel} src={src} width="48px" height="48px" className={className} />;
     case ToastArtWorkType.ICON:
-      return (
-        <Icon
-          icon={icon}
-          aria-label={ariaLabel}
-          // role={role}
-          clickable={false}
-          className={className}
-          ariaHidden={false}
-        />
-      );
+      return <Icon icon={icon} aria-label={ariaLabel} clickable={false} className={className} ariaHidden={false} />;
     default:
       return null;
   }

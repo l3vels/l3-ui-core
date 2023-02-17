@@ -26,23 +26,19 @@ $toast-height: 72px;
   &-icon-small {
     margin-left: 22.67px;
     margin-right: 22.67px;
-    // border: 1px solid white;
   }
   &-icon-large {
     margin-left: 23.17px;
     margin-right: 17.16px;
-    // border: 1px solid white;
   }
 
   &-content {
     display: inline-flex;
     flex-grow: 1;
-    // border: 1px solid red;
     margin-right: 22px;
     &-no-icon {
       padding-right: 24px;
       margin-left: -17px;
-      // border: 1px solid black;
     }
   }
 
@@ -113,17 +109,14 @@ $toast-height: 72px;
   @include typography-label-medium();
   color: var(--color-black);
   line-height: $font-line-height-small;
-  // border: 1px solid white;
 }
 .l3-style-toast-paragraph {
   @include typography-paragraph-small();
   color: var(--color-transparent-black-05);
   line-height: $font-line-height-small;
-  // border: 1px solid black;
 }
 
 .l3-style-toast-artwork {
-  // padding: $spacing-small $spacing-small;
   background: var (--color-transparent-white-02);
   border-radius: 2px;
   width: 48px;
