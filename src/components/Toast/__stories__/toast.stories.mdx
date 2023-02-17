@@ -9,7 +9,22 @@ import {
   ATTENTION_BOX,
   TOOLTIP
 } from "../../../storybook/components/related-components/component-description-map";
-import { Delete } from "../../Icon/Icons";
+import { Delete, Robot } from "../../Icon/Icons";
+import {
+  femaleIcon,
+  guest,
+  home,
+  maleIcon,
+  minus,
+  owner,
+  person1,
+  person2,
+  person3,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4
+} from "./assets";
 import "./toast.stories.scss";
 
 export const metaSettings = createStoryMetaSettings({
@@ -107,18 +122,65 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
           />
           <Toast open autoHideDuration={5000} actions={actions} className="l3-storybook-toast_wrapper" />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive check
+
+<Canvas>
+  <Story name="Positive check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable="on"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+          />
         </div>
       );
     }}
@@ -146,20 +208,20 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
-            artWork={true}
+            artWork={home}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
-            artWork={true}
+            artWork={home}
           />
-          <Toast open autoHideDuration={5000} artWork={true} actions={actions} className="l3-storybook-toast_wrapper" />
+          <Toast open autoHideDuration={5000} artWork={home} actions={actions} className="l3-storybook-toast_wrapper" />
         </div>
       );
     }}
@@ -187,18 +249,22 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
@@ -206,6 +272,8 @@ A toast notification is a message object that presents timely information, inclu
             actions={actions}
             hideIcon={false}
             className="l3-storybook-toast_wrapper"
+            iconSize="small"
+            icon={Robot}
           />
         </div>
       );
@@ -234,20 +302,22 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
             iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
             iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
@@ -256,6 +326,7 @@ A toast notification is a message object that presents timely information, inclu
             hideIcon={false}
             className="l3-storybook-toast_wrapper"
             iconSize="large"
+            icon={Robot}
           />
         </div>
       );
@@ -284,7 +355,7 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             avatar
           />
@@ -292,7 +363,7 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             avatar
@@ -333,7 +404,7 @@ A toast notification is a message object that presents timely information, inclu
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.WARNING}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
           />
@@ -343,6 +414,55 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.WARNING}
             actions={actions}
             className="l3-storybook-toast_wrapper"
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning check
+
+<Canvas>
+  <Story name="Warning check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.WARNING}
+            paragraph="Paragraph"
+            label="Label"
+            closeable="on"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
           />
         </div>
       );
@@ -373,17 +493,17 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.WARNING}
             label="Label"
             className="l3-storybook-toast_wrapper"
-            artWork={true}
+            artWork={person1}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.WARNING}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
-            artWork={true}
+            artWork={person1}
           />
           <Toast
             open
@@ -391,7 +511,7 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.WARNING}
             actions={actions}
             className="l3-storybook-toast_wrapper"
-            artWork={true}
+            artWork={person1}
           />
         </div>
       );
@@ -420,20 +540,24 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
             type={Toast.types.WARNING}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
             type={Toast.types.WARNING}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
@@ -442,6 +566,8 @@ A toast notification is a message object that presents timely information, inclu
             hideIcon={false}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.WARNING}
+            iconSize="small"
+            icon={Robot}
           />
         </div>
       );
@@ -470,22 +596,26 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
             iconSize="large"
             type={Toast.types.WARNING}
+            iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
             iconSize="large"
             type={Toast.types.WARNING}
+            iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
@@ -495,6 +625,8 @@ A toast notification is a message object that presents timely information, inclu
             className="l3-storybook-toast_wrapper"
             iconSize="large"
             type={Toast.types.WARNING}
+            iconSize="large"
+            icon={Robot}
           />
         </div>
       );
@@ -532,7 +664,7 @@ A toast notification is a message object that presents timely information, inclu
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.WARNING}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             avatar
@@ -580,7 +712,7 @@ A toast notification is a message object that presents timely information, inclu
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.NEGATIVE}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
           />
@@ -590,6 +722,55 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.NEGATIVE}
             actions={actions}
             className="l3-storybook-toast_wrapper"
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative check
+
+<Canvas>
+  <Story name="Negative check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            paragraph="Paragraph"
+            label="Label"
+            closeable="on"
+            hideIcon={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
           />
         </div>
       );
@@ -620,17 +801,17 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.NEGATIVE}
             label="Label"
             className="l3-storybook-toast_wrapper"
-            artWork={true}
+            artWork={avatar2}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.NEGATIVE}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
-            artWork={true}
+            artWork={avatar2}
           />
           <Toast
             open
@@ -638,7 +819,7 @@ A toast notification is a message object that presents timely information, inclu
             type={Toast.types.NEGATIVE}
             actions={actions}
             className="l3-storybook-toast_wrapper"
-            artWork={true}
+            artWork={avatar2}
           />
         </div>
       );
@@ -667,20 +848,24 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
             type={Toast.types.NEGATIVE}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
             type={Toast.types.NEGATIVE}
+            iconSize="small"
+            icon={Robot}
           />
           <Toast
             open
@@ -689,6 +874,8 @@ A toast notification is a message object that presents timely information, inclu
             hideIcon={false}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.NEGATIVE}
+            iconSize="small"
+            icon={Robot}
           />
         </div>
       );
@@ -717,22 +904,24 @@ A toast notification is a message object that presents timely information, inclu
             open
             autoHideDuration={5000}
             label="Label"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={false}
             type={Toast.types.NEGATIVE}
             iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             hideIcon={false}
             type={Toast.types.NEGATIVE}
             iconSize="large"
+            icon={Robot}
           />
           <Toast
             open
@@ -742,6 +931,7 @@ A toast notification is a message object that presents timely information, inclu
             className="l3-storybook-toast_wrapper"
             type={Toast.types.NEGATIVE}
             iconSize="large"
+            icon={Robot}
           />
         </div>
       );
@@ -779,7 +969,7 @@ A toast notification is a message object that presents timely information, inclu
             autoHideDuration={5000}
             className="l3-storybook-toast_wrapper"
             type={Toast.types.NEGATIVE}
-            paragraph="paragraph"
+            paragraph="Paragraph"
             label="Label"
             closeable="on"
             avatar

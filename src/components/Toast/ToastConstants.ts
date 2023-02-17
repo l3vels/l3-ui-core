@@ -1,6 +1,6 @@
-import Info from "../Icon/Icons/components/Info";
-import Check from "../Icon/Icons/components/Check";
-import Alert from "../Icon/Icons/components/Alert";
+import WarningCheck from "../Icon/Icons/components/WarningCheck";
+import PositiveCheck from "../Icon/Icons/components/PositiveCheck";
+import NegativeCheck from "../Icon/Icons/components/NegativeCheck";
 
 export enum ToastType {
   WARNING = "warning",
@@ -14,9 +14,9 @@ export enum ToastActionType {
 }
 
 export const defaultIconMap = {
-  [ToastType.WARNING]: Info,
-  [ToastType.POSITIVE]: Check,
-  [ToastType.NEGATIVE]: Alert
+  [ToastType.WARNING]: WarningCheck,
+  [ToastType.POSITIVE]: PositiveCheck,
+  [ToastType.NEGATIVE]: NegativeCheck
 };
 
 export type ToastAction = {
@@ -29,4 +29,13 @@ export type ToastAction = {
 export enum ToastIconSize {
   SMALL = "14.67px",
   LARGE = "25.67px"
+}
+
+export enum ToastArtWorkType {
+  IMG = "img",
+  ICON = "icon"
+}
+export enum ToastArtWorkSize {
+  SMALL = "24px",
+  LARGE = "48px"
 }
