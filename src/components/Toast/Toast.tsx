@@ -10,7 +10,7 @@ import { ToastAction, ToastActionType, ToastType, ToastIconSize } from "./ToastC
 import { getIcon } from "./ToastHelpers";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
-import "./Toast.scss";
+import "./Toast";
 import { ArtWork } from "./ToastArtWork/ToastArtWork";
 import { AvatarType } from "../Avatar/AvatarConstants";
 
