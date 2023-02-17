@@ -80,7 +80,7 @@ const EditableInput: L3Component<EditableInputProps> = forwardRef(
       textareaSubmitOnEnter = false,
       onArrowKeyDown,
       ariaLabel,
-      autoFocus = true
+      autoFocus = false
     },
     ref
   ) => {
