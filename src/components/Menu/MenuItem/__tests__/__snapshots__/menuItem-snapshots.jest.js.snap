@@ -31,72 +31,20 @@ exports[`Snapshots renders correctly when disabled 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
@@ -132,72 +80,20 @@ exports[`Snapshots renders correctly when selected 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
@@ -233,72 +129,20 @@ exports[`Snapshots renders correctly with custom class name 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
@@ -334,72 +178,20 @@ exports[`Snapshots renders correctly with empty props 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
@@ -456,72 +248,20 @@ exports[`Snapshots renders correctly with title and SVG icon 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
@@ -568,72 +308,20 @@ exports[`Snapshots renders correctly with title and font icon 1`] = `
     aria-hidden={false}
     aria-label="my bolt svg icon"
     className="icon_component icon_component--clickable"
-    fill="none"
-    height="40"
+    fill="currentColor"
+    height="27"
     onClick={[Function]}
     role="button"
     tabIndex={0}
-    viewBox="0 0 12 40"
-    width="40"
+    viewBox="0 0 20 20"
+    width="27"
   >
-    <g
-      filter="url(#filter0_bd_718_13661)"
-    >
-      <path
-        d="M17 14L22.2929 19.2929C22.6834 19.6834 22.6834 20.3166 22.2929 20.7071L17 26"
-        stroke="#fff"
-        strokeLinecap="round"
-        strokeWidth="2"
-      />
-    </g>
-    <defs>
-      <filter
-        colorInterpolationFilters="sRGB"
-        filterUnits="userSpaceOnUse"
-        height="60"
-        id="filter0_bd_718_13661"
-        width="60"
-        x="-10"
-        y="-10"
-      >
-        <feFlood
-          floodOpacity="0"
-          result="BackgroundImageFix"
-        />
-        <feGaussianBlur
-          in="BackgroundImageFix"
-          stdDeviation="5"
-        />
-        <feComposite
-          in2="SourceAlpha"
-          operator="in"
-          result="effect1_backgroundBlur_718_13661"
-        />
-        <feColorMatrix
-          in="SourceAlpha"
-          result="hardAlpha"
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-        />
-        <feOffset
-          dy="1"
-        />
-        <feGaussianBlur
-          stdDeviation="1.5"
-        />
-        <feColorMatrix
-          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
-        />
-        <feBlend
-          in2="effect1_backgroundBlur_718_13661"
-          result="effect2_dropShadow_718_13661"
-        />
-        <feBlend
-          in="SourceGraphic"
-          in2="effect2_dropShadow_718_13661"
-          result="shape"
-        />
-      </filter>
-    </defs>
+    <path
+      clipRule="evenodd"
+      d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z"
+      fill="currentColor"
+      fillRule="evenodd"
+    />
   </svg>
 </li>
 `;
