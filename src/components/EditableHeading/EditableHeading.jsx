@@ -28,7 +28,8 @@ const EditableHeading = props => {
     contentRenderer,
     tooltip,
     highlightTerm,
-    insetFocus
+    insetFocus,
+    autoFocus
   } = props;
 
   // State
@@ -166,7 +167,8 @@ const EditableHeading = props => {
       onIgnoreBlurEvent: onIgnoreBlurEventCallback,
       onError: onInputErrorCallback,
       onSuccess: onInputSuccessCallback,
-      ariaLabel: props.inputAriaLabel
+      ariaLabel: props.inputAriaLabel,
+      autoFocus: autoFocus
     };
   };
 

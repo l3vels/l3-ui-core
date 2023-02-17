@@ -45,6 +45,7 @@ export interface EditableInputProps extends L3ComponentProps {
   onSuccess?: () => void;
   onKeyDown?: (event: React.KeyboardEvent, value: string) => void;
   onTabHandler?: (value: string, event: React.KeyboardEvent) => void;
+  autoFocus?: boolean;
 }
 
 const EditableInput: L3Component<EditableInputProps> = forwardRef(
@@ -78,7 +79,8 @@ const EditableInput: L3Component<EditableInputProps> = forwardRef(
       onCancelEditing,
       textareaSubmitOnEnter = false,
       onArrowKeyDown,
-      ariaLabel
+      ariaLabel,
+      autoFocus = true
     },
     ref
   ) => {
@@ -244,6 +246,7 @@ const EditableInput: L3Component<EditableInputProps> = forwardRef(
         rows={rows}
         maxLength={maxLength}
         aria-label={ariaLabel}
+        autoFocus={autoFocus}
       />
     );
   }
