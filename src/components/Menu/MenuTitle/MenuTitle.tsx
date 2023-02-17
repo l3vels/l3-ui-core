@@ -9,6 +9,7 @@ import Avatar from "../../Avatar/Avatar";
 
 interface MenuTitleProps extends L3ComponentProps {
   /** Backward compatibility for props naming **/
+  children?: React.ReactNode;
   classname?: string;
   caption?: string;
   captionPosition?: MenuTitleCaptionPosition;
@@ -21,6 +22,7 @@ interface MenuTitleProps extends L3ComponentProps {
 }
 
 const MenuTitle: FC<MenuTitleProps> & {
+  children?: React.ReactNode;
   positions?: typeof MenuTitleCaptionPosition;
   captionPositions?: typeof MenuTitleCaptionPosition;
   isMenuChild?: boolean;
@@ -30,6 +32,7 @@ const MenuTitle: FC<MenuTitleProps> & {
   imageSrc?: string;
   onImageClick?: (event: React.MouseEvent | React.KeyboardEvent, avatarId: string) => void;
 } = ({
+  children,
   className,
   // Backward compatibility for props naming
   classname,
@@ -98,10 +101,11 @@ const MenuTitle: FC<MenuTitleProps> & {
       }
     }
   };
+
   return (
     <div className={cx("l3-style-menu-title", overrideClassName)}>
       {renderTitlteIconIfNeeded()}
-      {renderCaptionIfNeeded()}
+      {children ? children : renderCaptionIfNeeded()}
     </div>
   );
 };
