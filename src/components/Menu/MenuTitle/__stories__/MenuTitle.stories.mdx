@@ -27,7 +27,10 @@ export const metaSettings = createStoryMetaSettings({
 ## Overview
 
 <Canvas>
-  <Story name="Overview" args={{ caption: "Menu title" }}>
+  <Story
+    name="Overview"
+    args={{ caption: "Menu title", imageSrc: "https://picsum.photos/200", onImageClick: () => {} }}
+  >
     {menuTitleTemplate.bind({})}
   </Story>
 </Canvas>

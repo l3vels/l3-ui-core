@@ -9,3 +9,5 @@ dist
 /build
 coverage
 .scannerwork
+
+.DS_Store

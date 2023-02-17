@@ -4,6 +4,7 @@ import { backwardCompatibilityForProperties } from "../../../helpers/backwardCom
 import { MenuTitleCaptionPosition, MenuTitleSize } from "./MenuTitleConstants";
 import { L3ComponentProps } from "../../../types";
 import "./MenuTitle.scss";
+import Avatar from "../../Avatar/Avatar";
 // import EditableHeading from "../../EditableHeading/EditableHeading";
 
 interface MenuTitleProps extends L3ComponentProps {
@@ -15,6 +16,8 @@ interface MenuTitleProps extends L3ComponentProps {
   iconName?: string;
   titleEditable?: boolean;
   collapsed?: boolean;
+  imageSrc?: string;
+  onImageClick?: (event: React.MouseEvent | React.KeyboardEvent, avatarId: string) => void;
 }
 
 const MenuTitle: FC<MenuTitleProps> & {
@@ -24,6 +27,8 @@ const MenuTitle: FC<MenuTitleProps> & {
   size?: typeof MenuTitleSize;
   iconName?: string;
   titleEditable?: boolean;
+  imageSrc?: string;
+  onImageClick?: (event: React.MouseEvent | React.KeyboardEvent, avatarId: string) => void;
 } = ({
   className,
   // Backward compatibility for props naming
@@ -33,7 +38,9 @@ const MenuTitle: FC<MenuTitleProps> & {
   id,
   size = MenuTitleSize.LARGE,
   titleEditable = false,
-  collapsed = false
+  collapsed = false,
+  imageSrc,
+  onImageClick
 }) => {
   const overrideClassName = backwardCompatibilityForProperties([className, classname]);
   const menutitleSizeClassName =
@@ -50,15 +57,7 @@ const MenuTitle: FC<MenuTitleProps> & {
   const renderTitlteIconIfNeeded = () => {
     return (
       <div className="polygon-main-container">
-        <svg className="svg">
-          <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
-            <path d="M0.405,0.022 C0.465,-0.007,0.535,-0.007,0.595,0.022 L0.822,0.133 C0.881,0.162,0.923,0.215,0.937,0.278 L0.995,0.536 C1,0.598,0.994,0.663,0.955,0.714 L0.795,0.918 C0.754,0.97,0.691,1,0.625,1 H0.375 C0.309,1,0.246,0.97,0.205,0.918 L0.045,0.714 C0.006,0.663,-0.009,0.598,0.005,0.536 L0.063,0.278 C0.077,0.215,0.119,0.162,0.178,0.133 L0.405,0.022,NaN f, i, l0 lNaN u, r, p, a0 i, n, tNaN r, a0 d, i, a0 lNaN"></path>
-          </clipPath>
-        </svg>
-
-        <div className="clipped">
-          <img src="https://picsum.photos/200" alt="title" />
-        </div>
+        <Avatar size={Avatar.sizes.SMALL} src={imageSrc} type={Avatar.types.IMG} onClick={onImageClick} rectangle />
       </div>
     );
   };
