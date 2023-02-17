@@ -27,7 +27,7 @@ import { IconType } from "../../Icon/IconConstants";
 import { TAB_INDEX_FOCUS_WITH_JS_ONLY, TooltipPosition } from "./MenuItemConstants";
 import { CloseMenuOption } from "../Menu/MenuConstants";
 import "./MenuItem.scss";
-import { ArrowRightOutline } from "../../Icon/Icons/";
+import { ArrowRightOutline, Activity } from "../../Icon/Icons/";
 
 export interface MenuItemProps extends L3ComponentProps {
   title?: string;
@@ -341,7 +341,7 @@ const MenuItem: L3Component<MenuItemProps> & {
             </div>
           </>
         )}
-        <Icon iconType={Icon.type.SVG} icon={ArrowRightOutline} iconLabel="my bolt svg icon" iconSize={40} />
+        <Icon iconType={Icon.type.SVG} icon={DropdownChevronRight} iconLabel="my bolt svg icon" iconSize={27} />
       </li>
     );
   }
