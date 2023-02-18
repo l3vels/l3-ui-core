@@ -38,10 +38,29 @@ interface ToastProps extends L3ComponentProps {
   artWork?: string;
   artWorkType?: "img" | "icon";
   avatar?: boolean;
+  avatarType?: "img" | "icon" | "text";
+  avatarSize?: "small" | "medium" | "large";
+  avatarBorder?: boolean;
+  avatarSrc?: string;
+  avatarIcon?: string;
+  avatarText?: string;
+  avatarAriaLabel?: string;
+  avatarRole?: string;
+  avatarBackgroundColor?: string;
+  avatarTextClassName?: string;
+  avatarRectangle?: boolean;
+  avatarSquare?: boolean;
+  avatarDisabled?: boolean;
+  avatarClassName?: string;
+  avatarId?: string;
+  avatarDataTestId?: string;
 }
 
-const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof ToastActionType } = ({
-  open = false,
+const Toast: FC<ToastProps> & {
+  types?: typeof ToastType;
+  actionTypes?: typeof ToastActionType;
+} = ({
+  open = true,
   autoHideDuration = null,
   type = ToastType.POSITIVE,
   icon,
@@ -56,7 +75,23 @@ const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof T
   onClose = NOOP,
   className,
   label = "Label",
-  paragraph = "paragraph"
+  paragraph = "paragraph",
+  avatarType,
+  avatarSize = "large",
+  avatarSrc,
+  avatarIcon,
+  avatarText,
+  avatarAriaLabel,
+  avatarRole,
+  avatarBorder,
+  avatarTextClassName,
+  avatarBackgroundColor,
+  avatarRectangle,
+  avatarSquare,
+  avatarDisabled,
+  avatarClassName,
+  avatarId,
+  avatarDataTestId
 }) => {
   const toastButtons: JSX.Element[] | null = useMemo(() => {
     return actions
@@ -116,10 +151,30 @@ const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof T
           {avatar && (
             <div className="l3-style-toast-avatar">
               <Avatar
-                type={Avatar.types.IMG}
-                size={Avatar.sizes.SMALL}
-                rectangle
-                src={"static/media/src/components/Avatar/__stories__/assets/person1.png"}
+                type={
+                  (avatarType === "img" && Avatar.types.IMG) ||
+                  (avatarType === "icon" && Avatar.types.ICON) ||
+                  (avatarType === "text" && Avatar.types.TEXT)
+                }
+                size={
+                  (avatarSize === "small" && Avatar.sizes.SMALL) ||
+                  (avatarSize === "large" && Avatar.sizes.LARGE) ||
+                  (avatarSize === "medium" && Avatar.sizes.MEDIUM)
+                }
+                src={avatarSrc}
+                icon={avatarIcon}
+                text={avatarText}
+                ariaLabel={avatarAriaLabel}
+                role={avatarRole}
+                rectangle={avatarRectangle}
+                square={avatarSquare}
+                isDisabled={avatarDisabled}
+                withoutBorder={avatarBorder}
+                textClassName={avatarTextClassName}
+                backgroundColor={avatarBackgroundColor}
+                className={avatarClassName}
+                id={avatarId}
+                data-testid={avatarDataTestId}
               />
             </div>
           )}
