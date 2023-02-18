@@ -10,9 +10,51 @@ exports[`Toast renders correctly and don't renders close button if closeable=fal
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "10px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 16 12"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -40,9 +82,51 @@ exports[`Toast renders correctly when open is true 1`] = `
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "10px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 16 12"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -55,6 +139,35 @@ exports[`Toast renders correctly when open is true 1`] = `
       paragraph
     </div>
   </div>
+  <button
+    aria-busy={false}
+    aria-disabled={false}
+    aria-label="close-toast"
+    className="l3-style-toast_close-button l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-on-primary-color"
+    data-testid="button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M0.505077 0.292893C0.895601 -0.0976311 1.52877 -0.0976311 1.91929 0.292893L8 6.3736L14.0807 0.292893C14.4712 -0.0976311 15.1044 -0.0976311 15.4949 0.292893C15.8855 0.683418 15.8855 1.31658 15.4949 1.70711L9.41421 7.78782L15.7071 14.0807C16.0976 14.4712 16.0976 15.1044 15.7071 15.4949C15.3166 15.8854 14.6834 15.8854 14.2929 15.4949L8 9.20203L1.70711 15.4949C1.31658 15.8854 0.683417 15.8854 0.292893 15.4949C-0.0976311 15.1044 -0.0976311 14.4712 0.292893 14.0807L6.58579 7.78782L0.505077 1.70711C0.114552 1.31658 0.114553 0.683418 0.505077 0.292893Z"
+        fill="black"
+        fill-opacity="0.5"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
 </div>
 `;
 
@@ -66,9 +179,51 @@ exports[`Toast renders correctly with button 1`] = `
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "10px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 16 12"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -99,6 +254,35 @@ exports[`Toast renders correctly with button 1`] = `
       Undo 5
     </button>
   </div>
+  <button
+    aria-busy={false}
+    aria-disabled={false}
+    aria-label="close-toast"
+    className="l3-style-toast_close-button l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-on-primary-color"
+    data-testid="button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M0.505077 0.292893C0.895601 -0.0976311 1.52877 -0.0976311 1.91929 0.292893L8 6.3736L14.0807 0.292893C14.4712 -0.0976311 15.1044 -0.0976311 15.4949 0.292893C15.8855 0.683418 15.8855 1.31658 15.4949 1.70711L9.41421 7.78782L15.7071 14.0807C16.0976 14.4712 16.0976 15.1044 15.7071 15.4949C15.3166 15.8854 14.6834 15.8854 14.2929 15.4949L8 9.20203L1.70711 15.4949C1.31658 15.8854 0.683417 15.8854 0.292893 15.4949C-0.0976311 15.1044 -0.0976311 14.4712 0.292893 14.0807L6.58579 7.78782L0.505077 1.70711C0.114552 1.31658 0.114553 0.683418 0.505077 0.292893Z"
+        fill="black"
+        fill-opacity="0.5"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
 </div>
 `;
 
@@ -110,9 +294,51 @@ exports[`Toast renders correctly with button and link 1`] = `
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "10px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 16 12"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -143,6 +369,35 @@ exports[`Toast renders correctly with button and link 1`] = `
       Undo 5
     </button>
   </div>
+  <button
+    aria-busy={false}
+    aria-disabled={false}
+    aria-label="close-toast"
+    className="l3-style-toast_close-button l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-on-primary-color"
+    data-testid="button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M0.505077 0.292893C0.895601 -0.0976311 1.52877 -0.0976311 1.91929 0.292893L8 6.3736L14.0807 0.292893C14.4712 -0.0976311 15.1044 -0.0976311 15.4949 0.292893C15.8855 0.683418 15.8855 1.31658 15.4949 1.70711L9.41421 7.78782L15.7071 14.0807C16.0976 14.4712 16.0976 15.1044 15.7071 15.4949C15.3166 15.8854 14.6834 15.8854 14.2929 15.4949L8 9.20203L1.70711 15.4949C1.31658 15.8854 0.683417 15.8854 0.292893 15.4949C-0.0976311 15.1044 -0.0976311 14.4712 0.292893 14.0807L6.58579 7.78782L0.505077 1.70711C0.114552 1.31658 0.114553 0.683418 0.505077 0.292893Z"
+        fill="black"
+        fill-opacity="0.5"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
 </div>
 `;
 
@@ -154,9 +409,51 @@ exports[`Toast renders correctly with link 1`] = `
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "10px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="12"
+          viewBox="0 0 16 12"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -172,6 +469,35 @@ exports[`Toast renders correctly with link 1`] = `
   <div
     className="l3-style-toast-action"
   />
+  <button
+    aria-busy={false}
+    aria-disabled={false}
+    aria-label="close-toast"
+    className="l3-style-toast_close-button l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-on-primary-color"
+    data-testid="button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M0.505077 0.292893C0.895601 -0.0976311 1.52877 -0.0976311 1.91929 0.292893L8 6.3736L14.0807 0.292893C14.4712 -0.0976311 15.1044 -0.0976311 15.4949 0.292893C15.8855 0.683418 15.8855 1.31658 15.4949 1.70711L9.41421 7.78782L15.7071 14.0807C16.0976 14.4712 16.0976 15.1044 15.7071 15.4949C15.3166 15.8854 14.6834 15.8854 14.2929 15.4949L8 9.20203L1.70711 15.4949C1.31658 15.8854 0.683417 15.8854 0.292893 15.4949C-0.0976311 15.1044 -0.0976311 14.4712 0.292893 14.0807L6.58579 7.78782L0.505077 1.70711C0.114552 1.31658 0.114553 0.683418 0.505077 0.292893Z"
+        fill="black"
+        fill-opacity="0.5"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
 </div>
 `;
 
@@ -183,9 +509,51 @@ exports[`Toast renders correctly with negative type 1`] = `
 >
   <div
     className="l3-style-toast-icon-large"
-  />
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px solid white",
+          "borderRadius": "50%",
+          "display": "flex",
+          "height": "37.78px",
+          "marginLeft": "-10px",
+          "width": "37.78px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "background": "black",
+            "borderRadius": "50%",
+            "display": "flex",
+            "height": "33.9px",
+            "margin": 0,
+            "padding": "15px",
+            "width": "33.9px",
+          }
+        }
+      >
+        <svg
+          fill="none"
+          height="16"
+          viewBox="0 0 4 16"
+          width="4"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.02255 3.41831C1.5771 3.41831 1.20437 3.26832 0.895277 2.96832C0.586186 2.66832 0.431641 2.29558 0.431641 1.85013C0.431641 1.40922 0.586186 1.03649 0.895277 0.745583C1.20437 0.454674 1.5771 0.304688 2.02255 0.304688C2.468 0.304688 2.83619 0.450129 3.12709 0.745583C3.42255 1.04104 3.568 1.40922 3.568 1.85013C3.568 2.29558 3.42255 2.66377 3.12709 2.96832C2.83164 3.26832 2.46346 3.41831 2.02255 3.41831ZM3.418 15.6956H0.604368V4.60015H3.418V15.6956Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
   <div
-    className="l3-style-toast-content l3-style-toast-content-no-icon"
+    className="l3-style-toast-content"
   >
     <div
       className="l3-style-toast-label"
@@ -198,5 +566,34 @@ exports[`Toast renders correctly with negative type 1`] = `
       paragraph
     </div>
   </div>
+  <button
+    aria-busy={false}
+    aria-disabled={false}
+    aria-label="close-toast"
+    className="l3-style-toast_close-button l3-style-button l3-style-button--size-small l3-style-button--kind-tertiary l3-style-button--color-on-primary-color"
+    data-testid="button"
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    <svg
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M0.505077 0.292893C0.895601 -0.0976311 1.52877 -0.0976311 1.91929 0.292893L8 6.3736L14.0807 0.292893C14.4712 -0.0976311 15.1044 -0.0976311 15.4949 0.292893C15.8855 0.683418 15.8855 1.31658 15.4949 1.70711L9.41421 7.78782L15.7071 14.0807C16.0976 14.4712 16.0976 15.1044 15.7071 15.4949C15.3166 15.8854 14.6834 15.8854 14.2929 15.4949L8 9.20203L1.70711 15.4949C1.31658 15.8854 0.683417 15.8854 0.292893 15.4949C-0.0976311 15.1044 -0.0976311 14.4712 0.292893 14.0807L6.58579 7.78782L0.505077 1.70711C0.114552 1.31658 0.114553 0.683418 0.505077 0.292893Z"
+        fill="black"
+        fill-opacity="0.5"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </button>
 </div>
 `;

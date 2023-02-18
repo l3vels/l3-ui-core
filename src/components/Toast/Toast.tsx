@@ -10,7 +10,7 @@ import { ToastAction, ToastActionType, ToastType, ToastIconSize } from "./ToastC
 import { getIcon } from "./ToastHelpers";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
-import "./Toast";
+import "./Toast.scss";
 import { ArtWork } from "./ToastArtWork/ToastArtWork";
 
 interface ToastProps extends L3ComponentProps {
@@ -25,7 +25,7 @@ interface ToastProps extends L3ComponentProps {
   /** The action to display */
   action?: JSX.Element;
   /** If false, won't show the close button */
-  closeable?: "on" | "off";
+  closeable?: boolean;
   onClose?: () => void;
   /** The number of milliseconds to wait before
    * automatically closing the Toast
@@ -45,12 +45,12 @@ const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof T
   autoHideDuration = null,
   type = ToastType.POSITIVE,
   icon,
-  hideIcon = true,
+  hideIcon = false,
   action: deprecatedAction,
   actions,
   children,
   iconSize,
-  closeable = "off",
+  closeable = true,
   artWork,
   avatar,
   onClose = NOOP,
@@ -111,54 +111,56 @@ const Toast: FC<ToastProps> & { types?: typeof ToastType; actionTypes?: typeof T
 
   return (
     <CSSTransition in={open} classNames="l3-style-toast-animation" timeout={400} unmountOnExit>
-      <div className={classNames} role="alert" aria-live="polite">
-        {avatar && (
-          <div className="l3-style-toast-avatar">
-            <Avatar
-              type={Avatar.types.IMG}
-              size={Avatar.sizes.SMALL}
-              rectangle
-              src={"static/media/src/components/Avatar/__stories__/assets/person1.png"}
-            />
-          </div>
-        )}
-        {(!artWork || !avatar) && iconSize === "small" ? (
-          <div className="l3-style-toast-icon-small">{iconElement}</div>
-        ) : (
-          <div className="l3-style-toast-icon-large">{iconElement}</div>
-        )}
-        {artWork && (
-          <div className="l3-style-toast-artwork">
-            {" "}
-            <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />{" "}
-          </div>
-        )}
-        <div
-          className={cx("l3-style-toast-content", {
-            "l3-style-toast-content-no-icon": !iconElement
-          })}
-        >
-          <>
-            <div className="l3-style-toast-label">{label || children}</div>
-            <div className="l3-style-toast-paragraph">{paragraph}</div>
-          </>
-        </div>
-        {(toastButtons || deprecatedAction) && (
-          <div className="l3-style-toast-action">{toastButtons || deprecatedAction}</div>
-        )}
-        {closeable === "on" ? (
-          <Button
-            className="l3-style-toast_close-button"
-            onClick={handleClose}
-            size={Button.sizes.SMALL}
-            kind={Button.kinds.TERTIARY}
-            color={Button.colors.ON_PRIMARY_COLOR}
-            ariaLabel="close-toast"
+      <>
+        <div className={classNames} role="alert" aria-live="polite">
+          {avatar && (
+            <div className="l3-style-toast-avatar">
+              <Avatar
+                type={Avatar.types.IMG}
+                size={Avatar.sizes.SMALL}
+                rectangle
+                src={"static/media/src/components/Avatar/__stories__/assets/person1.png"}
+              />
+            </div>
+          )}
+          {(!artWork || !avatar) && iconSize === "small" ? (
+            <div className="l3-style-toast-icon-small">{iconElement}</div>
+          ) : (
+            <div className="l3-style-toast-icon-large">{iconElement}</div>
+          )}
+          {artWork && (
+            <div className="l3-style-toast-artwork">
+              {" "}
+              <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />{" "}
+            </div>
+          )}
+          <div
+            className={cx("l3-style-toast-content", {
+              "l3-style-toast-content-no-icon": !iconElement
+            })}
           >
-            <Icon iconType={Icon.type.SVG} clickable={false} icon={CloseGray} ignoreFocusStyle />
-          </Button>
-        ) : null}
-      </div>
+            <>
+              <div className="l3-style-toast-label">{label || children}</div>
+              <div className="l3-style-toast-paragraph">{paragraph}</div>
+            </>
+          </div>
+          {(toastButtons || deprecatedAction) && (
+            <div className="l3-style-toast-action">{toastButtons || deprecatedAction}</div>
+          )}
+          {closeable && (
+            <Button
+              className="l3-style-toast_close-button"
+              onClick={handleClose}
+              size={Button.sizes.SMALL}
+              kind={Button.kinds.TERTIARY}
+              color={Button.colors.ON_PRIMARY_COLOR}
+              ariaLabel="close-toast"
+            >
+              <Icon iconType={Icon.type.SVG} clickable={false} icon={CloseGray} ignoreFocusStyle />
+            </Button>
+          )}
+        </div>
+      </>
     </CSSTransition>
   );
 };
