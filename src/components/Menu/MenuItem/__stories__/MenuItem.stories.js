@@ -7,7 +7,7 @@ import Icon from "../../../Icon/Icon";
 
 export const menuItemTemplate = args => (
   <Menu>
-    <MenuItem {...args} />
+    <MenuItem {...args} active />
   </Menu>
 );
 
