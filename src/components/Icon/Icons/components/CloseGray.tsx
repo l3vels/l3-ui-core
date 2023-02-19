@@ -1,10 +1,10 @@
 /* eslint-disable */
 /* tslint:disable */
 import * as React from "react";
-export interface CloseProps extends React.SVGAttributes<SVGElement> {
+export interface GrayCloseProps extends React.SVGAttributes<SVGElement> {
   size?: string | number;
 }
-const CloseGray: React.FC<CloseProps> = ({ size, ...props }) => (
+const CloseGray: React.FC<GrayCloseProps> = ({ size, ...props }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
     <path
       fill-rule="evenodd"

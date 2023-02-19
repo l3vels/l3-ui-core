@@ -1,10 +1,10 @@
 /* eslint-disable */
 /* tslint:disable */
 import * as React from "react";
-export interface CheckProps extends React.SVGAttributes<SVGElement> {
+export interface NavigateCheckProps extends React.SVGAttributes<SVGElement> {
   size?: string | number;
 }
-const NegativeCheck: React.FC<CheckProps> = ({ size, ...props }) => (
+const NegativeCheck: React.FC<NavigateCheckProps> = ({ size, ...props }) => (
   <>
     <div
       style={{

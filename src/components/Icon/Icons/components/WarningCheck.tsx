@@ -1,10 +1,10 @@
 /* eslint-disable */
 /* tslint:disable */
 import * as React from "react";
-export interface CheckProps extends React.SVGAttributes<SVGElement> {
+export interface WarningCheckProps extends React.SVGAttributes<SVGElement> {
   size?: string | number;
 }
-const WarningCheck: React.FC<CheckProps> = ({ size, ...props }) => (
+const WarningCheck: React.FC<WarningCheckProps> = ({ size, ...props }) => (
   <div style={{ marginLeft: "-10px" }}>
     <div
       style={{
