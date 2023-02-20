@@ -5,13 +5,24 @@ export interface VideoProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Video: React.FC<VideoProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
-      <path d="M1.82141 4.56839C1.82141 3.04961 3.05263 1.81839 4.57141 1.81839H15.4286C16.9473 1.81839 18.1786 3.04961 18.1786 4.56839V15.4255C18.1786 16.9443 16.9473 18.1755 15.4286 18.1755H4.57141C3.05263 18.1755 1.82141 16.9443 1.82141 15.4255V4.56839ZM4.57141 3.31839C3.88105 3.31839 3.32141 3.87803 3.32141 4.56839V15.4255C3.32141 16.1159 3.88105 16.6755 4.57141 16.6755H15.4286C16.1189 16.6755 16.6786 16.1159 16.6786 15.4255V4.56839C16.6786 3.87803 16.1189 3.31839 15.4286 3.31839H4.57141Z"
-      />
-      <path d="M13.0783 8.95959C13.8406 9.43013 13.8406 10.5699 13.0783 11.0404L9.13091 13.4769C8.28106 14.0015 7.35002 13.2991 7.35002 12.4365L7.35002 7.56353C7.35002 6.70086 8.28106 5.99855 9.13091 6.52311L13.0783 8.95959ZM12.2888 10L8.65002 7.75399L8.65002 12.246L12.2888 10Z"
-      />
+  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
+    <g filter="url(#filter0_bd_718_13611)">
+      <path d="M9.68045 29H21.1461C23.474 29 24.8266 27.6766 24.8266 25.3747V14.6164C24.8266 12.3234 23.5651 11 21.2373 11H9.68045C7.43288 11 6 12.3234 6 14.6183V25.4357C6 27.7377 7.35063 29 9.68045 29ZM26.4081 23.4871L30.155 26.7343C30.5934 27.1175 31.0658 27.3646 31.5162 27.3646C32.402 27.3646 33 26.7256 33 25.776V14.2733C33 13.3236 32.402 12.6846 31.5162 12.6846C31.0638 12.6846 30.5953 12.9317 30.155 13.3148L26.4081 16.5531V23.4871Z"
+        fill="#fff" />
     </g>
+    <defs>
+      <filter id="filter0_bd_718_13611" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13611" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_718_13611" result="effect2_dropShadow_718_13611" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13611" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Video.displayName = 'Video';
