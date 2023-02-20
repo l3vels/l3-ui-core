@@ -12,7 +12,6 @@ import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import "./Toast.scss";
 import { ArtWork } from "./ToastArtWork/ToastArtWork";
-
 interface ToastProps extends L3ComponentProps {
   actions?: ToastAction[];
   /** If true, Toast is open (visible) */
@@ -34,12 +33,12 @@ interface ToastProps extends L3ComponentProps {
   children?: ReactElement | ReactElement[] | string | boolean;
   label?: string;
   paragraph?: string;
-  iconSize?: "small" | "large";
+  iconSize?: "SMALL" | "MEDIUM" | "LARGE";
   artWork?: string;
   artWorkType?: "img" | "icon";
   avatar?: boolean;
-  avatarType?: "img" | "icon" | "text";
-  avatarSize?: "small" | "medium" | "large";
+  avatarType?: "IMG" | "ICON" | "TEXT";
+  avatarSize?: "SMALL" | "MEDIUM" | "LARGE";
   avatarBorder?: boolean;
   avatarSrc?: string;
   avatarIcon?: string;
@@ -68,7 +67,7 @@ const Toast: FC<ToastProps> & {
   action: deprecatedAction,
   actions,
   children,
-  iconSize,
+  iconSize = "SMALL",
   closeable = true,
   artWork,
   avatar,
@@ -77,7 +76,7 @@ const Toast: FC<ToastProps> & {
   label = "Label",
   paragraph = "paragraph",
   avatarType,
-  avatarSize = "large",
+  avatarSize,
   avatarSrc,
   avatarIcon,
   avatarText,
@@ -139,10 +138,7 @@ const Toast: FC<ToastProps> & {
     };
   }, [open, autoHideDuration, setAutoHideTimer]);
 
-  const iconElement =
-    iconSize === "small"
-      ? !hideIcon && getIcon(type, icon, ToastIconSize.SMALL)
-      : !hideIcon && getIcon(type, icon, ToastIconSize.LARGE);
+  const iconElement = !hideIcon && getIcon(type, icon, ToastIconSize[iconSize]);
 
   return (
     <CSSTransition in={open} classNames="l3-style-toast-animation" timeout={400} unmountOnExit>
@@ -151,16 +147,8 @@ const Toast: FC<ToastProps> & {
           {avatar && (
             <div className="l3-style-toast-avatar">
               <Avatar
-                type={
-                  (avatarType === "img" && Avatar.types.IMG) ||
-                  (avatarType === "icon" && Avatar.types.ICON) ||
-                  (avatarType === "text" && Avatar.types.TEXT)
-                }
-                size={
-                  (avatarSize === "small" && Avatar.sizes.SMALL) ||
-                  (avatarSize === "large" && Avatar.sizes.LARGE) ||
-                  (avatarSize === "medium" && Avatar.sizes.MEDIUM)
-                }
+                type={Avatar.types[avatarType]}
+                size={Avatar.sizes[avatarSize]}
                 src={avatarSrc}
                 icon={avatarIcon}
                 text={avatarText}
@@ -178,11 +166,7 @@ const Toast: FC<ToastProps> & {
               />
             </div>
           )}
-          {(!artWork || !avatar) && iconSize === "small" ? (
-            <div className="l3-style-toast-icon-small">{iconElement}</div>
-          ) : (
-            <div className="l3-style-toast-icon-large">{iconElement}</div>
-          )}
+          {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-small">{iconElement}</div>}
           {artWork && (
             <div className="l3-style-toast-artwork">
               {" "}
