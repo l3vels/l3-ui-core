@@ -5,9 +5,24 @@ export interface AddProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Add: React.FC<AddProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <path d="M10.75 3C10.75 2.58579 10.4142 2.25 10 2.25C9.58579 2.25 9.25 2.58579 9.25 3V9.25H3C2.58579 9.25 2.25 9.58579 2.25 10C2.25 10.4142 2.58579 10.75 3 10.75H9.25V17C9.25 17.4142 9.58579 17.75 10 17.75C10.4142 17.75 10.75 17.4142 10.75 17V10.75H17C17.4142 10.75 17.75 10.4142 17.75 10C17.75 9.58579 17.4142 9.25 17 9.25H10.75V3Z"
-      fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
+  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
+    <g filter="url(#filter0_bd_718_13612)">
+      <path d="M10 19.8072C10 20.5269 10.5944 21.1138 11.3066 21.1138H18.5027V28.3098C18.5027 29.02 19.0874 29.6144 19.8072 29.6144C20.5269 29.6144 21.1234 29.02 21.1234 28.3098V21.1138H28.3098C29.02 21.1138 29.6144 20.5269 29.6144 19.8072C29.6144 19.0874 29.02 18.4909 28.3098 18.4909H21.1234V11.3066C21.1234 10.5944 20.5269 10 19.8072 10C19.0874 10 18.5027 10.5944 18.5027 11.3066V18.4909H11.3066C10.5944 18.4909 10 19.0874 10 19.8072Z"
+        fill="#fff" />
+    </g>
+    <defs>
+      <filter id="filter0_bd_718_13612" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13612" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_718_13612" result="effect2_dropShadow_718_13612" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13612" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Add.displayName = 'Add';
