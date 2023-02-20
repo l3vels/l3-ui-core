@@ -5,9 +5,24 @@ export interface TagsProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Tags: React.FC<TagsProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <path d="M9.21715 3.12863C9.28812 2.72054 9.01483 2.33219 8.60675 2.26121C8.19866 2.19024 7.8103 2.46353 7.73933 2.87162L7.15932 6.20667H3C2.58579 6.20667 2.25 6.54245 2.25 6.95667C2.25 7.37088 2.58579 7.70667 3 7.70667H6.89845L6.10073 12.2936H3C2.58579 12.2936 2.25 12.6294 2.25 13.0436C2.25 13.4578 2.58579 13.7936 3 13.7936H5.83986L5.30455 16.8716C5.23358 17.2797 5.50686 17.6681 5.91495 17.739C6.32304 17.81 6.71139 17.5367 6.78237 17.1286L7.36237 13.7936H10.7964L10.2611 16.8719C10.1901 17.2799 10.4634 17.6683 10.8715 17.7393C11.2796 17.8102 11.6679 17.537 11.7389 17.1289L12.319 13.7936H17C17.4142 13.7936 17.75 13.4578 17.75 13.0436C17.75 12.6294 17.4142 12.2936 17 12.2936H12.5798L13.3776 7.70667H17C17.4142 7.70667 17.75 7.37088 17.75 6.95667C17.75 6.54245 17.4142 6.20667 17 6.20667H13.6384L14.1737 3.12887C14.2447 2.72078 13.9714 2.33243 13.5633 2.26146C13.1552 2.19048 12.7668 2.46377 12.6959 2.87186L12.1159 6.20667H8.68184L9.21715 3.12863ZM8.42097 7.70667L7.62324 12.2936H11.0573L11.855 7.70667H8.42097Z"
-      fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
+  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
+    <g filter="url(#filter0_bd_718_13638)">
+      <path d="M21.165 32.7883L32.6435 21.2906C33.5583 20.3758 33.6506 19.8297 33.6506 18.5128V14.066C33.6506 12.7774 33.345 12.3337 32.3974 11.384L29.7127 8.70138C28.7726 7.7613 28.3289 7.44818 27.0424 7.44818H22.586C21.267 7.44818 20.741 7.54685 19.8263 8.46372L8.31681 19.9518C6.57353 21.6951 6.54471 23.5476 8.32853 25.3197L15.7971 32.7787C17.5788 34.5529 19.4217 34.5337 21.165 32.7883ZM24.9851 17.1965C24.0213 17.1965 23.3037 16.4521 23.3037 15.5172C23.3037 14.5727 24.0213 13.8358 24.9851 13.8358C25.9392 13.8358 26.6665 14.5727 26.6665 15.5172C26.6665 16.4521 25.9392 17.1965 24.9851 17.1965Z"
+        fill="#fff" />
+    </g>
+    <defs>
+      <filter id="filter0_bd_718_13638" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13638" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_718_13638" result="effect2_dropShadow_718_13638" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13638" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Tags.displayName = 'Tags';
