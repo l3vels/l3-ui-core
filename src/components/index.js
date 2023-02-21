@@ -84,3 +84,5 @@ export { default as ModalContent } from "./ModalContent/ModalContent";
 export { default as ModalFooter } from "./ModalFooter/ModalFooter";
 export { default as Box } from "./Box/Box";
 export { default as Textarea } from "./Textarea/Textarea";
+export { default as Badge } from "./Badge/Badge";
+export { default as Card } from "./Card/Card";
