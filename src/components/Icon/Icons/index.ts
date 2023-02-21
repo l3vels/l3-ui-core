@@ -59,6 +59,7 @@ export { default as CloseGray } from "./components/CloseGray";
 export { default as CloseOutline } from "./components/CloseOutline";
 export { default as CloseRound } from "./components/CloseRound";
 export { default as CloseSmall } from "./components/CloseSmall";
+export { default as CloseWhite } from "./components/CloseWhite";
 export { default as Code } from "./components/Code";
 export { default as CodeOutline } from "./components/CodeOutline";
 export { default as Collapse } from "./components/Collapse";

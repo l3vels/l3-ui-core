@@ -5,7 +5,8 @@ import NegativeCheck from "../Icon/Icons/components/NegativeCheck";
 export enum ToastType {
   WARNING = "warning",
   POSITIVE = "positive",
-  NEGATIVE = "negative"
+  NEGATIVE = "negative",
+  NORMAL = "normal"
 }
 
 export enum ToastActionType {
@@ -16,6 +17,7 @@ export enum ToastActionType {
 export const defaultIconMap = {
   [ToastType.WARNING]: WarningCheck,
   [ToastType.POSITIVE]: PositiveCheck,
+  [ToastType.NORMAL]: PositiveCheck,
   [ToastType.NEGATIVE]: NegativeCheck
 };
 
@@ -39,4 +41,16 @@ export enum ToastArtWorkType {
 export enum ToastArtWorkSize {
   SMALL = "24px",
   LARGE = "48px"
+}
+
+export enum ToastCloseButtonColor {
+  WHITE = "white",
+  GRAY = "gray"
+}
+
+export enum ToastPosition {
+  TOP_LEFT = "top-left",
+  TOP_RIGHT = "top-right",
+  BOTTOM_LEFT = "bottom-left",
+  BOTTOM_RIGHT = "bottom-right"
 }

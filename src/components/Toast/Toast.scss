@@ -12,7 +12,6 @@ $toast-height: 72px;
 
 .l3-style-toast {
   @include typography-label-medium();
-  @include box-shadow-medium();
   @include theme-prop(color, var(--text-color-on-primary));
   position: absolute;
   width: $toast-width;
@@ -22,8 +21,29 @@ $toast-height: 72px;
   flex-direction: row;
   justify-content: center;
   border-radius: $toast-border-radius;
-  bottom: $spacing-medium;
-  right: $spacing-medium;
+
+  &--position {
+    &-top-left {
+      position: fixed;
+      top: $spacing-medium;
+      left: $spacing-medium;
+    }
+    &-top-right {
+      position: fixed;
+      top: $spacing-medium;
+      right: $spacing-medium;
+    }
+    &-bottom-left {
+      position: fixed;
+      bottom: $spacing-medium;
+      left: $spacing-medium;
+    }
+    &-bottom-right {
+      position: fixed;
+      bottom: $spacing-medium;
+      right: $spacing-medium;
+    }
+  }
 
   &-icon-small {
     margin-left: $spacing-large;
@@ -61,6 +81,9 @@ $toast-height: 72px;
   }
 
   &--type {
+    &-normal {
+      background: var(--color-transparent-black-05);
+    }
     &-positive {
       background: var(--color-background-positive);
     }
@@ -105,16 +128,17 @@ $toast-height: 72px;
 .l3-style-toast-content {
   display: grid;
   @include typography-label-medium();
+  width: 253px;
 }
 
 .l3-style-toast-label {
   @include typography-label-medium();
-  color: var(--color-black);
+  color: $white;
   line-height: $font-line-height-small;
 }
 .l3-style-toast-paragraph {
   @include typography-paragraph-small();
-  color: var(--color-transparent-black-05);
+  color: var(--color-transparent-white-08);
   line-height: $font-line-height-small;
 }
 

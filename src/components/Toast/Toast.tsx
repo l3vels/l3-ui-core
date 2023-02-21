@@ -5,8 +5,9 @@ import Button from "../../components/Button/Button";
 import Avatar from "../../components/Avatar/Avatar";
 import Icon, { IconSubComponentProps } from "../../components/Icon/Icon";
 import CloseGray from "../Icon/Icons/components/CloseGray";
+import CloseWhite from "../Icon/Icons/components/CloseWhite";
 import ToastButton from "./ToastButton/ToastButton";
-import { ToastAction, ToastActionType, ToastType, ToastIconSize } from "./ToastConstants";
+import { ToastAction, ToastActionType, ToastType, ToastIconSize, ToastPosition } from "./ToastConstants";
 import { getIcon } from "./ToastHelpers";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
@@ -25,6 +26,7 @@ interface ToastProps extends L3ComponentProps {
   action?: JSX.Element;
   /** If false, won't show the close button */
   closeable?: boolean;
+  position?: ToastPosition;
   onClose?: () => void;
   /** The number of milliseconds to wait before
    * automatically closing the Toast
@@ -58,10 +60,12 @@ interface ToastProps extends L3ComponentProps {
 const Toast: FC<ToastProps> & {
   types?: typeof ToastType;
   actionTypes?: typeof ToastActionType;
+  positions?: typeof ToastPosition;
 } = ({
   open = true,
   autoHideDuration = null,
   type = ToastType.POSITIVE,
+  position,
   icon,
   hideIcon = false,
   action: deprecatedAction,
@@ -104,7 +108,10 @@ const Toast: FC<ToastProps> & {
       : null;
   }, [actions]);
 
-  const classNames = useMemo(() => cx("l3-style-toast", `l3-style-toast--type-${type}`, className), [type, className]);
+  const classNames = useMemo(
+    () => cx("l3-style-toast", `l3-style-toast--position-${position}`, `l3-style-toast--type-${type}`, className),
+    [type, className, position]
+  );
 
   const handleClose = useCallback(() => {
     if (onClose) {
@@ -142,64 +149,71 @@ const Toast: FC<ToastProps> & {
 
   return (
     <CSSTransition in={open} classNames="l3-style-toast-animation" timeout={400} unmountOnExit>
-      <>
-        <div className={classNames} role="alert" aria-live="polite">
-          {avatar && (
-            <div className="l3-style-toast-avatar">
-              <Avatar
-                type={Avatar.types[avatarType]}
-                size={Avatar.sizes[avatarSize]}
-                src={avatarSrc}
-                icon={avatarIcon}
-                text={avatarText}
-                ariaLabel={avatarAriaLabel}
-                role={avatarRole}
-                rectangle={avatarRectangle}
-                square={avatarSquare}
-                isDisabled={avatarDisabled}
-                withoutBorder={avatarBorder}
-                textClassName={avatarTextClassName}
-                backgroundColor={avatarBackgroundColor}
-                className={avatarClassName}
-                id={avatarId}
-                data-testid={avatarDataTestId}
-              />
-            </div>
-          )}
-          {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-small">{iconElement}</div>}
-          {artWork && (
-            <div className="l3-style-toast-artwork">
-              {" "}
-              <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />{" "}
-            </div>
-          )}
-          <div
-            className={cx("l3-style-toast-content", {
-              "l3-style-toast-content-no-icon": !iconElement
-            })}
-          >
-            <>
-              <div className="l3-style-toast-label">{label || children}</div>
-              <div className="l3-style-toast-paragraph">{paragraph}</div>
-            </>
-          </div>
-          {(toastButtons || deprecatedAction) && (
-            <div className="l3-style-toast-action">{toastButtons || deprecatedAction}</div>
-          )}
-          {closeable && (
-            <Button
-              className="l3-style-toast_close-button"
-              onClick={handleClose}
-              size={Button.sizes.SMALL}
-              kind={Button.kinds.TERTIARY}
-              color={Button.colors.ON_PRIMARY_COLOR}
-              ariaLabel="close-toast"
+      <div className="l3-style-toast--position">
+        <>
+          <div className={classNames} role="alert" aria-live="polite">
+            {avatar && (
+              <div className="l3-style-toast-avatar">
+                <Avatar
+                  type={Avatar.types[avatarType]}
+                  size={Avatar.sizes[avatarSize]}
+                  src={avatarSrc}
+                  icon={avatarIcon}
+                  text={avatarText}
+                  ariaLabel={avatarAriaLabel}
+                  role={avatarRole}
+                  rectangle={avatarRectangle}
+                  square={avatarSquare}
+                  isDisabled={avatarDisabled}
+                  withoutBorder={avatarBorder}
+                  textClassName={avatarTextClassName}
+                  backgroundColor={avatarBackgroundColor}
+                  className={avatarClassName}
+                  id={avatarId}
+                  data-testid={avatarDataTestId}
+                />
+              </div>
+            )}
+            {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-small">{iconElement}</div>}
+            {artWork && (
+              <div className="l3-style-toast-artwork">
+                {" "}
+                <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />{" "}
+              </div>
+            )}
+            <div
+              className={cx("l3-style-toast-content", {
+                "l3-style-toast-content-no-icon": !iconElement
+              })}
             >
-              <Icon iconType={Icon.type.SVG} clickable={false} icon={CloseGray} ignoreFocusStyle />
-            </Button>
-          )}
-        </div>
-      </>
+              <>
+                <div className="l3-style-toast-label">{label || children}</div>
+                <div className="l3-style-toast-paragraph">{paragraph}</div>
+              </>
+            </div>
+            {(toastButtons || deprecatedAction) && (
+              <div className="l3-style-toast-action">{toastButtons || deprecatedAction}</div>
+            )}
+            {closeable && (
+              <Button
+                className="l3-style-toast_close-button"
+                onClick={handleClose}
+                size={Button.sizes.SMALL}
+                kind={Button.kinds.TERTIARY}
+                color={Button.colors.ON_PRIMARY_COLOR}
+                ariaLabel="close-toast"
+              >
+                <Icon
+                  iconType={Icon.type.SVG}
+                  clickable={false}
+                  icon={type === ToastType.NORMAL ? CloseWhite : CloseGray}
+                  ignoreFocusStyle
+                />
+              </Button>
+            )}
+          </div>
+        </>
+      </div>
     </CSSTransition>
   );
 };
