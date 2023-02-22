@@ -18,7 +18,7 @@ exports[`Snapshots renders correctly with children 1`] = `
       className="polygon-main-container"
     >
       <div
-        className="l3-style-avatar l3-style-avatar--small"
+        className="l3-style-avatar l3-style-avatar--medium"
         style={Object {}}
       >
         <div
@@ -40,7 +40,7 @@ exports[`Snapshots renders correctly with children 1`] = `
             className="clipped"
           >
             <img
-              className="l3-style-avatar-content_img l3-style-avatar-content_img--small"
+              className="l3-style-avatar-content_img l3-style-avatar-content_img--medium"
             />
           </div>
         </div>
