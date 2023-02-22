@@ -60,7 +60,7 @@ const MenuTitle: FC<MenuTitleProps> & {
   const renderTitlteIconIfNeeded = () => {
     return (
       <div className="polygon-main-container">
-        <Avatar size={Avatar.sizes.SMALL} src={imageSrc} type={Avatar.types.IMG} onClick={onImageClick} rectangle />
+        <Avatar size={Avatar.sizes.MEDIUM} src={imageSrc} type={Avatar.types.IMG} onClick={onImageClick} rectangle />
       </div>
     );
   };

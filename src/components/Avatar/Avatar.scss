@@ -128,10 +128,19 @@ $avatar-size-small: 28px;
   height: 0;
 }
 .clipped {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
+
+  &_large {
+    width: 68px;
+    height: 68px;
+  }
+  &_small {
+    width: 32px;
+    height: 32px;
+  }
 }
