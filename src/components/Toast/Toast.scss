@@ -9,6 +9,7 @@
 
 $warning-background-color: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
 $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
+$toast-font-family: "Circular Std";
 $toast-border-radius: 12px;
 $toast-width: 343px;
 $toast-height: 72px;
@@ -90,7 +91,7 @@ $toast-height: 72px;
       .l3-style-toast-label {
         color: $white;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-bold;
         font-size: $label-font-size-medium;
@@ -98,7 +99,7 @@ $toast-height: 72px;
       .l3-style-toast-paragraph {
         color: var(--color-transparent-white-08);
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-medium;
         font-size: $paragraph-font-size-small;
@@ -109,7 +110,7 @@ $toast-height: 72px;
       .l3-style-toast-label {
         color: $black;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-bold;
         font-size: $label-font-size-medium;
@@ -117,7 +118,7 @@ $toast-height: 72px;
       .l3-style-toast-paragraph {
         color: $black-5;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-medium;
         font-size: $paragraph-font-size-small;
@@ -128,7 +129,7 @@ $toast-height: 72px;
       .l3-style-toast-label {
         color: $white;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-bold;
         font-size: $label-font-size-medium;
@@ -136,7 +137,7 @@ $toast-height: 72px;
       .l3-style-toast-paragraph {
         color: var(--color-transparent-white-06);
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-medium;
         font-size: $paragraph-font-size-small;
@@ -147,7 +148,7 @@ $toast-height: 72px;
       .l3-style-toast-label {
         color: $black;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-bold;
         font-size: $label-font-size-medium;
@@ -155,7 +156,7 @@ $toast-height: 72px;
       .l3-style-toast-paragraph {
         color: $black-5;
         line-height: $font-line-height-small;
-        font-family: "Circular Std";
+        font-family: $toast-font-family;
         font-style: $font-style-normal;
         font-weight: $font-weight-medium;
         font-size: $paragraph-font-size-small;
