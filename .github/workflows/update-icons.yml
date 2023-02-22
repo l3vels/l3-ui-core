@@ -54,7 +54,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update version
+          commit-message: "ci: Update version"
           committer: L3vels Style <style@l3vels.xyz>
           author: L3vels Style <style@l3vels.xyz>
           branch: update-version/style-version-${{env.LATEST_VERSION}}

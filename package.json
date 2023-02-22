@@ -219,7 +219,7 @@
     "*.css.js"
   ],
   "storybook-deployer": {
-    "commitMessage": "Deploy Storybook [ci-skip]"
+    "commitMessage": "ci: Deploy Storybook [ci-skip]"
   },
   "browserslist": [
     "last 4 versions and >0.1%",
