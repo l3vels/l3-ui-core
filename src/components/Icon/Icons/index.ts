@@ -309,6 +309,7 @@ export { default as UserDomain } from "./components/UserDomain";
 export { default as UserStatus } from "./components/UserStatus";
 export { default as Value } from "./components/Value";
 export { default as ValueOutline } from "./components/ValueOutline";
+export { default as Vector } from "./components/Vector";
 export { default as Versioning } from "./components/Versioning";
 export { default as Video } from "./components/Video";
 export { default as VideoOutline } from "./components/VideoOutline";

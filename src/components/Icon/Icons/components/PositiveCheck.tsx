@@ -12,6 +12,7 @@ const PositiveCheck: React.FC<PositiveCheckProps> = ({ size, ...props }) => (
         height: "37.78px",
         border: "2px solid white",
         marginLeft: "-10px",
+        marginRight: "10px",
         borderRadius: "50%",
         alignItems: "center",
         display: "flex"

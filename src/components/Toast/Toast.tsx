@@ -71,14 +71,14 @@ const Toast: FC<ToastProps> & {
   action: deprecatedAction,
   actions,
   children,
-  iconSize = "SMALL",
+  iconSize = "LARGE",
   closeable = true,
   artWork,
   avatar,
   onClose = NOOP,
   className,
   label = "Label",
-  paragraph = "paragraph",
+  paragraph = "Paragraph",
   avatarType,
   avatarSize,
   avatarSrc,
@@ -174,7 +174,7 @@ const Toast: FC<ToastProps> & {
                 />
               </div>
             )}
-            {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-small">{iconElement}</div>}
+            {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-large">{iconElement}</div>}
             {artWork && (
               <div className="l3-style-toast-artwork">
                 {" "}

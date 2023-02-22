@@ -25,7 +25,17 @@ export const ArtWork: React.FC<ArtWorkProps> & {
   const className = cx(bemHelper({ element: type }), bemHelper({ element: type, state: size }));
   switch (type) {
     case ToastArtWorkType.IMG:
-      return <img role={role} alt={ariaLabel} src={src} width="48px" height="48px" className={className} />;
+      return (
+        <img
+          role={role}
+          alt={ariaLabel}
+          src={src}
+          width="48px"
+          height="48px"
+          style={{ borderRadius: "2px" }}
+          className={className}
+        />
+      );
     case ToastArtWorkType.ICON:
       return <Icon icon={icon} aria-label={ariaLabel} clickable={false} className={className} ariaHidden={false} />;
     default:

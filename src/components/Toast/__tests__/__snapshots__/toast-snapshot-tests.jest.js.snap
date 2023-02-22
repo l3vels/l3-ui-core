@@ -10,7 +10,7 @@ exports[`Toast renders correctly (renders nothing) with empty props 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -21,6 +21,7 @@ exports[`Toast renders correctly (renders nothing) with empty props 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -65,7 +66,7 @@ exports[`Toast renders correctly (renders nothing) with empty props 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <button
@@ -111,7 +112,7 @@ exports[`Toast renders correctly and don't renders close button if closeable=fal
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -122,6 +123,7 @@ exports[`Toast renders correctly and don't renders close button if closeable=fal
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -166,7 +168,7 @@ exports[`Toast renders correctly and don't renders close button if closeable=fal
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
   </div>
@@ -185,7 +187,7 @@ exports[`Toast renders correctly when icon is hidden 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     />
     <div
       className="l3-style-toast-content l3-style-toast-content-no-icon"
@@ -198,7 +200,7 @@ exports[`Toast renders correctly when icon is hidden 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <button
@@ -244,7 +246,7 @@ exports[`Toast renders correctly when open is true 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -255,6 +257,7 @@ exports[`Toast renders correctly when open is true 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -299,7 +302,7 @@ exports[`Toast renders correctly when open is true 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <button
@@ -345,7 +348,7 @@ exports[`Toast renders correctly with button 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -356,6 +359,7 @@ exports[`Toast renders correctly with button 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -400,7 +404,7 @@ exports[`Toast renders correctly with button 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <div
@@ -464,7 +468,7 @@ exports[`Toast renders correctly with button and link 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -475,6 +479,7 @@ exports[`Toast renders correctly with button and link 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -519,7 +524,7 @@ exports[`Toast renders correctly with button and link 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <div
@@ -583,7 +588,7 @@ exports[`Toast renders correctly with link 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -594,6 +599,7 @@ exports[`Toast renders correctly with link 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -638,7 +644,7 @@ exports[`Toast renders correctly with link 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <div
@@ -687,7 +693,7 @@ exports[`Toast renders correctly with negative type 1`] = `
     role="alert"
   >
     <div
-      className="l3-style-toast-icon-small"
+      className="l3-style-toast-icon-large"
     >
       <div
         style={
@@ -698,6 +704,7 @@ exports[`Toast renders correctly with negative type 1`] = `
             "display": "flex",
             "height": "37.78px",
             "marginLeft": "-10px",
+            "marginRight": "10px",
             "width": "37.78px",
           }
         }
@@ -742,7 +749,7 @@ exports[`Toast renders correctly with negative type 1`] = `
       <div
         className="l3-style-toast-paragraph"
       >
-        paragraph
+        Paragraph
       </div>
     </div>
     <button

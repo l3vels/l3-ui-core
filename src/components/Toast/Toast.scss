@@ -2,7 +2,10 @@
 @import "../../styles/typography";
 @import "../../styles/typography/typography";
 @import "../../styles/themes";
+@import "../../styles/theme-mixin";
 @import "../../styles/keyframes";
+@import "../../styles/typography/main-typography";
+@import "../../styles/typography/display-typography";
 
 $warning-background-color: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
 $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
@@ -40,8 +43,8 @@ $toast-height: 72px;
     }
     &-bottom-right {
       position: fixed;
-      bottom: $spacing-medium;
-      right: $spacing-medium;
+      bottom: 50px;
+      right: 22px;
     }
   }
 
@@ -51,7 +54,8 @@ $toast-height: 72px;
   }
   &-icon-large {
     margin-left: $spacing-large;
-    margin-right: $spacing-medium;
+    margin-right: $spacing-large;
+    color: white;
   }
 
   &-content {
@@ -83,15 +87,79 @@ $toast-height: 72px;
   &--type {
     &-normal {
       background: var(--color-transparent-black-05);
+      .l3-style-toast-label {
+        color: $white;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold;
+        font-size: $label-font-size-medium;
+      }
+      .l3-style-toast-paragraph {
+        color: var(--color-transparent-white-08);
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-medium;
+        font-size: $paragraph-font-size-small;
+      }
     }
     &-positive {
-      background: var(--color-background-positive);
+      background: var(--color-gradient-green);
+      .l3-style-toast-label {
+        color: $black;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold;
+        font-size: $label-font-size-medium;
+      }
+      .l3-style-toast-paragraph {
+        color: $black-5;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-medium;
+        font-size: $paragraph-font-size-small;
+      }
     }
     &-negative {
-      background: var(--color-background-negative);
+      background: $linear-gradient-red;
+      .l3-style-toast-label {
+        color: $white;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold;
+        font-size: $label-font-size-medium;
+      }
+      .l3-style-toast-paragraph {
+        color: var(--color-transparent-white-06);
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-medium;
+        font-size: $paragraph-font-size-small;
+      }
     }
     &-warning {
-      background: var(--color-background-warning);
+      background: var(--color-gradient-yellow);
+      .l3-style-toast-label {
+        color: $black;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-bold;
+        font-size: $label-font-size-medium;
+      }
+      .l3-style-toast-paragraph {
+        color: $black-5;
+        line-height: $font-line-height-small;
+        font-family: "Circular Std";
+        font-style: $font-style-normal;
+        font-weight: $font-weight-medium;
+        font-size: $paragraph-font-size-small;
+      }
     }
   }
 
@@ -131,17 +199,6 @@ $toast-height: 72px;
   width: 253px;
 }
 
-.l3-style-toast-label {
-  @include typography-label-medium();
-  color: $white;
-  line-height: $font-line-height-small;
-}
-.l3-style-toast-paragraph {
-  @include typography-paragraph-small();
-  color: var(--color-transparent-white-08);
-  line-height: $font-line-height-small;
-}
-
 .l3-style-toast-artwork {
   background: var(--color-transparent-white-02);
   border-radius: $border-radius-extra-small;
@@ -155,4 +212,5 @@ $toast-height: 72px;
   margin-top: $spacing-large;
   margin-left: $spacing-xs-medium;
   margin-bottom: $spacing-large;
+  margin-right: -$spacing-medium;
 }

@@ -5,7 +5,7 @@ export interface WarningCheckProps extends React.SVGAttributes<SVGElement> {
   size?: string | number;
 }
 const WarningCheck: React.FC<WarningCheckProps> = ({ size, ...props }) => (
-  <div style={{ marginLeft: "-10px" }}>
+  <div style={{ marginLeft: "-10px", marginRight: "10px" }}>
     <div
       style={{
         width: "0px",
