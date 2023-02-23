@@ -71,7 +71,7 @@ const Toast: FC<ToastProps> & {
   action: deprecatedAction,
   actions,
   children,
-  iconSize = "LARGE",
+  iconSize = "SMALL",
   closeable = true,
   artWork,
   avatar,
