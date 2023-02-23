@@ -60,6 +60,33 @@ npm link
 npm start
 ```
 
+## Committing
+
+We use [Commitlint](https://commitlint.js.org/) to lint our commit messages. This ensures that we have consistent commit messages.
+
+Example of a good commit message:
+
+```bash
+git commit -m "feat: add settings icon"
+```
+
+Commit Types:
+
+| Type     | Description                                                                  |
+| -------- | ---------------------------------------------------------------------------- |
+| feat     | A new feature for user, not a new feature for build script                   |
+| fix      | A bug fix for user, not a fix to a build script                              |
+| chore    | Other changes that don't modify src or test files                            |
+| style    | Changes that do not affect the meaning of the code (white-space, formatting) |
+| docs     | Documentation only changes                                                   |
+| refactor | A code change that neither fixes a bug nor adds a feature                    |
+| perf     | A code change that improves performance                                      |
+| test     | Adding missing tests or correcting existing tests                            |
+| build    | Changes that affect the build system or external dependencies                |
+| ci       | Changes to our CI configuration files and scripts                            |
+| revert   | Reverts a previous commit                                                    |
+
+
 ## Contributing
 We welcome every contributor, please read the [contribution guidelines](CONTRIBUTING.md) before submitting a PR 
 

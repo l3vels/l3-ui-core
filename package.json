@@ -38,7 +38,8 @@
     "eslint-fix": "npm run eslint -- --fix",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint-fix": "npm run stylelint -- --fix",
-    "release": "./scripts/release.js"
+    "release": "./scripts/release.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -84,6 +85,8 @@
     "@babel/plugin-transform-runtime": "^7.16.7",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@hot-loader/react-dom": "^16.13.0",
     "@jest/transform": "^26.6.2",
     "@mdx-js/loader": "^2.0.0-rc.2",
@@ -201,7 +204,8 @@
     "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.6.1",
     "webpack-cli": "^4.9.1",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-node-externals": "^3.0.0",
+    "husky": "^8.0.0"
   },
   "peerDependencies": {
     "moment": "^2.29.1",
@@ -215,7 +219,7 @@
     "*.css.js"
   ],
   "storybook-deployer": {
-    "commitMessage": "Deploy Storybook [ci-skip]"
+    "commitMessage": "ci: Deploy Storybook [ci-skip]"
   },
   "browserslist": [
     "last 4 versions and >0.1%",
