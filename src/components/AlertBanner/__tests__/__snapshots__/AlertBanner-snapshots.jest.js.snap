@@ -3,7 +3,7 @@
 exports[`AlertBanner should render correctly with hidden close button 1`] = `
 <div
   aria-label="banner"
-  className="l3-alert-banner l3-alert-banner--background-color-primary"
+  className="l3-alert-banner l3-alert-banner--background-color-normal"
   role="banner"
 >
   <div
@@ -80,7 +80,7 @@ exports[`AlertBanner should render correctly with props 1`] = `
 exports[`AlertBanner should render correctly without props 1`] = `
 <div
   aria-label="banner"
-  className="l3-alert-banner l3-alert-banner--background-color-primary"
+  className="l3-alert-banner l3-alert-banner--background-color-normal"
   role="banner"
 >
   <div
@@ -126,7 +126,7 @@ exports[`AlertBanner should render correctly without props 1`] = `
 exports[`AlertBanner should render with correctly with multiple elements 1`] = `
 <div
   aria-label="banner"
-  className="l3-alert-banner l3-alert-banner--background-color-primary"
+  className="l3-alert-banner l3-alert-banner--background-color-normal"
   role="banner"
 >
   <div
@@ -249,7 +249,7 @@ exports[`AlertBanner should render with correctly with multiple elements 1`] = `
 exports[`AlertBanner should render with correctly with text and link 1`] = `
 <div
   aria-label="banner"
-  className="l3-alert-banner l3-alert-banner--background-color-primary"
+  className="l3-alert-banner l3-alert-banner--background-color-normal"
   role="banner"
 >
   <div
@@ -335,7 +335,7 @@ exports[`AlertBanner should render with correctly with text and link 1`] = `
 exports[`AlertBanner should render with correctly with text and link 2`] = `
 <div
   aria-label="banner"
-  className="l3-alert-banner l3-alert-banner--background-color-primary"
+  className="l3-alert-banner l3-alert-banner--background-color-normal"
   role="banner"
 >
   <div
