@@ -87,25 +87,52 @@ Tooltip’s arrow can appear from top, bottom, left or right.
 
 <Canvas>
   <Story name="Positions">
-    <div className="l3-storybook-tooltip_top">
-      <Tooltip
-        // The modifier's purpose is to prevent the tipseen from being displayed when the user scrolls the story upwards / downwards.
-        // Therefore, there is no need to move this prop in your implementations.
-        modifiers={modifiers}
-        content="Top"
-        shouldShowOnMount
-        position={Tooltip.positions.BOTTOM}
-        animationType="expand"
-      >
-        <div />
-      </Tooltip>
-    </div>
     <div className="l3-storybook-tooltip_bottom">
       <Tooltip
         // The modifier's purpose is to prevent the tipseen from being displayed when the user scrolls the story upwards / downwards.
         // Therefore, there is no need to move this prop in your implementations.
         modifiers={modifiers}
-        content="Bottom"
+        content="BOTTOM"
+        shouldShowOnMount
+        position={Tooltip.positions.BOTTOM}
+        animationType="expand"
+        TooltipArrowPosition={TooltipArrowPosition.BEGIN}
+      >
+        <div />
+      </Tooltip>
+    </div>
+    <div className="l3-storybook-tooltip_bottom_start">
+      <Tooltip
+        // The modifier's purpose is to prevent the tipseen from being displayed when the user scrolls the story upwards / downwards.
+        // Therefore, there is no need to move this prop in your implementations.
+        modifiers={modifiers}
+        content="BOTTOM START"
+        shouldShowOnMount
+        position={Tooltip.positions.BOTTOM_START}
+        animationType="expand"
+      >
+        <div />
+      </Tooltip>
+    </div>
+    <div className="l3-storybook-tooltip_bottom_end">
+      <Tooltip
+        // The modifier's purpose is to prevent the tipseen from being displayed when the user scrolls the story upwards / downwards.
+        // Therefore, there is no need to move this prop in your implementations.
+        modifiers={modifiers}
+        content="BOTTOM END"
+        shouldShowOnMount
+        position={Tooltip.positions.BOTTOM_END}
+        animationType="expand"
+      >
+        <div />
+      </Tooltip>
+    </div>
+    <div className="l3-storybook-tooltip_top">
+      <Tooltip
+        // The modifier's purpose is to prevent the tipseen from being displayed when the user scrolls the story upwards / downwards.
+        // Therefore, there is no need to move this prop in your implementations.
+        modifiers={modifiers}
+        content="TOP"
         shouldShowOnMount
         animationType="expand"
       >
