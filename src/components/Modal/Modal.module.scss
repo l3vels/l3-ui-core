@@ -1,3 +1,12 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/typography";
+@import "../../styles/themes";
+@import "../../styles/keyframes";
+
+$overlay-background-color: rgba(41, 47, 76, 0.7);
+$dialog-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+$dialog-border-radius: 13.913px;
+
 .container,
 .overlay {
   position: fixed;
@@ -27,7 +36,7 @@
 }
 
 .overlay {
-  background-color: rgba(41, 47, 76, 0.7);
+  background-color: $overlay-background-color;
   animation: overlay-fade-in 70ms var(--motion-timing-enter);
 }
 
@@ -36,10 +45,10 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 32px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  padding: $spacing-xl;
+  box-shadow: $dialog-box-shadow;
   backdrop-filter: blur(100px);
-  border-radius: 13.913px;
+  border-radius: $dialog-border-radius;
   height: 522px;
   width: 756px;
   // left: 262px;
