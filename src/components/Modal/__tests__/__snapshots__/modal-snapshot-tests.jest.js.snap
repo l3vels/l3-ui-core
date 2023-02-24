@@ -179,7 +179,7 @@ exports[`Modal with base props 1`] = `
     data-testid="l3-modal-overlay"
   />
   <div
-    class="dialog default"
+    class="dialog white"
     role="document"
   >
     <div
@@ -264,8 +264,8 @@ Snapshot Diff:
       data-testid="l3-modal-overlay"
     />
     <div
--     class="dialog default"
-+     class="dialog modal default"
+-     class="dialog white"
++     class="dialog modal white"
       role="document"
     >
       <div
@@ -304,22 +304,6 @@ Snapshot Diff:
           class="closeButton"
         >
           <div
-`;
-
-exports[`Modal with full width 1`] = `
-Snapshot Diff:
-- Default Render
-+ Current Render: {"content":{"type":"p","key":null,"ref":null,"props":{"children":"content"},"_owner":null,"_store":{}},"width":"full_width"}
-
-@@ --- --- @@
-      data-testid="l3-modal-overlay"
-    />
-    <div
--     class="dialog default"
-+     class="dialog full"
-      role="document"
-    >
-      <div
 `;
 
 exports[`Modal with hideCloseButton 1`] = `

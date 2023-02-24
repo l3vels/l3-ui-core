@@ -8,6 +8,11 @@ export enum ModalWidth {
   FULL_WIDTH = "full_width"
 }
 
+export enum ModalBackgroundColor {
+  WHITE = "white",
+  BLACK = "black"
+}
+
 // the type A11yDialog is not exported from a11y-dialog, so mocking it with any for now
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type A11yDialogType = any;

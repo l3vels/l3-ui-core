@@ -94,11 +94,11 @@ describe("Modal", () => {
     expect(snapshotDiff(defaultRender, currentRender, { props })).toMatchSnapshot();
   });
 
-  it("with full width", async () => {
-    const props = withContent({ width: Modal.width.FULL_WIDTH });
-    const currentRender = await renderModal(props);
-    expect(snapshotDiff(defaultRender, currentRender, { props })).toMatchSnapshot();
-  });
+  // it("with full width", async () => {
+  //   const props = withContent({ width: Modal.width.FULL_WIDTH });
+  //   const currentRender = await renderModal(props);
+  //   expect(snapshotDiff(defaultRender, currentRender, { props })).toMatchSnapshot();
+  // });
 
   it("with class names", async () => {
     const props = withContent({ classNames: { container: "container", overlay: "overlay", modal: "modal" } });

@@ -7,7 +7,7 @@ import ModalHeader from "../ModalHeader/ModalHeader";
 import useBodyScrollLock from "./useBodyScrollLock";
 import useShowHideModal from "./useShowHideModal";
 import L3ComponentProps from "../../types/L3ComponentProps";
-import { isModalContent, isModalFooter, isModalHeader, ModalWidth, validateTitleProp } from "./ModalHelper";
+import { isModalContent, isModalFooter, isModalHeader, ModalBackgroundColor, validateTitleProp } from "./ModalHelper";
 import { NOOP } from "../../utils/function-utils";
 import styles from "./Modal.module.scss";
 
@@ -42,10 +42,6 @@ interface ModalProps extends L3ComponentProps {
    */
   triggerElement?: Element;
   /**
-   *  Define modal width
-   */
-  width?: typeof ModalWidth;
-  /**
    *  Hide the modal close button
    */
   hideCloseButton?: boolean;
@@ -60,15 +56,17 @@ interface ModalProps extends L3ComponentProps {
     container: string;
     overlay: string;
     modal: string;
+    header: string;
   };
   /**
    *  Dialog content
    */
   children?: ReactElement | ReactElement[];
+  backgroundColor?: "white" | "black";
 }
 
-const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
-  classNames = { container: "", overlay: "", modal: "" },
+const Modal: FC<ModalProps> & { backgroundColor?: "white" | "black" } = ({
+  classNames = { container: "", overlay: "", modal: "", header: "" },
   id,
   show,
   title = "",
@@ -77,7 +75,7 @@ const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
   alertDialog = false,
   children,
   triggerElement,
-  width = ModalWidth.DEFAULT,
+  backgroundColor = "white",
   hideCloseButton = false,
   closeButtonAriaLabel = "close"
 }) => {
@@ -140,8 +138,8 @@ const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
       <div
         {...attr.dialog}
         className={cx(styles.dialog, classNames.modal, {
-          [styles.default]: width === ModalWidth.DEFAULT,
-          [styles.full]: width === ModalWidth.FULL_WIDTH
+          [styles.white]: backgroundColor === ModalBackgroundColor.WHITE,
+          [styles.black]: backgroundColor === ModalBackgroundColor.BLACK
         })}
       >
         {header}
@@ -156,7 +154,7 @@ const Modal: FC<ModalProps> & { width?: typeof ModalWidth } = ({
 };
 
 Object.assign(Modal, {
-  width: ModalWidth
+  backgroundColor: ModalBackgroundColor
 });
 
 export default Modal;
