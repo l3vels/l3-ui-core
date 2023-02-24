@@ -90,76 +90,60 @@ $toast-height: 72px;
       background: var(--color-transparent-black-05);
       .l3-style-toast-label {
         color: $white;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-bold;
-        font-size: $label-font-size-medium;
+        @mixin typography-label-medium {
+          @include main-font($label-font-medium);
+        }
       }
       .l3-style-toast-paragraph {
         color: var(--color-transparent-white-08);
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-medium;
-        font-size: $paragraph-font-size-small;
+        @mixin typography-paragraph-small {
+          @include main-font($paragraph-font-small);
+        }
       }
     }
     &-positive {
       background: var(--color-gradient-green);
       .l3-style-toast-label {
         color: $black;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-bold;
-        font-size: $label-font-size-medium;
+        @mixin typography-label-medium {
+          @include main-font($label-font-medium);
+        }
       }
       .l3-style-toast-paragraph {
         color: $black-5;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-medium;
-        font-size: $paragraph-font-size-small;
+        @mixin typography-paragraph-small {
+          @include main-font($paragraph-font-small);
+        }
       }
     }
     &-negative {
       background: $linear-gradient-red;
       .l3-style-toast-label {
         color: $white;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-bold;
-        font-size: $label-font-size-medium;
+        @mixin typography-label-medium {
+          @include main-font($label-font-medium);
+        }
       }
       .l3-style-toast-paragraph {
         color: var(--color-transparent-white-06);
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-medium;
-        font-size: $paragraph-font-size-small;
+        @mixin typography-paragraph-small {
+          @include main-font($paragraph-font-small);
+        }
       }
     }
     &-warning {
       background: var(--color-gradient-yellow);
       .l3-style-toast-label {
         color: $black;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-bold;
-        font-size: $label-font-size-medium;
+        @mixin typography-label-medium {
+          @include main-font($label-font-medium);
+        }
       }
       .l3-style-toast-paragraph {
         color: $black-5;
-        line-height: $font-line-height-small;
-        font-family: $toast-font-family;
-        font-style: $font-style-normal;
-        font-weight: $font-weight-medium;
-        font-size: $paragraph-font-size-small;
+        @mixin typography-paragraph-small {
+          @include main-font($paragraph-font-small);
+        }
       }
     }
   }

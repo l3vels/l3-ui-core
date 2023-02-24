@@ -4,6 +4,7 @@ import { CSSTransition } from "react-transition-group";
 import Button from "../../components/Button/Button";
 import Avatar from "../../components/Avatar/Avatar";
 import Icon, { IconSubComponentProps } from "../../components/Icon/Icon";
+// import Close from "../Icon/Icons/components/Close";
 import CloseGray from "../Icon/Icons/components/CloseGray";
 import CloseWhite from "../Icon/Icons/components/CloseWhite";
 import ToastButton from "./ToastButton/ToastButton";
@@ -26,6 +27,7 @@ interface ToastProps extends L3ComponentProps {
   action?: JSX.Element;
   /** If false, won't show the close button */
   closeable?: boolean;
+  closeIcon?: string;
   position?: ToastPosition;
   onClose?: () => void;
   /** The number of milliseconds to wait before
@@ -177,8 +179,7 @@ const Toast: FC<ToastProps> & {
             {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-large">{iconElement}</div>}
             {artWork && (
               <div className="l3-style-toast-artwork">
-                {" "}
-                <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />{" "}
+                <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />
               </div>
             )}
             <div
@@ -206,8 +207,8 @@ const Toast: FC<ToastProps> & {
                 <Icon
                   iconType={Icon.type.SVG}
                   clickable={false}
-                  icon={type === ToastType.NORMAL ? CloseWhite : CloseGray}
                   ignoreFocusStyle
+                  icon={type === ToastType.NORMAL ? CloseWhite : CloseGray}
                 />
               </Button>
             )}

@@ -9,7 +9,7 @@ import {
   ATTENTION_BOX,
   TOOLTIP
 } from "../../../storybook/components/related-components/component-description-map";
-import { Delete, Robot, Vector } from "../../Icon/Icons";
+import { Delete, Robot, Vector, Close } from "../../Icon/Icons";
 import {
   femaleIcon,
   guest,
@@ -37,12 +37,7 @@ export const metaSettings = createStoryMetaSettings({
   iconPropNamesArray: ["icon"]
 });
 
-<Meta
-  title="Feedback/Toast"
-  component={Toast}
-  argTypes={metaSettings.argTypes}
-  decorators={metaSettings.decorators}
-/>
+<Meta title="Feedback/Toast" component={Toast} argTypes={metaSettings.argTypes} decorators={metaSettings.decorators} />
 
 <!--- Component template -->
 
@@ -130,7 +125,6 @@ A toast notification is a message object that presents timely information, inclu
             paragraph="Paragraph"
             className="l3-storybook-toast_wrapper"
             hideIcon={true}
-            closeable={false}
           />
           <Toast
             open
@@ -140,6 +134,7 @@ A toast notification is a message object that presents timely information, inclu
             paragraph="Paragraph"
             label="Label"
             closeable={true}
+            closeIcon={Close}
             hideIcon={true}
           />
           <Toast
