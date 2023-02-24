@@ -1,7 +1,6 @@
 @import "../../styles/themes";
-@import "../../styles/typography";
+@import "../../styles/typography/typography";
 @import "../../styles/global-css-settings";
-
 
 $tooltip-z-index: 9999999999999999;
 
@@ -11,13 +10,20 @@ $tooltip-z-index: 9999999999999999;
   border-radius: $border-radius-small;
   padding: $spacing-small $spacing-medium;
   @include theme-prop(box-shadow, box-shadow-medium);
-  @include font-input();
+  @include typography-label-xs-small();
   max-width: 50vw;
   word-break: break-word;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  /* Basic foreground/black.3 */
+
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(150px);
 
   &.padding-size-md {
     border-radius: $border-radius-medium;
-    padding: $spacing-medium;
+    // padding: $spacing-medium;
     @include font-input();
   }
 
@@ -26,57 +32,57 @@ $tooltip-z-index: 9999999999999999;
   }
 }
 
-.l3-style-tooltip-dark,
-.l3-style-tooltip-arrow.l3-style-arrow-dark {
-  @include theme-prop(background-color, inverted-color-background);
-  @include theme-prop(color, text-color-on-inverted);
-}
+// .l3-style-tooltip-dark,
+// .l3-style-tooltip-arrow.l3-style-arrow-dark {
+//   @include theme-prop(background-color, inverted-color-background);
+//   @include theme-prop(color, text-color-on-inverted);
+// }
 
-.l3-style-tooltip-white,
-.l3-style-tooltip-arrow.l3-style-arrow-white {
-  background-color: $white-theme-bg-color;
-  color: $white-theme-font-color;
-  @include theme-prop(box-shadow, box-shadow-medium);
-}
+// .l3-style-tooltip-white,
+// .l3-style-tooltip-arrow.l3-style-arrow-white {
+//   background-color: $white-theme-bg-color;
+//   color: $white-theme-font-color;
+//   @include theme-prop(box-shadow, box-shadow-medium);
+// }
 
-.l3-style-tooltip-primary,
-.l3-style-tooltip-arrow.l3-style-arrow-primary {
-  @include theme-prop(background-color, primary-color);
-  @include theme-prop(color, text-color-on-primary);
-}
+// .l3-style-tooltip-primary,
+// .l3-style-tooltip-arrow.l3-style-arrow-primary {
+//   @include theme-prop(background-color, primary-color);
+//   @include theme-prop(color, text-color-on-primary);
+// }
 
-.l3-style-tooltip-success,
-.l3-style-tooltip-arrow.l3-style-arrow-success {
-  @include theme-prop(background-color, positive-color);
-  @include theme-prop(color, text-color-on-primary);
-}
+// .l3-style-tooltip-success,
+// .l3-style-tooltip-arrow.l3-style-arrow-success {
+//   @include theme-prop(background-color, positive-color);
+//   @include theme-prop(color, text-color-on-primary);
+// }
 
-.l3-style-tooltip-surface,
-.l3-style-tooltip-arrow.l3-style-arrow-surface {
-  background-color: $surface-theme-bg-color;
-  color: $surface-theme-font-color;
-}
+// .l3-style-tooltip-surface,
+// .l3-style-tooltip-arrow.l3-style-arrow-surface {
+//   background-color: $surface-theme-bg-color;
+//   color: $surface-theme-font-color;
+// }
 
-.l3-style-tooltip-private,
-.l3-style-tooltip-arrow.l3-style-arrow-private {
-  @include theme-prop(background-color, private-color);
-  @include theme-prop(color, text-color-on-primary);
-}
+// .l3-style-tooltip-private,
+// .l3-style-tooltip-arrow.l3-style-arrow-private {
+//   @include theme-prop(background-color, private-color);
+//   @include theme-prop(color, text-color-on-primary);
+// }
 
-.l3-style-tooltip-share,
-.l3-style-tooltip-arrow.l3-style-arrow-share {
-  @include theme-prop(background-color, shareable-color);
-  @include theme-prop(color, text-color-on-primary);
-}
+// .l3-style-tooltip-share,
+// .l3-style-tooltip-arrow.l3-style-arrow-share {
+//   @include theme-prop(background-color, shareable-color);
+//   @include theme-prop(color, text-color-on-primary);
+// }
 
-.l3-style-tooltip-error,
-.l3-style-tooltip-arrow.l3-style-arrow-error {
-  @include theme-prop(background-color, negative-color);
-  @include theme-prop(color, text-color-on-primary);
-}
+// .l3-style-tooltip-error,
+// .l3-style-tooltip-arrow.l3-style-arrow-error {
+//   @include theme-prop(background-color, negative-color);
+//   @include theme-prop(color, text-color-on-primary);
+// }
 
 .l3-style-dialog-content-component {
-  padding: 6px;
+  // padding: 6px;
 
   &:focus {
     outline: none;
