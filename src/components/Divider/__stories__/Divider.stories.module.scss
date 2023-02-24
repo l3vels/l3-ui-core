@@ -1,18 +1,34 @@
 @import "../../../styles/themes";
+@import "../../../styles/typography";
+@import "../../../styles/typography/display-typography";
+@import "../../../styles/typography/main-typography";
+@import "../../../styles/typography/typography";
+@import "../../../styles/global-css-settings";
 
 .divider-description {
   &-container {
     display: flex;
     align-items: center;
-    height: 200px;
+    @include typography-paragraph-large;
+    color: var(--color-transparent-white-06);
+    height: 100%;
+    width: 100%;
   }
 
-  &-text {
-    margin-right: var(--spacing-large);
-    align-self: center;
+  &-vertical-text {
+    position: absolute;
+    width: $spacing-xxxl;
+    height: $spacing-large;
+    margin-top: -270px;
+  }
+  &-horizontal-text {
+    position: absolute;
+    width: 86px;
+    height: $spacing-large;
   }
 
   &-horizontal {
-    margin: 0 auto;
+    margin-top: 53px;
+    margin-left: -60px;
   }
 }

@@ -2,18 +2,20 @@
 @import "../../styles/typography";
 @import "../../styles/global-css-settings";
 
-.l3-style-divider {
-  @include theme-prop(background-color, layout-border-color);
+$divider-border-radius: 3px;
+$divider-width: 322px;
+$divider-height: 2px;
 
-  &--horizontal {
-    height: 1px;
-    width: 100%;
-    margin: $spacing-small 0;
-  }
+.l3-style-divider {
+  background: var(--color-transparent-white-03);
+  border-radius: $divider-border-radius;
+  height: $divider-height;
+  width: $divider-width;
 
   &--vertical {
-    height: 100%;
-    width: 1px;
-    margin: 0 $spacing-xs;
+    transform: rotate(90deg);
+  }
+  &--horizontal {
+    margin-left: 100px;
   }
 }
