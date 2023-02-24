@@ -2,32 +2,33 @@
 @import "../../styles/typography";
 @import "../../styles/themes";
 
+$alertBanner-border-radius: 12px;
+$alertBanner-negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
+
 .l3-alert-banner {
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  width: 100%;
+  width: 343px;
+  height: 72px;
   font-size: 14px;
+  border-radius: $alertBanner-border-radius;
+  color: $black;
 
   &.l3-alert-banner {
     &--background-color {
-      &-primary {
-        @include theme-prop(background-color, primary-color);
-        @include theme-prop(color, text-color-on-primary);
+      &-normal {
+        background: var(--color-transparent-black-05);
       }
       &-positive {
-        @include theme-prop(background-color, positive-color);
-        @include theme-prop(color, text-color-on-primary);
+        background: var(--color-gradient-green);
       }
       &-negative {
-        @include theme-prop(background-color, negative-color);
-        @include theme-prop(color, text-color-on-primary);
+        background: $alertBanner-negative-background-color;
       }
-      &-dark {
-        @include theme-prop(background-color, inverted-color-background);
-        @include theme-prop(color, text-color-on-inverted);
+      &-warning {
+        background: var(--color-gradient-yellow);
       }
     }
   }
@@ -70,6 +71,6 @@
   min-width: 0;
 }
 
-.l3-alert-banner{
+.l3-alert-banner {
   font-family: var(--font-family);
 }

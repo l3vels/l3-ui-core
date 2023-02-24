@@ -57,8 +57,7 @@ Alert banners show pressing and high-signal messages, such as system alerts. The
     name="Overview"
     args={{
       bannerText: "Alert banner message",
-      linkText: "this is a CTA",
-      className: "l3-storybook-alert-banner_big-container"
+      linkText: "this is a CTA"
     }}
   >
     {alertBannerTemplate.bind({})}
@@ -95,7 +94,7 @@ There are four types of alert banners: primary, negative, positive, and inverted
 <Canvas>
   <Story name="Types">
     <div className="l3-storybook-alert-banner_column-wrapper l3-storybook-alert-banner_big-container">
-      <AlertBanner>
+      <AlertBanner backgroundColor={AlertBanner.backgroundColors.NORMAL}>
         <AlertBannerText text="Alert banner message" />
         <AlertBannerLink text="this is a CTA" href="https://l3vels.xyz" />
       </AlertBanner>
@@ -107,7 +106,7 @@ There are four types of alert banners: primary, negative, positive, and inverted
         <AlertBannerText text="Alert banner message" />
         <AlertBannerLink text="this is a CTA" href="https://l3vels.xyz" />
       </AlertBanner>
-      <AlertBanner backgroundColor={AlertBanner.backgroundColors.DARK}>
+      <AlertBanner backgroundColor={AlertBanner.backgroundColors.WARNING}>
         <AlertBannerText text="Alert banner message" />
         <AlertBannerLink text="this is a CTA" href="https://l3vels.xyz" />
       </AlertBanner>
