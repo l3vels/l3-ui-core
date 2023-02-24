@@ -1,5 +1,5 @@
 @import "../../styles/themes";
-@import "../../styles/typography";
+@import "../../styles/typography/typography";
 @import "../../styles/global-css-settings";
 
 $tooltip-z-index: 9999999999999999;
@@ -10,10 +10,10 @@ $tooltip-z-index: 9999999999999999;
   border-radius: $border-radius-small;
   padding: $spacing-small $spacing-medium;
   @include theme-prop(box-shadow, box-shadow-medium);
-  @include font-input();
+  @include typography-label-xs-small();
   max-width: 50vw;
   word-break: break-word;
-
+  color: #ffffff;
   background: rgba(0, 0, 0, 0.3);
   /* Basic foreground/black.3 */
 
