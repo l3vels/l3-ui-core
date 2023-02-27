@@ -15,8 +15,6 @@ $toast-width: 343px;
 $toast-height: 72px;
 
 .l3-style-toast {
-  @include typography-label-medium();
-  @include theme-prop(color, var(--text-color-on-primary));
   position: absolute;
   width: $toast-width;
   height: $toast-height;
@@ -56,7 +54,6 @@ $toast-height: 72px;
   &-icon-large {
     margin-left: $spacing-large;
     margin-right: $spacing-large;
-    color: white;
   }
 
   &-content {
@@ -88,62 +85,47 @@ $toast-height: 72px;
   &--type {
     &-normal {
       background: var(--color-transparent-black-05);
+      // @include theme-prop(background, var(--color-transparent-black-05));
       .l3-style-toast-label {
-        color: $white;
-        @mixin typography-label-medium {
-          @include main-font($label-font-medium);
-        }
+        @include typography-label-medium;
+        @include theme-prop(color, $white);
       }
       .l3-style-toast-paragraph {
-        color: var(--color-transparent-white-08);
-        @mixin typography-paragraph-small {
-          @include main-font($paragraph-font-small);
-        }
+        @include typography-paragraph-small;
+        @include theme-prop(color, var(--color-transparent-white-08));
       }
     }
     &-positive {
       background: var(--color-gradient-green);
       .l3-style-toast-label {
+        @include typography-label-medium;
         color: $black;
-        @mixin typography-label-medium {
-          @include main-font($label-font-medium);
-        }
       }
       .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
         color: $black-5;
-        @mixin typography-paragraph-small {
-          @include main-font($paragraph-font-small);
-        }
       }
     }
     &-negative {
       background: $linear-gradient-red;
       .l3-style-toast-label {
+        @include typography-label-medium;
         color: $white;
-        @mixin typography-label-medium {
-          @include main-font($label-font-medium);
-        }
       }
       .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
         color: var(--color-transparent-white-06);
-        @mixin typography-paragraph-small {
-          @include main-font($paragraph-font-small);
-        }
       }
     }
     &-warning {
       background: var(--color-gradient-yellow);
       .l3-style-toast-label {
+        @include typography-label-medium;
         color: $black;
-        @mixin typography-label-medium {
-          @include main-font($label-font-medium);
-        }
       }
       .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
         color: $black-5;
-        @mixin typography-paragraph-small {
-          @include main-font($paragraph-font-small);
-        }
       }
     }
   }
