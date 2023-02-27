@@ -1,45 +1,82 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/typography";
+@import "../../styles/typography/typography";
 @import "../../styles/themes";
+@import "../../styles/theme-mixin";
 @import "../../styles/keyframes";
+@import "../../styles/typography/main-typography";
+@import "../../styles/typography/display-typography";
+
+$warning-background-color: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
+$negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
+$toast-font-family: "Circular Std";
+$toast-border-radius: 12px;
+$toast-width: 343px;
+$toast-height: 72px;
 
 .l3-style-toast {
-  @include font-paragraph();
-  @include box-shadow-medium();
-  @include theme-prop(color, text-color-on-primary);
-  margin: $spacing-medium;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding: $spacing-small;
+  position: absolute;
+  width: $toast-width;
+  height: $toast-height;
   align-items: center;
   display: flex;
-  min-width: 200px;
-  border-radius: $border-radius-small;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: $toast-border-radius;
 
-  &-icon {
-    display: flex;
-    padding-left: $spacing-small;
-    padding-right: $spacing-small;
+  &--position {
+    &-top-left {
+      position: fixed;
+      top: $spacing-medium;
+      left: $spacing-medium;
+    }
+    &-top-right {
+      position: fixed;
+      top: $spacing-medium;
+      right: $spacing-medium;
+    }
+    &-bottom-left {
+      position: fixed;
+      bottom: $spacing-medium;
+      left: $spacing-medium;
+    }
+    &-bottom-right {
+      position: fixed;
+      bottom: 50px;
+      right: 22px;
+    }
+  }
+
+  &-icon-small {
+    margin-left: $spacing-large;
+    margin-right: $spacing-large;
+  }
+  &-icon-large {
+    margin-left: $spacing-large;
+    margin-right: $spacing-large;
   }
 
   &-content {
     display: inline-flex;
-    line-height: 22px;
-    font-size: 14px;
     flex-grow: 1;
+    margin-right: $spacing-large;
     &-no-icon {
-      padding-left: $spacing-small;
+      padding-right: $spacing-large;
+      margin-left: -$spacing-medium;
     }
   }
 
   &-action {
     margin-left: $spacing-medium;
     display: flex;
-    &_button,
+    &_button {
+      background: var(--color-black);
+      width: 88px;
+      height: 36px;
+      border-radius: $border-radius-big;
+      padding: $spacing-small $spacing-medium;
+      margin-right: $spacing-medium;
+    }
     &_link {
       margin-left: $spacing-small;
     }
@@ -47,13 +84,49 @@
 
   &--type {
     &-normal {
-      @include theme-prop(background-color, primary-color);
+      background: var(--color-transparent-black-05);
+      // @include theme-prop(background, var(--color-transparent-black-05));
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        @include theme-prop(color, $white);
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        @include theme-prop(color, var(--color-transparent-white-08));
+      }
     }
     &-positive {
-      @include theme-prop(background-color, positive-color);
+      background: var(--color-gradient-green);
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $black;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: $black-5;
+      }
     }
     &-negative {
-      @include theme-prop(background-color, negative-color);
+      background: $linear-gradient-red;
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $white;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: var(--color-transparent-white-06);
+      }
+    }
+    &-warning {
+      background: var(--color-gradient-yellow);
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $black;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: $black-5;
+      }
     }
   }
 
@@ -75,7 +148,7 @@
   }
 
   &_close-button {
-    margin-left: $spacing-small;
+    margin-right: $spacing-large;
   }
 }
 
@@ -87,6 +160,24 @@
   @include slide-out();
 }
 
-.l3-style-toast-content{
-  font-family: var(--font-family);
+.l3-style-toast-content {
+  display: grid;
+  @include typography-label-medium();
+  width: 253px;
+}
+
+.l3-style-toast-artwork {
+  background: var(--color-transparent-white-02);
+  border-radius: $border-radius-extra-small;
+  width: 48px;
+  height: 48px;
+  margin-left: -$spacing-large;
+  margin-right: $spacing-xl;
+}
+
+.l3-style-toast-avatar {
+  margin-top: $spacing-large;
+  margin-left: $spacing-xs-medium;
+  margin-bottom: $spacing-large;
+  margin-right: -$spacing-medium;
 }

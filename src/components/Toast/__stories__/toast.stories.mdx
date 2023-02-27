@@ -9,7 +9,26 @@ import {
   ATTENTION_BOX,
   TOOLTIP
 } from "../../../storybook/components/related-components/component-description-map";
-import { Delete } from "../../Icon/Icons";
+import { Delete, Robot, Vector, Close } from "../../Icon/Icons";
+import {
+  femaleIcon,
+  guest,
+  home,
+  maleIcon,
+  minus,
+  owner,
+  person1,
+  person2,
+  person3,
+  person4,
+  person5,
+  person6,
+  person7,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4
+} from "./assets";
 import "./toast.stories.scss";
 
 export const metaSettings = createStoryMetaSettings({
@@ -18,12 +37,7 @@ export const metaSettings = createStoryMetaSettings({
   iconPropNamesArray: ["icon"]
 });
 
-<Meta
-  title="Feedback/Toast"
-  component={Toast}
-  argTypes={metaSettings.argTypes}
-  decorators={metaSettings.decorators}
-/>
+<Meta title="Feedback/Toast" component={Toast} argTypes={metaSettings.argTypes} decorators={metaSettings.decorators} />
 
 <!--- Component template -->
 
@@ -53,7 +67,7 @@ A toast notification is a message object that presents timely information, inclu
       children: "General message toast",
       open: true,
       className: "l3-storybook-toast_wrapper",
-      actions: [{ type: Toast.actionTypes.BUTTON, content: "Button" }]
+      actions: [{ type: Toast.actionTypes.BUTTON, content: "Label" }]
     }}
   >
     {toastTemplate.bind({})}
@@ -86,80 +100,1178 @@ A toast notification is a message object that presents timely information, inclu
 
 ## Variants
 
-### Default with button
+### Normal simple
 
 <Canvas>
-  <Story name="Default with button">
+  <Story name="Normal simple">
     {() => {
-      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Button" }], []);
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
       return (
-        <Toast open autoHideDuration={5000} actions={actions} className="l3-storybook-toast_wrapper">
-          General message toast
-        </Toast>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Toast with link
-
-<Canvas>
-  <Story name="Toast with link">
-    {() => {
-      const actions = useMemo(
-        () => [{ type: Toast.actionTypes.LINK, text: "Link to action", href: "https://l3vels.xyz" }],
-        []
-      );
-      return (
-        <Toast open actions={actions} autoHideDuration={5000} className="l3-storybook-toast_wrapper">
-          General message toast
-        </Toast>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Success message
-
-Use to providing a feedback loop. For example: Item copied.
-
-<Canvas>
-  <Story name="Success message">
-    {() => {
-      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Undo 5" }], []);
-      return (
-        <Toast
-          open
-          type={Toast.types.POSITIVE}
-          actions={actions}
-          autoHideDuration={5000}
-          className="l3-storybook-toast_wrapper"
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
         >
-          Positive message toast
-        </Toast>
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-white"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            hideIcon={true}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+          />
+        </div>
       );
     }}
   </Story>
 </Canvas>
 
-### Error message
-
-Use when something was deleted, a problem has occured, etc.
+### Normal check
 
 <Canvas>
-  <Story name="Error message">
+  <Story name="Normal check">
     {() => {
-      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Button" }], []);
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
       return (
-        <Toast
-          open
-          actions={actions}
-          type={Toast.types.NEGATIVE}
-          autoHideDuration={5000}
-          className="l3-storybook-toast_wrapper"
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
         >
-          Negative message toast
-        </Toast>
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-white"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NORMAL}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Normal Artwork
+
+<Canvas>
+  <Story name="Normal Artwork">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            artWork={person4}
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            artWork={person5}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-white"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            hideIcon={true}
+            artWork={person6}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Normal large icon
+
+<Canvas>
+  <Story name="Normal large icon">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            hideIcon={false}
+            iconSize="LARGE"
+            icon={Vector}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            iconSize="LARGE"
+            icon={Vector}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-white"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NORMAL}
+            iconSize="LARGE"
+            icon={Vector}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Normal avatar
+
+<Canvas>
+  <Story name="Normal avatar">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            avatar
+            hideIcon={true}
+            closeable={false}
+            type={Toast.types.NORMAL}
+            avatarSize="SMALL"
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person4}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            type={Toast.types.NORMAL}
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person5}
+            avatarBorder
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-white"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            hideIcon={true}
+            avatar
+            actions={actions}
+            type={Toast.types.NORMAL}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+            avatarSize="SMALL"
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person6}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive simple
+
+<Canvas>
+  <Story name="Positive simple">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            hideIcon={true}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive check
+
+<Canvas>
+  <Story name="Positive check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive Artwork
+
+<Canvas>
+  <Story name="Positive Artwork">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            artWork={person4}
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            artWork={person5}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            hideIcon={true}
+            artWork={person6}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive large icon
+
+<Canvas>
+  <Story name="Positive large icon">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            iconSize="LARGE"
+            icon={<Vector color="black" />}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            iconSize="LARGE"
+            icon={<Vector color="black" />}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            iconSize="LARGE"
+            icon={<Vector color="black" />}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Positive avatar
+
+<Canvas>
+  <Story name="Positive avatar">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            avatar
+            hideIcon={true}
+            closeable={false}
+            avatarSize="SMALL"
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person4}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person5}
+            avatarBorder
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            hideIcon={true}
+            avatar
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            closeable={false}
+            avatarSize="SMALL"
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person6}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning simple
+
+<Canvas>
+  <Story name="Warning simple">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.WARNING}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning check
+
+<Canvas>
+  <Story name="Warning check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.WARNING}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning Artwork
+
+<Canvas>
+  <Story name="Warning Artwork">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            artWork={person4}
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.WARNING}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            artWork={person5}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            artWork={person7}
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning large icon
+
+<Canvas>
+  <Story name="Warning large icon">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            iconSize="LARGE"
+            type={Toast.types.WARNING}
+            iconSize="LARGE"
+            icon={<Vector color="black" />}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            iconSize="LARGE"
+            type={Toast.types.WARNING}
+            iconSize="LARGE"
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            iconSize="LARGE"
+            type={Toast.types.WARNING}
+            iconSize="LARGE"
+            icon={<Vector color="black" />}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Warning avatar
+
+<Canvas>
+  <Story name="Warning avatar">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person7}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.WARNING}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person4}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.WARNING}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person6}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative simple
+
+<Canvas>
+  <Story name="Negative simple">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative check
+
+<Canvas>
+  <Story name="Negative check">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative Artwork
+
+<Canvas>
+  <Story name="Negative Artwork">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            artWork={person4}
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            artWork={person5}
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            artWork={person6}
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative large icon
+
+<Canvas>
+  <Story name="Negative large icon">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            label="Label"
+            paragraph="Paragraph"
+            className="l3-storybook-toast_wrapper"
+            hideIcon={false}
+            type={Toast.types.NEGATIVE}
+            iconSize="LARGE"
+            icon={Vector}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            hideIcon={false}
+            type={Toast.types.NEGATIVE}
+            iconSize="LARGE"
+            icon={Vector}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            actions={actions}
+            hideIcon={false}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            iconSize="LARGE"
+            icon={Vector}
+            closeable={false}
+          />
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Negative avatar
+
+<Canvas>
+  <Story name="Negative avatar">
+    {() => {
+      const actions = useMemo(() => [{ type: Toast.actionTypes.BUTTON, content: "Label" }], []);
+      return (
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "20px",
+            marginTop: "15px"
+          }}
+        >
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            label="Label"
+            className="l3-storybook-toast_wrapper"
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person7}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeable={false}
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            className="l3-storybook-toast_wrapper"
+            type={Toast.types.NEGATIVE}
+            paragraph="Paragraph"
+            label="Label"
+            closeable={true}
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person6}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeIcon={Close}
+            iconClassName="icon-story-custom--close-icon-black"
+          />
+          <Toast
+            open
+            autoHideDuration={5000}
+            type={Toast.types.NEGATIVE}
+            actions={actions}
+            className="l3-storybook-toast_wrapper"
+            avatarSize="SMALL"
+            avatar
+            avatarRectangle
+            avatarType="IMG"
+            avatarSrc={person5}
+            avatarAriaLabel="Hadas Fahri"
+            avatarBorder
+            hideIcon={true}
+            closeable={false}
+          />
+        </div>
       );
     }}
   </Story>
@@ -172,7 +1284,7 @@ Use when something was deleted, a problem has occured, etc.
     {
       positive: {
         component: (
-          <Toast open className="l3-storybook-toast_wrapper" hideIcon type={Toast.types.POSITIVE}>
+          <Toast open className="l3-storybook-toast_wrapper" hideIcon={true} type={Toast.types.POSITIVE}>
             Duplicating Board
           </Toast>
         ),
@@ -184,9 +1296,10 @@ Use when something was deleted, a problem has occured, etc.
             <Toast
               type={Toast.types.NEGATIVE}
               open
-              hideIcon
-              className="l3-storybook-toast_wrapper l3-storybook-toast_big"
-              actions={[{ type: Toast.actionTypes.LINK, text: "Try again", href: "https://l3vels.xyz" }]}
+              hideIcon={true}
+              closeable={false}
+              className="l3-storybook-toast_wrapper"
+              actions={[{ type: Toast.actionTypes.BUTTON, content: "label" }]}
             >
               Couldn’t load board items
             </Toast>
@@ -211,7 +1324,9 @@ Use when something was deleted, a problem has occured, etc.
             open
             className="l3-storybook-toast_wrapper"
             type={Toast.types.POSITIVE}
-            actions={[{ type: Toast.actionTypes.BUTTON, content: "Undo" }]}
+            closeable={false}
+            hideIcon={true}
+            actions={[{ type: Toast.actionTypes.BUTTON, content: "label" }]}
           >
             We successfully archived 1 item
           </Toast>
@@ -220,7 +1335,7 @@ Use when something was deleted, a problem has occured, etc.
       },
       negative: {
         component: (
-          <Toast open className="l3-storybook-toast_wrapper" type={Toast.types.POSITIVE}>
+          <Toast open className="l3-storybook-toast_wrapper" hideIcon={true} type={Toast.types.POSITIVE}>
             We successfully archived 1 item
           </Toast>
         ),
@@ -250,6 +1365,7 @@ After a user has done an action, provide feedback to close the loop. For example
           </Button>
           <Toast
             open={toastOpen}
+            position="bottom-right"
             type={Toast.types.POSITIVE}
             actions={actions}
             onClose={onCloseCallback}
