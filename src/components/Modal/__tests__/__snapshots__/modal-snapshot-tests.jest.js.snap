@@ -179,7 +179,7 @@ exports[`Modal with base props 1`] = `
     data-testid="l3-modal-overlay"
   />
   <div
-    class="dialog white"
+    class="dialog light"
     role="document"
   >
     <div
@@ -264,8 +264,8 @@ Snapshot Diff:
       data-testid="l3-modal-overlay"
     />
     <div
--     class="dialog white"
-+     class="dialog modal white"
+-     class="dialog light"
++     class="dialog modal light"
       role="document"
     >
       <div
