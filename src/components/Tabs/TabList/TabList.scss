@@ -16,6 +16,7 @@
     outline: none;
     align-items: center;
 
+    width: fit-content;
     border-radius: 60px;
     @include theme-prop(background-color, tab-list-bg-color);
 
