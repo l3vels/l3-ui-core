@@ -63,9 +63,11 @@ interface ModalProps extends L3ComponentProps {
    */
   children?: ReactElement | ReactElement[];
   backgroundColor?: "light" | "dark";
+  modalWidth?: string;
+  modalHeight?: string;
 }
 
-const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark" } = ({
+const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark"; modalWidth?: string; modalHeight?: string } = ({
   classNames = { container: "", overlay: "", modal: "", header: "" },
   id,
   show,
@@ -77,7 +79,9 @@ const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark" } = ({
   triggerElement,
   backgroundColor = "light",
   hideCloseButton = false,
-  closeButtonAriaLabel = "close"
+  closeButtonAriaLabel = "close",
+  modalWidth,
+  modalHeight
 }) => {
   const childrenArray: ReactElement[] = useMemo(
     () => (children ? (React.Children.toArray(children) as ReactElement[]) : []),
@@ -137,9 +141,11 @@ const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark" } = ({
       />
       <div
         {...attr.dialog}
-        className={cx(styles.dialog, classNames.modal, {
+        className={cx(styles.dialog, classNames.modal, modalHeight, modalWidth, {
           [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
-          [styles.dark]: backgroundColor === ModalBackgroundColor.DARK
+          [styles.dark]: backgroundColor === ModalBackgroundColor.DARK,
+          modalWidth,
+          modalHeight
         })}
       >
         {header}
