@@ -1,6 +1,9 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/typography";
 @import "../../styles/themes";
+@import "../../styles/typography/typography";
+@import "../../styles/typography/main-typography";
+@import "../../styles/typography/display-typography";
 
 $alertBanner-border-radius: 12px;
 $alertBanner-negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
@@ -9,26 +12,31 @@ $alertBanner-negative-background-color: linear-gradient(180deg, #e96878 0%, #d62
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
   width: 100%;
   height: 40px;
-  font-size: 14px;
   border-radius: $alertBanner-border-radius;
-  color: $black;
 
   &.l3-alert-banner {
     &--background-color {
       &-normal {
         background: var(--color-transparent-black-05);
+        @include typography-label-medium;
+        color: $white;
       }
       &-positive {
         background: var(--color-gradient-green);
+        @include typography-label-medium;
+        color: $black;
       }
       &-negative {
         background: $alertBanner-negative-background-color;
+        @include typography-label-medium;
+        color: $white;
       }
       &-warning {
         background: var(--color-gradient-yellow);
+        @include typography-label-medium;
+        color: $black;
       }
     }
   }
@@ -71,6 +79,7 @@ $alertBanner-negative-background-color: linear-gradient(180deg, #e96878 0%, #d62
   min-width: 0;
 }
 
-.l3-alert-banner {
-  font-family: var(--font-family);
-}
+// .l3-alert-banner {
+//   // @include typography-label-medium;
+//   color: $black;
+// }
