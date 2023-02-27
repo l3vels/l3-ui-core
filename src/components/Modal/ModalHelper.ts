@@ -9,8 +9,8 @@ export enum ModalWidth {
 }
 
 export enum ModalBackgroundColor {
-  WHITE = "white",
-  BLACK = "black"
+  LIGHT = "light",
+  DARK = "dark"
 }
 
 // the type A11yDialog is not exported from a11y-dialog, so mocking it with any for now

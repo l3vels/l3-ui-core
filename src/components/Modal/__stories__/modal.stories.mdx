@@ -93,10 +93,10 @@ Modal allows the user to focus on one task or a piece of information, by popping
 ## Variants
 
 <Canvas>
-  <Story name="Background variants - Black">
+  <Story name="Background variants - Dark">
     {() => {
       const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "black background"
+        openButtonTitle: "dark background"
       });
       return (
         <div>
@@ -110,7 +110,7 @@ Modal allows the user to focus on one task or a piece of information, by popping
             onClose={closeModal}
             hideCloseButton={true}
             closeButtonAriaLabel={"close"}
-            backgroundColor="black"
+            backgroundColor="dark"
           >
             <ModalFooter>{modalButtons}</ModalFooter>
           </Modal>
@@ -118,10 +118,10 @@ Modal allows the user to focus on one task or a piece of information, by popping
       );
     }}
   </Story>
-  <Story name="Background variants - White">
+  <Story name="Background variants - Light">
     {() => {
       const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "white background"
+        openButtonTitle: "Light background"
       });
       return (
         <div>
@@ -134,7 +134,7 @@ Modal allows the user to focus on one task or a piece of information, by popping
             show={show}
             hideCloseButton={true}
             onClose={closeModal}
-            backgroundColor="white"
+            backgroundColor="light"
             closeButtonAriaLabel={"close"}
           >
             <ModalFooter>{modalButtons}</ModalFooter>

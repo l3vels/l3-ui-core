@@ -62,10 +62,10 @@ interface ModalProps extends L3ComponentProps {
    *  Dialog content
    */
   children?: ReactElement | ReactElement[];
-  backgroundColor?: "white" | "black";
+  backgroundColor?: "light" | "dark";
 }
 
-const Modal: FC<ModalProps> & { backgroundColor?: "white" | "black" } = ({
+const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark" } = ({
   classNames = { container: "", overlay: "", modal: "", header: "" },
   id,
   show,
@@ -75,7 +75,7 @@ const Modal: FC<ModalProps> & { backgroundColor?: "white" | "black" } = ({
   alertDialog = false,
   children,
   triggerElement,
-  backgroundColor = "white",
+  backgroundColor = "light",
   hideCloseButton = false,
   closeButtonAriaLabel = "close"
 }) => {
@@ -138,8 +138,8 @@ const Modal: FC<ModalProps> & { backgroundColor?: "white" | "black" } = ({
       <div
         {...attr.dialog}
         className={cx(styles.dialog, classNames.modal, {
-          [styles.white]: backgroundColor === ModalBackgroundColor.WHITE,
-          [styles.black]: backgroundColor === ModalBackgroundColor.BLACK
+          [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
+          [styles.dark]: backgroundColor === ModalBackgroundColor.DARK
         })}
       >
         {header}

@@ -30,9 +30,9 @@ export const ModalButtons = ({ closeModal }) => {
     <div>
       <Flex justify={Flex.justify.END} gap={15}>
         <Button onClick={closeModal} size={Button.sizes.LARGE} kind={Button.kinds.TERTIARY}>
-          Label
+          Cancel
         </Button>
-        <Button onClick={closeModal}>Label</Button>
+        <Button onClick={closeModal}>Confirm</Button>
       </Flex>
     </div>
   );
