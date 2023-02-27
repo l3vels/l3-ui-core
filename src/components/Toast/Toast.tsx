@@ -4,9 +4,9 @@ import { CSSTransition } from "react-transition-group";
 import Button from "../../components/Button/Button";
 import Avatar from "../../components/Avatar/Avatar";
 import Icon, { IconSubComponentProps } from "../../components/Icon/Icon";
-// import Close from "../Icon/Icons/components/Close";
-import CloseGray from "../Icon/Icons/components/CloseGray";
-import CloseWhite from "../Icon/Icons/components/CloseWhite";
+import Close from "../Icon/Icons/components/Close";
+// import CloseGray from "../Icon/Icons/components/CloseGray";
+// import CloseWhite from "../Icon/Icons/components/CloseWhite";
 import ToastButton from "./ToastButton/ToastButton";
 import { ToastAction, ToastActionType, ToastType, ToastIconSize, ToastPosition } from "./ToastConstants";
 import { getIcon } from "./ToastHelpers";
@@ -45,18 +45,10 @@ interface ToastProps extends L3ComponentProps {
   avatarSize?: "SMALL" | "MEDIUM" | "LARGE";
   avatarBorder?: boolean;
   avatarSrc?: string;
-  avatarIcon?: string;
-  avatarText?: string;
   avatarAriaLabel?: string;
   avatarRole?: string;
-  avatarBackgroundColor?: string;
-  avatarTextClassName?: string;
-  avatarRectangle?: boolean;
   avatarSquare?: boolean;
-  avatarDisabled?: boolean;
-  avatarClassName?: string;
-  avatarId?: string;
-  avatarDataTestId?: string;
+  iconClassName?: string;
 }
 
 const Toast: FC<ToastProps> & {
@@ -84,19 +76,11 @@ const Toast: FC<ToastProps> & {
   avatarType,
   avatarSize,
   avatarSrc,
-  avatarIcon,
-  avatarText,
   avatarAriaLabel,
   avatarRole,
-  avatarBorder,
-  avatarTextClassName,
-  avatarBackgroundColor,
-  avatarRectangle,
   avatarSquare,
-  avatarDisabled,
-  avatarClassName,
-  avatarId,
-  avatarDataTestId
+  closeIcon,
+  iconClassName
 }) => {
   const toastButtons: JSX.Element[] | null = useMemo(() => {
     return actions
@@ -160,19 +144,11 @@ const Toast: FC<ToastProps> & {
                   type={Avatar.types[avatarType]}
                   size={Avatar.sizes[avatarSize]}
                   src={avatarSrc}
-                  icon={avatarIcon}
-                  text={avatarText}
                   ariaLabel={avatarAriaLabel}
                   role={avatarRole}
-                  rectangle={avatarRectangle}
+                  rectangle
                   square={avatarSquare}
-                  isDisabled={avatarDisabled}
-                  withoutBorder={avatarBorder}
-                  textClassName={avatarTextClassName}
-                  backgroundColor={avatarBackgroundColor}
-                  className={avatarClassName}
-                  id={avatarId}
-                  data-testid={avatarDataTestId}
+                  withoutBorder
                 />
               </div>
             )}
@@ -208,7 +184,8 @@ const Toast: FC<ToastProps> & {
                   iconType={Icon.type.SVG}
                   clickable={false}
                   ignoreFocusStyle
-                  icon={type === ToastType.NORMAL ? CloseWhite : CloseGray}
+                  icon={closeIcon}
+                  className={iconClassName}
                 />
               </Button>
             )}
