@@ -13,6 +13,7 @@ import { AnimationType, HideShowEvent } from "../../constants/dialog";
 import { L3ComponentProps } from "../../types";
 import * as PopperJS from "@popperjs/core";
 import "./Dialog.scss";
+import TooltipArrow from "./arrow-svg";
 
 export interface DialogProps extends L3ComponentProps {
   /**
@@ -547,12 +548,15 @@ export default class Dialog extends PureComponent<DialogProps, DialogState> {
                 >
                   {contentRendered}
                   {tooltip && (
-                    <div
+                    <TooltipArrow
                       style={arrowProps.style}
                       ref={arrowProps.ref}
                       className={cx("l3-style-tooltip-arrow", tooltipClassName)}
                       data-placement={placement}
                     />
+                    // <div
+
+                    // />
                   )}
                 </DialogContent>
               );

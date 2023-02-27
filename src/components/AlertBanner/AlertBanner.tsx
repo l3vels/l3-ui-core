@@ -31,7 +31,7 @@ const AlertBanner: React.FC<AlertBannerProps> & {
     {
       children: originalChildren,
       className,
-      backgroundColor = AlertBanner.backgroundColors.PRIMARY,
+      backgroundColor = AlertBanner.backgroundColors.NORMAL,
       onClose = NOOP,
       ariaLabel = "",
       isCloseHidden = false
@@ -42,7 +42,7 @@ const AlertBanner: React.FC<AlertBannerProps> & {
       return cx(className, "l3-alert-banner", `l3-alert-banner--background-color-${backgroundColor}`);
     }, [className, backgroundColor]);
 
-    const isDarkBackground = backgroundColor === AlertBanner.backgroundColors.DARK;
+    const isDarkBackground = backgroundColor === AlertBanner.backgroundColors.WARNING;
     const children = useMemo(() => {
       const allChildren = React.Children.toArray(originalChildren) as ReactElement[];
       const filteredChildren = allChildren.filter((child: ReactElement) => {

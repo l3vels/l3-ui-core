@@ -1,6 +1,6 @@
 {
   "name": "@l3-lib/ui-core",
-  "version": "0.0.27",
+  "version": "0.0.29",
   "description": "Official l3vels.xyz UI resources for application development in React.js",
   "main": "./dist/main.js",
   "exports": {
@@ -58,6 +58,7 @@
   "homepage": "https://github.com/l3vels/l3-ui-core#readme",
   "dependencies": {
     "@l3-lib/ui-style": "^0.0.21",
+    "@l3-lib/ui-core": "^0.0.15",
     "@popperjs/core": "2.11.6",
     "a11y-dialog": "^7.5.2",
     "autosize": "^5.0.1",
