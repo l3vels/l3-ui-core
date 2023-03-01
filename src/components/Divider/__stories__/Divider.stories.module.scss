@@ -9,26 +9,16 @@
   &-container {
     display: flex;
     align-items: center;
-    @include typography-paragraph-large;
+    justify-content: flex-start;
+    @include typography-label-large;
     color: var(--color-transparent-white-06);
-    height: 100%;
-    width: 100%;
   }
-
   &-vertical-text {
-    position: absolute;
-    width: $spacing-xxxl;
-    height: $spacing-large;
-    margin-top: -270px;
+    width: 64px;
+    height: 24px;
   }
   &-horizontal-text {
-    position: absolute;
     width: 86px;
-    height: $spacing-large;
-  }
-
-  &-horizontal {
-    margin-top: 53px;
-    margin-left: -60px;
+    height: 24px;
   }
 }

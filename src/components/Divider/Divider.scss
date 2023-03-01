@@ -7,6 +7,7 @@ $divider-width: 322px;
 $divider-height: 2px;
 
 .l3-style-divider {
+  position: absolute;
   background: var(--color-transparent-white-03);
   border-radius: $divider-border-radius;
   height: $divider-height;
@@ -14,8 +15,12 @@ $divider-height: 2px;
 
   &--vertical {
     transform: rotate(90deg);
+    left: 0.85%;
+    right: 8.19%;
+    top: calc(50% - 2px / 2 + 15px);
   }
   &--horizontal {
-    margin-left: 100px;
+    left: 16.52%;
+    right: 4.52%;
   }
 }
