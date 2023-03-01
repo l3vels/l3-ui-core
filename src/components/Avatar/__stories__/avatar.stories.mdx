@@ -1,4 +1,5 @@
 import Avatar from "../Avatar";
+import { AvatarsList } from "../avatar.stories.helperComponents";
 import { createComponentTemplate, createStoryMetaSettings } from "../../../storybook";
 import { ArgsTable, Canvas, Meta, Story } from "@storybook/addon-docs";
 import {
@@ -30,9 +31,9 @@ import {
   avatar2,
   avatar3,
   avatar4,
-  apes1,
-  apes5,
-  apes2
+  monkey_1,
+  monkey_5,
+  monkey_2
 } from "./assets";
 import { useCallback, useState } from "react";
 import { StoryDescription } from "../../../storybook/components/story-description/story-description";
@@ -45,7 +46,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Media/Avatar/Avatar)"
+  title="Media/Avatar/Avatar"
   component={Avatar}
   argTypes={metaSettings.argTypes}
   decorators={metaSettings.decorators}
@@ -250,9 +251,17 @@ Use for non-person avatars, such as a workspace or team.
 
 <Canvas>
   <Story name="Rectangle avatar with border">
-    <Avatar size={Avatar.sizes.SMALL} src={apes1} type={Avatar.types.IMG} borderColor="orange" rectangle />
-    <Avatar size={Avatar.sizes.MEDIUM} src={apes5} type={Avatar.types.IMG} borderColor="orange" rectangle />
-    <Avatar size={Avatar.sizes.LARGE} src={apes2} type={Avatar.types.IMG} borderColor="orange" rectangle />
+    <Avatar size={Avatar.sizes.SMALL} src={monkey_1} type={Avatar.types.IMG} borderColor="orange" rectangle />
+    <Avatar size={Avatar.sizes.MEDIUM} src={monkey_5} type={Avatar.types.IMG} borderColor="green" rectangle />
+    <Avatar size={Avatar.sizes.LARGE} src={monkey_2} type={Avatar.types.IMG} borderColor="pink" rectangle />
+  </Story>
+</Canvas>
+
+### Avatar List
+
+<Canvas>
+  <Story name="Avatar List" args={{}}>
+    {AvatarsList.bind({})}
   </Story>
 </Canvas>
 

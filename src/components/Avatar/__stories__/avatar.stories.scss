@@ -1,6 +1,21 @@
+.avatar-story-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.avatar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
 .l3-style-story-avatar {
   &_multiple {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px 20px 10px 20px;
@@ -38,4 +53,12 @@
 .text-formatted--small {
   font-size: 10px;
   font-weight: bold;
+}
+
+.avatar-story-name {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 5px;
 }

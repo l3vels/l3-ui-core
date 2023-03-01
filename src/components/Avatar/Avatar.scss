@@ -5,6 +5,7 @@
 $avatar-size-large: 50px;
 $avatar-size-medium: 36px;
 $avatar-size-small: 28px;
+$avatar-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 
 .l3-style-avatar {
   position: relative;
@@ -139,33 +140,35 @@ $avatar-size-small: 28px;
   border: 2px solid transparent;
 
   &_orange {
-    background: linear-gradient(180deg, #eea03c 0%, #e85c29 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-orange);
+    // @include theme-prop(background, --color-gradient-orange);
+    border: 2px solid transparent;
+    box-shadow: $avatar-box-shadow;
     border-color: #eea03c transparent #e85c29;
   }
   &_green {
-    background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-green);
+    box-shadow: $avatar-box-shadow;
     border-color: #cefb53 transparent #7af94b;
   }
   &_yellow {
-    background: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-yellow);
+    box-shadow: $avatar-box-shadow;
     border-color: #fdfe53 transparent #eb9b3a;
   }
   &_blue {
-    background: linear-gradient(180deg, #4ca6f8 0%, #2152f3 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-blue);
+    box-shadow: $avatar-box-shadow;
     border-color: #4ca6f8 transparent #2152f3;
   }
   &_lightBlue {
-    background: linear-gradient(180deg, #73fafd 0%, #50b1d7 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-light-blue);
+    box-shadow: $avatar-box-shadow;
     border-color: #73fafd transparent #50b1d7;
   }
   &_pink {
-    background: linear-gradient(180deg, #e332e6 0%, #a822f3 100%);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    background: var(--color-gradient-pink);
+    box-shadow: $avatar-box-shadow;
     border-color: #e332e6 transparent #a822f3;
   }
   &_none {
