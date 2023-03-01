@@ -22,7 +22,7 @@ exports[`Snapshots renders correctly with children 1`] = `
         style={Object {}}
       >
         <div
-          className="polygon-main-container"
+          className="polygon polygon_none"
         >
           <svg
             className="svg"

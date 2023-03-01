@@ -12,7 +12,7 @@ exports[`renders correctly with caption 1`] = `
       style={Object {}}
     >
       <div
-        className="polygon-main-container"
+        className="polygon polygon_none"
       >
         <svg
           className="svg"
@@ -57,7 +57,7 @@ exports[`renders correctly with custom class name 1`] = `
       style={Object {}}
     >
       <div
-        className="polygon-main-container"
+        className="polygon polygon_none"
       >
         <svg
           className="svg"
@@ -96,7 +96,7 @@ exports[`renders correctly with empty props 1`] = `
       style={Object {}}
     >
       <div
-        className="polygon-main-container"
+        className="polygon polygon_none"
       >
         <svg
           className="svg"
