@@ -28,8 +28,8 @@ export const useModalHelper = ({ openButtonTitle = "Open", openOnStart = false, 
 export const ModalButtons = ({ closeModal }) => {
   return (
     <div>
-      <Flex justify={Flex.justify.END} gap={12}>
-        <Button onClick={closeModal} kind={Button.kinds.SECONDARY}>
+      <Flex justify={Flex.justify.END} gap={15}>
+        <Button onClick={closeModal} size={Button.sizes.LARGE} kind={Button.kinds.TERTIARY}>
           Cancel
         </Button>
         <Button onClick={closeModal}>Confirm</Button>

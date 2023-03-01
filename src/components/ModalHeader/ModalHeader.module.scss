@@ -1,17 +1,23 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/typography";
+@import "../../styles/themes";
+@import "../../styles/keyframes";
+@import "../../styles/typography/display-typography";
+@import "../../styles/typography/main-typography";
+@import "../../styles/typography/typography";
+
 .container {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-block-end: var(--spacing-large);
 
   .title {
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-bold);
-    color: var(--primary-text-color);
-    flex-grow: 1;
-    margin-block-start: var(--spacing-large);
-    margin-block-end: 0;
-
+    width: 660px;
+    height: 32px;
+    @include typography-heading-small;
+    color: $white;
+    margin-top: 0px;
+    margin-left: 8px;
   }
 
   .icon {
@@ -20,9 +26,12 @@
   }
 
   .description {
-    font: var(--font-subtext);
-    color: var(--primary-text-color);
-    margin-block-start: var(--spacing-small);
+    width: 660px;
+    height: 28px;
+    @include typography-heading-xs-small;
+    color: $white-6;
+    margin-top: -25px;
+    margin-left: 8px;
   }
 
   .closeButton {
