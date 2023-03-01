@@ -1,7 +1,6 @@
 @import "../../../styles/themes";
 
 .l3-storybook-modal-new {
-
   &-content-wrapper {
     flex-grow: 1;
     display: flex;
@@ -10,15 +9,13 @@
     padding-block-end: 24px;
   }
 
-
   &-buttons {
     display: flex;
     justify-content: end;
     margin-top: 24px;
-    button+button {
+    button + button {
       margin-inline-start: 12px;
     }
-
   }
 
   &-display-none {
@@ -28,4 +25,10 @@
 
 .modal-content {
   color: var(--primary-text-color);
+}
+.modalWidth {
+  width: 830px;
+}
+.modalHeight {
+  height: 830px;
 }

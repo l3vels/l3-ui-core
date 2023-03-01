@@ -1,3 +1,12 @@
+@import "../../styles/global-css-settings";
+@import "../../styles/typography";
+@import "../../styles/themes";
+@import "../../styles/keyframes";
+
+$overlay-background-color: rgba(41, 47, 76, 0.7);
+$dialog-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+$dialog-border-radius: 13.913px;
+
 .container,
 .overlay {
   position: fixed;
@@ -9,6 +18,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  //   width: 1280px;
+  // height: 762px;
+  left: 0px;
+  top: 0px;
+  background: var(--color-transparent-black-03);
+  backdrop-filter: blur(2.78261px);
 }
 
 .container[aria-hidden="true"] {
@@ -21,7 +36,7 @@
 }
 
 .overlay {
-  background-color: rgba(41, 47, 76, 0.7);
+  background-color: $overlay-background-color;
   animation: overlay-fade-in 70ms var(--motion-timing-enter);
 }
 
@@ -30,37 +45,36 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 0 var(--spacing-xl);
-  padding-block-end: var(--spacing-large);
-  border-radius: var(--border-radius-big);
-  box-shadow: var(--box-shadow-large);
-  background-color: var(--secondary-background-color);
-  max-height: 90vh;
-  max-width: 90vw;
+  padding: $spacing-xl;
+  box-shadow: $dialog-box-shadow;
+  backdrop-filter: blur(100px);
+  border-radius: $dialog-border-radius;
+  height: 522px;
+  width: 756px;
+  // left: 262px;
+  // top: 120px;
 
-  &.default {
-    width: 520px;
+  &.dark {
+    background: var(--color-transparent-black-05);
   }
-
-  &.full {
-    width: 100vw;
+  &.light {
+    background: var(--color-transparent-white-02);
   }
 }
 
-
-@keyframes overlay-fade-in{
-  from{
+@keyframes overlay-fade-in {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
-@keyframes overlay-fade-out{
-  from{
+@keyframes overlay-fade-out {
+  from {
     opacity: 1;
   }
-  to{
+  to {
     opacity: 0;
   }
 }

@@ -20,7 +20,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Feedback/Modal - (Coming Soon)"
+  title="Feedback/Modal - (In Progress)"
   component={Modal}
   subcomponents={{ ModalHeader, ModalContent, ModalFooter }}
   argTypes={metaSettings.argTypes}
@@ -35,7 +35,7 @@ export const metaSettings = createStoryMetaSettings({
 - [Props](#props)
 - [Usage](#usage)
 - [Variants](#variants)
-- [Do’s and don’ts](#dos-and-donts)
+- [Do’s and don’ts](#dos-and-dots)
 - [Use cases and examples](#use-cases-and-examples)
 - [Related components](#related-components)
 - [Feedback](#feedback)
@@ -53,15 +53,16 @@ Modal allows the user to focus on one task or a piece of information, by popping
           {openModalButton}
           <Modal
             id={"story-book-modal"}
-            title={"Modal title"}
+            title={"Heading"}
+            description={"Heading"}
             triggerElement={ref.current}
             show={show}
             onClose={closeModal}
+            hideCloseButton
+            modalHeight
+            modalWidth
             closeButtonAriaLabel={"close"}
           >
-            <ModalContent>
-              <span className="modal-content">Modal content goes here</span>
-            </ModalContent>
             <ModalFooter>{modalButtons}</ModalFooter>
           </Modal>
         </div>
@@ -93,183 +94,51 @@ Modal allows the user to focus on one task or a piece of information, by popping
 
 ## Variants
 
-### Sizes
-
 <Canvas>
-  <Story name="Width variants - Normal">
+  <Story name="Background variants - Dark">
     {() => {
       const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "Default"
+        openButtonTitle: "dark background"
       });
       return (
         <div>
           {openModalButton}
           <Modal
             id={"story-book-modal"}
-            title={"Modal title"}
+            title={"Heading"}
+            description={"Heading"}
             triggerElement={ref.current}
             show={show}
             onClose={closeModal}
+            hideCloseButton={true}
             closeButtonAriaLabel={"close"}
-            width={Modal.width.DEFAULT}
+            backgroundColor="dark"
           >
-            <p className="modal-content">Normal modal</p>
             <ModalFooter>{modalButtons}</ModalFooter>
           </Modal>
         </div>
       );
     }}
   </Story>
-  <Story name="Width variants - Full">
+  <Story name="Background variants - Light">
     {() => {
       const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "Full screen"
+        openButtonTitle: "Light background"
       });
       return (
         <div>
           {openModalButton}
           <Modal
             id={"story-book-modal"}
-            title={"Modal title"}
+            title={"Heading"}
+            description={"Heading"}
             triggerElement={ref.current}
             show={show}
+            hideCloseButton={true}
             onClose={closeModal}
-            width={Modal.width.FULL_WIDTH}
+            backgroundColor="light"
             closeButtonAriaLabel={"close"}
           >
-            <p className="modal-content">Full width modal</p>
-            <ModalFooter>{modalButtons}</ModalFooter>
-          </Modal>
-        </div>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Alert Modal (Modal)
-
-Use this variant in case of sensitive or important messages, and in modals that requires data from the user, such as forms.
-The Alert modal will not be closed by clicking outside the modal or by the ESC key. It will be closed only by the close button and the footer buttons.
-
-<Canvas>
-  <Story name="Alert Modal">
-    {() => {
-      const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper();
-      return (
-        <div>
-          {openModalButton}
-          <Modal
-            id={"story-book-modal"}
-            title={"Modal title"}
-            triggerElement={ref.current}
-            show={show}
-            onClose={closeModal}
-            alertDialog
-            closeButtonAriaLabel={"close"}
-          >
-            <p className="modal-content">Use the close button to dismiss this Modal.</p>
-            <ModalFooter>{modalButtons}</ModalFooter>
-          </Modal>
-        </div>
-      );
-    }}
-  </Story>
-</Canvas>
-
-## Use cases and examples
-
-### Showing the Modal
-
-Use this variant in case of sensitive or importent masseges, and in modals that requires data from the user, such as forms.
-
-The Alert modal will not be closed by clicking outside the modal or by the ESC key. It will be closed only by the close button and the footer buttons.
-
-<Canvas>
-  <Story name="Showing the Modal">
-    {() => {
-      const { modalButtons } = useModalHelper();
-      const [show, setShow] = useState(false);
-      const closeModal = () => {
-        setShow(false);
-      };
-      return (
-        <div>
-          <Button onClick={() => setShow(true)}>Show</Button>
-          <Modal
-            id={"story-book-modal"}
-            title={"Modal title"}
-            show={show}
-            onClose={closeModal}
-            closeButtonAriaLabel={"close"}
-          >
-            <ModalContent>
-              <span className="modal-content">Modal content goes here</span>
-            </ModalContent>
-            <ModalFooter>{modalButtons}</ModalFooter>
-          </Modal>
-        </div>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Modal with footer buttons
-
-As there are many possible combinations of buttons to display on the modal footer, we don't provide a build in support for footer buttons. However, you can use the ModalFooter component to place any content at the bottom of the modal, including buttons.
-
-<Canvas>
-  <Story name="Modal with footer buttons">
-    {() => {
-      const { openModalButton, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "Modal with buttons"
-      });
-      return (
-        <div>
-          {openModalButton}
-          <Modal
-            id={"story-book-modal"}
-            title={"Modal title"}
-            triggerElement={ref.current}
-            show={show}
-            onClose={closeModal}
-            closeButtonAriaLabel={"close"}
-          >
-            <div className="modal-content">Modal content goes here</div>
-            <ModalFooter className="l3-storybook-modal-new-buttons">
-              <Button kind={Button.kinds.SECONDARY} onClick={closeModal}>
-                Dismiss
-              </Button>
-              <Button onClick={closeModal}>Close</Button>
-            </ModalFooter>
-          </Modal>
-        </div>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Modal header with an icon
-
-Use the ModalHeader component to display a Header with an icon
-
-<Canvas>
-  <Story name="Modal with icon">
-    {() => {
-      const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
-        openButtonTitle: "Header with icon"
-      });
-      return (
-        <div>
-          {openModalButton}
-          <Modal
-            id={"story-book-modal"}
-            title={"Modal title"}
-            triggerElement={ref.current}
-            show={show}
-            onClose={closeModal}
-            closeButtonAriaLabel={"close"}
-          >
-            <ModalHeader title={"Modal Title"} icon={Settings} />
             <ModalFooter>{modalButtons}</ModalFooter>
           </Modal>
         </div>
