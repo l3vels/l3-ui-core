@@ -29,7 +29,10 @@ import {
   avatar1,
   avatar2,
   avatar3,
-  avatar4
+  avatar4,
+  apes1,
+  apes5,
+  apes2
 } from "./assets";
 import { useCallback, useState } from "react";
 import { StoryDescription } from "../../../storybook/components/story-description/story-description";
@@ -238,6 +241,18 @@ Use for non-person avatars, such as a workspace or team.
     <Avatar size={Avatar.sizes.SMALL} src={avatar1} type={Avatar.types.IMG} rectangle />
     <Avatar size={Avatar.sizes.MEDIUM} src={avatar2} type={Avatar.types.IMG} rectangle />
     <Avatar size={Avatar.sizes.LARGE} src={avatar3} type={Avatar.types.IMG} rectangle />
+  </Story>
+</Canvas>
+
+### Square avatar with border
+
+Use for non-person avatars, such as a workspace or team.
+
+<Canvas>
+  <Story name="Rectangle avatar with border">
+    <Avatar size={Avatar.sizes.SMALL} src={apes1} type={Avatar.types.IMG} borderColor="orange" rectangle />
+    <Avatar size={Avatar.sizes.MEDIUM} src={apes5} type={Avatar.types.IMG} borderColor="orange" rectangle />
+    <Avatar size={Avatar.sizes.LARGE} src={apes2} type={Avatar.types.IMG} borderColor="orange" rectangle />
   </Story>
 </Canvas>
 

@@ -127,20 +127,67 @@ $avatar-size-small: 28px;
   width: 0;
   height: 0;
 }
-.clipped {
-  width: 48px;
-  height: 48px;
-  background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
-  background-size: cover;
+
+.polygon {
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
+  border-radius: 5px;
+  border: 2px solid transparent;
 
-  &_large {
-    width: 68px;
-    height: 68px;
+  &_orange {
+    background: linear-gradient(180deg, #eea03c 0%, #e85c29 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #eea03c transparent #e85c29;
   }
-  &_small {
-    width: 32px;
-    height: 32px;
+  &_green {
+    background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #cefb53 transparent #7af94b;
+  }
+  &_yellow {
+    background: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #fdfe53 transparent #eb9b3a;
+  }
+  &_blue {
+    background: linear-gradient(180deg, #4ca6f8 0%, #2152f3 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #4ca6f8 transparent #2152f3;
+  }
+  &_lightBlue {
+    background: linear-gradient(180deg, #73fafd 0%, #50b1d7 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #73fafd transparent #50b1d7;
+  }
+  &_pink {
+    background: linear-gradient(180deg, #e332e6 0%, #a822f3 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #e332e6 transparent #a822f3;
+  }
+  &_none {
+    border-color: transparent;
+    margin-top: -4px;
+  }
+
+  .clipped {
+    width: 48px;
+    height: 48px;
+    background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
+    background-size: cover;
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+
+    &_large {
+      width: 68px;
+      height: 68px;
+    }
+    &_small {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
