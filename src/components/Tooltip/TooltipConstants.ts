@@ -14,3 +14,8 @@ export enum TooltipTheme {
   Surface = "surface",
   Primary = "primary"
 }
+
+export enum TooltipSize {
+  Small = "small",
+  Large = "large"
+}
