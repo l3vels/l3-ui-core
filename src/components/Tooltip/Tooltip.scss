@@ -22,11 +22,6 @@ $tooltip-z-index: 9999999999999999;
   backdrop-filter: blur(150px);
   border-radius: $border-radius-medium;
 
-  &.padding-size-md {
-    border-radius: $border-radius-medium;
-    // padding: $spacing-medium;
-  }
-
   &.tooptip-size-small {
     padding: 8px;
     color: #fff !important;
