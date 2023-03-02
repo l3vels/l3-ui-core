@@ -4,7 +4,7 @@ import cx from "classnames";
 import { BEMClass } from "../../helpers/bem-helper";
 import { backwardCompatibilityForProperties } from "../../helpers/backwardCompatibilityForProperties";
 import { elementColorsNames, getElementColor } from "../../utils/colors-vars-map";
-import { AvatarSize, AvatarType } from "./AvatarConstants";
+import { AvatarBorderColor, AvatarSize, AvatarType } from "./AvatarConstants";
 import { AvatarBadge, AvatarBadgeProps } from "./AvatarBadge";
 import { AvatarContent } from "./AvatarContent";
 import Tooltip, { TooltipProps } from "../Tooltip/Tooltip";
@@ -46,6 +46,7 @@ export interface AvatarProps extends L3ComponentProps {
   bottomRightBadgeProps?: AvatarBadgeProps;
   withoutBorder?: boolean;
   onClick?: (event: React.MouseEvent | React.KeyboardEvent, avatarId: string) => void;
+  borderColor?: AvatarBorderColor;
 }
 
 const Avatar: React.FC<AvatarProps> & {
@@ -85,6 +86,7 @@ const Avatar: React.FC<AvatarProps> & {
   withoutBorder = false,
   customSize = null,
   customBackgroundColor = null,
+  borderColor = AvatarBorderColor.NONE,
   onClick
 }) => {
   const overrideSquare = backwardCompatibilityForProperties([square, isSquare]);
@@ -204,7 +206,20 @@ const Avatar: React.FC<AvatarProps> & {
             </div>
           )}
           {rectangle && (
-            <div className="polygon-main-container">
+            <div
+              className={
+                borderColor &&
+                cx("polygon", {
+                  polygon_orange: borderColor === "orange",
+                  polygon_green: borderColor === "green",
+                  polygon_yellow: borderColor === "yellow",
+                  polygon_blue: borderColor === "blue",
+                  polygon_lightBlue: borderColor === "lightBlue",
+                  polygon_pink: borderColor === "pink",
+                  polygon_none: borderColor === "none"
+                })
+              }
+            >
               <svg className="svg">
                 <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
                   <path d="M0.405,0.022 C0.465,-0.007,0.535,-0.007,0.595,0.022 L0.822,0.133 C0.881,0.162,0.923,0.215,0.937,0.278 L0.995,0.536 C1,0.598,0.994,0.663,0.955,0.714 L0.795,0.918 C0.754,0.97,0.691,1,0.625,1 H0.375 C0.309,1,0.246,0.97,0.205,0.918 L0.045,0.714 C0.006,0.663,-0.009,0.598,0.005,0.536 L0.063,0.278 C0.077,0.215,0.119,0.162,0.178,0.133 L0.405,0.022,NaN f, i, l0 lNaN u, r, p, a0 i, n, tNaN r, a0 d, i, a0 lNaN"></path>

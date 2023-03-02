@@ -5,6 +5,7 @@
 $avatar-size-large: 50px;
 $avatar-size-medium: 36px;
 $avatar-size-small: 28px;
+$avatar-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 
 .l3-style-avatar {
   position: relative;
@@ -127,20 +128,69 @@ $avatar-size-small: 28px;
   width: 0;
   height: 0;
 }
-.clipped {
-  width: 48px;
-  height: 48px;
-  background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
-  background-size: cover;
+
+.polygon {
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
+  border-radius: 5px;
+  border: 2px solid transparent;
 
-  &_large {
-    width: 68px;
-    height: 68px;
+  &_orange {
+    background: var(--color-gradient-orange);
+    // @include theme-prop(background, --color-gradient-orange);
+    border: 2px solid transparent;
+    box-shadow: $avatar-box-shadow;
+    border-color: #eea03c transparent #e85c29;
   }
-  &_small {
-    width: 32px;
-    height: 32px;
+  &_green {
+    background: var(--color-gradient-green);
+    box-shadow: $avatar-box-shadow;
+    border-color: #cefb53 transparent #7af94b;
+  }
+  &_yellow {
+    background: var(--color-gradient-yellow);
+    box-shadow: $avatar-box-shadow;
+    border-color: #fdfe53 transparent #eb9b3a;
+  }
+  &_blue {
+    background: var(--color-gradient-blue);
+    box-shadow: $avatar-box-shadow;
+    border-color: #4ca6f8 transparent #2152f3;
+  }
+  &_lightBlue {
+    background: var(--color-gradient-light-blue);
+    box-shadow: $avatar-box-shadow;
+    border-color: #73fafd transparent #50b1d7;
+  }
+  &_pink {
+    background: var(--color-gradient-pink);
+    box-shadow: $avatar-box-shadow;
+    border-color: #e332e6 transparent #a822f3;
+  }
+  &_none {
+    border-color: transparent;
+    margin-top: -4px;
+  }
+
+  .clipped {
+    width: 48px;
+    height: 48px;
+    background: radial-gradient(52.93% 52.93% at 36.42% 37.84%, #58aae7 0%, #4889e7 89.97%);
+    background-size: cover;
+    -webkit-clip-path: url(#my-clip-path);
+    clip-path: url(#my-clip-path);
+
+    &_large {
+      width: 68px;
+      height: 68px;
+    }
+    &_small {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
