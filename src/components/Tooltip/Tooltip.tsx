@@ -139,7 +139,6 @@ export default class Tooltip extends PureComponent<TooltipProps> {
 
   renderTooltipContent() {
     const { theme, content, paddingSize, className, style, tooltipSize } = this.props;
-    console.log("🚀 ~ file: Tooltip.tsx:142 ~ Tooltip ~ renderTooltipContent ~ tooltipSize:", tooltipSize);
     if (!content) {
       // don't render empty tooltip
       return null;
