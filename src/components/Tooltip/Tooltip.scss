@@ -20,8 +20,6 @@ $tooltip-z-index: 9999999999999999;
   border: 1.5px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(150px);
-  border-radius: $border-radius-medium;
-
   &.tooptip-size-small {
     padding: 8px;
     color: #fff !important;
