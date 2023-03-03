@@ -56,7 +56,7 @@ Snapshot Diff:
 +           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
 +         >
 +           <div
-+             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined"
++             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
 +           >
 +             20%
 +           </div>
@@ -107,7 +107,7 @@ Snapshot Diff:
 -           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
 -         >
 -           <div
--             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined"
+-             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
 -           >
 -             20%
 -           </div>
@@ -165,7 +165,7 @@ Snapshot Diff:
 +           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
 +         >
 +           <div
-+             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined"
++             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
 +           >
 +             20%
 +           </div>
@@ -223,7 +223,7 @@ Snapshot Diff:
 -           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear l3-style-animation-expand-appear-active"
 -         >
 -           <div
--             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined"
+-             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
 -           >
 -             20%
 -           </div>

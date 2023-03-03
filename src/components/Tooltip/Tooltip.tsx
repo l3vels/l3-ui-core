@@ -7,7 +7,7 @@ import Dialog from "../Dialog/Dialog";
 import { AnimationType, BASE_SIZES_WITH_NONE, HideShowEvent, JustifyType } from "../../constants";
 import { DialogPosition } from "../../constants/positions";
 import L3ComponentProps from "../../types/L3ComponentProps";
-import { TooltipArrowPosition, TooltipTheme } from "./TooltipConstants";
+import { TooltipArrowPosition, TooltipSize, TooltipTheme } from "./TooltipConstants";
 import { ElementContent } from "../../types/ElementContent";
 import { MoveBy } from "../../types/MoveBy";
 import "./Tooltip.scss";
@@ -83,6 +83,7 @@ export interface TooltipProps extends L3ComponentProps {
    * A Classname to be added to <spam> element which wraps the children
    */
   referenceWrapperClassName?: string;
+  tooltipSize?: TooltipSize;
 }
 // When last tooltip was shown in the last 1.5 second - the next tooltip will be shown immediately
 const IMMEDIATE_SHOW_THRESHOLD_MS = 1500;
@@ -100,6 +101,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
   static animationTypes = AnimationType;
   static justifyTypes = JustifyType;
   static arrowPositions = TooltipArrowPosition;
+  static tooltipSize = TooltipSize;
   static defaultProps = {
     arrowPosition: TooltipArrowPosition.CENTER,
     moveBy: { main: 4, secondary: 0 },
@@ -118,7 +120,8 @@ export default class Tooltip extends PureComponent<TooltipProps> {
     showTrigger: Dialog.hideShowTriggers.MOUSE_ENTER,
     hideTrigger: Dialog.hideShowTriggers.MOUSE_LEAVE,
     showOnDialogEnter: false,
-    referenceWrapperClassName: ""
+    referenceWrapperClassName: "",
+    tooltipSize: TooltipSize.Small
   };
   constructor(props: TooltipProps) {
     super(props);
@@ -135,7 +138,7 @@ export default class Tooltip extends PureComponent<TooltipProps> {
   }
 
   renderTooltipContent() {
-    const { theme, content, paddingSize, className, style } = this.props;
+    const { theme, content, paddingSize, className, style, tooltipSize } = this.props;
     if (!content) {
       // don't render empty tooltip
       return null;
@@ -152,10 +155,14 @@ export default class Tooltip extends PureComponent<TooltipProps> {
     if (!contentValue) {
       return null;
     }
+
     return (
       <div
         style={style}
-        className={classnames(`l3-style-tooltip l3-style-tooltip-${theme} padding-size-${paddingSize}`, className)}
+        className={classnames(
+          `l3-style-tooltip l3-style-tooltip-${theme} padding-size-${paddingSize} tooptip-size-${tooltipSize}`,
+          className
+        )}
       >
         {contentValue}
       </div>

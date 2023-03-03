@@ -16,4 +16,3 @@ export const AvatarsList = () => {
     </div>
   ));
 };
-console.log("avatars", AvatarsList());
