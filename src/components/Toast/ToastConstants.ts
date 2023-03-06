@@ -1,6 +1,6 @@
-import WarningCheck from "../Icon/Icons/components/WarningCheck";
-import PositiveCheck from "../Icon/Icons/components/PositiveCheck";
-import NegativeCheck from "../Icon/Icons/components/NegativeCheck";
+import WarningCheckIcon from "./IconComponents/WarningCheckIcon";
+import PositiveCheckIcon from "./IconComponents/PositiveCheckIcon";
+import NegativeCheck from "./IconComponents/NegativeCheckIcon";
 
 export enum ToastType {
   WARNING = "warning",
@@ -15,9 +15,9 @@ export enum ToastActionType {
 }
 
 export const defaultIconMap = {
-  [ToastType.WARNING]: WarningCheck,
-  [ToastType.POSITIVE]: PositiveCheck,
-  [ToastType.NORMAL]: PositiveCheck,
+  [ToastType.WARNING]: WarningCheckIcon,
+  [ToastType.POSITIVE]: PositiveCheckIcon,
+  [ToastType.NORMAL]: PositiveCheckIcon,
   [ToastType.NEGATIVE]: NegativeCheck
 };
 
