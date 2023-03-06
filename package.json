@@ -57,8 +57,8 @@
   },
   "homepage": "https://github.com/l3vels/l3-ui-core#readme",
   "dependencies": {
-    "@l3-lib/ui-style": "^0.0.21",
     "@l3-lib/ui-core": "^0.0.15",
+    "@l3-lib/ui-style": "0.0.22",
     "@popperjs/core": "2.11.6",
     "a11y-dialog": "^7.5.2",
     "autosize": "^5.0.1",
