@@ -116,6 +116,7 @@ export type SliderProps = {
    * Width of SelectionIndicator (i.e. TextField)
    */
   selectionIndicatorWidth?: string;
+  sliderLabel?: string;
 };
 
 const Slider: React.FC<SliderProps> & {
@@ -127,7 +128,7 @@ const Slider: React.FC<SliderProps> & {
       ariaLabel,
       ariaLabelledby,
       className,
-      color,
+      color = SliderColor.NORMAL,
       "data-testid": dataTestId = "l3-slider",
       disabled = false,
       id,
@@ -146,7 +147,8 @@ const Slider: React.FC<SliderProps> & {
       indicateSelection = false,
       prefix,
       postfix,
-      selectionIndicatorWidth = "60px"
+      selectionIndicatorWidth = "60px",
+      sliderLabel
     },
     ref
   ) => {
@@ -157,36 +159,39 @@ const Slider: React.FC<SliderProps> & {
       [prefix, postfix, indicateSelection, selectionIndicatorWidth]
     );
     return (
-      <SliderProvider
-        ariaLabel={ariaLabel}
-        ariaLabelledby={ariaLabelledby}
-        color={color}
-        data-testid={dataTestId}
-        disabled={disabled}
-        infixOptions={infixOptions}
-        max={max}
-        min={min}
-        onChange={onChange}
-        ranged={ranged}
-        showValue={showValue}
-        size={size}
-        step={step}
-        value={value}
-        defaultValue={ensureDefaultValue(defaultValue, min, max, ranged)}
-        valueFormatter={valueFormatter}
-        valueText={valueText}
-      >
-        <div
-          className={bem("", { disabled, "value-shown": showValue }, className)}
+      <div style={{ display: "flex" }}>
+        <SliderProvider
+          ariaLabel={ariaLabel}
+          ariaLabelledby={ariaLabelledby}
+          color={color}
           data-testid={dataTestId}
-          id={id}
-          ref={mergedRef}
+          disabled={disabled}
+          infixOptions={infixOptions}
+          max={max}
+          min={min}
+          onChange={onChange}
+          ranged={ranged}
+          showValue={showValue}
+          size={size}
+          step={step}
+          value={value}
+          defaultValue={ensureDefaultValue(defaultValue, min, max, ranged)}
+          valueFormatter={valueFormatter}
+          valueText={valueText}
         >
-          <SliderInfix kind={SliderInfix.kinds.PREFIX} />
-          <SliderBase />
-          <SliderInfix kind={SliderInfix.kinds.POSTFIX} />
-        </div>
-      </SliderProvider>
+          {sliderLabel && <div className="valueText">{sliderLabel}</div>}
+          <div
+            className={bem("", { disabled, "value-shown": showValue }, className)}
+            data-testid={dataTestId}
+            id={id}
+            ref={mergedRef}
+          >
+            <SliderInfix kind={SliderInfix.kinds.PREFIX} />
+            <SliderBase />
+            <SliderInfix kind={SliderInfix.kinds.POSTFIX} />
+          </div>
+        </SliderProvider>
+      </div>
     );
   }
 );

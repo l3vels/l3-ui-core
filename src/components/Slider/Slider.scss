@@ -1,4 +1,19 @@
 @import "../../styles/themes";
+@import "../../../styles/typography/typography";
+
+.valueText {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 25px;
+  left: 50%;
+  max-width: 50px;
+  @include typography-label-xs-small;
+  color: $white;
+  // border: 1px solid red;
+}
 
 .l3-slider {
   align-items: center;
@@ -8,6 +23,7 @@
   width: 100%;
 
   &--value-shown {
+    position: fixed;
     margin-top: 10px;
   }
 
@@ -32,6 +48,6 @@
   }
 }
 
-.l3-slider__infix{
+.l3-slider__infix {
   font-family: var(--font-family);
 }

@@ -16,9 +16,9 @@ export enum InfixKind {
 }
 
 export enum SliderColor {
-  PRIMARY = "primary",
   NEGATIVE = "negative",
-  POSITIVE = "positive"
+  POSITIVE = "positive",
+  NORMAL = "normal"
 }
 export type SliderSize = typeof Slider.sizes[keyof typeof Slider.sizes];
 
