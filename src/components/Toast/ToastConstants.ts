@@ -1,6 +1,6 @@
-import WarningCheckIcon from "./IconComponents/WarningCheckIcon";
-import PositiveCheckIcon from "./IconComponents/PositiveCheckIcon";
-import NegativeCheck from "./IconComponents/NegativeCheckIcon";
+import WarningCheckIcon from "../Icon/Icons/components/SpecialWarning";
+import PositiveCheckIcon from "../Icon/Icons/components/SpeacialCheck";
+import NegativeCheck from "../Icon/Icons/components/SpeaciaWarningInfo";
 
 export enum ToastType {
   WARNING = "warning",
