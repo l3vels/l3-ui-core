@@ -80,7 +80,10 @@ There are three sizes available: Small (32px), Medium (40px), and Large (48px).
   <Story name="Sizes">
     <div className="l3-storybook-search_box">
       {/* <Search placeholder="Small" size={Search.sizes.SMALL} /> */}
-      <Search placeholder="Medium" />
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "end", gap: 20 }}>
+        <p>Overview</p>
+        <Search placeholder="Medium" />
+      </div>
       <Search placeholder="Large" size={Search.sizes.LARGE} />
     </div>
   </Story>

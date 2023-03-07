@@ -319,6 +319,15 @@
   font-family: var(--font-family);
 }
 
+.search__main_wrapper {
+  width: 40px;
+  transition: all ease 1s;
+}
+
+.search__visible {
+  width: 200px;
+}
+
 .search_component_wrapper {
   .search-wrapper {
     .search_icon {

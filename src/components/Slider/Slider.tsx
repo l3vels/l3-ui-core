@@ -184,6 +184,7 @@ const Slider: React.FC<SliderProps> & {
         >
           <SliderInfix kind={SliderInfix.kinds.PREFIX} />
           <SliderBase />
+          <SliderInfix
           <SliderInfix kind={SliderInfix.kinds.POSTFIX} />
         </div>
       </SliderProvider>

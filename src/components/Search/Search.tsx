@@ -116,6 +116,7 @@ const Search: L3Component<SearchProps, unknown> & {
         type={TextFieldTextType.SEARCH}
         role="search"
         loading={loading}
+        onIconClick={() => console.log("test")}
       />
     );
   }
