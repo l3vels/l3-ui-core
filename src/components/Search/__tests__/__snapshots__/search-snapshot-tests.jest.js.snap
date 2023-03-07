@@ -3,7 +3,7 @@
 exports[`Search renders correctly when disabled 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper input-component--disabled"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden input-component--disabled"
   role="search"
 >
   <div
@@ -150,7 +150,7 @@ exports[`Search renders correctly when disabled 1`] = `
 exports[`Search renders correctly when underline 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -297,7 +297,7 @@ exports[`Search renders correctly when underline 1`] = `
 exports[`Search renders correctly with className 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -444,7 +444,7 @@ exports[`Search renders correctly with className 1`] = `
 exports[`Search renders correctly with icon 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -529,7 +529,7 @@ exports[`Search renders correctly with icon 1`] = `
 exports[`Search renders correctly with id 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -676,7 +676,7 @@ exports[`Search renders correctly with id 1`] = `
 exports[`Search renders correctly with loading 1`] = `
 <div
   aria-busy={true}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -860,7 +860,7 @@ exports[`Search renders correctly with loading 1`] = `
 exports[`Search renders correctly with placeholder 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1007,7 +1007,7 @@ exports[`Search renders correctly with placeholder 1`] = `
 exports[`Search renders correctly with secondaryIconName 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1144,7 +1144,7 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
 exports[`Search renders correctly with underline type 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1291,7 +1291,7 @@ exports[`Search renders correctly with underline type 1`] = `
 exports[`Search renders correctly with validation 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1438,7 +1438,7 @@ exports[`Search renders correctly with validation 1`] = `
 exports[`Search renders correctly with value 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1585,7 +1585,7 @@ exports[`Search renders correctly with value 1`] = `
 exports[`Search renders correctly with wrapperClassName 1`] = `
 <div
   aria-busy={false}
-  className="input-component testClassName search_component_wrapper"
+  className="input-component testClassName search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
@@ -1732,7 +1732,7 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
 exports[`Search renders correctly without props 1`] = `
 <div
   aria-busy={false}
-  className="input-component search_component_wrapper"
+  className="input-component search_component_wrapper search__main_wrapper search__hidden"
   role="search"
 >
   <div
