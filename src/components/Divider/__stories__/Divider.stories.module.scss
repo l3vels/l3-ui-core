@@ -1,18 +1,24 @@
 @import "../../../styles/themes";
+@import "../../../styles/typography";
+@import "../../../styles/typography/display-typography";
+@import "../../../styles/typography/main-typography";
+@import "../../../styles/typography/typography";
+@import "../../../styles/global-css-settings";
 
 .divider-description {
   &-container {
     display: flex;
     align-items: center;
-    height: 200px;
+    justify-content: flex-start;
+    @include typography-label-large;
+    color: var(--color-transparent-white-06);
   }
-
-  &-text {
-    margin-right: var(--spacing-large);
-    align-self: center;
+  &-vertical-text {
+    width: 64px;
+    height: 24px;
   }
-
-  &-horizontal {
-    margin: 0 auto;
+  &-horizontal-text {
+    width: 86px;
+    height: 24px;
   }
 }
