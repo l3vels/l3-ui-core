@@ -8,16 +8,16 @@ import "./Divider.scss";
 
 interface DividerProps extends L3ComponentProps {
   direction?: DirectionType;
-  classname?: string;
+  classnames?: string;
 }
 
 const Divider = ({
   // Backward compatibility for props naming
-  classname,
+  classnames: classnames,
   className = undefined,
   direction = DirectionType.HORIZONTAL
 }: DividerProps) => {
-  const overrideClassName = backwardCompatibilityForProperties([className, classname]);
+  const overrideClassName = backwardCompatibilityForProperties([className, classnames]);
   return <div className={cx("l3-style-divider", overrideClassName, `l3-style-divider--${direction}`)} />;
 };
 

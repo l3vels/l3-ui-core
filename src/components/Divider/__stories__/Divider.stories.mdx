@@ -10,7 +10,7 @@ export const metaSettings = createStoryMetaSettings({
 });
 
 <Meta
-  title="Data display/Divider - (Coming Soon)"
+  title="Data display/Divider"
   component={Divider}
   argTypes={metaSettings.argTypes}
   decorators={metaSettings.decorators}
@@ -19,7 +19,7 @@ export const metaSettings = createStoryMetaSettings({
 <!--- Component template -->
 
 export const dividerTemplate = args => (
-  <div style={{ width: "400px", height: "40px" }}>
+  <div style={{ width: "400px", height: "170px", marginTop: "150px" }}>
     <Divider {...args} />
   </div>
 );
@@ -51,13 +51,13 @@ Divider create separation between two UI elements
 
 <Canvas>
   <Story name="Directions">
-    <div style={{ display: "flex", flexDirection: "column", width: "400px" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "400px" }}>
       <div className={classes["divider-description-container"]} style={{ height: 40 }}>
-        <span className={classes["divider-description-text"]}>Horizontal</span>
+        <span className={classes["divider-description-horizontal-text"]}>Horizontal</span>
         <Divider direction={Divider.directions.HORIZONTAL} />
       </div>
       <div className={classes["divider-description-container"]}>
-        <span className={classes["divider-description-text"]}>Vertical</span>
+        <span className={classes["divider-description-vertical-text"]}>Vertical</span>
         <Divider direction={Divider.directions.VERTICAL} className={classes["divider-description-horizontal"]} />
       </div>
     </div>
