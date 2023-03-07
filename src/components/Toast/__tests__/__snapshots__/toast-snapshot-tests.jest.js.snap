@@ -12,48 +12,28 @@ exports[`Toast renders correctly (renders nothing) with empty props 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -98,48 +78,28 @@ exports[`Toast renders correctly and don't renders close button if closeable=fal
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -216,48 +176,28 @@ exports[`Toast renders correctly when open is true 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -302,48 +242,28 @@ exports[`Toast renders correctly with button 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -406,48 +326,28 @@ exports[`Toast renders correctly with button and link 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -510,48 +410,28 @@ exports[`Toast renders correctly with link 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "10px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="12"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.9268 11.9725L0.865723 6.9114L2.68746 5.08966L5.9268 8.329L13.3163 0.939453L15.1381 2.76119L5.9268 11.9725Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20.0002 38.8891C30.4323 38.8891 38.8891 30.4323 38.8891 20.0002C38.8891 9.56817 30.4323 1.11133 20.0002 1.11133C9.56817 1.11133 1.11133 9.56817 1.11133 20.0002C1.11133 30.4323 9.56817 38.8891 20.0002 38.8891Z"
+          fill="#fff"
+        />
+        <path
+          d="M20.0004 36.3152C29.0108 36.3152 36.3152 29.0108 36.3152 20.0004C36.3152 10.9899 29.0108 3.68555 20.0004 3.68555C10.9899 3.68555 3.68555 10.9899 3.68555 20.0004C3.68555 29.0108 10.9899 36.3152 20.0004 36.3152Z"
+          fill="#000"
+        />
+        <path
+          d="M17.9268 25.9725L12.8657 20.9114L14.6875 19.0897L17.9268 22.329L25.3163 14.9395L27.1381 16.7612L17.9268 25.9725Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
@@ -599,48 +479,28 @@ exports[`Toast renders correctly with negative type 1`] = `
     <div
       className="l3-style-toast-icon-large"
     >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "border": "2px solid white",
-            "borderRadius": "50%",
-            "display": "flex",
-            "height": "37.78px",
-            "marginLeft": "-10px",
-            "marginRight": "10px",
-            "width": "37.78px",
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="icon_component icon_component--no-focus-style"
+        fill="currentColor"
+        height="14.67px"
+        onClick={[Function]}
+        viewBox="0 0 40 40"
+        width="14.67px"
       >
-        <div
-          style={
-            Object {
-              "alignItems": "center",
-              "background": "black",
-              "borderRadius": "50%",
-              "display": "flex",
-              "height": "33.9px",
-              "margin": 0,
-              "padding": "15px",
-              "width": "33.9px",
-            }
-          }
-        >
-          <svg
-            fill="none"
-            height="16"
-            viewBox="0 0 4 16"
-            width="4"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.02255 3.41831C1.5771 3.41831 1.20437 3.26832 0.895277 2.96832C0.586186 2.66832 0.431641 2.29558 0.431641 1.85013C0.431641 1.40922 0.586186 1.03649 0.895277 0.745583C1.20437 0.454674 1.5771 0.304688 2.02255 0.304688C2.468 0.304688 2.83619 0.450129 3.12709 0.745583C3.42255 1.04104 3.568 1.40922 3.568 1.85013C3.568 2.29558 3.42255 2.66377 3.12709 2.96832C2.83164 3.26832 2.46346 3.41831 2.02255 3.41831ZM3.418 15.6956H0.604368V4.60015H3.418V15.6956Z"
-              fill="white"
-            />
-          </svg>
-        </div>
-      </div>
+        <path
+          d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z"
+          fill="#fff"
+        />
+        <path
+          d="M20 37.2727C29.5395 37.2727 37.2727 29.5395 37.2727 20C37.2727 10.4605 29.5395 2.72727 20 2.72727C10.4605 2.72727 2.72727 10.4605 2.72727 20C2.72727 29.5395 10.4605 37.2727 20 37.2727Z"
+          fill="#000"
+        />
+        <path
+          d="M20.0225 15.4182C19.5771 15.4182 19.2044 15.2682 18.8953 14.9682C18.5862 14.6682 18.4316 14.2954 18.4316 13.85C18.4316 13.4091 18.5862 13.0364 18.8953 12.7454C19.2044 12.4545 19.5771 12.3046 20.0225 12.3046C20.468 12.3046 20.8362 12.45 21.1271 12.7454C21.4225 13.0409 21.568 13.4091 21.568 13.85C21.568 14.2954 21.4225 14.6636 21.1271 14.9682C20.8316 15.2682 20.4635 15.4182 20.0225 15.4182ZM21.418 27.6955H18.6044V16.6H21.418V27.6955Z"
+          fill="#fff"
+        />
+      </svg>
     </div>
     <div
       className="l3-style-toast-content"
