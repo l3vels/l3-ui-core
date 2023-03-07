@@ -31,12 +31,7 @@ module.exports = {
   // coveragePathIgnorePatterns: [
   //   "/node_modules/"
   // ],
-  coveragePathIgnorePatterns: [
-    "node_modules/",
-    "src/components/Icon/Icons/",
-    "src/components/Card",
-    "src/components/Badge"
-  ],
+  coveragePathIgnorePatterns: ["node_modules/", "src/components/Icon/Icons/"],
 
   // Indicates which provider should be used to instrument code for coverage
   // coverageProvider: "babel",
