@@ -11,6 +11,7 @@ import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
 import "./Toast.scss";
 import { ArtWork } from "./ToastArtWork/ToastArtWork";
+import Loader from "../Loader/Loader";
 interface ToastProps extends L3ComponentProps {
   actions?: ToastAction[];
   /** If true, Toast is open (visible) */
@@ -19,6 +20,7 @@ interface ToastProps extends L3ComponentProps {
   /** Possible to override the default icon */
   icon?: string | React.FC<IconSubComponentProps> | null;
   /** If true, won't show the icon */
+  iconClassName?: string;
   hideIcon?: boolean;
   /** The action to display */
   action?: JSX.Element;
@@ -37,15 +39,8 @@ interface ToastProps extends L3ComponentProps {
   iconSize?: "SMALL" | "MEDIUM" | "LARGE";
   artWork?: string;
   artWorkType?: "img" | "icon";
-  avatar?: boolean;
-  avatarType?: "IMG" | "ICON" | "TEXT";
-  avatarSize?: "SMALL" | "MEDIUM" | "LARGE";
-  avatarBorder?: boolean;
   avatarSrc?: string;
-  avatarAriaLabel?: string;
-  avatarRole?: string;
-  avatarSquare?: boolean;
-  iconClassName?: string;
+  loader?: boolean;
 }
 
 const Toast: FC<ToastProps> & {
@@ -53,31 +48,26 @@ const Toast: FC<ToastProps> & {
   actionTypes?: typeof ToastActionType;
   positions?: typeof ToastPosition;
 } = ({
-  open = true,
+  open = false,
   autoHideDuration = null,
   type = ToastType.POSITIVE,
-  position,
+  position = ToastPosition.BOTTOM_RIGHT,
   icon,
   hideIcon = false,
   action: deprecatedAction,
   actions,
   children,
-  iconSize = "SMALL",
+  iconSize = "LARGE",
   closeable = true,
   artWork,
-  avatar,
   onClose = NOOP,
   className,
-  label = "Label",
-  paragraph = "Paragraph",
-  avatarType,
-  avatarSize,
+  label,
+  paragraph,
   avatarSrc,
-  avatarAriaLabel,
-  avatarRole,
-  avatarSquare,
   closeIcon,
-  iconClassName
+  iconClassName,
+  loader = false
 }) => {
   const toastButtons: JSX.Element[] | null = useMemo(() => {
     return actions
@@ -135,21 +125,19 @@ const Toast: FC<ToastProps> & {
       <div className="l3-style-toast--position">
         <>
           <div className={classNames} role="alert" aria-live="polite">
-            {avatar && (
+            {avatarSrc && (
               <div className="l3-style-toast-avatar">
-                <Avatar
-                  type={Avatar.types[avatarType]}
-                  size={Avatar.sizes[avatarSize]}
-                  src={avatarSrc}
-                  ariaLabel={avatarAriaLabel}
-                  role={avatarRole}
-                  rectangle
-                  square={avatarSquare}
-                  withoutBorder
-                />
+                <Avatar type={Avatar.types.IMG} size={Avatar.sizes.SMALL} src={avatarSrc} rectangle withoutBorder />
               </div>
             )}
-            {(!artWork || !avatar) && iconSize && <div className="l3-style-toast-icon-large">{iconElement}</div>}
+            {(!artWork || !avatarSrc || loader) && iconSize && (
+              <div className="l3-style-toast-icon-large">{iconElement}</div>
+            )}
+            {loader && (
+              <div className="l3-loader-toast-loader">
+                <Loader size={Loader.sizes.XS} />
+              </div>
+            )}
             {artWork && (
               <div className="l3-style-toast-artwork">
                 <ArtWork type={ArtWork.types.IMG} src={artWork} ariaLabel="label" />
@@ -161,8 +149,8 @@ const Toast: FC<ToastProps> & {
               })}
             >
               <>
-                <div className="l3-style-toast-label">{label || children}</div>
-                <div className="l3-style-toast-paragraph">{paragraph}</div>
+                {label && <div className="l3-style-toast-label">{label || children}</div>}
+                {paragraph && <div className="l3-style-toast-paragraph">{paragraph}</div>}
               </>
             </div>
             {(toastButtons || deprecatedAction) && (
@@ -180,9 +168,9 @@ const Toast: FC<ToastProps> & {
                 <Icon
                   iconType={Icon.type.SVG}
                   clickable={false}
+                  className={iconClassName}
                   ignoreFocusStyle
                   icon={closeIcon}
-                  className={iconClassName}
                 />
               </Button>
             )}
