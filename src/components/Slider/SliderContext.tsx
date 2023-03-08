@@ -2,7 +2,13 @@ import React, { createContext, ReactElement, useContext, useMemo, useState } fro
 import { createTestIdHelper } from "../../helpers/testid-helper";
 import { useDragging, useSliderActionsContextValue, useSliderValues } from "./SliderHooks";
 import { SliderProps } from "./Slider";
-import { SliderContextActions, SliderContextInfix, SliderContextSelection, SliderContextUI } from "./SliderConstants";
+import {
+  SliderContextActions,
+  SliderContextInfix,
+  SliderContextSelection,
+  SliderContextUI,
+  SliderTextSize
+} from "./SliderConstants";
 import { IconType } from "../Icon/IconConstants";
 
 const UiContext = createContext({});
@@ -17,6 +23,7 @@ export interface SliderProviderProps extends SliderProps {
      * Show selected from Slider range value
      */
     indicateSelection?: boolean;
+    indicateTextSelection?: boolean;
     /**
      * Options for initial/start/prefix element, it can be one of:
      *  - Any Component (react component, node, text, number etc.)
@@ -33,6 +40,7 @@ export interface SliderProviderProps extends SliderProps {
      * Width of SelectionIndicator (i.e. TextField)
      */
     selectionIndicatorWidth?: string;
+    textSize?: SliderTextSize;
   };
 }
 

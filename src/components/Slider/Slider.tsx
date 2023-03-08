@@ -100,6 +100,7 @@ export type SliderProps = {
    * Show selected from Slider range value
    */
   indicateSelection?: boolean;
+  indicateTextSelection?: boolean;
   /**
    * Options for initial/start/prefix element, it can be one of:
    *  - Any Component (react component, node, text, number etc.)
@@ -116,7 +117,7 @@ export type SliderProps = {
    * Width of SelectionIndicator (i.e. TextField)
    */
   selectionIndicatorWidth?: string;
-  sliderLabel?: string;
+  textfix?: { icon: IconType } | string | ((value: number, valueText: string) => void) | ReactElement;
 };
 
 const Slider: React.FC<SliderProps> & {
@@ -147,16 +148,17 @@ const Slider: React.FC<SliderProps> & {
       indicateSelection = false,
       prefix,
       postfix,
+      textfix,
       selectionIndicatorWidth = "60px",
-      sliderLabel
+      indicateTextSelection = false
     },
     ref
   ) => {
     const componentRef = useRef(null);
     const mergedRef = useMergeRefs({ refs: [ref, componentRef] });
     const infixOptions = useMemo(
-      () => ({ prefix, postfix, indicateSelection, selectionIndicatorWidth }),
-      [prefix, postfix, indicateSelection, selectionIndicatorWidth]
+      () => ({ prefix, postfix, textfix, indicateSelection, indicateTextSelection, selectionIndicatorWidth }),
+      [prefix, postfix, textfix, indicateSelection, indicateTextSelection, selectionIndicatorWidth]
     );
     return (
       <div style={{ display: "flex" }}>
@@ -179,7 +181,6 @@ const Slider: React.FC<SliderProps> & {
           valueFormatter={valueFormatter}
           valueText={valueText}
         >
-          {sliderLabel && <div className="valueText">{sliderLabel}</div>}
           <div
             className={bem("", { disabled, "value-shown": showValue }, className)}
             data-testid={dataTestId}

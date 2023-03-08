@@ -15,6 +15,16 @@ export enum InfixKind {
   POSTFIX = "postfix"
 }
 
+export enum InTextFixKind {
+  TEXTFIX = "textfix"
+}
+
+export enum SliderTextSize {
+  SMALL = "small",
+  MEDIUM = "medium",
+  LARGE = "large"
+}
+
 export enum SliderColor {
   NEGATIVE = "negative",
   POSITIVE = "positive",
@@ -59,6 +69,7 @@ export type SliderContextInfix = {
    * Show selected from Slider range value
    */
   indicateSelection?: boolean;
+  indicateTextSelection?: boolean;
   /**
    * Options for initial/start/prefix element, it can be one of:
    *  - Any Component (react component, node, text, number etc.)
@@ -83,4 +94,10 @@ export type SliderContextInfix = {
    * Width of SelectionIndicator (i.e. TextField)
    */
   selectionIndicatorWidth?: string;
+
+  textfix?:
+    | { icon: IconType }
+    | string
+    | ((value: number | number[], valueText: string | string[]) => ReactElement)
+    | ReactElement;
 };

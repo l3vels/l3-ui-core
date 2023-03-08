@@ -18,6 +18,8 @@ import SliderFilledTrack from "./SliderFilledTrack";
 import SliderThumb from "./SliderThumb";
 import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./SliderBase.scss";
+import SliderInTextFix from "../SliderInTextFix";
+import { SliderTextSize } from "../SliderConstants";
 
 export type SliderBaseProps = L3ComponentProps;
 
@@ -73,24 +75,32 @@ const SliderBase: FC<SliderBaseProps> = forwardRef(({ className }, _ref) => {
   }
 
   return (
-    <div
-      className={bem("base", { [size]: size, [color]: color, disabled }, className)}
-      data-testid={shapeTestId("base")}
-      onKeyDown={handleKeyDown}
-    >
-      <SliderRail onClick={handleRailClick} ref={railRef}>
-        <SliderTrack />
-        {railRef.current && (
-          <>
-            <SliderFilledTrack dimension={dimension} offset={offset} />
-            {positions.map((position, index) => {
-              return (
-                <SliderThumb key={thumbKeys[index]} index={index} onMove={handlePointerMove} position={position} />
-              );
-            })}
-          </>
-        )}
-      </SliderRail>
+    <div>
+      <div
+        className={bem("base", { [size]: size, [color]: color, disabled }, className)}
+        data-testid={shapeTestId("base")}
+        onKeyDown={handleKeyDown}
+      >
+        <SliderRail onClick={handleRailClick} ref={railRef}>
+          <SliderTrack />
+          {railRef.current && (
+            <>
+              <SliderFilledTrack dimension={dimension} offset={offset} />
+              {positions.map((position, index) => {
+                return (
+                  <SliderThumb key={thumbKeys[index]} index={index} onMove={handlePointerMove} position={position} />
+                );
+              })}
+            </>
+          )}
+        </SliderRail>
+      </div>
+      <SliderInTextFix
+        kind={SliderInTextFix.kinds.TEXTFIX}
+        textSize={
+          size === "small" ? SliderTextSize.SMALL : size === "medium" ? SliderTextSize.MEDIUM : SliderTextSize.LARGE
+        }
+      />
     </div>
   );
 });

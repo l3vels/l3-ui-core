@@ -1,18 +1,35 @@
 @import "../../styles/themes";
 @import "../../styles/typography/typography";
 
-.valueText {
+.sliderText {
   display: flex;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  top: 25px;
-  left: 50%;
-  max-width: 50px;
-  @include typography-label-xs-small;
-  color: $white;
-  // border: 1px solid red;
+  left: 160px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  &--textSize {
+    display: flex;
+    color: $white;
+    &-small {
+      @include typography-label-small;
+      top: 11px;
+      width: 40px;
+      height: 16px;
+    }
+    &-medium {
+      @include typography-label-medium;
+      top: 15px;
+      width: 40px;
+      height: 18px;
+    }
+    &-large {
+      @include typography-label-medium;
+      top: 15px;
+      width: 45px;
+      height: 20px;
+    }
+  }
 }
 
 .l3-slider {
@@ -23,7 +40,6 @@
   width: 100%;
 
   &--value-shown {
-    position: fixed;
     margin-top: 10px;
   }
 

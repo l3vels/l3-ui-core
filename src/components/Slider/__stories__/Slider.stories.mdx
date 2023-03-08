@@ -92,7 +92,7 @@ Sizes small/medium/large are available.
 
 ### Colors
 
-Color Modes primary/positive/negative are available.
+Color Modes positive/negative/normal are available.
 
 <Canvas>
   <Story name="Colors">
@@ -128,13 +128,13 @@ Normal small/medium/large are available.
   </Story>
 </Canvas>
 
-### Normal with Label
+### Normal with Text
 
 <Canvas>
-  <Story name="Normal with Label">
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} defaultValue={12} sliderLabel="12%" />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} defaultValue={24} sliderLabel="24%" />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} defaultValue={35} sliderLabel="35%" />
+  <Story name="Normal with Text">
+    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} indicateTextSelection={true} defaultValue={10} />
+    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} indicateTextSelection={true} defaultValue={24} />
+    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} indicateTextSelection={true} defaultValue={35} />
   </Story>
 </Canvas>
 
