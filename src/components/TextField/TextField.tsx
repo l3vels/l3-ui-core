@@ -180,9 +180,11 @@ const TextField: L3Component<TextFieldProps, unknown> & {
 
     const isWrapperVisible = show ? "search-wrapper search-wrapper-visible" : "search-wrapper search-wrapper-hidden";
 
+    const isSearchVisivle = show ? "search__main_wrapper search__visible" : "search__main_wrapper search__hidden";
+
     return (
       <div
-        className={classNames("input-component", wrapperClassName, {
+        className={classNames("input-component", wrapperClassName, type === "search" && isSearchVisivle, {
           "input-component--disabled": disabled
         })}
         role={role}
