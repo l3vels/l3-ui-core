@@ -184,7 +184,7 @@ const TextField: L3Component<TextFieldProps, unknown> & {
 
     return (
       <div
-        className={classNames("input-component", wrapperClassName, isSearchVisivle, {
+        className={classNames("input-component", wrapperClassName, type === "search" && isSearchVisivle, {
           "input-component--disabled": disabled
         })}
         role={role}
