@@ -3,7 +3,7 @@
 exports[`TextField renders correctly when disabled 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden input-component--disabled"
+  className="input-component input-component--disabled"
   role=""
 >
   <div
@@ -60,7 +60,7 @@ exports[`TextField renders correctly when disabled 1`] = `
 exports[`TextField renders correctly when loading 1`] = `
 <div
   aria-busy={true}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -154,7 +154,7 @@ exports[`TextField renders correctly when loading 1`] = `
 exports[`TextField renders correctly when readonly 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -211,7 +211,7 @@ exports[`TextField renders correctly when readonly 1`] = `
 exports[`TextField renders correctly when required 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -268,7 +268,7 @@ exports[`TextField renders correctly when required 1`] = `
 exports[`TextField renders correctly with another type 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -325,7 +325,7 @@ exports[`TextField renders correctly with another type 1`] = `
 exports[`TextField renders correctly with className 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -382,7 +382,7 @@ exports[`TextField renders correctly with className 1`] = `
 exports[`TextField renders correctly with className 2`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -439,7 +439,7 @@ exports[`TextField renders correctly with className 2`] = `
 exports[`TextField renders correctly with date type 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -496,7 +496,7 @@ exports[`TextField renders correctly with date type 1`] = `
 exports[`TextField renders correctly with date-time type 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -553,7 +553,7 @@ exports[`TextField renders correctly with date-time type 1`] = `
 exports[`TextField renders correctly with icon 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -619,7 +619,7 @@ exports[`TextField renders correctly with icon 1`] = `
 exports[`TextField renders correctly with iconsNames 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -676,7 +676,7 @@ exports[`TextField renders correctly with iconsNames 1`] = `
 exports[`TextField renders correctly with id 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -733,7 +733,7 @@ exports[`TextField renders correctly with id 1`] = `
 exports[`TextField renders correctly with labelIconName 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -790,7 +790,7 @@ exports[`TextField renders correctly with labelIconName 1`] = `
 exports[`TextField renders correctly with large size 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -847,7 +847,7 @@ exports[`TextField renders correctly with large size 1`] = `
 exports[`TextField renders correctly with placeholder 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -904,7 +904,7 @@ exports[`TextField renders correctly with placeholder 1`] = `
 exports[`TextField renders correctly with role 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role="button"
 >
   <div
@@ -961,7 +961,7 @@ exports[`TextField renders correctly with role 1`] = `
 exports[`TextField renders correctly with secondaryIconName 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -1027,7 +1027,7 @@ exports[`TextField renders correctly with secondaryIconName 1`] = `
 exports[`TextField renders correctly with showCharCount 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -1094,7 +1094,7 @@ exports[`TextField renders correctly with showCharCount 1`] = `
 exports[`TextField renders correctly with validation 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -1161,7 +1161,7 @@ exports[`TextField renders correctly with validation 1`] = `
 exports[`TextField renders correctly with value 1`] = `
 <div
   aria-busy={false}
-  className="input-component search__main_wrapper search__hidden"
+  className="input-component"
   role=""
 >
   <div
@@ -1218,7 +1218,7 @@ exports[`TextField renders correctly with value 1`] = `
 exports[`TextField renders correctly with wrapperClassName 1`] = `
 <div
   aria-busy={false}
-  className="input-component testClassName search__main_wrapper search__hidden"
+  className="input-component testClassName"
   role=""
 >
   <div
