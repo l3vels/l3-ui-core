@@ -64,6 +64,10 @@ interface TagsProps extends L3ComponentProps {
   outlined?: boolean;
 }
 
+// export interface MyCustomCSS extends CSSProperties {
+//   "--outline-border-color-var": any;
+// }
+
 const Tags: L3Component<TagsProps, HTMLElement> & {
   sizes?: typeof TagsSize;
   colors?: typeof tagElementColorsNames;
@@ -114,7 +118,12 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
       } else {
         cssVar = getTagElementColor(color, true);
       }
-      return outlined ? { borderColor: cssVar } : { background: cssVar };
+
+      return outlined
+        ? {
+            "--outline-border-color-var": cssVar
+          }
+        : { background: cssVar };
     }, [disabled, isHovered, hasClickableWrapper, color, outlined]);
 
     const onDeleteCallback = useCallback(
@@ -164,7 +173,8 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
             })}
             id={id}
             style={backgroundColorStyle}
-            data-testid={overrideDataTestId}
+            // style={{ : "red" }}
+            // data-testid={overrideDataTestId}
           >
             {leftAvatar ? (
               <Avatar
@@ -208,18 +218,19 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
               />
             ) : null}
             {hasCloseButton && (
-              <IconButton
-                size={TagsSize.XXS}
-                color={IconButton.colors.ON_PRIMARY_COLOR}
-                className={cx(styles.icon, styles.close)}
-                ariaLabel="Remove"
-                hideTooltip
-                icon={CloseSmall}
-                onClick={onDeleteCallback}
-                dataTestId={`${overrideDataTestId}-close`}
-                ref={iconButtonRef}
-                kind={IconButton.kinds.TERTIARY}
-              />
+              <div className={cx(styles.icon, styles.close)}>
+                <IconButton
+                  size={TagsSize.XXS}
+                  color={IconButton.colors.ON_PRIMARY_COLOR}
+                  ariaLabel="Remove"
+                  hideTooltip
+                  icon={CloseSmall}
+                  onClick={onDeleteCallback}
+                  dataTestId={`${overrideDataTestId}-close`}
+                  ref={iconButtonRef}
+                  kind={IconButton.kinds.TERTIARY}
+                />
+              </div>
             )}
           </div>
         </ClickableWrapper>

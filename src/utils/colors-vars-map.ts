@@ -219,7 +219,7 @@ export const stateSelectedHoverColors: Record<string, string> = {
 export const l3GradientColors: Record<string, string> = {
   gradient_blue: "--color-gradient-blue",
   gradient_red: "--color-gradient-red",
-  gradient_dark_blue: "--color-gradient-dark-blue",
+  // gradient_dark_blue: "--color-gradient-dark-blue",
   gradient_light_green: "--color-gradient-light-green",
   gradient_light_blue: "--color-gradient-light-blue",
   gradient_yellow: "--color-gradient-yellow",
