@@ -217,15 +217,16 @@ export const stateSelectedHoverColors: Record<string, string> = {
 };
 
 export const l3GradientColors: Record<string, string> = {
+  white: "--color-core-background-secondary",
   gradient_blue: "--color-gradient-blue",
   gradient_red: "--color-gradient-red",
-  // gradient_dark_blue: "--color-gradient-dark-blue",
+  gradient_dark_blue: "--color-gradient-dark-blue",
   gradient_light_green: "--color-gradient-light-green",
-  gradient_light_blue: "--color-gradient-light-blue",
   gradient_yellow: "--color-gradient-yellow",
   gradient_green: "--color-gradient-green",
   gradient_orange: "--color-gradient-orange",
-  gradient_pink: "--color-gradient-pink"
+  gradient_pink: "--color-gradient-pink",
+  gradient_gray: "--color-gradient-gray"
 };
 
 export const elementAllowedColors = [

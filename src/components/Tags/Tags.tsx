@@ -64,10 +64,6 @@ interface TagsProps extends L3ComponentProps {
   outlined?: boolean;
 }
 
-// export interface MyCustomCSS extends CSSProperties {
-//   "--outline-border-color-var": any;
-// }
-
 const Tags: L3Component<TagsProps, HTMLElement> & {
   sizes?: typeof TagsSize;
   colors?: typeof tagElementColorsNames;
@@ -173,8 +169,7 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
             })}
             id={id}
             style={backgroundColorStyle}
-            // style={{ : "red" }}
-            // data-testid={overrideDataTestId}
+            data-testid={overrideDataTestId}
           >
             {leftAvatar ? (
               <Avatar
@@ -196,7 +191,7 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
                 ignoreFocusStyle
               />
             ) : null}
-            <div className={cx(styles.label)}>{label}</div>
+            <div className={cx(styles.label, { [styles.white]: color === "white" })}>{label}</div>
             {rightIcon ? (
               <Icon
                 className={cx(styles.icon, styles.right)}

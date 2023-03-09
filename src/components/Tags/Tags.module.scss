@@ -5,6 +5,10 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/theme-mixin";
 
+:root {
+  --color-gradient-gray: linear-gradient(180deg, #deefff 0%, #818cae 100%);
+}
+
 .tagsWrapper {
   align-items: center;
   display: inline-flex;
@@ -39,6 +43,10 @@
     font-weight: 500;
     font-size: $spacing-medium;
     line-height: 20px;
+  }
+
+  .white {
+    color: $black;
   }
 
   &.noAnimation {
