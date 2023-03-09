@@ -31,7 +31,7 @@ export type ToastAction = {
 export enum ToastIconSize {
   SMALL = "14.67px",
   MEDIUM = "19.67px",
-  LARGE = "26px"
+  LARGE = "37.78px"
 }
 
 export enum ToastArtWorkType {
