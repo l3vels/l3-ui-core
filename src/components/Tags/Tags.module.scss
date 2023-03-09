@@ -5,8 +5,11 @@
 @import "../../styles/global-css-settings";
 @import "../../styles/theme-mixin";
 
+:root {
+  --color-gradient-gray: linear-gradient(180deg, #deefff 0%, #818cae 100%);
+}
+
 .tagsWrapper {
-  // margin: 0 var(--spacing-xs);
   align-items: center;
   display: inline-flex;
   height: $spacing-xl;
@@ -20,13 +23,13 @@
 .tags {
   display: inline-flex;
   overflow: hidden;
-  height: 100%;
-  width: 100%;
   border-radius: $spacing-xs;
-  padding: $spacing-small $spacing-xs-small;
+  padding: $spacing-xs-small $spacing-small;
   align-items: center;
   user-select: none;
   animation: tags-pop-in-emphasized var(--motion-productive-medium) var(--motion-timing-emphasize);
+
+  gap: $spacing-xxs;
 
   box-shadow: $tags-box-shadow;
 
@@ -35,8 +38,6 @@
   }
 
   .label {
-    // @include font-general-text();
-    // @include ellipsis();
     @include theme-prop(color, tags-label-color);
     font-style: normal;
     font-weight: 500;
@@ -44,14 +45,18 @@
     line-height: 20px;
   }
 
+  .white {
+    color: $black;
+  }
+
   &.noAnimation {
     animation: none;
   }
 
-  &.withClose {
-    padding-right: var(--spacing-xs);
-    // background-color: red;
-  }
+  // &.withClose {
+  //   padding-right: var(--spacing-xs);
+  //   // background-color: red;
+  // }
 
   .icon,
   .avatar {
@@ -64,7 +69,7 @@
       margin-left: var(--spacing-xs);
     }
     &.close {
-      margin-left: var(--spacing-xs);
+      margin-left: $spacing-xs-small;
       color: var(--primary-text-color);
     }
   }
@@ -82,12 +87,19 @@
 .sizeSmall {
   height: $spacing-large;
   .tags {
-    padding: $spacing-small, $spacing-xs;
+    padding: $spacing-xs $spacing-xs-small;
   }
 
   .label {
     font-size: $spacing-small-medium;
     line-height: $spacing-medium;
+  }
+
+  .icon,
+  .avatar {
+    &.close {
+      margin-left: $spacing-xs;
+    }
   }
 }
 
@@ -97,8 +109,28 @@
   }
 
   .tags {
-    border: 1px solid;
     @include theme-prop(background, tags-bg-color-outlined);
+
+    --b: 1px; /* border width*/
+    --r: 4px; /* the radius */
+
+    display: flex;
+    position: relative;
+    z-index: 0;
+  }
+
+  .tags::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    padding: var(--b);
+    border-radius: var(--r);
+    background: var(--outline-border-color-var);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
   }
 }
 

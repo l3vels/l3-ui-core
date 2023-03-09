@@ -2059,47 +2059,51 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                     Ocean
                   </div>
                   <div
-                    className="iconButtonContainer"
+                    className="icon close"
                   >
-                    <button
-                      aria-busy={false}
-                      aria-disabled={false}
-                      aria-label="Remove"
-                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                      data-testid="value-container-tag-close"
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseUp={[Function]}
-                      style={
-                        Object {
-                          "alignItems": "center",
-                          "height": "16px",
-                          "justifyContent": "center",
-                          "padding": 0,
-                          "width": "16px",
-                        }
-                      }
-                      type="button"
+                    <div
+                      className="iconButtonContainer"
                     >
-                      <svg
-                        aria-hidden={true}
-                        className="icon_component icon-button-padding icon_component--no-focus-style"
-                        fill="currentColor"
-                        height="16"
+                      <button
+                        aria-busy={false}
+                        aria-disabled={false}
+                        aria-label="Remove"
+                        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                        data-testid="value-container-tag-close"
+                        onBlur={[Function]}
                         onClick={[Function]}
-                        viewBox="0 0 20 20"
-                        width="16"
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseUp={[Function]}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": "16px",
+                            "justifyContent": "center",
+                            "padding": 0,
+                            "width": "16px",
+                          }
+                        }
+                        type="button"
                       >
-                        <path
-                          clipRule="evenodd"
-                          d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                        <svg
+                          aria-hidden={true}
+                          className="icon_component icon-button-padding icon_component--no-focus-style"
                           fill="currentColor"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                    </button>
+                          height="16"
+                          onClick={[Function]}
+                          viewBox="0 0 20 20"
+                          width="16"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2290,47 +2294,51 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                     Ocean
                   </div>
                   <div
-                    className="iconButtonContainer"
+                    className="icon close"
                   >
-                    <button
-                      aria-busy={false}
-                      aria-disabled={false}
-                      aria-label="Remove"
-                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                      data-testid="value-container-tag-close"
-                      onBlur={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseUp={[Function]}
-                      style={
-                        Object {
-                          "alignItems": "center",
-                          "height": "16px",
-                          "justifyContent": "center",
-                          "padding": 0,
-                          "width": "16px",
-                        }
-                      }
-                      type="button"
+                    <div
+                      className="iconButtonContainer"
                     >
-                      <svg
-                        aria-hidden={true}
-                        className="icon_component icon-button-padding icon_component--no-focus-style"
-                        fill="currentColor"
-                        height="16"
+                      <button
+                        aria-busy={false}
+                        aria-disabled={false}
+                        aria-label="Remove"
+                        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                        data-testid="value-container-tag-close"
+                        onBlur={[Function]}
                         onClick={[Function]}
-                        viewBox="0 0 20 20"
-                        width="16"
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseUp={[Function]}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": "16px",
+                            "justifyContent": "center",
+                            "padding": 0,
+                            "width": "16px",
+                          }
+                        }
+                        type="button"
                       >
-                        <path
-                          clipRule="evenodd"
-                          d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                        <svg
+                          aria-hidden={true}
+                          className="icon_component icon-button-padding icon_component--no-focus-style"
                           fill="currentColor"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                    </button>
+                          height="16"
+                          onClick={[Function]}
+                          viewBox="0 0 20 20"
+                          width="16"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -3110,134 +3118,8 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                   Primary
                 </div>
                 <div
-                  className="iconButtonContainer"
+                  className="icon close"
                 >
-                  <button
-                    aria-busy={false}
-                    aria-disabled={false}
-                    aria-label="Remove"
-                    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                    data-testid="value-container-tag-close"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseUp={[Function]}
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "height": "16px",
-                        "justifyContent": "center",
-                        "padding": 0,
-                        "width": "16px",
-                      }
-                    }
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      className="icon_component icon-button-padding icon_component--no-focus-style"
-                      fill="currentColor"
-                      height="16"
-                      onClick={[Function]}
-                      viewBox="0 0 20 20"
-                      width="16"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
-                        fill="currentColor"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tagsWrapper multiselect-tag-multi-line"
-            >
-              <div
-                className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
-                data-testid="value-container-tag"
-                id="positive"
-                style={
-                  Object {
-                    "background": "var(--color-gradient-blue)",
-                  }
-                }
-              >
-                <div
-                  className="label"
-                >
-                  Positive
-                </div>
-                <div
-                  className="iconButtonContainer"
-                >
-                  <button
-                    aria-busy={false}
-                    aria-disabled={false}
-                    aria-label="Remove"
-                    className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
-                    data-testid="value-container-tag-close"
-                    onBlur={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    onMouseUp={[Function]}
-                    style={
-                      Object {
-                        "alignItems": "center",
-                        "height": "16px",
-                        "justifyContent": "center",
-                        "padding": 0,
-                        "width": "16px",
-                      }
-                    }
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden={true}
-                      className="icon_component icon-button-padding icon_component--no-focus-style"
-                      fill="currentColor"
-                      height="16"
-                      onClick={[Function]}
-                      viewBox="0 0 20 20"
-                      width="16"
-                    >
-                      <path
-                        clipRule="evenodd"
-                        d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
-                        fill="currentColor"
-                        fillRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div
-              className="tag-with-input-wrapper"
-            >
-              <div
-                className="tagsWrapper multiselect-tag-multi-line"
-              >
-                <div
-                  className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
-                  data-testid="value-container-tag"
-                  id="negative"
-                  style={
-                    Object {
-                      "background": "var(--color-gradient-blue)",
-                    }
-                  }
-                >
-                  <div
-                    className="label"
-                  >
-                    Negative
-                  </div>
                   <div
                     className="iconButtonContainer"
                   >
@@ -3280,6 +3162,144 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                         />
                       </svg>
                     </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="tagsWrapper multiselect-tag-multi-line"
+            >
+              <div
+                className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                data-testid="value-container-tag"
+                id="positive"
+                style={
+                  Object {
+                    "background": "var(--color-gradient-blue)",
+                  }
+                }
+              >
+                <div
+                  className="label"
+                >
+                  Positive
+                </div>
+                <div
+                  className="icon close"
+                >
+                  <div
+                    className="iconButtonContainer"
+                  >
+                    <button
+                      aria-busy={false}
+                      aria-disabled={false}
+                      aria-label="Remove"
+                      className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                      data-testid="value-container-tag-close"
+                      onBlur={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "height": "16px",
+                          "justifyContent": "center",
+                          "padding": 0,
+                          "width": "16px",
+                        }
+                      }
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden={true}
+                        className="icon_component icon-button-padding icon_component--no-focus-style"
+                        fill="currentColor"
+                        height="16"
+                        onClick={[Function]}
+                        viewBox="0 0 20 20"
+                        width="16"
+                      >
+                        <path
+                          clipRule="evenodd"
+                          d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                          fill="currentColor"
+                          fillRule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="tag-with-input-wrapper"
+            >
+              <div
+                className="tagsWrapper multiselect-tag-multi-line"
+              >
+                <div
+                  className="tags tags--wrapper multiselect-tag-multi-line withClose noAnimation"
+                  data-testid="value-container-tag"
+                  id="negative"
+                  style={
+                    Object {
+                      "background": "var(--color-gradient-blue)",
+                    }
+                  }
+                >
+                  <div
+                    className="label"
+                  >
+                    Negative
+                  </div>
+                  <div
+                    className="icon close"
+                  >
+                    <div
+                      className="iconButtonContainer"
+                    >
+                      <button
+                        aria-busy={false}
+                        aria-disabled={false}
+                        aria-label="Remove"
+                        className="l3_style_circle_button l3-style-button l3-style-button--size-medium l3-style-button--kind-tertiary l3-style-button--color-on-primary-color l3-style-button--no-side-padding"
+                        data-testid="value-container-tag-close"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        onMouseUp={[Function]}
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "height": "16px",
+                            "justifyContent": "center",
+                            "padding": 0,
+                            "width": "16px",
+                          }
+                        }
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden={true}
+                          className="icon_component icon-button-padding icon_component--no-focus-style"
+                          fill="currentColor"
+                          height="16"
+                          onClick={[Function]}
+                          viewBox="0 0 20 20"
+                          width="16"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M6.53033 5.46967C6.23744 5.17678 5.76256 5.17678 5.46967 5.46967C5.17678 5.76256 5.17678 6.23744 5.46967 6.53033L8.62562 9.68628L5.47045 12.8415C5.17756 13.1343 5.17756 13.6092 5.47045 13.9021C5.76334 14.195 6.23822 14.195 6.53111 13.9021L9.68628 10.7469L12.8415 13.9021C13.1343 14.195 13.6092 14.195 13.9021 13.9021C14.195 13.6092 14.195 13.1343 13.9021 12.8415L10.7469 9.68628L13.9029 6.53033C14.1958 6.23744 14.1958 5.76256 13.9029 5.46967C13.61 5.17678 13.1351 5.17678 12.8422 5.46967L9.68628 8.62562L6.53033 5.46967Z"
+                            fill="currentColor"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

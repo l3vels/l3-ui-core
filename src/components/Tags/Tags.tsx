@@ -114,7 +114,12 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
       } else {
         cssVar = getTagElementColor(color, true);
       }
-      return outlined ? { borderColor: cssVar } : { background: cssVar };
+
+      return outlined
+        ? {
+            "--outline-border-color-var": cssVar
+          }
+        : { background: cssVar };
     }, [disabled, isHovered, hasClickableWrapper, color, outlined]);
 
     const onDeleteCallback = useCallback(
@@ -186,7 +191,7 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
                 ignoreFocusStyle
               />
             ) : null}
-            <div className={cx(styles.label)}>{label}</div>
+            <div className={cx(styles.label, { [styles.white]: color === "white" })}>{label}</div>
             {rightIcon ? (
               <Icon
                 className={cx(styles.icon, styles.right)}
@@ -208,18 +213,19 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
               />
             ) : null}
             {hasCloseButton && (
-              <IconButton
-                size={TagsSize.XXS}
-                color={IconButton.colors.ON_PRIMARY_COLOR}
-                className={cx(styles.icon, styles.close)}
-                ariaLabel="Remove"
-                hideTooltip
-                icon={CloseSmall}
-                onClick={onDeleteCallback}
-                dataTestId={`${overrideDataTestId}-close`}
-                ref={iconButtonRef}
-                kind={IconButton.kinds.TERTIARY}
-              />
+              <div className={cx(styles.icon, styles.close)}>
+                <IconButton
+                  size={TagsSize.XXS}
+                  color={IconButton.colors.ON_PRIMARY_COLOR}
+                  ariaLabel="Remove"
+                  hideTooltip
+                  icon={CloseSmall}
+                  onClick={onDeleteCallback}
+                  dataTestId={`${overrideDataTestId}-close`}
+                  ref={iconButtonRef}
+                  kind={IconButton.kinds.TERTIARY}
+                />
+              </div>
             )}
           </div>
         </ClickableWrapper>
