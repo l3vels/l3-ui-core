@@ -7,11 +7,13 @@ $divider-width: 322px;
 $divider-height: 2px;
 
 .l3-style-divider {
-  position: absolute;
+  display: flex;
+  position: relative;
   background: var(--color-transparent-white-03);
   border-radius: $divider-border-radius;
   height: $divider-height;
-  width: $divider-width;
+  max-width: $divider-width;
+  width: 48px;
 
   &--vertical {
     transform: rotate(90deg);
@@ -20,7 +22,7 @@ $divider-height: 2px;
     top: calc(50% - 2px / 2 + 15px);
   }
   &--horizontal {
-    left: 16.52%;
-    right: 4.52%;
+    // left: 16.52%;
+    // right: 4.52%;
   }
 }

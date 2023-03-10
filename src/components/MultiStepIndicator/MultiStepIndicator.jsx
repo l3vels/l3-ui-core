@@ -5,11 +5,11 @@ import cx from "classnames";
 import useMergeRefs from "../../hooks/useMergeRefs";
 import Icon from "../../components/Icon/Icon";
 import Check from "../../components/Icon/Icons/components/Check";
-import Divider from "../../components/Divider/Divider";
 import { NOOP } from "../../utils/function-utils";
 import StepIndicator from "./components/StepIndicator/StepIndicator";
 import { MULTI_STEP_TYPES, STEP_STATUSES, TEXT_PLACEMENTS } from "./MultiStepConstants";
 import "./MultiStepIndicator.scss";
+import Divider from "../Divider/Divider";
 
 const MultiStepIndicator = forwardRef(
   (
@@ -47,7 +47,7 @@ const MultiStepIndicator = forwardRef(
               isFulfilledStepDisplayNumber={isFulfilledStepDisplayNumber}
             />
             {index !== steps.length - 1 && (
-              <Divider classname={cx(defaultDividerClassName, dividerComponentClassName)} />
+              <Divider className={cx(defaultDividerClassName, dividerComponentClassName)} />
             )}
           </>
         );
@@ -118,9 +118,9 @@ MultiStepIndicator.propTypes = {
   className: PropTypes.string,
   type: PropTypes.oneOf([
     MultiStepIndicator.types.PRIMARY,
-    MultiStepIndicator.types.SUCCESS,
-    MultiStepIndicator.types.DANGER,
-    MultiStepIndicator.types.DARK
+    MultiStepIndicator.types.POSITIVE,
+    MultiStepIndicator.types.NEGATIVE,
+    MultiStepIndicator.types.SECONDARY
   ]),
   /** Array of objects of the specified format. */
   steps: PropTypes.arrayOf(

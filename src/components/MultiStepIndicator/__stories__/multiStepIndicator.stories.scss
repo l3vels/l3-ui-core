@@ -3,11 +3,13 @@
 
 .l3-storybook-multiStepIndicator {
   &_column-wrapper {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     gap: 30px;
+    height: 700px;
+    border: 1px solid red;
   }
-  
+
   &_row-wrapper {
     display: flex;
     align-items: center;
@@ -21,7 +23,7 @@
   &_size {
     width: 700px;
   }
-  
+
   &_big-size {
     width: 100%;
   }
@@ -51,7 +53,7 @@
     margin-left: -40px;
     .l3-style-divider {
       width: 120px;
-    } 
+    }
   }
 
   &_overflow {

@@ -3,62 +3,88 @@
 @import "../../../../styles/keyframes";
 
 .l3-style-step-indicator-component {
-  @include theme-prop(color, text-color-on-primary);
-  font-size: var(--font-size-general-label);
+  // @include theme-prop(color, text-color-on-primary);
+  // font-size: var(--font-size-general-label);
   display: flex;
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-  list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+  // text-indent: 0;
+  // list-style-type: none;
+  // border: 1px solid white;
 
   &__text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 16px;
+    margin-left: 20px;
 
     &__title {
-      width: 100%;
+      width: 93px;
+      height: 32px;
+      font-family: "Circular Std";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: #ffffff;
+      margin-left: 20px;
 
       .visually-hidden {
         display: none;
       }
 
       &__text {
-        @include font-paragraph();
-        @include theme-prop(color, primary-text-color);
+        // @include font-paragraph();
+        // @include theme-prop(color, primary-text-color);
       }
     }
 
     &__subtitle__text {
-      width: 100%;
-      font-size: var(--font-size-general-label);
-      @include theme-prop(color, secondary-text-color);
+      width: 69px;
+      height: 28px;
+      font-family: "Circular Std";
+      font-style: normal;
+      font-weight: 450;
+      font-size: 18px;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 
   &--text-placement-vertical {
-    margin: 8px;
+    // margin: 8px;
+    display: flex;
+    position: absolute;
     flex-direction: column;
-    flex: 1 1 0px;
+    gap: 30px;
+    // flex: 1;
+    // box-sizing: border-box;
+    // flex-wrap: wrap;
+    // grid-template-columns: 1fr 2fr;
+    border: 1px solid yellow;
+    // transform: rotate(90deg);
 
     .l3-style-step-indicator-component {
       &__text-container {
         margin-left: 0px;
         margin-top: 8px;
+        // border: 1px solid red;
+        margin-left: 10px;
       }
 
       &__number-divider-container {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        // align-items: center;
+        // border: 1px solid red;
         width: 100%;
 
         .l3-style-divider {
           @include theme-prop(background-color, ui-border-color);
-          margin: 16px 0 16px 16px;
+          // margin: 16px 0 16px 16px;
           height: 1px;
           flex-grow: 1;
+          // border: 1px solid red;
         }
       }
     }
@@ -82,7 +108,8 @@
     &-enter-active {
       position: relative;
       opacity: 1;
-      transition: transform var(--motion-productive-long) var(--motion-timing-enter), opacity var(--motion-productive-short);
+      transition: transform var(--motion-productive-long) var(--motion-timing-enter),
+        opacity var(--motion-productive-short);
       transform: translateY(0);
     }
 
@@ -97,15 +124,19 @@
       position: relative;
       opacity: 0;
       transform: translateY(-15px);
-      transition: transform var(--motion-productive-long) var(--motion-timing-enter), opacity var(--motion-productive-short);
+      transition: transform var(--motion-productive-long) var(--motion-timing-enter),
+        opacity var(--motion-productive-short);
     }
   }
 
   &__number-container {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 56px;
+    height: 56px;
 
     &__text {
       margin: auto;
@@ -123,7 +154,10 @@
   &--type {
     &-primary {
       &__number-container {
-        @include theme-prop(background-color, primary-color);
+        // @include theme-prop(background-color, primary-color);
+        color: #ffffff;
+        background: #000000;
+        border-radius: 100px;
 
         &:hover {
           @include theme-prop(background-color, primary-hover-color);
@@ -131,9 +165,13 @@
       }
     }
 
-    &-danger {
+    &-negative {
       &__number-container {
-        @include theme-prop(background-color, negative-color);
+        // @include theme-prop(background-color, negative-color);
+        background: linear-gradient(180deg, #d14485 0%, #e23248 100%);
+        color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
 
         &:hover {
           @include theme-prop(background-color, negative-color-hover);
@@ -141,9 +179,13 @@
       }
     }
 
-    &-success {
+    &-positive {
       &__number-container {
-        @include theme-prop(background-color, positive-color);
+        // @include theme-prop(background-color, positive-color);
+        background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
+        color: #000000;
+        // border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 100px;
 
         &:hover {
           @include theme-prop(background-color, positive-color-hover);
@@ -151,10 +193,12 @@
       }
     }
 
-    &-dark {
+    &-secondary {
       &__number-container {
-        @include theme-prop(background-color, inverted-color-background);
-        @include theme-prop(color, text-color-on-inverted);
+        // @include theme-prop(background-color, inverted-color-background);
+        // @include theme-prop(color, text-color-on-inverted);
+        color: #ffffff;
+        border-radius: 100px;
 
         &:hover {
           @include theme-prop(background-color, secondary-text-color);
@@ -166,25 +210,25 @@
   &--status {
     &-active {
       &__number-container {
-        box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--primary-color);
+        box-shadow: 0 0 0 2px hsla(181, 97%, 72%, 1);
 
         &.l3-style-step-indicator-component {
           &--type {
-            &-danger {
+            &-negative {
               &__number-container {
-                box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--negative-color);
+                // box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--negative-color);
               }
             }
 
-            &-success {
+            &-positive {
               &__number-container {
-                box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--positive-color);
+                // box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--positive-color);
               }
             }
 
-            &-dark {
+            &-secondary {
               &__number-container {
-                box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--primary-text-color);
+                // box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--primary-text-color);
               }
             }
           }
@@ -194,10 +238,10 @@
 
     &-pending {
       &__number-container {
-        @include theme-prop(background-color, primary-background-color);
-        @include theme-prop(color, primary-text-color);
-        @include theme-prop(border-color, ui-border-color, true);
-        border: 1px solid;
+        // @include theme-prop(background-color, primary-hover-color);
+        // @include theme-prop(color, primary-text-color);
+        // @include theme-prop(border-color, red);
+        // border: 2px solid rgba(255, 255, 255, 0.3);
 
         &:hover {
           @include theme-prop(background-color, primary-color);
@@ -207,24 +251,27 @@
 
         &.l3-style-step-indicator-component {
           &--type {
-            &-danger {
+            &-negative {
               &__number-container {
+                border: 2px solid rgba(255, 255, 255, 0.3);
                 &:hover {
                   @include theme-prop(background-color, negative-color);
                 }
               }
             }
 
-            &-success {
+            &-positive {
               &__number-container {
+                border: 2px solid rgba(255, 255, 255, 0.3);
                 &:hover {
                   @include theme-prop(background-color, positive-color);
                 }
               }
             }
 
-            &-dark {
+            &-secondary {
               &__number-container {
+                border: 2px solid rgba(255, 255, 255, 0.3);
                 &:hover {
                   @include theme-prop(background-color, primary-text-color);
                   @include theme-prop(color, text-color-on-inverted);
@@ -242,10 +289,10 @@
   @include pop-elastic();
 }
 
-.l3-style-step-indicator-component{
+.l3-style-step-indicator-component {
   font-family: var(--font-family);
 }
 
-.l3-style-step-indicator-component__text-container__subtitle__text{
+.l3-style-step-indicator-component__text-container__subtitle__text {
   font-family: var(--font-family);
 }

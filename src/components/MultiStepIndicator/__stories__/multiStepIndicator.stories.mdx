@@ -6,7 +6,7 @@ import { createComponentTemplate } from "../../../storybook/functions/createComp
 import { BREADCRUBMS, STEPPER, TABS } from "../../../storybook/components/related-components/component-description-map";
 import { firstSteps, secondSteps, thirdSteps } from "./helper.js";
 import { Link } from "../../../storybook/components";
-import { Featured } from "../../Icon/Icons";
+import { Featured, Close } from "../../Icon/Icons";
 import "./multiStepIndicator.stories.scss";
 
 <Meta title="Navigation/Wizard - (Coming Soon)" component={MultiStepIndicator} />
@@ -102,20 +102,20 @@ Placements
           {
             key: "FULFILLED",
             status: MultiStepIndicator.stepStatuses.FULFILLED,
-            titleText: "Fulfilled title",
-            subtitleText: "Fulfilled subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "ACTIVE",
             status: MultiStepIndicator.stepStatuses.ACTIVE,
-            titleText: "Active title",
-            subtitleText: "Active subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "PENDING",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Pending title",
-            subtitleText: "Pending subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           }
         ],
         []
@@ -130,42 +130,38 @@ Placements
               steps={steps}
             />
           </div>
-          <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Horizontal</span>
-            <MultiStepIndicator steps={steps} />
-          </div>
         </div>
       );
     }}
   </Story>
 </Canvas>
 
-### Types
+### Horizontal
 
-There are 4 types: Primary, success, danger, dark.
+There are 4 types: Primary, positive, negative, secondary.
 
 <Canvas>
-  <Story name="Types">
+  <Story name="Horizontal">
     {() => {
       const steps = useMemo(
         () => [
           {
             key: "FULFILLED",
             status: MultiStepIndicator.stepStatuses.FULFILLED,
-            titleText: "Fulfilled title",
-            subtitleText: "Fulfilled subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "ACTIVE",
             status: MultiStepIndicator.stepStatuses.ACTIVE,
-            titleText: "Active title",
-            subtitleText: "Active subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "PENDING",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Pending title",
-            subtitleText: "Pending subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           }
         ],
         []
@@ -174,19 +170,23 @@ There are 4 types: Primary, success, danger, dark.
         <div className="l3-storybook-multiStepIndicator_column-wrapper">
           <div className="l3-storybook-multiStepIndicator_row-wrapper">
             <span className="l3-storybook-multiStepIndicator_title">Primary</span>
-            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.PRIMARY} />
+            <MultiStepIndicator
+              steps={steps}
+              isFulfilledStepDisplayNumber={true}
+              type={MultiStepIndicator.types.PRIMARY}
+            />
           </div>
           <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Success</span>
-            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.SUCCESS} />
+            <span className="l3-storybook-multiStepIndicator_title">Positive</span>
+            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.POSITIVE} />
           </div>
           <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Danger</span>
-            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.DANGER} />
+            <span className="l3-storybook-multiStepIndicator_title">Negative</span>
+            <MultiStepIndicator steps={steps} fulfilledStepIcon={Close} type={MultiStepIndicator.types.NEGATIVE} />
           </div>
           <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Dark</span>
-            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.DARK} />
+            <span className="l3-storybook-multiStepIndicator_title">Secondary</span>
+            <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.SECONDARY} />
           </div>
         </div>
       );
@@ -204,20 +204,20 @@ There are 4 types: Primary, success, danger, dark.
           {
             key: "FULFILLED",
             status: MultiStepIndicator.stepStatuses.FULFILLED,
-            titleText: "Fulfilled title",
-            subtitleText: "Fulfilled subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "ACTIVE",
             status: MultiStepIndicator.stepStatuses.ACTIVE,
-            titleText: "Active title",
-            subtitleText: "Active subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           {
             key: "PENDING",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Pending title",
-            subtitleText: "Pending subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           }
         ],
         []
@@ -254,20 +254,20 @@ State transition automatic example
           firstStep: {
             key: "PENDING",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "First step title",
-            subtitleText: "First subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           secondStep: {
             key: "PENDING-2",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Second step title",
-            subtitleText: "Second subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           },
           thirdStep: {
             key: "PENDING-3",
             status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Third step title",
-            subtitleText: "Third subtitle"
+            titleText: "Heading",
+            subtitleText: "Heading"
           }
         }),
         []

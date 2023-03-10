@@ -5,7 +5,9 @@
 
   &__divider {
     @include theme-prop(background-color, ui-border-color);
-    margin: 16px;
+    margin-top: 26px;
+    margin-left: 16px;
+    margin-right: 24px;
     height: 1px;
     width: 48px;
   }

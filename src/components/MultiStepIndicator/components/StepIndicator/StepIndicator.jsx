@@ -153,7 +153,9 @@ const StepIndicator = ({
             </CSSTransition>
           </SwitchTransition>
         </div>
-        {isFollowedByDivider && isVertical && <Divider classname={stepDividerClassName} />}
+        {isFollowedByDivider && isVertical && (
+          <Divider direction={Divider.directions.VERTICAL} className={stepDividerClassName} />
+        )}
       </div>
       <div className={cx(...getClassNamesWithSuffix("__text-container"))}>
         <div className={cx(...getClassNamesWithSuffix("__text-container__title"))}>
@@ -174,9 +176,9 @@ StepIndicator.propTypes = {
   stepComponentClassName: PropTypes.string,
   type: PropTypes.oneOf([
     MULTI_STEP_TYPES.PRIMARY,
-    MULTI_STEP_TYPES.SUCCESS,
-    MULTI_STEP_TYPES.DANGER,
-    MULTI_STEP_TYPES.DARK
+    MULTI_STEP_TYPES.POSITIVE,
+    MULTI_STEP_TYPES.NEGATIVE,
+    MULTI_STEP_TYPES.SECONDARY
   ]),
   fulfilledStepIcon: PropTypes.func,
   fulfilledStepIconType: PropTypes.oneOf([Icon.type.SVG, Icon.type.ICON_FONT]),
