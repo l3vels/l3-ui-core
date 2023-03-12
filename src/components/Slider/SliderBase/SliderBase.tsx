@@ -18,8 +18,8 @@ import SliderFilledTrack from "./SliderFilledTrack";
 import SliderThumb from "./SliderThumb";
 import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./SliderBase.scss";
-import SliderInTextFix from "../SliderInTextFix";
 import { SliderTextSize } from "../SliderConstants";
+import SliderInText from "../SliderInText";
 
 export type SliderBaseProps = L3ComponentProps;
 
@@ -95,8 +95,8 @@ const SliderBase: FC<SliderBaseProps> = forwardRef(({ className }, _ref) => {
           )}
         </SliderRail>
       </div>
-      <SliderInTextFix
-        kind={SliderInTextFix.kinds.TEXTFIX}
+      <SliderInText
+        kind={SliderInText.kinds.TEXTFIX}
         textSize={
           size === "small" ? SliderTextSize.SMALL : size === "medium" ? SliderTextSize.MEDIUM : SliderTextSize.LARGE
         }

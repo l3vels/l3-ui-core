@@ -145,11 +145,11 @@ $slider-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3), 0px 3px 1px rgba(0, 0, 0, 0.
         }
         &__filled-track {
           // @include theme-prop(background-color, positive-color);
-          background: green;
+          background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
         }
         &__thumb {
           // @include theme-prop(border-color, positive-color);
-          background: green;
+          background: linear-gradient(180deg, #cefb53 0%, #7af94b 100%);
         }
       }
       &:not(&--disabled) {
@@ -196,11 +196,14 @@ $slider-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3), 0px 3px 1px rgba(0, 0, 0, 0.
         }
         &__filled-track {
           // @include theme-prop(background-color, negative-color);
-          background: var(--negative-color);
+          // background: var(--negative-color);
+
+          background: linear-gradient(180deg, #d14485 0%, #e23248 100%);
         }
         &__thumb {
           // @include theme-prop(border-color, negative-color);
           background: var(--negative-color);
+          background: linear-gradient(180deg, #d14485 0%, #e23248 100%);
         }
       }
       &:not(&--disabled) {

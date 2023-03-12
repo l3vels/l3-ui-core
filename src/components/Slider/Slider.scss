@@ -54,6 +54,8 @@
     }
     .input-component .input-component__input-wrapper .input-component__input {
       padding: var(--spacing-small);
+      width: 60px;
+      height: 50px;
     }
     &--prefix {
       margin-right: var(--spacing-small);

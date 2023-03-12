@@ -1,9 +1,10 @@
 import React, { CSSProperties, ReactElement } from "react";
 import Icon from "../../components/Icon/Icon";
-import { InfixKind } from "./SliderConstants";
+import { InfixKind, SliderTextSize } from "./SliderConstants";
 import { useSliderInfix, useSliderSelection } from "./SliderContext";
 import SelectionIndicator from "./SelectionIndicator";
 import { IconType } from "../Icon/IconConstants";
+// import SelectionTextIndicator from "./SelectionTextIndicator";
 
 const defaultIconProps = {
   clickable: false,
@@ -11,12 +12,40 @@ const defaultIconProps = {
   ignoreFocusStyle: true
 };
 
-export function useSliderInfixComponent(kind: InfixKind): [boolean, string[], ReactElement, CSSProperties] {
-  const { prefix, postfix, indicateSelection, selectionIndicatorWidth } = useSliderInfix();
+export function useSliderInfixComponent(
+  kind: InfixKind,
+  textSize: SliderTextSize
+): [boolean, string[], ReactElement, CSSProperties] {
+  const { prefix, postfix, indicateSelection, selectionIndicatorWidth, textfix, indicateTextSelection } =
+    useSliderInfix();
   const { ranged, value, valueText } = useSliderSelection();
   const infix = kind === InfixKind.POSTFIX ? postfix : prefix;
+  const inTextFix = kind === InfixKind.TEXTFIX && textfix;
 
   const isPostfix = kind === InfixKind.POSTFIX;
+  const isTextFix = kind === InfixKind.TEXTFIX;
+  if (indicateTextSelection && (isTextFix || ranged)) {
+    return [
+      true,
+      [],
+      <SelectionIndicator key={kind} kind={kind} textSize={textSize} />,
+      { width: selectionIndicatorWidth }
+    ];
+  }
+  if (typeof inTextFix === "object" && (inTextFix as { icon: IconType }).icon) {
+    const { icon, ...restIconProps } = inTextFix as { icon: IconType };
+    const iconProps = { ...defaultIconProps, ...restIconProps };
+    return [true, [], <Icon key="inTextFix-icon" icon={icon} {...iconProps} />, {}];
+  }
+  if (typeof inTextFix === "function") {
+    return [true, [], inTextFix(value, valueText), {}];
+  }
+  if (typeof inTextFix === "string") {
+    return [true, ["txt"], <>{inTextFix}</>, {}];
+  }
+  if (typeof inTextFix === "undefined") {
+    return [false, [], null, {}];
+  }
   if (indicateSelection && (isPostfix || ranged)) {
     return [true, [], <SelectionIndicator key={kind} kind={kind} />, { width: selectionIndicatorWidth }];
   }

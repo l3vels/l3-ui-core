@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { InfixKind } from "./SliderConstants";
+import { InfixKind, SliderTextSize } from "./SliderConstants";
 import { bem } from "./SliderHelpers";
 import { useSliderInfixComponent } from "./SliderInfixHooks";
 import L3ComponentProps from "../../types/L3ComponentProps";
@@ -10,10 +10,14 @@ interface SliderInfixProps extends L3ComponentProps {
    * Infix - additional inserted by Consumer - component/string/number etc.
    */
   kind?: InfixKind;
+  textSize?: SliderTextSize;
 }
 
-const SliderInfix: FC<SliderInfixProps> & { kinds?: typeof InfixKind } = ({ kind = SliderInfix.kinds.PREFIX }) => {
-  const [isShow, modificators, InfixComponent, inlineStyle] = useSliderInfixComponent(kind);
+const SliderInfix: FC<SliderInfixProps> & { kinds?: typeof InfixKind } = ({
+  kind = SliderInfix.kinds.PREFIX,
+  textSize
+}) => {
+  const [isShow, modificators, InfixComponent, inlineStyle] = useSliderInfixComponent(kind, textSize);
   return (
     isShow && (
       <div className={bem("infix", [...modificators, kind])} style={inlineStyle}>

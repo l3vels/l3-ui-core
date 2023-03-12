@@ -12,7 +12,8 @@ export const TOOLTIP_SHOW_DELAY = 300;
 
 export enum InfixKind {
   PREFIX = "prefix",
-  POSTFIX = "postfix"
+  POSTFIX = "postfix",
+  TEXTFIX = "textfix"
 }
 
 export enum InTextFixKind {
