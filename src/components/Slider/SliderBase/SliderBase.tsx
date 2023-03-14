@@ -18,6 +18,8 @@ import SliderFilledTrack from "./SliderFilledTrack";
 import SliderThumb from "./SliderThumb";
 import L3ComponentProps from "../../../types/L3ComponentProps";
 import "./SliderBase.scss";
+import { SliderTextSize } from "../SliderConstants";
+import SliderInText from "../SliderInText";
 
 export type SliderBaseProps = L3ComponentProps;
 
@@ -73,24 +75,32 @@ const SliderBase: FC<SliderBaseProps> = forwardRef(({ className }, _ref) => {
   }
 
   return (
-    <div
-      className={bem("base", { [size]: size, [color]: color, disabled }, className)}
-      data-testid={shapeTestId("base")}
-      onKeyDown={handleKeyDown}
-    >
-      <SliderRail onClick={handleRailClick} ref={railRef}>
-        <SliderTrack />
-        {railRef.current && (
-          <>
-            <SliderFilledTrack dimension={dimension} offset={offset} />
-            {positions.map((position, index) => {
-              return (
-                <SliderThumb key={thumbKeys[index]} index={index} onMove={handlePointerMove} position={position} />
-              );
-            })}
-          </>
-        )}
-      </SliderRail>
+    <div style={{ width: "100%" }}>
+      <div
+        className={bem("base", { [size]: size, [color]: color, disabled }, className)}
+        data-testid={shapeTestId("base")}
+        onKeyDown={handleKeyDown}
+      >
+        <SliderRail onClick={handleRailClick} ref={railRef}>
+          <SliderTrack />
+          {railRef.current && (
+            <>
+              <SliderFilledTrack dimension={dimension} offset={offset} />
+              {positions.map((position, index) => {
+                return (
+                  <SliderThumb key={thumbKeys[index]} index={index} onMove={handlePointerMove} position={position} />
+                );
+              })}
+            </>
+          )}
+        </SliderRail>
+      </div>
+      <SliderInText
+        kind={SliderInText.kinds.TEXTFIX}
+        textSize={
+          size === "small" ? SliderTextSize.SMALL : size === "medium" ? SliderTextSize.MEDIUM : SliderTextSize.LARGE
+        }
+      />
     </div>
   );
 });

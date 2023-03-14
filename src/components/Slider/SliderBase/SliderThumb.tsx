@@ -1,13 +1,13 @@
 import React, { FC, useEffect, useRef } from "react";
-import { DialogPosition } from "../../../constants/positions";
+// import { DialogPosition } from "../../../constants/positions";
 import { NOOP } from "../../../utils/function-utils";
-import Tooltip from "../../Tooltip/Tooltip";
-import { TOOLTIP_SHOW_DELAY } from "../SliderConstants";
+// import Tooltip from "../../Tooltip/Tooltip";
+// import { TOOLTIP_SHOW_DELAY } from "../SliderConstants";
 import { bem } from "../SliderHelpers";
 import { useSliderActions, useSliderSelection, useSliderUi } from "../SliderContext";
 import L3ComponentProps from "../../../types/L3ComponentProps";
 
-const tooltipPosition = DialogPosition.TOP;
+// const tooltipPosition = DialogPosition.TOP;
 
 export interface SliderThumbProps extends L3ComponentProps {
   /**
@@ -32,7 +32,7 @@ const SliderThumb: FC<SliderThumbProps> = ({ className, index = 0, onMove = NOOP
   const { max, min, ranged, value: valueOrValues, valueText: valueOrValuesText } = useSliderSelection();
   const value = ranged ? (valueOrValues as unknown as number[])[index] : (valueOrValues as number);
   const valueText = ranged ? (valueOrValuesText as unknown as string[])[index] : (valueOrValuesText as string);
-  const { active, ariaLabel, ariaLabelledby, disabled, dragging, focused, shapeTestId, showValue } = useSliderUi();
+  const { ariaLabel, ariaLabelledby, disabled, dragging, focused, shapeTestId, showValue } = useSliderUi();
   const { setActive, setFocused, setDragging } = useSliderActions();
   const ref = useRef(null);
 
@@ -70,39 +70,39 @@ const SliderThumb: FC<SliderThumbProps> = ({ className, index = 0, onMove = NOOP
   }, [focused, index]);
 
   return (
-    <Tooltip
-      // @ts-ignore TODO TS-migration the comment can be removed once TooltipProps will extend DialogProps, once Dialog is converted to TS
-      open={active === index || dragging === index}
-      content={showValue ? null : valueText}
-      position={tooltipPosition}
-      showDelay={TOOLTIP_SHOW_DELAY}
+    // <Tooltip
+    //   // @ts-ignore TODO TS-migration the comment can be removed once TooltipProps will extend DialogProps, once Dialog is converted to TS
+    //   open={active === index || dragging === index}
+    //   content={showValue ? null : valueText}
+    //   position={tooltipPosition}
+    //   showDelay={TOOLTIP_SHOW_DELAY}
+    // >
+    <div
+      aria-label={ariaLabel}
+      aria-labelledby={ariaLabelledby}
+      aria-valuemax={max}
+      aria-valuemin={min}
+      aria-valuenow={value}
+      aria-valuetext={valueText}
+      aria-disabled={disabled}
+      className={bem(
+        "thumb",
+        { dragging: dragging === index, focused: focused === index, disabled, [`index-${index}`]: true },
+        className
+      )}
+      data-testid={shapeTestId(`thumb-${index}`)}
+      onFocus={handleFocus}
+      onBlur={handleBlur}
+      onPointerDown={handlePointerDown}
+      onPointerLeave={handlePointerLeave}
+      ref={ref}
+      role="slider"
+      style={{ left: `${position}%` }}
+      tabIndex={disabled ? -1 : 0}
     >
-      <div
-        aria-label={ariaLabel}
-        aria-labelledby={ariaLabelledby}
-        aria-valuemax={max}
-        aria-valuemin={min}
-        aria-valuenow={value}
-        aria-valuetext={valueText}
-        aria-disabled={disabled}
-        className={bem(
-          "thumb",
-          { dragging: dragging === index, focused: focused === index, disabled, [`index-${index}`]: true },
-          className
-        )}
-        data-testid={shapeTestId(`thumb-${index}`)}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        onPointerDown={handlePointerDown}
-        onPointerLeave={handlePointerLeave}
-        ref={ref}
-        role="slider"
-        style={{ left: `${position}%` }}
-        tabIndex={disabled ? -1 : 0}
-      >
-        {showValue && <label className={bem("thumb-label")}>{valueText}</label>}
-      </div>
-    </Tooltip>
+      {showValue && <label className={bem("thumb-label")}>{valueText}</label>}
+    </div>
+    // </Tooltip>
   );
 };
 

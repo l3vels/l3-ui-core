@@ -2,12 +2,20 @@ import React, { useMemo } from "react";
 import { debounce } from "lodash-es";
 import TextField from "../TextField/TextField";
 import { useSliderActions, useSliderSelection } from "./SliderContext";
-import { InfixKind } from "./SliderConstants";
+import cx from "classnames";
+import { InfixKind, SliderTextSize } from "./SliderConstants";
 import L3ComponentProps from "../../types/L3ComponentProps";
+import "../Slider/Slider.scss";
 
 const VALUE_UPDATE_DELAY = 300;
 
-function getCurrentLabel(isPostfix: boolean, ranged: boolean, value: number | number[], valueText: string | string[]) {
+function getCurrentLabel(
+  isPostfix: boolean,
+  isTextFix: boolean,
+  ranged: boolean,
+  value: number | number[],
+  valueText: string | string[]
+) {
   if (!ranged) {
     return [value as number, valueText as string];
   }
@@ -24,23 +32,36 @@ function parseValue(valueText: string) {
 export interface SelectionIndicatorProps extends L3ComponentProps {
   kind?: InfixKind;
   key?: InfixKind;
+  textSize?: SliderTextSize;
+  className?: string;
 }
 
-const SelectionIndicator: React.FC<SelectionIndicatorProps> = ({ kind = InfixKind.PREFIX }) => {
+const SelectionIndicator: React.FC<SelectionIndicatorProps> & {
+  textSizes?: typeof SliderTextSize;
+} = ({ kind = InfixKind.POSTFIX || InfixKind.TEXTFIX, textSize, className }) => {
   const isPostfix = kind === InfixKind.POSTFIX;
+  const isTextFix = kind === InfixKind.TEXTFIX;
   const { ranged, value, valueText } = useSliderSelection();
-  const [, currentTextValue] = getCurrentLabel(isPostfix, ranged, value, valueText);
+  const [, currentTextValue] = getCurrentLabel(isPostfix, isTextFix, ranged, value, valueText);
   const { changeThumbValue } = useSliderActions();
   const handleChange = useMemo(
     () =>
       debounce(newValueText => {
         const newValue = parseValue(newValueText);
-        const thumbIndex = isPostfix ? 1 : 0;
+        const thumbIndex = (isPostfix ? 1 : 0) && (isTextFix ? 1 : 0);
         changeThumbValue(newValue, thumbIndex, true);
       }, VALUE_UPDATE_DELAY),
-    [changeThumbValue, isPostfix]
+    [changeThumbValue, isPostfix, isTextFix]
   );
-  return <TextField onChange={handleChange} value={String(currentTextValue)} />;
+  const classNames = useMemo(
+    () => cx("sliderText", `sliderText--textSize-${textSize}`, className),
+    [textSize, className]
+  );
+  return isTextFix ? (
+    <input disabled type="text" className={classNames} onChange={handleChange} value={String(currentTextValue)} />
+  ) : (
+    <TextField onChange={handleChange} value={String(currentTextValue)} />
+  );
 };
 
 export default SelectionIndicator;
