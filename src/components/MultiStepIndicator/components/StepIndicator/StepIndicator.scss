@@ -34,11 +34,6 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
       .visually-hidden {
         display: none;
       }
-
-      &__text {
-        // @include font-paragraph();
-        // @include theme-prop(color, primary-text-color);
-      }
     }
 
     &__subtitle__text {
