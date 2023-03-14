@@ -6,8 +6,9 @@
     display: inline-block;
     flex-direction: column;
     gap: 30px;
-    height: 700px;
-    border: 1px solid red;
+    // height: 700px;
+    // width: 100%;
+    // border: 1px solid red;
   }
 
   &_row-wrapper {
@@ -61,4 +62,20 @@
       overflow: hidden;
     }
   }
+}
+
+.l3-storybook-VerticalMultiStepIndicator {
+  width: 100%;
+  height: 100%;
+}
+.l3-storybook-VerticalMultiStepIndicator-column {
+  display: inline-block;
+}
+.l3-storybook-VerticalMultiStepIndicator-row {
+  display: inline-block;
+  margin-left: 80px;
+}
+.l3-storybook-VerticalMultiStepIndicator-text {
+  display: inline-block;
+  margin-left: 45px;
 }

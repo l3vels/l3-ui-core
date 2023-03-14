@@ -31,6 +31,8 @@ const MultiStepIndicator = forwardRef(
     const mergedRef = useMergeRefs({ refs: [ref, componentRef] });
     const baseClassName = "multi-step-indicator--wrapper";
     const defaultDividerClassName = `${baseClassName}__divider`;
+    const defaultVerticalDividerClassName = "multi-step-indicator--wrapper-vertical";
+    const baseVerticalDividerClassName = `${defaultVerticalDividerClassName}__divider`;
 
     const renderHorizontalStepIndicator = useCallback(
       (step, index) => {
@@ -47,7 +49,10 @@ const MultiStepIndicator = forwardRef(
               isFulfilledStepDisplayNumber={isFulfilledStepDisplayNumber}
             />
             {index !== steps.length - 1 && (
-              <Divider className={cx(defaultDividerClassName, dividerComponentClassName)} />
+              <Divider
+                direction={Divider.directions.HORIZONTAL}
+                className={cx(defaultDividerClassName, dividerComponentClassName)}
+              />
             )}
           </>
         );
@@ -68,19 +73,21 @@ const MultiStepIndicator = forwardRef(
     const renderVerticalStepIndicator = useCallback(
       (step, index) => {
         return (
-          <StepIndicator
-            {...step}
-            stepNumber={index + 1}
-            type={type}
-            stepComponentClassName={stepComponentClassName}
-            fulfilledStepIcon={fulfilledStepIcon}
-            fulfilledStepIconType={fulfilledStepIconType}
-            onClick={onClick}
-            isFollowedByDivider={index !== steps.length - 1}
-            stepDividerClassName={cx(defaultDividerClassName, dividerComponentClassName)}
-            isVertical={true}
-            isFulfilledStepDisplayNumber={isFulfilledStepDisplayNumber}
-          />
+          <>
+            <StepIndicator
+              {...step}
+              stepNumber={index + 1}
+              type={type}
+              stepComponentClassName={stepComponentClassName}
+              fulfilledStepIcon={fulfilledStepIcon}
+              fulfilledStepIconType={fulfilledStepIconType}
+              onClick={onClick}
+              isFollowedByDivider={index !== steps.length + 1}
+              stepDividerClassName={cx(defaultDividerClassName, dividerComponentClassName)}
+              isVertical={true}
+              isFulfilledStepDisplayNumber={isFulfilledStepDisplayNumber}
+            />
+          </>
         );
       },
       [
@@ -102,7 +109,12 @@ const MultiStepIndicator = forwardRef(
     );
 
     return (
-      <ol ref={mergedRef} className={cx(baseClassName, className)}>
+      <ol
+        ref={mergedRef}
+        className={
+          textPlacement === TEXT_PLACEMENTS.VERTICAL ? baseVerticalDividerClassName : cx(baseClassName, className)
+        }
+      >
         {steps.map(stepRenderer)}
       </ol>
     );

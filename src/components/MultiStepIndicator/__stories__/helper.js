@@ -3,36 +3,36 @@ import MultiStepIndicator from "../MultiStepIndicator";
 export const firstSteps = [
   {
     status: MultiStepIndicator.stepStatuses.FULFILLED,
-    titleText: "Plan options",
-    subtitleText: "Choose plan"
+    titleText: "Heading",
+    subtitleText: "Heading"
   },
   {
     status: MultiStepIndicator.stepStatuses.PENDING,
-    titleText: "Seats",
-    subtitleText: "Number of users"
+    titleText: "Heading",
+    subtitleText: "Heading"
   },
   {
     status: MultiStepIndicator.stepStatuses.PENDING,
-    titleText: "Paying method",
-    subtitleText: "How to pay"
+    titleText: "Heading",
+    subtitleText: "Heading"
   }
 ];
 
 export const secondSteps = [
   {
     status: MultiStepIndicator.stepStatuses.FULFILLED,
-    titleText: "Plan options",
-    subtitleText: ""
+    titleText: "Heading",
+    subtitleText: "Heading"
   },
   {
     status: MultiStepIndicator.stepStatuses.PENDING,
-    titleText: "Seats",
-    subtitleText: "Number of users"
+    titleText: "Heading",
+    subtitleText: "Heading"
   },
   {
     status: MultiStepIndicator.stepStatuses.PENDING,
-    titleText: "Paying method",
-    subtitleText: "How to pay"
+    titleText: "Heading",
+    subtitleText: "Heading"
   }
 ];
 

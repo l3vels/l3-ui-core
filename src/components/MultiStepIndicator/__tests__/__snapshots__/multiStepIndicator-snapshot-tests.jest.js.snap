@@ -70,7 +70,7 @@ exports[`MultiStepIndicator renders correctly with className 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active clickable l3-style-clickable--disable-text-selection"
@@ -123,7 +123,7 @@ exports[`MultiStepIndicator renders correctly with className 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending clickable l3-style-clickable--disable-text-selection"
@@ -248,7 +248,7 @@ exports[`MultiStepIndicator renders correctly with dividerComponentClassName 1`]
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider test l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active clickable l3-style-clickable--disable-text-selection"
@@ -301,7 +301,7 @@ exports[`MultiStepIndicator renders correctly with dividerComponentClassName 1`]
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider test l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending clickable l3-style-clickable--disable-text-selection"
@@ -432,7 +432,7 @@ exports[`MultiStepIndicator renders correctly with fulfilledStepIcon 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active clickable l3-style-clickable--disable-text-selection"
@@ -485,7 +485,7 @@ exports[`MultiStepIndicator renders correctly with fulfilledStepIcon 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending clickable l3-style-clickable--disable-text-selection"
@@ -595,7 +595,7 @@ exports[`MultiStepIndicator renders correctly with isFulfilledStepDisplayNumber 
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active clickable l3-style-clickable--disable-text-selection"
@@ -648,7 +648,7 @@ exports[`MultiStepIndicator renders correctly with isFulfilledStepDisplayNumber 
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending clickable l3-style-clickable--disable-text-selection"
@@ -773,7 +773,7 @@ exports[`MultiStepIndicator renders correctly with stepComponentClassName 1`] = 
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active test clickable l3-style-clickable--disable-text-selection"
@@ -826,7 +826,7 @@ exports[`MultiStepIndicator renders correctly with stepComponentClassName 1`] = 
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending test clickable l3-style-clickable--disable-text-selection"
@@ -951,7 +951,7 @@ exports[`MultiStepIndicator renders correctly with steps 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-active clickable l3-style-clickable--disable-text-selection"
@@ -1004,7 +1004,7 @@ exports[`MultiStepIndicator renders correctly with steps 1`] = `
     </div>
   </li>
   <div
-    className="l3-style-divider l3-style-divider--horizontal"
+    className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
   />
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-pending clickable l3-style-clickable--disable-text-selection"
@@ -1061,7 +1061,7 @@ exports[`MultiStepIndicator renders correctly with steps 1`] = `
 
 exports[`MultiStepIndicator renders correctly with textPlacement vertical 1`] = `
 <ol
-  className="multi-step-indicator--wrapper"
+  className="multi-step-indicator--wrapper-vertical__divider"
 >
   <li
     className="l3-style-clickable l3-style-step-indicator-component l3-style-step-indicator-component--type-primary l3-style-step-indicator-component--status-fulfilled clickable l3-style-step-indicator-component--text-placement-vertical l3-style-clickable--disable-text-selection"
@@ -1102,7 +1102,7 @@ exports[`MultiStepIndicator renders correctly with textPlacement vertical 1`] = 
         </span>
       </div>
       <div
-        className="l3-style-divider l3-style-divider--horizontal"
+        className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
       />
     </div>
     <div
@@ -1155,7 +1155,7 @@ exports[`MultiStepIndicator renders correctly with textPlacement vertical 1`] = 
         </span>
       </div>
       <div
-        className="l3-style-divider l3-style-divider--horizontal"
+        className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
       />
     </div>
     <div
@@ -1207,6 +1207,9 @@ exports[`MultiStepIndicator renders correctly with textPlacement vertical 1`] = 
           3
         </span>
       </div>
+      <div
+        className="l3-style-divider multi-step-indicator--wrapper__divider l3-style-divider--horizontal"
+      />
     </div>
     <div
       className="l3-style-step-indicator-component__text-container l3-style-step-indicator-component--type-primary__text-container l3-style-step-indicator-component--status-pending__text-container"

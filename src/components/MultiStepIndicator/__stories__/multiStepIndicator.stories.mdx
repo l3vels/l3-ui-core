@@ -9,7 +9,7 @@ import { Link } from "../../../storybook/components";
 import { Featured, Close } from "../../Icon/Icons";
 import "./multiStepIndicator.stories.scss";
 
-<Meta title="Navigation/Wizard - (Coming Soon)" component={MultiStepIndicator} />
+<Meta title="Navigation/Wizard" component={MultiStepIndicator} />
 
 <!--- Component template -->
 
@@ -40,20 +40,20 @@ Tabular navigation component that helps users visualize and interact with a mult
         {
           key: "FULFILLED",
           status: MultiStepIndicator.stepStatuses.FULFILLED,
-          titleText: "Everything you can do with L3vels",
-          subtitleText: "Subtitle"
+          titleText: "Heading",
+          subtitleText: "Heading"
         },
         {
           key: "PENDING",
           status: MultiStepIndicator.stepStatuses.PENDING,
-          titleText: "Everything you can do with L3vels",
-          subtitleText: "Subtitle"
+          titleText: "Heading",
+          subtitleText: "Heading"
         },
         {
           key: "PENDING-2",
           status: MultiStepIndicator.stepStatuses.PENDING,
-          titleText: "Everything you can do with L3vels",
-          subtitleText: "Subtitle"
+          titleText: "Heading",
+          subtitleText: "Heading"
         }
       ]
     }}
@@ -92,10 +92,10 @@ Tabular navigation component that helps users visualize and interact with a mult
 
 ### Placements
 
-Placements
+Vertical
 
 <Canvas>
-  <Story name="Placements">
+  <Story name="Vertical">
     {() => {
       const steps = useMemo(
         () => [
@@ -121,13 +121,39 @@ Placements
         []
       );
       return (
-        <div className="l3-storybook-multiStepIndicator_column-wrapper">
-          <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Vertical</span>
+        <div className="l3-storybook-VerticalMultiStepIndicator">
+          <div className="l3-storybook-VerticalMultiStepIndicator-column">
+            <span className="l3-storybook-VerticalMultiStepIndicator-text">Primary</span>
             <MultiStepIndicator
-              className="l3-storybook-multiStepIndicator_size"
-              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
               steps={steps}
+              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
+              isFulfilledStepDisplayNumber={true}
+              type={MultiStepIndicator.types.PRIMARY}
+            />
+          </div>
+          <div className="l3-storybook-VerticalMultiStepIndicator-row">
+            <span className="l3-storybook-VerticalMultiStepIndicator-text">Positive</span>
+            <MultiStepIndicator
+              steps={steps}
+              type={MultiStepIndicator.types.POSITIVE}
+              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
+            />
+          </div>
+          <div className="l3-storybook-VerticalMultiStepIndicator-row">
+            <span className="l3-storybook-VerticalMultiStepIndicator-text">Negative</span>
+            <MultiStepIndicator
+              steps={steps}
+              fulfilledStepIcon={Close}
+              type={MultiStepIndicator.types.NEGATIVE}
+              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
+            />
+          </div>
+          <div className="l3-storybook-VerticalMultiStepIndicator-row">
+            <span className="l3-storybook-VerticalMultiStepIndicator-text">Secondary</span>
+            <MultiStepIndicator
+              steps={steps}
+              type={MultiStepIndicator.types.SECONDARY}
+              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
             />
           </div>
         </div>
@@ -187,54 +213,6 @@ There are 4 types: Primary, positive, negative, secondary.
           <div className="l3-storybook-multiStepIndicator_row-wrapper">
             <span className="l3-storybook-multiStepIndicator_title">Secondary</span>
             <MultiStepIndicator steps={steps} type={MultiStepIndicator.types.SECONDARY} />
-          </div>
-        </div>
-      );
-    }}
-  </Story>
-</Canvas>
-
-### Fullfiled Icons
-
-<Canvas>
-  <Story name="Fullfiled Icons">
-    {() => {
-      const steps = useMemo(
-        () => [
-          {
-            key: "FULFILLED",
-            status: MultiStepIndicator.stepStatuses.FULFILLED,
-            titleText: "Heading",
-            subtitleText: "Heading"
-          },
-          {
-            key: "ACTIVE",
-            status: MultiStepIndicator.stepStatuses.ACTIVE,
-            titleText: "Heading",
-            subtitleText: "Heading"
-          },
-          {
-            key: "PENDING",
-            status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Heading",
-            subtitleText: "Heading"
-          }
-        ],
-        []
-      );
-      return (
-        <div className="l3-storybook-multiStepIndicator_column-wrapper">
-          <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Default (check)</span>
-            <MultiStepIndicator steps={steps} />
-          </div>
-          <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Number instead of icon</span>
-            <MultiStepIndicator steps={steps} isFulfilledStepDisplayNumber={true} />
-          </div>
-          <div className="l3-storybook-multiStepIndicator_row-wrapper">
-            <span className="l3-storybook-multiStepIndicator_title">Custom (featured)</span>
-            <MultiStepIndicator steps={steps} fulfilledStepIcon={Featured} />
           </div>
         </div>
       );
@@ -343,80 +321,9 @@ State transition automatic example
         ),
         description: "Don’t place subheader on one step only."
       }
-    },
-    {
-      positive: {
-        component: (
-          <div className="l3-storybook-multiStepIndicator_box-wrapper">
-            <MultiStepIndicator
-              steps={thirdSteps}
-              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
-              className="l3-storybook-multiStepIndicator_small-size"
-            />
-            <div className="l3-storybook-multiStepIndicator_spacing" />
-          </div>
-        ),
-        description:
-          "While using the wizard component, keep the default spacing between the wizard steps, even if the wizard width is smaller than the page width."
-      },
-      className: "l3-storybook-multiStepIndicator_overflow",
-      negative: {
-        component: (
-          <div className="l3-storybook-multiStepIndicator_box-wrapper">
-            <MultiStepIndicator
-              steps={thirdSteps}
-              textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
-              className="l3-storybook-multiStepIndicator_line"
-            />
-            <div className="l3-storybook-multiStepIndicator_spacing" />
-          </div>
-        ),
-        description: "Do not override the spacing between the wizard steps according to the page width."
-      }
     }
   ]}
 />
-
-## Use cases and examples
-
-### Multi step wizard
-
-<Canvas>
-  <Story name="Multi step wizard">
-    {() => {
-      const steps = useMemo(
-        () => [
-          {
-            key: "FULFILLED",
-            status: MultiStepIndicator.stepStatuses.FULFILLED,
-            titleText: "Step 1",
-            subtitleText: "Learn how to use l3vels CRM"
-          },
-          {
-            key: "PENDING",
-            status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Step 2",
-            subtitleText: "Integrate your email"
-          },
-          {
-            key: "PENDING-3",
-            status: MultiStepIndicator.stepStatuses.PENDING,
-            titleText: "Step 3",
-            subtitleText: "Import your data"
-          }
-        ],
-        []
-      );
-      return (
-        <MultiStepIndicator
-          className="l3-storybook-multiStepIndicator_big-size"
-          steps={steps}
-          textPlacement={MultiStepIndicator.textPlacements.VERTICAL}
-        />
-      );
-    }}
-  </Story>
-</Canvas>
 
 ## Related components
 

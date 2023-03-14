@@ -13,7 +13,7 @@ $divider-height: 2px;
   border-radius: $divider-border-radius;
   height: $divider-height;
   max-width: $divider-width;
-  width: 48px;
+  width: $divider-width;
 
   &--vertical {
     transform: rotate(90deg);
