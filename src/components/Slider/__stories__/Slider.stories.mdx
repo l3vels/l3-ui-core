@@ -28,7 +28,7 @@ export const argTypes = createStoryMetaSettings({
   enumPropNamesArray: ["color", "size"]
 });
 
-<Meta title="Inputs/Slider - (In Progress)" component={Slider} argTypes={argTypes} />
+<Meta title="Inputs/Slider" component={Slider} argTypes={argTypes} />
 
 <!--- Component template -->
 
@@ -84,9 +84,15 @@ Sizes small/medium/large are available.
 
 <Canvas>
   <Story name="Sizes">
-    <Slider size={Slider.sizes.SMALL} defaultValue={12} />
-    <Slider size={Slider.sizes.MEDIUM} defaultValue={24} />
-    <Slider size={Slider.sizes.LARGE} defaultValue={35} />
+    <div style={{ width: "343px" }}>
+      <Slider size={Slider.sizes.SMALL} defaultValue={12} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider size={Slider.sizes.MEDIUM} defaultValue={24} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider size={Slider.sizes.LARGE} defaultValue={35} />
+    </div>
   </Story>
 </Canvas>
 
@@ -96,9 +102,15 @@ Color Modes positive/negative/normal are available.
 
 <Canvas>
   <Story name="Colors">
-    <Slider color={Slider.colors.POSITIVE} defaultValue={34} size={Slider.sizes.MEDIUM} />
-    <Slider color={Slider.colors.NEGATIVE} defaultValue={55} size={Slider.sizes.MEDIUM} />
-    <Slider color={Slider.colors.NORMAL} defaultValue={12} size={Slider.sizes.MEDIUM} />
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.POSITIVE} defaultValue={34} size={Slider.sizes.MEDIUM} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NEGATIVE} defaultValue={55} size={Slider.sizes.MEDIUM} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} defaultValue={12} size={Slider.sizes.MEDIUM} />
+    </div>
   </Story>
 </Canvas>
 
@@ -108,9 +120,15 @@ Normal small/medium/large are available.
 
 <Canvas>
   <Story name="Normal">
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} defaultValue={12} />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} defaultValue={24} />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} defaultValue={35} />
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} defaultValue={12} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} defaultValue={24} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} defaultValue={35} />
+    </div>
   </Story>
 </Canvas>
 
@@ -118,9 +136,15 @@ Normal small/medium/large are available.
 
 <Canvas>
   <Story name="Normal with Text">
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} indicateTextSelection={true} defaultValue={10} />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} indicateTextSelection={true} defaultValue={24} />
-    <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} indicateTextSelection={true} defaultValue={35} />
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.SMALL} indicateTextSelection={true} defaultValue={10} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.MEDIUM} indicateTextSelection={true} defaultValue={24} />
+    </div>
+    <div style={{ width: "343px" }}>
+      <Slider color={Slider.colors.NORMAL} size={Slider.sizes.LARGE} indicateTextSelection={true} defaultValue={35} />
+    </div>
   </Story>
 </Canvas>
 

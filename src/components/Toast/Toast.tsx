@@ -130,8 +130,6 @@ const Toast: FC<ToastProps> & {
 
   const iconElement = !hideIcon && getIcon(type, icon, ToastIconSize[iconSize]);
 
-  console.log(classNames);
-
   return (
     <CSSTransition in={open} classNames="l3-style-toast-animation" timeout={400} unmountOnExit>
       <div className="l3-style-toast--position">

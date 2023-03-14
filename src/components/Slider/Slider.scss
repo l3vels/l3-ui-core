@@ -10,7 +10,7 @@
   width: 100%;
   &--textSize {
     display: flex;
-    color: $white;
+    color: var(--color-primitive-white);
     &-small {
       @include typography-label-small;
       top: 11px;
@@ -44,7 +44,7 @@
   }
 
   &__infix {
-    font-size: 14px;
+    @include typography-label-small;
     flex: 0 0 auto;
     &--txt {
       white-space: nowrap;

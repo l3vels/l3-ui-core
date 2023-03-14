@@ -75,7 +75,7 @@ const SliderBase: FC<SliderBaseProps> = forwardRef(({ className }, _ref) => {
   }
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <div
         className={bem("base", { [size]: size, [color]: color, disabled }, className)}
         data-testid={shapeTestId("base")}

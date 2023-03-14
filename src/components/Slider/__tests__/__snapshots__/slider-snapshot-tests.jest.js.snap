@@ -8,7 +8,9 @@ exports[`Slider Render 01. with empty props 1`] = `
     class="l3-slider"
     data-testid="l3-slider"
   >
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <div
         class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
         data-testid="l3-slider__base"
@@ -86,7 +88,7 @@ Snapshot Diff:
 +     class="l3-slider slide-me"
       data-testid="l3-slider"
     >
-      <div>
+      <div
 `;
 
 exports[`Slider Render 05. with id and data-testid 1`] = `
@@ -102,7 +104,9 @@ Snapshot Diff:
 +     data-testid="my-slider"
 +     id="my-slider"
     >
-      <div>
+      <div
+        style="width: 100%;"
+      >
         <div
           class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 -         data-testid="l3-slider__base"
@@ -139,7 +143,9 @@ Snapshot Diff:
 +     class="l3-slider l3-slider--disabled"
       data-testid="l3-slider"
     >
-      <div>
+      <div
+        style="width: 100%;"
+      >
         <div
 -         class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 +         class="l3-slider__base l3-slider__base--small l3-slider__base--normal l3-slider__base--disabled"
@@ -174,8 +180,8 @@ Snapshot Diff:
 + Current Render: {"color":"positive"}
 
 @@ --- --- @@
-    >
-      <div>
+        style="width: 100%;"
+      >
         <div
 -         class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 +         class="l3-slider__base l3-slider__base--small l3-slider__base--positive"
@@ -190,8 +196,8 @@ Snapshot Diff:
 + Current Render: {"size":"large"}
 
 @@ --- --- @@
-    >
-      <div>
+        style="width: 100%;"
+      >
         <div
 -         class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 +         class="l3-slider__base l3-slider__base--large l3-slider__base--normal"
@@ -235,7 +241,7 @@ Snapshot Diff:
 +     class="l3-slider l3-slider--value-shown"
       data-testid="l3-slider"
     >
-      <div>
+      <div
 @@ --- --- @@
               role="slider"
               style="left: 0%;"
@@ -358,17 +364,17 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-      class="l3-slider"
       data-testid="l3-slider"
     >
-+     <div
+      <div
 +       class="l3-slider__infix l3-slider__infix--txt l3-slider__infix--prefix"
 +     >
 +       Vol
 +     </div>
-      <div>
++     <div
+        style="width: 100%;"
+      >
         <div
-          class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 @@ --- --- @@
               style="left: 0%;"
               tabindex="0"
@@ -394,19 +400,19 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-      class="l3-slider"
       data-testid="l3-slider"
     >
-+     <div
+      <div
 +       class="l3-slider__infix l3-slider__infix--prefix"
 +     >
 +       <div>
 +         Custom component
 +       </div>
 +     </div>
-      <div>
++     <div
+        style="width: 100%;"
+      >
         <div
-          class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
 @@ --- --- @@
             />
           </div>

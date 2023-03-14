@@ -8,7 +8,9 @@ exports[`a. Ranges Slider: basic renderer 1`] = `
     class="l3-slider"
     data-testid="l3-slider"
   >
-    <div>
+    <div
+      style="width: 100%;"
+    >
       <div
         class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
         data-testid="l3-slider__base"
@@ -281,7 +283,7 @@ Snapshot Diff:
 +         {"value":"45%"}
         </div>
       </div>
-      <div>
+      <div
 @@ --- --- @@
             />
             <div
