@@ -338,11 +338,3 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
 @include keyframe(step-indicatior-circle-pop-elastic) {
   @include pop-elastic();
 }
-
-.l3-style-step-indicator-component {
-  font-family: var(--font-family);
-}
-
-.l3-style-step-indicator-component__text-container__subtitle__text {
-  font-family: var(--font-family);
-}
