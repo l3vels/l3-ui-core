@@ -11,7 +11,7 @@ import {
 } from "../../../utils/dom-event-utils";
 import { useSliderActions, useSliderSelection, useSliderUi } from "../SliderContext";
 import { bem, calcDimensions, calculatePageStep, getNearest, moveToPx } from "../SliderHelpers";
-import { useSliderRail } from "../SliderHooks";
+import { useSliderRail } from "../UseSliderHooks";
 import SliderRail from "./SliderRail";
 import SliderTrack from "./SliderTrack";
 import SliderFilledTrack from "./SliderFilledTrack";

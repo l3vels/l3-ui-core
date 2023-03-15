@@ -1,6 +1,6 @@
 import React, { createContext, ReactElement, useContext, useMemo, useState } from "react";
 import { createTestIdHelper } from "../../helpers/testid-helper";
-import { useDragging, useSliderActionsContextValue, useSliderValues } from "./SliderHooks";
+import { useDragging, useSliderActionsContextValue, useSliderValues } from "./UseSliderHooks";
 import { SliderProps } from "./Slider";
 import {
   SliderContextActions,

@@ -4,7 +4,7 @@ import { bem } from "./SliderHelpers";
 // import { useSliderInfixComponent } from "./SliderInfixHooks";
 import L3ComponentProps from "../../types/L3ComponentProps";
 // import { useSliderInTextFixComponent } from "./SliderInTextFixHooks";
-import { useSliderInfixComponent } from "./SliderInfixHooks";
+import { useSliderInfixComponent } from "./UseSliderInfixHooks";
 
 interface SliderInTextProps extends L3ComponentProps {
   /**

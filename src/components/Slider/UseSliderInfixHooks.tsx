@@ -1,10 +1,9 @@
 import React, { CSSProperties, ReactElement } from "react";
-import Icon from "../../components/Icon/Icon";
+import Icon from "../Icon/Icon";
 import { InfixKind, SliderTextSize } from "./SliderConstants";
 import { useSliderInfix, useSliderSelection } from "./SliderContext";
 import SelectionIndicator from "./SelectionIndicator";
 import { IconType } from "../Icon/IconConstants";
-// import SelectionTextIndicator from "./SelectionTextIndicator";
 
 const defaultIconProps = {
   clickable: false,

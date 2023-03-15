@@ -58,7 +58,7 @@ const SelectionIndicator: React.FC<SelectionIndicatorProps> & {
     [textSize, className]
   );
   return isTextFix ? (
-    <input disabled type="text" className={classNames} onChange={handleChange} value={String(currentTextValue)} />
+    <TextField className={classNames} onChange={handleChange} value={String(currentTextValue)} />
   ) : (
     <TextField onChange={handleChange} value={String(currentTextValue)} />
   );

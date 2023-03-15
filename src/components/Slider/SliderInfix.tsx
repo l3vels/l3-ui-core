@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { InfixKind, SliderTextSize } from "./SliderConstants";
 import { bem } from "./SliderHelpers";
-import { useSliderInfixComponent } from "./SliderInfixHooks";
+import { useSliderInfixComponent } from "./UseSliderInfixHooks";
 import L3ComponentProps from "../../types/L3ComponentProps";
 
 interface SliderInfixProps extends L3ComponentProps {

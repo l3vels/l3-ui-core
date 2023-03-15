@@ -4,12 +4,14 @@
 .sliderText {
   display: flex;
   position: relative;
-  left: 160px;
-  background: transparent;
+  left: 140px;
+  background: transparent !important;
+  padding: 0 !important;
   border: none;
   width: 100%;
   &--textSize {
     display: flex;
+    border: 1px solid red;
     color: var(--color-primitive-white);
     &-small {
       @include typography-label-small;
