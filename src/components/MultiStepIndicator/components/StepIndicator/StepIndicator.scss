@@ -2,9 +2,8 @@
 @import "../../../../styles/typography";
 @import "../../../../styles/keyframes";
 @import "../../../../styles/typography/main-typography";
-
-$primary-box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-$negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
+@import "../../../../styles/global-css-settings";
+@import "../../../../styles/typography/typography";
 
 .l3-style-step-indicator-component {
   display: flex;
@@ -22,13 +21,8 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
     &__title {
       width: 93px;
       height: 32px;
-      // @include typography-heading-small;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 32px;
-      color: $white;
+      @include typography-heading-small;
+      color: var(--color-primitive-white);
       margin-left: 20px;
 
       .visually-hidden {
@@ -39,12 +33,7 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
     &__subtitle__text {
       width: 69px;
       height: 28px;
-      // @include typography-heading-small;
-      font-family: $font-family;
-      font-style: normal;
-      font-weight: 450;
-      font-size: 18px;
-      line-height: 28px;
+      @include typography-heading-xs-small;
       color: var(--color-transparent-white-06);
     }
   }
@@ -147,65 +136,65 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
   &--type {
     &-primary {
       &__number-container {
-        color: $white;
-        background: var(--color-transparent-black-05);
+        background: var(--color-black);
+        color: var(--text-color-on-primary);
+        // @include theme-prop(background, var(--color-black));
         &:hover {
-          @include theme-prop(background-color, primary-hover-color);
+          background: var(--color-transparent-black-05);
+          border: 1px solid var(--color-black);
         }
-        &:active {
-          box-shadow: $primary-box-shadow;
-        }
+        // &:active {
+        //   box-shadow: $primary-btn-shadow;
+        // }
       }
     }
 
     &-negative {
       &__number-container {
-        background: $linear-gradient-red;
-        color: $white;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        // @include theme-prop(background, --color-gradient-red);
+        background: var(--color-gradient-red);
+        color: var(--color-primitive-white);
 
         &:hover {
-          background: var(--color-transparent-black-02);
-          border: none;
+          background: var(--color-gradient-red);
+          opacity: 0.6;
         }
-        &:active {
-          box-shadow: $primary-box-shadow;
-          background: var(--color-transparent-black-02);
-          border: none;
-        }
+        // &:active {
+        //   box-shadow: $primary-btn-shadow;
+        //   background: var(--color-gradient-red);
+        // }
       }
     }
 
     &-positive {
       &__number-container {
         background: var(--color-gradient-green);
-        color: $primary;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        color: var(--color-black);
+        border: 1px solid var(--color-transparent-black-02);
 
         &:hover {
-          background: var(--color-transparent-black-02);
-          border: none;
+          background: var(--color-gradient-green);
+          opacity: 0.6;
         }
-        &:active {
-          box-shadow: $primary-box-shadow;
-          background: var(--color-transparent-black-02);
-          border: none;
-        }
+        // &:active {
+        //   box-shadow: $primary-btn-shadow;
+        //   background: var(--color-gradient-green);
+        // }
       }
     }
 
     &-secondary {
       &__number-container {
-        color: $white;
+        color: var(--text-color-on-primary);
 
         &:hover {
           background: var(--color-transparent-black-02);
         }
-        &:active {
-          box-shadow: $primary-box-shadow;
-          background: var(--color-transparent-black-02);
-          border: none;
-        }
+        // &:active {
+        //   box-shadow: $primary-btn-shadow;
+        //   background: var(--color-transparent-black-02);
+        //   border: none;
+        // }
       }
     }
   }
@@ -219,28 +208,26 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
               &__number-container {
                 border: 3px solid rgba(115, 250, 253, 1);
                 &:hover {
-                  @include theme-prop(background-color, primary-hover-color);
-                  border: 1px solid black;
+                  background: var(--color-transparent-black-05);
+                  opacity: 0.6;
                 }
 
-                &:active {
-                  box-shadow: $primary-box-shadow;
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                // }
               }
             }
             &-negative {
               &__number-container {
                 border: 3px solid rgba(115, 250, 253, 1);
                 &:hover {
-                  border: 1px solid black;
-                  background: var(--primary-selected-hover-color);
+                  background: var(--color-gradient-red);
+                  opacity: 0.6;
                 }
-                &:active {
-                  box-shadow: $primary-box-shadow;
-                  background: var(--primary-selected-hover-color);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                //   background: var(--color-gradient-red);
+                // }
               }
             }
 
@@ -249,14 +236,12 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
                 border: 3px solid rgba(115, 250, 253, 1);
 
                 &:hover {
-                  border: 1px solid black;
-                  background: var(--primary-selected-hover-color);
+                  background: var(--color-gradient-green);
+                  opacity: 0.6;
                 }
-                &:active {
-                  box-shadow: $primary-box-shadow;
-                  background: var(--primary-selected-hover-color);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                // }
               }
             }
 
@@ -265,14 +250,13 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
                 // box-shadow: 0 0 0 4px var(--primary-background-color), 0 0 0 6px var(--primary-text-color);
                 border: 3px solid rgba(115, 250, 253, 1);
                 &:hover {
-                  border: 1px solid black;
-                  background: var(--primary-selected-hover-color);
+                  background: var(--color-transparent-black-02);
                 }
-                &:active {
-                  box-shadow: $primary-box-shadow;
-                  background: var(--primary-selected-hover-color);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                //   background: var(--color-transparent-black-02);
+                //   border: none;
+                // }
               }
             }
           }
@@ -284,48 +268,57 @@ $negative-background-color: linear-gradient(180deg, #e96878 0%, #d62e2e 100%);
       &__number-container {
         &.l3-style-step-indicator-component {
           &--type {
+            &-primary {
+              &__number-container {
+                border: 2px solid var(--color-transparent-white-03);
+                &:hover {
+                  background: var(--color-transparent-black-05);
+                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                //   border: none;
+                // }
+              }
+            }
             &-negative {
               &__number-container {
-                border: 2px solid rgba(255, 255, 255, 0.3);
+                border: 2px solid var(--color-transparent-white-03);
                 &:hover {
-                  border: 1px solid black;
-                  background: var(--primary-selected-hover-color);
+                  background: var(--color-gradient-red);
+                  opacity: 0.6;
                 }
-                &:active {
-                  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-                  background: var(--primary-selected-hover-color);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                //   background: var(--color-gradient-red);
+                // }
               }
             }
 
             &-positive {
               &__number-container {
+                // border: 2px solid var(--color-transparent-white-03);
                 border: 2px solid rgba(255, 255, 255, 0.3);
                 &:hover {
-                  border: 1px solid black;
-                  background: var(--primary-selected-hover-color);
+                  background: var(--color-gradient-green);
+                  border: 2px solid rgba(255, 255, 255, 0.3);
                 }
-                &:active {
-                  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-                  background: var(--primary-selected-hover-color);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                // }
               }
             }
 
             &-secondary {
               &__number-container {
-                border: 2px solid rgba(255, 255, 255, 0.3);
+                border: 2px solid var(--color-transparent-white-03);
                 &:hover {
-                  border: 1px solid black;
                   background: var(--color-transparent-black-02);
                 }
-                &:active {
-                  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
-                  background: var(--color-transparent-black-02);
-                  border: none;
-                }
+                // &:active {
+                //   box-shadow: $primary-btn-shadow;
+                //   background: var(--color-transparent-black-02);
+                //   border: none;
+                // }
               }
             }
           }

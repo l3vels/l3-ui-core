@@ -3,12 +3,9 @@
 
 .l3-storybook-multiStepIndicator {
   &_column-wrapper {
-    display: inline-block;
+    display: flex;
     flex-direction: column;
     gap: 30px;
-    // height: 700px;
-    // width: 100%;
-    // border: 1px solid red;
   }
 
   &_row-wrapper {
