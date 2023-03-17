@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 30px;
   }
-  
+
   &_row-wrapper {
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
   &_size {
     width: 700px;
   }
-  
+
   &_big-size {
     width: 100%;
   }
@@ -51,7 +51,7 @@
     margin-left: -40px;
     .l3-style-divider {
       width: 120px;
-    } 
+    }
   }
 
   &_overflow {
@@ -59,4 +59,20 @@
       overflow: hidden;
     }
   }
+}
+
+.l3-storybook-VerticalMultiStepIndicator {
+  width: 100%;
+  height: 100%;
+}
+.l3-storybook-VerticalMultiStepIndicator-column {
+  display: inline-block;
+}
+.l3-storybook-VerticalMultiStepIndicator-row {
+  display: inline-block;
+  margin-left: 80px;
+}
+.l3-storybook-VerticalMultiStepIndicator-text {
+  display: inline-block;
+  margin-left: 45px;
 }

@@ -52,13 +52,17 @@ Divider create separation between two UI elements
 <Canvas>
   <Story name="Directions">
     <div style={{ display: "flex", flexDirection: "column", width: "100%", height: "400px" }}>
-      <div className={classes["divider-description-container"]} style={{ height: 40 }}>
+      <div style={{ height: 40 }}>
         <span className={classes["divider-description-horizontal-text"]}>Horizontal</span>
-        <Divider direction={Divider.directions.HORIZONTAL} />
+        <div style={{ marginLeft: "120px", marginTop: "-10px" }}>
+          <Divider direction={Divider.directions.HORIZONTAL} />
+        </div>
       </div>
       <div className={classes["divider-description-container"]}>
-        <span className={classes["divider-description-vertical-text"]}>Vertical</span>
-        <Divider direction={Divider.directions.VERTICAL} className={classes["divider-description-horizontal"]} />
+        <span style={{ marginTop: "-150px" }}>Vertical</span>
+        <div style={{ marginTop: "150px", marginLeft: "-100px" }}>
+          <Divider direction={Divider.directions.VERTICAL} className={classes["divider-description-horizontal"]} />
+        </div>
       </div>
     </div>
   </Story>
