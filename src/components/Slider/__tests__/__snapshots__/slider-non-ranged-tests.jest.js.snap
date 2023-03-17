@@ -2,37 +2,45 @@
 
 exports[`a. Non-ranged Slider: basic renderer 1`] = `
 <div
-  class="l3-slider"
-  data-testid="l3-slider"
+  style="display: flex;"
 >
   <div
-    class="l3-slider__base l3-slider__base--small"
-    data-testid="l3-slider__base"
+    class="l3-slider"
+    data-testid="l3-slider"
   >
     <div
-      class="l3-slider__rail"
-      data-testid="l3-slider__rail"
+      style="width: 100%;"
     >
       <div
-        class="l3-slider__track"
-      />
-      <div
-        class="l3-slider__filled-track"
-        style="left: 0%; width: 20%;"
-      />
-      <div
-        aria-disabled="false"
-        aria-label="my-slider"
-        aria-valuemax="100"
-        aria-valuemin="0"
-        aria-valuenow="20"
-        aria-valuetext="20%"
-        class="l3-slider__thumb l3-slider__thumb--index-0"
-        data-testid="l3-slider__thumb-0"
-        role="slider"
-        style="left: 20%;"
-        tabindex="0"
-      />
+        class="l3-slider__base l3-slider__base--small l3-slider__base--normal"
+        data-testid="l3-slider__base"
+      >
+        <div
+          class="l3-slider__rail"
+          data-testid="l3-slider__rail"
+        >
+          <div
+            class="l3-slider__track"
+          />
+          <div
+            class="l3-slider__filled-track"
+            style="left: 0%; width: 20%;"
+          />
+          <div
+            aria-disabled="false"
+            aria-label="my-slider"
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="20"
+            aria-valuetext="20%"
+            class="l3-slider__thumb l3-slider__thumb--index-0"
+            data-testid="l3-slider__thumb-0"
+            role="slider"
+            style="left: 20%;"
+            tabindex="0"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -40,104 +48,12 @@ exports[`a. Non-ranged Slider: basic renderer 1`] = `
 
 exports[`b. Non-ranged Slider Active/Inactive 01. show Tooltip when hover Thumb 1`] = `
 Snapshot Diff:
-- Default Render
-+ Current Render
-
-@@ --- --- @@
-          style="left: 20%;"
-          tabindex="0"
-        />
-+       <span
-+         class="l3-style-dialog-content-wrapper"
-+         data-popper-reference-hidden="false"
-+         style="position: absolute; left: 0px; top: 0px;"
-+       >
-+         <div
-+           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
-+         >
-+           <div
-+             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
-+           >
-+             20%
-+           </div>
-+           <svg
-+             class="l3-style-tooltip-arrow l3-style-arrow l3-style-arrow-dark padding-size-undefined"
-+             data-placement="top"
-+             fill="none"
-+             height="5"
-+             style="position: absolute;"
-+             width="28"
-+             xmlns="http://www.w3.org/2000/svg"
-+           >
-+             <path
-+               d="M12.971 1.617 8.046 4.572A3 3 0 0 1 6.502 5h14.996a3 3 0 0 1-1.544-.428L15.03 1.617a2 2 0 0 0-2.058 0Z"
-+               fill="#000"
-+               fill-opacity="0.3"
-+             />
-+             <path
-+               clip-rule="evenodd"
-+               d="M6.66 4H4v1h2.66a4.5 4.5 0 0 0 2.453-.727l3.524-2.291a2.5 2.5 0 0 1 2.726 0l3.524 2.291A4.5 4.5 0 0 0 21.34 5H24V4h-2.66a3.5 3.5 0 0 1-1.908-.565l-3.524-2.292a3.5 3.5 0 0 0-3.816 0L8.569 3.436A3.5 3.5 0 0 1 6.66 4Z"
-+               fill="#000"
-+               fill-opacity="0.3"
-+               fill-rule="evenodd"
-+             />
-+           </svg>
-+         </div>
-+       </span>
-      </div>
-    </div>
-  </div>
+Compared values have no visual difference.
 `;
 
 exports[`b. Non-ranged Slider Active/Inactive 02. hide Tooltip when unhover Thumb 1`] = `
 Snapshot Diff:
-- Default Render
-+ Current Render
-
-@@ --- --- @@
-          style="left: 20%;"
-          tabindex="0"
-        />
--       <span
--         class="l3-style-dialog-content-wrapper"
--         data-popper-reference-hidden="false"
--         style="position: absolute; left: 0px; top: 0px;"
--       >
--         <div
--           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
--         >
--           <div
--             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
--           >
--             20%
--           </div>
--           <svg
--             class="l3-style-tooltip-arrow l3-style-arrow l3-style-arrow-dark padding-size-undefined"
--             data-placement="top"
--             fill="none"
--             height="5"
--             style="position: absolute;"
--             width="28"
--             xmlns="http://www.w3.org/2000/svg"
--           >
--             <path
--               d="M12.971 1.617 8.046 4.572A3 3 0 0 1 6.502 5h14.996a3 3 0 0 1-1.544-.428L15.03 1.617a2 2 0 0 0-2.058 0Z"
--               fill="#000"
--               fill-opacity="0.3"
--             />
--             <path
--               clip-rule="evenodd"
--               d="M6.66 4H4v1h2.66a4.5 4.5 0 0 0 2.453-.727l3.524-2.291a2.5 2.5 0 0 1 2.726 0l3.524 2.291A4.5 4.5 0 0 0 21.34 5H24V4h-2.66a3.5 3.5 0 0 1-1.908-.565l-3.524-2.292a3.5 3.5 0 0 0-3.816 0L8.569 3.436A3.5 3.5 0 0 1 6.66 4Z"
--               fill="#000"
--               fill-opacity="0.3"
--               fill-rule="evenodd"
--             />
--           </svg>
--         </div>
--       </span>
-      </div>
-    </div>
-  </div>
+Compared values have no visual difference.
 `;
 
 exports[`b. Non-ranged Slider Active/Inactive 03. activate Thumb by Tab key press  1`] = `
@@ -146,114 +62,19 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-          aria-valuemin="0"
-          aria-valuenow="20"
-          aria-valuetext="20%"
--         class="l3-slider__thumb l3-slider__thumb--index-0"
-+         class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
-          style="left: 20%;"
-          tabindex="0"
-        />
-+       <span
-+         class="l3-style-dialog-content-wrapper"
-+         data-popper-reference-hidden="false"
-+         style="position: absolute; left: 0px; top: 0px;"
-+       >
-+         <div
-+           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear-done l3-style-animation-expand-enter-done"
-+         >
-+           <div
-+             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
-+           >
-+             20%
-+           </div>
-+           <svg
-+             class="l3-style-tooltip-arrow l3-style-arrow l3-style-arrow-dark padding-size-undefined"
-+             data-placement="top"
-+             fill="none"
-+             height="5"
-+             style="position: absolute;"
-+             width="28"
-+             xmlns="http://www.w3.org/2000/svg"
-+           >
-+             <path
-+               d="M12.971 1.617 8.046 4.572A3 3 0 0 1 6.502 5h14.996a3 3 0 0 1-1.544-.428L15.03 1.617a2 2 0 0 0-2.058 0Z"
-+               fill="#000"
-+               fill-opacity="0.3"
-+             />
-+             <path
-+               clip-rule="evenodd"
-+               d="M6.66 4H4v1h2.66a4.5 4.5 0 0 0 2.453-.727l3.524-2.291a2.5 2.5 0 0 1 2.726 0l3.524 2.291A4.5 4.5 0 0 0 21.34 5H24V4h-2.66a3.5 3.5 0 0 1-1.908-.565l-3.524-2.292a3.5 3.5 0 0 0-3.816 0L8.569 3.436A3.5 3.5 0 0 1 6.66 4Z"
-+               fill="#000"
-+               fill-opacity="0.3"
-+               fill-rule="evenodd"
-+             />
-+           </svg>
-+         </div>
-+       </span>
-      </div>
-    </div>
-  </div>
+              aria-valuemin="0"
+              aria-valuenow="20"
+              aria-valuetext="20%"
+-             class="l3-slider__thumb l3-slider__thumb--index-0"
++             class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+              style="left: 20%;"
 `;
 
 exports[`b. Non-ranged Slider Active/Inactive 04. de-activate Thumb by Tab key press, when Thumb focused  1`] = `
 Snapshot Diff:
-- Default Render
-+ Current Render
-
-@@ --- --- @@
-          aria-valuemin="0"
-          aria-valuenow="20"
-          aria-valuetext="20%"
--         class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-+         class="l3-slider__thumb l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
-          style="left: 20%;"
-          tabindex="0"
-        />
--       <span
--         class="l3-style-dialog-content-wrapper"
--         data-popper-reference-hidden="false"
--         style="position: absolute; left: 0px; top: 0px;"
--       >
--         <div
--           class="l3-style-dialog-content-component top edge-center has-tooltip l3-style-animation-expand-appear l3-style-animation-expand-appear-active"
--         >
--           <div
--             class="l3-style-tooltip l3-style-tooltip-dark padding-size-undefined tooptip-size-small"
--           >
--             20%
--           </div>
--           <svg
--             class="l3-style-tooltip-arrow l3-style-arrow l3-style-arrow-dark padding-size-undefined"
--             data-placement="top"
--             fill="none"
--             height="5"
--             style="position: absolute;"
--             width="28"
--             xmlns="http://www.w3.org/2000/svg"
--           >
--             <path
--               d="M12.971 1.617 8.046 4.572A3 3 0 0 1 6.502 5h14.996a3 3 0 0 1-1.544-.428L15.03 1.617a2 2 0 0 0-2.058 0Z"
--               fill="#000"
--               fill-opacity="0.3"
--             />
--             <path
--               clip-rule="evenodd"
--               d="M6.66 4H4v1h2.66a4.5 4.5 0 0 0 2.453-.727l3.524-2.291a2.5 2.5 0 0 1 2.726 0l3.524 2.291A4.5 4.5 0 0 0 21.34 5H24V4h-2.66a3.5 3.5 0 0 1-1.908-.565l-3.524-2.292a3.5 3.5 0 0 0-3.816 0L8.569 3.436A3.5 3.5 0 0 1 6.66 4Z"
--               fill="#000"
--               fill-opacity="0.3"
--               fill-rule="evenodd"
--             />
--           </svg>
--         </div>
--       </span>
-      </div>
-    </div>
-  </div>
+Compared values have no visual difference.
 `;
 
 exports[`c. Non-ranged Slider Key Events 01. decrease value by Left/Down keys press 1`] = `
@@ -262,36 +83,36 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-        />
-        <div
-          class="l3-slider__filled-track"
--         style="left: 0%; width: 20%;"
-+         style="left: 0%; width: 18%;"
-        />
-        <div
-          aria-disabled="false"
-          aria-label="my-slider"
-          aria-valuemax="100"
-          aria-valuemin="0"
--         aria-valuenow="20"
--         aria-valuetext="20%"
-+         aria-valuenow="18"
-+         aria-valuetext="18%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
--         style="left: 20%;"
-+         style="left: 18%;"
-          tabindex="0"
-        >
-          <label
-            class="l3-slider__thumb-label"
-          >
--           20%
-+           18%
-          </label>
-        </div>
-      </div>
+            />
+            <div
+              class="l3-slider__filled-track"
+-             style="left: 0%; width: 20%;"
++             style="left: 0%; width: 18%;"
+            />
+            <div
+              aria-disabled="false"
+              aria-label="my-slider"
+              aria-valuemax="100"
+              aria-valuemin="0"
+-             aria-valuenow="20"
+-             aria-valuetext="20%"
++             aria-valuenow="18"
++             aria-valuetext="18%"
+              class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+-             style="left: 20%;"
++             style="left: 18%;"
+              tabindex="0"
+            >
+              <label
+                class="l3-slider__thumb-label"
+              >
+-               20%
++               18%
+              </label>
+            </div>
+          </div>
 `;
 
 exports[`c. Non-ranged Slider Key Events 02. increase value by Right/Up keys press 1`] = `
@@ -300,36 +121,36 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-        />
-        <div
-          class="l3-slider__filled-track"
--         style="left: 0%; width: 20%;"
-+         style="left: 0%; width: 22%;"
-        />
-        <div
-          aria-disabled="false"
-          aria-label="my-slider"
-          aria-valuemax="100"
-          aria-valuemin="0"
--         aria-valuenow="20"
--         aria-valuetext="20%"
-+         aria-valuenow="22"
-+         aria-valuetext="22%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
--         style="left: 20%;"
-+         style="left: 22%;"
-          tabindex="0"
-        >
-          <label
-            class="l3-slider__thumb-label"
-          >
--           20%
-+           22%
-          </label>
-        </div>
-      </div>
+            />
+            <div
+              class="l3-slider__filled-track"
+-             style="left: 0%; width: 20%;"
++             style="left: 0%; width: 22%;"
+            />
+            <div
+              aria-disabled="false"
+              aria-label="my-slider"
+              aria-valuemax="100"
+              aria-valuemin="0"
+-             aria-valuenow="20"
+-             aria-valuetext="20%"
++             aria-valuenow="22"
++             aria-valuetext="22%"
+              class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+-             style="left: 20%;"
++             style="left: 22%;"
+              tabindex="0"
+            >
+              <label
+                class="l3-slider__thumb-label"
+              >
+-               20%
++               22%
+              </label>
+            </div>
+          </div>
 `;
 
 exports[`c. Non-ranged Slider Key Events 03. decrease value (step 10%) by PageDown key press 1`] = `
@@ -338,36 +159,36 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-        />
-        <div
-          class="l3-slider__filled-track"
--         style="left: 0%; width: 20%;"
-+         style="left: 0%; width: 10%;"
-        />
-        <div
-          aria-disabled="false"
-          aria-label="my-slider"
-          aria-valuemax="100"
-          aria-valuemin="0"
--         aria-valuenow="20"
--         aria-valuetext="20%"
-+         aria-valuenow="10"
-+         aria-valuetext="10%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
--         style="left: 20%;"
-+         style="left: 10%;"
-          tabindex="0"
-        >
-          <label
-            class="l3-slider__thumb-label"
-          >
--           20%
-+           10%
-          </label>
-        </div>
-      </div>
+            />
+            <div
+              class="l3-slider__filled-track"
+-             style="left: 0%; width: 20%;"
++             style="left: 0%; width: 10%;"
+            />
+            <div
+              aria-disabled="false"
+              aria-label="my-slider"
+              aria-valuemax="100"
+              aria-valuemin="0"
+-             aria-valuenow="20"
+-             aria-valuetext="20%"
++             aria-valuenow="10"
++             aria-valuetext="10%"
+              class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+-             style="left: 20%;"
++             style="left: 10%;"
+              tabindex="0"
+            >
+              <label
+                class="l3-slider__thumb-label"
+              >
+-               20%
++               10%
+              </label>
+            </div>
+          </div>
 `;
 
 exports[`c. Non-ranged Slider Key Events 04. increase value (step 10%) by PageUp key pres 1`] = `
@@ -376,36 +197,36 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-        />
-        <div
-          class="l3-slider__filled-track"
--         style="left: 0%; width: 20%;"
-+         style="left: 0%; width: 40%;"
-        />
-        <div
-          aria-disabled="false"
-          aria-label="my-slider"
-          aria-valuemax="100"
-          aria-valuemin="0"
--         aria-valuenow="20"
--         aria-valuetext="20%"
-+         aria-valuenow="40"
-+         aria-valuetext="40%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
--         style="left: 20%;"
-+         style="left: 40%;"
-          tabindex="0"
-        >
-          <label
-            class="l3-slider__thumb-label"
-          >
--           20%
-+           40%
-          </label>
-        </div>
-      </div>
+            />
+            <div
+              class="l3-slider__filled-track"
+-             style="left: 0%; width: 20%;"
++             style="left: 0%; width: 40%;"
+            />
+            <div
+              aria-disabled="false"
+              aria-label="my-slider"
+              aria-valuemax="100"
+              aria-valuemin="0"
+-             aria-valuenow="20"
+-             aria-valuetext="20%"
++             aria-valuenow="40"
++             aria-valuetext="40%"
+              class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+-             style="left: 20%;"
++             style="left: 40%;"
+              tabindex="0"
+            >
+              <label
+                class="l3-slider__thumb-label"
+              >
+-               20%
++               40%
+              </label>
+            </div>
+          </div>
 `;
 
 exports[`c. Non-ranged Slider Key Events 05. change value by keys press in Step and Label mode 1`] = `
@@ -414,43 +235,43 @@ Snapshot Diff:
 + Current Render
 
 @@ --- --- @@
-        />
+            />
+            <div
+              class="l3-slider__filled-track"
+-             style="left: 0%; width: 20%;"
++             style="left: 0%; width: 40%;"
+            />
+            <div
+              aria-disabled="false"
+              aria-label="my-slider"
+              aria-valuemax="100"
+              aria-valuemin="0"
+-             aria-valuenow="20"
+-             aria-valuetext="20%"
++             aria-valuenow="40"
++             aria-valuetext="40%"
+              class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
+              data-testid="l3-slider__thumb-0"
+              role="slider"
+-             style="left: 20%;"
++             style="left: 40%;"
+              tabindex="0"
+            >
+              <label
+                class="l3-slider__thumb-label"
+              >
+-               20%
++               40%
+              </label>
+            </div>
+          </div>
+@@ --- --- @@
         <div
-          class="l3-slider__filled-track"
--         style="left: 0%; width: 20%;"
-+         style="left: 0%; width: 40%;"
-        />
-        <div
-          aria-disabled="false"
-          aria-label="my-slider"
-          aria-valuemax="100"
-          aria-valuemin="0"
--         aria-valuenow="20"
--         aria-valuetext="20%"
-+         aria-valuenow="40"
-+         aria-valuetext="40%"
-          class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-0"
-          data-testid="l3-slider__thumb-0"
-          role="slider"
--         style="left: 20%;"
-+         style="left: 40%;"
-          tabindex="0"
+          data-testid="mock-text-field-comp"
         >
-          <label
-            class="l3-slider__thumb-label"
-          >
--           20%
-+           40%
-          </label>
+-         {"value":"20%"}
++         {"value":"40%"}
         </div>
       </div>
-@@ --- --- @@
-      <div
-        data-testid="mock-text-field-comp"
-      >
--       {"value":"20%"}
-+       {"value":"40%"}
-      </div>
     </div>
-  </div>
 `;

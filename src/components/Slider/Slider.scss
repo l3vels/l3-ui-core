@@ -1,4 +1,38 @@
 @import "../../styles/themes";
+@import "../../styles/typography/typography";
+
+.sliderText {
+  display: flex;
+  position: relative;
+  left: 140px;
+  background: transparent !important;
+  padding: 0 !important;
+  border: none;
+  width: 100%;
+  &--textSize {
+    display: flex;
+    border: 1px solid red;
+    color: var(--color-primitive-white);
+    &-small {
+      @include typography-label-small;
+      top: 11px;
+      width: 40px;
+      height: 16px;
+    }
+    &-medium {
+      @include typography-label-medium;
+      top: 15px;
+      width: 40px;
+      height: 18px;
+    }
+    &-large {
+      @include typography-label-medium;
+      top: 15px;
+      width: 45px;
+      height: 20px;
+    }
+  }
+}
 
 .l3-slider {
   align-items: center;
@@ -12,7 +46,7 @@
   }
 
   &__infix {
-    font-size: 14px;
+    @include typography-label-small;
     flex: 0 0 auto;
     &--txt {
       white-space: nowrap;
@@ -22,6 +56,8 @@
     }
     .input-component .input-component__input-wrapper .input-component__input {
       padding: var(--spacing-small);
+      width: 60px;
+      height: 50px;
     }
     &--prefix {
       margin-right: var(--spacing-small);
@@ -32,6 +68,6 @@
   }
 }
 
-.l3-slider__infix{
+.l3-slider__infix {
   font-family: var(--font-family);
 }
