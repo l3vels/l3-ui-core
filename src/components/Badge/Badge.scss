@@ -1,14 +1,157 @@
+@import "../../styles/typography/typography";
+@import "../../styles/global-css-settings";
 .badge {
   width: 8px;
   height: 8px;
-  background: #276ef1;
   border: 2px solid #ffffff;
   border-radius: 100px;
+  &--dot {
+    &-accent {
+      background: var(--color-gradient-light-blue);
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    &-positive {
+      background: var(--color-gradient-green);
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    &-warning {
+      background: var(--color-gradient-orange);
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+    &-negative {
+      background: var(--color-gradient-red);
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+}
 
-  &_positive {
-    background: linear-gradient(180deg, #74faa1 0%, #73f96d 100%);
+.badgeBase {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  &--type {
+    &-primary {
+      background: var(--color-gradient-light-blue);
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 20px;
+      height: 20px;
+    }
+    &-primaryCircle {
+      background: var(--color-gradient-light-blue);
+      border-radius: 20px;
+      width: fit-content;
+      min-width: 20px;
+      height: 20px;
+    }
+    &-tertiary {
+      background: transparent;
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 20px;
+      height: 20px;
+    }
+    &-secondary {
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 20px;
+      height: 20px;
+      background: var(--text-color-on-primary);
+    }
   }
-  &_warning {
-    background: linear-gradient(180deg, #fdfe53 0%, #eb9b3a 100%);
+  &--draft {
+    &-warning {
+      background: var(--color-transparent-white-02);
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 78px;
+      height: 32px;
+    }
+    &-positive {
+      background: var(--color-transparent-white-02);
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 71px;
+      height: 32px;
+    }
+    &-negative {
+      background: var(--color-transparent-white-02);
+      border-radius: 4px;
+      width: fit-content;
+      min-width: 83px;
+      height: 32px;
+    }
   }
+  &--special {
+    &-withText {
+      background: var(--color-transparent-white-02);
+      box-shadow: $tags-box-shadow;
+      backdrop-filter: blur(100px);
+      border-radius: 6px;
+      @include typography-label-large;
+      justify-content: center;
+      width: fit-content;
+      min-width: 68px;
+      height: 32px;
+    }
+    &-withoutText {
+      background: var(--color-transparent-black-02);
+      box-shadow: $tags-box-shadow;
+      backdrop-filter: blur(100px);
+      border-radius: 6px;
+      @include typography-label-large;
+      justify-content: center;
+      width: fit-content;
+      min-width: 68px;
+      height: 32px;
+    }
+  }
+  .draftLabel {
+    justify-content: center;
+    @include typography-label-large;
+    color: var(--text-color-on-primary);
+  }
+}
+.badgeGroup {
+  background: var(--text-color-on-primary);
+  border-radius: 4px;
+  color: var(--color-primitive-black);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.labelWhite {
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  @include typography-label-small;
+  width: auto;
+  height: 16px;
+  color: var(--text-color-on-primary);
+}
+.labelBlack {
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  @include typography-label-small;
+  width: auto;
+  height: 16px;
+  color: var(--color-primitive-black);
+}
+.iconWhite {
+  margin: auto;
+  color: var(--text-color-on-primary);
+}
+.iconBlack {
+  margin: auto;
+  color: var(--color-primitive-black);
 }

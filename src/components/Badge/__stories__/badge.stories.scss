@@ -1,0 +1,82 @@
+@import "../../../styles/typography/typography";
+@import "../../../styles/global-css-settings";
+
+.icon-color-black {
+  margin: auto;
+  color: var(--color-primitive-black);
+}
+.icon-color-white {
+  color: var(--text-color-on-primary);
+  margin: auto;
+}
+.specialTitle {
+  width: 56px;
+  height: 16px;
+  @include typography-label-small;
+  text-align: center;
+  color: var(-color-transparent-white-08);
+  margin-left: 7px;
+}
+.l3-storybook-badge_wrapper {
+  position: static;
+  width: 100px;
+  height: 100px;
+  margin: 0;
+}
+.l3-storybook-badge {
+  &-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &-column-wrapper {
+    width: 68px;
+    height: 32px;
+    margin-top: -19px;
+    margin-right: 10px;
+  }
+  &-special-badge {
+    width: 68px !important;
+    height: 22px !important;
+  }
+  &-badgeGroup {
+    width: 114px;
+    height: 20px;
+  }
+  &_draft {
+    width: 79px;
+    height: 32px;
+  }
+  &_large-label {
+    width: 43px;
+    height: 20px;
+  }
+  &_icon-with-label {
+    width: 63px;
+    height: 20px;
+  }
+  &_small-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &_small-label {
+    width: 20px;
+    height: 20px;
+  }
+  &_primary-circle-label {
+    width: 52px;
+    height: 20px;
+  }
+  &_primary-circle-label-with-icon {
+    width: 72px;
+    height: 20px;
+  }
+  &_primary-label {
+    width: 44px;
+    height: 20px;
+  }
+  &_primary-label-with-icon {
+    width: 64px;
+    height: 20px;
+  }
+}
