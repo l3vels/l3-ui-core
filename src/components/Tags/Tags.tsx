@@ -219,7 +219,11 @@ const Tags: L3Component<TagsProps, HTMLElement> & {
                   color={IconButton.colors.ON_PRIMARY_COLOR}
                   ariaLabel="Remove"
                   hideTooltip
-                  icon={CloseSmall}
+                  icon={() => (
+                    <div className={cx(styles.close, { [styles.closeOutlined]: outlined })}>
+                      <CloseSmall />
+                    </div>
+                  )}
                   onClick={onDeleteCallback}
                   dataTestId={`${overrideDataTestId}-close`}
                   ref={iconButtonRef}

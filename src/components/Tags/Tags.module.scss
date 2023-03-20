@@ -134,6 +134,16 @@
   }
 }
 
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include theme-prop(color, tags-label-color);
+  &.closeOutlined {
+    @include theme-prop(color, tags-label-color-outlined);
+  }
+}
+
 @include keyframe(tags-pop-in-emphasized) {
   @include pop-in-emphasized();
 }
