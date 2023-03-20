@@ -41,7 +41,7 @@ export default function Container({ children, selectProps, ...otherProps }) {
       selectedOptions.map((option, index) => {
         const overrideTagColor = Object.keys(DROPDOWN_TAG_COLORS).includes(option.tagColor)
           ? option.tagColor
-          : DROPDOWN_TAG_COLORS.PRIMARY;
+          : DROPDOWN_TAG_COLORS.gradient_blue;
         return index >= from && index < to ? (
           <Tags
             dataTestId="value-container-tag"
@@ -49,6 +49,7 @@ export default function Container({ children, selectProps, ...otherProps }) {
             className={tagClassName}
             noAnimation
             disabled={isDisabled}
+            outlined={option.outlined}
             id={option.value}
             label={option.label}
             onDelete={onSelectedDelete}
