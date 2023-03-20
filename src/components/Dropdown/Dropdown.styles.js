@@ -159,7 +159,7 @@ const getOptionStyle = (provided, { isDisabled, isSelected, isFocused }) => {
     ...(isFocused && {
       ":hover": {
         color: getCSSVar("primary-text-color"),
-        backgroundColor: 'getCSSVar("primary-background-hover-color")'
+        backgroundColor: getCSSVar("primary-background-hover-color")
       }
     })
   };

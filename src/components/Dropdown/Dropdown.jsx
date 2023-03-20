@@ -68,7 +68,8 @@ const Dropdown = ({
   insideOverflowWithTransformContainer,
   ref,
   tooltipContent,
-  kind
+  kind,
+  searchIcon
 }) => {
   const controlRef = useRef();
   const overrideDefaultValue = useMemo(() => {
@@ -145,7 +146,10 @@ const Dropdown = ({
 
   const Menu = useCallback(props => <MenuComponent {...props} Renderer={menuRenderer} />, [menuRenderer]);
 
-  const DropdownIndicator = useCallback(props => <DropdownIndicatorComponent {...props} size={size} />, [size]);
+  const DropdownIndicator = useCallback(
+    props => <DropdownIndicatorComponent {...props} size={size} searchIcon={searchIcon} />,
+    [size]
+  );
 
   const Option = useCallback(
     props => <OptionComponent {...props} Renderer={finalOptionRenderer} />,
