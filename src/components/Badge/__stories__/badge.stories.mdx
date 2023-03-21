@@ -1,17 +1,14 @@
 import Badge from "../Badge";
 import { createComponentTemplate, createStoryMetaSettings } from "../../../storybook";
 import { ArgsTable, Story, Canvas, Meta } from "@storybook/addon-docs";
+import { Calendar, Remove, Add, Games } from "../../Icon/Icons";
+import "./badge.stories.scss";
 
 export const metaSettings = createStoryMetaSettings({
   component: Badge
 });
 
-<Meta
-  title="Badge (in progress)"
-  component={Badge}
-  argTypes={metaSettings.argTypes}
-  decorators={metaSettings.decorators}
-/>
+<Meta title="Badge" component={Badge} argTypes={metaSettings.argTypes} decorators={metaSettings.decorators} />
 
 <!--- Component template -->
 
@@ -25,7 +22,7 @@ export const badgeTemplate = createComponentTemplate(Badge);
 - [Props](#props)
 - [Usage](#usage)
 - [Variants](#variants)
-- [Do’s and don’ts](#dos-and-donts)
+- [Do’s and don’ts](#dos-and-dots)
 - [Use cases and examples](#use-cases-and-examples)
 - [Related components](#related-components)
 - [Feedback](#feedback)
@@ -36,14 +33,168 @@ export const badgeTemplate = createComponentTemplate(Badge);
   <Story name="Overview">{badgeTemplate.bind({})}</Story>
 </Canvas>
 
+## Props
+
+<ArgsTable story="Overview" />
+
 ## Variants
 
 ### States
 
 <Canvas>
   <Story name="States">
-    <Badge dot="accent" />
-    <Badge dot="warning" />
-    <Badge dot="positive" />
+    <Badge isDot={true} dot="accent" />
+    <Badge isDot={true} dot="warning" />
+    <Badge isDot={true} dot="positive" />
+    <Badge isDot={true} dot="negative" />
   </Story>
 </Canvas>
+
+### Primary
+
+<Canvas>
+  <Story name="Primary">
+    <div className="l3-storybook-badge_primary-label">
+      <Badge type="primary" label="Label" />
+    </div>
+    <div className="l3-storybook-badge_primary-label-with-icon">
+      <Badge type="primary" label="Label" icon={Games} iconClassName="icon-color-white" />
+    </div>
+    <div className="l3-storybook-badge_small-label">
+      <Badge type="primary" label="2" />
+    </div>
+    <div className="l3-storybook-badge_small-icon">
+      <Badge type="primary" icon={Games} iconClassName="icon-color-white" />
+    </div>
+  </Story>
+</Canvas>
+
+### Primary circle
+
+<Canvas>
+  <Story name="Primary circle">
+    <div className="l3-storybook-badge_primary-circle-label">
+      <Badge type="primaryCircle" label="Label" />
+    </div>
+    <div className="l3-storybook-badge_primary-circle-label-with-icon">
+      <Badge type="primaryCircle" label="Label" icon={Games} iconClassName="icon-color-white" />
+    </div>
+    <div className="l3-storybook-badge_small-label">
+      <Badge type="primaryCircle" label="2" />
+    </div>
+    <div className="l3-storybook-badge_small-icon">
+      <Badge type="primaryCircle" icon={Games} iconClassName="icon-color-white" />
+    </div>
+  </Story>
+</Canvas>
+
+### Secondary
+
+<Canvas>
+  <Story name="Secondary">
+    <div className="l3-storybook-badge_large-label">
+      <Badge type="secondary" label="Label" />
+    </div>
+    <div className="l3-storybook-badge_icon-with-label">
+      <Badge type="secondary" label="Label" icon={Games} iconClassName="icon-color-black" />
+    </div>
+    <div className="l3-storybook-badge_small-label">
+      <Badge type="secondary" label="2" />
+    </div>
+    <div className="l3-storybook-badge_small-icon">
+      <Badge type="secondary" icon={Games} iconClassName="icon-color-black" />
+    </div>
+  </Story>
+</Canvas>
+
+### Tertiary
+
+<Canvas>
+  <Story name="Tertiary">
+    <div className="l3-storybook-badge_large-label">
+      <Badge type="tertiary" label="Label" />
+    </div>
+    <div className="l3-storybook-badge_icon-with-label">
+      <Badge type="tertiary" label="Label" icon={Games} iconClassName="icon-color-black" />
+    </div>
+    <div className="l3-storybook-badge_small-label">
+      <Badge type="tertiary" label="2" />
+    </div>
+    <div className="l3-storybook-badge_small-icon">
+      <Badge type="tertiary" icon={Games} iconClassName="icon-color-black" />
+    </div>
+  </Story>
+</Canvas>
+
+### Draft
+
+<Canvas>
+  <Story name="Draft">
+    <div className="l3-storybook-badge_draft">
+      <Badge draft="warning" label="Draft" dot="warning" />
+    </div>
+    <div className="l3-storybook-badge_draft">
+      <Badge draft="positive" label="Live" dot="positive" />
+    </div>
+    <div className="l3-storybook-badge_draft">
+      <Badge draft="negative" dot="negative" label="Failed" />
+    </div>
+  </Story>
+</Canvas>
+
+### Special (collection)
+
+<Canvas>
+  <Story name="Special (collection)">
+    <div className="l3-storybook-badge-wrapper">
+      <div className="l3-storybook-badge-column-wrapper">
+        <span className="specialTitle">Min.Price</span>
+        <Badge special="withText" value="0,96" />
+      </div>
+      <div className="l3-storybook-badge-special-badge">
+        <Badge special="withoutText" value="0,96" />
+      </div>
+    </div>
+  </Story>
+</Canvas>
+
+### Badge Group
+
+<Canvas>
+  <Story name="Badge Group">
+    <div className="l3-storybook-badge-badgeGroup">
+      <Badge badgeGroup={true} label="Label" icon={Games} iconClassName="icon-color-black" text="Label" />
+    </div>
+  </Story>
+</Canvas>
+
+## Do’s and Don’ts
+
+<ComponentRules
+  rules={[
+    {
+      positive: {
+        component: (
+          <div style={{width: "100px", height: "20px"}} >
+          <Badge
+          type="primary"
+          label="Lorem ipsum."/>
+          </div>
+        ),
+        description: "If possible, try not to use more than three words."
+      },
+      negative: {
+        component: (
+          <div style={{width: "170px", height: "20px"}}>
+          <Badge
+          type="primary"
+          label="Lorem ipsum dolor sit."/>
+          </div>
+        ),
+        description: "Do not use too long labels or whole sentences."
+      }
+    }
+  ]}
+>
+
+</ComponentRules>
