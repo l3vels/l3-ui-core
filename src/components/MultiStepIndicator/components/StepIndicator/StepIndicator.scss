@@ -15,39 +15,36 @@
   &__text-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 20px;
+    align-items: flex-start;
 
     &__title {
-      width: 93px;
-      height: 32px;
       @include typography-heading-small;
       color: var(--color-primitive-white);
-      margin-left: 20px;
 
+      margin-left: 20px;
       .visually-hidden {
         display: none;
       }
     }
 
     &__subtitle__text {
-      width: 69px;
-      height: 28px;
+      margin-left: 20px;
       @include typography-heading-xs-small;
       color: var(--color-transparent-white-06);
     }
   }
 
   &--text-placement-vertical {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-
     .l3-style-step-indicator-component {
       &__text-container {
         display: flex;
-        position: absolute;
-        margin-left: 50px;
+        &__title {
+          margin-left: 0px;
+        }
+
+        &__subtitle__text {
+          margin-left: 0px;
+        }
       }
 
       &__number-divider-container {
