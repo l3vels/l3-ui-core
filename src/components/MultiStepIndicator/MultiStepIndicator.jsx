@@ -40,7 +40,7 @@ const MultiStepIndicator = forwardRef(
           <>
             <StepIndicator
               {...step}
-              stepNumber={index + 1}
+              stepNumber={step.stepNumber || index + 1}
               type={type}
               stepComponentClassName={stepComponentClassName}
               fulfilledStepIcon={fulfilledStepIcon}
