@@ -65,9 +65,14 @@ interface ModalProps extends L3ComponentProps {
   backgroundColor?: "light" | "dark";
   modalWidth?: string;
   modalHeight?: string;
+  className?: string;
 }
 
-const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark"; modalWidth?: string; modalHeight?: string } = ({
+const Modal: FC<ModalProps> & {
+  backgroundColor?: "light" | "dark";
+  modalWidth?: string;
+  modalHeight?: string;
+} = ({
   classNames = { container: "", overlay: "", modal: "", header: "" },
   id,
   show,
@@ -81,7 +86,8 @@ const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark"; modalWidth?:
   hideCloseButton = false,
   closeButtonAriaLabel = "close",
   modalWidth,
-  modalHeight
+  modalHeight,
+  className
 }) => {
   const childrenArray: ReactElement[] = useMemo(
     () => (children ? (React.Children.toArray(children) as ReactElement[]) : []),
@@ -148,9 +154,11 @@ const Modal: FC<ModalProps> & { backgroundColor?: "light" | "dark"; modalWidth?:
           modalHeight
         })}
       >
-        {header}
-        {content}
-        {footer}
+        <div className={className}>
+          {header}
+          {content}
+          {footer}
+        </div>
       </div>
     </div>,
     document.body

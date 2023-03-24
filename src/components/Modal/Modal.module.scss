@@ -45,12 +45,13 @@ $dialog-border-radius: 13.913px;
   display: flex;
   position: relative;
   flex-direction: column;
+  overflow: scroll;
   padding: $spacing-xl;
   box-shadow: $dialog-box-shadow;
   backdrop-filter: blur(100px);
   border-radius: $dialog-border-radius;
-  height: 522px;
-  width: 756px;
+  max-height: 90vh;
+  max-width: 90vw;
   // left: 262px;
   // top: 120px;
 
