@@ -18,8 +18,8 @@ $dialog-border-radius: 13.913px;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   width: 1280px;
-  // height: 762px;
+  width: 100%;
+  height: 100%;
   left: 0px;
   top: 0px;
   background: var(--color-transparent-black-03);
@@ -45,15 +45,13 @@ $dialog-border-radius: 13.913px;
   display: flex;
   position: relative;
   flex-direction: column;
-  overflow: scroll;
+  overflow: auto;
   padding: $spacing-xl;
   box-shadow: $dialog-box-shadow;
   backdrop-filter: blur(100px);
   border-radius: $dialog-border-radius;
   max-height: 90vh;
   max-width: 90vw;
-  // left: 262px;
-  // top: 120px;
 
   &.dark {
     background: var(--color-transparent-black-05);

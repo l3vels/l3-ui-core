@@ -104,7 +104,13 @@ const Modal: FC<ModalProps> & {
   useBodyScrollLock({ instance });
 
   // show/hide and animate the modal
-  const { closeDialogIfNeeded } = useShowHideModal({ instance, show, triggerElement, onClose, alertDialog });
+  const { closeDialogIfNeeded } = useShowHideModal({
+    instance,
+    show,
+    triggerElement,
+    onClose,
+    alertDialog
+  });
 
   const header = useMemo(() => {
     const { id } = attr.title;
@@ -138,26 +144,28 @@ const Modal: FC<ModalProps> & {
   }, [childrenArray]);
 
   const dialog = ReactDOM.createPortal(
-    <div {...attr.container} className={cx(styles.container, classNames.container)} data-testid="l3-dialog-container">
-      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-      <div
-        onClick={closeDialogIfNeeded}
-        className={cx(styles.overlay, classNames.overlay)}
-        data-testid="l3-modal-overlay"
-      />
-      <div
-        {...attr.dialog}
-        className={cx(styles.dialog, classNames.modal, modalHeight, modalWidth, {
-          [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
-          [styles.dark]: backgroundColor === ModalBackgroundColor.DARK,
-          modalWidth,
-          modalHeight
-        })}
-      >
-        <div className={className}>
-          {header}
-          {content}
-          {footer}
+    <div className={className}>
+      <div {...attr.container} className={cx(styles.container, classNames.container)} data-testid="l3-dialog-container">
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
+        <div
+          onClick={closeDialogIfNeeded}
+          className={cx(styles.overlay, classNames.overlay)}
+          data-testid="l3-modal-overlay"
+        />
+        <div
+          {...attr.dialog}
+          className={cx(styles.dialog, classNames.modal, modalHeight, modalWidth, {
+            [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
+            [styles.dark]: backgroundColor === ModalBackgroundColor.DARK,
+            modalWidth,
+            modalHeight
+          })}
+        >
+          <div className={className}>
+            {header}
+            {content}
+            {footer}
+          </div>
         </div>
       </div>
     </div>,
