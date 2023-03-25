@@ -63,7 +63,7 @@ Modal allows the user to focus on one task or a piece of information, by popping
             modalWidth
             closeButtonAriaLabel={"close"}
           >
-            <ModalFooter>{modalButtons}</ModalFooter>
+            <ModalFooter className="modalFooter">{modalButtons}</ModalFooter>
           </Modal>
         </div>
       );
@@ -110,11 +110,12 @@ Modal allows the user to focus on one task or a piece of information, by popping
             triggerElement={ref.current}
             show={show}
             onClose={closeModal}
-            hideCloseButton={true}
+            hideCloseButton={false}
             closeButtonAriaLabel={"close"}
             backgroundColor="dark"
+            className="modalClassName"
           >
-            <ModalFooter>{modalButtons}</ModalFooter>
+            <ModalFooter className="modalFooter">{modalButtons}</ModalFooter>
           </Modal>
         </div>
       );
@@ -129,17 +130,18 @@ Modal allows the user to focus on one task or a piece of information, by popping
         <div>
           {openModalButton}
           <Modal
-            id={"story-book-modal"}
             title={"Heading"}
-            description={"Heading"}
+            description={"heading"}
             triggerElement={ref.current}
             show={show}
-            hideCloseButton={true}
+            hideCloseButton={false}
             onClose={closeModal}
             backgroundColor="light"
             closeButtonAriaLabel={"close"}
+            closeButtonAriaLabel={"close"}
+            className="modalClassName"
           >
-            <ModalFooter>{modalButtons}</ModalFooter>
+            <ModalFooter className="modalFooter">{modalButtons}</ModalFooter>
           </Modal>
         </div>
       );

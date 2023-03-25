@@ -12,8 +12,8 @@
   flex-direction: column;
 
   .title {
-    width: 660px;
-    height: 32px;
+    width: fit-content;
+    height: fit-content;
     @include typography-heading-small;
     color: $white;
     margin-top: 0px;
@@ -26,8 +26,8 @@
   }
 
   .description {
-    width: 660px;
-    height: 28px;
+    width: fit-content;
+    height: fit-content;
     @include typography-heading-xs-small;
     color: $white-6;
     margin-top: -25px;

@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import cx from "classnames";
 import IconButton from "../../components/IconButton/IconButton";
-import CloseSmall from "../../components/Icon/Icons/components/CloseSmall";
+import Close from "../../components/Icon/Icons/components/Close";
 import Icon, { IconSubComponentProps } from "../../components/Icon/Icon";
 import L3ComponentProps from "../../types/L3ComponentProps";
 import { NOOP } from "../../utils/function-utils";
@@ -91,7 +91,7 @@ const ModalHeader: FC<ModalHeaderProps> = ({
             key="xxs"
             onClick={closeModal}
             ariaLabel={closeButtonAriaLabel}
-            icon={CloseSmall}
+            icon={Close}
             kind={IconButton.kinds.TERTIARY}
             size={IconButton.sizes.SMALL}
           />
