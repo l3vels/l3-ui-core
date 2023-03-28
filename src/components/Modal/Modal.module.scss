@@ -4,7 +4,7 @@
 @import "../../styles/keyframes";
 
 $overlay-background-color: rgba(41, 47, 76, 0.7);
-$dialog-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+$dialog-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 $dialog-border-radius: 13.913px;
 
 .container,
@@ -22,21 +22,19 @@ $dialog-border-radius: 13.913px;
   height: 100%;
   left: 0px;
   top: 0px;
-  background: var(--color-transparent-black-03);
-  backdrop-filter: blur(2.78261px);
 }
 
 .container[aria-hidden="true"] {
   display: none;
 
   .overlay {
-    background-color: transparent;
     animation: overlay-fade-out 70ms var(--motion-timing-enter);
   }
 }
 
 .overlay {
-  background-color: $overlay-background-color;
+  background: var(--color-transparent-black-03);
+  backdrop-filter: blur(10px);
   animation: overlay-fade-in 70ms var(--motion-timing-enter);
 }
 
@@ -46,15 +44,15 @@ $dialog-border-radius: 13.913px;
   position: relative;
   flex-direction: column;
   overflow: auto;
-  padding: $spacing-xl;
+  padding: 16px;
   box-shadow: $dialog-box-shadow;
-  backdrop-filter: blur(100px);
+  backdrop-filter: blur(50px);
   border-radius: $dialog-border-radius;
   max-height: 90vh;
   max-width: 90vw;
 
   &.dark {
-    background: var(--color-transparent-black-05);
+    background: var(--color-transparent-black-03);
   }
   &.light {
     background: var(--color-transparent-white-02);

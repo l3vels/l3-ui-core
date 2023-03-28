@@ -16,8 +16,6 @@
     height: fit-content;
     @include typography-heading-small;
     color: $white;
-    margin-top: 0px;
-    margin-left: 8px;
   }
 
   .icon {
@@ -31,7 +29,6 @@
     @include typography-heading-xs-small;
     color: $white-6;
     margin-top: -25px;
-    margin-left: 8px;
   }
 
   .closeButton {
