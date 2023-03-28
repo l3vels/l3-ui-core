@@ -29,7 +29,7 @@ const DatePickerHeader = (props: DatePickerHeaderProps) => {
   const string = month + " " + year;
   return (
     <div className={styles.datePickerHeader}>
-      <div>{string}</div>
+      <div className="heading">{string}</div>
       {!hideNavigationKeys && (
         <button
           data-testid={`${dateTestId}-year-toggle`}
