@@ -15,6 +15,12 @@ import { getTestId } from "../../tests/test-ids-utils";
 import { ComponentDefaultTestId } from "../../tests/constants";
 import { NOOP } from "../../utils/function-utils";
 import styles from "./DatePicker.module.scss";
+import Button from "../Button/Button";
+import Typography from "../../storybook/stand-alone-documentaion/typography/Typography";
+import {
+  TypographySizes,
+  TypographyTypes
+} from "../../storybook/stand-alone-documentaion/typography/TypographyConstants";
 
 interface DatePickerProps extends L3ComponentProps {
   /** set the first day of the week to display */
@@ -44,6 +50,9 @@ interface DatePickerProps extends L3ComponentProps {
   /** determine if date range should be disabled */
   shouldBlockRange?: (date: Moment) => boolean;
 
+  onClear?: () => void;
+  onApply?: () => void;
+  buttonFooter?: boolean;
   kind?: DatePickerType;
 }
 
@@ -66,7 +75,10 @@ const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDiv
       showWeekNumber = false,
       shouldBlockRange,
       "data-testid": dataTestId,
-      kind = "primary"
+      kind = "primary",
+      onClear,
+      onApply,
+      buttonFooter = true
     },
     ref
   ) => {
@@ -189,6 +201,32 @@ const DatePicker: L3Component<DatePickerProps, HTMLElement> = forwardRef<HTMLDiv
           />
         )}
         {isMonthYearSelection && renderMonthYearSelection()}
+
+        <div
+          className={cx(styles.footer, {
+            [styles.showFooter]: date && buttonFooter
+          })}
+        >
+          <Button
+            size={Button.sizes.SMALL}
+            kind={Button.kinds.TERTIARY}
+            onClick={() => {
+              if (range) {
+                setFocusedInput(FocusInput.startDate);
+              }
+              onClear();
+            }}
+          >
+            <div className={styles.footerButton}>
+              <Typography value="Clear" type={TypographyTypes.LABEL} size={TypographySizes.sm} />
+            </div>
+          </Button>
+          <Button size={Button.sizes.SMALL} onClick={onApply}>
+            <div className={styles.footerButton}>
+              <Typography value="Apply" type={TypographyTypes.LABEL} size={TypographySizes.sm} />
+            </div>
+          </Button>
+        </div>
       </div>
     );
   }

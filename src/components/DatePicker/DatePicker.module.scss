@@ -40,21 +40,21 @@
       }
     }
     .CalendarMonthGrid {
-      border-radius: 6px;
-      background: var(--color-transparent-white-03);
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+      background-color: transparent;
     }
-    &:local(.kindSecondary) {
-      .CalendarMonthGrid {
-        //todo move "date-picker-secondary-color" in style
-        @include theme-prop(background, date-picker-secondary-color);
-      }
-    }
+
     .CalendarMonth {
       background-color: transparent;
     }
     .DayPicker__horizontal {
-      background-color: transparent;
+      background: var(--color-transparent-white-03);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+    }
+    &:local(.kindSecondary) {
+      .DayPicker__horizontal {
+        background: var(--color-transparent-black-05);
+      }
     }
     .DayPicker {
       box-shadow: none;
@@ -102,8 +102,9 @@
       .CalendarDay__default {
         &.CalendarDay__selected {
           @include theme-prop(color, date-picker-secondary-color);
+          background: var(--color-gradient-teal);
           &::before {
-            background: var(--color-gradient-light-blue);
+            background: var(--color-gradient-teal);
           }
         }
       }
@@ -241,31 +242,21 @@
       }
 
       &:local(.kindSecondary) {
-        .CalendarDay__selected {
-          &.CalendarDay__selected_start {
-            @include theme-prop(color, date-picker-secondary-color);
-            &::before {
-              background: var(--color-gradient-light-blue);
-            }
-          }
+        .CalendarDay__selected_end {
+          border-radius: $date-picker-border-radius-end;
         }
-        .CalendarDay__selected {
-          &.CalendarDay__selected_end {
-            @include theme-prop(color, date-picker-secondary-color);
+        .CalendarDay__selected_start {
+          border-radius: $date-picker-border-radius-start;
+        }
 
-            &::before {
-              background: var(--color-gradient-light-blue);
-            }
-          }
-        }
         .CalendarDay__hovered_span,
         .CalendarDay__hovered_span:hover {
           @include theme-prop(color, date-picker-secondary-color);
-          background: var(--color-gradient-light-blue);
+          background: var(--color-gradient-teal);
         }
         .CalendarDay__selected_span {
           @include theme-prop(color, date-picker-secondary-color);
-          background: var(--color-gradient-light-blue);
+          background: var(--color-gradient-teal);
         }
       }
     }
@@ -325,4 +316,31 @@
       }
     }
   }
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 16px;
+
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.15));
+
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 16px 16px;
+
+  height: 0;
+  padding: 0 16px;
+  overflow: hidden;
+  transition: height 0.3s, padding 0.3s ease-out;
+  &.showFooter {
+    height: 60px;
+    padding: 16px 16px 8px 16px;
+  }
+}
+
+.footerButton {
+  padding: 0 18px;
 }

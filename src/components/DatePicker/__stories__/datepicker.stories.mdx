@@ -63,7 +63,9 @@ Allows users to select a single date
   <Story name="Single Day">
     {() => {
       const [date, setDate] = useState(null);
-      return <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} />;
+      return (
+        <DatePicker data-testid="date-picker" date={date} onPickDate={d => setDate(d)} onClear={() => setDate(null)} />
+      );
     }}
   </Story>
 </Canvas>
@@ -83,6 +85,7 @@ Allows users to select a date range
           range
           data-testid="date-picker"
           onPickDate={d => setDate(d)}
+          onClear={() => setDate({ startDate: null, endDate: null })}
         />
       );
     }}

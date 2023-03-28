@@ -2,12 +2,5 @@
 @import "../../../styles/theme-mixin";
 
 .navigationItemContainer {
-  width: $spacing-xl;
-  height: $spacing-xl;
-  color: var(--color-primitive-white);
-  background-color: var(--color-primitive-black);
-  border: none;
-  margin: 0 10px;
-  cursor: pointer;
-  border-radius: $border-radius-big;
+  margin-top: 5px;
 }
