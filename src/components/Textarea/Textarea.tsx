@@ -41,6 +41,8 @@ interface TextareaProps extends L3ComponentProps {
   onSelect: (event: unknown) => void;
   onSelectCapture: (event: unknown) => void;
   hint?: string;
+  resize?: boolean;
+  showLetterCount?: boolean;
 }
 
 const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
@@ -64,8 +66,8 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
       id = "textarea",
       required = false,
       name,
-      cols = 40,
-      rows = 7,
+      cols,
+      rows,
       maxLenght = 1200,
       minLenght,
       onInvalid,
@@ -73,7 +75,9 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
       onSelect,
       onSelectCapture,
       hint,
-      validation = null
+      validation = null,
+      resize = false,
+      showLetterCount
     },
     ref
   ) => {
@@ -102,13 +106,20 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
         className={cx(styles.mainWrapper, {
           [styles.status_error]: validation && validation.status === "error",
           [styles.status_success]: validation && validation.status === "success",
-          [styles.disabled]: disabled === true
+          [styles.disabled]: disabled === true,
+          [styles.noResize]: resize === false
         })}
       >
-        {disabled && <div style={{ position: "absolute" }}>Disabled</div>}
-        <label htmlFor={`${id}`} className={styles.labelTop}>
-          {textareaValue ? textareaValue.length : 0}/{maxLenght}
-        </label>
+        {disabled ? (
+          <div>Disabled</div>
+        ) : (
+          showLetterCount && (
+            <label htmlFor={id} className={styles.labelTop}>
+              {textareaValue ? textareaValue.length : 0}/{maxLenght}
+            </label>
+          )
+        )}
+
         {textareaValue && (
           <div className={styles.clearIcon}>
             <IconButton
@@ -123,7 +134,7 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
         )}
         <textarea
           ref={mergedRef}
-          id={`${id}`}
+          id={id}
           className={styles.textarea}
           value={textareaValue}
           placeholder={placeholder}
