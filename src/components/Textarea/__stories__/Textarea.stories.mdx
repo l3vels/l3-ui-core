@@ -52,7 +52,9 @@ export const textareaTemplate = createComponentTemplate(Textarea);
 
 <Canvas>
   <Story name="With hint">
-    <Textarea hint="this is Hint" placeholder="Your story..." />
+    <div style={{ width: "1000px", height: "500px" }}>
+      <Textarea hint="this is Hint" placeholder="Your story..." showLetterCount />
+    </div>
   </Story>
 </Canvas>
 
