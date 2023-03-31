@@ -69,7 +69,7 @@ const ModalHeader: FC<ModalHeaderProps> = ({
   iconSize = 24,
   iconClassName,
   hideCloseButton,
-  closeButtonAriaLabel = "close",
+  closeButtonAriaLabel,
   id
 }) => {
   return (

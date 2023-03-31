@@ -48,8 +48,8 @@ $toast-height: 72px;
   }
 
   &-icon-small {
-    margin-left: $spacing-large;
-    margin-right: $spacing-large;
+    margin-left: $spacing-small;
+    margin-right: $spacing-small;
   }
   &-icon-large {
     margin-left: $spacing-large;
@@ -119,6 +119,42 @@ $toast-height: 72px;
     }
     &-warning {
       background: var(--color-gradient-yellow);
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $black;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: $black-5;
+      }
+    }
+    &-warning-low-informational {
+      height: 56px;
+      background: var(--color-primitive-yellow-50);
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $black;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: $black-5;
+      }
+    }
+    &-positive-low-informational {
+      height: 56px;
+      background: var(--color-primitive-yellow-50);
+      .l3-style-toast-label {
+        @include typography-label-medium;
+        color: $black;
+      }
+      .l3-style-toast-paragraph {
+        @include typography-paragraph-small;
+        color: $black-5;
+      }
+    }
+    &-negative-low-informational {
+      height: 56px;
+      background: var(--color-primitive-yellow-50);
       .l3-style-toast-label {
         @include typography-label-medium;
         color: $black;
