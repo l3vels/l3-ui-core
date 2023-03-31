@@ -44,6 +44,7 @@ $dialog-border-radius: 13.913px;
   position: relative;
   flex-direction: column;
   padding: 16px;
+  overflow: scroll;
   box-shadow: $dialog-box-shadow;
   backdrop-filter: blur(50px);
   border-radius: $dialog-border-radius;
