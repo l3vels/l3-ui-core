@@ -2,7 +2,5 @@
 
 .container {
   flex-grow: 1;
-  // padding-inline-end: 16px;
-  // margin-inline-end: -16px;
   @include scroller();
 }
