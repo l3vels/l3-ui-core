@@ -5,24 +5,9 @@ export interface TagsProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Tags: React.FC<TagsProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
-    <g filter="url(#filter0_bd_718_13638)">
-      <path d="M21.165 32.7883L32.6435 21.2906C33.5583 20.3758 33.6506 19.8297 33.6506 18.5128V14.066C33.6506 12.7774 33.345 12.3337 32.3974 11.384L29.7127 8.70138C28.7726 7.7613 28.3289 7.44818 27.0424 7.44818H22.586C21.267 7.44818 20.741 7.54685 19.8263 8.46372L8.31681 19.9518C6.57353 21.6951 6.54471 23.5476 8.32853 25.3197L15.7971 32.7787C17.5788 34.5529 19.4217 34.5337 21.165 32.7883ZM24.9851 17.1965C24.0213 17.1965 23.3037 16.4521 23.3037 15.5172C23.3037 14.5727 24.0213 13.8358 24.9851 13.8358C25.9392 13.8358 26.6665 14.5727 26.6665 15.5172C26.6665 16.4521 25.9392 17.1965 24.9851 17.1965Z"
-        fill="#fff" />
-    </g>
-    <defs>
-      <filter id="filter0_bd_718_13638" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood result="BackgroundImageFix" floodOpacity="0" />
-        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13638" />
-        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-        <feOffset dy="1" />
-        <feGaussianBlur stdDeviation="1.5" />
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-        <feBlend in2="effect1_backgroundBlur_718_13638" result="effect2_dropShadow_718_13638" />
-        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13638" result="shape" />
-      </filter>
-    </defs>
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <path d="M19.2123 12.1382H19.8616M19.2123 12.7875H19.8616M21.2686 9H16.3586C15.8994 9 15.459 9.18242 15.1343 9.50713L9.50713 15.1343C8.83096 15.8105 8.83096 16.9067 9.50712 17.5829L14.4171 22.4929C15.0933 23.169 16.1895 23.169 16.8657 22.4929L22.4929 16.8657C22.8176 16.541 23 16.1006 23 15.6414V10.7314C23 9.77519 22.2248 9 21.2686 9ZM20.4028 12.4629C20.4028 12.941 20.0153 13.3286 19.5371 13.3286C19.059 13.3286 18.6714 12.941 18.6714 12.4629C18.6714 11.9847 19.059 11.5972 19.5371 11.5972C20.0153 11.5972 20.4028 11.9847 20.4028 12.4629Z"
+      stroke="#fff" strokeLinecap="round" />
   </svg>
 );
 Tags.displayName = 'Tags';

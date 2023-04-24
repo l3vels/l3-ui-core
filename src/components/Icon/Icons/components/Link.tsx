@@ -5,22 +5,22 @@ export interface LinkProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Link: React.FC<LinkProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
-    <g filter="url(#filter0_bd_718_13643)">
-      <path d="M20.1148 14.6762L18.3348 16.4713C19.7403 16.6023 20.7355 17.0509 21.4487 17.7641C23.4425 19.7558 23.435 22.565 21.4646 24.5354L17.5693 28.419C15.5872 30.399 12.7993 30.4065 10.8097 28.4244C8.81587 26.4231 8.82337 23.6352 10.8034 21.6531L12.8155 19.643C12.441 18.7972 12.3189 17.7495 12.5258 16.8465L9.15853 20.1957C6.28393 23.0694 6.27315 27.155 9.17025 30.0521C12.0791 32.9631 16.1584 32.9438 19.0266 30.0756L23.102 25.9927C25.9798 23.1149 25.997 19.0335 23.0881 16.1363C22.4026 15.4487 21.4756 14.9256 20.1148 14.6762ZM19.0836 24.5518L20.8637 22.7567C19.4581 22.6353 18.463 22.1792 17.7498 21.466C15.7581 19.4722 15.7635 16.6651 17.7359 14.6947L21.6216 10.8111C23.6113 8.82899 26.3992 8.82149 28.3909 10.8132C30.3826 12.8049 30.3655 15.6045 28.3951 17.5749L26.3851 19.585C26.7575 20.4425 26.87 21.4785 26.6748 22.3836L30.042 19.0323C32.9145 16.1586 32.9274 12.0826 30.0303 9.17588C27.1194 6.26705 23.0401 6.28627 20.1622 9.16416L16.0986 13.2352C13.2207 16.1131 13.2036 20.1945 16.1103 23.0916C16.798 23.7793 17.7228 24.3024 19.0836 24.5518Z"
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16572)">
+      <path d="M16.0655 12.9578L15.0483 13.9836C15.8515 14.0584 16.4201 14.3148 16.8277 14.7223C17.967 15.8604 17.9627 17.4657 16.8368 18.5916L14.6109 20.8108C13.4783 21.9423 11.8852 21.9466 10.7483 20.8139C9.60893 19.6703 9.61321 18.0772 10.7446 16.9446L11.8944 15.796C11.6804 15.3127 11.6106 14.714 11.7289 14.198L9.80473 16.1118C8.1621 17.7539 8.15594 20.0886 9.81143 21.744C11.4736 23.4075 13.8046 23.3964 15.4436 21.7575L17.7724 19.4244C19.4169 17.7799 19.4267 15.4477 17.7645 13.7922C17.3728 13.3992 16.8431 13.1003 16.0655 12.9578ZM15.4762 18.601L16.4934 17.5752C15.6902 17.5059 15.1216 17.2452 14.714 16.8377C13.5759 15.6984 13.579 14.0943 14.7061 12.9684L16.9265 10.7492C18.0635 9.61655 19.6565 9.61226 20.7947 10.7504C21.9328 11.8885 21.923 13.4883 20.7971 14.6142L19.6485 15.7628C19.8613 16.2528 19.9256 16.8448 19.814 17.362L21.7381 15.447C23.3796 13.8049 23.3869 11.4757 21.7315 9.81477C20.0681 8.15258 17.7371 8.16357 16.0925 9.80807L13.7705 12.1344C12.126 13.7789 12.1162 16.1111 13.7772 17.7666C14.1701 18.1596 14.6986 18.4585 15.4762 18.601Z"
         fill="#fff" />
     </g>
     <defs>
-      <filter id="filter0_bd_718_13643" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter id="filter0_bd_761_16572" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13643" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16572" />
         <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="1" />
         <feGaussianBlur stdDeviation="1.5" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-        <feBlend in2="effect1_backgroundBlur_718_13643" result="effect2_dropShadow_718_13643" />
-        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13643" result="shape" />
+        <feBlend in2="effect1_backgroundBlur_761_16572" result="effect2_dropShadow_761_16572" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16572" result="shape" />
       </filter>
     </defs>
   </svg>
