@@ -5,22 +5,22 @@ export interface PauseProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Pause: React.FC<PauseProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
-    <g filter="url(#filter0_bd_718_13646)">
-      <path d="M14.6747 29.4653H17.4246C18.5243 29.4653 19.0971 28.8925 19.0971 27.7832V11.6725C19.0971 10.5449 18.5243 10.0084 17.4246 10H14.6747C13.575 10 13.0001 10.5728 13.0001 11.6725V27.7832C12.9937 28.8925 13.5665 29.4653 14.6747 29.4653ZM23.5443 29.4653H26.2846C27.3939 29.4653 27.9592 28.8925 27.9592 27.7832V11.6725C27.9592 10.5449 27.3939 10 26.2846 10H23.5443C22.435 10 21.8601 10.5728 21.8601 11.6725V27.7832C21.8601 28.8925 22.4287 29.4653 23.5443 29.4653Z"
-        fill="#fff" />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16756)" stroke="#fff">
+      <path d="M10 10C10 8.89543 10.8954 8 12 8 13.1046 8 14 8.89543 14 10V22C14 23.1046 13.1046 24 12 24 10.8954 24 10 23.1046 10 22V10zM18 10C18 8.89543 18.8954 8 20 8 21.1046 8 22 8.89543 22 10V22C22 23.1046 21.1046 24 20 24 18.8954 24 18 23.1046 18 22V10z"
+      />
     </g>
     <defs>
-      <filter id="filter0_bd_718_13646" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter id="filter0_bd_761_16756" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13646" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16756" />
         <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="1" />
         <feGaussianBlur stdDeviation="1.5" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-        <feBlend in2="effect1_backgroundBlur_718_13646" result="effect2_dropShadow_718_13646" />
-        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13646" result="shape" />
+        <feBlend in2="effect1_backgroundBlur_761_16756" result="effect2_dropShadow_761_16756" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16756" result="shape" />
       </filter>
     </defs>
   </svg>

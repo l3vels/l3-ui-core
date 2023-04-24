@@ -1,10 +1,10 @@
 /* eslint-disable */
 /* tslint:disable */
 import * as React from 'react';
-export interface SpeaciaWarningInfoProps extends React.SVGAttributes<SVGElement> {
+export interface SpecialWarningInfoProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
-const SpeaciaWarningInfo: React.FC<SpeaciaWarningInfoProps> = ({size, ...props}) => (
+const SpecialWarningInfo: React.FC<SpecialWarningInfoProps> = ({size, ...props}) => (
   <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
     <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#fff" />
     <path d="M20 37.2727C29.5395 37.2727 37.2727 29.5395 37.2727 20C37.2727 10.4605 29.5395 2.72727 20 2.72727C10.4605 2.72727 2.72727 10.4605 2.72727 20C2.72727 29.5395 10.4605 37.2727 20 37.2727Z"
@@ -13,7 +13,7 @@ const SpeaciaWarningInfo: React.FC<SpeaciaWarningInfoProps> = ({size, ...props})
       fill="#fff" />
   </svg>
 );
-SpeaciaWarningInfo.displayName = 'SpeaciaWarningInfo';
-export default SpeaciaWarningInfo;
+SpecialWarningInfo.displayName = 'SpecialWarningInfo';
+export default SpecialWarningInfo;
 /* tslint:enable */
 /* eslint-enable */

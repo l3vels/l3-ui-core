@@ -5,22 +5,22 @@ export interface MenuDotsProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const MenuDots: React.FC<MenuDotsProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
-    <g filter="url(#filter0_bd_718_13630)" fill="#fff">
-      <path d="M24 9.5C24 11.433 22.433 13 20.5 13 18.567 13 17 11.433 17 9.5 17 7.567 18.567 6 20.5 6 22.433 6 24 7.567 24 9.5zM24 19.5C24 21.433 22.433 23 20.5 23 18.567 23 17 21.433 17 19.5 17 17.567 18.567 16 20.5 16 22.433 16 24 17.567 24 19.5zM24 30.5C24 32.433 22.433 34 20.5 34 18.567 34 17 32.433 17 30.5 17 28.567 18.567 27 20.5 27 22.433 27 24 28.567 24 30.5z"
-      />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16578)">
+      <path d="M16.3751 15.6248L16.3751 16.3748M15.6251 15.6248V16.3748M16.3751 8.62476L16.3751 9.37476M15.6251 8.62476V9.37476M16.3751 22.6248L16.3751 23.3748M15.6251 22.6248V23.3748M16 17C15.4477 17 15 16.5523 15 16C15 15.4477 15.4477 15 16 15C16.5523 15 17 15.4477 17 16C17 16.5523 16.5523 17 16 17ZM16 10C15.4477 10 15 9.55229 15 9C15 8.44772 15.4477 8 16 8C16.5523 8 17 8.44772 17 9C17 9.55229 16.5523 10 16 10ZM16 24C15.4477 24 15 23.5523 15 23C15 22.4477 15.4477 22 16 22C16.5523 22 17 22.4477 17 23C17 23.5523 16.5523 24 16 24Z"
+        stroke="#fff" strokeLinecap="round" />
     </g>
     <defs>
-      <filter id="filter0_bd_718_13630" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter id="filter0_bd_761_16578" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13630" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16578" />
         <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="1" />
         <feGaussianBlur stdDeviation="1.5" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-        <feBlend in2="effect1_backgroundBlur_718_13630" result="effect2_dropShadow_718_13630" />
-        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13630" result="shape" />
+        <feBlend in2="effect1_backgroundBlur_761_16578" result="effect2_dropShadow_761_16578" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16578" result="shape" />
       </filter>
     </defs>
   </svg>
