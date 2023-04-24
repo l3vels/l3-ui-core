@@ -5,9 +5,23 @@ export interface MenuProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Menu: React.FC<MenuProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <path d="M6 10.5C6 11.3284 5.32843 12 4.5 12 3.67157 12 3 11.3284 3 10.5 3 9.67157 3.67157 9 4.5 9 5.32843 9 6 9.67157 6 10.5zM11.8333 10.5C11.8333 11.3284 11.1618 12 10.3333 12 9.50492 12 8.83334 11.3284 8.83334 10.5 8.83334 9.67157 9.50492 9 10.3333 9 11.1618 9 11.8333 9.67157 11.8333 10.5zM17.6667 10.5C17.6667 11.3284 16.9951 12 16.1667 12 15.3383 12 14.6667 11.3284 14.6667 10.5 14.6667 9.67157 15.3383 9 16.1667 9 16.9951 9 17.6667 9.67157 17.6667 10.5z"
-      fill="currentColor" />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16742)">
+      <path d="M11.4287 16H20.8573M11.4287 12.5714H20.8573M11.4287 19.4286H20.8573" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+    <defs>
+      <filter id="filter0_bd_761_16742" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16742" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_761_16742" result="effect2_dropShadow_761_16742" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16742" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Menu.displayName = 'Menu';
