@@ -224,7 +224,7 @@ export {default as NotificationsMuted} from './components/NotificationsMuted';
 export {default as Number} from './components/Number';
 export {default as NumberOutline} from './components/NumberOutline';
 export {default as Numbers} from './components/Numbers';
-export {default as Object} from './components/Object';
+export {default as ObjectIcon} from './components/ObjectIcon';
 export {default as Offline} from './components/Offline';
 export {default as Open} from './components/Open';
 export {default as Page} from './components/Page';
