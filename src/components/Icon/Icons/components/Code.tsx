@@ -5,21 +5,22 @@ export interface CodeProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Code: React.FC<CodeProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 40 40" fill="currentColor" width={ size || "40" } height={ size || "40" } {...props}>
-    <g filter="url(#filter0_bd_718_13636)" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 16.25L9.5 20 14 23.75M26 16.25L30.5 20 26 23.75M23 11.75L17 28.25" />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16551)">
+      <path d="M12.5714 13.8572L10 16.0001L12.5714 18.1429M19.4286 13.8572L22 16.0001L19.4286 18.1429M17.7143 11.2858L14.2857 20.7143" stroke="#fff" strokeLinecap="round"
+        strokeLinejoin="round" />
     </g>
     <defs>
-      <filter id="filter0_bd_718_13636" x="-10" y="-10" width="60" height="60" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <filter id="filter0_bd_761_16551" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
         <feFlood result="BackgroundImageFix" floodOpacity="0" />
         <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_718_13636" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16551" />
         <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feOffset dy="1" />
         <feGaussianBlur stdDeviation="1.5" />
         <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-        <feBlend in2="effect1_backgroundBlur_718_13636" result="effect2_dropShadow_718_13636" />
-        <feBlend in="SourceGraphic" in2="effect2_dropShadow_718_13636" result="shape" />
+        <feBlend in2="effect1_backgroundBlur_761_16551" result="effect2_dropShadow_761_16551" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16551" result="shape" />
       </filter>
     </defs>
   </svg>
