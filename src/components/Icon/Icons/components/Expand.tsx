@@ -5,9 +5,24 @@ export interface ExpandProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Expand: React.FC<ExpandProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <path d="M10.5303 2.46967C10.2374 2.17678 9.76256 2.17678 9.46967 2.46967L5.46967 6.46967C5.17678 6.76256 5.17678 7.23744 5.46967 7.53033C5.76256 7.82322 6.23744 7.82322 6.53033 7.53033L9.25 4.81066V15.1893L6.53033 12.4697C6.23744 12.1768 5.76256 12.1768 5.46967 12.4697C5.17678 12.7626 5.17678 13.2374 5.46967 13.5303L9.46967 17.5303C9.76256 17.8232 10.2374 17.8232 10.5303 17.5303L14.5303 13.5303C14.8232 13.2374 14.8232 12.7626 14.5303 12.4697C14.2374 12.1768 13.7626 12.1768 13.4697 12.4697L10.75 15.1893V4.81066L13.4697 7.53033C13.7626 7.82322 14.2374 7.82322 14.5303 7.53033C14.8232 7.23744 14.8232 6.76256 14.5303 6.46967L10.5303 2.46967Z"
-      fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16563)">
+      <path d="M14.3501 17.6499L10.2253 21.7747M17.6499 14.3501L21.7747 10.2253M16 23H10.2374C9.55402 23 9 22.446 9 21.7626V16M23 16V10.2374C23 9.55402 22.446 9 21.7626 9H16"
+        stroke="#fff" strokeLinecap="round" />
+    </g>
+    <defs>
+      <filter id="filter0_bd_761_16563" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16563" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_761_16563" result="effect2_dropShadow_761_16563" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16563" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Expand.displayName = 'Expand';

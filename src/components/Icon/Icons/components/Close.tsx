@@ -5,9 +5,28 @@ export interface CloseProps extends React.SVGAttributes<SVGElement> {
 size?: string | number;
 }
 const Close: React.FC<CloseProps> = ({size, ...props}) => (
-  <svg viewBox="0 0 20 20" fill="currentColor" width={ size || "20" } height={ size || "20" } {...props}>
-    <path d="M3.53033 2.46967C3.23744 2.17678 2.76256 2.17678 2.46967 2.46967C2.17678 2.76256 2.17678 3.23744 2.46967 3.53033L8.97639 10.037L2.47093 16.5425C2.17804 16.8354 2.17804 17.3103 2.47093 17.6032C2.76382 17.8961 3.2387 17.8961 3.53159 17.6032L10.037 11.0977L16.5425 17.6032C16.8354 17.8961 17.3103 17.8961 17.6032 17.6032C17.8961 17.3103 17.8961 16.8354 17.6032 16.5425L11.0977 10.037L17.6044 3.53033C17.8973 3.23744 17.8973 2.76256 17.6044 2.46967C17.3115 2.17678 16.8367 2.17678 16.5438 2.46967L10.037 8.97639L3.53033 2.46967Z"
-      fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
+  <svg viewBox="0 0 32 32" fill="currentColor" width={ size || "32" } height={ size || "32" } {...props}>
+    <g filter="url(#filter0_bd_761_16730)">
+      <g clipPath="url(#clip0_761_16730)">
+        <path d="M23 9L9 23M23 23L9 9.00001" stroke="#fff" strokeLinecap="round" />
+      </g>
+    </g>
+    <defs>
+      <clipPath id="clip0_761_16730">
+        <path fill="#fff" transform="translate(8 8)" d="M0 0H16V16H0z" />
+      </clipPath>
+      <filter id="filter0_bd_761_16730" x="-10" y="-10" width="52" height="52" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood result="BackgroundImageFix" floodOpacity="0" />
+        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_761_16730" />
+        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+        <feOffset dy="1" />
+        <feGaussianBlur stdDeviation="1.5" />
+        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+        <feBlend in2="effect1_backgroundBlur_761_16730" result="effect2_dropShadow_761_16730" />
+        <feBlend in="SourceGraphic" in2="effect2_dropShadow_761_16730" result="shape" />
+      </filter>
+    </defs>
   </svg>
 );
 Close.displayName = 'Close';
