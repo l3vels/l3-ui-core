@@ -65,26 +65,24 @@ exports[`Combobox renders correctly when disabled 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -99,7 +97,7 @@ exports[`Combobox renders correctly when disabled 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -116,12 +114,12 @@ exports[`Combobox renders correctly when disabled 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -232,26 +230,24 @@ exports[`Combobox renders correctly with another noResultsMessage 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -266,7 +262,7 @@ exports[`Combobox renders correctly with another noResultsMessage 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -283,12 +279,12 @@ exports[`Combobox renders correctly with another noResultsMessage 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -399,26 +395,24 @@ exports[`Combobox renders correctly with autoFocus 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -433,7 +427,7 @@ exports[`Combobox renders correctly with autoFocus 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -450,12 +444,12 @@ exports[`Combobox renders correctly with autoFocus 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -566,26 +560,24 @@ exports[`Combobox renders correctly with className 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -600,7 +592,7 @@ exports[`Combobox renders correctly with className 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -617,12 +609,12 @@ exports[`Combobox renders correctly with className 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -733,26 +725,24 @@ exports[`Combobox renders correctly with divider 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -767,7 +757,7 @@ exports[`Combobox renders correctly with divider 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -784,12 +774,12 @@ exports[`Combobox renders correctly with divider 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -995,26 +985,24 @@ exports[`Combobox renders correctly with empty props 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1029,7 +1017,7 @@ exports[`Combobox renders correctly with empty props 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1046,12 +1034,12 @@ exports[`Combobox renders correctly with empty props 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -1162,26 +1150,24 @@ exports[`Combobox renders correctly with id 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1196,7 +1182,7 @@ exports[`Combobox renders correctly with id 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1213,12 +1199,12 @@ exports[`Combobox renders correctly with id 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -1366,26 +1352,24 @@ exports[`Combobox renders correctly with loading 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1400,7 +1384,7 @@ exports[`Combobox renders correctly with loading 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1417,12 +1401,12 @@ exports[`Combobox renders correctly with loading 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -1533,26 +1517,24 @@ exports[`Combobox renders correctly with optionLineHeight 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1567,7 +1549,7 @@ exports[`Combobox renders correctly with optionLineHeight 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1584,12 +1566,12 @@ exports[`Combobox renders correctly with optionLineHeight 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -1700,26 +1682,24 @@ exports[`Combobox renders correctly with optionRenderer 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1734,7 +1714,7 @@ exports[`Combobox renders correctly with optionRenderer 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1751,12 +1731,12 @@ exports[`Combobox renders correctly with optionRenderer 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -1918,26 +1898,24 @@ exports[`Combobox renders correctly with optionsListHeight 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -1952,7 +1930,7 @@ exports[`Combobox renders correctly with optionsListHeight 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -1969,12 +1947,12 @@ exports[`Combobox renders correctly with optionsListHeight 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -2085,26 +2063,24 @@ exports[`Combobox renders correctly with placeholder 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -2119,7 +2095,7 @@ exports[`Combobox renders correctly with placeholder 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -2136,12 +2112,12 @@ exports[`Combobox renders correctly with placeholder 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
@@ -2252,26 +2228,24 @@ exports[`Combobox renders correctly with size 1`] = `
               height="18px"
               id="combobox-search"
               onClick={[Function]}
-              viewBox="0 0 40 40"
+              viewBox="0 0 32 32"
               width="18px"
             >
               <g
-                filter="url(#filter0_bd_718_13606)"
+                filter="url(#filter0_bd_761_16733)"
               >
                 <path
-                  clipRule="evenodd"
-                  d="M32 20C32 26.5649 26.5728 32 19.999 32C13.4368 32 8 26.5649 8 20C8 13.4256 13.4273 8 19.9894 8C26.5632 8 32 13.4256 32 20ZM13.7282 18.6793C13.7282 21.4323 15.9931 23.7028 18.7512 23.7028C19.6819 23.7028 20.5566 23.4258 21.3024 22.9767L24.2163 25.8772C24.4791 26.1475 24.7661 26.2742 25.1333 26.2742C25.7832 26.2742 26.2408 25.7878 26.2408 25.1147C26.2408 24.8162 26.1131 24.5292 25.8863 24.2951L22.9711 21.3606C23.472 20.5968 23.7763 19.6661 23.7763 18.6793C23.7763 15.9073 21.5135 13.6422 18.7512 13.6422C15.9931 13.6422 13.7282 15.9168 13.7282 18.6793ZM21.9701 18.6793C21.9701 20.4447 20.5143 21.908 18.7512 21.908C16.9807 21.908 15.5229 20.4447 15.5229 18.6793C15.5229 16.9045 16.9807 15.4412 18.7512 15.4412C20.5143 15.4412 21.9701 16.8949 21.9701 18.6793Z"
+                  d="M22.6464 23.3536C22.8417 23.5488 23.1583 23.5488 23.3536 23.3536C23.5488 23.1583 23.5488 22.8417 23.3536 22.6464L22.6464 23.3536ZM20.0294 14.7647C20.0294 17.6723 17.6723 20.0294 14.7647 20.0294V21.0294C18.2246 21.0294 21.0294 18.2246 21.0294 14.7647H20.0294ZM14.7647 20.0294C11.8571 20.0294 9.5 17.6723 9.5 14.7647H8.5C8.5 18.2246 11.3048 21.0294 14.7647 21.0294V20.0294ZM9.5 14.7647C9.5 11.8571 11.8571 9.5 14.7647 9.5V8.5C11.3048 8.5 8.5 11.3048 8.5 14.7647H9.5ZM14.7647 9.5C17.6723 9.5 20.0294 11.8571 20.0294 14.7647H21.0294C21.0294 11.3048 18.2246 8.5 14.7647 8.5V9.5ZM18.5288 19.2359L22.6464 23.3536L23.3536 22.6464L19.2359 18.5288L18.5288 19.2359Z"
                   fill="#fff"
-                  fillRule="evenodd"
                 />
               </g>
               <defs>
                 <filter
                   colorInterpolationFilters="sRGB"
                   filterUnits="userSpaceOnUse"
-                  height="60"
-                  id="filter0_bd_718_13606"
-                  width="60"
+                  height="52"
+                  id="filter0_bd_761_16733"
+                  width="52"
                   x="-10"
                   y="-10"
                 >
@@ -2286,7 +2260,7 @@ exports[`Combobox renders correctly with size 1`] = `
                   <feComposite
                     in2="SourceAlpha"
                     operator="in"
-                    result="effect1_backgroundBlur_718_13606"
+                    result="effect1_backgroundBlur_761_16733"
                   />
                   <feColorMatrix
                     in="SourceAlpha"
@@ -2303,12 +2277,12 @@ exports[`Combobox renders correctly with size 1`] = `
                     values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
                   />
                   <feBlend
-                    in2="effect1_backgroundBlur_718_13606"
-                    result="effect2_dropShadow_718_13606"
+                    in2="effect1_backgroundBlur_761_16733"
+                    result="effect2_dropShadow_761_16733"
                   />
                   <feBlend
                     in="SourceGraphic"
-                    in2="effect2_dropShadow_718_13606"
+                    in2="effect2_dropShadow_761_16733"
                     result="shape"
                   />
                 </filter>
