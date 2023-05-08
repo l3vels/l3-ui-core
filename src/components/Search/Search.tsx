@@ -52,6 +52,7 @@ export interface SearchProps extends L3ComponentProps {
   };
   /** shows loading animation */
   loading?: boolean;
+  defaultIsOpen?: boolean;
 }
 
 const Search: L3Component<SearchProps, unknown> & {
@@ -82,7 +83,8 @@ const Search: L3Component<SearchProps, unknown> & {
       searchResultsContainerId = "",
       activeDescendant = "",
       iconNames = SearchDefaultIconNames,
-      loading = false
+      loading = false,
+      defaultIsOpen = false
     },
     ref
   ) => {
@@ -117,6 +119,7 @@ const Search: L3Component<SearchProps, unknown> & {
         role="search"
         loading={loading}
         onIconClick={() => console.log("test")}
+        defaultIsOpen={defaultIsOpen}
       />
     );
   }
