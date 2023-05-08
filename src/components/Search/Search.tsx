@@ -52,7 +52,7 @@ export interface SearchProps extends L3ComponentProps {
   };
   /** shows loading animation */
   loading?: boolean;
-  defaultIsOpen: boolean;
+  defaultIsOpen?: boolean;
 }
 
 const Search: L3Component<SearchProps, unknown> & {

@@ -73,7 +73,7 @@ interface TextFieldProps extends L3ComponentProps {
   secondaryDataTestId?: string;
   tabIndex?: number;
   name?: string;
-  defaultIsOpen: boolean;
+  defaultIsOpen?: boolean;
 }
 
 const TextField: L3Component<TextFieldProps, unknown> & {
