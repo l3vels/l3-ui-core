@@ -73,6 +73,7 @@ interface TextFieldProps extends L3ComponentProps {
   secondaryDataTestId?: string;
   tabIndex?: number;
   name?: string;
+  defaultIsOpen: boolean;
 }
 
 const TextField: L3Component<TextFieldProps, unknown> & {
@@ -119,7 +120,8 @@ const TextField: L3Component<TextFieldProps, unknown> & {
       dataTestId,
       secondaryDataTestId,
       tabIndex,
-      name
+      name,
+      defaultIsOpen = false
     },
     ref
   ) => {
@@ -173,7 +175,7 @@ const TextField: L3Component<TextFieldProps, unknown> & {
       }
     }, [inputRef, autoFocus]);
 
-    const [show, setShow] = useState(false);
+    const [show, setShow] = useState(defaultIsOpen);
 
     const showTextfieldClass = show ? "show-text-field-component" : "hide-text-field-component";
     const isSearchType = type === "search" && showTextfieldClass;
