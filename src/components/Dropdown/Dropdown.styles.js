@@ -20,7 +20,7 @@ const getKind = kind => {
 
 const getKindColors = kind => {
   const whiteColor = "#FFFFFF";
-  const primaryBgColor = "rgba(255, 255, 255, 0.2)";
+  const primaryBgColor = "rgba(0, 0, 0, 0.7)";
   const primaryBgColorHover = "rgba(255, 255, 255, 0.1)";
   const primaryBgColorActive = "rgba(255, 255, 255, 0.3)";
 
@@ -38,6 +38,7 @@ const getKindColors = kind => {
   switch (kindType) {
     case "primary":
       return {
+        inputColor: primaryBgColorDisabled,
         backgroundColor: primaryBgColor,
         bgHoverColor: primaryBgColorHover,
         bgActiveColor: primaryBgColorActive,
@@ -46,6 +47,7 @@ const getKindColors = kind => {
       };
     case "secondary":
       return {
+        inputColor: secondaryBgColorActive,
         backgroundColor: secondaryBgColor,
         bgHoverColor: secondaryBgColorHover,
         bgActiveColor: secondaryBgColorActive,
@@ -54,6 +56,7 @@ const getKindColors = kind => {
       };
     case "tertiary":
       return {
+        inputColor: primaryBgColorDisabled,
         backgroundColor: tertiaryBgColor,
         bgHoverColor: tertiaryBgColorHover,
         bgActiveColor: tertiaryBgColorActive,
@@ -126,12 +129,15 @@ const getOptionStyle = (provided, { isDisabled, isSelected, isFocused }) => {
   const general = {
     display: "flex",
     alignContent: "center",
-    borderRadius: getCSSVar("border-radius-small"),
-    marginRight: "8px",
-    marginLeft: "8px",
-    paddingLeft: "8px",
-    paddingRight: "8px",
-    transition: `all 0.1s ${getCSSVar("expand-animation-timing")}`
+    // borderRadius: getCSSVar("border-radius-small"),
+    // marginRight: "8px",
+    // marginLeft: "8px",
+    // paddingLeft: "8px",
+    // paddingRight: "8px",
+
+    transition: `all 0.1s ${getCSSVar("expand-animation-timing")}
+    `,
+    backgroundColor: "transparent"
   };
   if (isDisabled) {
     return {
@@ -146,20 +152,20 @@ const getOptionStyle = (provided, { isDisabled, isSelected, isFocused }) => {
     return {
       ...provided,
       ...general,
-      color: getCSSVar("primary-text-color"),
-      backgroundColor: getCSSVar("primary-selected-color"),
+      color: "#FFF",
+      backgroundColor: "rgba(255, 255, 255, 0.3)",
       cursor: "pointer"
     };
   }
   return {
     ...provided,
     ...general,
-    color: getCSSVar("primary-text-color"),
+    color: "#FFF",
     cursor: "pointer",
     ...(isFocused && {
       ":hover": {
-        color: getCSSVar("primary-text-color"),
-        backgroundColor: getCSSVar("primary-background-hover-color")
+        color: "#FFF",
+        backgroundColor: "rgba(255, 255, 255, 0.1)"
       }
     })
   };
@@ -201,15 +207,15 @@ const control =
     ...(!isDisabled && {
       ":hover": {
         borderColor: "transparent",
-        borderRadius: getCSSVar("border-radius-small"),
-        backgroundColor: getKindColors(kind).bgHoverColor
+        borderRadius: getCSSVar("border-radius-small")
       },
       ":active, :focus": {
         backgroundColor: getKindColors(kind).bgActiveColor
       }
     }),
     cursor: "pointer",
-    backgroundColor: getKindColors(kind).backgroundColor,
+    // backdropFilter: "blur(10px)",
+    backgroundColor: getKindColors(kind).inputColor,
     ...disabledContainerStyle(isDisabled)
   });
 
@@ -291,6 +297,7 @@ const singleValue =
     ...menuOpenOpacity(selectProps),
     display: "flex",
     alignItems: "center",
+    color: !isDisabled && "#FFF",
     height: "100%"
   });
 
@@ -345,6 +352,7 @@ const menu =
       color: getKindColors(kind).mainWhite,
       backgroundColor: getKindColors(kind).backgroundColor,
       boxShadow: getCSSVar("box-shadow-small")
+      // backdropFilter: "blur(10px)"
     };
 
     if (!insideOverflowContainer && !insideOverflowWithTransformContainer) return baseStyle;
@@ -363,7 +371,7 @@ const menu =
   };
 
 const option = () => (provided, state) => ({
-  ...getFont(),
+  // ...getFont(),
   ...getOptionStyle(provided, state)
 });
 
