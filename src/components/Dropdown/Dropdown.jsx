@@ -14,7 +14,7 @@ import SingleValueComponent from "./components/singleValue/singleValue";
 import ClearIndicatorComponent from "./components/ClearIndicator/ClearIndicator";
 import MultiValueContainer from "./components/MultiValueContainer/MultiValueContainer";
 import { ADD_AUTO_HEIGHT_COMPONENTS, defaultCustomStyles, DROPDOWN_ID } from "./DropdownConstants";
-import generateBaseStyles from "./Dropdown.styles";
+import generateBaseStyles, { customTheme } from "./Dropdown.styles";
 import Control from "./components/Control/Control";
 import { DROPDOWN_TAG_COLORS, MENU_WRAPPER_CLASS_NAME, DROPDOWN_KINDS } from "./dropdown-constants";
 import "./Dropdown.scss";
@@ -304,7 +304,7 @@ const Dropdown = ({
       openMenuOnClick={openMenuOnClick}
       isRtl={rtl}
       styles={styles}
-      // theme={customTheme}
+      theme={customTheme}
       maxMenuHeight={maxMenuHeight}
       menuPortalTarget={menuPortalTarget}
       menuPlacement={menuPlacement}
