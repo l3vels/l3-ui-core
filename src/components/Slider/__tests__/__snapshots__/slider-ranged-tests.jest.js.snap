@@ -115,7 +115,18 @@ Snapshot Diff:
 
 exports[`b. Ranges Slider Active/Inactive 06. de-activate Thumb by Tab key press, when End Thumb focused  1`] = `
 Snapshot Diff:
-Compared values have no visual difference.
+- Default Render
++ Current Render
+
+@@ --- --- @@
+              aria-valuemin="0"
+              aria-valuenow="65"
+              aria-valuetext="65%"
+-             class="l3-slider__thumb l3-slider__thumb--focused l3-slider__thumb--index-1"
++             class="l3-slider__thumb l3-slider__thumb--index-1"
+              data-testid="l3-slider__thumb-1"
+              role="slider"
+              style="left: 65%;"
 `;
 
 exports[`c. Ranges Slider Key Events 01. decrease value by Left/Down keys press 1`] = `
