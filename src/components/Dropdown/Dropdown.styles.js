@@ -202,6 +202,7 @@ const control =
     ...provided,
     ...getInnerSize(size),
     minHeight: "30px",
+    boxShadow: "none",
     border: "0 solid transparent",
     borderRadius: getCSSVar("border-radius-small"),
     ...(!isDisabled && {
@@ -317,6 +318,7 @@ const input = () => provided => ({
   ...provided,
   ...getFont(),
   // ...getColor(),
+  color: "#FFF",
   display: "flex",
   alignItems: "center",
   textIndent: "-2px"
