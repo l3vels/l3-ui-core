@@ -25,7 +25,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-mw8kv1-control"
+        class=" css-r6bmho-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -34,7 +34,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on click if
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -193,7 +193,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-mw8kv1-control"
+        class=" css-r6bmho-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -202,7 +202,7 @@ exports[`Dropdown renders correctly snapshot driver should open menu on focus if
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -272,7 +272,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-m2w89a-control"
+        class=" css-12aq6tp-control"
       >
         <div
           class=" css-bgtxxn-Component"
@@ -281,7 +281,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -351,7 +351,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-m2w89a-control"
+        class=" css-12aq6tp-control"
       >
         <div
           class=" css-bgtxxn-Component"
@@ -360,7 +360,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -430,7 +430,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-m2w89a-control"
+        class=" css-12aq6tp-control"
       >
         <div
           class=" css-bgtxxn-Component"
@@ -439,7 +439,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -509,7 +509,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-1kfhz06-control"
+        class=" css-1nvegrd-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -518,7 +518,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -588,7 +588,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-c3wc05-control"
+        class=" css-13i9cxe-control"
       >
         <div
           class=" css-qx26wr-Component"
@@ -597,7 +597,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly for 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -667,7 +667,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly with
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-1kfhz06-control"
+        class=" css-1nvegrd-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -676,7 +676,7 @@ exports[`Dropdown renders correctly snapshot driver should render correctly with
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -761,7 +761,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-mw8kv1-control"
+        class=" css-r6bmho-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -770,7 +770,7 @@ exports[`Dropdown renders correctly snapshot driver should use async if set 1`] 
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -869,7 +869,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
       class="l3-dropdown_scrollable-wrapper"
     >
       <div
-        class=" css-mw8kv1-control"
+        class=" css-r6bmho-control"
       >
         <div
           class=" css-k99slj-Component"
@@ -878,7 +878,7 @@ exports[`Dropdown renders correctly snapshot driver should use virtualization if
             class=" css-kqyzc8-placeholder"
           />
           <div
-            class="css-whi39w-Component"
+            class="css-1t7y9oe-Component"
           >
             <div
               class=""
@@ -1148,7 +1148,7 @@ exports[`Dropdown renders correctly when disabled 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1dqle6h-control"
+      className=" css-11r91t5-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1161,7 +1161,7 @@ exports[`Dropdown renders correctly when disabled 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1265,7 +1265,7 @@ exports[`Dropdown renders correctly when rtl 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1278,7 +1278,7 @@ exports[`Dropdown renders correctly when rtl 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1383,7 +1383,7 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1396,7 +1396,7 @@ exports[`Dropdown renders correctly with autoFocus 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1501,7 +1501,7 @@ exports[`Dropdown renders correctly with className 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1514,7 +1514,7 @@ exports[`Dropdown renders correctly with className 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1619,7 +1619,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1636,7 +1636,7 @@ exports[`Dropdown renders correctly with defaultValue 1`] = `
           </div>
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1766,7 +1766,7 @@ exports[`Dropdown renders correctly with empty props 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1779,7 +1779,7 @@ exports[`Dropdown renders correctly with empty props 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -1884,7 +1884,7 @@ exports[`Dropdown renders correctly with id 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -1897,7 +1897,7 @@ exports[`Dropdown renders correctly with id 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -2002,7 +2002,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-55rw79-control"
+      className=" css-5cslk2-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2120,7 +2120,7 @@ exports[`Dropdown renders correctly with leftAvatar 1`] = `
                 </div>
               </div>
               <div
-                className="css-whi39w-Component"
+                className="css-1t7y9oe-Component"
               >
                 <div
                   className=""
@@ -2254,7 +2254,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-55rw79-control"
+      className=" css-5cslk2-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2367,7 +2367,7 @@ exports[`Dropdown renders correctly with leftIcon 1`] = `
                 </div>
               </div>
               <div
-                className="css-whi39w-Component"
+                className="css-1t7y9oe-Component"
               >
                 <div
                   className=""
@@ -2501,7 +2501,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2528,7 +2528,7 @@ exports[`Dropdown renders correctly with multi 1`] = `
               className="tag-with-input-wrapper"
             >
               <div
-                className="css-whi39w-Component"
+                className="css-1t7y9oe-Component"
               >
                 <div
                   className=""
@@ -2637,7 +2637,7 @@ exports[`Dropdown renders correctly with multiline 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2650,7 +2650,7 @@ exports[`Dropdown renders correctly with multiline 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -2755,7 +2755,7 @@ exports[`Dropdown renders correctly with options 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2768,7 +2768,7 @@ exports[`Dropdown renders correctly with options 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -2873,7 +2873,7 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -2886,7 +2886,7 @@ exports[`Dropdown renders correctly with placeholder 1`] = `
           text
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -2991,7 +2991,7 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3004,7 +3004,7 @@ exports[`Dropdown renders correctly with tabIndex 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -3109,7 +3109,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-55rw79-control"
+      className=" css-5cslk2-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3364,7 +3364,7 @@ exports[`Dropdown renders correctly with tag colors 1`] = `
                 </div>
               </div>
               <div
-                className="css-whi39w-Component"
+                className="css-1t7y9oe-Component"
               >
                 <div
                   className=""
@@ -3505,7 +3505,7 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
     onMouseLeave={[Function]}
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3518,7 +3518,7 @@ exports[`Dropdown renders correctly with tooltipContent 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -3623,7 +3623,7 @@ exports[`Dropdown renders correctly with value 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3640,7 +3640,7 @@ exports[`Dropdown renders correctly with value 1`] = `
           </div>
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""
@@ -3770,7 +3770,7 @@ exports[`Dropdown renders correctly without clear button 1`] = `
     className="l3-dropdown_scrollable-wrapper"
   >
     <div
-      className=" css-1kfhz06-control"
+      className=" css-1nvegrd-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -3783,7 +3783,7 @@ exports[`Dropdown renders correctly without clear button 1`] = `
           
         </div>
         <div
-          className="css-whi39w-Component"
+          className="css-1t7y9oe-Component"
         >
           <div
             className=""

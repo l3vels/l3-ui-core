@@ -4,6 +4,7 @@
 .tag-with-input-wrapper {
   display: flex;
   min-height: 30px;
+  align-items: center;
 }
 .placeholder-container {
   margin-left: 6px;
@@ -14,7 +15,7 @@
 }
 
 .multiselect-tag-single-line {
-  margin: 5px 2px;
+  margin: 2px;
 }
 
 .multiselect-tag-disabled {
