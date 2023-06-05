@@ -13,6 +13,10 @@
       transform: translateX(-8px);
     }
 
+    &.no-animation {
+      transform: unset;
+    }
+
     &.active {
       display: block;
       animation: panel-slide-in var(--motion-productive-long) forwards var(--motion-timing-enter);
@@ -20,6 +24,8 @@
   }
 
   @keyframes panel-slide-in {
-    100% { transform: translateX(0%); }
+    100% {
+      transform: translateX(0%);
+    }
   }
 }

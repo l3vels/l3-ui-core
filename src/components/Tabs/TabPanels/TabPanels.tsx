@@ -9,6 +9,7 @@ import "./TabPanels.scss";
 export interface TabPanelsProps extends L3ComponentProps {
   renderOnlyActiveTab?: boolean;
   activeTabId?: number;
+  noAnimation?: boolean;
   animationDirection?: TabPanelsAnimationDirection;
   children?: ReactElement<TabPanelProps> | ReactElement<TabPanelProps>[];
 }
@@ -19,6 +20,7 @@ const TabPanels: FC<TabPanelsProps> = forwardRef(
       className,
       id,
       activeTabId = 0,
+      noAnimation,
       animationDirection = TabPanelsAnimationDirection.RTL,
       children,
       renderOnlyActiveTab = false // TODO BREAKING change to true - breaking change
@@ -32,11 +34,12 @@ const TabPanels: FC<TabPanelsProps> = forwardRef(
         const isActiveTab = activeTabId === index;
         if (renderOnlyActiveTab && !isActiveTab) return null;
         const activeClass = isActiveTab ? "active" : "non-active";
+        const noAnimationClass = noAnimation && "no-animation";
         const animationClass = isActiveTab ? `animation-direction-${animationDirection}` : "";
         return React.cloneElement(child, {
           index,
           ...child.props,
-          className: cx("tab-panel", activeClass, animationClass, child.props.className)
+          className: cx("tab-panel", activeClass, noAnimationClass, animationClass, child.props.className)
         });
       }).filter(Boolean);
     }, [children, activeTabId, renderOnlyActiveTab, animationDirection]);
