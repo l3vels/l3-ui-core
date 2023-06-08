@@ -48,14 +48,21 @@ $dialog-border-radius: 13.913px;
   box-shadow: $dialog-box-shadow;
   backdrop-filter: blur(50px);
   border-radius: $dialog-border-radius;
-  max-height: 90vh;
-  max-width: 90vw;
+  max-height: 100vh;
+  max-width: 100vw;
 
   &.dark {
     background: var(--color-transparent-black-03);
   }
   &.light {
     background: var(--color-transparent-white-02);
+  }
+
+  &.isTransparent {
+    background: transparent;
+    backdrop-filter: unset;
+    box-shadow: unset;
+    border: unset;
   }
 }
 
