@@ -94,6 +94,39 @@ Modal allows the user to focus on one task or a piece of information, by popping
 
 ## Variants
 
+### Fullscreen
+
+<Canvas>
+  <Story name="Fullscreen">
+    {() => {
+      const { openModalButton, modalButtons, show, closeModal, ref } = useModalHelper({
+        openButtonTitle: "Fullscreen Modal"
+      });
+      return (
+        <div>
+          {openModalButton}
+          <Modal
+            fullscreen
+            id={"story-book-modal"}
+            title={"Heading"}
+            description={"Heading"}
+            triggerElement={ref.current}
+            show={show}
+            onClose={closeModal}
+            hideCloseButton={false}
+            backgroundColor="dark"
+            className="modalClassName"
+          >
+            <ModalFooter className="modalFooter">{modalButtons}</ModalFooter>
+          </Modal>
+        </div>
+      );
+    }}
+  </Story>
+</Canvas>
+
+### Themes
+
 <Canvas>
   <Story name="Background variants - Dark">
     {() => {

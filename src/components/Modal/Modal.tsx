@@ -66,6 +66,10 @@ interface ModalProps extends L3ComponentProps {
   modalWidth?: string;
   modalHeight?: string;
   className?: string;
+
+  fullscreen?: boolean;
+  isClean?: boolean;
+  isTransparent?: boolean;
 }
 
 const Modal: FC<ModalProps> & {
@@ -87,7 +91,10 @@ const Modal: FC<ModalProps> & {
   closeButtonAriaLabel = "close",
   modalWidth,
   modalHeight,
-  className
+  className,
+  fullscreen,
+  isClean,
+  isTransparent
 }) => {
   const childrenArray: ReactElement[] = useMemo(
     () => (children ? (React.Children.toArray(children) as ReactElement[]) : []),
@@ -157,14 +164,16 @@ const Modal: FC<ModalProps> & {
           className={cx(styles.dialog, classNames.modal, modalHeight, modalWidth, {
             [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
             [styles.dark]: backgroundColor === ModalBackgroundColor.DARK,
+            [styles.isTransparent]: isTransparent,
+            ["fullscreen"]: fullscreen,
             modalWidth,
             modalHeight
           })}
         >
           <div className={className}>
-            {header}
+            {!isClean && header}
             {content}
-            {footer}
+            {!isClean && footer}
           </div>
         </div>
       </div>
