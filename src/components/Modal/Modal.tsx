@@ -165,6 +165,7 @@ const Modal: FC<ModalProps> & {
             [styles.light]: backgroundColor === ModalBackgroundColor.LIGHT,
             [styles.dark]: backgroundColor === ModalBackgroundColor.DARK,
             [styles.isTransparent]: isTransparent,
+            [styles.fullscreen]: fullscreen,
             ["fullscreen"]: fullscreen,
             modalWidth,
             modalHeight

@@ -24,8 +24,4 @@ export const isModalFooter = (child: ReactElement) => child.type === ModalFooter
 export const validateTitleProp = (title: string, childrenArray: ReactElement[]) => {
   const hasHeaderComponent = childrenArray.some(isModalHeader);
   if (hasHeaderComponent) return;
-
-  if (!title) {
-    throw new Error(`Title prop is mandatory for Modal when HeaderModal isn't provided. Validation failed.`);
-  }
 };
