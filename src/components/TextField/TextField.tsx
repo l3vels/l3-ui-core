@@ -263,7 +263,7 @@ const TextField: L3Component<TextFieldProps, unknown> & {
                 iconLabel={iconsNames.primary}
                 iconType={Icon.type.ICON_FONT}
                 ignoreFocusStyle
-                iconSize={size === TextField.sizes.SMALL ? "16px" : "18px"}
+                iconSize={size === TextField.sizes.SMALL ? "32px" : "38px"}
               />
             </Clickable>
             <Clickable

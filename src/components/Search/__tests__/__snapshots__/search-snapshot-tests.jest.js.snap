@@ -48,11 +48,11 @@ exports[`Search renders correctly when disabled 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -193,11 +193,11 @@ exports[`Search renders correctly when underline 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -338,11 +338,11 @@ exports[`Search renders correctly with className 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -568,11 +568,11 @@ exports[`Search renders correctly with id 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="testId"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -750,11 +750,11 @@ exports[`Search renders correctly with loading 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -895,11 +895,11 @@ exports[`Search renders correctly with placeholder 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1040,11 +1040,11 @@ exports[`Search renders correctly with secondaryIconName 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1175,11 +1175,11 @@ exports[`Search renders correctly with underline type 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1320,11 +1320,11 @@ exports[`Search renders correctly with validation 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1465,11 +1465,11 @@ exports[`Search renders correctly with value 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1610,11 +1610,11 @@ exports[`Search renders correctly with wrapperClassName 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
@@ -1755,11 +1755,11 @@ exports[`Search renders correctly without props 1`] = `
           aria-label="Search"
           className="icon_component input-component__icon icon_component--no-focus-style"
           fill="currentColor"
-          height="18px"
+          height="38px"
           id="search"
           onClick={[Function]}
           viewBox="0 0 32 32"
-          width="18px"
+          width="38px"
         >
           <g
             filter="url(#filter0_bd_761_16733)"
