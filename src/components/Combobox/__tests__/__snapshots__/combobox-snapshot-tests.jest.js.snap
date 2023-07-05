@@ -62,11 +62,11 @@ exports[`Combobox renders correctly when disabled 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -227,11 +227,11 @@ exports[`Combobox renders correctly with another noResultsMessage 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -392,11 +392,11 @@ exports[`Combobox renders correctly with autoFocus 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -557,11 +557,11 @@ exports[`Combobox renders correctly with className 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -722,11 +722,11 @@ exports[`Combobox renders correctly with divider 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -982,11 +982,11 @@ exports[`Combobox renders correctly with empty props 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -1147,11 +1147,11 @@ exports[`Combobox renders correctly with id 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -1349,11 +1349,11 @@ exports[`Combobox renders correctly with loading 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -1514,11 +1514,11 @@ exports[`Combobox renders correctly with optionLineHeight 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -1679,11 +1679,11 @@ exports[`Combobox renders correctly with optionRenderer 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -1895,11 +1895,11 @@ exports[`Combobox renders correctly with optionsListHeight 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -2060,11 +2060,11 @@ exports[`Combobox renders correctly with placeholder 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
@@ -2225,11 +2225,11 @@ exports[`Combobox renders correctly with size 1`] = `
               aria-label="Search"
               className="icon_component input-component__icon icon_component--no-focus-style"
               fill="currentColor"
-              height="18px"
+              height="38px"
               id="combobox-search"
               onClick={[Function]}
               viewBox="0 0 32 32"
-              width="18px"
+              width="38px"
             >
               <g
                 filter="url(#filter0_bd_761_16733)"
