@@ -70,6 +70,7 @@ interface ModalProps extends L3ComponentProps {
   fullscreen?: boolean;
   isClean?: boolean;
   isTransparent?: boolean;
+  zIndex?: number;
 }
 
 const Modal: FC<ModalProps> & {
@@ -94,7 +95,8 @@ const Modal: FC<ModalProps> & {
   className,
   fullscreen,
   isClean,
-  isTransparent
+  isTransparent,
+  zIndex = 10000
 }) => {
   const childrenArray: ReactElement[] = useMemo(
     () => (children ? (React.Children.toArray(children) as ReactElement[]) : []),
@@ -152,7 +154,12 @@ const Modal: FC<ModalProps> & {
 
   const dialog = ReactDOM.createPortal(
     <div className={className}>
-      <div {...attr.container} className={cx(styles.container, classNames.container)} data-testid="l3-dialog-container">
+      <div
+        {...attr.container}
+        className={cx(styles.container, classNames.container)}
+        data-testid="l3-dialog-container"
+        style={{ zIndex: zIndex }}
+      >
         {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
         <div
           onClick={closeDialogIfNeeded}
