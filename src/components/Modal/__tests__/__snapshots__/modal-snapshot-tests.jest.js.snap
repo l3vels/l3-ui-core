@@ -291,6 +291,7 @@ exports[`Modal with base props 1`] = `
     data-testid="l3-dialog-container"
     id="modal-id"
     role="dialog"
+    style="z-index: 10000;"
     tabindex="-1"
   >
     <div
@@ -442,6 +443,7 @@ Snapshot Diff:
       data-testid="l3-dialog-container"
       id="modal-id"
       role="dialog"
+@@ --- --- @@
       tabindex="-1"
     >
       <div
