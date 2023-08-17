@@ -227,7 +227,14 @@ const Avatar: React.FC<AvatarProps> & {
               </svg>
 
               {/* <div className="clipped"> */}
-              <div className={cx("clipped", { clipped_large: size === "large", clipped_small: size === "small" })}>
+              <div
+                className={cx("clipped", {
+                  clipped_large: size === "large",
+                  clipped_small: size === "small",
+                  clipped_xxs: size === "xxs",
+                  clipped_xs: size === "xs"
+                })}
+              >
                 <AvatarContent
                   type={type}
                   size={size}
