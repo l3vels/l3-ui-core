@@ -239,9 +239,13 @@ Use for non-person avatars, such as a workspace or team.
 
 <Canvas>
   <Story name="Rectangle avatar">
-    <Avatar size={Avatar.sizes.SMALL} src={avatar1} type={Avatar.types.IMG} rectangle />
-    <Avatar size={Avatar.sizes.MEDIUM} src={avatar2} type={Avatar.types.IMG} rectangle />
-    <Avatar size={Avatar.sizes.LARGE} src={avatar3} type={Avatar.types.IMG} rectangle />
+    <div style={{ display: "flex", gap: "50px" }}>
+      <Avatar size={Avatar.sizes.XXS} src={monkey_5} type={Avatar.types.IMG} rectangle />
+      <Avatar size={Avatar.sizes.XS} src={monkey_1} type={Avatar.types.IMG} rectangle />
+      <Avatar size={Avatar.sizes.SMALL} src={avatar1} type={Avatar.types.IMG} rectangle />
+      <Avatar size={Avatar.sizes.MEDIUM} src={avatar2} type={Avatar.types.IMG} rectangle />
+      <Avatar size={Avatar.sizes.LARGE} src={avatar3} type={Avatar.types.IMG} rectangle />
+    </div>
   </Story>
 </Canvas>
 
