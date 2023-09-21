@@ -76,7 +76,7 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
       onSelectCapture,
       hint,
       validation = null,
-      resize = false,
+      resize = true,
       showLetterCount
     },
     ref
@@ -120,45 +120,47 @@ const Textarea: L3Component<TextareaProps, unknown> = forwardRef(
           )
         )}
 
-        {textareaValue && (
-          <div className={styles.clearIcon}>
-            <IconButton
-              size={"xxs"}
-              ariaLabel="Remove"
-              hideTooltip
-              icon={CloseSmall}
-              onClick={clearValue}
-              kind={IconButton.kinds.SECONDARY}
-            />
-          </div>
-        )}
-        <textarea
-          ref={mergedRef}
-          id={id}
-          className={styles.textarea}
-          value={textareaValue}
-          placeholder={placeholder}
-          autoComplete={autoComplete}
-          autoFocus={autoFocus}
-          defaultValue={initialValue}
-          cols={cols}
-          rows={rows}
-          disabled={disabled}
-          maxLength={maxLenght}
-          minLength={minLenght}
-          name={name}
-          onBlur={onBlur}
-          onFocus={onFocus}
-          onKeyDown={onKeyDown}
-          onChange={onEventChanged}
-          onChangeCapture={onChangeCapture}
-          onInvalid={onInvalid}
-          onInvalidCapture={onInvalidCapture}
-          onSelect={onSelect}
-          onSelectCapture={onSelectCapture}
-          readOnly={readonly}
-          required={required}
-        />
+        <div className={styles.textareaWrapper}>
+          <textarea
+            ref={mergedRef}
+            id={id}
+            className={styles.textarea}
+            value={textareaValue}
+            placeholder={placeholder}
+            autoComplete={autoComplete}
+            autoFocus={autoFocus}
+            defaultValue={initialValue}
+            cols={cols}
+            rows={rows}
+            disabled={disabled}
+            maxLength={maxLenght}
+            minLength={minLenght}
+            name={name}
+            onBlur={onBlur}
+            onFocus={onFocus}
+            onKeyDown={onKeyDown}
+            onChange={onEventChanged}
+            onChangeCapture={onChangeCapture}
+            onInvalid={onInvalid}
+            onInvalidCapture={onInvalidCapture}
+            onSelect={onSelect}
+            onSelectCapture={onSelectCapture}
+            readOnly={readonly}
+            required={required}
+          />
+          {textareaValue && (
+            <div className={styles.clearIcon}>
+              <IconButton
+                size={"xxs"}
+                ariaLabel="Remove"
+                hideTooltip
+                icon={CloseSmall}
+                onClick={clearValue}
+                kind={IconButton.kinds.SECONDARY}
+              />
+            </div>
+          )}
+        </div>
         {hint && <div className={styles.hint}>{hint}</div>}
       </div>
     );
