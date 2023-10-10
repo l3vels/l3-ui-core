@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Webpack App</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }
+
+  window.onerror = function onerror(message, source, line, column, err) {
+    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
+    // eslint-disable-next-line no-var, vars-on-top
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'manager',
+        /* eslint-enable object-shorthand */
+      })
+    );
+  };</script><meta property="og:description" content="Design system by l3vels.xyz"/><meta property="og:title" content="Design System"/><title>Design System</title><link href="../fonts/circular-medium/stylesheet.css" rel="stylesheet"/><style>body {
+    font-family: "Circular", "Roboto", sans-serif !important;
+    background: #f0f3ff !important;
+    font-size: 14px;
+  }
+
+  #storybook-explorer-menu svg {
+    color: #5034ff;
+  }
+  #storybook-explorer-menu button[aria-expanded="true"],
+  #storybook-explorer-menu button:focus,
+  #storybook-explorer-menu a[data-selected]:hover {
+    background-color: rgba(80, 52, 255, 0.1);
+  }
+
+  #storybook-explorer-menu a[data-selected="true"],
+  #storybook-explorer-menu a[data-selected="true"]:hover {
+    background-color: #5034ff;
+    color: #f0f3ff;
+  }
+
+  #storybook-explorer-menu a[data-selected="true"] svg {
+    color: #f0f3ff;
+  }
+
+  .os-content button:hover {
+    background-color: rgba(80, 52, 255, 0.1);
+    color: #5034ff;
+  }
+
+  .os-content button:hover svg {
+    color: #5034ff;
+  }</style><script>//workaround to increase the left panel width just enough to show even the longer story names
+  //based on https://github.com/storybookjs/storybook/issues/9682#issuecomment-983356523
+  const DEFAULT_MINIMUM_LEFT_PANEL_WIDTH = 244; // original default is 230
+  let storybookConfig = JSON.parse(localStorage.getItem("storybook-layout"));
+
+  // we only resize the left panel if it is set to a value lower than DEFAULT_MINIMUM_LEFT_PANEL_WIDTH
+  if (
+    typeof storybookConfig === "object" &&
+    storybookConfig !== null &&
+    storybookConfig.resizerNav.x < DEFAULT_MINIMUM_LEFT_PANEL_WIDTH
+  ) {
+    storybookConfig.resizerNav.x = DEFAULT_MINIMUM_LEFT_PANEL_WIDTH;
+    localStorage.setItem("storybook-layout", JSON.stringify(storybookConfig));
+    document.location.reload();
+  } else if (storybookConfig === null) {
+    storybookConfig = { resizerNav: { x: DEFAULT_MINIMUM_LEFT_PANEL_WIDTH, y: 0 } };
+    localStorage.setItem("storybook-layout", JSON.stringify(storybookConfig));
+    document.location.reload();
+  }</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-0CBP2ER8YL"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-0CBP2ER8YL");</script><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
+          
+      
+          
+            window['LOGLEVEL'] = "info";
+          
+      
+          
+            window['FEATURES'] = {"postcss":true,"emotionAlias":false,"warnOnLegacyHierarchySeparator":true,"buildStoriesJson":false,"storyStoreV7":false,"modernInlineRender":false,"breakingChangesV7":false,"interactionsDebugger":true,"babelModeV7":false,"argTypeTargetsV7":false,"previewMdx2":false};
+          
+      
+          
+      
+          
+      
+          
+            window['DOCS_MODE'] = false;</script><script src="runtime~main.024ec57b662d7dfbc402.manager.bundle.js"></script><script src="402.dba0454560beb2d537e9.manager.bundle.js"></script><script src="main.c4582ef68643afa09350.manager.bundle.js"></script></body></html>
