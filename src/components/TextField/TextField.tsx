@@ -74,6 +74,8 @@ interface TextFieldProps extends L3ComponentProps {
   tabIndex?: number;
   name?: string;
   defaultIsOpen?: boolean;
+  color?: "dark" | "light";
+  isLightDisabled?: boolean;
 }
 
 const TextField: L3Component<TextFieldProps, unknown> & {
@@ -121,7 +123,9 @@ const TextField: L3Component<TextFieldProps, unknown> & {
       secondaryDataTestId,
       tabIndex,
       name,
-      defaultIsOpen = false
+      defaultIsOpen = false,
+      color = "dark",
+      isLightDisabled = false
     },
     ref
   ) => {
@@ -187,7 +191,8 @@ const TextField: L3Component<TextFieldProps, unknown> & {
     return (
       <div
         className={classNames("input-component", wrapperClassName, type === "search" && isSearchVisivle, {
-          "input-component--disabled": disabled
+          "input-component--disabled": disabled,
+          "input-component--light-disabled": isLightDisabled
         })}
         role={role}
         aria-busy={loading}
@@ -205,9 +210,14 @@ const TextField: L3Component<TextFieldProps, unknown> & {
             {/*Programatical input (tabIndex={-1}) is working fine with aria-activedescendant attribute despite the rule*/}
             {/*eslint-disable-next-line jsx-a11y/aria-activedescendant-has-tabindex*/}
             <input
-              className={classNames(className, "input-component__input", isSearchType, {
-                "input-component__input--has-icon": !!hasIcon
-              })}
+              className={classNames(
+                className,
+                color === "dark" ? "input-component__input" : "input-component__input--light",
+                isSearchType,
+                {
+                  "input-component__input--has-icon": !!hasIcon
+                }
+              )}
               placeholder={placeholder}
               autoComplete={autoComplete}
               value={inputValue}
@@ -257,7 +267,7 @@ const TextField: L3Component<TextFieldProps, unknown> & {
             >
               <Icon
                 icon={iconName}
-                className={classNames("input-component__icon")}
+                className={classNames(color === "light" ? "input-component__icon-light" : "input-component__icon")}
                 clickable={false}
                 id={id}
                 iconLabel={iconsNames.primary}
@@ -281,7 +291,7 @@ const TextField: L3Component<TextFieldProps, unknown> & {
             >
               <Icon
                 icon={secondaryIconName}
-                className={classNames("input-component__icon")}
+                className={classNames(color === "light" ? "input-component__icon-light" : "input-component__icon")}
                 clickable={false}
                 id={id}
                 iconLabel={iconsNames.secondary}
