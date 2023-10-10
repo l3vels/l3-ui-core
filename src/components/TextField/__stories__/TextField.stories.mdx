@@ -87,7 +87,8 @@ There are three sizes available: Small (32px), Medium (40px) and Large (48px).
     <div className="l3-storybook-text-field_column-wrapper">
       <TextField placeholder="Small" />
       <TextField placeholder="Meduim" size={TextField.sizes.MEDIUM} />
-      <TextField placeholder="Large" size={TextField.sizes.LARGE} />
+      <TextField placeholder="Large" size={TextField.sizes.LARGE} autoComplete />
+      <TextField color="light" placeholder="Large" />
     </div>
   </Story>
 </Canvas>
@@ -99,6 +100,7 @@ There are three sizes available: Small (32px), Medium (40px) and Large (48px).
     <div className="l3-storybook-text-field_wrapper">
       <div className="l3-storybook-text-field_column-wrapper l3-storybook-text-field_spacing">
         <TextField placeholder="Disabled" size={TextField.sizes.MEDIUM} disabled />
+        <TextField placeholder="Disabled light" isLightDisabled size={TextField.sizes.MEDIUM} />
         <TextField placeholder="With icon" iconName={Email} size={TextField.sizes.MEDIUM} />
       </div>
       <div className="l3-storybook-text-field_column-wrapper">
@@ -114,6 +116,21 @@ There are three sizes available: Small (32px), Medium (40px) and Large (48px).
           validation={{ status: "error" }}
           iconName={CloseSmall}
           size={TextField.sizes.MEDIUM}
+        />
+        <TextField
+          placeholder="Error"
+          validation={{ status: "error" }}
+          iconName={CloseSmall}
+          size={TextField.sizes.MEDIUM}
+          color="light"
+          cmc
+        />
+        <TextField
+          placeholder="Success"
+          validation={{ status: "success" }}
+          iconName={Check}
+          size={TextField.sizes.MEDIUM}
+          color="light"
         />
       </div>
     </div>
